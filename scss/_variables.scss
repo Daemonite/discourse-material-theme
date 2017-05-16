@@ -36,3 +36,16 @@ $font-size-root:         16px !default;
 $line-height-base:       1.428572 !default;
 
 $material-icon-size:     (24px / $font-size-root * 1rem) !default;
+
+
+
+// Text field
+
+$text-field-border-color: rgba(0, 0, 0, .42) !default;
+$text-field-border-width: 1px !default;
+$text-field-font-size:    1rem !default;
+$text-field-height:       2.25rem !default;
+$text-field-margin-x:     .5rem !default;
+$text-field-margin-y:     .5rem !default;
+$text-field-padding-x:    0 !default;
+$text-field-padding-y:    .5rem !default;
