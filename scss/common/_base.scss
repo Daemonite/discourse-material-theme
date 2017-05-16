@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $font-family-sans-serif;
+  font-size: initial;
+  line-height: initial;
+  text-size-adjust: 100%;
+}
+
+.wrap {
+  padding: 0;
+}
