@@ -28,13 +28,13 @@ module.exports = function(grunt) {
         ]
       },
       common: {
-        src: 'common/common.css'
+        src: 'common/common.scss'
       },
       desktop: {
-        src: 'desktop/desktop.css'
+        src: 'desktop/desktop.scss'
       },
       mobile: {
-        src: 'mobile/mobile.css'
+        src: 'mobile/mobile.scss'
       }
     },
 
@@ -45,15 +45,15 @@ module.exports = function(grunt) {
         style: 'expanded'
       },
       common: {
-        dest: 'common/common.css',
+        dest: 'common/common.scss',
         src: 'scss/common.scss'
       },
       desktop: {
-        dest: 'desktop/desktop.css',
+        dest: 'desktop/desktop.scss',
         src: 'scss/desktop.scss'
       },
       mobile: {
-        dest: 'mobile/mobile.css',
+        dest: 'mobile/mobile.scss',
         src: 'scss/mobile.scss'
       }
     },
