@@ -3,6 +3,7 @@
 // - Basics
 //   - Shadows
 //   - Typography
+// - Header
 
 
 
@@ -36,6 +37,17 @@ $font-size-root:         16px !default;
 $line-height-base:       1.428572 !default;
 
 $material-icon-size:     (24px / $font-size-root * 1rem) !default;
+
+
+
+// Header
+
+$header-box-shadow:     $shadow-4dp !default;
+$header-height:         3.5rem !default;
+$header-item-overlay:   rgba(0, 0, 0, .12) !default;
+$header-inner-spacer-x: .5rem !default;
+$header-padding-x:      0 !default;
+$header-padding-y:      .5rem !default;
 
 
 
