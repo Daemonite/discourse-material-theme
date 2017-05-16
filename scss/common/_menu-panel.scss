@@ -1,0 +1,256 @@
+div {
+  &.logout-link {
+    a {
+      &.logout {
+        .fa {
+          @include material-icons;
+
+          &::before {
+            content: 'exit_to_app';
+          }
+        }
+      }
+    }
+  }
+
+  &.menu-links-header {
+    display: flex;
+    margin-bottom: $menu-panel-inner-spacer-y;
+
+    a {
+      color: inherit;
+      font-size: inherit;
+
+      &:focus,
+      &:hover {
+        background-color: $menu-panel-item-overlay;
+      }
+
+      &.user-activity-link {
+        align-items: center;
+        display: flex;
+        margin: 0;
+      }
+    }
+
+    li {
+      display: flex;
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+
+    .fa {
+      @include material-icons;
+    }
+
+    .fa-bookmark::before {
+      content: 'bookmark_border';
+    }
+
+    .fa-gear::before {
+      content: 'settings';
+    }
+
+    .fa-user {
+      margin-right: $menu-panel-inner-spacer-x;
+
+      &::before {
+        content: 'person';
+      }
+    }
+
+    .menu-links-row {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+}
+
+.menu-panel {
+  background-color: $menu-panel-bg;
+  border: 0;
+  border-radius: $menu-panel-border-radius;
+  box-shadow: $menu-panel-box-shadow;
+  color: unquote('$primary');
+  outline: 0;
+  padding: $menu-panel-padding-y $menu-panel-padding-x;
+
+  hr {
+    margin: $menu-panel-inner-spacer-y 0;
+  }
+
+  ul {
+    &.columned {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &.menu-links {
+      li {
+        a {
+          align-items: center;
+          display: flex;
+          padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
+
+          &:focus,
+          &:hover {
+            background-color: $menu-panel-item-overlay;
+          }
+
+          .badge-notification {
+            margin-left: $menu-panel-inner-spacer-x;
+          }
+
+          .fa {
+            margin-right: $menu-panel-inner-spacer-x;
+          }
+        }
+      }
+    }
+
+    li {
+      &.category-link {
+        margin: 0;
+        padding: ($menu-panel-inner-spacer-y / 2) $menu-panel-inner-spacer-x;
+        width: 50%;
+      }
+
+      &.heading {
+        a {
+          padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
+
+          &:focus,
+          &:hover {
+            background-color: $menu-panel-item-overlay;
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-menu {
+  input {
+    &[type='text'] {
+      @include text-field;
+
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  li:not(.category):not(.heading) {
+    font-size: inherit;
+    line-height: inherit;
+
+    &:hover a:not(.badge-notification) {
+      background-color: $menu-panel-item-overlay;
+    }
+
+    a {
+      padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
+
+      &:focus,
+      &:hover {
+        background-color: $menu-panel-item-overlay;
+      }
+    }
+  }
+
+  .no-results {
+    color: unquote('$danger');
+    margin-top: $menu-panel-inner-spacer-y;
+    padding: 0;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .results {
+    margin-top: $menu-panel-inner-spacer-y;
+  }
+
+  .search-context {
+    margin-top: $menu-panel-inner-spacer-y;
+    padding: 0;
+  }
+
+  .searching {
+    .drop-down-visible & {
+      top: ($menu-panel-padding-y + $text-field-height / 2);
+      right: $menu-panel-padding-x;
+    }
+
+    .spinner {
+      border-color: currentColor;
+      border-right-color: transparent;
+      height: $text-field-font-size;
+      margin-top: ($text-field-font-size / -2);
+      width: $text-field-font-size;
+    }
+  }
+}
+
+.user-menu {
+  .notifications {
+    li {
+      padding: 0;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      a {
+        display: block;
+        padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
+
+        &:focus,
+        &:hover {
+          background-color: $menu-panel-item-overlay;
+        }
+
+        div {
+          align-items: center;
+          display: flex;
+        }
+      }
+
+      i {
+        margin-right: $menu-panel-inner-spacer-x;
+        padding-top: 0;
+      }
+
+      p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .fa {
+      @include material-icons;
+    }
+
+    .fa-certificate::before {
+      content: 'info_outline';
+    }
+
+    .fa-envelope-o::before {
+      content: 'mail_outline';
+    }
+
+    .fa-heart::before {
+      content: 'favorite_border';
+    }
+
+    .fa-user::before {
+      content: 'person';
+    }
+
+    .read {
+      background-color: transparent;
+    }
+  }
+}

@@ -4,6 +4,7 @@
 //   - Shadows
 //   - Typography
 // - Header
+// - Menu panel
 
 
 
@@ -48,6 +49,19 @@ $header-item-overlay:   rgba(0, 0, 0, .12) !default;
 $header-inner-spacer-x: .5rem !default;
 $header-padding-x:      0 !default;
 $header-padding-y:      .5rem !default;
+
+
+
+// Menu panel
+
+$menu-panel-bg:             #ffffff !default;
+$menu-panel-border-radius:  2px !default;
+$menu-panel-box-shadow:     $shadow-24dp !default;
+$menu-panel-inner-spacer-x: .5rem !default;
+$menu-panel-inner-spacer-y: .5rem !default;
+$menu-panel-item-overlay:   rgba(0, 0, 0, .04) !default;
+$menu-panel-padding-x:      1.5rem !default;
+$menu-panel-padding-y:      1.25rem !default;
 
 
 
