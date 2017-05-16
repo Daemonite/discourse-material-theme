@@ -1,0 +1,33 @@
+{
+  "name": "discourse-material-theme",
+  "author": "Daemon Pty Ltd",
+  "bugs": {
+    "url": "https://github.com/sesemaya/discourse-material-theme/issues"
+  },
+  "description": "Material Design for Discourse",
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-dev-update": "^2.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-scss-lint": "^0.5.0",
+    "load-grunt-tasks": "^3.5.2",
+    "time-grunt": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "homepage": "https://github.com/sesemaya/discourse-material-theme",
+  "keywords": [
+    "discourse",
+    "material",
+    "theme"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sesemaya/discourse-material-theme.git"
+  },
+  "version": "0.0.1"
+}
