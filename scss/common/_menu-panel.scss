@@ -156,6 +156,12 @@ div {
       &:hover {
         background-color: $menu-panel-item-overlay;
       }
+
+      .topic {
+        align-items: center;
+        display: flex;
+        margin-bottom: ($menu-panel-inner-spacer-y / 2);
+      }
     }
   }
 

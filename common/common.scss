@@ -423,6 +423,17 @@ div.menu-links-header .menu-links-row {
 .search-menu li:not(.category):not(.heading) a:focus, .search-menu li:not(.category):not(.heading) a:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
+.search-menu li:not(.category):not(.heading) a .topic {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.25rem;
+}
 .search-menu .no-results {
   color: $danger;
   margin-top: 0.5rem;
