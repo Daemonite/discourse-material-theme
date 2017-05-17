@@ -15,6 +15,13 @@
 
   .extra-info-wrapper {
     margin-left: $header-inner-spacer-x;
+    overflow: visible;
+
+    .badge-wrapper.bullet {
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: $header-inner-spacer-x;
+    }
   }
 
   .icons {
@@ -80,5 +87,10 @@
       align-items: center;
       display: flex;
     }
+  }
+
+  .title-wrapper {
+    align-items: center;
+    display: flex;
   }
 }

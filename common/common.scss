@@ -128,6 +128,12 @@ html {
 }
 .d-header .extra-info-wrapper {
   margin-left: 0.5rem;
+  overflow: visible;
+}
+.d-header .extra-info-wrapper .badge-wrapper.bullet {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0.5rem;
 }
 .d-header .icons {
   -webkit-box-align: center;
@@ -207,6 +213,16 @@ html {
   max-height: 1.5rem;
 }
 .d-header .title a {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.d-header .title-wrapper {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
