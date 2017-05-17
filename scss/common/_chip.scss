@@ -1,0 +1,72 @@
+.badge-notification {
+  background-color: $chip-bg;
+  border-radius: 1em;
+  color: unquote('$primary');
+  font-size: .857142857em;
+  padding: ($chip-padding-y / 2) ($chip-padding-x / 2);
+
+  &:focus,
+  &:hover {
+    color: unquote('$primary');
+  }
+}
+
+.badge-wrapper {
+  background-color: $chip-bg;
+  border-radius: ($chip-height / 2);
+  color: inherit;
+  font-size: $chip-font-size;
+  font-weight: normal;
+  padding-right: $chip-padding-x;
+
+  &,
+  &.bullet {
+    line-height: 1;
+  }
+
+  &[href] {
+    &:focus,
+    &:hover {
+      box-shadow: $chip-box-shadow;
+    }
+  }
+
+  &.bullet {
+    align-items: center;
+
+    span {
+      &.badge-category {
+        line-height: $chip-height;
+      }
+
+      &.badge-category-bg {
+        border-radius: 50%;
+        flex-shrink: 0;
+        height: $chip-height;
+        line-height: 1;
+        margin-right: $chip-inner-spacer-x;
+        width: $chip-width;
+      }
+
+      &.badge-category-parent-bg {
+        border-radius: ($chip-height / 2) 0 0 ($chip-height / 2);
+        flex-shrink: 0;
+        height: $chip-height;
+        width: ($chip-width / 2);
+
+        + .badge-category-bg {
+          border-radius: 0 ($chip-height / 2) ($chip-height / 2) 0;
+          width: ($chip-width / 2);
+        }
+      }
+    }
+  }
+
+  .fa-lock {
+    @include material-icons;
+
+    &::before {
+      content: 'lock_outline';
+    }
+  }
+}

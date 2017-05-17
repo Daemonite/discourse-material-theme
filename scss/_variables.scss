@@ -3,6 +3,7 @@
 // - Basics
 //   - Shadows
 //   - Typography
+// - Chip
 // - Header
 // - Menu panel
 // - Text field
@@ -39,6 +40,19 @@ $font-size-root:         16px !default;
 $line-height-base:       1.428572 !default;
 
 $material-icon-size:     (24px / $font-size-root * 1rem) !default;
+
+
+
+// Chip
+
+$chip-bg:             rgba(0, 0, 0, .04) !default;
+$chip-box-shadow:     $shadow-2dp !default;
+$chip-font-size:      .8125rem !default;
+$chip-height:         2rem !default;
+$chip-inner-spacer-x: .25rem !default;
+$chip-padding-x:      .75rem !default;
+$chip-padding-y:      .5rem !default;
+$chip-width:          $chip-height !default;
 
 
 
