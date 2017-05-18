@@ -34,6 +34,12 @@
 
   td,
   th {
+    &.num {
+      text-align: right;
+    }
+  }
+
+  td {
     &.activity,
     &.age,
     &.posters,
@@ -43,12 +49,12 @@
       width: auto;
     }
 
-    &.main-link {
-      width: 50%;
+    &.category {
+      height: ($tbody-cell-height - ($tbody-cell-height - $tbody-cell-padding-y * 2 - $chip-height));
     }
 
-    &.num {
-      text-align: right;
+    &.main-link {
+      width: 50%;
     }
   }
 

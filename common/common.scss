@@ -560,22 +560,19 @@ div.menu-links-header .menu-links-row {
 .topic-list > tbody > tr:last-child {
   border-bottom: 0;
 }
-.topic-list td.activity, .topic-list td.age, .topic-list td.posters, .topic-list td.posts, .topic-list td.views,
-.topic-list th.activity,
-.topic-list th.age,
-.topic-list th.posters,
-.topic-list th.posts,
-.topic-list th.views {
-  min-width: 0;
-  width: auto;
-}
-.topic-list td.main-link,
-.topic-list th.main-link {
-  width: 50%;
-}
 .topic-list td.num,
 .topic-list th.num {
   text-align: right;
+}
+.topic-list td.activity, .topic-list td.age, .topic-list td.posters, .topic-list td.posts, .topic-list td.views {
+  min-width: 0;
+  width: auto;
+}
+.topic-list td.category {
+  height: 3.5rem;
+}
+.topic-list td.main-link {
+  width: 50%;
 }
 .topic-list thead button .fa {
   font-family: 'Material Icons';
