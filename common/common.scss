@@ -197,6 +197,9 @@ html {
   border: 0;
   color: inherit;
 }
+.d-header .icons .icon:focus {
+  outline: 0;
+}
 .drop-down-visible .d-header .icons .active .icon {
   background-color: rgba(0, 0, 0, 0.12);
   border: 0;

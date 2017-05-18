@@ -62,6 +62,10 @@
         border: 0;
         color: inherit;
       }
+
+      &:focus {
+        outline: 0;
+      }
     }
 
     .active .icon {
