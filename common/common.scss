@@ -524,3 +524,79 @@ div.menu-links-header .menu-links-row {
 .user-menu .notifications .read {
   background-color: transparent;
 }
+
+.topic-list {
+  background-color: #ffffff;
+  border: 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+  max-width: 100%;
+  width: 100%;
+}
+.topic-list tbody td,
+.topic-list tbody th {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+  height: 3rem;
+  padding: 0.75rem 0.75rem;
+  vertical-align: middle;
+  line-height: inherit;
+}
+.topic-list tbody td:first-of-type,
+.topic-list tbody th:first-of-type {
+  padding-left: 1.5rem;
+}
+.topic-list tbody td:last-of-type,
+.topic-list tbody th:last-of-type {
+  padding-right: 1.5rem;
+}
+.topic-list > tbody > tr {
+  border-bottom: 1px solid #e1e1e1;
+}
+.topic-list > tbody > tr:first-child {
+  border-top: 0;
+}
+.topic-list thead button .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.topic-list thead button .fa-list::before {
+  content: 'list';
+}
+.topic-list thead td,
+.topic-list thead th {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  height: 3.5rem;
+  padding: 0.75rem 0.75rem;
+  vertical-align: middle;
+  line-height: inherit;
+}
+.topic-list thead td:first-of-type,
+.topic-list thead th:first-of-type {
+  padding-left: 1.5rem;
+}
+.topic-list thead td:last-of-type,
+.topic-list thead th:last-of-type {
+  padding-right: 1.5rem;
+}
+.topic-list thead th {
+  font-weight: bold;
+}
+.topic-list > thead > tr {
+  border-bottom: 1px solid #e1e1e1;
+}

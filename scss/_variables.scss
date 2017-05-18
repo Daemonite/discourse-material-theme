@@ -6,6 +6,7 @@
 // - Chip
 // - Header
 // - Menu panel
+// - Table
 // - Text field
 
 
@@ -77,6 +78,27 @@ $menu-panel-inner-spacer-y: .5rem !default;
 $menu-panel-item-overlay:   rgba(0, 0, 0, .04) !default;
 $menu-panel-padding-x:      1.5rem !default;
 $menu-panel-padding-y:      1.25rem !default;
+
+
+
+// Table
+
+$table-bg:             #ffffff !default;
+$table-border-width:   1px !default;
+$table-border-color:   #e1e1e1 !default;
+$table-box-shadow:     $shadow-2dp !default;
+$table-margin-x:       auto !default;
+$table-margin-y:       1rem !default;
+$tbody-cell-height:    3rem !default;
+$tbody-cell-padding-x: .75rem !default;
+$tbody-cell-padding-y: .75rem !default;
+$tbody-color:          rgba(0, 0, 0, .87) !default;
+$tbody-font-size:      .8125rem !default;
+$thead-cell-height:    3.5rem !default;
+$thead-cell-padding-x: .75rem !default;
+$thead-cell-padding-y: .75rem !default;
+$thead-color:          rgba(0, 0, 0, .54) !default;
+$thead-font-size:      .75rem !default;
 
 
 

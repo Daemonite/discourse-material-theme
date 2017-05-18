@@ -1,0 +1,28 @@
+@mixin table {
+  background-color: $table-bg;
+  border: 0;
+  box-shadow: $table-box-shadow;
+  margin-bottom: $table-margin-y;
+  max-width: 100%;
+  width: 100%;
+}
+
+@mixin table-row {
+  border-bottom: $table-border-width solid $table-border-color;
+}
+
+@mixin tbody-cell {
+  color: $tbody-color;
+  font-size: $tbody-font-size;
+  height: $tbody-cell-height;
+  padding: $tbody-cell-padding-y $tbody-cell-padding-x;
+  vertical-align: middle;
+}
+
+@mixin thead-cell {
+  color: $thead-color;
+  font-size: $thead-font-size;
+  height: $thead-cell-height;
+  padding: $thead-cell-padding-y $thead-cell-padding-x;
+  vertical-align: middle;
+}
