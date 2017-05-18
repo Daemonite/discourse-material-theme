@@ -626,23 +626,13 @@ div.menu-links-header .menu-links-row {
 .topic-list .badge-wrapper {
   vertical-align: middle;
 }
-.topic-list .link-top-line {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
 .topic-list .main-link {
   font-size: inherit;
 }
 .topic-list .main-link a.title {
   font-weight: bold;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .topic-list .main-link a.title.visited:not(.badge-notification) {
   color: rgba(0, 0, 0, 0.87);

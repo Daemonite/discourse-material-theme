@@ -106,19 +106,14 @@
     vertical-align: middle;
   }
 
-  .link-top-line {
-    align-items: center;
-    display: flex;
-  }
-
   .main-link {
     font-size: inherit;
 
     a {
       &.title {
         font-weight: bold;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: $tbody-cell-padding-y;
+        padding-bottom: $tbody-cell-padding-y;
 
         &.visited:not(.badge-notification) {
           color: $tbody-color;
