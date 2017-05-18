@@ -25,6 +25,30 @@
       &:first-child {
         border-top: 0;
       }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  td,
+  th {
+    &.activity,
+    &.age,
+    &.posters,
+    &.posts,
+    &.views {
+      min-width: 0;
+      width: auto;
+    }
+
+    &.main-link {
+      width: 50%;
+    }
+
+    &.num {
+      text-align: right;
     }
   }
 
@@ -56,6 +80,7 @@
 
     th {
       font-weight: bold;
+      white-space: nowrap;
     }
   }
 
@@ -63,5 +88,64 @@
     > tr {
       @include table-row;
     }
+  }
+
+  .avatar {
+    height: $material-icon-size;
+    vertical-align: middle;
+    width: $material-icon-size;
+  }
+
+  .badge-wrapper {
+    vertical-align: middle;
+  }
+
+  .link-top-line {
+    align-items: center;
+    display: flex;
+  }
+
+  .main-link {
+    font-size: inherit;
+
+    a {
+      &.title {
+        font-weight: bold;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        &.visited:not(.badge-notification) {
+          color: $tbody-color;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .sortable {
+    &:focus,
+    &:hover {
+      background-color: $table-bg-hover;
+    }
+
+    .fa {
+      @include material-icons;
+    }
+
+    .fa-chevron-down::before {
+      content: 'arrow_downward';
+    }
+
+    .fa-chevron-up::before {
+      content: 'arrow_upward';
+    }
+  }
+
+  .sorting {
+    color: $thead-color-sorting;
+  }
+
+  .topic-status {
+    display: none;
   }
 }

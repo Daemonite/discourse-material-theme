@@ -84,6 +84,8 @@ $menu-panel-padding-y:      1.25rem !default;
 // Table
 
 $table-bg:             #ffffff !default;
+$table-bg-active:      #f5f5f5 !default;
+$table-bg-hover:       #eeeeee !default;
 $table-border-width:   1px !default;
 $table-border-color:   #e1e1e1 !default;
 $table-box-shadow:     $shadow-2dp !default;
@@ -93,11 +95,13 @@ $tbody-cell-height:    3rem !default;
 $tbody-cell-padding-x: .75rem !default;
 $tbody-cell-padding-y: .75rem !default;
 $tbody-color:          rgba(0, 0, 0, .87) !default;
+$thead-color-sorting:  rgba(0, 0, 0, .87) !default;
 $tbody-font-size:      .8125rem !default;
 $thead-cell-height:    3.5rem !default;
 $thead-cell-padding-x: .75rem !default;
 $thead-cell-padding-y: .75rem !default;
 $thead-color:          rgba(0, 0, 0, .54) !default;
+$thead-color-sorting:  rgba(0, 0, 0, .87) !default;
 $thead-font-size:      .75rem !default;
 
 

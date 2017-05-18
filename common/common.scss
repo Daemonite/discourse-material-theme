@@ -557,6 +557,26 @@ div.menu-links-header .menu-links-row {
 .topic-list > tbody > tr:first-child {
   border-top: 0;
 }
+.topic-list > tbody > tr:last-child {
+  border-bottom: 0;
+}
+.topic-list td.activity, .topic-list td.age, .topic-list td.posters, .topic-list td.posts, .topic-list td.views,
+.topic-list th.activity,
+.topic-list th.age,
+.topic-list th.posters,
+.topic-list th.posts,
+.topic-list th.views {
+  min-width: 0;
+  width: auto;
+}
+.topic-list td.main-link,
+.topic-list th.main-link {
+  width: 50%;
+}
+.topic-list td.num,
+.topic-list th.num {
+  text-align: right;
+}
 .topic-list thead button .fa {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
@@ -596,7 +616,70 @@ div.menu-links-header .menu-links-row {
 }
 .topic-list thead th {
   font-weight: bold;
+  white-space: nowrap;
 }
 .topic-list > thead > tr {
   border-bottom: 1px solid #e1e1e1;
+}
+.topic-list .avatar {
+  height: 1.5rem;
+  vertical-align: middle;
+  width: 1.5rem;
+}
+.topic-list .badge-wrapper {
+  vertical-align: middle;
+}
+.topic-list .link-top-line {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.topic-list .main-link {
+  font-size: inherit;
+}
+.topic-list .main-link a.title {
+  font-weight: bold;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.topic-list .main-link a.title.visited:not(.badge-notification) {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: normal;
+}
+.topic-list .sortable:focus, .topic-list .sortable:hover {
+  background-color: #eeeeee;
+}
+.topic-list .sortable .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.topic-list .sortable .fa-chevron-down::before {
+  content: 'arrow_downward';
+}
+.topic-list .sortable .fa-chevron-up::before {
+  content: 'arrow_upward';
+}
+.topic-list .sorting {
+  color: rgba(0, 0, 0, 0.87);
+}
+.topic-list .topic-status {
+  display: none;
 }
