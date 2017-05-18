@@ -36,6 +36,13 @@
   th {
     &.num {
       text-align: right;
+
+      &.activity,
+      &.posts {
+        a {
+          padding: $tbody-cell-padding-y 0;
+        }
+      }
     }
   }
 

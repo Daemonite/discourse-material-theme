@@ -585,6 +585,11 @@ div.menu-links-header .menu-links-row {
 .topic-list th.num {
   text-align: right;
 }
+.topic-list td.num.activity a, .topic-list td.num.posts a,
+.topic-list th.num.activity a,
+.topic-list th.num.posts a {
+  padding: 0.75rem 0;
+}
 .topic-list td.activity, .topic-list td.age, .topic-list td.posters, .topic-list td.posts, .topic-list td.views {
   min-width: 0;
   width: auto;
