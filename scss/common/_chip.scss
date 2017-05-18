@@ -29,6 +29,10 @@
     &:hover {
       box-shadow: $chip-box-shadow;
     }
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   &.bullet {
