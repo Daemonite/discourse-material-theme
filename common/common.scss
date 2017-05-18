@@ -270,6 +270,9 @@ div.menu-links-header a {
 div.menu-links-header a:focus, div.menu-links-header a:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
+div.menu-links-header a:focus {
+  outline: 0;
+}
 div.menu-links-header a.user-activity-link {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -366,6 +369,9 @@ div.menu-links-header .menu-links-row {
 .menu-panel ul.menu-links li a:focus, .menu-panel ul.menu-links li a:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
+.menu-panel ul.menu-links li a:focus {
+  outline: 0;
+}
 .menu-panel ul.menu-links li a .badge-notification {
   margin-left: 0.5rem;
 }
@@ -382,6 +388,9 @@ div.menu-links-header .menu-links-row {
 }
 .menu-panel ul li.heading a:focus, .menu-panel ul li.heading a:hover {
   background-color: rgba(0, 0, 0, 0.04);
+}
+.menu-panel ul li.heading a:focus {
+  outline: 0;
 }
 
 .search-menu input[type='text'] {
@@ -425,6 +434,9 @@ div.menu-links-header .menu-links-row {
 }
 .search-menu li:not(.category):not(.heading) a:focus, .search-menu li:not(.category):not(.heading) a:hover {
   background-color: rgba(0, 0, 0, 0.04);
+}
+.search-menu li:not(.category):not(.heading) a:focus {
+  outline: 0;
 }
 .search-menu li:not(.category):not(.heading) a .topic {
   -webkit-box-align: center;
@@ -476,6 +488,9 @@ div.menu-links-header .menu-links-row {
 }
 .user-menu .notifications li a:focus, .user-menu .notifications li a:hover {
   background-color: rgba(0, 0, 0, 0.04);
+}
+.user-menu .notifications li a:focus {
+  outline: 0;
 }
 .user-menu .notifications li a div {
   -webkit-box-align: center;

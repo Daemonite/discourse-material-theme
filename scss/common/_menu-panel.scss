@@ -26,6 +26,10 @@ div {
         background-color: $menu-panel-item-overlay;
       }
 
+      &:focus {
+        outline: 0;
+      }
+
       &.user-activity-link {
         align-items: center;
         display: flex;
@@ -99,6 +103,10 @@ div {
             background-color: $menu-panel-item-overlay;
           }
 
+          &:focus {
+            outline: 0;
+          }
+
           .badge-notification {
             margin-left: $menu-panel-inner-spacer-x;
           }
@@ -124,6 +132,10 @@ div {
           &:focus,
           &:hover {
             background-color: $menu-panel-item-overlay;
+          }
+
+          &:focus {
+            outline: 0;
           }
         }
       }
@@ -155,6 +167,10 @@ div {
       &:focus,
       &:hover {
         background-color: $menu-panel-item-overlay;
+      }
+
+      &:focus {
+        outline: 0;
       }
 
       .topic {
@@ -216,6 +232,10 @@ div {
         &:focus,
         &:hover {
           background-color: $menu-panel-item-overlay;
+        }
+
+        &:focus {
+          outline: 0;
         }
 
         div {
