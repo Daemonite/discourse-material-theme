@@ -693,6 +693,16 @@ div.menu-links-header .menu-links-row {
 .topic-list .sorting {
   color: rgba(0, 0, 0, 0.87);
 }
+.topic-list .topic-list-item-separator td {
+  border-bottom-color: $tertiary;
+  height: 0;
+}
+.topic-list .topic-list-item-separator td span {
+  background-color: #ffffff;
+  color: $tertiary;
+  font-size: inherit;
+  padding: 0 0.375rem;
+}
 .topic-list .topic-status {
   display: none;
 }

@@ -153,6 +153,20 @@
     color: $thead-color-sorting;
   }
 
+  .topic-list-item-separator {
+    td {
+      border-bottom-color: unquote('$tertiary');
+      height: 0;
+
+      span {
+        background-color: $table-bg;
+        color:  unquote('$tertiary');
+        font-size: inherit;
+        padding: 0 ($tbody-cell-padding-x / 2);
+      }
+    }
+  }
+
   .topic-status {
     display: none;
   }
