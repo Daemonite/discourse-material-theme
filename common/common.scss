@@ -714,6 +714,17 @@ div.menu-links-header .menu-links-row {
   display: none;
 }
 
+#suggested-topics h3 .badge-wrapper.bullet {
+  line-height: 1;
+  vertical-align: middle;
+}
+#suggested-topics h3 .badge-wrapper.bullet span.badge-category {
+  display: inline-block;
+  line-height: 2rem;
+}
+#suggested-topics h3 .badge-wrapper.bullet span.badge-category-bg, #suggested-topics h3 .badge-wrapper.bullet span.badge-category-parent-bg {
+  line-height: 1;
+}
 #suggested-topics > h3:first-of-type {
   -webkit-box-align: center;
   -webkit-align-items: center;

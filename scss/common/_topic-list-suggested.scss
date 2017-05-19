@@ -1,4 +1,23 @@
 #suggested-topics {
+  h3 {
+    .badge-wrapper.bullet {
+      line-height: 1;
+      vertical-align: middle;
+
+      span {
+        &.badge-category {
+          display: inline-block;
+          line-height: $chip-height;
+        }
+
+        &.badge-category-bg,
+        &.badge-category-parent-bg {
+          line-height: 1;
+        }
+      }
+    }
+  }
+
   > h3:first-of-type {
     align-items: center;
     background-color: $table-bg;
