@@ -1,0 +1,32 @@
+#suggested-topics {
+  > h3:first-of-type {
+    align-items: center;
+    background-color: $table-bg;
+    box-shadow: $table-box-shadow;
+    display: flex;
+    height: $thead-cell-height;
+    margin: 0;
+    padding: $thead-cell-padding-y ($thead-cell-padding-x * 2);
+  }
+
+  table {
+    margin-top: 0;
+    table-layout: auto;
+  }
+
+  .topics {
+    padding-bottom: 0;
+    position: relative;
+
+    &::before {
+      background-color: $table-bg;
+      content: '';
+      display: block;
+      height: $thead-cell-padding-y;
+      position: absolute;
+      top: ($thead-cell-padding-y * -1);
+      right: 0;
+      left: 0;
+    }
+  }
+}

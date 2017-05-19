@@ -34,6 +34,20 @@
 
   td,
   th {
+    &.activity,
+    &.age,
+    &.posters,
+    &.posts,
+    &.views {
+      min-width: 0;
+      white-space: nowrap;
+      width: 0;
+    }
+
+    &.category {
+      height: ($tbody-cell-height - ($tbody-cell-height - $tbody-cell-padding-y * 2 - $chip-height));
+    }
+
     &.num {
       text-align: right;
 
@@ -47,21 +61,8 @@
   }
 
   td {
-    &.activity,
-    &.age,
-    &.posters,
-    &.posts,
-    &.views {
-      min-width: 0;
-      width: auto;
-    }
-
-    &.category {
-      height: ($tbody-cell-height - ($tbody-cell-height - $tbody-cell-padding-y * 2 - $chip-height));
-    }
-
     &.main-link {
-      width: 50%;
+      width: 100%;
     }
   }
 
