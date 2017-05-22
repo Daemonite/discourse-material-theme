@@ -1,0 +1,21 @@
+@mixin card {
+  background-color: $card-bg;
+  box-shadow: $card-box-shadow;
+
+  &[href],
+  &[tabindex] {
+    &:focus,
+    &:hover {
+      box-shadow: $card-box-shadow-hover;
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+@mixin card-block {
+  padding: $card-padding-y $card-padding-x;
+}

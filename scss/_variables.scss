@@ -3,6 +3,7 @@
 // - Basics
 //   - Shadows
 //   - Typography
+// - Card
 // - Chip
 // - Header
 // - Menu panel
@@ -41,6 +42,18 @@ $font-size-root:         16px !default;
 $line-height-base:       1.428572 !default;
 
 $material-icon-size:     (24px / $font-size-root * 1rem) !default;
+
+
+
+// Card
+
+$card-bg:               #ffffff !default;
+$card-box-shadow:       $shadow-2dp !default;
+$card-box-shadow-hover: $shadow-8dp !default;
+$card-margin-x:         .5rem !default;
+$card-margin-y:         .5rem !default;
+$card-padding-x:        1rem !default;
+$card-padding-y:        1rem !default;
 
 
 
