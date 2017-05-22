@@ -98,3 +98,7 @@
     display: flex;
   }
 }
+
+#main-outlet {
+  padding-top: ($header-height + $header-margin-y);
+}

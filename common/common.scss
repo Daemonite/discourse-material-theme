@@ -239,6 +239,10 @@ html {
   display: flex;
 }
 
+#main-outlet {
+  padding-top: 4.5rem;
+}
+
 div.logout-link a.logout .fa {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
