@@ -675,6 +675,10 @@ div.menu-links-header .menu-links-row {
   color: rgba(0, 0, 0, 0.87);
   font-weight: normal;
 }
+.topic-list .posters > a {
+  float: none;
+  margin-right: 0.75rem;
+}
 .topic-list .sortable:focus, .topic-list .sortable:hover {
   background-color: #eeeeee;
 }

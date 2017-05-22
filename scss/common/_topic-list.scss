@@ -131,6 +131,13 @@
     }
   }
 
+  .posters {
+    > a {
+      float: none;
+      margin-right: $tbody-cell-padding-x;
+    }
+  }
+
   .sortable {
     &:focus,
     &:hover {
