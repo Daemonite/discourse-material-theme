@@ -1,0 +1,8 @@
+// Alert
+
+.alert {
+  @include card;
+  @include card-block;
+
+  margin-bottom: $card-margin-y;
+}
