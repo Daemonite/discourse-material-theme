@@ -114,6 +114,59 @@ html {
   min-height: 3.5rem;
   padding: 0.5rem 0;
 }
+.d-header button.login-button {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 50%;
+  color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: inherit;
+  height: 2.5rem;
+  line-height: inherit;
+  margin-top: 0;
+  margin-left: 0.5rem;
+  overflow: hidden;
+  padding: 0 0.5rem;
+  position: relative;
+  white-space: nowrap;
+  width: 2.5rem;
+}
+.d-header button.login-button:focus, .d-header button.login-button:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.d-header button.login-button:focus {
+  outline: 0;
+}
+.d-header button.login-button .fa-user {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $header-primary;
+  margin-right: 100%;
+  position: absolute;
+}
+.d-header button.login-button .fa-user::before {
+  content: 'person';
+}
 .d-header .contents {
   -webkit-box-align: center;
   -webkit-align-items: center;
