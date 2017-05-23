@@ -622,6 +622,37 @@ div.menu-links-header .menu-links-row {
   outline: 0;
 }
 
+nav.post-controls .actions {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: none;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+nav.post-controls .actions button {
+  margin-right: 0.5rem;
+  margin-left: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+nav.post-controls .actions button:last-child {
+  margin-right: 0;
+}
+
+.post-menu-area {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .topic-avatar {
   border: 0;
   padding: 0;
@@ -655,6 +686,12 @@ div.menu-links-header .menu-links-row {
 .topic-body .regular {
   padding: 1rem 1rem;
   margin: 0;
+}
+.topic-body .regular > :first-child {
+  margin-top: 0;
+}
+.topic-body .regular > :last-child {
+  margin-bottom: 0;
 }
 
 .topic-meta-data {
