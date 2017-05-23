@@ -47,9 +47,13 @@ $material-icon-size:     (24px / $font-size-root * 1rem) !default;
 
 // Card
 
+$card-avatar-size:      2.25rem !default;
 $card-bg:               #ffffff !default;
+$card-border-radius:    2px !default;
 $card-box-shadow:       $shadow-2dp !default;
 $card-box-shadow-hover: $shadow-8dp !default;
+$card-inner-spacer-x:   .5rem !default;
+$card-inner-spacer-y:   1rem !default;
 $card-margin-x:         .5rem !default;
 $card-margin-y:         .5rem !default;
 $card-padding-x:        1rem !default;

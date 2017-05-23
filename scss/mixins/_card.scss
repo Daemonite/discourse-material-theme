@@ -1,6 +1,9 @@
 @mixin card {
   background-color: $card-bg;
+  border: 0;
+  border-radius: $card-border-radius;
   box-shadow: $card-box-shadow;
+  padding: 0;
 
   &[href],
   &[tabindex] {

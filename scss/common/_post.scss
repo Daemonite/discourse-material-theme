@@ -1,0 +1,69 @@
+.topic-avatar {
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: $card-padding-y;
+  left: $card-padding-x;
+  width: $card-avatar-size;
+
+  .avatar {
+    height: $card-avatar-size;
+    width: $card-avatar-size;
+  }
+}
+
+.topic-body {
+  @include card;
+
+  margin-bottom: $card-margin-y;
+
+  .regular {
+    @include card-block;
+
+    margin: 0;
+  }
+}
+
+.topic-meta-data {
+  @include card-block;
+
+  align-items: center;
+  display: flex;
+  min-height: ($card-avatar-size + $card-padding-y);
+  padding-bottom: 0;
+  padding-left: ($card-avatar-size + $card-padding-y * 2);
+
+  .names {
+    float: none;
+    margin-right: auto;
+
+    span {
+      display: block;
+      font-size: inherit;
+      max-width: none;
+      padding-right: $card-inner-spacer-x;
+
+      a {
+        &,
+        &:focus,
+        &:hover {
+          color: unquote('$primary');
+        }
+      }
+    }
+  }
+
+  .post-info {
+    display: block;
+    float: none;
+    font-size: inherit;
+    margin-top: 0;
+    margin-left: $card-inner-spacer-x;
+    order: 1;
+
+    &.edits {
+      margin-right: 0;
+      order: 0;
+    }
+  }
+}
