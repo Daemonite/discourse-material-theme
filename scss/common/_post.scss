@@ -11,6 +11,9 @@ nav {
       text-align: left;
 
       button {
+        @include btn;
+
+        color: $card-btn-color;
         margin-right: $card-inner-spacer-x;
         margin-left: 0;
         padding-right: $card-inner-spacer-x;
@@ -18,6 +21,64 @@ nav {
 
         &:last-child {
           margin-right: 0;
+        }
+
+        &.delete {
+          &:focus,
+          &:hover,
+          &.d-hover {
+            color: unquote('$danger');
+          }
+
+          &.d-hover {
+            background-color: $btn-bg-hover;
+          }
+        }
+
+        &.has-like {
+          color: unquote('$love');
+        }
+
+        .fa {
+          @include material-icons;
+        }
+
+        .fa-ellipsis-h::before {
+          content: 'more_horiz';
+        }
+
+        .fa-flag::before {
+          content: 'flag';
+        }
+
+        .fa-heart::before {
+          content: 'favorite';
+        }
+
+        .fa-link::before {
+          content: 'link';
+        }
+
+        .fa-pencil::before {
+          content: 'edit';
+        }
+
+        .fa-reply::before {
+          content: 'reply';
+        }
+
+        .fa-trash-o::before {
+          content: 'delete';
+        }
+
+        .fa-wrench::before {
+          content: 'settings';
+        }
+
+        .read-icon::before {
+          @include material-icons;
+
+          content: 'bookmark';
         }
       }
     }
@@ -52,6 +113,7 @@ nav {
     @include card-block;
 
     margin: 0;
+    padding-bottom: 0;
 
     > :first-child {
       margin-top: 0;
@@ -61,6 +123,16 @@ nav {
       margin-bottom: 0;
     }
   }
+}
+
+.topic-map {
+  background-color: transparent;
+  border: 0;
+
+  .map-collapsed {
+    display: none;
+  }
+  margin: 0;
 }
 
 .topic-meta-data {

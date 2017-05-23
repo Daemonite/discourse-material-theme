@@ -639,13 +639,115 @@ nav.post-controls .actions {
   text-align: left;
 }
 nav.post-controls .actions button {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 0.6875rem 1rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.54);
   margin-right: 0.5rem;
   margin-left: 0;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
+nav.post-controls .actions button:focus, nav.post-controls .actions button:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.87);
+}
+nav.post-controls .actions button:focus {
+  outline: 0;
+}
+nav.post-controls .actions button:active {
+  background-color: rgba(153, 153, 153, 0.4);
+}
 nav.post-controls .actions button:last-child {
   margin-right: 0;
+}
+nav.post-controls .actions button.delete:focus, nav.post-controls .actions button.delete:hover, nav.post-controls .actions button.delete.d-hover {
+  color: $danger;
+}
+nav.post-controls .actions button.delete.d-hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+nav.post-controls .actions button.has-like {
+  color: $love;
+}
+nav.post-controls .actions button .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+nav.post-controls .actions button .fa-ellipsis-h::before {
+  content: 'more_horiz';
+}
+nav.post-controls .actions button .fa-flag::before {
+  content: 'flag';
+}
+nav.post-controls .actions button .fa-heart::before {
+  content: 'favorite';
+}
+nav.post-controls .actions button .fa-link::before {
+  content: 'link';
+}
+nav.post-controls .actions button .fa-pencil::before {
+  content: 'edit';
+}
+nav.post-controls .actions button .fa-reply::before {
+  content: 'reply';
+}
+nav.post-controls .actions button .fa-trash-o::before {
+  content: 'delete';
+}
+nav.post-controls .actions button .fa-wrench::before {
+  content: 'settings';
+}
+nav.post-controls .actions button .read-icon::before {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  content: 'bookmark';
 }
 
 .post-menu-area {
@@ -686,12 +788,22 @@ nav.post-controls .actions button:last-child {
 .topic-body .regular {
   padding: 1rem 1rem;
   margin: 0;
+  padding-bottom: 0;
 }
 .topic-body .regular > :first-child {
   margin-top: 0;
 }
 .topic-body .regular > :last-child {
   margin-bottom: 0;
+}
+
+.topic-map {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+}
+.topic-map .map-collapsed {
+  display: none;
 }
 
 .topic-meta-data {
