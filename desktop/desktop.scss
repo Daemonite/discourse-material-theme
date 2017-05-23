@@ -1,0 +1,12 @@
+@function brightness($color) {
+  @return ((red($color) * .299) + (green($color) * .587) + (blue($color) * .114));
+}
+
+@function dark-light-choose($light-theme-result, $dark-theme-result) {
+  @if brightness($primary) < brightness($secondary) {
+    @return $light-theme-result;
+  } @else {
+    @return $dark-theme-result;
+  }
+}
+

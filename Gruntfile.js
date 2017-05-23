@@ -8,6 +8,35 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    concat: {
+      options: {
+        banner: '@function brightness($color) {\n' +
+                '  @return ((red($color) * .299) + (green($color) * .587) + (blue($color) * .114));\n' +
+                '}\n' +
+                '\n' +
+                '@function dark-light-choose($light-theme-result, $dark-theme-result) {\n' +
+                '  @if brightness($primary) < brightness($secondary) {\n' +
+                '    @return $light-theme-result;\n' +
+                '  } @else {\n' +
+                '    @return $dark-theme-result;\n' +
+                '  }\n' +
+                '}\n' +
+                '\n'
+      },
+      common: {
+        dest: 'common/common.scss',
+        src: '<%= sass.common.dest %>'
+      },
+      desktop: {
+        dest: 'desktop/desktop.scss',
+        src: '<%= sass.desktop.dest %>'
+      },
+      mobile: {
+        dest: 'mobile/mobile.scss',
+        src: '<%= sass.mobile.dest %>'
+      }
+    },
+
     postcss: {
       options: {
         map: false,
@@ -81,6 +110,7 @@ module.exports = function(grunt) {
     'default',
     [
       'sass',
+      'concat',
       'postcss'
     ]
   )
