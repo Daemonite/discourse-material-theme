@@ -23,9 +23,11 @@ div {
   }
 
   img {
-    &:not(.thumbnail) {
-      height: auto;
-      max-width: 100%;
+    .topic-body .contents & {
+      &:not(.thumbnail) {
+        height: auto;
+        max-width: 100%;
+      }
     }
   }
 

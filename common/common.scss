@@ -306,7 +306,7 @@ div.poll {
 .cooked h6 {
   margin: 0 0 .5rem;
 }
-.cooked img:not(.thumbnail) {
+.topic-body .contents .cooked img:not(.thumbnail) {
   height: auto;
   max-width: 100%;
 }
