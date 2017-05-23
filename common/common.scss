@@ -292,6 +292,12 @@ div.poll {
   margin-bottom: 1rem;
 }
 
+.topic-body .contents .cooked {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 .cooked h1,
 .cooked h2,
 .cooked h3,
@@ -309,6 +315,12 @@ div.poll {
   display: block;
   margin-bottom: 1rem;
 }
+.topic-body .contents .cooked > iframe {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  max-width: none;
+  width: calc(100% + 2rem);
+}
 .cooked > p:empty {
   display: none;
 }
@@ -319,9 +331,38 @@ div.poll {
 .lazyYT-container {
   margin-bottom: 1rem;
 }
+.topic-body .contents .cooked .lazyYT-container {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-bottom: 56.25% !important;
+  width: calc(100% + 2rem) !important;
+}
+.topic-body .contents .cooked .lazyYT-container + .lazyYT-container {
+  border-top: 1px solid #ffffff;
+  margin-top: -1rem;
+}
 
 .lightbox-wrapper {
   margin-bottom: 1rem;
+}
+.topic-body .contents .cooked .lightbox-wrapper {
+  display: block;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+.topic-body .contents .cooked .lightbox-wrapper img {
+  max-height: none;
+  width: 100%;
+}
+.topic-body .contents .cooked .lightbox-wrapper .lightbox {
+  display: block;
+}
+.topic-body .contents .cooked .lightbox-wrapper + a {
+  display: block;
+  margin-top: -.5rem;
+}
+.topic-body .contents .cooked .lightbox-wrapper + a + p {
+  display: block;
 }
 
 aside.quote .title {

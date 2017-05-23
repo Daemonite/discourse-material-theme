@@ -6,6 +6,13 @@ div {
 }
 
 .cooked {
+  .topic-body .contents & {
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+    padding-right: $card-padding-x;
+    padding-left: $card-padding-x;
+  }
+
   h1,
   h2,
   h3,
@@ -15,7 +22,7 @@ div {
     margin: 0 0 .5rem;
   }
 
-  img{
+  img {
     &:not(.thumbnail) {
       height: auto;
       max-width: 100%;
@@ -26,6 +33,13 @@ div {
     border: 0;
     display: block;
     margin-bottom: 1rem;
+
+    .topic-body .contents & {
+      margin-right: ($card-padding-x * -1);
+      margin-left: ($card-padding-x * -1);
+      max-width: none;
+      width: calc(100% + #{$card-padding-x * 2});
+    }
   }
 
   > p:empty {
@@ -39,8 +53,44 @@ div {
 
 .lazyYT-container {
   margin-bottom: 1rem;
+
+  .topic-body .contents .cooked & {
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+    padding-bottom: 56.25% !important;
+    width: calc(100% + #{$card-padding-x * 2}) !important;
+
+    + .lazyYT-container {
+      border-top: 1px solid $card-bg;
+      margin-top: -1rem;
+    }
+  }
 }
 
 .lightbox-wrapper {
   margin-bottom: 1rem;
+
+  .topic-body .contents .cooked & {
+    display: block;
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+
+    img {
+      max-height: none;
+      width: 100%;
+    }
+
+    .lightbox {
+      display: block;
+    }
+
+    + a {
+      display: block;
+      margin-top: -.5rem;
+
+      + p {
+        display: block;
+      }
+    }
+  }
 }
