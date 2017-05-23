@@ -23,7 +23,49 @@ html {
 
 
 
-// Headings
+// Typography
+
+abbr {
+  &[data-original-title],
+  &[title] {
+    border-bottom: 0;
+    cursor: help;
+    text-decoration: underline dotted;
+  }
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+  margin-bottom: 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+dfn {
+  font-style: italic;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
 
 h1,
 h2,
@@ -59,4 +101,42 @@ h5 {
 
 h6 {
   @include typography-h6;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
 }
