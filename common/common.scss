@@ -7,7 +7,7 @@
 
 body {
   font-size: 0.875rem;
-  line-height: 1.428572;
+  line-height: 1.428571;
 }
 
 html {
@@ -22,6 +22,60 @@ html {
 
 .wrap {
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary;
+  font-family: inherit;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+h1 {
+  font-size: 2.8125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.066667;
+}
+
+h2 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.176471;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.333333;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.428571;
 }
 
 .badge-notification {
