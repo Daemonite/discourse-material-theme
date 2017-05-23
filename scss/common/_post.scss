@@ -180,7 +180,7 @@ nav {
 }
 
 #topic-title {
-  margin-bottom: $card-margin-y;
+  margin-bottom: ($card-margin-y * 2);
   padding-top: 0;
 
   a {
@@ -205,6 +205,7 @@ nav {
 
     font-family: $font-family-serif;
     font-weight: normal;
+    margin: 0 0 ($card-margin-y * 2);
     overflow: visible;
   }
 }
