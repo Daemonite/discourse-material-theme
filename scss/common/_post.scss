@@ -203,6 +203,8 @@ nav {
   h1 {
     @include typography-h1;
 
+    font-family: $font-family-serif;
+    font-weight: normal;
     overflow: visible;
   }
 }
