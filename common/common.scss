@@ -24,6 +24,45 @@ html {
   padding: 0;
 }
 
+abbr[data-original-title], abbr[title] {
+  border-bottom: 0;
+  cursor: help;
+  text-decoration: underline dotted;
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+  margin-bottom: 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+dfn {
+  font-style: italic;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
 h1,
 h2,
 h3,
@@ -76,6 +115,44 @@ h6 {
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.428571;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
 }
 
 .badge-notification {
@@ -904,6 +981,44 @@ nav.post-controls .actions button .read-icon::before {
   -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
+}
+
+#topic-title {
+  margin-bottom: 0.5rem;
+  padding-top: 0;
+}
+#topic-title a.edit-topic {
+  color: $tertiary;
+  font-size: 1.5rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+#topic-title a.edit-topic .fa-pencil {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+#topic-title a.edit-topic .fa-pencil::before {
+  content: 'edit';
+}
+#topic-title h1 {
+  font-size: 2.8125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.066667;
+  overflow: visible;
 }
 
 .topic-list {

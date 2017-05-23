@@ -178,3 +178,31 @@ nav {
     }
   }
 }
+
+#topic-title {
+  margin-bottom: $card-margin-y;
+  padding-top: 0;
+
+  a {
+    &.edit-topic {
+      color: unquote('$tertiary');
+      font-size: $material-icon-size;
+      line-height: 1;
+      vertical-align: middle;
+
+      .fa-pencil {
+        @include material-icons;
+
+        &::before {
+          content: 'edit';
+        }
+      }
+    }
+  }
+
+  h1 {
+    @include typography-h1;
+
+    overflow: visible;
+  }
+}
