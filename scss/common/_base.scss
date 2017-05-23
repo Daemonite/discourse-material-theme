@@ -46,7 +46,33 @@ strong {
 }
 
 blockquote {
+  @include typography-h5;
+
+  border-left: 0;
+  border-radius: $card-border-radius;
   margin: 0 0 1rem;
+  padding: $material-icon-size ($material-icon-size * 2);
+  position: relative;
+
+  &::after,
+  &::before {
+    @include material-icons;
+
+    color: unquote('dark-light-choose(scale-color($primary, $lightness: 70%), scale-color($secondary, $lightness: 30%))');
+    content: 'format_quote';
+    position: absolute;
+  }
+
+  &::after {
+    right: ($material-icon-size / 2);
+    bottom: ($material-icon-size / 2);
+  }
+
+  &::before {
+    top: ($material-icon-size / 2);
+    left: ($material-icon-size / 2);
+    transform: rotate(180deg);
+  }
 }
 
 dd {

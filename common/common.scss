@@ -54,7 +54,46 @@ strong {
 }
 
 blockquote {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  border-left: 0;
+  border-radius: 2px;
   margin: 0 0 1rem;
+  padding: 1.5rem 3rem;
+  position: relative;
+}
+blockquote::after, blockquote::before {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: dark-light-choose(scale-color($primary, $lightness: 70%), scale-color($secondary, $lightness: 30%));
+  content: 'format_quote';
+  position: absolute;
+}
+blockquote::after {
+  right: 0.75rem;
+  bottom: 0.75rem;
+}
+blockquote::before {
+  top: 0.75rem;
+  left: 0.75rem;
+  -webkit-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 dd {
