@@ -1,0 +1,18 @@
+aside {
+  &.quote {
+    .title {
+      border-left: 0;
+      border-radius: $card-border-radius $card-border-radius 0 0;
+      padding: $card-padding-y $card-padding-x 0;
+
+      .avatar {
+        margin-top: 0;
+        margin-right: $card-inner-spacer-x;
+      }
+
+      + blockquote {
+        border-radius: 0 0 $card-border-radius $card-border-radius;
+      }
+    }
+  }
+}

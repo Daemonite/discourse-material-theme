@@ -1,0 +1,46 @@
+div {
+  &.poll {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.cooked {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 .5rem;
+  }
+
+  img{
+    &:not(.thumbnail) {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  > iframe {
+    border: 0;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  > p:empty {
+    display: none;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.lazyYT-container {
+  margin-bottom: 1rem;
+}
+
+.lightbox-wrapper {
+  margin-bottom: 1rem;
+}

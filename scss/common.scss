@@ -7,6 +7,8 @@
 //
 // - Base
 // - Chip
+// - Cooked
+//   - Aside
 // - Header
 // - Menu panel
 // - Notification
@@ -16,6 +18,8 @@
 
 @import 'common/base';
 @import 'common/chip';
+@import 'common/cooked';
+@import 'common/cooked-aside';
 @import 'common/header';
 @import 'common/menu-panel';
 @import 'common/notification';

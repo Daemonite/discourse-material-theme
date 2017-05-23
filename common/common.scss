@@ -287,6 +287,56 @@ sup {
   content: 'lock_outline';
 }
 
+div.poll {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.cooked h1,
+.cooked h2,
+.cooked h3,
+.cooked h4,
+.cooked h5,
+.cooked h6 {
+  margin: 0 0 .5rem;
+}
+.cooked img:not(.thumbnail) {
+  height: auto;
+  max-width: 100%;
+}
+.cooked > iframe {
+  border: 0;
+  display: block;
+  margin-bottom: 1rem;
+}
+.cooked > p:empty {
+  display: none;
+}
+.cooked > :last-child {
+  margin-bottom: 0;
+}
+
+.lazyYT-container {
+  margin-bottom: 1rem;
+}
+
+.lightbox-wrapper {
+  margin-bottom: 1rem;
+}
+
+aside.quote .title {
+  border-left: 0;
+  border-radius: 2px 2px 0 0;
+  padding: 1rem 1rem 0;
+}
+aside.quote .title .avatar {
+  margin-top: 0;
+  margin-right: 0.5rem;
+}
+aside.quote .title + blockquote {
+  border-radius: 0 0 2px 2px;
+}
+
 .d-header {
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
