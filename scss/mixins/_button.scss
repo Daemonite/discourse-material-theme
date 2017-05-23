@@ -1,0 +1,37 @@
+// Flat button
+
+@mixin btn {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: $btn-border-radius;
+  box-shadow: none;
+  color: $btn-color;
+  display: inline-block;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: $btn-padding-y $btn-padding-x;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:focus,
+  &:hover {
+    background-color: $btn-bg-hover;
+    color: $btn-color;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    background-color: $btn-bg-active;
+  }
+}
