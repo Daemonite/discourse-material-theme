@@ -365,6 +365,18 @@ div.poll {
   display: block;
 }
 
+aside.onebox {
+  background-color: $secondary;
+  border: 0;
+  margin-right: -1rem;
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  padding: 1rem 1rem;
+}
+aside.onebox + .onebox {
+  border-top: 1px solid #ffffff;
+  margin-top: -1rem;
+}
 aside.quote blockquote {
   width: auto !important;
 }
