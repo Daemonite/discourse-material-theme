@@ -1173,7 +1173,7 @@ nav.post-controls .actions button .read-icon::before {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   padding: 0;
 }
 #topic-footer-buttons p {
@@ -1507,6 +1507,11 @@ nav.post-controls .actions button .read-icon::before {
   display: none;
 }
 
+#suggested-topics {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
 #suggested-topics h3 .badge-wrapper.bullet {
   line-height: 1;
   vertical-align: middle;

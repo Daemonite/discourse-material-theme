@@ -1,4 +1,8 @@
 #suggested-topics {
+  margin-top: $card-margin-y;
+  margin-bottom: $card-margin-y;
+  padding: 0;
+
   h3 {
     .badge-wrapper.bullet {
       line-height: 1;
