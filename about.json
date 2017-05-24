@@ -1,5 +1,19 @@
 {
   "about_url": "https://github.com/sesemaya/discourse-material-theme",
+  "color_schemes": {
+    "Material Light": {
+      "primary": "212121",
+      "secondary": "f5f5f5",
+      "tertiary": "2196f3",
+      "quaternary": "2196f3",
+      "header_background": "e0e0e0",
+      "header_primary": "212121",
+      "highlight": "ffeb3b",
+      "danger": "f44336",
+      "success": "4caf50",
+      "love": "e91e63"
+    }
+  },
   "license_url": "https://github.com/sesemaya/discourse-material-theme/blob/master/LICENSE",
   "name": "Material Design for Discourse"
 }
