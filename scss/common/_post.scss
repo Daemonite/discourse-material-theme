@@ -154,6 +154,30 @@ nav {
   }
 }
 
+#topic-footer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $card-margin-y;
+  margin-bottom: 0;
+  padding: 0;
+
+  p {
+    line-height: $btn-height;
+    margin-bottom: $card-margin-y;
+    vertical-align: middle;
+  }
+
+  .btn {
+    @include btn-raised;
+
+    margin: 0 $card-margin-x $card-margin-y 0;
+  }
+
+  > div {
+    width: 100%;
+  }
+}
+
 .topic-map {
   background-color: transparent;
   border: 0;
