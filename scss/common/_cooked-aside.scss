@@ -1,5 +1,30 @@
 aside {
   &.quote {
+    .quote-controls {
+      .back,
+      .quote-other-topic {
+        &::before {
+          @include material-icons;
+
+          content: 'arrow_upward';
+          margin-left: $card-inner-spacer-x;
+        }
+      }
+
+      .fa-chevron-down,
+      .fa-chevron-up {
+        @include material-icons;
+      }
+
+      .fa-chevron-down::before {
+        content: 'expand_more';
+      }
+
+      .fa-chevron-up::before {
+        content: 'expand_less';
+      }
+    }
+
     .title {
       border-left: 0;
       border-radius: $card-border-radius $card-border-radius 0 0;

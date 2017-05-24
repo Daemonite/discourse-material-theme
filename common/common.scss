@@ -365,6 +365,50 @@ div.poll {
   display: block;
 }
 
+aside.quote .quote-controls .back::before,
+aside.quote .quote-controls .quote-other-topic::before {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  content: 'arrow_upward';
+  margin-left: 0.5rem;
+}
+aside.quote .quote-controls .fa-chevron-down,
+aside.quote .quote-controls .fa-chevron-up {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+aside.quote .quote-controls .fa-chevron-down::before {
+  content: 'expand_more';
+}
+aside.quote .quote-controls .fa-chevron-up::before {
+  content: 'expand_less';
+}
 aside.quote .title {
   border-left: 0;
   border-radius: 2px 2px 0 0;
