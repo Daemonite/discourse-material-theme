@@ -232,6 +232,18 @@ nav {
   }
 }
 
+.topic-status-info {
+  border-top: 0;
+  height: auto;
+  margin-top: $card-margin-y;
+  margin-bottom: $card-margin-y;
+  padding: 0;
+
+  &:empty {
+    display: none;
+  }
+}
+
 #topic-title {
   margin-bottom: ($card-margin-y * 2);
   padding-top: 0;

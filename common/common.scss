@@ -1283,6 +1283,17 @@ nav.post-controls .actions button .read-icon::before {
           order: 0;
 }
 
+.topic-status-info {
+  border-top: 0;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+.topic-status-info:empty {
+  display: none;
+}
+
 #topic-title {
   margin-bottom: 1rem;
   padding-top: 0;
