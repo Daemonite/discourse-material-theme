@@ -97,18 +97,18 @@ $material-icon-size:        (24px / $font-size-root * 1rem) !default;
 
 // Button
 
-$btn-bg:               transparent !default;
-$btn-bg-active:        rgba(153, 153, 153, .4) !default;
-$btn-bg-hover:         rgba(0, 0, 0, .12) !default;
-$btn-border-radius:    2px !default;
-$btn-box-shadow:       $shadow-2dp !default;
-$btn-box-shadow-hover: $shadow-8dp !default;
-$btn-color:            rgba(0, 0, 0, .87) !default;
-$btn-height:           2.25rem !default;
-$btn-font-size:        .875rem !default;
-$btn-font-weight:      500 !default;
-$btn-padding-x:        1rem !default;
-$btn-padding-y:        (($btn-height - $btn-font-size) / 2) !default;
+$btn-bg:                transparent !default;
+$btn-bg-active:         rgba(153, 153, 153, .4) !default;
+$btn-bg-hover:          rgba(0, 0, 0, .12) !default;
+$btn-border-radius:     2px !default;
+$btn-box-shadow:        $shadow-2dp !default;
+$btn-box-shadow-active: $shadow-8dp !default;
+$btn-color:             rgba(0, 0, 0, .87) !default;
+$btn-height:            2.25rem !default;
+$btn-font-size:         .875rem !default;
+$btn-font-weight:       500 !default;
+$btn-padding-x:         1rem !default;
+$btn-padding-y:         (($btn-height - $btn-font-size) / 2) !default;
 
 
 

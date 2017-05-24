@@ -11,7 +11,7 @@ nav {
       text-align: left;
 
       button {
-        @include btn;
+        @include btn-flat;
 
         color: $card-btn-color;
         margin-right: $card-inner-spacer-x;

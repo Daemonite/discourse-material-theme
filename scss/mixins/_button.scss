@@ -1,6 +1,6 @@
 // Flat button
 
-@mixin btn {
+@mixin btn-flat {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -33,5 +33,20 @@
 
   &:active {
     background-color: $btn-bg-active;
+  }
+}
+
+
+
+// Raised button
+
+@mixin btn-raised {
+  @include btn-flat;
+
+  background-color: $btn-bg;
+  box-shadow: $btn-box-shadow;
+
+  &:active {
+    box-shadow: $btn-box-shadow-active;
   }
 }
