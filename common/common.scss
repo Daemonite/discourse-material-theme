@@ -1075,6 +1075,53 @@ nav.post-controls .actions button .read-icon::before {
   margin-bottom: 1rem;
 }
 
+.small-action {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.small-action .small-action-desc {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.428571;
+  margin-top: 0;
+  padding: 0 0 0 1rem;
+  text-transform: none;
+}
+.small-action .topic-avatar {
+  padding: 0;
+  position: static;
+  width: auto;
+}
+.small-action .topic-avatar .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  width: auto;
+}
+
 .topic-avatar {
   border: 0;
   padding: 0;

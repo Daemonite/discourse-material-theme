@@ -90,6 +90,35 @@ nav {
   margin-bottom: $card-inner-spacer-y;
 }
 
+.small-action {
+  align-items: center;
+  border-top: 0;
+  display: flex;
+  margin-top: $card-margin-y;
+  margin-bottom: $card-margin-y;
+  position: relative;
+
+  .small-action-desc {
+    @include typography-h6;
+
+    margin-top: 0;
+    padding: 0 0 0 $card-padding-x;
+    text-transform: none;
+  }
+
+  .topic-avatar {
+    padding: 0;
+    position: static;
+    width: auto;
+
+    .fa {
+      @include material-icons;
+
+      width: auto;
+    }
+  }
+}
+
 .topic-avatar {
   border: 0;
   padding: 0;
