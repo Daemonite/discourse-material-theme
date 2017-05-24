@@ -1224,6 +1224,48 @@ nav.post-controls .actions button .read-icon::before {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
+#topic-footer-buttons .btn .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  opacity: 1;
+}
+#topic-footer-buttons .btn .fa-bookmark::before {
+  content: 'bookmark';
+}
+#topic-footer-buttons .btn .fa-circle::before {
+  content: 'track_changes';
+}
+#topic-footer-buttons .btn .fa-flag::before {
+  content: 'flag';
+}
+#topic-footer-buttons .btn .fa-link::before {
+  content: 'link';
+}
+#topic-footer-buttons .btn .fa-reply::before {
+  content: 'reply';
+}
+#topic-footer-buttons .btn .fa-thumb-tack::before {
+  content: 'vertical_align_top';
+}
+#topic-footer-buttons .btn .fa-wrench::before {
+  content: 'settings';
+}
+#topic-footer-buttons .btn .fa-users::before {
+  content: 'group_add';
+}
 #topic-footer-buttons > div {
   width: 100%;
 }

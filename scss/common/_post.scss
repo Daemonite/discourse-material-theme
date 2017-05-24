@@ -171,6 +171,44 @@ nav {
     @include btn-raised;
 
     margin: 0 $card-margin-x $card-margin-y 0;
+
+    .fa {
+      @include material-icons;
+
+      opacity: 1;
+    }
+
+    .fa-bookmark::before {
+      content: 'bookmark';
+    }
+
+    .fa-circle::before {
+      content: 'track_changes';
+    }
+
+    .fa-flag::before {
+      content: 'flag';
+    }
+
+    .fa-link::before {
+      content: 'link';
+    }
+
+    .fa-reply::before {
+      content: 'reply';
+    }
+
+    .fa-thumb-tack::before {
+      content: 'vertical_align_top';
+    }
+
+    .fa-wrench::before {
+      content: 'settings';
+    }
+
+    .fa-users::before {
+      content: 'group_add';
+    }
   }
 
   > div {
