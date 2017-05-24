@@ -365,6 +365,9 @@ div.poll {
   display: block;
 }
 
+aside.quote blockquote {
+  width: auto !important;
+}
 aside.quote .quote-controls .back::before,
 aside.quote .quote-controls .quote-other-topic::before {
   font-family: 'Material Icons';

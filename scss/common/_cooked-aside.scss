@@ -1,5 +1,9 @@
 aside {
   &.quote {
+    blockquote {
+      width: auto !important;
+    }
+
     .quote-controls {
       .back,
       .quote-other-topic {
