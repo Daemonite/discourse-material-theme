@@ -17,7 +17,7 @@
   &:focus,
   &:hover {
     border-bottom-width: ($text-field-border-width * 2);
-    padding-bottom: ($text-field-padding-y - $text-field-border-width * 2 / $font-size-root * 1rem);
+    padding-bottom: ($text-field-padding-y - $text-field-border-width * 2);
   }
 
   &:focus {

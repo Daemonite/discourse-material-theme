@@ -37,7 +37,7 @@ abbr {
 address {
   font-style: normal;
   line-height: inherit;
-  margin-bottom: 1rem;
+  margin-bottom: $spacer;
 }
 
 b,
@@ -50,7 +50,7 @@ blockquote {
 
   border-left: 0;
   border-radius: $card-border-radius;
-  margin: 0 0 1rem;
+  margin: 0 0 $spacer;
   padding: $material-icon-size ($material-icon-size * 2);
   position: relative;
 
@@ -76,7 +76,7 @@ blockquote {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: $spacer-sm;
   margin-left: 0;
 }
 
@@ -86,7 +86,7 @@ dfn {
 
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: $spacer;
 }
 
 dt {
@@ -102,7 +102,7 @@ h6 {
   color: unquote('$primary');
   font-family: inherit;
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: $spacer-sm;
 }
 
 h1 {
@@ -132,7 +132,7 @@ h6 {
 ol,
 ul {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: $spacer;
 }
 
 ol ol,
@@ -144,7 +144,7 @@ ul ul {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: $spacer;
 }
 
 small {

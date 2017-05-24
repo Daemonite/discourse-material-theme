@@ -18,7 +18,7 @@
 }
 
 body {
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.428571;
 }
 
@@ -45,7 +45,7 @@ abbr[data-original-title], abbr[title] {
 address {
   font-style: normal;
   line-height: inherit;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 b,
@@ -54,14 +54,14 @@ strong {
 }
 
 blockquote {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5;
   border-left: 0;
   border-radius: 2px;
-  margin: 0 0 1rem;
-  padding: 1.5rem 3rem;
+  margin: 0 0 16px;
+  padding: 24px 48px;
   position: relative;
 }
 blockquote::after, blockquote::before {
@@ -85,19 +85,19 @@ blockquote::after, blockquote::before {
   position: absolute;
 }
 blockquote::after {
-  right: 0.75rem;
-  bottom: 0.75rem;
+  right: 12px;
+  bottom: 12px;
 }
 blockquote::before {
-  top: 0.75rem;
-  left: 0.75rem;
+  top: 12px;
+  left: 12px;
   -webkit-transform: rotate(180deg);
        -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 8px;
   margin-left: 0;
 }
 
@@ -107,7 +107,7 @@ dfn {
 
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 dt {
@@ -123,46 +123,46 @@ h6 {
   color: $primary;
   font-family: inherit;
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 8px;
 }
 
 h1 {
-  font-size: 2.8125rem;
+  font-size: 45px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.066667;
 }
 
 h2 {
-  font-size: 2.125rem;
+  font-size: 34px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.176471;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.333333;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.4;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5;
 }
 
 h6 {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.428571;
@@ -171,7 +171,7 @@ h6 {
 ol,
 ul {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 ol ol,
@@ -183,7 +183,7 @@ ul ul {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 small {
@@ -211,7 +211,7 @@ sup {
   border-radius: 1em;
   color: $primary;
   font-size: .857142857em;
-  padding: 0.25rem 0.375rem;
+  padding: 4px 6px;
 }
 .badge-notification:focus, .badge-notification:hover {
   color: $primary;
@@ -219,13 +219,13 @@ sup {
 
 .badge-wrapper {
   background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 1rem;
+  border-radius: 16px;
   color: inherit;
-  font-size: 0.8125rem;
-  font-weight: normal;
-  padding-right: 0.75rem;
+  padding-right: 12px;
 }
 .badge-wrapper, .badge-wrapper.bullet {
+  font-size: 13px;
+  font-weight: normal;
   line-height: 1;
 }
 .badge-wrapper[href]:focus, .badge-wrapper[href]:hover {
@@ -242,29 +242,29 @@ sup {
           align-items: center;
 }
 .badge-wrapper.bullet span.badge-category {
-  line-height: 2rem;
+  line-height: 32px;
 }
 .badge-wrapper.bullet span.badge-category-bg {
   border-radius: 50%;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  height: 2rem;
+  height: 32px;
   line-height: 1;
-  margin-right: 0.25rem;
-  width: 2rem;
+  margin-right: 4px;
+  width: 32px;
 }
 .badge-wrapper.bullet span.badge-category-parent-bg {
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 16px 0 0 16px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  height: 2rem;
-  width: 1rem;
+  height: 32px;
+  width: 16px;
 }
 .badge-wrapper.bullet span.badge-category-parent-bg + .badge-category-bg {
-  border-radius: 0 1rem 1rem 0;
-  width: 1rem;
+  border-radius: 0 16px 16px 0;
+  width: 16px;
 }
 .badge-wrapper .fa-lock {
   font-family: 'Material Icons';
@@ -289,14 +289,14 @@ sup {
 
 div.poll {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .topic-body .contents .cooked {
-  margin-right: -1rem;
-  margin-left: -1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  margin-right: -16px;
+  margin-left: -16px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 .cooked h1,
 .cooked h2,
@@ -304,7 +304,7 @@ div.poll {
 .cooked h4,
 .cooked h5,
 .cooked h6 {
-  margin: 0 0 .5rem;
+  margin: 0 0 8px;
 }
 .topic-body .contents .cooked img:not(.thumbnail) {
   height: auto;
@@ -313,13 +313,13 @@ div.poll {
 .cooked > iframe {
   border: 0;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .topic-body .contents .cooked > iframe {
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-right: -16px;
+  margin-left: -16px;
   max-width: none;
-  width: calc(100% + 2rem);
+  width: calc(100% + 32px);
 }
 .cooked > p:empty {
   display: none;
@@ -329,26 +329,26 @@ div.poll {
 }
 
 .lazyYT-container {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .topic-body .contents .cooked .lazyYT-container {
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-right: -16px;
+  margin-left: -16px;
   padding-bottom: 56.25% !important;
-  width: calc(100% + 2rem) !important;
+  width: calc(100% + 32px) !important;
 }
 .topic-body .contents .cooked .lazyYT-container + .lazyYT-container {
   border-top: 1px solid #ffffff;
-  margin-top: -1rem;
+  margin-top: -16px;
 }
 
 .lightbox-wrapper {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .topic-body .contents .cooked .lightbox-wrapper {
   display: block;
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 .topic-body .contents .cooked .lightbox-wrapper img {
   max-height: none;
@@ -359,7 +359,7 @@ div.poll {
 }
 .topic-body .contents .cooked .lightbox-wrapper + a {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -8px;
 }
 .topic-body .contents .cooked .lightbox-wrapper + a + p {
   display: block;
@@ -368,14 +368,14 @@ div.poll {
 aside.onebox {
   background-color: $secondary;
   border: 0;
-  margin-right: -1rem;
-  margin-bottom: 1rem;
-  margin-left: -1rem;
-  padding: 1rem 1rem;
+  margin-right: -16px;
+  margin-bottom: 16px;
+  margin-left: -16px;
+  padding: 16px 16px;
 }
 aside.onebox + .onebox {
   border-top: 1px solid #ffffff;
-  margin-top: -1rem;
+  margin-top: -16px;
 }
 aside.quote blockquote {
   width: auto !important;
@@ -398,7 +398,7 @@ aside.quote .quote-controls .quote-other-topic::before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   content: 'arrow_upward';
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 aside.quote .quote-controls .fa-chevron-down,
 aside.quote .quote-controls .fa-chevron-up {
@@ -427,11 +427,11 @@ aside.quote .quote-controls .fa-chevron-up::before {
 aside.quote .title {
   border-left: 0;
   border-radius: 2px 2px 0 0;
-  padding: 1rem 1rem 0;
+  padding: 16px 16px 0;
 }
 aside.quote .title .avatar {
   margin-top: 0;
-  margin-right: 0.5rem;
+  margin-right: 8px;
 }
 aside.quote .title + blockquote {
   border-radius: 0 0 2px 2px;
@@ -443,8 +443,8 @@ aside.quote .title + blockquote {
   color: $header-primary;
   height: auto;
   margin: 0;
-  min-height: 3.5rem;
-  padding: 0.5rem 0;
+  min-height: 56px;
+  padding: 8px 0;
 }
 .d-header button.login-button {
   -webkit-box-align: center;
@@ -460,15 +460,15 @@ aside.quote .title + blockquote {
   display: -ms-flexbox;
   display: flex;
   font-size: inherit;
-  height: 2.5rem;
+  height: 40px;
   line-height: inherit;
   margin-top: 0;
-  margin-left: 0.5rem;
+  margin-left: 8px;
   overflow: hidden;
-  padding: 0 0.5rem;
+  padding: 0 8px;
   position: relative;
   white-space: nowrap;
-  width: 2.5rem;
+  width: 40px;
 }
 .d-header button.login-button:focus, .d-header button.login-button:hover {
   background-color: rgba(0, 0, 0, 0.12);
@@ -515,13 +515,13 @@ aside.quote .title + blockquote {
   margin: 0;
 }
 .d-header .extra-info-wrapper {
-  margin-left: 0.5rem;
+  margin-left: 8px;
   overflow: visible;
 }
 .d-header .extra-info-wrapper .badge-wrapper.bullet {
   margin-top: 0;
   margin-right: 0;
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 .d-header .icons {
   -webkit-box-align: center;
@@ -571,14 +571,14 @@ aside.quote .title + blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 2.5rem;
+  height: 40px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 0.5rem;
+  margin-left: 8px;
   padding: 0;
-  width: 2.5rem;
+  width: 40px;
 }
 .d-header .icons .icon:focus, .d-header .icons .icon:hover {
   background-color: rgba(0, 0, 0, 0.12);
@@ -601,7 +601,7 @@ aside.quote .title + blockquote {
           order: 1;
 }
 .d-header #site-logo {
-  max-height: 1.5rem;
+  max-height: 24px;
 }
 .d-header .title a {
   -webkit-box-align: center;
@@ -625,7 +625,7 @@ aside.quote .title + blockquote {
 }
 
 #main-outlet {
-  padding-top: 4.5rem;
+  padding-top: 72px;
 }
 
 div.logout-link a.logout .fa {
@@ -653,7 +653,7 @@ div.menu-links-header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 div.menu-links-header a {
   color: inherit;
@@ -709,7 +709,7 @@ div.menu-links-header .fa-gear::before {
   content: 'settings';
 }
 div.menu-links-header .fa-user {
-  margin-right: 0.5rem;
+  margin-right: 8px;
 }
 div.menu-links-header .fa-user::before {
   content: 'person';
@@ -733,10 +733,10 @@ div.menu-links-header .menu-links-row {
           box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
   color: $primary;
   outline: 0;
-  padding: 1.25rem 1.5rem;
+  padding: 20px 24px;
 }
 .menu-panel hr {
-  margin: 0.5rem 0;
+  margin: 8px 0;
 }
 .menu-panel ul.columned {
   display: -webkit-box;
@@ -756,7 +756,7 @@ div.menu-links-header .menu-links-row {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.5rem 0.5rem;
+  padding: 8px 8px;
 }
 .menu-panel ul.menu-links li a:focus, .menu-panel ul.menu-links li a:hover {
   background-color: rgba(0, 0, 0, 0.04);
@@ -765,18 +765,18 @@ div.menu-links-header .menu-links-row {
   outline: 0;
 }
 .menu-panel ul.menu-links li a .badge-notification {
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 .menu-panel ul.menu-links li a .fa {
-  margin-right: 0.5rem;
+  margin-right: 8px;
 }
 .menu-panel ul li.category-link {
   margin: 0;
-  padding: 0.25rem 0.5rem;
+  padding: 4px 8px;
   width: 50%;
 }
 .menu-panel ul li.heading a {
-  padding: 0.5rem 0.5rem;
+  padding: 8px 8px;
 }
 .menu-panel ul li.heading a:focus, .menu-panel ul li.heading a:hover {
   background-color: rgba(0, 0, 0, 0.04);
@@ -797,17 +797,17 @@ div.menu-links-header .menu-links-row {
           box-shadow: none;
   color: inherit;
   display: block;
-  font-size: 1rem;
-  height: 2.25rem;
-  line-height: 1.25rem;
-  padding: 0.5rem 0;
+  font-size: 16px;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 0;
   width: 100%;
   margin: 0;
   width: 100%;
 }
 .search-menu input[type='text']:focus, .search-menu input[type='text']:hover {
   border-bottom-width: 2px;
-  padding-bottom: 0.375rem;
+  padding-bottom: 6px;
 }
 .search-menu input[type='text']:focus {
   border-color: $tertiary;
@@ -822,7 +822,7 @@ div.menu-links-header .menu-links-row {
   background-color: rgba(0, 0, 0, 0.04);
 }
 .search-menu li:not(.category):not(.heading) a {
-  padding: 0.5rem 0.5rem;
+  padding: 8px 8px;
 }
 .search-menu li:not(.category):not(.heading) a:focus, .search-menu li:not(.category):not(.heading) a:hover {
   background-color: rgba(0, 0, 0, 0.04);
@@ -839,33 +839,33 @@ div.menu-links-header .menu-links-row {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0.25rem;
+  margin-bottom: 4px;
 }
 .search-menu .no-results {
   color: $danger;
-  margin-top: 0.5rem;
+  margin-top: 8px;
   padding: 0;
 }
 .search-menu .no-results:empty {
   display: none;
 }
 .search-menu .results {
-  margin-top: 0.5rem;
+  margin-top: 8px;
 }
 .search-menu .search-context {
-  margin-top: 0.5rem;
+  margin-top: 8px;
   padding: 0;
 }
 .drop-down-visible .search-menu .searching {
-  top: 2.375rem;
-  right: 1.5rem;
+  top: 38px;
+  right: 24px;
 }
 .search-menu .searching .spinner {
   border-color: currentColor;
   border-right-color: transparent;
-  height: 1rem;
-  margin-top: -0.5rem;
-  width: 1rem;
+  height: 16px;
+  margin-top: -8px;
+  width: 16px;
 }
 
 .user-menu .notifications li {
@@ -876,7 +876,7 @@ div.menu-links-header .menu-links-row {
 }
 .user-menu .notifications li a {
   display: block;
-  padding: 0.5rem 0.5rem;
+  padding: 8px 8px;
 }
 .user-menu .notifications li a:focus, .user-menu .notifications li a:hover {
   background-color: rgba(0, 0, 0, 0.04);
@@ -895,7 +895,7 @@ div.menu-links-header .menu-links-row {
   display: flex;
 }
 .user-menu .notifications li i {
-  margin-right: 0.5rem;
+  margin-right: 8px;
   padding-top: 0;
 }
 .user-menu .notifications li p {
@@ -942,8 +942,8 @@ div.menu-links-header .menu-links-row {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   padding: 0;
-  padding: 1rem 1rem;
-  margin-bottom: 0.5rem;
+  padding: 16px 16px;
+  margin-bottom: 8px;
 }
 .alert[href]:focus, .alert[href]:hover, .alert[tabindex]:focus, .alert[tabindex]:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
@@ -964,10 +964,10 @@ nav.post-controls .actions {
   display: -ms-flexbox;
   display: flex;
   float: none;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-right: -8px;
+  margin-left: -8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-align: left;
 }
 nav.post-controls .actions button {
@@ -979,12 +979,12 @@ nav.post-controls .actions button {
           box-shadow: none;
   color: rgba(0, 0, 0, 0.87);
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1;
   margin: 0;
   max-width: 100%;
-  padding: 0.6875rem 1rem;
+  padding: 11px 16px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -995,10 +995,10 @@ nav.post-controls .actions button {
   vertical-align: middle;
   white-space: nowrap;
   color: rgba(0, 0, 0, 0.54);
-  margin-right: 0.5rem;
+  margin-right: 8px;
   margin-left: 0;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 nav.post-controls .actions button:focus, nav.post-controls .actions button:hover {
   background-color: rgba(0, 0, 0, 0.12);
@@ -1083,8 +1083,8 @@ nav.post-controls .actions button .read-icon::before {
 }
 
 .post-menu-area {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .small-action {
@@ -1097,17 +1097,17 @@ nav.post-controls .actions button .read-icon::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
   position: relative;
 }
 .small-action .small-action-desc {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.428571;
   margin-top: 0;
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 16px;
   text-transform: none;
 }
 .small-action .topic-avatar {
@@ -1138,13 +1138,13 @@ nav.post-controls .actions button .read-icon::before {
   border: 0;
   padding: 0;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 2.25rem;
+  top: 16px;
+  left: 16px;
+  width: 36px;
 }
 .topic-avatar .avatar {
-  height: 2.25rem;
-  width: 2.25rem;
+  height: 36px;
+  width: 36px;
 }
 
 .topic-body {
@@ -1154,7 +1154,7 @@ nav.post-controls .actions button .read-icon::before {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   padding: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 .topic-body[href]:focus, .topic-body[href]:hover, .topic-body[tabindex]:focus, .topic-body[tabindex]:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
@@ -1165,7 +1165,7 @@ nav.post-controls .actions button .read-icon::before {
   outline: 0;
 }
 .topic-body .regular {
-  padding: 1rem 1rem;
+  padding: 16px 16px;
   margin: 0;
   padding-bottom: 0;
 }
@@ -1184,13 +1184,13 @@ nav.post-controls .actions button .read-icon::before {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-top: 0.5rem;
+  margin-top: 8px;
   margin-bottom: 0;
   padding: 0;
 }
 #topic-footer-buttons p {
-  line-height: 2.25rem;
-  margin-bottom: 0.5rem;
+  line-height: 36px;
+  margin-bottom: 8px;
   vertical-align: middle;
 }
 #topic-footer-buttons .btn {
@@ -1202,12 +1202,12 @@ nav.post-controls .actions button .read-icon::before {
           box-shadow: none;
   color: rgba(0, 0, 0, 0.87);
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1;
   margin: 0;
   max-width: 100%;
-  padding: 0.6875rem 1rem;
+  padding: 11px 16px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -1220,7 +1220,7 @@ nav.post-controls .actions button .read-icon::before {
   background-color: transparent;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0 8px 8px 0;
 }
 #topic-footer-buttons .btn:focus, #topic-footer-buttons .btn:hover {
   background-color: rgba(0, 0, 0, 0.12);
@@ -1292,7 +1292,7 @@ nav.post-controls .actions button .read-icon::before {
 }
 
 .topic-meta-data {
-  padding: 1rem 1rem;
+  padding: 16px 16px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1301,9 +1301,9 @@ nav.post-controls .actions button .read-icon::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 3.25rem;
+  min-height: 52px;
   padding-bottom: 0;
-  padding-left: 4.25rem;
+  padding-left: 68px;
 }
 .topic-meta-data .names {
   float: none;
@@ -1313,7 +1313,7 @@ nav.post-controls .actions button .read-icon::before {
   display: block;
   font-size: inherit;
   max-width: none;
-  padding-right: 0.5rem;
+  padding-right: 8px;
 }
 .topic-meta-data .names span a, .topic-meta-data .names span a:focus, .topic-meta-data .names span a:hover {
   color: $primary;
@@ -1323,7 +1323,7 @@ nav.post-controls .actions button .read-icon::before {
   float: none;
   font-size: inherit;
   margin-top: 0;
-  margin-left: 0.5rem;
+  margin-left: 8px;
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;
@@ -1340,8 +1340,8 @@ nav.post-controls .actions button .read-icon::before {
 .topic-status-info {
   border-top: 0;
   height: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
   padding: 0;
 }
 .topic-status-info:empty {
@@ -1349,12 +1349,12 @@ nav.post-controls .actions button .read-icon::before {
 }
 
 #topic-title {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   padding-top: 0;
 }
 #topic-title a.edit-topic {
   color: $tertiary;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1;
   vertical-align: middle;
 }
@@ -1379,13 +1379,13 @@ nav.post-controls .actions button .read-icon::before {
   content: 'edit';
 }
 #topic-title h1 {
-  font-size: 2.8125rem;
+  font-size: 45px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.066667;
   font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
-  margin: 0 0 1rem;
+  margin: 0 0 16px;
   overflow: visible;
 }
 
@@ -1394,26 +1394,26 @@ nav.post-controls .actions button .read-icon::before {
   border: 0;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   max-width: 100%;
   width: 100%;
 }
 .topic-list tbody td,
 .topic-list tbody th {
   color: rgba(0, 0, 0, 0.87);
-  font-size: 0.8125rem;
-  height: 3rem;
-  padding: 0.75rem 0.75rem;
+  font-size: 13px;
+  height: 48px;
+  padding: 12px 12px;
   vertical-align: middle;
   line-height: inherit;
 }
 .topic-list tbody td:first-of-type,
 .topic-list tbody th:first-of-type {
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 .topic-list tbody td:last-of-type,
 .topic-list tbody th:last-of-type {
-  padding-right: 1.5rem;
+  padding-right: 24px;
 }
 .topic-list > tbody > tr {
   border-bottom: 1px solid #e1e1e1;
@@ -1436,7 +1436,7 @@ nav.post-controls .actions button .read-icon::before {
 }
 .topic-list td.category,
 .topic-list th.category {
-  height: 3.5rem;
+  height: 56px;
 }
 .topic-list td.num,
 .topic-list th.num {
@@ -1445,7 +1445,7 @@ nav.post-controls .actions button .read-icon::before {
 .topic-list td.num.activity a, .topic-list td.num.posts a,
 .topic-list th.num.activity a,
 .topic-list th.num.posts a {
-  padding: 0.75rem 0;
+  padding: 12px 0;
 }
 .topic-list td.main-link {
   width: 100%;
@@ -1473,19 +1473,19 @@ nav.post-controls .actions button .read-icon::before {
 .topic-list thead td,
 .topic-list thead th {
   color: rgba(0, 0, 0, 0.54);
-  font-size: 0.75rem;
-  height: 3.5rem;
-  padding: 0.75rem 0.75rem;
+  font-size: 12px;
+  height: 56px;
+  padding: 12px 12px;
   vertical-align: middle;
   line-height: inherit;
 }
 .topic-list thead td:first-of-type,
 .topic-list thead th:first-of-type {
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 .topic-list thead td:last-of-type,
 .topic-list thead th:last-of-type {
-  padding-right: 1.5rem;
+  padding-right: 24px;
 }
 .topic-list thead th {
   font-weight: bold;
@@ -1495,9 +1495,9 @@ nav.post-controls .actions button .read-icon::before {
   border-bottom: 1px solid #e1e1e1;
 }
 .topic-list .avatar {
-  height: 1.5rem;
+  height: 24px;
   vertical-align: middle;
-  width: 1.5rem;
+  width: 24px;
 }
 .topic-list .badge-wrapper {
   vertical-align: middle;
@@ -1507,8 +1507,8 @@ nav.post-controls .actions button .read-icon::before {
 }
 .topic-list .main-link a.title {
   font-weight: bold;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .topic-list .main-link a.title.visited:not(.badge-notification) {
   color: rgba(0, 0, 0, 0.87);
@@ -1516,7 +1516,7 @@ nav.post-controls .actions button .read-icon::before {
 }
 .topic-list .posters > a {
   float: none;
-  margin-right: 0.75rem;
+  margin-right: 12px;
 }
 .topic-list .sortable:focus, .topic-list .sortable:hover {
   background-color: #eeeeee;
@@ -1555,15 +1555,15 @@ nav.post-controls .actions button .read-icon::before {
   background-color: #ffffff;
   color: $tertiary;
   font-size: inherit;
-  padding: 0 0.375rem;
+  padding: 0 6px;
 }
 .topic-list .topic-status {
   display: none;
 }
 
 #suggested-topics {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
   padding: 0;
 }
 #suggested-topics h3 .badge-wrapper.bullet {
@@ -1572,7 +1572,7 @@ nav.post-controls .actions button .read-icon::before {
 }
 #suggested-topics h3 .badge-wrapper.bullet span.badge-category {
   display: inline-block;
-  line-height: 2rem;
+  line-height: 32px;
 }
 #suggested-topics h3 .badge-wrapper.bullet span.badge-category-bg, #suggested-topics h3 .badge-wrapper.bullet span.badge-category-parent-bg {
   line-height: 1;
@@ -1589,9 +1589,9 @@ nav.post-controls .actions button .read-icon::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 3.5rem;
+  height: 56px;
   margin: 0;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
 }
 #suggested-topics table {
   margin-top: 0;
@@ -1605,9 +1605,9 @@ nav.post-controls .actions button .read-icon::before {
   background-color: #ffffff;
   content: '';
   display: block;
-  height: 0.75rem;
+  height: 12px;
   position: absolute;
-  top: -0.75rem;
+  top: -12px;
   right: 0;
   left: 0;
 }

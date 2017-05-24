@@ -15,12 +15,12 @@
   background-color: $chip-bg;
   border-radius: ($chip-height / 2);
   color: inherit;
-  font-size: $chip-font-size;
-  font-weight: normal;
   padding-right: $chip-padding-x;
 
   &,
   &.bullet {
+    font-size: $chip-font-size;
+    font-weight: normal;
     line-height: 1;
   }
 
