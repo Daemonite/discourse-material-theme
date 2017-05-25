@@ -1677,9 +1677,9 @@ nav.post-controls .actions button .read-icon::before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 56px;
   margin: 0;
-  padding: 12px 24px;
+  min-height: 56px;
+  padding: 16px 24px;
 }
 #suggested-topics table {
   margin-top: 0;

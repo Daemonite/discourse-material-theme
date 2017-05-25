@@ -27,9 +27,9 @@
     background-color: color-chooser($table-bg-dark, $table-bg-light);
     box-shadow: $table-box-shadow;
     display: flex;
-    height: $thead-cell-height;
     margin: 0;
-    padding: $thead-cell-padding-y ($thead-cell-padding-x * 2);
+    min-height: $thead-cell-height;
+    padding: $card-padding-y ($thead-cell-padding-x * 2);
   }
 
   table {
