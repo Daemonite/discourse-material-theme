@@ -24,19 +24,29 @@ nav {
         }
 
         &.delete {
-          &:focus,
-          &:hover,
-          &.d-hover {
+          @include focus-hover {
             color: unquote('$danger');
           }
 
           &.d-hover {
-            background-color: $btn-bg-hover;
+            background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+            color: unquote('$danger');
           }
         }
 
         &.has-like {
           color: unquote('$love');
+        }
+
+        &.like {
+          @include focus-hover {
+            color: unquote('$love');
+          }
+
+          &.d-hover {
+            background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+            color: unquote('$love');
+          }
         }
 
         .fa {

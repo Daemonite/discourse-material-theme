@@ -978,7 +978,7 @@ nav.post-controls .actions button {
   border-radius: 2px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: $primary;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -1001,26 +1001,50 @@ nav.post-controls .actions button {
   padding-right: 8px;
   padding-left: 8px;
 }
-nav.post-controls .actions button:focus, nav.post-controls .actions button:hover {
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.87);
+nav.post-controls .actions button:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  nav.post-controls .actions button:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+nav.post-controls .actions button:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 nav.post-controls .actions button:focus {
   outline: 0;
 }
-nav.post-controls .actions button:active {
-  background-color: rgba(153, 153, 153, 0.4);
-}
 nav.post-controls .actions button:last-child {
   margin-right: 0;
 }
-nav.post-controls .actions button.delete:focus, nav.post-controls .actions button.delete:hover, nav.post-controls .actions button.delete.d-hover {
+nav.post-controls .actions button.delete:focus {
   color: $danger;
 }
+@media (hover: hover) {
+  nav.post-controls .actions button.delete:hover {
+    color: $danger;
+  }
+}
 nav.post-controls .actions button.delete.d-hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $danger;
 }
 nav.post-controls .actions button.has-like {
+  color: $love;
+}
+nav.post-controls .actions button.like:focus {
+  color: $love;
+}
+@media (hover: hover) {
+  nav.post-controls .actions button.like:hover {
+    color: $love;
+  }
+}
+nav.post-controls .actions button.like.d-hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $love;
 }
 nav.post-controls .actions button .fa {
@@ -1201,7 +1225,7 @@ nav.post-controls .actions button .read-icon::before {
   border-radius: 2px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: $primary;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -1218,24 +1242,58 @@ nav.post-controls .actions button .read-icon::before {
           user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: color-chooser($tertiary, #ffffff);
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   margin: 0 8px 8px 0;
 }
-#topic-footer-buttons .btn:focus, #topic-footer-buttons .btn:hover {
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.87);
+#topic-footer-buttons .btn:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  #topic-footer-buttons .btn:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+#topic-footer-buttons .btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 #topic-footer-buttons .btn:focus {
   outline: 0;
 }
-#topic-footer-buttons .btn:active {
-  background-color: rgba(153, 153, 153, 0.4);
+#topic-footer-buttons .btn:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+}
+#topic-footer-buttons .btn:focus::before {
+  opacity: 1;
+}
+@media (hover: hover) {
+  #topic-footer-buttons .btn:hover {
+    background-color: color-chooser($tertiary, #ffffff);
+  }
+  #topic-footer-buttons .btn:hover::before {
+    opacity: 1;
+  }
 }
 #topic-footer-buttons .btn:active {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+#topic-footer-buttons .btn:active::before {
+  opacity: 1;
+}
+#topic-footer-buttons .btn::before {
+  background-color: rgba(0, 0, 0, 0.12);
+  content: '';
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 #topic-footer-buttons .btn .fa {
   font-family: 'Material Icons';

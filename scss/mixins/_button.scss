@@ -21,18 +21,17 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  &:focus,
-  &:hover {
-    background-color: $btn-bg-hover;
+  @include focus-hover {
+    background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
     color: $btn-color;
+  }
+
+  &:active {
+    background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
   }
 
   &:focus {
     outline: 0;
-  }
-
-  &:active {
-    background-color: $btn-bg-active;
   }
 }
 
@@ -43,10 +42,34 @@
 @mixin btn-raised {
   @include btn-flat;
 
-  background-color: $btn-bg;
+  background-color: color-chooser($btn-bg-dark, $btn-bg-light);
   box-shadow: $btn-box-shadow;
+
+  @include focus-hover {
+    background-color: color-chooser($btn-bg-dark, $btn-bg-light);
+
+    &::before {
+      opacity: 1;
+    }
+  }
 
   &:active {
     box-shadow: $btn-box-shadow-active;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    background-color: $btn-bg-overlay;
+    content: '';
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }

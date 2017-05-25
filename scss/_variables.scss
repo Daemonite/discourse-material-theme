@@ -116,13 +116,17 @@ $material-icon-size:        24px !default;
 
 // Button
 
-$btn-bg:                transparent !default;
-$btn-bg-active:         rgba(153, 153, 153, .4) !default;
-$btn-bg-hover:          rgba(0, 0, 0, .12) !default;
+$btn-bg-dark:           unquote('$tertiary') !default;
+$btn-bg-light:          #ffffff !default;
+$btn-bg-active-dark:    rgba(204, 204, 204, .25) !default;
+$btn-bg-active-light:   rgba(153, 153, 153, .4) !default;
+$btn-bg-hover-dark:     rgba(204, 204, 204, .125) !default;
+$btn-bg-hover-light:    rgba(153, 153, 153, .2) !default;
+$btn-bg-overlay:        rgba(0, 0, 0, .12) !default;
 $btn-border-radius:     2px !default;
 $btn-box-shadow:        $shadow-2dp !default;
 $btn-box-shadow-active: $shadow-8dp !default;
-$btn-color:             rgba(0, 0, 0, .87) !default;
+$btn-color:             unquote('$primary') !default;
 $btn-height:            36px !default;
 $btn-font-size:         14px !default;
 $btn-font-weight:       500 !default;
