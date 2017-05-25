@@ -196,6 +196,10 @@ nav {
 
   .dropdown-menu {
     @include dropdown-menu-sm;
+
+    a {
+      @include dropdown-link-sm;
+    }
   }
 
   .fa {
