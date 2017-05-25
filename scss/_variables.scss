@@ -21,6 +21,7 @@
 // - Card
 // - Chip
 // - Code
+// - Dropdown
 // - Header
 // - Menu panel
 // - Table
@@ -227,6 +228,32 @@ $kbd-bg:         #333333 !default;
 $kbd-color:      #ffffff !default;
 
 $pre-padding:    $card-padding-y $card-padding-x !default;
+
+
+
+// Dropdown
+
+$dropdown-bg-dark:             $dark-4 !default;
+$dropdown-bg-light:            $light-4 !default;
+$dropdown-box-shadow:          $shadow-8dp !default;
+$dropdown-font-size:           16px !default;
+$dropdown-font-size-sm:        13px !default;
+$dropdown-inner-spacer-x:      16px !default;
+$dropdown-line-height:         1.5 !default;
+$dropdown-line-height-sm:      1.5 !default;
+$dropdown-link-bg-hover-dark:  $white-divider !default;
+$dropdown-link-bg-hover-light: $black-divider !default;
+$dropdown-link-height:         48px !default;
+$dropdown-link-height-sm:      32px !default;
+$dropdown-link-padding-x:      $spacer !default;
+$dropdown-link-padding-x-sm:   $spacer-lg !default;
+$dropdown-link-padding-y:      12px !default;
+$dropdown-link-padding-y-sm:   6.25px !default;
+$dropdown-link-padding-y-sm:   $spacer-lg !default;
+$dropdown-padding-x:           0 !default;
+$dropdown-padding-x-sm:        0 !default;
+$dropdown-padding-y:           $spacer-sm !default;
+$dropdown-padding-y-sm:        $spacer !default;
 
 
 

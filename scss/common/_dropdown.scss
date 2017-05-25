@@ -1,0 +1,21 @@
+.dropdown-menu {
+  @include dropdown-menu;
+
+  a {
+    display: flex;
+
+    > div {
+      margin-left: $dropdown-inner-spacer-x;
+    }
+  }
+
+  span {
+    color: color-chooser($white-secondary, $black-secondary);
+    font-size: inherit;
+  }
+
+  .icon {
+    font-size: inherit;
+    margin-top: .1875em;
+  }
+}

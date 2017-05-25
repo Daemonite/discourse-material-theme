@@ -182,6 +182,10 @@ nav {
     margin: 0 $card-margin-x $card-margin-y 0;
   }
 
+  .dropdown-menu {
+    @include dropdown-menu-sm;
+  }
+
   .fa {
     @include material-icons;
 
