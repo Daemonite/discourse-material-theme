@@ -103,6 +103,10 @@ nav {
   margin-bottom: $card-inner-spacer-y;
 }
 
+.posts-wrapper {
+  margin-bottom: ($spacer-lg - $card-margin-y);
+}
+
 .small-action {
   align-items: center;
   border-top: 0;
@@ -170,8 +174,7 @@ nav {
 #topic-footer-buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-top: $card-margin-y;
-  margin-bottom: 0;
+  margin-bottom: ($spacer-lg - $card-margin-y);
   padding: 0;
 
   div > button,
