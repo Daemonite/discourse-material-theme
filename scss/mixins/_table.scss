@@ -1,5 +1,5 @@
 @mixin table {
-  background-color: $table-bg;
+  background-color: color-chooser($table-bg-dark, $table-bg-light);
   border: 0;
   box-shadow: $table-box-shadow;
   margin-bottom: $table-margin-y;
@@ -8,7 +8,7 @@
 }
 
 @mixin table-row {
-  border-bottom: $table-border-width solid $table-border-color;
+  border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
 }
 
 @mixin tbody-cell {
@@ -20,7 +20,7 @@
 }
 
 @mixin thead-cell {
-  color: $thead-color;
+  color: color-chooser($thead-color-dark, $thead-color-light);
   font-size: $thead-font-size;
   height: $thead-cell-height;
   padding: $thead-cell-padding-y $thead-cell-padding-x;

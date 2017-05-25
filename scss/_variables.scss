@@ -226,26 +226,29 @@ $menu-panel-padding-y:          20px !default;
 
 // Table
 
-$table-bg:             #ffffff !default;
-$table-bg-active:      #f5f5f5 !default;
-$table-bg-hover:       #eeeeee !default;
-$table-border-width:   1px !default;
-$table-border-color:   #e1e1e1 !default;
-$table-box-shadow:     $shadow-2dp !default;
-$table-margin-x:       auto !default;
-$table-margin-y:       $spacer !default;
-$tbody-cell-height:    48px !default;
-$tbody-cell-padding-x: 12px !default;
-$tbody-cell-padding-y: 12px !default;
-$tbody-color:          rgba(0, 0, 0, .87) !default;
-$thead-color-sorting:  rgba(0, 0, 0, .87) !default;
-$tbody-font-size:      13px !default;
-$thead-cell-height:    56px !default;
-$thead-cell-padding-x: 12px !default;
-$thead-cell-padding-y: 12px !default;
-$thead-color:          rgba(0, 0, 0, .54) !default;
-$thead-color-sorting:  rgba(0, 0, 0, .87) !default;
-$thead-font-size:      12px !default;
+$table-bg-dark:            $card-bg-dark !default;
+$table-bg-light:           $card-bg-light !default;
+$table-bg-hover-dark:      $dark-2 !default;
+$table-bg-hover-light:     $light-2 !default;
+$table-border-width:       1px !default;
+$table-border-color-dark:  $dark-1 !default;
+$table-border-color-light: $light-1 !default;
+$table-box-shadow:         $card-box-shadow !default;
+$table-margin-x:           auto !default;
+$table-margin-y:           $spacer !default;
+$tbody-cell-height:        48px !default;
+$tbody-cell-padding-x:     12px !default;
+$tbody-cell-padding-y:     12px !default;
+$tbody-color:              unquote('$primary') !default;
+$thead-color-sorting:      unquote('$primary') !default;
+$tbody-font-size:          13px !default;
+$thead-cell-height:        56px !default;
+$thead-cell-padding-x:     12px !default;
+$thead-cell-padding-y:     12px !default;
+$thead-color-dark:         $white-secondary !default;
+$thead-color-light:        $black-secondary !default;
+$thead-color-sorting:      unquote('$primary') !default;
+$thead-font-size:          12px !default;
 
 
 

@@ -24,7 +24,7 @@
 
   > h3:first-of-type {
     align-items: center;
-    background-color: $table-bg;
+    background-color: color-chooser($table-bg-dark, $table-bg-light);
     box-shadow: $table-box-shadow;
     display: flex;
     height: $thead-cell-height;
@@ -42,7 +42,7 @@
     position: relative;
 
     &::before {
-      background-color: $table-bg;
+      background-color: color-chooser($table-bg-dark, $table-bg-light);
       content: '';
       display: block;
       height: $thead-cell-padding-y;

@@ -141,7 +141,7 @@
   .sortable {
     &:focus,
     &:hover {
-      background-color: $table-bg-hover;
+      background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
     }
 
     .fa {
@@ -167,7 +167,7 @@
       height: 0;
 
       span {
-        background-color: $table-bg;
+        background-color: color-chooser($table-bg-dark, $table-bg-light);
         color:  unquote('$tertiary');
         font-size: inherit;
         padding: 0 ($tbody-cell-padding-x / 2);
