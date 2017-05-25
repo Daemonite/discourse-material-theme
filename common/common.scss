@@ -1702,6 +1702,29 @@ nav.post-controls .actions button .read-icon::before {
       -ms-flex-order: 0;
           order: 0;
 }
+.topic-meta-data .post-info a {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+.topic-meta-data .post-info .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.topic-meta-data .post-info .fa-pencil::before {
+  content: 'edit';
+}
 
 .topic-status-info {
   border-top: 0;

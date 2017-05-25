@@ -355,6 +355,18 @@ nav {
       margin-right: 0;
       order: 0;
     }
+
+    a {
+      color: color-chooser($white-secondary, $black-secondary);
+    }
+
+    .fa {
+      @include material-icons;
+    }
+
+    .fa-pencil::before {
+      content: 'edit';
+    }
   }
 }
 
