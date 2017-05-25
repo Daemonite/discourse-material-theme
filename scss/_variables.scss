@@ -1,3 +1,11 @@
+// Colour chooser functions
+
+@function color-chooser($dark, $light) {
+  @return unquote('color-chooser(') + $dark + unquote(', ') + $light + unquote(')');
+}
+
+
+
 // Table of Contents
 //
 // - Basics
