@@ -1668,6 +1668,7 @@ nav.post-controls .actions button .read-icon::before {
   display: -ms-flexbox;
   display: flex;
   min-height: 52px;
+  padding-right: 8px;
   padding-bottom: 0;
   padding-left: 68px;
 }
@@ -1703,7 +1704,50 @@ nav.post-controls .actions button .read-icon::before {
           order: 0;
 }
 .topic-meta-data .post-info a {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 13px;
+  padding: 9.5px 16px;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.topic-meta-data .post-info a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .topic-meta-data .post-info a:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.topic-meta-data .post-info a:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.topic-meta-data .post-info a:focus {
+  outline: 0;
 }
 .topic-meta-data .post-info .fa {
   font-family: 'Material Icons';
