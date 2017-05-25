@@ -138,11 +138,12 @@ $btn-padding-y:         (($btn-height - $btn-font-size) / 2) !default;
 // Card
 
 $card-avatar-size:      36px !default;
-$card-bg:               #ffffff !default;
+$card-bg-dark:          #424242 !default;
+$card-bg-light:         #ffffff !default;
 $card-border-radius:    2px !default;
 $card-box-shadow:       $shadow-2dp !default;
 $card-box-shadow-hover: $shadow-8dp !default;
-$card-btn-color:        rgba(0, 0, 0, .54) !default;
+$card-color:            unquote('$primary') !default;
 $card-inner-spacer-x:   $spacer-sm !default;
 $card-inner-spacer-y:   $spacer !default;
 $card-margin-x:         $spacer-sm !default;

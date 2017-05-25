@@ -1,8 +1,9 @@
 @mixin card {
-  background-color: $card-bg;
+  background-color: color-chooser($card-bg-dark, $card-bg-light);
   border: 0;
   border-radius: $card-border-radius;
   box-shadow: $card-box-shadow;
+  color: $card-color;
   padding: 0;
 
   &[href],

@@ -8,7 +8,7 @@ aside {
     padding: $card-padding-y $card-padding-x;
 
     + .onebox {
-      border-top: 1px solid $card-bg;
+      border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
       margin-top: ($card-padding-y * -1);
     }
   }

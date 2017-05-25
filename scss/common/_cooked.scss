@@ -63,7 +63,7 @@ div {
     width: calc(100% + #{$card-padding-x * 2}) !important;
 
     + .lazyYT-container {
-      border-top: 1px solid $card-bg;
+      border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
       margin-top: ($card-inner-spacer-y * -1);
     }
   }

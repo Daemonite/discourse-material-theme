@@ -13,7 +13,6 @@ nav {
       button {
         @include btn-flat;
 
-        color: $card-btn-color;
         margin-right: $card-inner-spacer-x;
         margin-left: 0;
         padding-right: $card-inner-spacer-x;
