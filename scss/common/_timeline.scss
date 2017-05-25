@@ -1,0 +1,130 @@
+.timeline-container {
+  .topic-timeline {
+    div > button,
+    span > button {
+      &.btn {
+        @include btn-raised;
+
+        margin-right: $spacer-sm;
+      }
+    }
+
+    i {
+      &.fa {
+        opacity: 1;
+      }
+    }
+
+    .dropdown-menu,
+    .popup-menu {
+      @include dropdown-menu-sm;
+
+      a,
+      .btn {
+        @include dropdown-link-sm;
+      }
+
+      h3 {
+        @include dropdown-header-sm;
+      }
+    }
+
+    .fa {
+      @include material-icons;
+
+      opacity: 1;
+    }
+
+    .fa-calendar::before {
+      content: 'event';
+    }
+
+    .fa-circle::before {
+      content: 'track_changes';
+    }
+
+    .fa-circle-o::before {
+      content: 'notifications';
+    }
+
+    .fa-clock-o::before {
+      content: 'timer';
+    }
+
+    .fa-envelope::before {
+      content: 'message';
+    }
+
+    .fa-exclamation-circle::before {
+      content: 'notifications_active';
+    }
+
+    .fa-eye-slash::before {
+      content: 'visibility_off';
+    }
+
+    .fa-folder::before {
+      content: 'archive';
+    }
+
+    .fa-lock::before {
+      content: 'lock';
+    }
+
+    .fa-reply::before {
+      content: 'reply';
+    }
+
+    .fa-tasks::before {
+      content: 'check_box';
+    }
+
+    .fa-thumb-tack::before {
+      content: 'vertical_align_top';
+    }
+
+    .fa-times-circle::before {
+      content: 'notifications_off';
+    }
+
+    .fa-trash-o::before {
+      content: 'delete';
+    }
+
+    .fa-wrench::before {
+      content: 'settings';
+    }
+
+    .now-date {
+      color: color-chooser($white-secondary, $black-secondary);
+      margin-top: 0;
+    }
+
+    .start-date {
+      color: color-chooser($white-secondary, $black-secondary);
+    }
+
+    .timeline-ago {
+      color: color-chooser($white-secondary, $black-secondary);
+    }
+
+    .timeline-controls {
+      margin-bottom: $spacer;
+    }
+
+    .timeline-footer-controls {
+      line-height: inherit;
+      margin-top: $spacer;
+    }
+
+    .timeline-scrollarea {
+      margin-top: $spacer;
+      margin-bottom: $spacer;
+      margin-left: $spacer;
+    }
+
+    .timeline-scroller-content {
+      padding-left: $spacer;
+    }
+  }
+}

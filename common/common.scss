@@ -534,6 +534,9 @@ aside.quote .title + blockquote {
     background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   }
 }
+.dropdown-menu li > a:focus {
+  outline: 0;
+}
 .dropdown-menu span {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   font-size: inherit;
@@ -601,6 +604,9 @@ aside.quote .title + blockquote {
     background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
     color: inherit;
   }
+}
+.popup-menu .btn:focus {
+  outline: 0;
 }
 .popup-menu .btn .fa {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
@@ -1741,6 +1747,205 @@ nav.post-controls .actions button .read-icon::before {
   font-weight: normal;
   margin: 0 0 16px;
   overflow: visible;
+}
+
+.timeline-container .topic-timeline div > button.btn,
+.timeline-container .topic-timeline span > button.btn {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: color-chooser($tertiary, #ffffff);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  margin-right: 8px;
+}
+.timeline-container .topic-timeline div > button.btn:focus,
+.timeline-container .topic-timeline span > button.btn:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .timeline-container .topic-timeline div > button.btn:hover,
+  .timeline-container .topic-timeline span > button.btn:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.timeline-container .topic-timeline div > button.btn:active,
+.timeline-container .topic-timeline span > button.btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.timeline-container .topic-timeline div > button.btn:focus,
+.timeline-container .topic-timeline span > button.btn:focus {
+  outline: 0;
+}
+.timeline-container .topic-timeline div > button.btn:focus,
+.timeline-container .topic-timeline span > button.btn:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+}
+.timeline-container .topic-timeline div > button.btn:focus::before,
+.timeline-container .topic-timeline span > button.btn:focus::before {
+  opacity: 1;
+}
+@media (hover: hover) {
+  .timeline-container .topic-timeline div > button.btn:hover,
+  .timeline-container .topic-timeline span > button.btn:hover {
+    background-color: color-chooser($tertiary, #ffffff);
+  }
+  .timeline-container .topic-timeline div > button.btn:hover::before,
+  .timeline-container .topic-timeline span > button.btn:hover::before {
+    opacity: 1;
+  }
+}
+.timeline-container .topic-timeline div > button.btn:active,
+.timeline-container .topic-timeline span > button.btn:active {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.timeline-container .topic-timeline div > button.btn:active::before,
+.timeline-container .topic-timeline span > button.btn:active::before {
+  opacity: 1;
+}
+.timeline-container .topic-timeline div > button.btn::before,
+.timeline-container .topic-timeline span > button.btn::before {
+  background-color: rgba(0, 0, 0, 0.12);
+  content: '';
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.timeline-container .topic-timeline i.fa {
+  opacity: 1;
+}
+.timeline-container .topic-timeline .dropdown-menu,
+.timeline-container .topic-timeline .popup-menu {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+}
+.timeline-container .topic-timeline .dropdown-menu a,
+.timeline-container .topic-timeline .dropdown-menu .btn,
+.timeline-container .topic-timeline .popup-menu a,
+.timeline-container .topic-timeline .popup-menu .btn {
+  padding: 6.25px 24px;
+}
+.timeline-container .topic-timeline .dropdown-menu h3,
+.timeline-container .topic-timeline .popup-menu h3 {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 6.25px 24px;
+}
+.timeline-container .topic-timeline .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  opacity: 1;
+}
+.timeline-container .topic-timeline .fa-calendar::before {
+  content: 'event';
+}
+.timeline-container .topic-timeline .fa-circle::before {
+  content: 'track_changes';
+}
+.timeline-container .topic-timeline .fa-circle-o::before {
+  content: 'notifications';
+}
+.timeline-container .topic-timeline .fa-clock-o::before {
+  content: 'timer';
+}
+.timeline-container .topic-timeline .fa-envelope::before {
+  content: 'message';
+}
+.timeline-container .topic-timeline .fa-exclamation-circle::before {
+  content: 'notifications_active';
+}
+.timeline-container .topic-timeline .fa-eye-slash::before {
+  content: 'visibility_off';
+}
+.timeline-container .topic-timeline .fa-folder::before {
+  content: 'archive';
+}
+.timeline-container .topic-timeline .fa-lock::before {
+  content: 'lock';
+}
+.timeline-container .topic-timeline .fa-reply::before {
+  content: 'reply';
+}
+.timeline-container .topic-timeline .fa-tasks::before {
+  content: 'check_box';
+}
+.timeline-container .topic-timeline .fa-thumb-tack::before {
+  content: 'vertical_align_top';
+}
+.timeline-container .topic-timeline .fa-times-circle::before {
+  content: 'notifications_off';
+}
+.timeline-container .topic-timeline .fa-trash-o::before {
+  content: 'delete';
+}
+.timeline-container .topic-timeline .fa-wrench::before {
+  content: 'settings';
+}
+.timeline-container .topic-timeline .now-date {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  margin-top: 0;
+}
+.timeline-container .topic-timeline .start-date {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+.timeline-container .topic-timeline .timeline-ago {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+.timeline-container .topic-timeline .timeline-controls {
+  margin-bottom: 16px;
+}
+.timeline-container .topic-timeline .timeline-footer-controls {
+  line-height: inherit;
+  margin-top: 16px;
+}
+.timeline-container .topic-timeline .timeline-scrollarea {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+.timeline-container .topic-timeline .timeline-scroller-content {
+  padding-left: 16px;
 }
 
 .topic-list {

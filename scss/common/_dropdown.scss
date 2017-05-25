@@ -15,6 +15,10 @@
     @include focus-hover {
       background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
     }
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   span {
@@ -69,6 +73,10 @@
     @include focus-hover {
       background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
       color: inherit;
+    }
+
+    &:focus {
+      outline: 0;
     }
 
     .fa {
