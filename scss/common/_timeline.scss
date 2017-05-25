@@ -117,10 +117,48 @@
       margin-top: $spacer;
     }
 
+    .timeline-handle {
+      background-color: $progress-bg;
+      border-radius: 2px;
+      width: $progress-height;
+    }
+
+    .timeline-padding {
+      background-color: $progress-bg;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      width: $progress-height;
+
+      &::before {
+        background-color: inherit;
+        background-image: linear-gradient(to right, $progress-mask, $progress-mask);
+        border-radius: 2px 2px 0 0;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      ~ .timeline-padding {
+        &,
+        &::before {
+          border-radius: 0 0 2px 2px;
+        }
+      }
+    }
+
     .timeline-scrollarea {
+      border-left: 0;
       margin-top: $spacer;
       margin-bottom: $spacer;
-      margin-left: $spacer;
+      margin-left: $spacer-sm;
+    }
+
+    .timeline-scroller {
+      margin-left: 0;
     }
 
     .timeline-scroller-content {

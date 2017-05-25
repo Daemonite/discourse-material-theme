@@ -1939,10 +1939,43 @@ nav.post-controls .actions button .read-icon::before {
   line-height: inherit;
   margin-top: 16px;
 }
+.timeline-container .topic-timeline .timeline-handle {
+  background-color: $tertiary;
+  border-radius: 2px;
+  width: 4px;
+}
+.timeline-container .topic-timeline .timeline-padding {
+  background-color: $tertiary;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  width: 4px;
+}
+.timeline-container .topic-timeline .timeline-padding::before {
+  background-color: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  border-radius: 2px 2px 0 0;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.timeline-container .topic-timeline .timeline-padding ~ .timeline-padding, .timeline-container .topic-timeline .timeline-padding ~ .timeline-padding::before {
+  border-radius: 0 0 2px 2px;
+}
 .timeline-container .topic-timeline .timeline-scrollarea {
+  border-left: 0;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-left: 16px;
+  margin-left: 8px;
+}
+.timeline-container .topic-timeline .timeline-scroller {
+  margin-left: 0;
 }
 .timeline-container .topic-timeline .timeline-scroller-content {
   padding-left: 16px;
