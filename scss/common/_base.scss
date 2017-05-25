@@ -48,6 +48,7 @@ strong {
 blockquote {
   @include typography-h5;
 
+  background-color: color-chooser($dark-2, $light-2);
   border-left: 0;
   border-radius: $card-border-radius;
   margin: 0 0 $spacer;
@@ -58,7 +59,7 @@ blockquote {
   &::before {
     @include material-icons;
 
-    color: unquote('dark-light-choose(scale-color($primary, $lightness: 70%), scale-color($secondary, $lightness: 30%))');
+    color: color-chooser($white-secondary, $black-secondary);
     content: 'format_quote';
     position: absolute;
   }

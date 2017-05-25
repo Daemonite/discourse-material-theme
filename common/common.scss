@@ -58,6 +58,7 @@ blockquote {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5;
+  background-color: color-chooser(#212121, #f5f5f5);
   border-left: 0;
   border-radius: 2px;
   margin: 0 0 16px;
@@ -80,7 +81,7 @@ blockquote::after, blockquote::before {
   word-wrap: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: dark-light-choose(scale-color($primary, $lightness: 70%), scale-color($secondary, $lightness: 30%));
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   content: 'format_quote';
   position: absolute;
 }
@@ -380,6 +381,9 @@ aside.onebox + .onebox {
 aside.quote blockquote {
   width: auto !important;
 }
+aside.quote .quote-controls {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
 aside.quote .quote-controls .back::before,
 aside.quote .quote-controls .quote-other-topic::before {
   font-family: 'Material Icons';
@@ -397,6 +401,7 @@ aside.quote .quote-controls .quote-other-topic::before {
   word-wrap: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   content: 'arrow_upward';
   margin-left: 8px;
 }
@@ -427,6 +432,7 @@ aside.quote .quote-controls .fa-chevron-up::before {
 aside.quote .title {
   border-left: 0;
   border-radius: 2px 2px 0 0;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   padding: 16px 16px 0;
 }
 aside.quote .title .avatar {
