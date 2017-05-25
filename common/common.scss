@@ -207,7 +207,7 @@ sup {
 }
 
 .badge-notification {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 1em;
   color: $primary;
   font-size: .857142857em;
@@ -218,7 +218,7 @@ sup {
 }
 
 .badge-wrapper {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 16px;
   color: inherit;
   padding-right: 12px;

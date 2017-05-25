@@ -155,7 +155,8 @@ $card-padding-y:        16px !default;
 
 // Chip
 
-$chip-bg:             rgba(0, 0, 0, .04) !default;
+$chip-bg-dark:        rgba(204, 204, 204, .125) !default;
+$chip-bg-light:       rgba(153, 153, 153, .2) !default;
 $chip-box-shadow:     $shadow-2dp !default;
 $chip-font-size:      13px !default;
 $chip-height:         32px !default;

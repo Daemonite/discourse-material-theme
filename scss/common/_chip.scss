@@ -1,5 +1,5 @@
 .badge-notification {
-  background-color: $chip-bg;
+  background-color: color-chooser($chip-bg-dark, $chip-bg-light);
   border-radius: 1em;
   color: unquote('$primary');
   font-size: .857142857em;
@@ -12,7 +12,7 @@
 }
 
 .badge-wrapper {
-  background-color: $chip-bg;
+  background-color: color-chooser($chip-bg-dark, $chip-bg-light);
   border-radius: ($chip-height / 2);
   color: inherit;
   padding-right: $chip-padding-x;
