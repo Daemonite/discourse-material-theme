@@ -180,44 +180,60 @@ nav {
     @include btn-raised;
 
     margin: 0 $card-margin-x $card-margin-y 0;
+  }
 
-    .fa {
-      @include material-icons;
+  .fa {
+    @include material-icons;
 
-      opacity: 1;
+    opacity: 1;
+  }
+
+  .fa-bookmark::before {
+    content: 'bookmark';
+  }
+
+  .fa-circle::before {
+    content: 'track_changes';
+  }
+
+  .fa-circle-o::before {
+    content: 'notifications';
+  }
+
+  .fa-exclamation-circle::before {
+    content: 'notifications_active';
+  }
+
+  .fa-flag::before {
+    content: 'flag';
+  }
+
+  .fa-link::before {
+    content: 'link';
+  }
+
+  .fa-reply::before {
+    content: 'reply';
+  }
+
+  .fa-thumb-tack::before {
+    content: 'vertical_align_top';
+  }
+
+  .fa-times-circle {
+    color: inherit;
+
+    &::before {
+      content: 'notifications_off';
     }
+  }
 
-    .fa-bookmark::before {
-      content: 'bookmark';
-    }
+  .fa-wrench::before {
+    content: 'settings';
+  }
 
-    .fa-circle::before {
-      content: 'track_changes';
-    }
-
-    .fa-flag::before {
-      content: 'flag';
-    }
-
-    .fa-link::before {
-      content: 'link';
-    }
-
-    .fa-reply::before {
-      content: 'reply';
-    }
-
-    .fa-thumb-tack::before {
-      content: 'vertical_align_top';
-    }
-
-    .fa-wrench::before {
-      content: 'settings';
-    }
-
-    .fa-users::before {
-      content: 'group_add';
-    }
+  .fa-users::before {
+    content: 'group_add';
   }
 
   > div {
