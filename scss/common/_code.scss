@@ -1,0 +1,57 @@
+code,
+kbd,
+pre,
+samp {
+  body {
+    font-family: $font-family-monospace;
+  }
+}
+
+code {
+  background-color: color-chooser($dark-2, $light-2);
+  border-radius: 2px;
+  color: $code-color;
+  font-size: $code-font-size;
+  padding: $code-padding;
+}
+
+kbd {
+  background-color: $kbd-bg;
+  border-radius: 2px;
+  color: $kbd-color;
+  font-size: $code-font-size;
+  padding: $code-padding;
+
+  kbd {
+    font-size: 100%;
+    padding: 0;
+  }
+}
+
+pre {
+  background-color: color-chooser($dark-2, $light-2);
+  border-radius: 2px;
+  color: unquote('$primary');
+  display: block;
+  font-size: $font-size-base;
+  margin-top: 0;
+  margin-bottom: $spacer;
+  padding: $pre-padding;
+
+  code {
+    background-color: transparent;
+    border-radius: 0;
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
+  }
+}
+
+.hljs {
+  color: unquote('$primary');
+  padding: $pre-padding;
+
+  pre & {
+    padding: 0;
+  }
+}
