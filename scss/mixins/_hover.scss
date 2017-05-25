@@ -1,0 +1,17 @@
+@mixin focus-hover {
+  &:focus {
+    @content
+  }
+
+  @include hover {
+    @content
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content
+    }
+  }
+}
