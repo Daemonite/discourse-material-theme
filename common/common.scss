@@ -659,8 +659,13 @@ div.menu-links-header a {
   color: inherit;
   font-size: inherit;
 }
-div.menu-links-header a:focus, div.menu-links-header a:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+div.menu-links-header a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+@media (hover: hover) {
+  div.menu-links-header a:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
 }
 div.menu-links-header a:focus {
   outline: 0;
@@ -726,7 +731,7 @@ div.menu-links-header .menu-links-row {
 }
 
 .menu-panel {
-  background-color: #ffffff;
+  background-color: color-chooser(#424242, #ffffff);
   border: 0;
   border-radius: 2px;
   -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
@@ -758,8 +763,13 @@ div.menu-links-header .menu-links-row {
   display: flex;
   padding: 8px 8px;
 }
-.menu-panel ul.menu-links li a:focus, .menu-panel ul.menu-links li a:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+.menu-panel ul.menu-links li a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+@media (hover: hover) {
+  .menu-panel ul.menu-links li a:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
 }
 .menu-panel ul.menu-links li a:focus {
   outline: 0;
@@ -778,8 +788,13 @@ div.menu-links-header .menu-links-row {
 .menu-panel ul li.heading a {
   padding: 8px 8px;
 }
-.menu-panel ul li.heading a:focus, .menu-panel ul li.heading a:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+.menu-panel ul li.heading a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+@media (hover: hover) {
+  .menu-panel ul li.heading a:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
 }
 .menu-panel ul li.heading a:focus {
   outline: 0;
@@ -818,14 +833,21 @@ div.menu-links-header .menu-links-row {
   font-size: inherit;
   line-height: inherit;
 }
-.search-menu li:not(.category):not(.heading):hover a:not(.badge-notification) {
-  background-color: rgba(0, 0, 0, 0.04);
+@media (hover: hover) {
+  .search-menu li:not(.category):not(.heading):hover a:not(.badge-notification) {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
 }
 .search-menu li:not(.category):not(.heading) a {
   padding: 8px 8px;
 }
-.search-menu li:not(.category):not(.heading) a:focus, .search-menu li:not(.category):not(.heading) a:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+.search-menu li:not(.category):not(.heading) a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+@media (hover: hover) {
+  .search-menu li:not(.category):not(.heading) a:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
 }
 .search-menu li:not(.category):not(.heading) a:focus {
   outline: 0;
@@ -871,15 +893,22 @@ div.menu-links-header .menu-links-row {
 .user-menu .notifications li {
   padding: 0;
 }
-.user-menu .notifications li:hover {
-  background-color: transparent;
+@media (hover: hover) {
+  .user-menu .notifications li:hover {
+    background-color: transparent;
+  }
 }
 .user-menu .notifications li a {
   display: block;
   padding: 8px 8px;
 }
-.user-menu .notifications li a:focus, .user-menu .notifications li a:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+.user-menu .notifications li a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+@media (hover: hover) {
+  .user-menu .notifications li a:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
 }
 .user-menu .notifications li a:focus {
   outline: 0;

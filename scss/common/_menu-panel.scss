@@ -21,9 +21,8 @@ div {
       color: inherit;
       font-size: inherit;
 
-      &:focus,
-      &:hover {
-        background-color: $menu-panel-item-overlay;
+      @include focus-hover {
+        background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
       }
 
       &:focus {
@@ -73,7 +72,7 @@ div {
 }
 
 .menu-panel {
-  background-color: $menu-panel-bg;
+  background-color: color-chooser($menu-panel-bg-dark, $menu-panel-bg-light);
   border: 0;
   border-radius: $menu-panel-border-radius;
   box-shadow: $menu-panel-box-shadow;
@@ -98,9 +97,8 @@ div {
           display: flex;
           padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
-          &:focus,
-          &:hover {
-            background-color: $menu-panel-item-overlay;
+          @include focus-hover {
+            background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
           }
 
           &:focus {
@@ -129,9 +127,8 @@ div {
         a {
           padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
-          &:focus,
-          &:hover {
-            background-color: $menu-panel-item-overlay;
+          @include focus-hover {
+            background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
           }
 
           &:focus {
@@ -157,16 +154,17 @@ div {
     font-size: inherit;
     line-height: inherit;
 
-    &:hover a:not(.badge-notification) {
-      background-color: $menu-panel-item-overlay;
+    @include hover {
+      a:not(.badge-notification) {
+        background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
+      }
     }
 
     a {
       padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
-      &:focus,
-      &:hover {
-        background-color: $menu-panel-item-overlay;
+      @include focus-hover {
+        background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
       }
 
       &:focus {
@@ -221,7 +219,7 @@ div {
     li {
       padding: 0;
 
-      &:hover {
+      @include hover {
         background-color: transparent;
       }
 
@@ -229,9 +227,8 @@ div {
         display: block;
         padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
-        &:focus,
-        &:hover {
-          background-color: $menu-panel-item-overlay;
+        @include focus-hover {
+          background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
         }
 
         &:focus {
