@@ -1144,6 +1144,9 @@ div.menu-links-header .menu-links-row {
 .user-menu .notifications .fa-heart::before {
   content: 'favorite_border';
 }
+.user-menu .notifications .fa-reply::before {
+  content: 'reply';
+}
 .user-menu .notifications .fa-user::before {
   content: 'person';
 }
