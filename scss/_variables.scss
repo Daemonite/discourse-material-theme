@@ -169,13 +169,14 @@ $chip-width:          $chip-height !default;
 
 // Header
 
-$header-box-shadow:     $shadow-4dp !default;
-$header-height:         56px !default;
-$header-item-overlay:   rgba(0, 0, 0, .12) !default;
-$header-inner-spacer-x: $spacer-sm !default;
-$header-margin-y:       $spacer !default;
-$header-padding-x:      0 !default;
-$header-padding-y:      8px !default;
+$header-box-shadow:         $shadow-4dp !default;
+$header-height:             56px !default;
+$header-item-overlay-dark:  rgba(255, 255, 255, .12) !default;
+$header-item-overlay-light: rgba(0, 0, 0, .12) !default;
+$header-inner-spacer-x:     $spacer-sm !default;
+$header-margin-y:           $spacer !default;
+$header-padding-x:          0 !default;
+$header-padding-y:          8px !default;
 
 
 

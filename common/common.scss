@@ -471,7 +471,7 @@ aside.quote .title + blockquote {
   width: 40px;
 }
 .d-header button.login-button:focus, .d-header button.login-button:hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 .d-header button.login-button:focus {
   outline: 0;
@@ -581,7 +581,7 @@ aside.quote .title + blockquote {
   width: 40px;
 }
 .d-header .icons .icon:focus, .d-header .icons .icon:hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   border: 0;
   color: inherit;
 }
@@ -589,7 +589,7 @@ aside.quote .title + blockquote {
   outline: 0;
 }
 .drop-down-visible .d-header .icons .active .icon {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   border: 0;
   color: inherit;
 }

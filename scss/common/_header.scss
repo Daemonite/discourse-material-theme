@@ -27,7 +27,7 @@
 
       &:focus,
       &:hover {
-        background-color: $header-item-overlay;
+        background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
       }
 
       &:focus {
@@ -101,7 +101,7 @@
 
       &:focus,
       &:hover {
-        background-color: $header-item-overlay;
+        background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
         border: 0;
         color: inherit;
       }
@@ -113,7 +113,7 @@
 
     .active .icon {
       .drop-down-visible & {
-        background-color: $header-item-overlay;
+        background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
         border: 0;
         color: inherit;
       }
