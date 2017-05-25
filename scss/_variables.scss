@@ -180,10 +180,14 @@ $btn-box-shadow:        $shadow-2dp !default;
 $btn-box-shadow-active: $shadow-8dp !default;
 $btn-color:             unquote('$primary') !default;
 $btn-height:            36px !default;
+$btn-height-sm:         32px !default;
 $btn-font-size:         14px !default;
+$btn-font-size-sm:      13px !default;
 $btn-font-weight:       500 !default;
 $btn-padding-x:         16px !default;
+$btn-padding-x-sm:      16px !default;
 $btn-padding-y:         (($btn-height - $btn-font-size) / 2) !default;
+$btn-padding-y-sm:      (($btn-height-sm - $btn-font-size-sm) / 2) !default;
 
 
 

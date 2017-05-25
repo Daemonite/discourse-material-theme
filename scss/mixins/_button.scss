@@ -73,3 +73,12 @@
     left: 0;
   }
 }
+
+
+
+// Small button
+
+@mixin btn-sm {
+  font-size: $btn-font-size-sm;
+  padding: $btn-padding-y-sm $btn-padding-x-sm;
+}
