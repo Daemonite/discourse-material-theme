@@ -14,11 +14,11 @@ module.exports = function(grunt) {
                 '  @return ((red($color) * .299) + (green($color) * .587) + (blue($color) * .114));\n' +
                 '}\n' +
                 '\n' +
-                '@function dark-light-choose($light-theme-result, $dark-theme-result) {\n' +
-                '  @if brightness($primary) < brightness($secondary) {\n' +
-                '    @return $light-theme-result;\n' +
+                '@function color-chooser($dark, $light) {\n' +
+                '  @if brightness($primary) > brightness($secondary) {\n' +
+                '    @return $dark;\n' +
                 '  } @else {\n' +
-                '    @return $dark-theme-result;\n' +
+                '    @return $light;\n' +
                 '  }\n' +
                 '}\n' +
                 '\n'
