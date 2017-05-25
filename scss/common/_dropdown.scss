@@ -2,10 +2,18 @@
   @include dropdown-menu;
 
   a {
+    @include dropdown-link;
+
     display: flex;
 
     > div {
       margin-left: $dropdown-inner-spacer-x;
+    }
+  }
+
+  li > a {
+    @include focus-hover {
+      background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
     }
   }
 
@@ -14,8 +22,66 @@
     font-size: inherit;
   }
 
+  .fa:not(.tracking):not(.watching) {
+    color: color-chooser($white-secondary, $black-secondary);
+  }
+
   .icon {
+    align-self: flex-start;
     font-size: inherit;
     margin-top: .1875em;
+  }
+}
+
+.popup-menu {
+  @include dropdown-menu;
+
+  width: auto;
+
+  button {
+    width: auto;
+
+    i {
+      width: auto;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include dropdown-header;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  .btn {
+    @include dropdown-link;
+
+    background-color: transparent;
+    white-space: nowrap;
+    width: 100%;
+
+    @include focus-hover {
+      background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
+      color: inherit;
+    }
+
+    .fa {
+      color: color-chooser($white-secondary, $black-secondary);
+      margin-right: $dropdown-inner-spacer-x;
+    }
+  }
+
+  .btn-danger {
+    color: unquote('$danger');
+
+    @include focus-hover {
+      color: unquote('$danger');
+    }
   }
 }
