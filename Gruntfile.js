@@ -21,6 +21,14 @@ module.exports = function(grunt) {
                 '    @return $light;\n' +
                 '  }\n' +
                 '}\n' +
+                '\n' +
+                '@function color-dynamic($color) {\n' +
+                '  @if lightness($color) > 75 {\n' +
+                '    @return $primary;\n' +
+                '  } @else {\n' +
+                '    @return #ffffff;\n' +
+                '  }\n' +
+                '}\n' +
                 '\n'
       },
       common: {

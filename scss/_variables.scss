@@ -4,6 +4,10 @@
   @return unquote('color-chooser(') + $dark + unquote(', ') + $light + unquote(')');
 }
 
+@function color-dynamic($color) {
+  @return unquote('color-dynamic(' + $color + unquote(')'));
+}
+
 
 
 // Table of Contents

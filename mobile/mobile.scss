@@ -10,3 +10,11 @@
   }
 }
 
+@function color-dynamic($color) {
+  @if lightness($color) > 75 {
+    @return $primary;
+  } @else {
+    @return #ffffff;
+  }
+}
+
