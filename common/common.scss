@@ -221,6 +221,17 @@ sup {
   top: -.5em;
 }
 
+.btn i.fa {
+  opacity: 1;
+}
+.btn .fa {
+  margin-right: 8px;
+}
+
+.fa-thumb-tack.unpinned {
+  padding-left: 0;
+}
+
 .badge-notification {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 1em;

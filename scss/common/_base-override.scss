@@ -1,0 +1,17 @@
+// Override some basic CSS rules from Discourse
+
+.btn {
+  i {
+    &.fa {
+      opacity: 1;
+    }
+  }
+
+  .fa {
+    margin-right: ($btn-padding-x / 2);
+  }
+}
+
+.fa-thumb-tack.unpinned {
+  padding-left: 0;
+}
