@@ -522,6 +522,10 @@ div.poll {
   margin: 0 -16px 16px;
   width: calc(100% + 32px);
 }
+div.poll li {
+  font-size: inherit;
+  margin-bottom: 16px;
+}
 div.poll li[data-poll-option-id] {
   margin-bottom: 16px;
   padding: 0;
@@ -674,6 +678,65 @@ div.poll .poll-info .info-text {
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.428571;
+}
+div.poll .poll-voters {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+div.poll .poll-voters li {
+  display: block;
+  margin-right: 4px;
+  margin-bottom: 0;
+}
+div.poll .poll-voters-list {
+  margin-top: 4px;
+}
+div.poll .results .bar {
+  background-color: $tertiary;
+  border-radius: 0 2px 2px 0;
+  height: 4px;
+  position: relative;
+  background-color: $primary;
+}
+div.poll .results .bar-back {
+  background-color: $tertiary;
+  border-radius: 2px;
+  height: 4px;
+  position: relative;
+  background-color: $primary;
+}
+div.poll .results .bar-back::before {
+  background-color: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  border-radius: 2px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+div.poll .results .chosen .bar,
+div.poll .results .chosen .bar-back {
+  background-color: $tertiary;
+}
+div.poll .results .percentage {
+  color: $primary;
+  font-size: inherit;
+  margin-left: 8px;
+}
+div.poll .results .option {
+  margin-bottom: 4px;
+  padding-bottom: 0;
 }
 
 .dropdown-menu {

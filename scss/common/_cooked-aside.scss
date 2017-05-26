@@ -72,6 +72,9 @@ div {
     width: calc(100% + #{$card-padding-x * 2});
 
     li {
+      font-size: inherit;
+      margin-bottom: $card-inner-spacer-y;
+
       &[data-poll-option-id] {
         margin-bottom: $card-inner-spacer-y;
         padding: 0;
@@ -145,6 +148,53 @@ div {
 
       .info-text {
         @include typography-h6;
+      }
+    }
+
+    .poll-voters {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        display: block;
+        margin-right: ($card-inner-spacer-x / 2);
+        margin-bottom: 0;
+      }
+    }
+
+    .poll-voters-list {
+      margin-top: ($card-inner-spacer-y / 4);
+    }
+
+    .results {
+      .bar {
+        @include progress-bar;
+
+        background-color: $card-color;
+      }
+
+      .bar-back {
+        @include progress-base;
+
+        background-color: $card-color;
+      }
+
+      .chosen {
+        .bar,
+        .bar-back {
+          background-color: $progress-bg;
+        }
+      }
+
+      .percentage {
+        color: $card-color;
+        font-size: inherit;
+        margin-left: $card-inner-spacer-x;
+      }
+
+      .option {
+        margin-bottom: ($card-inner-spacer-y / 4);
+        padding-bottom: 0;
       }
     }
   }
