@@ -232,6 +232,112 @@ sup {
   padding-left: 0;
 }
 
+.nav-pills > li {
+  margin-right: 1px;
+}
+.nav-pills > li > a {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: block;
+}
+.nav-pills > li > a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .nav-pills > li > a:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.nav-pills > li > a:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.nav-pills > li > a:focus {
+  outline: 0;
+}
+.nav-pills > li > a[disabled], .nav-pills > li > a.disabled {
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+.nav-pills > li > a[disabled]:focus, .nav-pills > li > a.disabled:focus {
+  background-color: transparent;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+@media (hover: hover) {
+  .nav-pills > li > a[disabled]:hover, .nav-pills > li > a.disabled:hover {
+    background-color: transparent;
+    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+  }
+}
+.nav-pills > li > a[disabled]:active, .nav-pills > li > a.disabled:active {
+  background-color: transparent;
+}
+.nav-pills > li > a.btn-danger {
+  color: $danger;
+}
+.nav-pills > li > a.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .nav-pills > li > a.btn-danger:hover {
+    color: $danger;
+  }
+}
+.nav-pills > li > a.btn-primary {
+  color: $tertiary;
+}
+.nav-pills > li > a.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .nav-pills > li > a.btn-primary:hover {
+    color: $tertiary;
+  }
+}
+.nav-pills > li > a.active {
+  color: color-dynamic($quaternary);
+}
+.nav-pills > li > a.active:focus {
+  color: $primary;
+}
+@media (hover: hover) {
+  .nav-pills > li > a.active:hover {
+    color: $primary;
+  }
+}
+.nav-pills > li.active > a {
+  color: color-dynamic($quaternary);
+}
+.nav-pills > li.active > a:focus {
+  color: $primary;
+}
+@media (hover: hover) {
+  .nav-pills > li.active > a:hover {
+    color: $primary;
+  }
+}
+
 .badge-notification {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 1em;

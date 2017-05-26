@@ -15,3 +15,31 @@
 .fa-thumb-tack.unpinned {
   padding-left: 0;
 }
+
+.nav-pills {
+  > li {
+    margin-right: 1px;
+
+    > a {
+      @include btn-flat;
+
+      display: block;
+
+      &.active {
+        color: color-dynamic(unquote('$quaternary'));
+
+        @include focus-hover {
+          color: $btn-color;
+        }
+      }
+    }
+
+    &.active > a {
+      color: color-dynamic(unquote('$quaternary'));
+
+      @include focus-hover {
+        color: $btn-color;
+      }
+    }
+  }
+}
