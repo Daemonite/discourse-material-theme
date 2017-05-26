@@ -1,0 +1,157 @@
+ol {
+  &.category-breadcrumb {
+    margin-right: $spacer;
+
+    li {
+      display: flex;
+      margin-right: 0;
+      position: relative;
+    }
+  }
+}
+
+.category-notification-menu {
+  .dropdown-menu {
+    @include dropdown-menu-sm;
+
+    top: $btn-height;
+
+    a {
+      @include dropdown-link-sm;
+    }
+  }
+}
+
+.list-controls {
+  margin-bottom: $spacer-lg;
+
+  a {
+    &.badge-category {
+      font-size: inherit;
+      padding: 0;
+    }
+  }
+
+  .btn {
+    @include btn-raised;
+
+    margin-bottom: 0;
+    margin-left: $spacer-sm;
+  }
+
+  .category-breadcrumb {
+    li {
+      > a {
+        &.badge-category {
+          @include btn-raised;
+
+          border-radius: $btn-border-radius 0 0 $btn-border-radius;
+
+          &.category-dropdown-button {
+            border-radius: 0 $btn-border-radius $btn-border-radius 0;
+            margin-left: -1px;
+            padding: $btn-padding-y ($btn-padding-x / 2);
+            width: auto;
+
+            .fa-caret-right {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .category-dropdown-menu {
+    @include dropdown-menu;
+    @include dropdown-menu-sm;
+
+    min-width: 100%;
+    padding-right: $dropdown-link-padding-x-sm;
+    padding-left: $dropdown-link-padding-x-sm;
+
+    a {
+      &.badge-category {
+        @include dropdown-header-sm;
+
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    .badge-category {
+      &.home {
+        margin-left: 0;
+      }
+    }
+
+    .badge-wrapper {
+      &.bullet {
+        margin-right: 0;
+        padding: 0;
+      }
+    }
+
+    .cat {
+      + .cat {
+        margin-top: ($dropdown-link-padding-y-sm * 2);
+      }
+    }
+
+    .home {
+      margin-left: $dropdown-link-padding-x;
+    }
+  }
+
+  .fa {
+    @include material-icons;
+  }
+
+  .fa-bars::before {
+    content: 'menu';
+  }
+
+  .fa-caret-down::before {
+    content: 'expand_less';
+  }
+
+  .fa-caret-right::before {
+    content: 'expand_more';
+  }
+
+  .fa-circle::before {
+    content: 'track_changes';
+  }
+
+  .fa-circle-o::before {
+    content: 'notifications';
+  }
+
+  .fa-dot-circle-o::before {
+    content: 'adjust';
+  }
+
+  .fa-exclamation-circle::before {
+    content: 'notifications_active';
+  }
+
+  .fa-lock::before {
+    content: 'lock';
+  }
+
+  .fa-plus::before {
+    content: 'add';
+  }
+
+  .fa-times-circle::before {
+    content: 'notifications_off';
+  }
+
+  .fa-wrench::before {
+    content: 'settings';
+  }
+
+  .nav {
+    margin-bottom: 0;
+  }
+}

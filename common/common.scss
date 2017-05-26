@@ -1191,6 +1191,460 @@ div.poll .results .option {
   padding-top: 80px;
 }
 
+ol.category-breadcrumb {
+  margin-right: 16px;
+}
+ol.category-breadcrumb li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0;
+  position: relative;
+}
+
+.category-notification-menu .dropdown-menu {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+  top: 36px;
+}
+.category-notification-menu .dropdown-menu a {
+  padding: 6.25px 24px;
+}
+
+.list-controls {
+  margin-bottom: 24px;
+}
+.list-controls a.badge-category {
+  font-size: inherit;
+  padding: 0;
+}
+.list-controls .btn {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: color-chooser($tertiary, #ffffff);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+.list-controls .btn:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .list-controls .btn:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.list-controls .btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.list-controls .btn:focus {
+  outline: 0;
+}
+.list-controls .btn[disabled], .list-controls .btn.disabled {
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+.list-controls .btn[disabled]:focus, .list-controls .btn.disabled:focus {
+  background-color: transparent;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+@media (hover: hover) {
+  .list-controls .btn[disabled]:hover, .list-controls .btn.disabled:hover {
+    background-color: transparent;
+    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+  }
+}
+.list-controls .btn[disabled]:active, .list-controls .btn.disabled:active {
+  background-color: transparent;
+}
+.list-controls .btn.btn-danger {
+  color: $danger;
+}
+.list-controls .btn.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .list-controls .btn.btn-danger:hover {
+    color: $danger;
+  }
+}
+.list-controls .btn.btn-primary {
+  color: $tertiary;
+}
+.list-controls .btn.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .list-controls .btn.btn-primary:hover {
+    color: $tertiary;
+  }
+}
+.list-controls .btn:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+}
+.list-controls .btn:focus::before {
+  opacity: 1;
+}
+@media (hover: hover) {
+  .list-controls .btn:hover {
+    background-color: color-chooser($tertiary, #ffffff);
+  }
+  .list-controls .btn:hover::before {
+    opacity: 1;
+  }
+}
+.list-controls .btn:active {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.list-controls .btn:active::before {
+  opacity: 1;
+}
+.list-controls .btn[disabled], .list-controls .btn.disabled {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.list-controls .btn[disabled]:focus, .list-controls .btn.disabled:focus {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+@media (hover: hover) {
+  .list-controls .btn[disabled]:hover, .list-controls .btn.disabled:hover {
+    background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  }
+}
+.list-controls .btn[disabled]:active, .list-controls .btn.disabled:active {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+.list-controls .btn[disabled]::before, .list-controls .btn.disabled::before {
+  display: none;
+}
+.list-controls .btn.btn-danger {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+.list-controls .btn.btn-danger:focus {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+@media (hover: hover) {
+  .list-controls .btn.btn-danger:hover {
+    background-color: $danger;
+    color: color-dynamic($danger);
+  }
+}
+.list-controls .btn.btn-primary {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+.list-controls .btn.btn-primary:focus {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+@media (hover: hover) {
+  .list-controls .btn.btn-primary:hover {
+    background-color: $tertiary;
+    color: color-dynamic($tertiary);
+  }
+}
+.list-controls .btn::before {
+  background-color: rgba(0, 0, 0, 0.12);
+  content: '';
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.list-controls .category-breadcrumb li > a.badge-category {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: color-chooser($tertiary, #ffffff);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  border-radius: 2px 0 0 2px;
+}
+.list-controls .category-breadcrumb li > a.badge-category:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.list-controls .category-breadcrumb li > a.badge-category:focus {
+  outline: 0;
+}
+.list-controls .category-breadcrumb li > a.badge-category[disabled], .list-controls .category-breadcrumb li > a.badge-category.disabled {
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+.list-controls .category-breadcrumb li > a.badge-category[disabled]:focus, .list-controls .category-breadcrumb li > a.badge-category.disabled:focus {
+  background-color: transparent;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category[disabled]:hover, .list-controls .category-breadcrumb li > a.badge-category.disabled:hover {
+    background-color: transparent;
+    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category[disabled]:active, .list-controls .category-breadcrumb li > a.badge-category.disabled:active {
+  background-color: transparent;
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-danger {
+  color: $danger;
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category.btn-danger:hover {
+    color: $danger;
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-primary {
+  color: $tertiary;
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category.btn-primary:hover {
+    color: $tertiary;
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+}
+.list-controls .category-breadcrumb li > a.badge-category:focus::before {
+  opacity: 1;
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category:hover {
+    background-color: color-chooser($tertiary, #ffffff);
+  }
+  .list-controls .category-breadcrumb li > a.badge-category:hover::before {
+    opacity: 1;
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category:active {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.list-controls .category-breadcrumb li > a.badge-category:active::before {
+  opacity: 1;
+}
+.list-controls .category-breadcrumb li > a.badge-category[disabled], .list-controls .category-breadcrumb li > a.badge-category.disabled {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.list-controls .category-breadcrumb li > a.badge-category[disabled]:focus, .list-controls .category-breadcrumb li > a.badge-category.disabled:focus {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category[disabled]:hover, .list-controls .category-breadcrumb li > a.badge-category.disabled:hover {
+    background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category[disabled]:active, .list-controls .category-breadcrumb li > a.badge-category.disabled:active {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+.list-controls .category-breadcrumb li > a.badge-category[disabled]::before, .list-controls .category-breadcrumb li > a.badge-category.disabled::before {
+  display: none;
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-danger {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-danger:focus {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category.btn-danger:hover {
+    background-color: $danger;
+    color: color-dynamic($danger);
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-primary {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+.list-controls .category-breadcrumb li > a.badge-category.btn-primary:focus {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+@media (hover: hover) {
+  .list-controls .category-breadcrumb li > a.badge-category.btn-primary:hover {
+    background-color: $tertiary;
+    color: color-dynamic($tertiary);
+  }
+}
+.list-controls .category-breadcrumb li > a.badge-category::before {
+  background-color: rgba(0, 0, 0, 0.12);
+  content: '';
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.list-controls .category-breadcrumb li > a.badge-category.category-dropdown-button {
+  border-radius: 0 2px 2px 0;
+  margin-left: -1px;
+  padding: 11px 8px;
+  width: auto;
+}
+.list-controls .category-breadcrumb li > a.badge-category.category-dropdown-button .fa-caret-right {
+  margin-left: 0;
+}
+.list-controls .category-dropdown-menu {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+  min-width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.list-controls .category-dropdown-menu a.badge-category {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 6.25px 24px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.list-controls .category-dropdown-menu .badge-category.home {
+  margin-left: 0;
+}
+.list-controls .category-dropdown-menu .badge-wrapper.bullet {
+  margin-right: 0;
+  padding: 0;
+}
+.list-controls .category-dropdown-menu .cat + .cat {
+  margin-top: 12.5px;
+}
+.list-controls .category-dropdown-menu .home {
+  margin-left: 16px;
+}
+.list-controls .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.list-controls .fa-bars::before {
+  content: 'menu';
+}
+.list-controls .fa-caret-down::before {
+  content: 'expand_less';
+}
+.list-controls .fa-caret-right::before {
+  content: 'expand_more';
+}
+.list-controls .fa-circle::before {
+  content: 'track_changes';
+}
+.list-controls .fa-circle-o::before {
+  content: 'notifications';
+}
+.list-controls .fa-dot-circle-o::before {
+  content: 'adjust';
+}
+.list-controls .fa-exclamation-circle::before {
+  content: 'notifications_active';
+}
+.list-controls .fa-lock::before {
+  content: 'lock';
+}
+.list-controls .fa-plus::before {
+  content: 'add';
+}
+.list-controls .fa-times-circle::before {
+  content: 'notifications_off';
+}
+.list-controls .fa-wrench::before {
+  content: 'settings';
+}
+.list-controls .nav {
+  margin-bottom: 0;
+}
+
 div.logout-link a.logout .fa {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
