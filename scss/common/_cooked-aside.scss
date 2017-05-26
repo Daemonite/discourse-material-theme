@@ -105,6 +105,22 @@ div {
 
       padding-right: $card-inner-spacer-x;
       padding-left: $card-inner-spacer-x;
+
+      .fa {
+        @include material-icons;
+      }
+
+      .fa-eye::before {
+        content: 'visibility';
+      }
+
+      .fa-eye-slash::before {
+        content: 'visibility_off';
+      }
+
+      .fa-lock::before {
+        content: 'lock';
+      }
     }
 
     .poll-buttons {

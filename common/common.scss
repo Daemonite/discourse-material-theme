@@ -639,6 +639,32 @@ div.poll .btn.btn-primary:focus {
     color: $tertiary;
   }
 }
+div.poll .btn .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+div.poll .btn .fa-eye::before {
+  content: 'visibility';
+}
+div.poll .btn .fa-eye-slash::before {
+  content: 'visibility_off';
+}
+div.poll .btn .fa-lock::before {
+  content: 'lock';
+}
 div.poll .poll-buttons {
   border-top-color: color-chooser(#000000, #e0e0e0);
   padding: 8px 8px;
