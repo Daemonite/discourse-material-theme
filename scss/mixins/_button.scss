@@ -33,6 +33,22 @@
   &:focus {
     outline: 0;
   }
+
+  &.btn-danger {
+    color: unquote('$danger');
+
+    @include focus-hover {
+      color: unquote('$danger');
+    }
+  }
+
+  &.btn-primary {
+    color: unquote('$tertiary');
+
+    @include focus-hover {
+      color: unquote('$tertiary');
+    }
+  }
 }
 
 
@@ -71,6 +87,26 @@
     right: 0;
     bottom: 0;
     left: 0;
+  }
+
+  &.btn-danger {
+    background-color: unquote('$danger');
+    color: color-dynamic(unquote('$danger'));
+
+    @include focus-hover {
+      background-color: unquote('$danger');
+      color: color-dynamic(unquote('$danger'));
+    }
+  }
+
+  &.btn-primary {
+    background-color: unquote('$tertiary');
+    color: color-dynamic(unquote('$tertiary'));
+
+    @include focus-hover {
+      background-color: unquote('$tertiary');
+      color: color-dynamic(unquote('$tertiary'));
+    }
   }
 }
 

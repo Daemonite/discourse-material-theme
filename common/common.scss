@@ -586,7 +586,30 @@ div.poll .btn:active {
 div.poll .btn:focus {
   outline: 0;
 }
+div.poll .btn.btn-danger {
+  color: $danger;
+}
+div.poll .btn.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  div.poll .btn.btn-danger:hover {
+    color: $danger;
+  }
+}
+div.poll .btn.btn-primary {
+  color: $tertiary;
+}
+div.poll .btn.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  div.poll .btn.btn-primary:hover {
+    color: $tertiary;
+  }
+}
 div.poll .poll-buttons {
+  border-top-color: color-chooser(#000000, #e0e0e0);
   padding: 8px 8px;
 }
 div.poll .poll-buttons .btn {
@@ -1359,6 +1382,28 @@ nav.post-controls .actions button:active {
 nav.post-controls .actions button:focus {
   outline: 0;
 }
+nav.post-controls .actions button.btn-danger {
+  color: $danger;
+}
+nav.post-controls .actions button.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  nav.post-controls .actions button.btn-danger:hover {
+    color: $danger;
+  }
+}
+nav.post-controls .actions button.btn-primary {
+  color: $tertiary;
+}
+nav.post-controls .actions button.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  nav.post-controls .actions button.btn-primary:hover {
+    color: $tertiary;
+  }
+}
 nav.post-controls .actions button:last-child {
   margin-right: 0;
 }
@@ -1644,6 +1689,40 @@ nav.post-controls .actions button .read-icon::before {
 #topic-footer-buttons > button.btn:focus {
   outline: 0;
 }
+#topic-footer-buttons div > button.btn.btn-danger,
+#topic-footer-buttons span > button.btn.btn-danger,
+#topic-footer-buttons > button.btn.btn-danger {
+  color: $danger;
+}
+#topic-footer-buttons div > button.btn.btn-danger:focus,
+#topic-footer-buttons span > button.btn.btn-danger:focus,
+#topic-footer-buttons > button.btn.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  #topic-footer-buttons div > button.btn.btn-danger:hover,
+  #topic-footer-buttons span > button.btn.btn-danger:hover,
+  #topic-footer-buttons > button.btn.btn-danger:hover {
+    color: $danger;
+  }
+}
+#topic-footer-buttons div > button.btn.btn-primary,
+#topic-footer-buttons span > button.btn.btn-primary,
+#topic-footer-buttons > button.btn.btn-primary {
+  color: $tertiary;
+}
+#topic-footer-buttons div > button.btn.btn-primary:focus,
+#topic-footer-buttons span > button.btn.btn-primary:focus,
+#topic-footer-buttons > button.btn.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  #topic-footer-buttons div > button.btn.btn-primary:hover,
+  #topic-footer-buttons span > button.btn.btn-primary:hover,
+  #topic-footer-buttons > button.btn.btn-primary:hover {
+    color: $tertiary;
+  }
+}
 #topic-footer-buttons div > button.btn:focus,
 #topic-footer-buttons span > button.btn:focus,
 #topic-footer-buttons > button.btn:focus {
@@ -1689,6 +1768,46 @@ nav.post-controls .actions button .read-icon::before {
   right: 0;
   bottom: 0;
   left: 0;
+}
+#topic-footer-buttons div > button.btn.btn-danger,
+#topic-footer-buttons span > button.btn.btn-danger,
+#topic-footer-buttons > button.btn.btn-danger {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+#topic-footer-buttons div > button.btn.btn-danger:focus,
+#topic-footer-buttons span > button.btn.btn-danger:focus,
+#topic-footer-buttons > button.btn.btn-danger:focus {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+@media (hover: hover) {
+  #topic-footer-buttons div > button.btn.btn-danger:hover,
+  #topic-footer-buttons span > button.btn.btn-danger:hover,
+  #topic-footer-buttons > button.btn.btn-danger:hover {
+    background-color: $danger;
+    color: color-dynamic($danger);
+  }
+}
+#topic-footer-buttons div > button.btn.btn-primary,
+#topic-footer-buttons span > button.btn.btn-primary,
+#topic-footer-buttons > button.btn.btn-primary {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+#topic-footer-buttons div > button.btn.btn-primary:focus,
+#topic-footer-buttons span > button.btn.btn-primary:focus,
+#topic-footer-buttons > button.btn.btn-primary:focus {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+@media (hover: hover) {
+  #topic-footer-buttons div > button.btn.btn-primary:hover,
+  #topic-footer-buttons span > button.btn.btn-primary:hover,
+  #topic-footer-buttons > button.btn.btn-primary:hover {
+    background-color: $tertiary;
+    color: color-dynamic($tertiary);
+  }
 }
 #topic-footer-buttons p {
   line-height: 36px;
@@ -1905,6 +2024,28 @@ nav.post-controls .actions button .read-icon::before {
 .topic-map .buttons .btn:focus {
   outline: 0;
 }
+.topic-map .buttons .btn.btn-danger {
+  color: $danger;
+}
+.topic-map .buttons .btn.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .topic-map .buttons .btn.btn-danger:hover {
+    color: $danger;
+  }
+}
+.topic-map .buttons .btn.btn-primary {
+  color: $tertiary;
+}
+.topic-map .buttons .btn.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .topic-map .buttons .btn.btn-primary:hover {
+    color: $tertiary;
+  }
+}
 .topic-map .buttons .btn .fa {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
@@ -1978,6 +2119,28 @@ nav.post-controls .actions button .read-icon::before {
 }
 .topic-map .link-summary a:focus {
   outline: 0;
+}
+.topic-map .link-summary a.btn-danger {
+  color: $danger;
+}
+.topic-map .link-summary a.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .topic-map .link-summary a.btn-danger:hover {
+    color: $danger;
+  }
+}
+.topic-map .link-summary a.btn-primary {
+  color: $tertiary;
+}
+.topic-map .link-summary a.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .topic-map .link-summary a.btn-primary:hover {
+    color: $tertiary;
+  }
 }
 .topic-map .map {
   padding: 0 8px;
@@ -2130,6 +2293,28 @@ nav.post-controls .actions button .read-icon::before {
 .topic-meta-data .post-info a:focus {
   outline: 0;
 }
+.topic-meta-data .post-info a.btn-danger {
+  color: $danger;
+}
+.topic-meta-data .post-info a.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .topic-meta-data .post-info a.btn-danger:hover {
+    color: $danger;
+  }
+}
+.topic-meta-data .post-info a.btn-primary {
+  color: $tertiary;
+}
+.topic-meta-data .post-info a.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .topic-meta-data .post-info a.btn-primary:hover {
+    color: $tertiary;
+  }
+}
 .topic-meta-data .post-info .fa {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
@@ -2253,6 +2438,34 @@ nav.post-controls .actions button .read-icon::before {
 .timeline-container .topic-timeline span > button.btn:focus {
   outline: 0;
 }
+.timeline-container .topic-timeline div > button.btn.btn-danger,
+.timeline-container .topic-timeline span > button.btn.btn-danger {
+  color: $danger;
+}
+.timeline-container .topic-timeline div > button.btn.btn-danger:focus,
+.timeline-container .topic-timeline span > button.btn.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .timeline-container .topic-timeline div > button.btn.btn-danger:hover,
+  .timeline-container .topic-timeline span > button.btn.btn-danger:hover {
+    color: $danger;
+  }
+}
+.timeline-container .topic-timeline div > button.btn.btn-primary,
+.timeline-container .topic-timeline span > button.btn.btn-primary {
+  color: $tertiary;
+}
+.timeline-container .topic-timeline div > button.btn.btn-primary:focus,
+.timeline-container .topic-timeline span > button.btn.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .timeline-container .topic-timeline div > button.btn.btn-primary:hover,
+  .timeline-container .topic-timeline span > button.btn.btn-primary:hover {
+    color: $tertiary;
+  }
+}
 .timeline-container .topic-timeline div > button.btn:focus,
 .timeline-container .topic-timeline span > button.btn:focus {
   background-color: color-chooser($tertiary, #ffffff);
@@ -2291,6 +2504,40 @@ nav.post-controls .actions button .read-icon::before {
   right: 0;
   bottom: 0;
   left: 0;
+}
+.timeline-container .topic-timeline div > button.btn.btn-danger,
+.timeline-container .topic-timeline span > button.btn.btn-danger {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+.timeline-container .topic-timeline div > button.btn.btn-danger:focus,
+.timeline-container .topic-timeline span > button.btn.btn-danger:focus {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+@media (hover: hover) {
+  .timeline-container .topic-timeline div > button.btn.btn-danger:hover,
+  .timeline-container .topic-timeline span > button.btn.btn-danger:hover {
+    background-color: $danger;
+    color: color-dynamic($danger);
+  }
+}
+.timeline-container .topic-timeline div > button.btn.btn-primary,
+.timeline-container .topic-timeline span > button.btn.btn-primary {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+.timeline-container .topic-timeline div > button.btn.btn-primary:focus,
+.timeline-container .topic-timeline span > button.btn.btn-primary:focus {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+@media (hover: hover) {
+  .timeline-container .topic-timeline div > button.btn.btn-primary:hover,
+  .timeline-container .topic-timeline span > button.btn.btn-primary:hover {
+    background-color: $tertiary;
+    color: color-dynamic($tertiary);
+  }
 }
 .timeline-container .topic-timeline i.fa {
   opacity: 1;
