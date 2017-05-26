@@ -63,3 +63,89 @@ aside {
     }
   }
 }
+
+div {
+  &.poll {
+    background-color: color-chooser($dark-2, $light-2);
+    border: 0;
+    margin: 0 ($card-padding-x * -1) $card-inner-spacer-y;
+    width: calc(100% + #{$card-padding-x * 2});
+
+    li {
+      &[data-poll-option-id] {
+        margin-bottom: $card-inner-spacer-y;
+        padding: 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .fa {
+          @include material-icons;
+          
+          margin-right: $card-inner-spacer-x;
+        }
+
+        .fa-check-square-o::before {
+          color: unquote('$tertiary');
+          content: 'check_box';
+        }
+
+        .fa-square-o::before {
+          content: 'check_box_outline_blank';
+        }
+      }
+    }
+
+    .btn {
+      @include btn-flat;
+
+      padding-right: $card-inner-spacer-x;
+      padding-left: $card-inner-spacer-x;
+    }
+
+    .poll-buttons {
+      border-top-color: color-chooser($table-border-color-dark, $table-border-color-light);
+      padding: ($card-padding-y / 2) ($card-padding-x - $card-inner-spacer-x);
+
+      .btn {
+        margin-left: $card-inner-spacer-x;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .poll-container {
+      padding: $card-padding-y $card-padding-x;
+    }
+
+    .poll-info {
+      border-left-color: color-chooser($table-border-color-dark, $table-border-color-light);
+      color: $card-color;
+      padding: $card-padding-y $card-padding-x;
+
+      p {
+        margin: $card-inner-spacer-y 0;
+
+        &:first-child {
+          line-height: 1;
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .info-number {
+        @include typography-h3;
+      }
+
+      .info-text {
+        @include typography-h6;
+      }
+    }
+  }
+}
