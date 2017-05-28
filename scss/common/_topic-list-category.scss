@@ -1,4 +1,9 @@
 .categories-and-latest {
+  .category-list,
+  .topic-list-latest {
+    width: calc(50% - #{$spacer-lg / 2});
+  }
+
   .topic-list {
     .more-topics {
       td {
@@ -19,6 +24,8 @@
   }
 
   .topic-list-latest {
+    margin-left: $spacer-lg;
+
     .main-link {
       .badge-wrapper {
         margin-top: $spacer-sm;

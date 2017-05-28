@@ -3735,6 +3735,10 @@ nav.post-controls .actions button .read-icon::before {
   display: none;
 }
 
+.categories-and-latest .category-list,
+.categories-and-latest .topic-list-latest {
+  width: calc(50% - 12px);
+}
 .categories-and-latest .topic-list .more-topics td {
   padding-right: 16px;
 }
@@ -3821,6 +3825,9 @@ nav.post-controls .actions button .read-icon::before {
 }
 .categories-and-latest .topic-list .posts {
   margin-bottom: 4px;
+}
+.categories-and-latest .topic-list-latest {
+  margin-left: 24px;
 }
 .categories-and-latest .topic-list-latest .main-link .badge-wrapper {
   margin-top: 8px;
