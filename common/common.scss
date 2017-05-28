@@ -3668,6 +3668,12 @@ nav.post-controls .actions button .read-icon::before {
   width: 24px;
 }
 .topic-list .badge-wrapper {
+  -webkit-transform: scale(0.75);
+       -o-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: 0 50%;
+       -o-transform-origin: 0 50%;
+          transform-origin: 0 50%;
   vertical-align: middle;
 }
 .topic-list .main-link {

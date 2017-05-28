@@ -119,6 +119,8 @@
   }
 
   .badge-wrapper {
+    transform: scale(.75);
+    transform-origin: 0 50%;
     vertical-align: middle;
   }
 
