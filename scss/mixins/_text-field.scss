@@ -11,7 +11,7 @@
   font-size: $text-field-font-size;
   height: $text-field-height;
   line-height: ($text-field-height - $text-field-padding-y * 2);
-  padding: $text-field-padding-y $text-field-padding-x;
+  padding: $text-field-padding-y $text-field-padding-x ($text-field-padding-y - $text-field-border-width);
   width: 100%;
 
   &:focus,
