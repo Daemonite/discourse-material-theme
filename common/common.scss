@@ -3833,6 +3833,82 @@ nav.post-controls .actions button .read-icon::before {
   margin-top: 8px;
 }
 
+.category-boxes,
+.category-boxes-with-topics {
+  margin: 0 -4px 16px;
+  width: auto;
+}
+.category-boxes h3,
+.category-boxes-with-topics h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-align: left;
+}
+.category-boxes .category-box,
+.category-boxes-with-topics .category-box {
+  border-left-width: 2px;
+  border-radius: 2px 0 0 2px;
+  margin: 0 4px 8px;
+  width: calc(33.333333% - 8px);
+}
+.category-boxes .category-box-inner,
+.category-boxes-with-topics .category-box-inner {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+}
+.category-boxes .category-box-inner[href]:focus, .category-boxes .category-box-inner[href]:hover, .category-boxes .category-box-inner[tabindex]:focus, .category-boxes .category-box-inner[tabindex]:hover,
+.category-boxes-with-topics .category-box-inner[href]:focus,
+.category-boxes-with-topics .category-box-inner[href]:hover,
+.category-boxes-with-topics .category-box-inner[tabindex]:focus,
+.category-boxes-with-topics .category-box-inner[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.category-boxes .category-box-inner[href]:focus, .category-boxes .category-box-inner[tabindex]:focus,
+.category-boxes-with-topics .category-box-inner[href]:focus,
+.category-boxes-with-topics .category-box-inner[tabindex]:focus {
+  outline: 0;
+}
+
+.category-boxes-with-topics .category-box-heading {
+  padding: 16px 16px;
+}
+.category-boxes-with-topics .featured-topics {
+  padding: 16px 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.category-boxes-with-topics .featured-topics li {
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 16px 16px;
+}
+.category-boxes-with-topics .featured-topics li::before {
+  display: none;
+}
+.category-boxes-with-topics .featured-topics li .overflow {
+  max-height: none;
+  white-space: nowrap;
+}
+.category-boxes-with-topics .featured-topics li .overflow > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.category-boxes-with-topics .featured-topics ul {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+
 .category-list {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
