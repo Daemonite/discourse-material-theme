@@ -2002,6 +2002,9 @@ div.menu-links-header .menu-links-row {
 .user-menu .notifications .fa-heart::before {
   content: 'favorite_border';
 }
+.user-menu .notifications .fa-pencil::before {
+  content: 'edit';
+}
 .user-menu .notifications .fa-reply::before {
   content: 'reply';
 }
