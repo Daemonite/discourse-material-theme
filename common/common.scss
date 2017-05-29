@@ -3980,12 +3980,11 @@ nav.post-controls .actions button .read-icon::before {
   margin: 0 4px;
 }
 #reply-control #draft-status {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  border-radius: 1em;
-  color: $primary;
+  background-color: transparent;
+  color: $tertiary;
   font-size: .857142857em;
   margin-right: 8px;
-  padding: 4px 6px;
+  margin-bottom: 8px;
   right: 50%;
   bottom: 68px;
 }
