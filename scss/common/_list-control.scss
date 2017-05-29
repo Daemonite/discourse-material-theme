@@ -1,11 +1,17 @@
 ol {
   &.category-breadcrumb {
     margin-right: $spacer;
+    max-width: 25%;
 
     li {
       display: flex;
+      float: none;
       margin-right: 0;
       position: relative;
+
+      + li {
+        margin-top: $spacer-sm;
+      }
     }
   }
 }
@@ -46,6 +52,12 @@ ol {
           @include btn-raised;
 
           border-radius: $btn-border-radius 0 0 $btn-border-radius;
+
+          &:not(.category-dropdown-button) {
+            flex-grow: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
 
           &.category-dropdown-button {
             border-radius: 0 $btn-border-radius $btn-border-radius 0;
@@ -88,7 +100,7 @@ ol {
     .badge-wrapper {
       &.bullet {
         margin-right: 0;
-        padding: 0;
+        padding: 0 $chip-padding-x 0 0;
       }
     }
 

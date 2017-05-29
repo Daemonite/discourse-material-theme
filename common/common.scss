@@ -1193,14 +1193,19 @@ div.poll .results .option {
 
 ol.category-breadcrumb {
   margin-right: 16px;
+  max-width: 25%;
 }
 ol.category-breadcrumb li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  float: none;
   margin-right: 0;
   position: relative;
+}
+ol.category-breadcrumb li + li {
+  margin-top: 8px;
 }
 
 .category-notification-menu .dropdown-menu {
@@ -1545,6 +1550,14 @@ ol.category-breadcrumb li {
   bottom: 0;
   left: 0;
 }
+.list-controls .category-breadcrumb li > a.badge-category:not(.category-dropdown-button) {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .list-controls .category-breadcrumb li > a.badge-category.category-dropdown-button {
   border-radius: 0 2px 2px 0;
   margin-left: -1px;
@@ -1583,7 +1596,7 @@ ol.category-breadcrumb li {
 }
 .list-controls .category-dropdown-menu .badge-wrapper.bullet {
   margin-right: 0;
-  padding: 0;
+  padding: 0 12px 0 0;
 }
 .list-controls .category-dropdown-menu .cat + .cat {
   margin-top: 12.5px;
