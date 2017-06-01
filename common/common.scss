@@ -4288,15 +4288,20 @@ nav.post-controls .actions button .read-icon::before {
 #reply-control .wmd-controls .d-editor-preview-header {
   border-top-width: 48px;
 }
+#reply-control .wmd-controls .d-editor-input {
+  position: static;
+}
 #reply-control .wmd-controls .d-editor-preview {
   border: 0;
   border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 #reply-control .wmd-controls .d-editor-preview-wrapper {
+  height: auto;
   padding-left: 0;
   position: static;
 }
 #reply-control .wmd-controls .d-editor-textarea-wrapper {
+  height: auto;
   padding-right: 0;
   position: static;
 }

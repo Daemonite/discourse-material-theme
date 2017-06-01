@@ -358,17 +358,23 @@
       border-top-width: ($btn-height-sm + $card-inner-spacer-y);
     }
 
+    .d-editor-input {
+      position: static;
+    }
+
     .d-editor-preview {
       border: 0;
       border-left: 1px solid color-chooser($white-divider, $black-divider);
     }
 
     .d-editor-preview-wrapper {
+      height: auto;
       padding-left: 0;
       position: static;
     }
 
     .d-editor-textarea-wrapper {
+      height: auto;
       padding-right: 0;
       position: static;
     }
