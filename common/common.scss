@@ -1863,6 +1863,11 @@ div.menu-links-header .menu-links-row {
   line-height: 20px;
   padding: 8px 0 7px;
   width: 100%;
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border-radius: 4px;
+  height: 56px;
+  line-height: 16px;
+  padding: 20px 16px 19px;
   margin: 0;
   width: 100%;
 }
@@ -1874,6 +1879,9 @@ div.menu-links-header .menu-links-row {
   border-color: $tertiary;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+.search-menu input[type='text']:focus, .search-menu input[type='text']:hover {
+  padding-bottom: 18px;
 }
 .search-menu li:not(.category):not(.heading) {
   font-size: inherit;
@@ -1910,9 +1918,17 @@ div.menu-links-header .menu-links-row {
   margin-bottom: 4px;
 }
 .search-menu .no-results {
-  color: $danger;
-  margin-top: 8px;
-  padding: 0;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin: 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 6.25px 24px;
+  padding-right: 0;
+  padding-left: 0;
 }
 .search-menu .no-results:empty {
   display: none;
@@ -1924,6 +1940,9 @@ div.menu-links-header .menu-links-row {
   margin-top: 8px;
   padding: 0;
 }
+.search-menu .searching {
+  position: static;
+}
 .drop-down-visible .search-menu .searching {
   top: 38px;
   right: 24px;
@@ -1932,7 +1951,10 @@ div.menu-links-header .menu-links-row {
   border-color: currentColor;
   border-right-color: transparent;
   height: 16px;
-  margin-top: -8px;
+  margin-top: 0;
+  position: absolute;
+  top: 40px;
+  right: 40px;
   width: 16px;
 }
 

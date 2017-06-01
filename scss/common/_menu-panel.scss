@@ -143,7 +143,7 @@ div {
 .search-menu {
   input {
     &[type='text'] {
-      @include text-field;
+      @include text-field-box;
 
       margin: 0;
       width: 100%;
@@ -180,9 +180,11 @@ div {
   }
 
   .no-results {
-    color: unquote('$danger');
-    margin-top: $menu-panel-inner-spacer-y;
-    padding: 0;
+    @include dropdown-header;
+    @include dropdown-header-sm;
+
+    padding-right: 0;
+    padding-left: 0;
 
     &:empty {
       display: none;
@@ -199,6 +201,8 @@ div {
   }
 
   .searching {
+    position: static;
+
     .drop-down-visible & {
       top: ($menu-panel-padding-y + $text-field-height / 2);
       right: $menu-panel-padding-x;
@@ -208,7 +212,10 @@ div {
       border-color: currentColor;
       border-right-color: transparent;
       height: $text-field-font-size;
-      margin-top: ($text-field-font-size / -2);
+      margin-top: 0;
+      position: absolute;
+      top: ($menu-panel-padding-y + $text-field-box-height / 2 - $text-field-font-size / 2);
+      right: ($menu-panel-padding-x + $text-field-box-padding-x);
       width: $text-field-font-size;
     }
   }
