@@ -65,7 +65,7 @@
         text-align: right;
 
         a {
-          @include btn-raised;
+          @include btn-flat;
 
           height: $btn-height;
         }

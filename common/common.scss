@@ -3386,9 +3386,6 @@ nav.post-controls .actions button .read-icon::before {
           user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  background-color: color-chooser($tertiary, #ffffff);
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   height: 36px;
 }
 #reply-control .contents .form-element .select2-container a:focus {
@@ -3444,85 +3441,6 @@ nav.post-controls .actions button .read-icon::before {
   #reply-control .contents .form-element .select2-container a.btn-primary:hover {
     color: $tertiary;
   }
-}
-#reply-control .contents .form-element .select2-container a:focus {
-  background-color: color-chooser($tertiary, #ffffff);
-}
-#reply-control .contents .form-element .select2-container a:focus::before {
-  opacity: 1;
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a:hover {
-    background-color: color-chooser($tertiary, #ffffff);
-  }
-  #reply-control .contents .form-element .select2-container a:hover::before {
-    opacity: 1;
-  }
-}
-#reply-control .contents .form-element .select2-container a:active {
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-}
-#reply-control .contents .form-element .select2-container a:active::before {
-  opacity: 1;
-}
-#reply-control .contents .form-element .select2-container a[disabled], #reply-control .contents .form-element .select2-container a.disabled {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-#reply-control .contents .form-element .select2-container a[disabled]:focus, #reply-control .contents .form-element .select2-container a.disabled:focus {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a[disabled]:hover, #reply-control .contents .form-element .select2-container a.disabled:hover {
-    background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  }
-}
-#reply-control .contents .form-element .select2-container a[disabled]:active, #reply-control .contents .form-element .select2-container a.disabled:active {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-}
-#reply-control .contents .form-element .select2-container a[disabled]::before, #reply-control .contents .form-element .select2-container a.disabled::before {
-  display: none;
-}
-#reply-control .contents .form-element .select2-container a.btn-danger {
-  background-color: $danger;
-  color: color-dynamic($danger);
-}
-#reply-control .contents .form-element .select2-container a.btn-danger:focus {
-  background-color: $danger;
-  color: color-dynamic($danger);
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a.btn-danger:hover {
-    background-color: $danger;
-    color: color-dynamic($danger);
-  }
-}
-#reply-control .contents .form-element .select2-container a.btn-primary {
-  background-color: $tertiary;
-  color: color-dynamic($tertiary);
-}
-#reply-control .contents .form-element .select2-container a.btn-primary:focus {
-  background-color: $tertiary;
-  color: color-dynamic($tertiary);
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a.btn-primary:hover {
-    background-color: $tertiary;
-    color: color-dynamic($tertiary);
-  }
-}
-#reply-control .contents .form-element .select2-container a::before {
-  background-color: rgba(0, 0, 0, 0.12);
-  content: '';
-  display: block;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 #reply-control .contents #reply-title {
   margin: 0;
