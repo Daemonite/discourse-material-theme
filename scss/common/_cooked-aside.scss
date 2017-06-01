@@ -7,6 +7,39 @@ aside {
     margin-left: ($card-padding-x * -1);
     padding: $card-padding-y $card-padding-x;
 
+    header {
+      margin-bottom: ($card-inner-spacer-y / 2);
+
+      &.source {
+        .ember-view & {
+          background-position: 0 50%;
+        }
+      }
+    }
+
+    .onebox-body {
+      h3,
+      h4 {
+        @include typography-h5;
+
+        overflow: hidden;
+        margin-bottom: ($card-inner-spacer-y / 2);
+      }
+
+      img {
+        margin-right: ($card-inner-spacer-x * 2);
+        width: ($card-padding-x * 6);
+      }
+
+      p {
+        overflow: hidden;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
     + .onebox {
       border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
       margin-top: ($card-inner-spacer-y * -1);

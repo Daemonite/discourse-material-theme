@@ -576,6 +576,31 @@ aside.onebox {
   margin-left: -16px;
   padding: 16px 16px;
 }
+aside.onebox header {
+  margin-bottom: 8px;
+}
+.ember-view aside.onebox header.source {
+  background-position: 0 50%;
+}
+aside.onebox .onebox-body h3,
+aside.onebox .onebox-body h4 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+aside.onebox .onebox-body img {
+  margin-right: 16px;
+  width: 96px;
+}
+aside.onebox .onebox-body p {
+  overflow: hidden;
+}
+aside.onebox .onebox-body p:last-child {
+  margin-bottom: 0;
+}
 aside.onebox + .onebox {
   border-top: 1px solid color-chooser(#424242, #ffffff);
   margin-top: -16px;
