@@ -31,6 +31,7 @@
 // - Progress
 // - Table
 // - Text field
+//   - Text field box
 
 
 
@@ -345,3 +346,14 @@ $text-field-margin-x:     $spacer-sm !default;
 $text-field-margin-y:     $spacer-sm !default;
 $text-field-padding-x:    0 !default;
 $text-field-padding-y:    8px !default;
+
+
+
+// Text field box
+
+$text-field-box-bg-dark:       rgba(255, 255, 255, .1) !default;
+$text-field-box-bg-light:      rgba(0, 0, 0, .06) !default;
+$text-field-box-border-radius: 4px !default;
+$text-field-box-height:        56px !default;
+$text-field-box-padding-x:     16px !default;
+$text-field-box-padding-y:     20px !default;

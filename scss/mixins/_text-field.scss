@@ -25,3 +25,18 @@
     box-shadow: none;
   }
 }
+
+@mixin text-field-box {
+  @include text-field;
+
+  background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+  border-radius: $text-field-box-border-radius;
+  height: $text-field-box-height;
+  line-height: ($text-field-box-height - $text-field-box-padding-y * 2);
+  padding: $text-field-box-padding-y $text-field-box-padding-x ($text-field-box-padding-y - $text-field-border-width);
+
+  &:focus,
+  &:hover {
+    padding-bottom: ($text-field-box-padding-y - $text-field-border-width * 2);
+  }
+}
