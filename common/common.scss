@@ -3747,6 +3747,9 @@ nav.post-controls .actions button .read-icon::before {
 #reply-control .contents .submit-panel .fa-plus::before {
   content: 'add';
 }
+#reply-control .contents .submit-panel .fa-reply::before {
+  content: 'reply';
+}
 #reply-control .control-row {
   display: -webkit-box;
   display: -webkit-flex;
