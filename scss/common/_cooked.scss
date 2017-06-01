@@ -6,6 +6,11 @@
     padding-left: $card-padding-x;
   }
 
+  blockquote {
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+  }
+
   h1,
   h2,
   h3,
@@ -15,41 +20,52 @@
     margin: 0 0 ($card-inner-spacer-y / 2);
   }
 
-  img {
-    .topic-body .contents & {
-      &:not(.thumbnail) {
-        height: auto;
-        max-width: 100%;
-      }
-    }
-  }
-
-  > iframe {
+  iframe {
     border: 0;
     display: block;
+    margin-right: ($card-padding-x * -1);
     margin-bottom: $card-inner-spacer-y;
+    margin-left: ($card-padding-x * -1);
+    max-width: none;
+    width: calc(100% + #{$card-padding-x * 2});
+  }
 
-    .topic-body .contents & {
-      margin-right: ($card-padding-x * -1);
-      margin-left: ($card-padding-x * -1);
-      max-width: none;
-      width: calc(100% + #{$card-padding-x * 2});
+  img {
+    &:not(.thumbnail) {
+      height: auto;
+      max-width: 100%;
     }
   }
 
-  > p:empty {
+  p:empty {
     display: none;
+  }
+
+  pre {
+    border-radius: 0;
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
   }
 
   > :last-child {
     margin-bottom: 0;
+  }
+
+  .bd-clipboard {
+    border-radius: 0;
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+
+    + pre {
+      border-radius: 0;
+    }
   }
 }
 
 .lazyYT-container {
   margin-bottom: $card-inner-spacer-y;
 
-  .topic-body .contents .cooked & {
+  .cooked & {
     margin-right: ($card-padding-x * -1);
     margin-left: ($card-padding-x * -1);
     padding-bottom: 56.25% !important;
@@ -65,7 +81,7 @@
 .lightbox-wrapper {
   margin-bottom: $card-inner-spacer-y;
 
-  .topic-body .contents .cooked & {
+  .cooked & {
     display: block;
     margin-right: ($card-padding-x * -1);
     margin-left: ($card-padding-x * -1);

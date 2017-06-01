@@ -1,6 +1,6 @@
 aside {
   &.onebox {
-    background-color: color-chooser($dark-2, $light-2);
+    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
     border: 0;
     margin-right: ($card-padding-x * -1);
     margin-bottom: $card-inner-spacer-y;
@@ -9,12 +9,13 @@ aside {
 
     + .onebox {
       border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
-      margin-top: ($card-padding-y * -1);
+      margin-top: ($card-inner-spacer-y * -1);
     }
   }
 
   &.quote {
     blockquote {
+      border-radius: 0;
       width: auto !important;
     }
 
@@ -48,17 +49,14 @@ aside {
 
     .title {
       border-left: 0;
-      border-radius: $card-border-radius $card-border-radius 0 0;
       color: color-chooser($white-secondary, $black-secondary);
+      margin-right: ($card-padding-x * -1);
+      margin-left: ($card-padding-x * -1);
       padding: $card-padding-y $card-padding-x 0;
 
       .avatar {
         margin-top: 0;
         margin-right: $card-inner-spacer-x;
-      }
-
-      + blockquote {
-        border-radius: 0 0 $card-border-radius $card-border-radius;
       }
     }
   }
@@ -66,7 +64,7 @@ aside {
 
 div {
   &.poll {
-    background-color: color-chooser($dark-2, $light-2);
+    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
     border: 0;
     margin: 0 ($card-padding-x * -1) $card-inner-spacer-y;
     width: calc(100% + #{$card-padding-x * 2});
@@ -75,36 +73,16 @@ div {
       font-size: inherit;
       margin-bottom: $card-inner-spacer-y;
 
+      &:last-child {
+        margin-bottom: 0;
+      }
+
       &[data-poll-option-id] {
         margin-bottom: $card-inner-spacer-y;
         padding: 0;
 
         &:last-child {
           margin-bottom: 0;
-        }
-
-        .fa {
-          @include material-icons;
-          
-          margin-right: $card-inner-spacer-x;
-        }
-
-        .fa-check-square-o::before {
-          color: unquote('$tertiary');
-          content: 'check_box';
-        }
-
-        .fa-circle-o::before {
-          content: 'radio_button_unchecked';
-        }
-
-        .fa-dot-circle-o::before {
-          color: unquote('$tertiary');
-          content: 'radio_button_checked';
-        }
-
-        .fa-square-o::before {
-          content: 'check_box_outline_blank';
         }
       }
     }
@@ -118,18 +96,42 @@ div {
       .fa {
         @include material-icons;
       }
+    }
 
-      .fa-eye::before {
-        content: 'visibility';
-      }
+    .fa {
+      @include material-icons;
+      
+      margin-right: $card-inner-spacer-x;
+    }
 
-      .fa-eye-slash::before {
-        content: 'visibility_off';
-      }
+    .fa-check-square-o::before {
+      color: unquote('$tertiary');
+      content: 'check_box';
+    }
 
-      .fa-lock::before {
-        content: 'lock';
-      }
+    .fa-circle-o::before {
+      content: 'radio_button_unchecked';
+    }
+
+    .fa-dot-circle-o::before {
+      color: unquote('$tertiary');
+      content: 'radio_button_checked';
+    }
+
+    .fa-eye::before {
+      content: 'visibility';
+    }
+
+    .fa-eye-slash::before {
+      content: 'visibility_off';
+    }
+
+    .fa-lock::before {
+      content: 'lock';
+    }
+
+    .fa-square-o::before {
+      content: 'check_box_outline_blank';
     }
 
     .poll-buttons {

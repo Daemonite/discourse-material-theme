@@ -188,7 +188,6 @@ ul {
   margin-top: 0;
   margin-bottom: 16px;
 }
-
 ol ol,
 ol ul,
 ul ol,
@@ -487,6 +486,10 @@ pre .hljs {
   padding-right: 16px;
   padding-left: 16px;
 }
+.cooked blockquote {
+  margin-right: -16px;
+  margin-left: -16px;
+}
 .cooked h1,
 .cooked h2,
 .cooked h3,
@@ -495,38 +498,49 @@ pre .hljs {
 .cooked h6 {
   margin: 0 0 8px;
 }
-.topic-body .contents .cooked img:not(.thumbnail) {
-  height: auto;
-  max-width: 100%;
-}
-.cooked > iframe {
+.cooked iframe {
   border: 0;
   display: block;
-  margin-bottom: 16px;
-}
-.topic-body .contents .cooked > iframe {
   margin-right: -16px;
+  margin-bottom: 16px;
   margin-left: -16px;
   max-width: none;
   width: calc(100% + 32px);
 }
-.cooked > p:empty {
+.cooked img:not(.thumbnail) {
+  height: auto;
+  max-width: 100%;
+}
+.cooked p:empty {
   display: none;
+}
+.cooked pre {
+  border-radius: 0;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 .cooked > :last-child {
   margin-bottom: 0;
+}
+.cooked .bd-clipboard {
+  border-radius: 0;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+.cooked .bd-clipboard + pre {
+  border-radius: 0;
 }
 
 .lazyYT-container {
   margin-bottom: 16px;
 }
-.topic-body .contents .cooked .lazyYT-container {
+.cooked .lazyYT-container {
   margin-right: -16px;
   margin-left: -16px;
   padding-bottom: 56.25% !important;
   width: calc(100% + 32px) !important;
 }
-.topic-body .contents .cooked .lazyYT-container + .lazyYT-container {
+.cooked .lazyYT-container + .lazyYT-container {
   border-top: 1px solid color-chooser(#424242, #ffffff);
   margin-top: -16px;
 }
@@ -534,23 +548,23 @@ pre .hljs {
 .lightbox-wrapper {
   margin-bottom: 16px;
 }
-.topic-body .contents .cooked .lightbox-wrapper {
+.cooked .lightbox-wrapper {
   display: block;
   margin-right: -16px;
   margin-left: -16px;
 }
-.topic-body .contents .cooked .lightbox-wrapper img {
+.cooked .lightbox-wrapper img {
   max-height: none;
   width: 100%;
 }
-.topic-body .contents .cooked .lightbox-wrapper .lightbox {
+.cooked .lightbox-wrapper .lightbox {
   display: block;
 }
-.topic-body .contents .cooked .lightbox-wrapper + a {
+.cooked .lightbox-wrapper + a {
   display: block;
   margin-top: -8px;
 }
-.topic-body .contents .cooked .lightbox-wrapper + a + p {
+.cooked .lightbox-wrapper + a + p {
   display: block;
 }
 
@@ -567,6 +581,7 @@ aside.onebox + .onebox {
   margin-top: -16px;
 }
 aside.quote blockquote {
+  border-radius: 0;
   width: auto !important;
 }
 aside.quote .quote-controls {
@@ -619,16 +634,14 @@ aside.quote .quote-controls .fa-chevron-up::before {
 }
 aside.quote .title {
   border-left: 0;
-  border-radius: 2px 2px 0 0;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  margin-right: -16px;
+  margin-left: -16px;
   padding: 16px 16px 0;
 }
 aside.quote .title .avatar {
   margin-top: 0;
   margin-right: 8px;
-}
-aside.quote .title + blockquote {
-  border-radius: 0 0 2px 2px;
 }
 
 div.poll {
@@ -641,44 +654,15 @@ div.poll li {
   font-size: inherit;
   margin-bottom: 16px;
 }
+div.poll li:last-child {
+  margin-bottom: 0;
+}
 div.poll li[data-poll-option-id] {
   margin-bottom: 16px;
   padding: 0;
 }
 div.poll li[data-poll-option-id]:last-child {
   margin-bottom: 0;
-}
-div.poll li[data-poll-option-id] .fa {
-  font-family: 'Material Icons';
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
-  font-size: 1.714286em;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 0.583333em;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  vertical-align: -0.302198em;
-  white-space: nowrap;
-  word-wrap: normal;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  margin-right: 8px;
-}
-div.poll li[data-poll-option-id] .fa-check-square-o::before {
-  color: $tertiary;
-  content: 'check_box';
-}
-div.poll li[data-poll-option-id] .fa-circle-o::before {
-  content: 'radio_button_unchecked';
-}
-div.poll li[data-poll-option-id] .fa-dot-circle-o::before {
-  color: $tertiary;
-  content: 'radio_button_checked';
-}
-div.poll li[data-poll-option-id] .fa-square-o::before {
-  content: 'check_box_outline_blank';
 }
 div.poll .btn {
   background-color: transparent;
@@ -778,14 +762,46 @@ div.poll .btn .fa {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-div.poll .btn .fa-eye::before {
+div.poll .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 8px;
+}
+div.poll .fa-check-square-o::before {
+  color: $tertiary;
+  content: 'check_box';
+}
+div.poll .fa-circle-o::before {
+  content: 'radio_button_unchecked';
+}
+div.poll .fa-dot-circle-o::before {
+  color: $tertiary;
+  content: 'radio_button_checked';
+}
+div.poll .fa-eye::before {
   content: 'visibility';
 }
-div.poll .btn .fa-eye-slash::before {
+div.poll .fa-eye-slash::before {
   content: 'visibility_off';
 }
-div.poll .btn .fa-lock::before {
+div.poll .fa-lock::before {
   content: 'lock';
+}
+div.poll .fa-square-o::before {
+  content: 'check_box_outline_blank';
 }
 div.poll .poll-buttons {
   border-top-color: color-chooser(#000000, #e0e0e0);
