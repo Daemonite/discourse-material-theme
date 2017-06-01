@@ -35,3 +35,16 @@
     }
   }
 }
+
+.select2-search {
+  display: block;
+  min-height: 0;
+  padding-right: $dropdown-link-padding-x;
+  padding-left: $dropdown-link-padding-x;
+
+  input[type='text'] {
+    @include text-field-box;
+
+    height: $text-field-box-height !important;
+  }
+}

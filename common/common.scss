@@ -4277,6 +4277,49 @@ nav.post-controls .actions button .read-icon::before {
   content: 'arrow_drop_down';
 }
 
+.select2-search {
+  display: block;
+  min-height: 0;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.select2-search input[type='text'] {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 0 7px;
+  width: 100%;
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border-radius: 4px;
+  height: 56px;
+  line-height: 16px;
+  padding: 20px 16px 19px;
+  height: 56px !important;
+}
+.select2-search input[type='text']:focus, .select2-search input[type='text']:hover {
+  border-bottom-width: 2px;
+  padding-bottom: 6px;
+}
+.select2-search input[type='text']:focus {
+  border-color: $tertiary;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.select2-search input[type='text']:focus, .select2-search input[type='text']:hover {
+  padding-bottom: 18px;
+}
+
 .timeline-container .topic-timeline div > button.btn,
 .timeline-container .topic-timeline span > button.btn {
   background-color: transparent;
