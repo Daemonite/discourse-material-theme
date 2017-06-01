@@ -3248,6 +3248,52 @@ nav.post-controls .actions button .read-icon::before {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+#reply-control.draft {
+  border-top: 0;
+  height: auto !important;
+  text-align: center;
+}
+#reply-control.draft .draft-text {
+  padding: 11px 16px;
+}
+@media (hover: hover) {
+  #reply-control.draft .draft-text:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
+}
+#reply-control.draft .draft-text:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+#reply-control.draft .span24 {
+  display: block;
+  float: none;
+  width: auto;
+}
+#reply-control.draft .toggler {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  height: 24px;
+  margin-top: -12px;
+  top: 50%;
+  widows: 24px;
+}
+#reply-control.draft .toggler::before {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  content: 'close';
+}
 #reply-control.edit-title .contents input#reply-title {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;

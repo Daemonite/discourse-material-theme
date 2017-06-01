@@ -4,6 +4,44 @@
   display: flex;
   flex-direction: column;
 
+  &.draft {
+    border-top: 0;
+    height: auto !important;
+    text-align: center;
+
+    .draft-text {
+      padding: $btn-padding-y $btn-padding-x;
+
+      @include hover {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      }
+
+      &:active {
+        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+      }
+    }
+
+    .span24 {
+      display: block;
+      float: none;
+      width: auto;
+    }
+
+    .toggler {
+      color: color-chooser($white-secondary, $black-secondary);
+      height: $material-icon-size;
+      margin-top: ($material-icon-size / -2);
+      top: 50%;
+      widows: $material-icon-size;
+
+      &::before {
+        @include material-icons;
+
+        content: 'close';
+      }
+    }
+  }
+
   &.edit-title {
     .contents {
       input {
