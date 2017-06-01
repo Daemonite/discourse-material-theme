@@ -4,6 +4,71 @@
 
 #list-area {
   margin-bottom: $spacer-lg;
+
+  h2 {
+    margin: 0 0 $spacer;
+  }
+}
+
+.period-chooser {
+  align-items: center;
+  display: inline-flex;
+
+  button {
+    @include btn-raised;
+
+    margin-bottom: $spacer;
+    margin-left: $spacer-sm;
+    padding-right: ($card-padding-x / 2);
+    padding-left: ($card-padding-x / 2);
+
+    .fa {
+      @include material-icons;
+    }
+
+    .fa-caret-down::before {
+      content: 'arrow_drop_down';
+    }
+  }
+
+  h2 {
+    .top-date-string {
+      @include typography-small;
+
+      color: color-chooser($white-secondary, $black-secondary);
+    }
+  }
+
+  #period-popup {
+    @include dropdown-menu;
+    @include dropdown-menu-sm;
+
+    ul li {
+      &:hover {
+        background-color: transparent;
+      }
+
+      a {
+        @include dropdown-link;
+        @include dropdown-link-sm;
+      }
+
+      .top-date-string {
+        @include typography-small;
+
+        color: color-chooser($white-secondary, $black-secondary);
+      }
+    }
+  }
+}
+
+.top-title-buttons {
+  button {
+    @include btn-raised;
+
+    margin-right: 0;
+    margin-left: $spacer-xs;
+  }
 }
 
 .topic-list {
@@ -188,4 +253,8 @@
   .topic-status {
     display: none;
   }
+}
+
+.topic-list-bottom {
+  margin: 0 0 $spacer;
 }
