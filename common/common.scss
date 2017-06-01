@@ -3386,6 +3386,10 @@ nav.post-controls .actions button .read-icon::before {
           user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   height: 36px;
 }
 #reply-control .contents .form-element .select2-container a:focus {
@@ -3441,6 +3445,13 @@ nav.post-controls .actions button .read-icon::before {
   #reply-control .contents .form-element .select2-container a.btn-primary:hover {
     color: $tertiary;
   }
+}
+#reply-control .contents .form-element .select2-container b {
+  margin-top: 0;
+}
+#reply-control .contents .form-element .select2-dropdown-open a {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  border-radius: 2px 2px 0 0;
 }
 #reply-control .contents #reply-title {
   margin: 0;
@@ -4222,6 +4233,51 @@ nav.post-controls .actions button .read-icon::before {
   height: auto;
   padding-right: 0;
   position: static;
+}
+
+.select2-container .select2-choice {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.select2-container .select2-choice > .select2-chosen {
+  margin-right: 0;
+}
+.select2-container .select2-choice .select2-arrow {
+  border-radius: 0;
+  height: auto;
+  position: static;
+  width: auto;
+}
+.select2-container .select2-choice .select2-arrow b {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent;
+  background-image: none;
+  height: auto;
+  margin-left: 4px;
+  width: 14px;
+}
+.select2-container .select2-choice .select2-arrow b::before {
+  content: 'arrow_drop_down';
 }
 
 .timeline-container .topic-timeline div > button.btn,

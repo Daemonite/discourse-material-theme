@@ -1,0 +1,31 @@
+.select2-container {
+  .select2-choice {
+    align-items: center;
+    display: inline-flex;
+
+    > .select2-chosen {
+      margin-right: 0;
+    }
+
+    .select2-arrow {
+      border-radius: 0;
+      height: auto;
+      position: static;
+      width: auto;
+
+      b {
+        @include material-icons;
+
+        background-color: transparent;
+        background-image: none;
+        height: auto;
+        margin-left: $spacer-xs;
+        width: $btn-font-size;
+
+        &::before {
+          content: 'arrow_drop_down';
+        }
+      }
+    }
+  }
+}

@@ -67,7 +67,19 @@
         a {
           @include btn-flat;
 
+          display: inline-flex;
           height: $btn-height;
+        }
+
+        b {
+          margin-top: 0;
+        }
+      }
+
+      .select2-dropdown-open {
+        a {
+          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+          border-radius: $btn-border-radius $btn-border-radius 0 0;
         }
       }
     }
