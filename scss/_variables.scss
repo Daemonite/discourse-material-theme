@@ -234,14 +234,17 @@ $chip-width:          $chip-height !default;
 
 // Code
 
-$code-color:     #bd4147 !default;
-$code-font-size: 87.5% !default;
-$code-padding:   .2rem .4rem !default;
+$code-bg-dark:       $dark-2 !default;
+$code-bg-light:      $light-2 !default;
+$code-border-radius: 2px !default;
+$code-color:         #bd4147 !default;
+$code-font-size:     87.5% !default;
+$code-padding:       .2rem .4rem !default;
 
-$kbd-bg:         #333333 !default;
-$kbd-color:      #ffffff !default;
+$kbd-bg:             #333333 !default;
+$kbd-color:          #ffffff !default;
 
-$pre-padding:    $card-padding-y $card-padding-x !default;
+$pre-padding:        $card-padding-y $card-padding-x !default;
 
 
 

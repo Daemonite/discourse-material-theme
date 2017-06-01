@@ -8,8 +8,8 @@ samp {
 }
 
 code {
-  background-color: color-chooser($dark-2, $light-2);
-  border-radius: 2px;
+  background-color: color-chooser($code-bg-dark, $code-bg-light);
+  border-radius: $code-border-radius;
   color: $code-color;
   font-size: $code-font-size;
   padding: $code-padding;
@@ -17,7 +17,7 @@ code {
 
 kbd {
   background-color: $kbd-bg;
-  border-radius: 2px;
+  border-radius: $code-border-radius;
   color: $kbd-color;
   font-size: $code-font-size;
   padding: $code-padding;
@@ -29,8 +29,8 @@ kbd {
 }
 
 pre {
-  background-color: color-chooser($dark-2, $light-2);
-  border-radius: 2px;
+  background-color: color-chooser($code-bg-dark, $code-bg-light);
+  border-radius: $code-border-radius;
   color: unquote('$primary');
   display: block;
   font-size: $font-size-base;
@@ -49,11 +49,11 @@ pre {
 
 .code-highlight {
   .bd-clipboard {
-    background-color: color-chooser($dark-2, $light-2);
-    border-radius: 2px 2px 0 0;
+    background-color: color-chooser($code-bg-dark, $code-bg-light);
+    border-radius: $code-border-radius $code-border-radius 0 0;
 
     + pre {
-      border-radius: 0 0 2px 2px;
+      border-radius: 0 0 $code-border-radius $code-border-radius;
     }
   }
 }
