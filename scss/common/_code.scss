@@ -47,6 +47,17 @@ pre {
   }
 }
 
+.code-highlight {
+  .bd-clipboard {
+    background-color: color-chooser($dark-2, $light-2);
+    border-radius: 2px 2px 0 0;
+
+    + pre {
+      border-radius: 0 0 2px 2px;
+    }
+  }
+}
+
 .hljs {
   color: unquote('$primary');
   padding: $pre-padding;
