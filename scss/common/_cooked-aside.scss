@@ -50,9 +50,12 @@ aside {
     .title {
       border-left: 0;
       color: color-chooser($white-secondary, $black-secondary);
-      margin-right: ($card-padding-x * -1);
-      margin-left: ($card-padding-x * -1);
       padding: $card-padding-y $card-padding-x 0;
+
+      .cooked & {
+        margin-right: ($card-padding-x * -1);
+        margin-left: ($card-padding-x * -1);
+      }
 
       .avatar {
         margin-top: 0;
@@ -92,10 +95,6 @@ div {
 
       padding-right: $card-inner-spacer-x;
       padding-left: $card-inner-spacer-x;
-
-      .fa {
-        @include material-icons;
-      }
     }
 
     .fa {
