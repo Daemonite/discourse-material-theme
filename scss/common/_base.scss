@@ -107,10 +107,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: unquote('$primary');
-  font-family: inherit;
-  margin-top: 0;
-  margin-bottom: $spacer-sm;
+  body & {
+    color: unquote('$primary');
+    font-family: inherit;
+    margin-top: 0;
+    margin-bottom: $spacer-sm;
+  }
 }
 
 h1 {
