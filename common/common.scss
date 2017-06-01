@@ -3363,88 +3363,8 @@ nav.post-controls .actions button .read-icon::before {
   text-align: right;
 }
 #reply-control .contents .form-element .select2-container a {
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-radius: 2px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: $primary;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  margin: 0;
-  max-width: 100%;
-  padding: 11px 16px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   height: 36px;
-}
-#reply-control .contents .form-element .select2-container a:focus {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $primary;
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a:hover {
-    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-    color: $primary;
-  }
-}
-#reply-control .contents .form-element .select2-container a:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-}
-#reply-control .contents .form-element .select2-container a:focus {
-  outline: 0;
-}
-#reply-control .contents .form-element .select2-container a[disabled], #reply-control .contents .form-element .select2-container a.disabled {
-  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
-}
-#reply-control .contents .form-element .select2-container a[disabled]:focus, #reply-control .contents .form-element .select2-container a.disabled:focus {
-  background-color: transparent;
-  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a[disabled]:hover, #reply-control .contents .form-element .select2-container a.disabled:hover {
-    background-color: transparent;
-    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
-  }
-}
-#reply-control .contents .form-element .select2-container a[disabled]:active, #reply-control .contents .form-element .select2-container a.disabled:active {
-  background-color: transparent;
-}
-#reply-control .contents .form-element .select2-container a.btn-danger {
-  color: $danger;
-}
-#reply-control .contents .form-element .select2-container a.btn-danger:focus {
-  color: $danger;
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a.btn-danger:hover {
-    color: $danger;
-  }
-}
-#reply-control .contents .form-element .select2-container a.btn-primary {
-  color: $tertiary;
-}
-#reply-control .contents .form-element .select2-container a.btn-primary:focus {
-  color: $tertiary;
-}
-@media (hover: hover) {
-  #reply-control .contents .form-element .select2-container a.btn-primary:hover {
-    color: $tertiary;
-  }
+  padding-top: 11px;
 }
 #reply-control .contents .form-element .select2-container b {
   margin-top: 0;
@@ -4235,7 +4155,30 @@ nav.post-controls .actions button .read-icon::before {
   position: static;
 }
 
-.select2-container .select2-choice {
+.select2-container a.select2-choice {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -4244,6 +4187,60 @@ nav.post-controls .actions button .read-icon::before {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+.select2-container a.select2-choice:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .select2-container a.select2-choice:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.select2-container a.select2-choice:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.select2-container a.select2-choice:focus {
+  outline: 0;
+}
+.select2-container a.select2-choice[disabled], .select2-container a.select2-choice.disabled {
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+.select2-container a.select2-choice[disabled]:focus, .select2-container a.select2-choice.disabled:focus {
+  background-color: transparent;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+@media (hover: hover) {
+  .select2-container a.select2-choice[disabled]:hover, .select2-container a.select2-choice.disabled:hover {
+    background-color: transparent;
+    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+  }
+}
+.select2-container a.select2-choice[disabled]:active, .select2-container a.select2-choice.disabled:active {
+  background-color: transparent;
+}
+.select2-container a.select2-choice.btn-danger {
+  color: $danger;
+}
+.select2-container a.select2-choice.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .select2-container a.select2-choice.btn-danger:hover {
+    color: $danger;
+  }
+}
+.select2-container a.select2-choice.btn-primary {
+  color: $tertiary;
+}
+.select2-container a.select2-choice.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .select2-container a.select2-choice.btn-primary:hover {
+    color: $tertiary;
+  }
 }
 .select2-container .select2-choice > .select2-chosen {
   margin-right: 0;

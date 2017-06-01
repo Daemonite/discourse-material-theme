@@ -1,8 +1,14 @@
 .select2-container {
-  .select2-choice {
-    align-items: center;
-    display: inline-flex;
+  a {
+    &.select2-choice {
+      @include btn-flat;
 
+      align-items: center;
+      display: inline-flex;
+    }
+  }
+
+  .select2-choice {
     > .select2-chosen {
       margin-right: 0;
     }

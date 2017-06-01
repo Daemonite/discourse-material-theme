@@ -65,10 +65,8 @@
         text-align: right;
 
         a {
-          @include btn-flat;
-
-          display: inline-flex;
           height: $btn-height;
+          padding-top: $btn-padding-y;
         }
 
         b {
