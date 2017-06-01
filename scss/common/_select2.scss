@@ -36,6 +36,38 @@
   }
 }
 
+.select2-drop {
+  .category-desc,
+  .topic-count {
+    @include typography-small;
+  }
+
+  .category-desc {
+    margin-top: ($dropdown-link-padding-y-sm / 2);
+  }
+}
+
+.select2-results {
+  margin: 0;
+  padding: 0;
+
+  .select2-highlighted {
+    background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
+  }
+
+  .select2-no-results {
+    @include dropdown-header;
+    @include dropdown-header-sm;
+
+    background-color: transparent;
+  }
+
+  .select2-result-label {
+    @include dropdown-link;
+    @include dropdown-link-sm;
+  }
+}
+
 .select2-search {
   display: block;
   min-height: 0;
@@ -46,5 +78,6 @@
     @include text-field-box;
 
     height: $text-field-box-height !important;
+    margin-bottom: ($dropdown-link-padding-y-sm * 2);
   }
 }

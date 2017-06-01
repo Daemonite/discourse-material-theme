@@ -4277,6 +4277,44 @@ nav.post-controls .actions button .read-icon::before {
   content: 'arrow_drop_down';
 }
 
+.select2-drop .category-desc,
+.select2-drop .topic-count {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+.select2-drop .category-desc {
+  margin-top: 3.125px;
+}
+
+.select2-results {
+  margin: 0;
+  padding: 0;
+}
+.select2-results .select2-highlighted {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+.select2-results .select2-no-results {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin: 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 6.25px 24px;
+  background-color: transparent;
+}
+.select2-results .select2-result-label {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 12px 16px;
+  padding: 6.25px 24px;
+}
+
 .select2-search {
   display: block;
   min-height: 0;
@@ -4306,6 +4344,7 @@ nav.post-controls .actions button .read-icon::before {
   line-height: 16px;
   padding: 20px 16px 19px;
   height: 56px !important;
+  margin-bottom: 12.5px;
 }
 .select2-search input[type='text']:focus, .select2-search input[type='text']:hover {
   border-bottom-width: 2px;
