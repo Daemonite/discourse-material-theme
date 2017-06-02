@@ -30,10 +30,8 @@
     margin-right: ($card-inner-spacer-x * -1);
 
     a {
-      @include btn-flat;
-
-      padding-right: $card-inner-spacer-x;
-      padding-left: $card-inner-spacer-x;
+      @extend %btn-flat;
+      @extend %btn-footer;
     }
   }
 

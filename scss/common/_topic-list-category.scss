@@ -11,10 +11,7 @@
       }
 
       .btn {
-        @include btn-flat;
-
-        padding-right: ($btn-padding-x / 2);
-        padding-left: ($btn-padding-x / 2);
+        @extend %btn-footer;
       }
     }
 

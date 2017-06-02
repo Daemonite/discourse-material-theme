@@ -4,8 +4,45 @@ nav {
     display: flex;
 
     button {
+      @extend %btn-flat;
+      @extend %btn-footer;
+
+      color: color-chooser($white-secondary, $black-secondary);
+
       &:active {
         box-shadow: none;
+      }
+
+      &.delete {
+        @include focus-hover {
+          color: unquote('$danger');
+        }
+
+        &.d-hover {
+          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+          color: unquote('$danger');
+        }
+      }
+
+      &.has-like {
+        color: unquote('$love');
+      }
+
+      &.like {
+        @include focus-hover {
+          color: unquote('$love');
+        }
+
+        &.d-hover {
+          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+          color: unquote('$love');
+        }
+      }
+
+      .read-icon::before {
+        @extend %material-icons;
+
+        content: 'bookmark';
       }
     }
 
@@ -18,59 +55,27 @@ nav {
       padding-top: ($card-padding-y / 2);
       padding-bottom: ($card-padding-y / 2);
       text-align: left;
+    }
 
-      button {
-        @include btn-flat;
+    .highlight-action {
+      color: color-chooser($white-secondary, $black-secondary);
+    }
 
-        margin-right: $card-inner-spacer-x;
-        margin-left: 0;
-        padding-right: $card-inner-spacer-x;
-        padding-left: $card-inner-spacer-x;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        &.delete {
-          @include focus-hover {
-            color: unquote('$danger');
-          }
-
-          &.d-hover {
-            background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-            color: unquote('$danger');
-          }
-        }
-
-        &.has-like {
-          color: unquote('$love');
-        }
-
-        &.like {
-          @include focus-hover {
-            color: unquote('$love');
-          }
-
-          &.d-hover {
-            background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-            color: unquote('$love');
-          }
-        }
-
-        .read-icon::before {
-          @extend %material-icons;
-
-          content: 'bookmark';
-        }
-      }
+    .like-count {
+      margin-right: 0;
     }
 
     .show-replies {
-      @include btn-flat;
+      @extend %btn-flat;
+      @extend %btn-footer;
       
-      margin: ($card-padding-y / 2) ($card-inner-spacer-x * 2) ($card-padding-y / 2) ($card-inner-spacer-x * -1);
-      padding-right: $card-inner-spacer-x;
-      padding-left: $card-inner-spacer-x;
+      margin-top: ($card-padding-y / 2);
+      margin-right: ($card-inner-spacer-x * 2);
+      margin-bottom: ($card-padding-y / 2);
+
+      &:first-child {
+        margin-left: ($card-inner-spacer-x * -1);
+      }
 
       i {
         margin-left: $spacer-xs;
@@ -170,14 +175,13 @@ nav {
   }
 
   button {
-    @include btn-flat;
-    @include btn-sm;
+    @extend %btn-flat;
+    @extend %btn-footer;
+    @extend %btn-sm;
 
     color: color-chooser($white-secondary, $black-secondary);
     margin-top: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
     margin-bottom: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
-    padding-right: $card-inner-spacer-x;
-    padding-left: $card-inner-spacer-x;
   }
 
   .small-action-desc {
@@ -244,6 +248,14 @@ nav {
 
   margin-bottom: $card-margin-y;
 
+  .actions {
+    .fade-out {
+      .discourse-no-touch & {
+        opacity: 1;
+      }
+    }
+  }
+
   .regular {
     @include card-block;
 
@@ -270,7 +282,7 @@ nav {
   span > button,
   > button {
     &.btn {
-      @include btn-raised;
+      @extend %btn-raised;
 
       margin: 0 $card-margin-x $card-margin-y 0;
     }
@@ -377,11 +389,8 @@ nav {
     right: 0;
 
     .btn {
-      @include btn-flat;
-
-      margin-right: $card-inner-spacer-x;
-      padding-right: $card-inner-spacer-x;
-      padding-left: $card-inner-spacer-x;
+      @extend %btn-flat;
+      @extend %btn-footer;
     }
   }
 
@@ -391,11 +400,7 @@ nav {
     background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
 
     .btn {
-      @include btn-flat;
-
-      margin-right: $card-inner-spacer-x;
-      padding-right: $card-inner-spacer-x;
-      padding-left: $card-inner-spacer-x;
+      @extend %btn-footer;
     }
 
     .controls {
@@ -413,11 +418,8 @@ nav {
     margin-left: ($card-inner-spacer-x / -2);
 
     a {
-      @include btn-flat;
-
-      margin-right: $card-inner-spacer-x;
-      padding-right: $card-inner-spacer-x;
-      padding-left: $card-inner-spacer-x;
+      @extend %btn-flat;
+      @extend %btn-footer;
     }
   }
 
@@ -555,7 +557,6 @@ nav {
     float: none;
     font-size: inherit;
     margin-top: 0;
-    margin-left: $card-inner-spacer-x;
     order: 1;
 
     &.edits {
@@ -564,12 +565,11 @@ nav {
     }
 
     a {
-      @include btn-flat;
-      @include btn-sm;
+      @extend %btn-flat;
+      @extend %btn-footer;
+      @extend %btn-sm;
 
       color: color-chooser($white-secondary, $black-secondary);
-      padding-right: $card-inner-spacer-x;
-      padding-left: $card-inner-spacer-x;
     }
   }
 }

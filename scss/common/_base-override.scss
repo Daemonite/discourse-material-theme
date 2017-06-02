@@ -20,8 +20,18 @@
   > li {
     margin-right: 1px;
 
+    &.active {
+      > a {
+        color: color-dynamic(unquote('$quaternary'));
+
+        @include focus-hover {
+          color: $btn-color;
+        }
+      }
+    }
+
     > a {
-      @include btn-flat;
+      @extend %btn-flat;
 
       display: block;
 
@@ -31,14 +41,6 @@
         @include focus-hover {
           color: $btn-color;
         }
-      }
-    }
-
-    &.active > a {
-      color: color-dynamic(unquote('$quaternary'));
-
-      @include focus-hover {
-        color: $btn-color;
       }
     }
   }

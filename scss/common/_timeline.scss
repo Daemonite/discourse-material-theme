@@ -19,7 +19,7 @@
     div > button,
     span > button {
       &.btn {
-        @include btn-raised;
+        @extend %btn-raised;
 
         margin-right: $spacer-sm;
       }

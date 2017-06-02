@@ -39,8 +39,10 @@ ol {
   }
 
   .btn {
-    @include btn-raised;
+    @extend %btn-raised;
 
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
     margin-bottom: 0;
     margin-left: $spacer-sm;
   }
@@ -49,7 +51,8 @@ ol {
     li {
       > a {
         &.badge-category {
-          @include btn-raised;
+          @extend %btn-flat;
+          @extend %btn-raised;
 
           border-radius: $btn-border-radius 0 0 $btn-border-radius;
 

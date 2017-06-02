@@ -67,6 +67,7 @@
     @include dropdown-link;
 
     background-color: transparent;
+    border-radius: 0;
     white-space: nowrap;
     width: 100%;
 
@@ -77,6 +78,10 @@
 
     &:focus {
       outline: 0;
+    }
+
+    &::before {
+      display: none;
     }
 
     .fa {

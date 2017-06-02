@@ -134,11 +134,11 @@
       width: auto;
 
       .btn {
-        @include btn-raised;
+        @extend %btn-raised;
       }
 
       .cancel {
-        @include btn-flat;
+        @extend %btn-flat;
 
         margin-left: $card-inner-spacer-x;
       }
@@ -171,8 +171,8 @@
     padding: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2);
 
     button {
-      @include btn-flat;
-      @include btn-sm;
+      @extend %btn-flat;
+      @extend %btn-sm;
 
       color: color-chooser($white-secondary, $black-secondary);
       margin: 0;
@@ -296,7 +296,7 @@
   }
 
   .toggle-preview {
-    @include btn-flat;
+    @extend %btn-flat;
 
     margin: 0;
     position: absolute;

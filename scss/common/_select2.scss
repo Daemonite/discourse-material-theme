@@ -1,7 +1,7 @@
 .select2-container {
   a {
     &.select2-choice {
-      @include btn-flat;
+      @extend %btn-flat;
 
       align-items: center;
       display: inline-flex;

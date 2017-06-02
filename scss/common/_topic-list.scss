@@ -15,12 +15,10 @@
   display: inline-flex;
 
   button {
-    @include btn-raised;
+    @extend %btn-footer;
+    @extend %btn-raised;
 
     margin-bottom: $spacer-sm;
-    margin-left: $spacer-sm;
-    padding-right: ($btn-padding-x / 2);
-    padding-left: ($btn-padding-x / 2);
   }
 
   h2 {
@@ -56,7 +54,7 @@
 
 .top-title-buttons {
   button {
-    @include btn-raised;
+    @extend %btn-raised;
 
     margin-right: 0;
     margin-left: $spacer-xs;

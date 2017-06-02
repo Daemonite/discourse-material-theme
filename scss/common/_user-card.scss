@@ -87,8 +87,6 @@
   }
 
   .btn {
-    @include btn-flat;
-
     margin: 0 0 ($card-inner-spacer-y / 2);
   }
 
