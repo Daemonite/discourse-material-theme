@@ -162,6 +162,10 @@
   @include material-icons('add');
 }
 
+.fa-question-circle {
+  @include material-icons('help');
+}
+
 .fa-quote-right {
   @include material-icons('format_quote');
 }

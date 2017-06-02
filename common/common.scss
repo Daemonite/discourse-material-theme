@@ -19,7 +19,7 @@
 }
 
 blockquote::after, blockquote::before, aside.quote .quote-controls .back::before,
-aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .fa-arrow-down::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bold::before, .fa-bookmark::before, .fa-calendar::before, .fa-caret-down::before, .fa-caret-right::before, .fa-certificate::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-comment::before, .fa-comment-o::before, .fa-dot-circle-o::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-eye::before, .fa-eye-slash::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-minus::before, .fa-pencil::before, .fa-plus::before, .fa-quote-right::before, .fa-reply::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, nav.post-controls button .read-icon::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before, .select2-container .select2-choice .select2-arrow b::before {
+aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .fa-arrow-down::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bold::before, .fa-bookmark::before, .fa-calendar::before, .fa-caret-down::before, .fa-caret-right::before, .fa-certificate::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-comment::before, .fa-comment-o::before, .fa-dot-circle-o::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-eye::before, .fa-eye-slash::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-minus::before, .fa-pencil::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-reply::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, nav.post-controls button .read-icon::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before, .select2-container .select2-choice .select2-arrow b::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -1789,6 +1789,14 @@ ol.category-breadcrumb li + li {
 }
 .fa-plus::before {
   content: "add";
+}
+
+.fa-question-circle {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-question-circle::before {
+  content: "help";
 }
 
 .fa-quote-right {
