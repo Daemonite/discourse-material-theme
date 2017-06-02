@@ -130,19 +130,62 @@ nav {
 }
 
 .small-action {
+  @include card;
+  @include card-block;
+
   align-items: center;
   border-top: 0;
   display: flex;
   margin-top: $card-margin-y;
   margin-bottom: $card-margin-y;
   position: relative;
+  width: 690px;
+
+  button {
+    @include btn-flat;
+    @include btn-sm;
+
+    color: color-chooser($white-secondary, $black-secondary);
+    margin-top: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
+    margin-bottom: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
+    padding-right: ($btn-padding-x-sm / 2);
+    padding-left: ($btn-padding-x-sm / 2);
+  }
 
   .small-action-desc {
     @include typography-h6;
 
+    align-items: center;
+    color: color-chooser($white-secondary, $black-secondary);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
     margin-top: 0;
-    padding: 0 0 0 $card-padding-x;
+    padding: 0 0 0 ($card-inner-spacer-x * 2);
     text-transform: none;
+
+    > p {
+      margin-right: auto;
+      padding: 0 $card-inner-spacer-x 0 0;
+    }
+
+    .avatar {
+      height: $material-icon-size;
+      margin-right: $card-inner-spacer-x;
+      weight: $material-icon-size;
+    }
+
+    .fa {
+      @include material-icons;
+    }
+
+    .fa-pencil::before {
+      content: 'edit';
+    }
+
+    .fa-times::before {
+      content: 'close';
+    }
   }
 
   .topic-avatar {
@@ -153,8 +196,37 @@ nav {
     .fa {
       @include material-icons;
 
+      color: color-chooser($white-secondary, $black-secondary);
       width: auto;
     }
+
+    .fa-comment::before {
+      content: 'forum';
+    }
+
+    .fa-envelope::before {
+      content: 'message';
+    }
+
+    .fa-eye::before {
+      content: 'visibility';
+    }
+
+    .fa-eye-slash::before {
+      content: 'visibility_off';
+    }
+
+    .fa-lock::before {
+      content: 'lock'
+    }
+
+    .fa-unlock-alt::before {
+      content: 'lock_open';
+    }
+  }
+
+  .trigger-user-card {
+    order: 1;
   }
 }
 

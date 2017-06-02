@@ -2339,6 +2339,14 @@ nav.post-controls .actions button .read-icon::before {
 }
 
 .small-action {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+  padding: 16px 16px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2351,15 +2359,160 @@ nav.post-controls .actions button .read-icon::before {
   margin-top: 8px;
   margin-bottom: 8px;
   position: relative;
+  width: 690px;
+}
+.small-action[href]:focus, .small-action[href]:hover, .small-action[tabindex]:focus, .small-action[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.small-action[href]:focus, .small-action[tabindex]:focus {
+  outline: 0;
+}
+.small-action button {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 13px;
+  padding: 9.5px 16px;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  margin-top: -6.000003px;
+  margin-bottom: -6.000003px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.small-action button:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .small-action button:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.small-action button:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.small-action button:focus {
+  outline: 0;
+}
+.small-action button[disabled], .small-action button.disabled {
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+.small-action button[disabled]:focus, .small-action button.disabled:focus {
+  background-color: transparent;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+@media (hover: hover) {
+  .small-action button[disabled]:hover, .small-action button.disabled:hover {
+    background-color: transparent;
+    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+  }
+}
+.small-action button[disabled]:active, .small-action button.disabled:active {
+  background-color: transparent;
+}
+.small-action button.btn-danger {
+  color: $danger;
+}
+.small-action button.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .small-action button.btn-danger:hover {
+    color: $danger;
+  }
+}
+.small-action button.btn-primary {
+  color: $tertiary;
+}
+.small-action button.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .small-action button.btn-primary:hover {
+    color: $tertiary;
+  }
 }
 .small-action .small-action-desc {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.428571;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-top: 0;
   padding: 0 0 0 16px;
   text-transform: none;
+}
+.small-action .small-action-desc > p {
+  margin-right: auto;
+  padding: 0 8px 0 0;
+}
+.small-action .small-action-desc .avatar {
+  height: 24px;
+  margin-right: 8px;
+  weight: 24px;
+}
+.small-action .small-action-desc .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.small-action .small-action-desc .fa-pencil::before {
+  content: 'edit';
+}
+.small-action .small-action-desc .fa-times::before {
+  content: 'close';
 }
 .small-action .topic-avatar {
   padding: 0;
@@ -2382,7 +2535,32 @@ nav.post-controls .actions button .read-icon::before {
   word-wrap: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   width: auto;
+}
+.small-action .topic-avatar .fa-comment::before {
+  content: 'forum';
+}
+.small-action .topic-avatar .fa-envelope::before {
+  content: 'message';
+}
+.small-action .topic-avatar .fa-eye::before {
+  content: 'visibility';
+}
+.small-action .topic-avatar .fa-eye-slash::before {
+  content: 'visibility_off';
+}
+.small-action .topic-avatar .fa-lock::before {
+  content: "lock";
+}
+.small-action .topic-avatar .fa-unlock-alt::before {
+  content: 'lock_open';
+}
+.small-action .trigger-user-card {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .topic-avatar {
