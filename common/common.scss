@@ -2281,6 +2281,19 @@ nav.post-controls .actions button .read-icon::before {
   content: 'bookmark';
 }
 
+.gap {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  font-weight: bolder;
+  margin: 8px 0;
+  padding: 8px 0 8px 56px;
+  text-transform: none;
+  width: 690px;
+}
+
 .names .fa {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';

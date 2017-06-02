@@ -94,6 +94,17 @@ nav {
   }
 }
 
+.gap {
+  @include typography-small;
+
+  color: color-chooser($white-secondary, $black-secondary);
+  font-weight: bolder;
+  margin: $card-margin-y 0;
+  padding: $card-margin-y 0 $card-margin-y ($card-inner-spacer-x * 2 + $card-padding-x + $material-icon-size);
+  text-transform: none;
+  width: 690px;
+}
+
 .names {
   .fa {
     @include material-icons;
