@@ -102,6 +102,12 @@ nav {
   position: relative;
   width: 690px;
 
+  &.time-gap {
+    background-color: transparent;
+    box-shadow: none;
+    padding: $card-margin-y 0 0;
+  }
+
   button {
     @include btn-flat;
     @include btn-sm;
@@ -124,6 +130,11 @@ nav {
     margin-top: 0;
     padding: 0 0 0 ($card-inner-spacer-x * 2);
     text-transform: none;
+
+    &.timegap {
+      display: block;
+      color: color-chooser($white-secondary, $black-secondary);
+    }
 
     > p {
       margin-right: auto;
