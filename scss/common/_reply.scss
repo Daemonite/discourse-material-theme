@@ -67,6 +67,21 @@
     }
   }
 
+  .add-warning {
+    margin-right: $card-padding-x;
+    margin-left: 0;
+    position: static;
+    width: auto;
+
+    input[type='checkbox'] {
+      margin-right: $spacer-xs;
+    }
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
   .category-input {
     padding-right: $card-padding-x;
     padding-left: $card-padding-x;
@@ -247,6 +262,10 @@
   .reply-area {
     margin: 0;
     max-width: none;
+
+    .ac-wrap {
+      margin-right: $card-padding-x;
+    }
   }
 
   .reply-to {
@@ -274,6 +293,7 @@
 
   .title-input {
     flex-grow: 1;
+    order: -1;
   }
 
   .toggler {
