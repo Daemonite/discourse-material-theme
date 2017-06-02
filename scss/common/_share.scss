@@ -1,0 +1,56 @@
+#share-link {
+  @include card;
+  @include card-block;
+
+  h3 {
+    @include typography-h4;
+
+    float: none;
+    margin: 0 ($card-inner-spacer-x + $material-icon-size) $card-inner-spacer-y 0;
+  }
+
+  input[type='text'] {
+    @include text-field-box;
+  }
+
+  .link {
+    font-size: inherit;
+    margin: 0;
+    position: absolute;
+    top: ($card-inner-spacer-y + ($font-size-title * $line-height-title - $material-icon-size));
+    right: $card-inner-spacer-x;
+
+    a {
+      color: color-chooser($white-secondary, $black-secondary);
+    }
+
+    .fa-close {
+      @include material-icons;
+
+      &::before {
+        content: 'close';
+      }
+    }
+  }
+
+  .reply-as-new-topic {
+    float: right;
+    margin-right: ($card-inner-spacer-x * -1);
+
+    a {
+      @include btn-flat;
+
+      padding-right: $card-inner-spacer-x;
+      padding-left: $card-inner-spacer-x;
+    }
+  }
+
+  .social-link {
+    align-items: center;
+    display: flex;
+    font-size: $material-icon-size;
+    height: $btn-height;
+    margin-right: $card-inner-spacer-x;
+    margin-left: 0;
+  }
+}
