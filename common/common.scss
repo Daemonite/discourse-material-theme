@@ -19,7 +19,7 @@
 }
 
 blockquote::after, blockquote::before, aside.quote .quote-controls .back::before,
-aside.quote .quote-controls .quote-other-topic::before, .fa-arrow-down::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bold::before, .fa-bookmark::before, .fa-calendar::before, .fa-caret-down::before, .fa-caret-right::before, .fa-certificate::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-comment::before, .fa-comment-o::before, .fa-dot-circle-o::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-eye::before, .fa-eye-slash::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-minus::before, .fa-pencil::before, .fa-plus::before, .fa-quote-right::before, .fa-reply::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, nav.post-controls .actions button .read-icon::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before, #reply-control .wmd-controls .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, #reply-control .wmd-controls .d-editor-preview div.poll li[data-poll-option-id]::before, .select2-container .select2-choice .select2-arrow b::before {
+aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .fa-arrow-down::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bold::before, .fa-bookmark::before, .fa-calendar::before, .fa-caret-down::before, .fa-caret-right::before, .fa-certificate::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-comment::before, .fa-comment-o::before, .fa-dot-circle-o::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-eye::before, .fa-eye-slash::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-minus::before, .fa-pencil::before, .fa-plus::before, .fa-quote-right::before, .fa-reply::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, nav.post-controls .actions button .read-icon::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before, .select2-container .select2-choice .select2-arrow b::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -622,6 +622,20 @@ div.poll {
   margin: 0 -16px 16px;
   width: calc(100% + 32px);
 }
+.d-editor-preview div.poll, .expanded-quote div.poll {
+  border: 1px solid color-chooser(#000000, #e0e0e0);
+}
+.d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before {
+  content: 'check_box_outline_blank';
+}
+.d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before {
+  content: 'radio_button_unchecked';
+}
+.d-editor-preview div.poll {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
 div.poll li {
   font-size: inherit;
   margin-bottom: 16px;
@@ -636,7 +650,12 @@ div.poll li[data-poll-option-id] {
 div.poll li[data-poll-option-id]:last-child {
   margin-bottom: 0;
 }
-div.poll .btn {
+div.poll .poll-buttons {
+  border-top-color: color-chooser(#000000, #e0e0e0);
+  padding: 8px 8px;
+}
+div.poll .poll-buttons a,
+div.poll .poll-buttons .btn {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -660,79 +679,92 @@ div.poll .btn {
           user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  margin-left: 8px;
   padding-right: 8px;
   padding-left: 8px;
 }
-div.poll .btn:focus {
+div.poll .poll-buttons a:focus,
+div.poll .poll-buttons .btn:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $primary;
 }
 @media (hover: hover) {
-  div.poll .btn:hover {
+  div.poll .poll-buttons a:hover,
+  div.poll .poll-buttons .btn:hover {
     background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
     color: $primary;
   }
 }
-div.poll .btn:active {
+div.poll .poll-buttons a:active,
+div.poll .poll-buttons .btn:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
-div.poll .btn:focus {
+div.poll .poll-buttons a:focus,
+div.poll .poll-buttons .btn:focus {
   outline: 0;
 }
-div.poll .btn[disabled], div.poll .btn.disabled {
+div.poll .poll-buttons a[disabled], div.poll .poll-buttons a.disabled,
+div.poll .poll-buttons .btn[disabled],
+div.poll .poll-buttons .btn.disabled {
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
 }
-div.poll .btn[disabled]:focus, div.poll .btn.disabled:focus {
+div.poll .poll-buttons a[disabled]:focus, div.poll .poll-buttons a.disabled:focus,
+div.poll .poll-buttons .btn[disabled]:focus,
+div.poll .poll-buttons .btn.disabled:focus {
   background-color: transparent;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
 }
 @media (hover: hover) {
-  div.poll .btn[disabled]:hover, div.poll .btn.disabled:hover {
+  div.poll .poll-buttons a[disabled]:hover, div.poll .poll-buttons a.disabled:hover,
+  div.poll .poll-buttons .btn[disabled]:hover,
+  div.poll .poll-buttons .btn.disabled:hover {
     background-color: transparent;
     color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
   }
 }
-div.poll .btn[disabled]:active, div.poll .btn.disabled:active {
+div.poll .poll-buttons a[disabled]:active, div.poll .poll-buttons a.disabled:active,
+div.poll .poll-buttons .btn[disabled]:active,
+div.poll .poll-buttons .btn.disabled:active {
   background-color: transparent;
 }
-div.poll .btn.btn-danger {
+div.poll .poll-buttons a.btn-danger,
+div.poll .poll-buttons .btn.btn-danger {
   color: $danger;
 }
-div.poll .btn.btn-danger:focus {
+div.poll .poll-buttons a.btn-danger:focus,
+div.poll .poll-buttons .btn.btn-danger:focus {
   color: $danger;
 }
 @media (hover: hover) {
-  div.poll .btn.btn-danger:hover {
+  div.poll .poll-buttons a.btn-danger:hover,
+  div.poll .poll-buttons .btn.btn-danger:hover {
     color: $danger;
   }
 }
-div.poll .btn.btn-primary {
+div.poll .poll-buttons a.btn-primary,
+div.poll .poll-buttons .btn.btn-primary {
   color: $tertiary;
 }
-div.poll .btn.btn-primary:focus {
+div.poll .poll-buttons a.btn-primary:focus,
+div.poll .poll-buttons .btn.btn-primary:focus {
   color: $tertiary;
 }
 @media (hover: hover) {
-  div.poll .btn.btn-primary:hover {
+  div.poll .poll-buttons a.btn-primary:hover,
+  div.poll .poll-buttons .btn.btn-primary:hover {
     color: $tertiary;
   }
 }
-div.poll .fa {
-  margin-right: 8px;
-}
-div.poll .fa-check-square-o,
-div.poll .fa-dot-circle-o {
-  color: $tertiary;
-}
-div.poll .poll-buttons {
-  border-top-color: color-chooser(#000000, #e0e0e0);
-  padding: 8px 8px;
-}
-div.poll .poll-buttons .btn {
-  margin-left: 8px;
-}
+div.poll .poll-buttons a:first-child,
 div.poll .poll-buttons .btn:first-child {
   margin-left: 0;
+}
+div.poll .poll-buttons .fa {
+  margin-right: 8px;
+}
+div.poll .poll-buttons .fa-check-square-o,
+div.poll .poll-buttons .fa-dot-circle-o {
+  color: $tertiary;
 }
 div.poll .poll-container {
   padding: 16px 16px;
@@ -4553,103 +4585,6 @@ nav.post-controls .show-replies i {
 #reply-control .wmd-controls .d-editor-preview {
   border: 0;
   border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-}
-#reply-control .wmd-controls .d-editor-preview div.poll {
-  border: 1px solid color-chooser(#000000, #e0e0e0);
-  margin-right: 0;
-  margin-left: 0;
-  width: 100%;
-}
-#reply-control .wmd-controls .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before {
-  content: 'check_box_outline_blank';
-}
-#reply-control .wmd-controls .d-editor-preview div.poll li[data-poll-option-id]::before {
-  content: 'radio_button_unchecked';
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a {
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-radius: 2px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: $primary;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  margin: 0;
-  max-width: 100%;
-  padding: 11px 16px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  margin-left: 8px;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a:focus {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $primary;
-}
-@media (hover: hover) {
-  #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a:hover {
-    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-    color: $primary;
-  }
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a:focus {
-  outline: 0;
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a[disabled], #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.disabled {
-  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a[disabled]:focus, #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.disabled:focus {
-  background-color: transparent;
-  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
-}
-@media (hover: hover) {
-  #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a[disabled]:hover, #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.disabled:hover {
-    background-color: transparent;
-    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
-  }
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a[disabled]:active, #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.disabled:active {
-  background-color: transparent;
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.btn-danger {
-  color: $danger;
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.btn-danger:focus {
-  color: $danger;
-}
-@media (hover: hover) {
-  #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.btn-danger:hover {
-    color: $danger;
-  }
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.btn-primary {
-  color: $tertiary;
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.btn-primary:focus {
-  color: $tertiary;
-}
-@media (hover: hover) {
-  #reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a.btn-primary:hover {
-    color: $tertiary;
-  }
-}
-#reply-control .wmd-controls .d-editor-preview div.poll .poll-buttons a:first-child {
-  margin-left: 0;
 }
 #reply-control .wmd-controls .d-editor-preview img:not(.thumbnail) {
   height: auto;

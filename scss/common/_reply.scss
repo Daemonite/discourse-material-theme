@@ -359,43 +359,6 @@
       border: 0;
       border-left: 1px solid color-chooser($white-divider, $black-divider);
 
-      div {
-        &.poll {
-          border: 1px solid color-chooser($table-border-color-dark, $table-border-color-light);
-          margin-right: 0;
-          margin-left: 0;
-          width: 100%;
-
-          &[data-poll-type='multiple'] {
-            li[data-poll-option-id]::before {
-              @extend %material-icons;
-
-              content: 'check_box_outline_blank';
-            }
-          }
-
-          li[data-poll-option-id]::before {
-            @extend %material-icons;
-
-            content: 'radio_button_unchecked';
-          }
-
-          .poll-buttons {
-            a {
-              @include btn-flat;
-
-              margin-left: $card-inner-spacer-x;
-              padding-right: $card-inner-spacer-x;
-              padding-left: $card-inner-spacer-x;
-
-              &:first-child {
-                margin-left: 0;
-              }
-            }
-          }
-        }
-      }
-
       img:not(.thumbnail) {
         height: auto;
         width: 100%;
