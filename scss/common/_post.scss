@@ -253,12 +253,20 @@ nav {
     content: 'timer';
   }
 
+  .fa-comment::before {
+    content: 'forum';
+  }
+
   .fa-envelope::before {
     content: 'message';
   }
 
   .fa-exclamation-circle::before {
     content: 'notifications_active';
+  }
+
+  .fa-eye::before {
+    content: 'visibility';
   }
 
   .fa-eye-slash::before {
@@ -303,6 +311,14 @@ nav {
 
   .fa-wrench::before {
     content: 'settings';
+  }
+
+  .fa-undo::before {
+    content: 'undo';
+  }
+
+  .fa-unlock::before {
+    content: 'lock_open';
   }
 
   .fa-users::before {

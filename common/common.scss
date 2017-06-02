@@ -2734,11 +2734,17 @@ nav.post-controls .actions button .read-icon::before {
 #topic-footer-buttons .fa-clock-o::before {
   content: 'timer';
 }
+#topic-footer-buttons .fa-comment::before {
+  content: 'forum';
+}
 #topic-footer-buttons .fa-envelope::before {
   content: 'message';
 }
 #topic-footer-buttons .fa-exclamation-circle::before {
   content: 'notifications_active';
+}
+#topic-footer-buttons .fa-eye::before {
+  content: 'visibility';
 }
 #topic-footer-buttons .fa-eye-slash::before {
   content: 'visibility_off';
@@ -2772,6 +2778,12 @@ nav.post-controls .actions button .read-icon::before {
 }
 #topic-footer-buttons .fa-wrench::before {
   content: 'settings';
+}
+#topic-footer-buttons .fa-undo::before {
+  content: 'undo';
+}
+#topic-footer-buttons .fa-unlock::before {
+  content: 'lock_open';
 }
 #topic-footer-buttons .fa-users::before {
   content: 'group_add';
