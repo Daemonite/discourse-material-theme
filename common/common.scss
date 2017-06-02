@@ -2281,6 +2281,28 @@ nav.post-controls .actions button .read-icon::before {
   content: 'bookmark';
 }
 
+.names .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-left: 0;
+}
+.names .fa-shield::before {
+  content: 'security';
+}
+
 .post-menu-area {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -5925,4 +5947,305 @@ nav.post-controls .actions button .read-icon::before {
   top: -12px;
   right: 0;
   left: 0;
+}
+
+.user-badge,
+#user-card.show-badges .more-user-badges {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  border: 0;
+  border-radius: 16px;
+  color: $primary;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  height: 32px;
+  line-height: 1;
+  margin: 0;
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+@media (hover: hover) {
+  .user-badge:hover,
+  #user-card.show-badges .more-user-badges:hover {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  }
+}
+.user-badge .fa,
+#user-card.show-badges .more-user-badges .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 4px;
+  padding-right: 0;
+}
+.user-badge .fa-certificate::before,
+#user-card.show-badges .more-user-badges .fa-certificate::before {
+  content: 'info_outline';
+}
+.user-badge .fa-envelope-o::before,
+#user-card.show-badges .more-user-badges .fa-envelope-o::before {
+  content: 'mail_outline';
+}
+.user-badge .fa-heart::before,
+#user-card.show-badges .more-user-badges .fa-heart::before {
+  content: 'favorite_border';
+}
+.user-badge .fa-pencil::before,
+#user-card.show-badges .more-user-badges .fa-pencil::before {
+  content: 'edit';
+}
+.user-badge .fa-reply::before,
+#user-card.show-badges .more-user-badges .fa-reply::before {
+  content: 'reply';
+}
+.user-badge .fa-user::before,
+#user-card.show-badges .more-user-badges .fa-user::before {
+  content: 'person';
+}
+.user-badge .fa-user-plus::before,
+#user-card.show-badges .more-user-badges .fa-user-plus::before {
+  content: 'person_add';
+}
+
+#user-card {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+}
+#user-card[href]:focus, #user-card[href]:hover, #user-card[tabindex]:focus, #user-card[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+#user-card[href]:focus, #user-card[tabindex]:focus {
+  outline: 0;
+}
+#user-card.show-badges .badge-section {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: none;
+  margin-top: 0;
+  padding-bottom: 0;
+  width: auto;
+}
+#user-card.show-badges .badge-section .more-user-badges,
+#user-card.show-badges .badge-section .user-badge {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  border: 0;
+  color: $primary;
+  margin-right: 4px;
+}
+#user-card.show-badges .names {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: auto;
+  margin-bottom: 8px;
+  width: auto;
+}
+#user-card.show-badges .names span {
+  display: block;
+  font-size: inherit;
+  max-width: none;
+  overflow: auto;
+  padding: 0;
+  position: static;
+  width: auto;
+}
+#user-card h1 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  max-width: none;
+  min-width: 0;
+}
+#user-card h1 i {
+  font-size: inherit;
+  vertical-align: middle;
+}
+#user-card h2 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.428571;
+  margin-bottom: 8px;
+  max-width: none;
+}
+#user-card h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.428571;
+}
+#user-card .btn {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 0 0 8px;
+}
+#user-card .btn:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  #user-card .btn:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+#user-card .btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+#user-card .btn:focus {
+  outline: 0;
+}
+#user-card .btn[disabled], #user-card .btn.disabled {
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+#user-card .btn[disabled]:focus, #user-card .btn.disabled:focus {
+  background-color: transparent;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+@media (hover: hover) {
+  #user-card .btn[disabled]:hover, #user-card .btn.disabled:hover {
+    background-color: transparent;
+    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+  }
+}
+#user-card .btn[disabled]:active, #user-card .btn.disabled:active {
+  background-color: transparent;
+}
+#user-card .btn.btn-danger {
+  color: $danger;
+}
+#user-card .btn.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  #user-card .btn.btn-danger:hover {
+    color: $danger;
+  }
+}
+#user-card .btn.btn-primary {
+  color: $tertiary;
+}
+#user-card .btn.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  #user-card .btn.btn-primary:hover {
+    color: $tertiary;
+  }
+}
+#user-card .card-content {
+  padding: 16px 16px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#user-card .metadata {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+#user-card .metadata h3 {
+  margin-right: 8px;
+}
+#user-card .user-card-avatar {
+  margin-top: 0;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+#user-card .user-card-avatar img {
+  height: 55.999994px;
+  width: 55.999994px;
+}
+#user-card .usercard-controls {
+  margin: -4px -8px 8px 0;
+}
+#user-card .usercard-controls a {
+  min-width: 0;
+}
+#user-card .usercard-controls .fa {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+#user-card .usercard-controls .fa-envelope::before {
+  content: 'mail_outline';
 }

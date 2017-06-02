@@ -94,6 +94,18 @@ nav {
   }
 }
 
+.names {
+  .fa {
+    @include material-icons;
+
+    margin-left: 0;
+  }
+
+  .fa-shield::before {
+    content: 'security';
+  }
+}
+
 .post-menu-area {
   margin-top: $card-inner-spacer-y;
   margin-bottom: $card-inner-spacer-y;

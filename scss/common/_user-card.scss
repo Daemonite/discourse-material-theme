@@ -1,0 +1,170 @@
+.user-badge,
+#user-card.show-badges .more-user-badges {
+  align-items: center;
+  background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+  border: 0;
+  border-radius: ($chip-height / 2);
+  color: unquote('$primary');
+  display: inline-flex;
+  font-size: $chip-font-size;
+  height: $chip-height;
+  line-height: 1;
+  margin: 0;
+  padding: $chip-padding-y $chip-padding-x;
+  vertical-align: middle;
+
+  @include hover {
+    box-shadow: $chip-box-shadow;
+  }
+
+  .fa {
+    @include material-icons;
+
+    margin-right: $chip-inner-spacer-x;
+    padding-right: 0;
+  }
+
+  .fa-certificate::before {
+    content: 'info_outline';
+  }
+
+  .fa-envelope-o::before {
+    content: 'mail_outline';
+  }
+
+  .fa-heart::before {
+    content: 'favorite_border';
+  }
+
+  .fa-pencil::before {
+    content: 'edit';
+  }
+
+  .fa-reply::before {
+    content: 'reply';
+  }
+
+  .fa-user::before {
+    content: 'person';
+  }
+
+  .fa-user-plus::before {
+    content: 'person_add';
+  }
+}
+
+#user-card {
+  @include card;
+
+  &.show-badges {
+    .badge-section {
+      align-items: center;
+      display: flex;
+      float: none;
+      margin-top: 0;
+      padding-bottom: 0;
+      width: auto;
+
+      .more-user-badges,
+      .user-badge {
+        background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+        border: 0;
+        color: unquote('$primary');
+        margin-right: ($card-inner-spacer-x / 2);
+      }
+    }
+
+    .names {
+      flex-grow: 1;
+      height: auto;
+      margin-bottom: ($card-inner-spacer-y / 2);
+      width: auto;
+
+      span {
+        display: block;
+        font-size: inherit;
+        max-width: none;
+        overflow: auto;
+        padding: 0;
+        position: static;
+        width: auto;
+      }
+    }
+  }
+
+  h1 {
+    @include typography-h4;
+
+    margin-bottom: ($card-inner-spacer-y / 2);
+    max-width: none;
+    min-width: 0;
+
+    i {
+      font-size: inherit;
+      vertical-align: middle;
+    }
+  }
+
+  h2 {
+    @include typography-body;
+
+    margin-bottom: ($card-inner-spacer-y / 2);
+    max-width: none;
+  }
+
+  h3 {
+    @include typography-body;
+  }
+
+  .btn {
+    @include btn-flat;
+
+    margin: 0 0 ($card-inner-spacer-y / 2);
+  }
+
+  .card-content {
+    @include card-block;
+
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .metadata {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: ($card-inner-spacer-y - $spacer-sm);
+
+    h3 {
+      margin-right: $card-inner-spacer-x;
+    }
+  }
+
+  .user-card-avatar {
+    margin-top: 0;
+    margin-right: $card-inner-spacer-x;
+    margin-bottom: $card-inner-spacer-y;
+
+    img {
+      height: ($card-inner-spacer-y / 2 + $font-size-body-1 * $line-height-body-1 + $font-size-title * $line-height-title);
+      width: ($card-inner-spacer-y / 2 + $font-size-body-1 * $line-height-body-1 + $font-size-title * $line-height-title);
+    }
+  }
+
+  .usercard-controls {
+    margin: (($btn-height - $font-size-title * $line-height-title) / -2) ($btn-padding-x / -2) ($card-inner-spacer-y / 2) 0;
+
+    a {
+      min-width: 0;
+    }
+
+    .fa {
+      @include material-icons;
+    }
+
+    .fa-envelope::before {
+      content: 'mail_outline';
+    }
+  }
+}
