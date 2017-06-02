@@ -115,54 +115,6 @@ ol {
     }
   }
 
-  .fa {
-    @include material-icons;
-  }
-
-  .fa-bars::before {
-    content: 'menu';
-  }
-
-  .fa-caret-down::before {
-    content: 'expand_less';
-  }
-
-  .fa-caret-right::before {
-    content: 'expand_more';
-  }
-
-  .fa-circle::before {
-    content: 'track_changes';
-  }
-
-  .fa-circle-o::before {
-    content: 'notifications';
-  }
-
-  .fa-dot-circle-o::before {
-    content: 'adjust';
-  }
-
-  .fa-exclamation-circle::before {
-    content: 'notifications_active';
-  }
-
-  .fa-lock::before {
-    content: 'lock';
-  }
-
-  .fa-plus::before {
-    content: 'add';
-  }
-
-  .fa-times-circle::before {
-    content: 'notifications_off';
-  }
-
-  .fa-wrench::before {
-    content: 'settings';
-  }
-
   .nav {
     margin-bottom: 0;
   }

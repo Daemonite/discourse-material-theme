@@ -66,12 +66,4 @@
       }
     }
   }
-
-  .fa-lock {
-    @include material-icons;
-
-    &::before {
-      content: 'lock_outline';
-    }
-  }
 }

@@ -35,16 +35,9 @@
       }
 
       .fa-user {
-        @include material-icons;
-
         color: unquote('$header-primary');
         margin-right: 100%;
         position: absolute;
-
-
-        &::before {
-          content: 'person';
-        }
       }
     }
   }
@@ -73,18 +66,8 @@
     margin: 0;
 
     [class^='fa fa-'] {
-      @include material-icons;
-
       height: auto;
       width: auto;
-    }
-
-    .fa-search::before {
-      content: 'search';
-    }
-
-    .fa-bars::before {
-      content: 'menu';
     }
 
     .icon {

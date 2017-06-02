@@ -48,44 +48,8 @@ nav {
           }
         }
 
-        .fa {
-          @include material-icons;
-        }
-
-        .fa-ellipsis-h::before {
-          content: 'more_horiz';
-        }
-
-        .fa-flag::before {
-          content: 'flag';
-        }
-
-        .fa-heart::before {
-          content: 'favorite';
-        }
-
-        .fa-link::before {
-          content: 'link';
-        }
-
-        .fa-pencil::before {
-          content: 'edit';
-        }
-
-        .fa-reply::before {
-          content: 'reply';
-        }
-
-        .fa-trash-o::before {
-          content: 'delete';
-        }
-
-        .fa-wrench::before {
-          content: 'settings';
-        }
-
         .read-icon::before {
-          @include material-icons;
+          @extend %material-icons;
 
           content: 'bookmark';
         }
@@ -107,13 +71,7 @@ nav {
 
 .names {
   .fa {
-    @include material-icons;
-
     margin-left: 0;
-  }
-
-  .fa-shield::before {
-    content: 'security';
   }
 }
 
@@ -130,14 +88,6 @@ nav {
   font-size: $font-size-base;
   top: 0;
   right: 0;
-
-  .fa {
-    @include material-icons;
-  }
-
-  .fa-circle::before {
-    content: 'fiber_new';
-  }
 }
 
 .small-action {
@@ -185,18 +135,6 @@ nav {
       margin-right: $card-inner-spacer-x;
       weight: $material-icon-size;
     }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-pencil::before {
-      content: 'edit';
-    }
-
-    .fa-times::before {
-      content: 'close';
-    }
   }
 
   .topic-avatar {
@@ -205,34 +143,8 @@ nav {
     width: auto;
 
     .fa {
-      @include material-icons;
-
       color: color-chooser($white-secondary, $black-secondary);
       width: auto;
-    }
-
-    .fa-comment::before {
-      content: 'forum';
-    }
-
-    .fa-envelope::before {
-      content: 'message';
-    }
-
-    .fa-eye::before {
-      content: 'visibility';
-    }
-
-    .fa-eye-slash::before {
-      content: 'visibility_off';
-    }
-
-    .fa-lock::before {
-      content: 'lock'
-    }
-
-    .fa-unlock-alt::before {
-      content: 'lock_open';
     }
   }
 
@@ -311,101 +223,7 @@ nav {
   }
 
   .fa {
-    @include material-icons;
-
     opacity: 1;
-  }
-
-  .fa-bookmark::before {
-    content: 'bookmark';
-  }
-
-  .fa-calendar::before {
-    content: 'event';
-  }
-
-  .fa-circle::before {
-    content: 'track_changes';
-  }
-
-  .fa-circle-o::before {
-    content: 'notifications';
-  }
-
-  .fa-clock-o::before {
-    content: 'timer';
-  }
-
-  .fa-comment::before {
-    content: 'forum';
-  }
-
-  .fa-envelope::before {
-    content: 'message';
-  }
-
-  .fa-exclamation-circle::before {
-    content: 'notifications_active';
-  }
-
-  .fa-eye::before {
-    content: 'visibility';
-  }
-
-  .fa-eye-slash::before {
-    content: 'visibility_off';
-  }
-
-  .fa-flag::before {
-    content: 'flag';
-  }
-
-  .fa-folder::before {
-    content: 'archive';
-  }
-
-  .fa-link::before {
-    content: 'link';
-  }
-
-  .fa-lock::before {
-    content: 'lock';
-  }
-
-  .fa-reply::before {
-    content: 'reply';
-  }
-
-  .fa-tasks::before {
-    content: 'check_box';
-  }
-
-  .fa-thumb-tack::before {
-    content: 'vertical_align_top';
-  }
-
-  .fa-times-circle::before {
-    content: 'notifications_off';
-  }
-
-  .fa-trash-o::before {
-    content: 'delete';
-  }
-
-  .fa-wrench::before {
-    content: 'settings';
-  }
-
-  .fa-undo::before {
-    content: 'undo';
-  }
-
-  .fa-unlock::before {
-    content: 'lock_open';
-  }
-
-  .fa-users::before {
-    content: 'group_add';
   }
 
   .popup-menu {
@@ -492,18 +310,6 @@ nav {
       margin-right: $card-inner-spacer-x;
       padding-right: $card-inner-spacer-x;
       padding-left: $card-inner-spacer-x;
-
-      .fa {
-        @include material-icons;
-      }
-
-      .fa-chevron-down::before {
-        content: 'expand_more';
-      }
-
-      .fa-chevron-up::before {
-        content: 'expand_less';
-      }
     }
   }
 
@@ -614,14 +420,8 @@ nav {
         margin-left: $chip-inner-spacer-x;
 
         .fa-times {
-          @include material-icons;
-
           color: color-chooser($chip-icon-color-dark, $chip-icon-color-light);
           margin-right: ($chip-inner-spacer-x - $chip-padding-x);
-
-          &::before {
-            content: 'cancel';
-          }
         }
       }
     }
@@ -699,14 +499,6 @@ nav {
       padding-right: $card-inner-spacer-x;
       padding-left: $card-inner-spacer-x;
     }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-pencil::before {
-      content: 'edit';
-    }
   }
 }
 
@@ -732,14 +524,6 @@ nav {
       font-size: $font-size-base;
       line-height: 1;
       vertical-align: middle;
-
-      .fa-pencil {
-        @include material-icons;
-
-        &::before {
-          content: 'edit';
-        }
-      }
     }
   }
 

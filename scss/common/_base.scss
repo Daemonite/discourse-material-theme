@@ -64,7 +64,7 @@ blockquote {
 
   &::after,
   &::before {
-    @include material-icons;
+    @extend %material-icons;
 
     color: color-chooser($white-secondary, $black-secondary);
     content: 'format_quote';

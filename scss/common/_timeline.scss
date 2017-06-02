@@ -1,3 +1,19 @@
+.fa-circle.tracking::before {
+  content: 'track_changes';
+}
+
+.fa-circle-o.regular::before {
+  content: 'notifications'
+}
+
+.fa-exclamation-circle.watching::before {
+  content: 'notifications_active';
+}
+
+.fa-times-circle.muted::before {
+  content: 'notifications_off'
+}
+
 .timeline-container {
   .topic-timeline {
     div > button,
@@ -30,69 +46,7 @@
     }
 
     .fa {
-      @include material-icons;
-
       opacity: 1;
-    }
-
-    .fa-calendar::before {
-      content: 'event';
-    }
-
-    .fa-circle::before {
-      content: 'track_changes';
-    }
-
-    .fa-circle-o::before {
-      content: 'notifications';
-    }
-
-    .fa-clock-o::before {
-      content: 'timer';
-    }
-
-    .fa-envelope::before {
-      content: 'message';
-    }
-
-    .fa-exclamation-circle::before {
-      content: 'notifications_active';
-    }
-
-    .fa-eye-slash::before {
-      content: 'visibility_off';
-    }
-
-    .fa-folder::before {
-      content: 'archive';
-    }
-
-    .fa-lock::before {
-      content: 'lock';
-    }
-
-    .fa-reply::before {
-      content: 'reply';
-    }
-
-    .fa-tasks::before {
-      content: 'check_box';
-    }
-
-    .fa-thumb-tack::before {
-      content: 'vertical_align_top';
-    }
-
-    .fa-times-circle::before {
-      content: 'notifications_off';
-    }
-
-    .fa-trash-o::before {
-      content: 'delete';
-    }
-
-    .fa-wrench::before {
-      content: 'settings';
     }
 
     .now-date {

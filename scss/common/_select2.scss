@@ -20,8 +20,6 @@
       width: auto;
 
       b {
-        @include material-icons;
-
         background-color: transparent;
         background-image: none;
         height: auto;
@@ -29,6 +27,8 @@
         width: $btn-font-size;
 
         &::before {
+          @extend %material-icons;
+
           content: 'arrow_drop_down';
         }
       }

@@ -18,38 +18,8 @@
   }
 
   .fa {
-    @include material-icons;
-
     margin-right: $chip-inner-spacer-x;
     padding-right: 0;
-  }
-
-  .fa-certificate::before {
-    content: 'info_outline';
-  }
-
-  .fa-envelope-o::before {
-    content: 'mail_outline';
-  }
-
-  .fa-heart::before {
-    content: 'favorite_border';
-  }
-
-  .fa-pencil::before {
-    content: 'edit';
-  }
-
-  .fa-reply::before {
-    content: 'reply';
-  }
-
-  .fa-user::before {
-    content: 'person';
-  }
-
-  .fa-user-plus::before {
-    content: 'person_add';
   }
 }
 
@@ -157,14 +127,6 @@
 
     a {
       min-width: 0;
-    }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-envelope::before {
-      content: 'mail_outline';
     }
   }
 }

@@ -23,14 +23,6 @@
     a {
       color: color-chooser($white-secondary, $black-secondary);
     }
-
-    .fa-close {
-      @include material-icons;
-
-      &::before {
-        content: 'close';
-      }
-    }
   }
 
   .reply-as-new-topic {

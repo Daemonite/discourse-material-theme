@@ -1,18 +1,4 @@
 div {
-  &.logout-link {
-    a {
-      &.logout {
-        .fa {
-          @include material-icons;
-
-          &::before {
-            content: 'exit_to_app';
-          }
-        }
-      }
-    }
-  }
-
   &.menu-links-header {
     display: flex;
     margin-bottom: $menu-panel-inner-spacer-y;
@@ -44,24 +30,8 @@ div {
       }
     }
 
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-bookmark::before {
-      content: 'bookmark_border';
-    }
-
-    .fa-gear::before {
-      content: 'settings';
-    }
-
     .fa-user {
       margin-right: $menu-panel-inner-spacer-x;
-
-      &::before {
-        content: 'person';
-      }
     }
 
     .menu-links-row {
@@ -257,34 +227,6 @@ div {
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-    }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-certificate::before {
-      content: 'info_outline';
-    }
-
-    .fa-envelope-o::before {
-      content: 'mail_outline';
-    }
-
-    .fa-heart::before {
-      content: 'favorite_border';
-    }
-
-    .fa-pencil::before {
-      content: 'edit';
-    }
-
-    .fa-reply::before {
-      content: 'reply';
-    }
-
-    .fa-user::before {
-      content: 'person';
     }
 
     .read {

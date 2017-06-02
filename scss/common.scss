@@ -1,5 +1,5 @@
-@import 'mixins';
 @import 'variables';
+@import 'mixins';
 
 
 
@@ -14,6 +14,7 @@
 // - Dropdown
 // - Header
 // - List control
+// - Material icons
 // - Menu panel
 // - Notification
 // - Post
@@ -35,6 +36,7 @@
 @import 'common/dropdown';
 @import 'common/header';
 @import 'common/list-control';
+@import 'common/material-icons';
 @import 'common/menu-panel';
 @import 'common/notification';
 @import 'common/post';

@@ -19,14 +19,6 @@
       &:active {
         background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
       }
-
-      .fa {
-        @include material-icons;
-      }
-
-      .fa-mail-forward::before {
-        content: 'reply'
-      }
     }
 
     .span24 {
@@ -43,7 +35,7 @@
       widows: $material-icon-size;
 
       &::before {
-        @include material-icons;
+        @extend %material-icons;
 
         content: 'close';
       }
@@ -150,22 +142,6 @@
 
         margin-left: $card-inner-spacer-x;
       }
-
-      .fa {
-        @include material-icons;
-      }
-
-      .fa-pencil::before {
-        content: 'save';
-      }
-
-      .fa-plus::before {
-        content: 'add';
-      }
-
-      .fa-reply::before {
-        content: 'reply';
-      }
     }
   }
 
@@ -208,62 +184,6 @@
         color: $btn-color;
       }
     }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-bold::before {
-      content: 'format_bold';
-    }
-
-    .fa-code::before {
-      content: 'code';
-    }
-
-    .fa-comment-o::before {
-      content: 'message';
-    }
-
-    .fa-gear::before {
-      content: 'settings';
-    }
-
-    .fa-header::before {
-      content: 'format_size';
-    }
-
-    .fa-italic::before {
-      content: 'format_italic';
-    }
-
-    .fa-link::before {
-      content: 'insert_link';
-    }
-
-    .fa-list-ol::before {
-      content: 'format_list_numbered';
-    }
-
-    .fa-list-ul::before {
-      content: 'format_list_bulleted';
-    }
-
-    .fa-minus::before {
-      content: 'remove';
-    }
-
-    .fa-quote-right::before {
-      content: 'format_quote';
-    }
-
-    .fa-smile-o::before {
-      content: 'insert_emoticon';
-    }
-
-    .fa-upload::before {
-      content: 'attach_file';
-    }
   }
 
   .d-editor-spacer {
@@ -295,7 +215,7 @@
     padding: 0;
 
     &::before {
-      @include material-icons;
+      @extend %material-icons;
 
       border: 0;
       content: 'drag_handle';
@@ -321,18 +241,6 @@
 
     .btn {
       @include dropdown-link-sm;
-    }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-bar-chart-o::before {
-      content: 'insert_chart';
-    }
-
-    .fa-caret-right::before {
-      content: 'visibility_off';
     }
   }
 
@@ -362,14 +270,6 @@
         margin-left: $spacer-xs;
       }
     }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-mail-forward::before {
-      content: 'arrow_forward';
-    }
   }
 
   .title-input {
@@ -389,7 +289,7 @@
     width: ($material-icon-size + $spacer-sm);
 
     &::before {
-      @include material-icons;
+      @extend %material-icons;
 
       content: 'close';
     }
@@ -406,7 +306,7 @@
     width: ($btn-padding-x * 2 + $material-icon-size);
 
     &::before {
-      @include material-icons;
+      @extend %material-icons;
 
       align-items: center;
       content: 'keyboard_arrow_right';
@@ -468,14 +368,14 @@
 
           &[data-poll-type='multiple'] {
             li[data-poll-option-id]::before {
-              @include material-icons;
+              @extend %material-icons;
 
               content: 'check_box_outline_blank';
             }
           }
 
           li[data-poll-option-id]::before {
-            @include material-icons;
+            @extend %material-icons;
 
             content: 'radio_button_unchecked';
           }

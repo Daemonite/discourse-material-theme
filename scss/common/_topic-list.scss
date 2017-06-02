@@ -17,18 +17,10 @@
   button {
     @include btn-raised;
 
-    margin-bottom: $spacer;
+    margin-bottom: $spacer-sm;
     margin-left: $spacer-sm;
-    padding-right: ($card-padding-x / 2);
-    padding-left: ($card-padding-x / 2);
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-caret-down::before {
-      content: 'arrow_drop_down';
-    }
+    padding-right: ($btn-padding-x / 2);
+    padding-left: ($btn-padding-x / 2);
   }
 
   h2 {
@@ -140,16 +132,6 @@
   }
 
   thead {
-    button {
-      .fa {
-        @include material-icons;
-      }
-
-      .fa-list::before {
-        content: 'list';
-      }
-    }
-
     td,
     th {
       @include thead-cell;
@@ -217,18 +199,6 @@
     &:focus,
     &:hover {
       background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
-    }
-
-    .fa {
-      @include material-icons;
-    }
-
-    .fa-chevron-down::before {
-      content: 'arrow_downward';
-    }
-
-    .fa-chevron-up::before {
-      content: 'arrow_upward';
     }
   }
 
