@@ -3151,6 +3151,96 @@ nav.post-controls .actions button .read-icon::before {
 .topic-map .buttons .btn .fa-chevron-up::before {
   content: 'expand_less';
 }
+.topic-map .information {
+  padding: 16px 16px;
+  background-color: color-chooser(#212121, #f5f5f5);
+}
+.topic-map .information .btn {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: $primary;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-right: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.topic-map .information .btn:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $primary;
+}
+@media (hover: hover) {
+  .topic-map .information .btn:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+    color: $primary;
+  }
+}
+.topic-map .information .btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.topic-map .information .btn:focus {
+  outline: 0;
+}
+.topic-map .information .btn[disabled], .topic-map .information .btn.disabled {
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+.topic-map .information .btn[disabled]:focus, .topic-map .information .btn.disabled:focus {
+  background-color: transparent;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+}
+@media (hover: hover) {
+  .topic-map .information .btn[disabled]:hover, .topic-map .information .btn.disabled:hover {
+    background-color: transparent;
+    color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26));
+  }
+}
+.topic-map .information .btn[disabled]:active, .topic-map .information .btn.disabled:active {
+  background-color: transparent;
+}
+.topic-map .information .btn.btn-danger {
+  color: $danger;
+}
+.topic-map .information .btn.btn-danger:focus {
+  color: $danger;
+}
+@media (hover: hover) {
+  .topic-map .information .btn.btn-danger:hover {
+    color: $danger;
+  }
+}
+.topic-map .information .btn.btn-primary {
+  color: $tertiary;
+}
+.topic-map .information .btn.btn-primary:focus {
+  color: $tertiary;
+}
+@media (hover: hover) {
+  .topic-map .information .btn.btn-primary:hover {
+    color: $tertiary;
+  }
+}
+.topic-map .information .controls {
+  margin-right: -8px;
+  margin-left: -8px;
+}
 .topic-map .links {
   padding: 16px 16px 8px;
 }
@@ -3285,6 +3375,61 @@ nav.post-controls .actions button .read-icon::before {
 }
 .topic-map .map-collapsed {
   display: none;
+}
+.topic-map .participants .user {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  border-radius: 16px;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .857142857em;
+  height: 32px;
+  margin: 8px 8px 8px 0;
+  padding: 0 12px 0 36px;
+  position: relative;
+}
+.topic-map .participants .user a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: normal;
+}
+.topic-map .participants .user .avatar {
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+}
+.topic-map .participants .user .remove-invited {
+  margin-left: 4px;
+}
+.topic-map .participants .user .remove-invited .fa-times {
+  font-family: 'Material Icons';
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+  font-size: 1.714286em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 0.583333em;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: -0.302198em;
+  white-space: nowrap;
+  word-wrap: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54));
+  margin-right: -8px;
+}
+.topic-map .participants .user .remove-invited .fa-times::before {
+  content: 'cancel';
 }
 .topic-map .topic-links .badge-notification {
   margin: 0 8px 0 0;

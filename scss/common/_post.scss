@@ -148,8 +148,8 @@ nav {
     color: color-chooser($white-secondary, $black-secondary);
     margin-top: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
     margin-bottom: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
-    padding-right: ($btn-padding-x-sm / 2);
-    padding-left: ($btn-padding-x-sm / 2);
+    padding-right: $card-inner-spacer-x;
+    padding-left: $card-inner-spacer-x;
   }
 
   .small-action-desc {
@@ -496,6 +496,25 @@ nav {
     }
   }
 
+  .information {
+    @include card-block;
+
+    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+
+    .btn {
+      @include btn-flat;
+
+      margin-right: $card-inner-spacer-x;
+      padding-right: $card-inner-spacer-x;
+      padding-left: $card-inner-spacer-x;
+    }
+
+    .controls {
+      margin-right: ($card-inner-spacer-x * -1);
+      margin-left: ($card-inner-spacer-x * -1);
+    }
+  }
+
   .links {
     padding: $card-padding-y $card-padding-x ($card-padding-y / 2);
   }
@@ -551,6 +570,50 @@ nav {
 
   .map-collapsed {
     display: none;
+  }
+
+  .participants {
+    .user {
+      align-items: center;
+      background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+      border-radius: ($chip-height / 2);
+      color: inherit;
+      display: flex;
+      font-size: .857142857em;
+      height: $chip-height;
+      margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
+      padding: 0 $chip-padding-x 0 ($chip-height + $chip-inner-spacer-x);
+      position: relative;
+
+      a {
+        color: inherit;
+        font-size: inherit;
+        font-weight: normal;
+      }
+
+      .avatar {
+        height: $chip-height;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $chip-height;
+      }
+
+      .remove-invited {
+        margin-left: $chip-inner-spacer-x;
+
+        .fa-times {
+          @include material-icons;
+
+          color: color-chooser($chip-icon-color-dark, $chip-icon-color-light);
+          margin-right: ($chip-inner-spacer-x - $chip-padding-x);
+
+          &::before {
+            content: 'cancel';
+          }
+        }
+      }
+    }
   }
 
   .topic-links {

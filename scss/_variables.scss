@@ -222,15 +222,17 @@ $card-padding-y:        16px !default;
 
 // Chip
 
-$chip-bg-dark:        $dark-hover !default;
-$chip-bg-light:       $light-hover !default;
-$chip-box-shadow:     $shadow-2dp !default;
-$chip-font-size:      13px !default;
-$chip-height:         32px !default;
-$chip-inner-spacer-x: $spacer-xs !default;
-$chip-padding-x:      12px !default;
-$chip-padding-y:      8px !default;
-$chip-width:          $chip-height !default;
+$chip-bg-dark:          $dark-hover !default;
+$chip-bg-light:         $light-hover !default;
+$chip-box-shadow:       $shadow-2dp !default;
+$chip-font-size:        13px !default;
+$chip-height:           32px !default;
+$chip-icon-color-dark:  $black-secondary !default;
+$chip-icon-color-light: $black-secondary !default;
+$chip-inner-spacer-x:   $spacer-xs !default;
+$chip-padding-x:        12px !default;
+$chip-padding-y:        8px !default;
+$chip-width:            $chip-height !default;
 
 
 
