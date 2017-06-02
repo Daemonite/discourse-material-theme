@@ -155,6 +155,10 @@
         @include material-icons;
       }
 
+      .fa-pencil::before {
+        content: 'save';
+      }
+
       .fa-plus::before {
         content: 'add';
       }
