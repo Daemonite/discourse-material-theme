@@ -133,6 +133,18 @@
     }
   }
 
+  .nav-stacked {
+    li > a {
+      color: inherit;
+      padding: $btn-padding-y $btn-padding-x;
+
+      &.active {
+        background-color: unquote('$quaternary;');
+        color: color-dynamic(unquote('$quaternary'));
+      }
+    }
+  }
+
   .staff-counters {
     background-color: transparent;
     color: inherit;
@@ -196,5 +208,25 @@
     &.fa-comment {
       margin-right: $spacer-xs;
     }
+  }
+}
+
+.user-navigation,
+.user-preferences {
+  display: block;
+  flex-shrink: 0;
+  margin-right: $spacer-lg;
+  padding-left: 0;
+  width: auto;
+}
+
+.user-table {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: $spacer-lg;
+
+  .wrapper {
+    display: flex;
+    flex-grow: 1;
   }
 }

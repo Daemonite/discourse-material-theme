@@ -4457,6 +4457,14 @@ nav.post-controls .show-replies i {
 .user-main .nav-pills i {
   color: inherit;
 }
+.user-main .nav-stacked li > a {
+  color: inherit;
+  padding: 11px 16px;
+}
+.user-main .nav-stacked li > a.active {
+  background-color: $quaternary;;
+  color: color-dynamic($quaternary);
+}
 .user-main .staff-counters {
   background-color: transparent;
   color: inherit;
@@ -4534,6 +4542,36 @@ nav.post-controls .show-replies i {
 }
 .user-nav .fa, .user-nav .fa.fa-comment {
   margin-right: 4px;
+}
+
+.user-navigation,
+.user-preferences {
+  display: block;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 24px;
+  padding-left: 0;
+  width: auto;
+}
+
+.user-table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.user-table .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .user-badge,
