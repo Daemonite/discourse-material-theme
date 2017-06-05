@@ -613,4 +613,21 @@ nav {
     margin: 0 0 ($card-margin-y * 2);
     overflow: visible;
   }
+
+  .private-message-glyph {
+    float: none;
+    font-size: $font-size-base;
+    line-height: 1;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .topic-statuses {
+    display: inline-block;
+    float: none;
+    font-size: $font-size-base;
+    line-height: 1;
+    margin: 0;
+    vertical-align: middle;
+  }
 }

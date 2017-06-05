@@ -2940,6 +2940,21 @@ nav.post-controls .show-replies i {
   margin: 0 0 16px;
   overflow: visible;
 }
+#topic-title .private-message-glyph {
+  float: none;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  vertical-align: middle;
+}
+#topic-title .topic-statuses {
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  vertical-align: middle;
+}
 
 #reply-control {
   background-color: color-chooser(#424242, #ffffff);
@@ -3939,7 +3954,7 @@ nav.post-controls .show-replies i {
 }
 
 .topic-statuses .topic-status {
-  margin: 0 6px 0 0;
+  margin: 0;
   padding: 0;
 }
 
