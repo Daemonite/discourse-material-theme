@@ -1,3 +1,7 @@
+.fa-angle-double-down {
+  @include material-icons('arrow_drop_down');
+}
+
 .fa-arrow-down {
   @include material-icons('arrow_downward');
 }
