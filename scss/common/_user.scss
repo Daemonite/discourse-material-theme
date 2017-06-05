@@ -40,6 +40,12 @@
 
       h1 {
         @include typography-h2;
+
+        i::before {
+          font-size: $font-size-base;
+          line-height: 1;
+          vertical-align: middle;
+        }
       }
 
       h2 {

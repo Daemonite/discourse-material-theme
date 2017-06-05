@@ -4295,6 +4295,11 @@ nav.post-controls .show-replies i {
   letter-spacing: 0;
   line-height: 1.176471;
 }
+.user-main .about .details h1 i::before {
+  font-size: 14px;
+  line-height: 1;
+  vertical-align: middle;
+}
 .user-main .about .details h2 {
   font-size: 16px;
   font-weight: 400;
