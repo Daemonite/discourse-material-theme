@@ -4746,6 +4746,10 @@ nav.post-controls .show-replies i {
   width: auto;
 }
 
+.user-navigation .dismiss-notifications .fa-check::before {
+  content: 'clear_all';
+}
+
 .user-table {
   display: -webkit-box;
   display: -webkit-flex;

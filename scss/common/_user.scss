@@ -372,6 +372,10 @@
   width: auto;
 }
 
+.user-navigation .dismiss-notifications .fa-check::before {
+  content: 'clear_all';
+}
+
 .user-table {
   display: flex;
   margin-top: 0;
