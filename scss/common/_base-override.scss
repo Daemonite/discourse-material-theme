@@ -65,3 +65,61 @@
     }
   }
 }
+
+.nav-stacked {
+  background-color: transparent;
+
+  li {
+    border-bottom: 0;
+
+    &.active > a,
+    > a.active {
+      color: color-dynamic(unquote('$quaternary'));
+      opacity: 1;
+
+      body & {
+        @include focus-hover {
+          background-color: unquote('$quaternary;');
+          color: color-dynamic(unquote('$quaternary'));
+
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        background-color: $btn-bg-overlay;
+        border-radius: $btn-border-radius;
+        content: '';
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    a {
+      @extend %btn-flat;
+
+      body & {
+        display: block;
+        opacity: $nav-link-opacity;
+        text-align: left;
+        text-align: start;
+
+        @include focus-hover {
+          background-color: transparent;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

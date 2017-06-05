@@ -291,8 +291,74 @@ body .nav-pills > li > a:focus {
   }
 }
 
+.nav-stacked {
+  background-color: transparent;
+}
+.nav-stacked li {
+  border-bottom: 0;
+}
+.nav-stacked li.active > a,
+.nav-stacked li > a.active {
+  color: color-dynamic($quaternary);
+  opacity: 1;
+}
+body .nav-stacked li.active > a:focus, body
+.nav-stacked li > a.active:focus {
+  background-color: $quaternary;;
+  color: color-dynamic($quaternary);
+}
+body .nav-stacked li.active > a:focus::before, body
+.nav-stacked li > a.active:focus::before {
+  opacity: 1;
+}
+@media (hover: hover) {
+  body .nav-stacked li.active > a:hover, body
+  .nav-stacked li > a.active:hover {
+    background-color: $quaternary;;
+    color: color-dynamic($quaternary);
+  }
+  body .nav-stacked li.active > a:hover::before, body
+  .nav-stacked li > a.active:hover::before {
+    opacity: 1;
+  }
+}
+.nav-stacked li.active > a::after,
+.nav-stacked li > a.active::after {
+  display: none;
+}
+.nav-stacked li.active > a::before,
+.nav-stacked li > a.active::before {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  content: '';
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body .nav-stacked li a {
+  display: block;
+  opacity: 0.7;
+  text-align: left;
+  text-align: start;
+}
+body .nav-stacked li a:focus {
+  background-color: transparent;
+  opacity: 1;
+}
+@media (hover: hover) {
+  body .nav-stacked li a:hover {
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
 .btn,
 .nav-pills > li > a,
+.nav-stacked li a,
 div.poll .poll-buttons a,
 .list-controls .category-breadcrumb li > a.badge-category,
 nav.post-controls button,
@@ -333,6 +399,7 @@ nav.post-controls .show-replies,
 }
 .btn:focus,
 .nav-pills > li > a:focus,
+.nav-stacked li a:focus,
 div.poll .poll-buttons a:focus,
 .list-controls .category-breadcrumb li > a.badge-category:focus,
 nav.post-controls button:focus,
@@ -353,6 +420,7 @@ nav.post-controls .show-replies:focus,
 @media (hover: hover) {
   .btn:hover,
   .nav-pills > li > a:hover,
+  .nav-stacked li a:hover,
   div.poll .poll-buttons a:hover,
   .list-controls .category-breadcrumb li > a.badge-category:hover,
   nav.post-controls button:hover,
@@ -373,6 +441,7 @@ nav.post-controls .show-replies:focus,
 }
 .btn:active,
 .nav-pills > li > a:active,
+.nav-stacked li a:active,
 div.poll .poll-buttons a:active,
 .list-controls .category-breadcrumb li > a.badge-category:active,
 nav.post-controls button:active,
@@ -392,6 +461,7 @@ nav.post-controls .show-replies:active,
 }
 .btn:focus,
 .nav-pills > li > a:focus,
+.nav-stacked li a:focus,
 div.poll .poll-buttons a:focus,
 .list-controls .category-breadcrumb li > a.badge-category:focus,
 nav.post-controls button:focus,
@@ -410,6 +480,7 @@ nav.post-controls .show-replies:focus,
 }
 .btn[disabled], .btn.disabled,
 .nav-pills > li > a[disabled],
+.nav-stacked li a[disabled],
 div.poll .poll-buttons a[disabled],
 .list-controls .category-breadcrumb li > a[disabled].badge-category,
 nav.post-controls button[disabled],
@@ -425,6 +496,7 @@ nav.post-controls [disabled].show-replies,
 .period-chooser button[disabled],
 .user-main .about .controls a[disabled],
 .nav-pills > li > a.disabled,
+.nav-stacked li a.disabled,
 div.poll .poll-buttons a.disabled,
 .list-controls .category-breadcrumb li > a.disabled.badge-category,
 nav.post-controls button.disabled,
@@ -444,6 +516,7 @@ nav.post-controls .disabled.show-replies,
 }
 .btn.btn-danger,
 .nav-pills > li > a.btn-danger,
+.nav-stacked li a.btn-danger,
 div.poll .poll-buttons a.btn-danger,
 .list-controls .category-breadcrumb li > a.btn-danger.badge-category,
 nav.post-controls button.btn-danger,
@@ -462,6 +535,7 @@ nav.post-controls .btn-danger.show-replies,
 }
 .btn.btn-danger:focus,
 .nav-pills > li > a.btn-danger:focus,
+.nav-stacked li a.btn-danger:focus,
 div.poll .poll-buttons a.btn-danger:focus,
 .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus,
 nav.post-controls button.btn-danger:focus,
@@ -481,6 +555,7 @@ nav.post-controls .btn-danger.show-replies:focus,
 @media (hover: hover) {
   .btn.btn-danger:hover,
   .nav-pills > li > a.btn-danger:hover,
+  .nav-stacked li a.btn-danger:hover,
   div.poll .poll-buttons a.btn-danger:hover,
   .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover,
   nav.post-controls button.btn-danger:hover,
@@ -500,6 +575,7 @@ nav.post-controls .btn-danger.show-replies:focus,
 }
 .btn.btn-primary,
 .nav-pills > li > a.btn-primary,
+.nav-stacked li a.btn-primary,
 div.poll .poll-buttons a.btn-primary,
 .list-controls .category-breadcrumb li > a.btn-primary.badge-category,
 nav.post-controls button.btn-primary,
@@ -518,6 +594,7 @@ nav.post-controls .btn-primary.show-replies,
 }
 .btn.btn-primary:focus,
 .nav-pills > li > a.btn-primary:focus,
+.nav-stacked li a.btn-primary:focus,
 div.poll .poll-buttons a.btn-primary:focus,
 .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus,
 nav.post-controls button.btn-primary:focus,
@@ -537,6 +614,7 @@ nav.post-controls .btn-primary.show-replies:focus,
 @media (hover: hover) {
   .btn.btn-primary:hover,
   .nav-pills > li > a.btn-primary:hover,
+  .nav-stacked li a.btn-primary:hover,
   div.poll .poll-buttons a.btn-primary:hover,
   .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover,
   nav.post-controls button.btn-primary:hover,
