@@ -38,6 +38,10 @@
   @include material-icons('brightness_high');
 }
 
+.fa-check {
+  @include material-icons('check');
+}
+
 .fa-check-square-o {
   @include material-icons('check_box');
 }
