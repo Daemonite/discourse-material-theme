@@ -66,11 +66,15 @@
     @include typography-h4;
 
     margin-bottom: ($card-inner-spacer-y / 2);
-    max-width: none;
     min-width: 0;
 
-    i {
+    a {
+      display: inline-flex;
+    }
+
+    i::before {
       font-size: inherit;
+      line-height: 1;
       vertical-align: middle;
     }
   }

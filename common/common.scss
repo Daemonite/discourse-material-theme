@@ -4270,11 +4270,17 @@ nav.post-controls .show-replies i {
   letter-spacing: 0.02em;
   line-height: 1.4;
   margin-bottom: 8px;
-  max-width: none;
   min-width: 0;
 }
-#user-card h1 i {
+#user-card h1 a {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+#user-card h1 i::before {
   font-size: inherit;
+  line-height: 1;
   vertical-align: middle;
 }
 #user-card h2 {
