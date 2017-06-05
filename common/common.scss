@@ -4342,6 +4342,34 @@ nav.post-controls .show-replies i {
 .user-main .about[href]:focus, .user-main .about[tabindex]:focus {
   outline: 0;
 }
+.user-main .about.collapsed-info.has-background .details {
+  padding: 16px 16px;
+}
+.user-main .about.collapsed-info .controls ul a {
+  padding: 11px 16px;
+  margin-bottom: 0;
+}
+.user-main .about.collapsed-info .details .primary h1 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.176471;
+}
+.user-main .about.collapsed-info .details .primary h2 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.user-main .about.collapsed-info .details .primary h2:empty {
+  display: none;
+}
+.user-main .about.collapsed-info .details .primary .avatar {
+  height: 1.176471;
+  margin-right: 8px;
+  width: 1.176471;
+}
 .user-main .about.has-background .details {
   background-color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
   padding: 16px 16px;

@@ -4,6 +4,39 @@
 
     margin-bottom: $spacer-lg;
 
+    &.collapsed-info {
+      &.has-background .details {
+        padding: $card-padding-y $card-padding-x;
+      }
+
+      .controls ul a {
+        padding: $btn-padding-y $btn-padding-x;
+        margin-bottom: 0;
+      }
+
+      .details .primary {
+        h1 {
+          @include typography-h2;
+        }
+
+        h2 {
+          @include typography-h5;
+
+          margin-top: ($card-inner-spacer-y / 2);
+
+          &:empty {
+            display: none;
+          }
+        }
+
+        .avatar {
+          height: $line-height-display-1;
+          margin-right: $card-inner-spacer-x;
+          width: $line-height-display-1;
+        }
+      }
+    }
+
     &.has-background {
       .details {
         background-color: color-chooser($black-secondary, $white-secondary);
