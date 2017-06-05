@@ -1933,7 +1933,15 @@ ol.category-breadcrumb li + li {
   line-height: inherit !important;
 }
 .fa-thumb-tack::before {
-  content: "vertical_align_top";
+  content: "flip_to_front";
+}
+.fa-thumb-tack.unpinned {
+  -webkit-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+.fa-thumb-tack.unpinned::before {
+  content: 'flip_to_back';
 }
 
 .fa-times {

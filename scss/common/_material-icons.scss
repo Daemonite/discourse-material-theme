@@ -199,7 +199,15 @@
 }
 
 .fa-thumb-tack {
-  @include material-icons('vertical_align_top');
+  @include material-icons('flip_to_front');
+
+  &.unpinned {
+    transform: none;
+
+    &::before {
+      content: 'flip_to_back';
+    }
+  }
 }
 
 .fa-times {
