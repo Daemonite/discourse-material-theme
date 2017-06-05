@@ -1,3 +1,8 @@
+.stats-title {
+  margin-bottom: $spacer-sm;
+  text-transform: none;
+}
+
 .user-main {
   .about {
     @include card;
@@ -235,6 +240,12 @@
     }
   }
 
+  .user-content {
+    background-color: transparent;
+    margin-bottom: $spacer-lg;
+    padding: 0;
+  }
+
   .user-right {
     display: block;
     flex-grow: 1;
@@ -384,5 +395,11 @@
   .wrapper {
     display: flex;
     flex-grow: 1;
+    min-width: 0;
+
+    > .ember-view {
+      flex-flow: 1;
+      min-width: 0;
+    }
   }
 }

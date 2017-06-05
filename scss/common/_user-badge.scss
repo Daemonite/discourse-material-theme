@@ -1,0 +1,180 @@
+.badge-card {
+  @include card;
+
+  margin-right: 0;
+  margin-bottom: $card-margin-y;
+
+  &,
+  &.large,
+  &.medium {
+    width: 100%;
+  }
+
+  .badge-contents {
+    min-height: 0;
+
+    .badge-icon {
+      @include card-block;
+      @include typography-h2;
+
+      background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+      min-width: ($card-padding-x * 2 + $font-size-display-1 / $font-size-base * $material-icon-size);
+    }
+
+    .badge-info {
+      @include card-block;
+
+      min-width: 0;
+
+      h3 {
+        @include typography-h5;
+
+        margin-bottom: ($card-inner-spacer-y / 2);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .badge-info-item {
+      flex-grow: 1;
+      min-width: 0;
+    }
+  }
+
+  .badge-summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .check-display {
+    align-items: center;
+    border-radius: ($material-icon-size / 2);
+    display: flex;
+    font-size: $font-size-base;
+    height: $material-icon-size;
+    justify-content: center;
+    top: ($card-padding-y / 2);
+    right: ($card-padding-x / 2);
+    width: $material-icon-size;
+  }
+
+  .grant-count {
+    font-size: $font-size-base;
+    line-height: 1;
+    top: ($card-padding-y / 2);
+    right: ($card-padding-x / 2);
+  }
+}
+
+.badge-grouping {
+  column-count: 3;
+  column-gap: $spacer-lg;
+  margin-bottom: ($spacer-lg - $card-margin-y);
+
+  h3 {
+    margin-bottom: $card-margin-y;
+  }
+
+  .title {
+    column-span: all;
+  }
+}
+
+.badge-groups {
+  margin: 0 0$spacer-lg;
+}
+
+.badges-section {
+  column-count: 3;
+  column-gap: $spacer-lg;
+  margin-bottom: ($spacer-lg - $card-margin-y);
+
+  > h3,
+  > p {
+    column-span: all;
+  }
+}
+
+.show-badge {
+  h1 {
+    margin-bottom: $spacer-lg;
+  }
+}
+
+.show-badge-details {
+  margin-top: 0;
+  margin-bottom: ($spacer-lg - $card-margin-y);
+
+  .badge-grant-info {
+    margin-left: $spacer-lg;
+  }
+
+  .grant-info-item {
+    margin-bottom: $card-margin-y;
+  }
+}
+
+.user-badges {
+  margin-bottom: $spacer-lg;
+
+  > .ember-view {
+    column-count: 3;
+    column-gap: $spacer-lg;
+    margin-bottom: ($spacer-lg - $card-margin-y);
+  }
+}
+
+.user-badges-list {
+  column-count: 3;
+  column-gap: $spacer-lg;
+}
+
+.user-info {
+  @include card;
+  @include card-block;
+
+  break-inside: avoid;
+  display: inline-flex;
+  margin-bottom: $card-margin-y;
+
+  &,
+  &.large,
+  &.medium,
+  &.small {
+    min-height: 0;
+    width: 100%;
+
+    &.badge-info {
+      min-height: 0;
+    }
+
+    .user-detail {
+      width: auto;
+    }
+
+    .user-image {
+      width: auto;
+    }
+  }
+
+  .avatar {
+    height: ($font-size-base * $line-height-base * 2);
+    width: ($font-size-base * $line-height-base * 2)
+  }
+
+  .user-detail {
+    font-size: inherit;
+    padding-left: 0;
+
+    .title {
+      margin-top: 0;
+    }
+  }
+
+  .user-image {
+    margin-right: $card-inner-spacer-x;
+    padding-right: 0;
+  }
+}
