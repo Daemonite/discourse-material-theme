@@ -238,29 +238,56 @@ sup {
 .nav-pills > li {
   margin-right: 1px;
 }
-.nav-pills > li.active > a {
-  color: color-dynamic($quaternary);
-}
-.nav-pills > li.active > a:focus {
-  color: $primary;
-}
-@media (hover: hover) {
-  .nav-pills > li.active > a:hover {
-    color: $primary;
-  }
-}
-.nav-pills > li > a {
-  display: block;
-}
+.nav-pills > li.active > a,
 .nav-pills > li > a.active {
   color: color-dynamic($quaternary);
+  opacity: 1;
 }
+body .nav-pills > li.active > a:focus, body
 .nav-pills > li > a.active:focus {
-  color: $primary;
+  background-color: $quaternary;;
+  color: color-dynamic($quaternary);
+}
+body .nav-pills > li.active > a:focus::before, body
+.nav-pills > li > a.active:focus::before {
+  opacity: 1;
 }
 @media (hover: hover) {
+  body .nav-pills > li.active > a:hover, body
   .nav-pills > li > a.active:hover {
-    color: $primary;
+    background-color: $quaternary;;
+    color: color-dynamic($quaternary);
+  }
+  body .nav-pills > li.active > a:hover::before, body
+  .nav-pills > li > a.active:hover::before {
+    opacity: 1;
+  }
+}
+.nav-pills > li.active > a::before,
+.nav-pills > li > a.active::before {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  content: '';
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body .nav-pills > li > a {
+  display: block;
+  opacity: 0.7;
+}
+body .nav-pills > li > a:focus {
+  background-color: transparent;
+  opacity: 1;
+}
+@media (hover: hover) {
+  body .nav-pills > li > a:hover {
+    background-color: transparent;
+    opacity: 1;
   }
 }
 
@@ -646,6 +673,7 @@ nav.post-controls .btn-primary.show-replies:focus,
 #topic-footer-buttons > button.btn::before, #reply-control .contents .submit-panel .btn::before, .timeline-container .topic-timeline div > button.btn::before,
 .timeline-container .topic-timeline span > button.btn::before, .period-chooser button::before, .top-title-buttons button::before {
   background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
   content: '';
   display: block;
   opacity: 0;
@@ -4210,6 +4238,7 @@ nav.post-controls .show-replies i {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   color: $primary;
   padding: 0;
+  margin-bottom: 24px;
 }
 .user-main .about[href]:focus, .user-main .about[href]:hover, .user-main .about[tabindex]:focus, .user-main .about[tabindex]:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
@@ -4333,6 +4362,10 @@ nav.post-controls .show-replies i {
   background-color: transparent;
   padding: 0;
 }
+.user-main .nav-pills a,
+.user-main .nav-pills i {
+  color: inherit;
+}
 .user-main .staff-counters {
   background-color: transparent;
   color: inherit;
@@ -4402,6 +4435,14 @@ nav.post-controls .show-replies i {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   font-weight: normal;
+}
+
+.user-nav {
+  margin: 0 0 24px;
+  padding: 0;
+}
+.user-nav .fa, .user-nav .fa.fa-comment {
+  margin-right: 4px;
 }
 
 .user-badge,

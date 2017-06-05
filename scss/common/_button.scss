@@ -115,6 +115,7 @@
 
   &::before {
     background-color: $btn-bg-overlay;
+    border-radius: $btn-border-radius;
     content: '';
     display: block;
     opacity: 0;

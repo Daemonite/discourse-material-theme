@@ -2,6 +2,8 @@
   .about {
     @include card;
 
+    margin-bottom: $spacer-lg;
+
     &.has-background {
       .details {
         background-color: color-chooser($black-secondary, $white-secondary);
@@ -118,6 +120,13 @@
     }
   }
 
+  .nav-pills {
+    a,
+    i {
+      color: inherit;
+    }
+  }
+
   .staff-counters {
     background-color: transparent;
     color: inherit;
@@ -168,6 +177,18 @@
     .active {
       box-shadow: $chip-box-shadow;
       font-weight: normal;
+    }
+  }
+}
+
+.user-nav {
+  margin: 0 0 $spacer-lg;
+  padding: 0;
+
+  .fa {
+    &,
+    &.fa-comment {
+      margin-right: $spacer-xs;
     }
   }
 }

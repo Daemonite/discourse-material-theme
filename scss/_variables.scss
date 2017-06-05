@@ -28,6 +28,7 @@
 // - Dropdown
 // - Header
 // - Menu panel
+// - Nav
 // - Progress
 // - Table
 // - Text field
@@ -304,6 +305,12 @@ $menu-panel-item-overlay-dark:  $dark-hover !default;
 $menu-panel-item-overlay-light: $light-hover !default;
 $menu-panel-padding-x:          24px !default;
 $menu-panel-padding-y:          20px !default;
+
+
+
+// Nav
+
+$nav-link-opacity: .7 !default;
 
 
 
