@@ -82,6 +82,10 @@
   @include material-icons('radio_button_checked');
 }
 
+.fa-download {
+  @include material-icons('file_download');
+}
+
 .fa-ellipsis-h {
   @include material-icons('more_horiz');
 }
