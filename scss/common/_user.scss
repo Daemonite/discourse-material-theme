@@ -1,13 +1,101 @@
+.likes-section,
+.links-section {
+  .user-info {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.likes-section li {
+  height: auto;
+}
+
+.links-section .domain {
+  @include typography-small;
+}
+
+.stats-section {
+  @include card;
+  @include card-block;
+
+  li {
+    margin: 0 $spacer 0 0;
+    padding: 0;
+
+    &.linked-stat a {
+      @extend %btn-flat;
+    }
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .value {
+    font-size: inherit;
+  }
+}
+
 .stats-title {
   margin-bottom: $spacer-sm;
   text-transform: none;
+}
+
+.top-section {
+  margin-bottom: $spacer-lg;
+
+  &:not(.badges-section):not(.stats-section) {
+    display: flex;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.top-sub-section {
+  margin-bottom: 0;
+  margin-left: $spacer-lg;
+  width: calc(50% - #{$spacer-lg / 2});
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &.likes-section,
+  &.links-section,
+  &.replies-section,
+  &.topics-section {
+    @include card;
+    @include card-block;
+
+    padding-bottom: 0;
+  }
+
+  li {
+    border-top: 1px solid color-chooser($white-divider, $black-divider);
+    border-left: 0;
+    margin:0 ($card-padding-x * -1);
+    padding: $card-padding-y $card-padding-x;
+  }
+
+  ul {
+    margin: $card-inner-spacer-y 0 0;
+    max-width: none;
+  }
 }
 
 .user-main {
   .about {
     @include card;
 
-    margin-bottom: $spacer-lg;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    margin-bottom: 0;
 
     &.collapsed-info {
       &.has-background .details {
@@ -19,25 +107,29 @@
         margin-bottom: 0;
       }
 
-      .details .primary {
-        h1 {
-          @include typography-h2;
-        }
+      .details {
+        padding: $card-padding-y $card-padding-x;
 
-        h2 {
-          @include typography-h5;
-
-          margin-top: ($card-inner-spacer-y / 2);
-
-          &:empty {
-            display: none;
+        .primary {
+          h1 {
+            @include typography-h2;
           }
-        }
 
-        .avatar {
-          height: $line-height-display-1;
-          margin-right: $card-inner-spacer-x;
-          width: $line-height-display-1;
+          h2 {
+            @include typography-h5;
+
+            margin-top: ($card-inner-spacer-y / 2);
+
+            &:empty {
+              display: none;
+            }
+          }
+
+          .avatar {
+            height: $line-height-display-1;
+            margin-right: $card-inner-spacer-x;
+            width: $line-height-display-1;
+          }
         }
       }
     }
@@ -362,8 +454,11 @@
 }
 
 .user-nav {
+  @include card;
+  @include card-block;
+
+  border-radius: 0 0 $card-border-radius $card-border-radius;
   margin: 0 0 $spacer-lg;
-  padding: 0;
 
   .fa {
     &,
@@ -378,7 +473,7 @@
   display: block;
   flex-shrink: 0;
   margin-right: $spacer-lg;
-  min-width: ($spacer-lg * 10);
+  min-width: ($spacer * 12);
   padding-left: 0;
   width: auto;
 }
@@ -399,7 +494,7 @@
 
     > .ember-view {
       flex-flow: 1;
-      min-width: 0;
+      min-width: ($spacer * 12);
     }
   }
 }

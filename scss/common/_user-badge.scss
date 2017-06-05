@@ -1,8 +1,9 @@
 .badge-card {
   @include card;
 
+  margin-top: ($card-margin-y / 2);
   margin-right: 0;
-  margin-bottom: $card-margin-y;
+  margin-bottom: ($card-margin-y / 2);
 
   &,
   &.large,

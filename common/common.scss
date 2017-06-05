@@ -372,6 +372,7 @@ nav.post-controls .show-replies,
 .select2-container a.select2-choice,
 #share-link .reply-as-new-topic a,
 .period-chooser button,
+.stats-section li.linked-stat a,
 .user-main .about .controls a {
   background-color: transparent;
   background-image: none;
@@ -413,6 +414,7 @@ nav.post-controls .show-replies:focus,
 .select2-container a.select2-choice:focus,
 #share-link .reply-as-new-topic a:focus,
 .period-chooser button:focus,
+.stats-section li.linked-stat a:focus,
 .user-main .about .controls a:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $primary;
@@ -434,6 +436,7 @@ nav.post-controls .show-replies:focus,
   .select2-container a.select2-choice:hover,
   #share-link .reply-as-new-topic a:hover,
   .period-chooser button:hover,
+  .stats-section li.linked-stat a:hover,
   .user-main .about .controls a:hover {
     background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
     color: $primary;
@@ -455,6 +458,7 @@ nav.post-controls .show-replies:active,
 .select2-container a.select2-choice:active,
 #share-link .reply-as-new-topic a:active,
 .period-chooser button:active,
+.stats-section li.linked-stat a:active,
 .user-main .about .controls a:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
@@ -475,6 +479,7 @@ nav.post-controls .show-replies:focus,
 .select2-container a.select2-choice:focus,
 #share-link .reply-as-new-topic a:focus,
 .period-chooser button:focus,
+.stats-section li.linked-stat a:focus,
 .user-main .about .controls a:focus {
   outline: 0;
 }
@@ -494,6 +499,7 @@ nav.post-controls [disabled].show-replies,
 .select2-container a[disabled].select2-choice,
 #share-link .reply-as-new-topic a[disabled],
 .period-chooser button[disabled],
+.stats-section li.linked-stat a[disabled],
 .user-main .about .controls a[disabled],
 .nav-pills > li > a.disabled,
 .nav-stacked li a.disabled,
@@ -510,6 +516,7 @@ nav.post-controls .disabled.show-replies,
 .select2-container a.disabled.select2-choice,
 #share-link .reply-as-new-topic a.disabled,
 .period-chooser button.disabled,
+.stats-section li.linked-stat a.disabled,
 .user-main .about .controls a.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
@@ -530,6 +537,7 @@ nav.post-controls .btn-danger.show-replies,
 .select2-container a.btn-danger.select2-choice,
 #share-link .reply-as-new-topic a.btn-danger,
 .period-chooser button.btn-danger,
+.stats-section li.linked-stat a.btn-danger,
 .user-main .about .controls a.btn-danger {
   color: $danger;
 }
@@ -549,6 +557,7 @@ nav.post-controls .btn-danger.show-replies:focus,
 .select2-container a.btn-danger.select2-choice:focus,
 #share-link .reply-as-new-topic a.btn-danger:focus,
 .period-chooser button.btn-danger:focus,
+.stats-section li.linked-stat a.btn-danger:focus,
 .user-main .about .controls a.btn-danger:focus {
   color: $danger;
 }
@@ -569,6 +578,7 @@ nav.post-controls .btn-danger.show-replies:focus,
   .select2-container a.btn-danger.select2-choice:hover,
   #share-link .reply-as-new-topic a.btn-danger:hover,
   .period-chooser button.btn-danger:hover,
+  .stats-section li.linked-stat a.btn-danger:hover,
   .user-main .about .controls a.btn-danger:hover {
     color: $danger;
   }
@@ -589,6 +599,7 @@ nav.post-controls .btn-primary.show-replies,
 .select2-container a.btn-primary.select2-choice,
 #share-link .reply-as-new-topic a.btn-primary,
 .period-chooser button.btn-primary,
+.stats-section li.linked-stat a.btn-primary,
 .user-main .about .controls a.btn-primary {
   color: $tertiary;
 }
@@ -608,6 +619,7 @@ nav.post-controls .btn-primary.show-replies:focus,
 .select2-container a.btn-primary.select2-choice:focus,
 #share-link .reply-as-new-topic a.btn-primary:focus,
 .period-chooser button.btn-primary:focus,
+.stats-section li.linked-stat a.btn-primary:focus,
 .user-main .about .controls a.btn-primary:focus {
   color: $tertiary;
 }
@@ -628,6 +640,7 @@ nav.post-controls .btn-primary.show-replies:focus,
   .select2-container a.btn-primary.select2-choice:hover,
   #share-link .reply-as-new-topic a.btn-primary:hover,
   .period-chooser button.btn-primary:hover,
+  .stats-section li.linked-stat a.btn-primary:hover,
   .user-main .about .controls a.btn-primary:hover {
     color: $tertiary;
   }
@@ -4340,9 +4353,120 @@ nav.post-controls .show-replies i {
   left: 0;
 }
 
+.likes-section .user-info,
+.links-section .user-info {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.likes-section li {
+  height: auto;
+}
+
+.links-section .domain {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.stats-section {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+  padding: 16px 16px;
+}
+.stats-section[href]:focus, .stats-section[href]:hover, .stats-section[tabindex]:focus, .stats-section[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.stats-section[href]:focus, .stats-section[tabindex]:focus {
+  outline: 0;
+}
+.stats-section li {
+  margin: 0 16px 0 0;
+  padding: 0;
+}
+.stats-section ul {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0;
+}
+.stats-section .value {
+  font-size: inherit;
+}
+
 .stats-title {
   margin-bottom: 8px;
   text-transform: none;
+}
+
+.top-section {
+  margin-bottom: 24px;
+}
+.top-section:not(.badges-section):not(.stats-section) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-section > :last-child {
+  margin-bottom: 0;
+}
+
+.top-sub-section {
+  margin-bottom: 0;
+  margin-left: 24px;
+  width: calc(50% - 12px);
+}
+.top-sub-section:first-child {
+  margin-left: 0;
+}
+.top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+  padding: 16px 16px;
+  padding-bottom: 0;
+}
+.top-sub-section.likes-section[href]:focus, .top-sub-section.likes-section[href]:hover, .top-sub-section.likes-section[tabindex]:focus, .top-sub-section.likes-section[tabindex]:hover, .top-sub-section.links-section[href]:focus, .top-sub-section.links-section[href]:hover, .top-sub-section.links-section[tabindex]:focus, .top-sub-section.links-section[tabindex]:hover, .top-sub-section.replies-section[href]:focus, .top-sub-section.replies-section[href]:hover, .top-sub-section.replies-section[tabindex]:focus, .top-sub-section.replies-section[tabindex]:hover, .top-sub-section.topics-section[href]:focus, .top-sub-section.topics-section[href]:hover, .top-sub-section.topics-section[tabindex]:focus, .top-sub-section.topics-section[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.top-sub-section.likes-section[href]:focus, .top-sub-section.likes-section[tabindex]:focus, .top-sub-section.links-section[href]:focus, .top-sub-section.links-section[tabindex]:focus, .top-sub-section.replies-section[href]:focus, .top-sub-section.replies-section[tabindex]:focus, .top-sub-section.topics-section[href]:focus, .top-sub-section.topics-section[tabindex]:focus {
+  outline: 0;
+}
+.top-sub-section li {
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border-left: 0;
+  margin: 0 -16px;
+  padding: 16px 16px;
+}
+.top-sub-section ul {
+  margin: 16px 0 0;
+  max-width: none;
 }
 
 .user-main .about {
@@ -4353,7 +4477,8 @@ nav.post-controls .show-replies i {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   color: $primary;
   padding: 0;
-  margin-bottom: 24px;
+  border-radius: 2px 2px 0 0;
+  margin-bottom: 0;
 }
 .user-main .about[href]:focus, .user-main .about[href]:hover, .user-main .about[tabindex]:focus, .user-main .about[tabindex]:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
@@ -4369,6 +4494,9 @@ nav.post-controls .show-replies i {
 .user-main .about.collapsed-info .controls ul a {
   padding: 11px 16px;
   margin-bottom: 0;
+}
+.user-main .about.collapsed-info .details {
+  padding: 16px 16px;
 }
 .user-main .about.collapsed-info .details .primary h1 {
   font-size: 34px;
@@ -4737,8 +4865,24 @@ nav.post-controls .show-replies i {
 }
 
 .user-nav {
-  margin: 0 0 24px;
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
   padding: 0;
+  padding: 16px 16px;
+  border-radius: 0 0 2px 2px;
+  margin: 0 0 24px;
+}
+.user-nav[href]:focus, .user-nav[href]:hover, .user-nav[tabindex]:focus, .user-nav[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.user-nav[href]:focus, .user-nav[tabindex]:focus {
+  outline: 0;
 }
 .user-nav .fa, .user-nav .fa.fa-comment {
   margin-right: 4px;
@@ -4751,7 +4895,7 @@ nav.post-controls .show-replies i {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   margin-right: 24px;
-  min-width: 240px;
+  min-width: 192px;
   padding-left: 0;
   width: auto;
 }
@@ -4785,7 +4929,7 @@ nav.post-controls .show-replies i {
   -webkit-flex-flow: 1;
       -ms-flex-flow: 1;
           flex-flow: 1;
-  min-width: 0;
+  min-width: 192px;
 }
 
 .badge-card {
@@ -4796,8 +4940,9 @@ nav.post-controls .show-replies i {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   color: $primary;
   padding: 0;
+  margin-top: 4px;
   margin-right: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .badge-card[href]:focus, .badge-card[href]:hover, .badge-card[tabindex]:focus, .badge-card[tabindex]:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
