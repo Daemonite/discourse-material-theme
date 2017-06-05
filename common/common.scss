@@ -3920,11 +3920,21 @@ nav.post-controls .show-replies i {
   padding: 0 6px;
 }
 .topic-list .topic-status {
-  display: none;
+  font-size: inherit;
+  margin: 0 6px 0 0;
+  padding: 0;
+}
+.topic-list .topic-status:last-of-type {
+  margin-right: 6px;
 }
 
 .topic-list-bottom {
   margin: 0 0 16px;
+}
+
+.topic-statuses .topic-status {
+  margin: 0 6px 0 0;
+  padding: 0;
 }
 
 .categories-and-latest .category-list,
