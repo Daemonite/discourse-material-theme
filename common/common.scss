@@ -2466,7 +2466,13 @@ nav.post-controls .show-replies i {
 }
 
 .names .fa {
-  margin-left: 0;
+  color: inherit;
+  margin-left: 4px;
+}
+.names .fa::before {
+  font-size: inherit;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 .post-menu-area {
