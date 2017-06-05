@@ -26,7 +26,8 @@
 // - Topic list
 //   - Category list
 //   - Suggested topics
-// - User card
+// - User
+//   - User card
 
 @import 'common/base';
 @import 'common/base-override';
@@ -49,4 +50,5 @@
 @import 'common/topic-list';
 @import 'common/topic-list-category';
 @import 'common/topic-list-suggested';
+@import 'common/user';
 @import 'common/user-card';

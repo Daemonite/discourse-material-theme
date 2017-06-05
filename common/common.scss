@@ -278,7 +278,8 @@ nav.post-controls .show-replies,
 #reply-control .toggle-preview,
 .select2-container a.select2-choice,
 #share-link .reply-as-new-topic a,
-.period-chooser button {
+.period-chooser button,
+.user-main .about .controls a {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -317,7 +318,8 @@ nav.post-controls .show-replies:focus,
 #reply-control .toggle-preview:focus,
 .select2-container a.select2-choice:focus,
 #share-link .reply-as-new-topic a:focus,
-.period-chooser button:focus {
+.period-chooser button:focus,
+.user-main .about .controls a:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $primary;
 }
@@ -336,7 +338,8 @@ nav.post-controls .show-replies:focus,
   #reply-control .toggle-preview:hover,
   .select2-container a.select2-choice:hover,
   #share-link .reply-as-new-topic a:hover,
-  .period-chooser button:hover {
+  .period-chooser button:hover,
+  .user-main .about .controls a:hover {
     background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
     color: $primary;
   }
@@ -355,7 +358,8 @@ nav.post-controls .show-replies:active,
 #reply-control .toggle-preview:active,
 .select2-container a.select2-choice:active,
 #share-link .reply-as-new-topic a:active,
-.period-chooser button:active {
+.period-chooser button:active,
+.user-main .about .controls a:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
@@ -373,7 +377,8 @@ nav.post-controls .show-replies:focus,
 #reply-control .toggle-preview:focus,
 .select2-container a.select2-choice:focus,
 #share-link .reply-as-new-topic a:focus,
-.period-chooser button:focus {
+.period-chooser button:focus,
+.user-main .about .controls a:focus {
   outline: 0;
 }
 .btn[disabled], .btn.disabled,
@@ -391,6 +396,7 @@ nav.post-controls [disabled].show-replies,
 .select2-container a[disabled].select2-choice,
 #share-link .reply-as-new-topic a[disabled],
 .period-chooser button[disabled],
+.user-main .about .controls a[disabled],
 .nav-pills > li > a.disabled,
 div.poll .poll-buttons a.disabled,
 .list-controls .category-breadcrumb li > a.disabled.badge-category,
@@ -404,7 +410,8 @@ nav.post-controls .disabled.show-replies,
 #reply-control .disabled.toggle-preview,
 .select2-container a.disabled.select2-choice,
 #share-link .reply-as-new-topic a.disabled,
-.period-chooser button.disabled {
+.period-chooser button.disabled,
+.user-main .about .controls a.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
 }
@@ -422,7 +429,8 @@ nav.post-controls .btn-danger.show-replies,
 #reply-control .btn-danger.toggle-preview,
 .select2-container a.btn-danger.select2-choice,
 #share-link .reply-as-new-topic a.btn-danger,
-.period-chooser button.btn-danger {
+.period-chooser button.btn-danger,
+.user-main .about .controls a.btn-danger {
   color: $danger;
 }
 .btn.btn-danger:focus,
@@ -439,7 +447,8 @@ nav.post-controls .btn-danger.show-replies:focus,
 #reply-control .btn-danger.toggle-preview:focus,
 .select2-container a.btn-danger.select2-choice:focus,
 #share-link .reply-as-new-topic a.btn-danger:focus,
-.period-chooser button.btn-danger:focus {
+.period-chooser button.btn-danger:focus,
+.user-main .about .controls a.btn-danger:focus {
   color: $danger;
 }
 @media (hover: hover) {
@@ -457,7 +466,8 @@ nav.post-controls .btn-danger.show-replies:focus,
   #reply-control .btn-danger.toggle-preview:hover,
   .select2-container a.btn-danger.select2-choice:hover,
   #share-link .reply-as-new-topic a.btn-danger:hover,
-  .period-chooser button.btn-danger:hover {
+  .period-chooser button.btn-danger:hover,
+  .user-main .about .controls a.btn-danger:hover {
     color: $danger;
   }
 }
@@ -475,7 +485,8 @@ nav.post-controls .btn-primary.show-replies,
 #reply-control .btn-primary.toggle-preview,
 .select2-container a.btn-primary.select2-choice,
 #share-link .reply-as-new-topic a.btn-primary,
-.period-chooser button.btn-primary {
+.period-chooser button.btn-primary,
+.user-main .about .controls a.btn-primary {
   color: $tertiary;
 }
 .btn.btn-primary:focus,
@@ -492,7 +503,8 @@ nav.post-controls .btn-primary.show-replies:focus,
 #reply-control .btn-primary.toggle-preview:focus,
 .select2-container a.btn-primary.select2-choice:focus,
 #share-link .reply-as-new-topic a.btn-primary:focus,
-.period-chooser button.btn-primary:focus {
+.period-chooser button.btn-primary:focus,
+.user-main .about .controls a.btn-primary:focus {
   color: $tertiary;
 }
 @media (hover: hover) {
@@ -510,7 +522,8 @@ nav.post-controls .btn-primary.show-replies:focus,
   #reply-control .btn-primary.toggle-preview:hover,
   .select2-container a.btn-primary.select2-choice:hover,
   #share-link .reply-as-new-topic a.btn-primary:hover,
-  .period-chooser button.btn-primary:hover {
+  .period-chooser button.btn-primary:hover,
+  .user-main .about .controls a.btn-primary:hover {
     color: $tertiary;
   }
 }
@@ -4189,6 +4202,208 @@ nav.post-controls .show-replies i {
   left: 0;
 }
 
+.user-main .about {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+}
+.user-main .about[href]:focus, .user-main .about[href]:hover, .user-main .about[tabindex]:focus, .user-main .about[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.user-main .about[href]:focus, .user-main .about[tabindex]:focus {
+  outline: 0;
+}
+.user-main .about.has-background .details {
+  background-color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
+  padding: 16px 16px;
+}
+.user-main .about .controls {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin: -1px -8px 0 8px;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 0;
+  width: auto;
+}
+.user-main .about .controls a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1px;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+}
+.user-main .about .controls ul {
+  margin: 0;
+}
+.user-main .about .details {
+  padding: 16px 16px;
+  background-color: transparent;
+}
+.user-main .about .details h1 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.176471;
+}
+.user-main .about .details h2 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+.user-main .about .details img.avatar {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin: 0 8px 0 0;
+}
+.user-main .about .details .primary {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-main .about .details .primary h1 {
+  font-weight: 400;
+}
+.user-main .about .details .primary .primary-textual {
+  margin-right: auto;
+  padding: 0;
+}
+.user-main .about .details .primary .primary-textual > * {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.user-main .about .details .primary .primary-textual > *:first-child {
+  margin-top: 0;
+}
+.user-main .about .secondary {
+  padding: 16px 16px;
+  background-color: color-chooser(#212121, #f5f5f5);
+  border: 0;
+  font-size: inherit;
+}
+.user-main .about .secondary dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.user-main .about .secondary dl dd {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin: 0 16px 0 0;
+  white-space: nowrap;
+}
+.user-main .about .secondary dl dd:last-child {
+  margin-right: 0;
+}
+.user-main .about .secondary dl dd.groups {
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  white-space: normal;
+}
+.user-main .about .secondary dl dt {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin: 0 8px 0 0;
+  white-space: nowrap;
+}
+.user-main .about .secondary dl dt:last-child {
+  margin-right: 0;
+}
+.user-main .about .secondary .btn {
+  background-color: transparent;
+  padding: 0;
+}
+.user-main .staff-counters {
+  background-color: transparent;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 0;
+  padding: 0 8px 0 16px;
+}
+.user-main .staff-counters a {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  border-radius: 16px;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  height: 32px;
+  line-height: 1;
+  padding: 0 12px;
+}
+.user-main .staff-counters a:focus {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+}
+@media (hover: hover) {
+  .user-main .staff-counters a:hover {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  }
+}
+.user-main .staff-counters a:focus {
+  outline: 0;
+}
+.user-main .staff-counters > div {
+  margin: 16px 8px 0 0;
+  padding: 0;
+}
+.user-main .staff-counters > div:first-of-type {
+  padding-left: 0;
+}
+.user-main .staff-counters > div span {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 32px;
+  margin-left: -12px;
+  min-width: 32px;
+  padding: 8px 12px;
+}
+.user-main .staff-counters .active {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  font-weight: normal;
+}
+
 .user-badge,
 #user-card.show-badges .more-user-badges {
   -webkit-box-align: center;
@@ -4231,6 +4446,7 @@ nav.post-controls .show-replies i {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   color: $primary;
   padding: 0;
+  min-height: 0;
 }
 #user-card[href]:focus, #user-card[href]:hover, #user-card[tabindex]:focus, #user-card[tabindex]:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
@@ -4239,6 +4455,9 @@ nav.post-controls .show-replies i {
 }
 #user-card[href]:focus, #user-card[tabindex]:focus {
   outline: 0;
+}
+#user-card.no-bg .card-content {
+  background-color: transparent;
 }
 #user-card.show-badges .badge-section {
   -webkit-box-align: center;
@@ -4313,11 +4532,11 @@ nav.post-controls .show-replies i {
   line-height: 1.428571;
 }
 #user-card .btn {
-  margin: 0 0 8px;
+  margin: 0 0 1px;
 }
 #user-card .card-content {
   padding: 16px 16px;
-  background-color: transparent;
+  background-color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4325,6 +4544,7 @@ nav.post-controls .show-replies i {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-top: 56px;
 }
 #user-card .metadata {
   display: -webkit-box;
@@ -4353,5 +4573,11 @@ nav.post-controls .show-replies i {
   margin: -4px -8px 8px 0;
 }
 #user-card .usercard-controls a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-width: 0;
+  text-align: left;
+  text-align: start;
 }

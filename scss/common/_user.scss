@@ -1,0 +1,173 @@
+.user-main {
+  .about {
+    @include card;
+
+    &.has-background {
+      .details {
+        background-color: color-chooser($black-secondary, $white-secondary);
+        padding: $card-padding-y $card-padding-x;
+      }
+    }
+
+    .controls {
+      flex-shrink: 0;
+      margin: -1px ($btn-padding-x / -2) 0 $card-inner-spacer-x;
+      order: 1;
+      padding: 0;
+      width: auto;
+
+      a {
+        @extend %btn-flat;
+
+        display: flex;
+        margin-top: 1px;
+        margin-bottom: 0;
+        text-align: left;
+        width: 100%;
+      }
+
+      ul {
+        margin: 0;
+      }
+    }
+
+    .details {
+      @include card-block;
+
+      background-color: transparent;
+
+      h1 {
+        @include typography-h2;
+      }
+
+      h2 {
+        @include typography-h5;
+      }
+
+      img {
+        &.avatar {
+          flex-shrink: 0;
+          margin: 0 $card-inner-spacer-x 0 0;
+        }
+      }
+
+      .primary {
+        display: flex;
+
+        h1 {
+          font-weight: $font-weight-display-1;
+        }
+
+        .primary-textual {
+          margin-right: auto;
+          padding: 0;
+
+          > * {
+            margin-top: ($card-inner-spacer-y / 2);
+            margin-bottom: 0;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .secondary {
+      @include card-block;
+
+      background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+      border: 0;
+      font-size: inherit;
+
+      dl {
+        display: flex;
+        padding: 0;
+
+        dd {
+          flex-shrink: 0;
+          margin: 0 ($card-inner-spacer-x * 2) 0 0;
+          white-space: nowrap;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &.groups {
+            flex-shrink: 1;
+            white-space: normal;
+          }
+        }
+
+        dt {
+          flex-shrink: 0;
+          margin: 0 $card-inner-spacer-x 0 0;
+          white-space: nowrap;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .btn {
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+
+  .staff-counters {
+    background-color: transparent;
+    color: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 0 ($card-padding-x - $card-inner-spacer-x) 0 $card-padding-x;
+
+    a {
+      align-items: center;
+      background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+      border-radius: ($chip-height / 2);
+      color: inherit;
+      display: flex;
+      font-size: $chip-font-size;
+      height: $chip-height;
+      line-height: 1;
+      padding: 0 $chip-padding-x;
+
+      @include focus-hover {
+        box-shadow: $chip-box-shadow;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    > div {
+      margin: $card-inner-spacer-y $card-inner-spacer-x 0 0;
+      padding: 0;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+
+      span {
+        align-items: center;
+        border-radius: ($chip-height / 2);
+        display: inline-flex;
+        height: $chip-height;
+        margin-left: ($chip-padding-x * -1);
+        min-width: $chip-height;
+        padding: $chip-padding-y $chip-padding-x;
+      }
+    }
+
+    .active {
+      box-shadow: $chip-box-shadow;
+      font-weight: normal;
+    }
+  }
+}

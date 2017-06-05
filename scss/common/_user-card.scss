@@ -26,6 +26,14 @@
 #user-card {
   @include card;
 
+  min-height: 0;
+
+  &.no-bg {
+    .card-content {
+      background-color: transparent;
+    }
+  }
+
   &.show-badges {
     .badge-section {
       align-items: center;
@@ -91,15 +99,16 @@
   }
 
   .btn {
-    margin: 0 0 ($card-inner-spacer-y / 2);
+    margin: 0 0 1px;
   }
 
   .card-content {
     @include card-block;
 
-    background-color: transparent;
+    background-color: color-chooser($black-secondary, $white-secondary);
     display: flex;
     flex-wrap: wrap;
+    margin-top: $header-height;
   }
 
   .metadata {
@@ -128,7 +137,10 @@
     margin: (($btn-height - $font-size-title * $line-height-title) / -2) ($btn-padding-x / -2) ($card-inner-spacer-y / 2) 0;
 
     a {
+      display: flex;
       min-width: 0;
+      text-align: left;
+      text-align: start;
     }
   }
 }
