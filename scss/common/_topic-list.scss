@@ -5,7 +5,8 @@
 #list-area {
   margin-bottom: $spacer-lg;
 
-  h2 {
+  h2,
+  .top-lists h2 {
     margin: 0 0 $spacer;
   }
 }
@@ -15,6 +16,7 @@
   display: inline-flex;
 
   button {
+    @extend %btn-flat;
     @extend %btn-footer;
     @extend %btn-raised;
 

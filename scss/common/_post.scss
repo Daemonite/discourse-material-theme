@@ -389,7 +389,6 @@ nav {
     right: 0;
 
     .btn {
-      @extend %btn-flat;
       @extend %btn-footer;
     }
   }

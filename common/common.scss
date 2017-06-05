@@ -271,14 +271,14 @@ div.poll .poll-buttons a,
 nav.post-controls button,
 nav.post-controls .show-replies,
 .small-action button,
-.topic-map .buttons .btn,
 .topic-map .link-summary a,
 .topic-meta-data .post-info a,
 #reply-control .contents .submit-panel .cancel,
 #reply-control .d-editor-button-bar button,
 #reply-control .toggle-preview,
 .select2-container a.select2-choice,
-#share-link .reply-as-new-topic a {
+#share-link .reply-as-new-topic a,
+.period-chooser button {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -310,14 +310,14 @@ div.poll .poll-buttons a:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
 .small-action button:focus,
-.topic-map .buttons .btn:focus,
 .topic-map .link-summary a:focus,
 .topic-meta-data .post-info a:focus,
 #reply-control .contents .submit-panel .cancel:focus,
 #reply-control .d-editor-button-bar button:focus,
 #reply-control .toggle-preview:focus,
 .select2-container a.select2-choice:focus,
-#share-link .reply-as-new-topic a:focus {
+#share-link .reply-as-new-topic a:focus,
+.period-chooser button:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $primary;
 }
@@ -329,14 +329,14 @@ nav.post-controls .show-replies:focus,
   nav.post-controls button:hover,
   nav.post-controls .show-replies:hover,
   .small-action button:hover,
-  .topic-map .buttons .btn:hover,
   .topic-map .link-summary a:hover,
   .topic-meta-data .post-info a:hover,
   #reply-control .contents .submit-panel .cancel:hover,
   #reply-control .d-editor-button-bar button:hover,
   #reply-control .toggle-preview:hover,
   .select2-container a.select2-choice:hover,
-  #share-link .reply-as-new-topic a:hover {
+  #share-link .reply-as-new-topic a:hover,
+  .period-chooser button:hover {
     background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
     color: $primary;
   }
@@ -348,14 +348,14 @@ div.poll .poll-buttons a:active,
 nav.post-controls button:active,
 nav.post-controls .show-replies:active,
 .small-action button:active,
-.topic-map .buttons .btn:active,
 .topic-map .link-summary a:active,
 .topic-meta-data .post-info a:active,
 #reply-control .contents .submit-panel .cancel:active,
 #reply-control .d-editor-button-bar button:active,
 #reply-control .toggle-preview:active,
 .select2-container a.select2-choice:active,
-#share-link .reply-as-new-topic a:active {
+#share-link .reply-as-new-topic a:active,
+.period-chooser button:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
@@ -366,14 +366,14 @@ div.poll .poll-buttons a:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
 .small-action button:focus,
-.topic-map .buttons .btn:focus,
 .topic-map .link-summary a:focus,
 .topic-meta-data .post-info a:focus,
 #reply-control .contents .submit-panel .cancel:focus,
 #reply-control .d-editor-button-bar button:focus,
 #reply-control .toggle-preview:focus,
 .select2-container a.select2-choice:focus,
-#share-link .reply-as-new-topic a:focus {
+#share-link .reply-as-new-topic a:focus,
+.period-chooser button:focus {
   outline: 0;
 }
 .btn[disabled], .btn.disabled,
@@ -383,7 +383,6 @@ div.poll .poll-buttons a[disabled],
 nav.post-controls button[disabled],
 nav.post-controls [disabled].show-replies,
 .small-action button[disabled],
-.topic-map .buttons [disabled].btn,
 .topic-map .link-summary a[disabled],
 .topic-meta-data .post-info a[disabled],
 #reply-control .contents .submit-panel [disabled].cancel,
@@ -391,20 +390,21 @@ nav.post-controls [disabled].show-replies,
 #reply-control [disabled].toggle-preview,
 .select2-container a[disabled].select2-choice,
 #share-link .reply-as-new-topic a[disabled],
+.period-chooser button[disabled],
 .nav-pills > li > a.disabled,
 div.poll .poll-buttons a.disabled,
 .list-controls .category-breadcrumb li > a.disabled.badge-category,
 nav.post-controls button.disabled,
 nav.post-controls .disabled.show-replies,
 .small-action button.disabled,
-.topic-map .buttons .disabled.btn,
 .topic-map .link-summary a.disabled,
 .topic-meta-data .post-info a.disabled,
 #reply-control .contents .submit-panel .disabled.cancel,
 #reply-control .d-editor-button-bar button.disabled,
 #reply-control .disabled.toggle-preview,
 .select2-container a.disabled.select2-choice,
-#share-link .reply-as-new-topic a.disabled {
+#share-link .reply-as-new-topic a.disabled,
+.period-chooser button.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
 }
@@ -415,14 +415,14 @@ div.poll .poll-buttons a.btn-danger,
 nav.post-controls button.btn-danger,
 nav.post-controls .btn-danger.show-replies,
 .small-action button.btn-danger,
-.topic-map .buttons .btn-danger.btn,
 .topic-map .link-summary a.btn-danger,
 .topic-meta-data .post-info a.btn-danger,
 #reply-control .contents .submit-panel .btn-danger.cancel,
 #reply-control .d-editor-button-bar button.btn-danger,
 #reply-control .btn-danger.toggle-preview,
 .select2-container a.btn-danger.select2-choice,
-#share-link .reply-as-new-topic a.btn-danger {
+#share-link .reply-as-new-topic a.btn-danger,
+.period-chooser button.btn-danger {
   color: $danger;
 }
 .btn.btn-danger:focus,
@@ -432,14 +432,14 @@ div.poll .poll-buttons a.btn-danger:focus,
 nav.post-controls button.btn-danger:focus,
 nav.post-controls .btn-danger.show-replies:focus,
 .small-action button.btn-danger:focus,
-.topic-map .buttons .btn-danger.btn:focus,
 .topic-map .link-summary a.btn-danger:focus,
 .topic-meta-data .post-info a.btn-danger:focus,
 #reply-control .contents .submit-panel .btn-danger.cancel:focus,
 #reply-control .d-editor-button-bar button.btn-danger:focus,
 #reply-control .btn-danger.toggle-preview:focus,
 .select2-container a.btn-danger.select2-choice:focus,
-#share-link .reply-as-new-topic a.btn-danger:focus {
+#share-link .reply-as-new-topic a.btn-danger:focus,
+.period-chooser button.btn-danger:focus {
   color: $danger;
 }
 @media (hover: hover) {
@@ -450,14 +450,14 @@ nav.post-controls .btn-danger.show-replies:focus,
   nav.post-controls button.btn-danger:hover,
   nav.post-controls .btn-danger.show-replies:hover,
   .small-action button.btn-danger:hover,
-  .topic-map .buttons .btn-danger.btn:hover,
   .topic-map .link-summary a.btn-danger:hover,
   .topic-meta-data .post-info a.btn-danger:hover,
   #reply-control .contents .submit-panel .btn-danger.cancel:hover,
   #reply-control .d-editor-button-bar button.btn-danger:hover,
   #reply-control .btn-danger.toggle-preview:hover,
   .select2-container a.btn-danger.select2-choice:hover,
-  #share-link .reply-as-new-topic a.btn-danger:hover {
+  #share-link .reply-as-new-topic a.btn-danger:hover,
+  .period-chooser button.btn-danger:hover {
     color: $danger;
   }
 }
@@ -468,14 +468,14 @@ div.poll .poll-buttons a.btn-primary,
 nav.post-controls button.btn-primary,
 nav.post-controls .btn-primary.show-replies,
 .small-action button.btn-primary,
-.topic-map .buttons .btn-primary.btn,
 .topic-map .link-summary a.btn-primary,
 .topic-meta-data .post-info a.btn-primary,
 #reply-control .contents .submit-panel .btn-primary.cancel,
 #reply-control .d-editor-button-bar button.btn-primary,
 #reply-control .btn-primary.toggle-preview,
 .select2-container a.btn-primary.select2-choice,
-#share-link .reply-as-new-topic a.btn-primary {
+#share-link .reply-as-new-topic a.btn-primary,
+.period-chooser button.btn-primary {
   color: $tertiary;
 }
 .btn.btn-primary:focus,
@@ -485,14 +485,14 @@ div.poll .poll-buttons a.btn-primary:focus,
 nav.post-controls button.btn-primary:focus,
 nav.post-controls .btn-primary.show-replies:focus,
 .small-action button.btn-primary:focus,
-.topic-map .buttons .btn-primary.btn:focus,
 .topic-map .link-summary a.btn-primary:focus,
 .topic-meta-data .post-info a.btn-primary:focus,
 #reply-control .contents .submit-panel .btn-primary.cancel:focus,
 #reply-control .d-editor-button-bar button.btn-primary:focus,
 #reply-control .btn-primary.toggle-preview:focus,
 .select2-container a.btn-primary.select2-choice:focus,
-#share-link .reply-as-new-topic a.btn-primary:focus {
+#share-link .reply-as-new-topic a.btn-primary:focus,
+.period-chooser button.btn-primary:focus {
   color: $tertiary;
 }
 @media (hover: hover) {
@@ -503,14 +503,14 @@ nav.post-controls .btn-primary.show-replies:focus,
   nav.post-controls button.btn-primary:hover,
   nav.post-controls .btn-primary.show-replies:hover,
   .small-action button.btn-primary:hover,
-  .topic-map .buttons .btn-primary.btn:hover,
   .topic-map .link-summary a.btn-primary:hover,
   .topic-meta-data .post-info a.btn-primary:hover,
   #reply-control .contents .submit-panel .btn-primary.cancel:hover,
   #reply-control .d-editor-button-bar button.btn-primary:hover,
   #reply-control .btn-primary.toggle-preview:hover,
   .select2-container a.btn-primary.select2-choice:hover,
-  #share-link .reply-as-new-topic a.btn-primary:hover {
+  #share-link .reply-as-new-topic a.btn-primary:hover,
+  .period-chooser button.btn-primary:hover {
     color: $tertiary;
   }
 }
@@ -3714,7 +3714,8 @@ nav.post-controls .show-replies i {
 #list-area {
   margin-bottom: 24px;
 }
-#list-area h2 {
+#list-area h2,
+#list-area .top-lists h2 {
   margin: 0 0 16px;
 }
 
