@@ -66,6 +66,10 @@
   @include material-icons('code');
 }
 
+.fa-cog {
+  @include material-icons('settings');
+}
+
 .fa-comment {
   @include material-icons('comment');
 }
