@@ -4501,6 +4501,9 @@ nav.post-controls .show-replies i {
 .user-main .nav-pills i {
   color: inherit;
 }
+.user-main .nav-stacked.activity-list {
+  padding-top: 0;
+}
 .user-main .nav-stacked li > a {
   color: inherit;
   padding: 11px 16px;
@@ -4579,6 +4582,141 @@ nav.post-controls .show-replies i {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   font-weight: normal;
 }
+.user-main .user-right {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: auto;
+}
+.user-main .user-stream {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+  overflow: hidden;
+}
+.user-main .user-stream[href]:focus, .user-main .user-stream[href]:hover, .user-main .user-stream[tabindex]:focus, .user-main .user-stream[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.user-main .user-stream[href]:focus, .user-main .user-stream[tabindex]:focus {
+  outline: 0;
+}
+.user-main .user-stream .avatar-link {
+  margin-right: 8px;
+}
+.user-main .user-stream .avatar-link .avatar {
+  height: 19.999994px;
+  width: 19.999994px;
+}
+.user-main .user-stream .category {
+  height: 24px;
+  line-height: 1;
+}
+.user-main .user-stream .category .badge-wrapper {
+  margin-right: 0;
+  -webkit-transform: scale(0.75);
+       -o-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
+       -o-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.user-main .user-stream .child-actions {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+}
+.user-main .user-stream .child-actions > .fa {
+  margin-right: 8px;
+  width: 24px;
+}
+.user-main .user-stream .excerpt {
+  font-size: inherit;
+  margin: 8px 0 0;
+}
+.user-main .user-stream .excerpt:empty {
+  display: none;
+}
+.user-main .user-stream .info {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-main .user-stream .item {
+  background-color: transparent;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  padding: 16px 16px;
+}
+.user-main .user-stream .item:last-child {
+  border-bottom: 0;
+}
+.user-main .user-stream .no-content {
+  padding: 16px 16px;
+}
+.user-main .user-stream .notification {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-main .user-stream .notification p {
+  margin: 0 0 0 8px;
+}
+.user-main .user-stream .notification .read {
+  margin-right: 8px;
+}
+.user-main .user-stream .notification .time {
+  margin-left: auto;
+}
+.user-main .user-stream .remove-bookmark {
+  margin-top: 0;
+  margin-right: -8px;
+  margin-left: auto;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.user-main .user-stream .spinner {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.user-main .user-stream .time {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  margin-right: 0;
+  margin-left: auto;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.user-main .user-stream .title {
+  margin-right: 8px;
+}
 
 .user-nav {
   margin: 0 0 24px;
@@ -4595,6 +4733,7 @@ nav.post-controls .show-replies i {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   margin-right: 24px;
+  min-width: 240px;
   padding-left: 0;
   width: auto;
 }

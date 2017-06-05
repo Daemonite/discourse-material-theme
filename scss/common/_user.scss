@@ -167,6 +167,10 @@
   }
 
   .nav-stacked {
+    &.activity-list {
+      padding-top: 0;
+    }
+
     li > a {
       color: inherit;
       padding: $btn-padding-y $btn-padding-x;
@@ -230,6 +234,120 @@
       font-weight: normal;
     }
   }
+
+  .user-right {
+    display: block;
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .user-stream {
+    @include card;
+
+    overflow: hidden;
+
+    .avatar-link {
+      margin-right: $card-inner-spacer-x;
+
+      .avatar {
+        height: ($font-size-base * $line-height-base);
+        width: ($font-size-base * $line-height-base);
+      }
+    }
+
+    .category {
+      height: ($chip-height * .75);
+      line-height: 1;
+
+      .badge-wrapper {
+        margin-right: 0;
+        transform: scale(.75);
+        transform-origin: 0 0;
+      }
+    }
+
+    .child-actions {
+      align-items: center;
+      display: flex;
+      margin-top: ($card-inner-spacer-y / 2);
+
+      > .fa {
+        margin-right: $card-inner-spacer-x;
+        width: $material-icon-size;
+      }
+    }
+
+    .excerpt {
+      font-size: inherit;
+      margin: ($card-inner-spacer-y / 2) 0 0;
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    .info {
+      align-items: center;
+      display: flex;
+    }
+
+    .item {
+      background-color: transparent;
+      border-bottom: 1px solid color-chooser($white-divider, $black-divider);
+      padding: $card-padding-y $card-padding-x;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    .no-content {
+      @include card-block;
+    }
+
+    .notification {
+      align-items: center;
+      display: flex;
+
+      p {
+        margin: 0 0 0 $card-inner-spacer-x;
+      }
+
+      .read {
+        margin-right: $card-inner-spacer-x;
+      }
+
+      .time {
+        margin-left: auto;
+      }
+    }
+
+    .remove-bookmark {
+      margin-top: 0;
+      margin-right: ($btn-padding-x / -2);
+      margin-left: auto;
+      padding-right: ($btn-padding-x / 2);
+      padding-left: ($btn-padding-x / 2);
+    }
+
+    .spinner {
+      margin-top: $card-padding-y;
+      margin-bottom: $card-padding-y;
+    }
+
+    .time {
+      @include typography-small;
+
+      color: color-chooser($white-secondary, $black-secondary);
+      margin-right: 0;
+      margin-left: auto;
+      order: 1;
+    }
+
+    .title {
+      margin-right: $card-inner-spacer-x;
+    }
+  }
 }
 
 .user-nav {
@@ -249,6 +367,7 @@
   display: block;
   flex-shrink: 0;
   margin-right: $spacer-lg;
+  min-width: ($spacer-lg * 10);
   padding-left: 0;
   width: auto;
 }
