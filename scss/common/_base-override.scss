@@ -1,6 +1,10 @@
 // Override some basic CSS rules from Discourse
 
 .btn {
+  &.no-text .fa {
+    line-height: inherit;
+  }
+
   i {
     &.fa {
       opacity: 1;

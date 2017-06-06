@@ -472,14 +472,77 @@
 .user-preferences {
   display: block;
   flex-shrink: 0;
-  margin-right: $spacer-lg;
   min-width: ($spacer * 12);
   padding-left: 0;
   width: auto;
 }
 
-.user-navigation .dismiss-notifications .fa-check::before {
-  content: 'clear_all';
+.user-navigation {
+  margin-right: $spacer-lg;
+
+  .dismiss-notifications .fa-check::before {
+    content: 'clear_all';
+  }
+}
+
+.user-preferences {
+  @include card;
+  @include card-block;
+
+  .avatar {
+    margin-left: 0;
+  }
+
+  .control-group {
+    &.category-notifications {
+      .controls + .category-controls {
+        margin-top: $spacer-lg;
+      }
+    }
+
+    &.desktop-notifications,
+    &.muting,
+    &.other,
+    &.pref-activity-summary,
+    &.pref-avatar,
+    &.pref-card-badge,
+    &.pref-email-settings,
+    &.pref-mailing-list-mode {
+      .control-label + .controls {
+        margin-top: $spacer-sm;
+      }
+    }
+  }
+
+  .form-vertical {
+    &:last-child {
+      margin-bottom: 0;
+
+      .control-group:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .instructions {
+    @include typography-small;
+
+    display: block;
+    margin-bottom: $spacer-sm;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .save-button {
+    margin-right: ($btn-padding-x / -2);
+    margin-left: ($btn-padding-x / -2);
+
+    .btn {
+      @extend %btn-footer;
+    }
+  }
 }
 
 .user-table {
