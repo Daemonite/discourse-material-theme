@@ -62,6 +62,7 @@
   &.open {
     .grippie {
       display: flex;
+      flex-shrink: 0;
     }
   }
 
@@ -88,6 +89,7 @@
   .composer-fields {
     align-items: center;
     display: flex;
+    flex-shrink: 0;
     flex-wrap: wrap;
   }
 
@@ -95,12 +97,14 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    flex-shrink: 0;
     padding: 0;
 
     .control {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      flex-shrink: 0;
     }
 
     .form-element {
@@ -110,8 +114,6 @@
       flex-grow: 1;
 
       .select2-container {
-        border: 0;
-        box-shadow: none;
         margin: 0;
         text-align: right;
 
@@ -122,13 +124,6 @@
 
         b {
           margin-top: 0;
-        }
-      }
-
-      .select2-dropdown-open {
-        a {
-          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-          border-radius: $btn-border-radius $btn-border-radius 0 0;
         }
       }
     }
@@ -162,6 +157,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    flex-shrink: 0;
     margin: 0;
 
     &.reply-area {

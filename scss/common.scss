@@ -14,6 +14,7 @@
 //   - Aside
 // - Dropdown
 // - Form
+//   - Select2
 // - Header
 // - List control
 // - Material icons
@@ -21,7 +22,6 @@
 // - Notification
 // - Post
 // - Reply
-// - Select2
 // - Share
 // - Timeline
 // - Topic list
@@ -40,6 +40,7 @@
 @import 'common/cooked-aside';
 @import 'common/dropdown';
 @import 'common/form';
+@import 'common/form-select2';
 @import 'common/header';
 @import 'common/list-control';
 @import 'common/material-icons';
@@ -47,7 +48,6 @@
 @import 'common/notification';
 @import 'common/post';
 @import 'common/reply';
-@import 'common/select2';
 @import 'common/share';
 @import 'common/timeline';
 @import 'common/topic-list';

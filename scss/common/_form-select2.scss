@@ -1,14 +1,30 @@
 .select2-container {
-  a {
-    &.select2-choice {
-      @extend %btn-flat;
+  border: 0;
+  border-radius: 0;
 
-      align-items: center;
-      display: inline-flex;
+  &.select2-container-active {
+    box-shadow: none;
+    margin-bottom: 0;
+
+    a.select2-choice {
+      border-radius: $btn-border-radius $btn-border-radius 0 0;
+      box-shadow: $btn-box-shadow-active;
+
+      &::before {
+        border-radius: $btn-border-radius $btn-border-radius 0 0;
+        opacity: 1;
+      }
     }
   }
 
-  .select2-choice {
+  a.select2-choice {
+    @extend %btn-flat;
+    @extend %btn-raised;
+
+    align-items: center;
+    display: inline-flex;
+    height: $btn-height;
+
     > .select2-chosen {
       margin-right: 0;
     }
