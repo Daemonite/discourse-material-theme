@@ -284,6 +284,7 @@ nav {
   flex-wrap: wrap;
   margin-bottom: ($spacer-lg - $card-margin-y);
   padding: 0;
+  width: ($card-margin-x + 690);
 
   div > button,
   span > button,
@@ -291,6 +292,7 @@ nav {
     &.btn {
       @extend %btn-raised;
 
+      flex-grow: 1;
       margin: 0 $card-margin-x $card-margin-y 0;
     }
   }
