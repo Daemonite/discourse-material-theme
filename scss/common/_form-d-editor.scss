@@ -1,0 +1,44 @@
+.d-editor {
+  border: 0;
+}
+
+.d-editor-button-bar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 0;
+  padding: ($card-inner-spacer-x) 0;
+
+  button {
+    @extend %btn-sm;
+
+    margin: 0;
+    min-width: 0;
+    padding-right: ($btn-padding-x / 2);
+    padding-left: ($btn-padding-x / 2);
+  }
+}
+
+.d-editor-container {
+  background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+  border-radius: $card-border-radius;
+  padding: 0 $card-padding-x $card-padding-y;
+}
+
+.d-editor-preview {
+  border: 1px dotted color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+  border-radius: $text-field-box-border-radius;
+  margin: $card-inner-spacer-y 0 0;
+  padding: $text-field-box-padding-y $text-field-box-padding-x;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.d-editor-spacer {
+  background-color: color-chooser($white-divider, $black-divider);
+  height: $btn-height-sm;
+  margin: 0 ($card-inner-spacer-x / 2);
+}

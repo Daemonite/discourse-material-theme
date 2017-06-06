@@ -97,14 +97,12 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-shrink: 0;
     padding: 0;
 
     .control {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      flex-shrink: 0;
     }
 
     .form-element {
@@ -157,7 +155,6 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-shrink: 0;
     margin: 0;
 
     &.reply-area {
@@ -166,28 +163,18 @@
   }
 
   .d-editor {
-    border: 0;
+    display: flex;
   }
 
   .d-editor-button-bar {
-    align-items: center;
     background-color: transparent;
     border: 0;
     color: color-chooser($white-secondary, $black-secondary);
-    display: flex;
-    flex-wrap: wrap;
     height: auto;
     padding: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2);
 
     button {
-      @extend %btn-flat;
-      @extend %btn-sm;
-
       color: color-chooser($white-secondary, $black-secondary);
-      margin: 0;
-      min-width: 0;
-      padding-right: ($btn-padding-x-sm / 2);
-      padding-left: ($btn-padding-x-sm / 2);
 
       @include focus-hover {
         color: $btn-color;
@@ -195,9 +182,13 @@
     }
   }
 
-  .d-editor-spacer {
-    height: $btn-height-sm;
-    margin: 0 ($card-inner-spacer-x / 2);
+  .d-editor-container {
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  .d-editor-preview {
+    border-radius: 0;
   }
 
   #draft-status {
@@ -343,21 +334,19 @@
 
     .d-editor,
     .d-editor-container {
-      display: flex;
       flex-grow: 1;
       height: auto;
       min-height: 0;
     }
 
-    .d-editor {
-      flex-direction: column;
+    .d-editor-container {
+      display: flex;
     }
 
     .d-editor-input,
     .d-editor-preview,
     .d-editor-preview-header {
       background-color: transparent;
-      padding: $card-padding-y $card-padding-x;
     }
 
     .d-editor-input,
@@ -366,7 +355,13 @@
     }
 
     .d-editor-input {
+      padding: 0 $card-padding-x $card-padding-y;
       position: static;
+    }
+
+    .d-editor-preview,
+    .d-editor-preview-header {
+      padding: $card-padding-y $card-padding-x;
     }
 
     .d-editor-preview {
