@@ -495,8 +495,11 @@
 
   .control-group {
     &.category-notifications {
-      .controls + .category-controls {
-        margin-top: $spacer-lg;
+      .controls,
+      .instructions {
+        + .category-controls {
+          margin-top: $spacer-lg;
+        }
       }
     }
 

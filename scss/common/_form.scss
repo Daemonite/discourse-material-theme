@@ -99,7 +99,7 @@ label {
     }
 
     .controls {
-      align-items: center;
+      align-items: flex-start;
       display: flex;
       margin-bottom: $spacer-sm;
 
@@ -113,6 +113,11 @@ label {
 
         &:first-child {
           margin-top: 0;
+        }
+
+        label {
+          flex-shrink: 0;
+          margin-top: (($text-field-height - $font-size-base * $line-height-base) / 2);
         }
       }
 
