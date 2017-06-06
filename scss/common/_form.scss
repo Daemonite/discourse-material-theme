@@ -74,6 +74,10 @@ textarea {
 .control-group {
   body & {
     margin-bottom: $spacer-lg;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

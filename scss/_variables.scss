@@ -28,6 +28,7 @@
 // - Dropdown
 // - Header
 // - Menu panel
+// - Modal
 // - Nav
 // - Progress
 // - Table
@@ -306,6 +307,22 @@ $menu-panel-item-overlay-light: $light-hover !default;
 $menu-panel-padding-x:          24px !default;
 $menu-panel-padding-y:          20px !default;
 
+
+
+// Modal
+
+$modal-backdrop-bg:      $black-hint !default;
+$modal-bg-dark:          $dark-4 !default;
+$modal-bg-light:         $light-4 !default;
+$modal-border-radius:    2px !default;
+$modal-box-shadow:       $shadow-24dp !default;
+$modal-footer-padding-x: 8px !default;
+$modal-footer-padding-y: 8px !default;
+$modal-inner-spacer-x:   24px !default;
+$modal-inner-spacer-y:   20px !default;
+$modal-padding-x:        24px !default;
+$modal-padding-y:        24px !default;
+$modal-width:            560px !default;
 
 
 // Nav

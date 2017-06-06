@@ -365,6 +365,7 @@ body .nav-stacked li a:focus {
 div.poll .poll-buttons a,
 .select2-container a.select2-choice,
 .list-controls .category-breadcrumb li > a.badge-category,
+.modal-footer a,
 nav.post-controls button,
 nav.post-controls .show-replies,
 .small-action button,
@@ -406,6 +407,7 @@ nav.post-controls .show-replies,
 div.poll .poll-buttons a:focus,
 .select2-container a.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.badge-category:focus,
+.modal-footer a:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
 .small-action button:focus,
@@ -427,6 +429,7 @@ nav.post-controls .show-replies:focus,
   div.poll .poll-buttons a:hover,
   .select2-container a.select2-choice:hover,
   .list-controls .category-breadcrumb li > a.badge-category:hover,
+  .modal-footer a:hover,
   nav.post-controls button:hover,
   nav.post-controls .show-replies:hover,
   .small-action button:hover,
@@ -448,6 +451,7 @@ nav.post-controls .show-replies:focus,
 div.poll .poll-buttons a:active,
 .select2-container a.select2-choice:active,
 .list-controls .category-breadcrumb li > a.badge-category:active,
+.modal-footer a:active,
 nav.post-controls button:active,
 nav.post-controls .show-replies:active,
 .small-action button:active,
@@ -468,6 +472,7 @@ nav.post-controls .show-replies:active,
 div.poll .poll-buttons a:focus,
 .select2-container a.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.badge-category:focus,
+.modal-footer a:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
 .small-action button:focus,
@@ -487,6 +492,7 @@ nav.post-controls .show-replies:focus,
 div.poll .poll-buttons a[disabled],
 .select2-container a[disabled].select2-choice,
 .list-controls .category-breadcrumb li > a[disabled].badge-category,
+.modal-footer a[disabled],
 nav.post-controls button[disabled],
 nav.post-controls [disabled].show-replies,
 .small-action button[disabled],
@@ -503,6 +509,7 @@ nav.post-controls [disabled].show-replies,
 div.poll .poll-buttons a.disabled,
 .select2-container a.disabled.select2-choice,
 .list-controls .category-breadcrumb li > a.disabled.badge-category,
+.modal-footer a.disabled,
 nav.post-controls button.disabled,
 nav.post-controls .disabled.show-replies,
 .small-action button.disabled,
@@ -523,6 +530,7 @@ nav.post-controls .disabled.show-replies,
 div.poll .poll-buttons a.btn-danger,
 .select2-container a.btn-danger.select2-choice,
 .list-controls .category-breadcrumb li > a.btn-danger.badge-category,
+.modal-footer a.btn-danger,
 nav.post-controls button.btn-danger,
 nav.post-controls .btn-danger.show-replies,
 .small-action button.btn-danger,
@@ -542,6 +550,7 @@ nav.post-controls .btn-danger.show-replies,
 div.poll .poll-buttons a.btn-danger:focus,
 .select2-container a.btn-danger.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus,
+.modal-footer a.btn-danger:focus,
 nav.post-controls button.btn-danger:focus,
 nav.post-controls .btn-danger.show-replies:focus,
 .small-action button.btn-danger:focus,
@@ -562,6 +571,7 @@ nav.post-controls .btn-danger.show-replies:focus,
   div.poll .poll-buttons a.btn-danger:hover,
   .select2-container a.btn-danger.select2-choice:hover,
   .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover,
+  .modal-footer a.btn-danger:hover,
   nav.post-controls button.btn-danger:hover,
   nav.post-controls .btn-danger.show-replies:hover,
   .small-action button.btn-danger:hover,
@@ -582,6 +592,7 @@ nav.post-controls .btn-danger.show-replies:focus,
 div.poll .poll-buttons a.btn-primary,
 .select2-container a.btn-primary.select2-choice,
 .list-controls .category-breadcrumb li > a.btn-primary.badge-category,
+.modal-footer a.btn-primary,
 nav.post-controls button.btn-primary,
 nav.post-controls .btn-primary.show-replies,
 .small-action button.btn-primary,
@@ -601,6 +612,7 @@ nav.post-controls .btn-primary.show-replies,
 div.poll .poll-buttons a.btn-primary:focus,
 .select2-container a.btn-primary.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus,
+.modal-footer a.btn-primary:focus,
 nav.post-controls button.btn-primary:focus,
 nav.post-controls .btn-primary.show-replies:focus,
 .small-action button.btn-primary:focus,
@@ -621,6 +633,7 @@ nav.post-controls .btn-primary.show-replies:focus,
   div.poll .poll-buttons a.btn-primary:hover,
   .select2-container a.btn-primary.select2-choice:hover,
   .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover,
+  .modal-footer a.btn-primary:hover,
   nav.post-controls button.btn-primary:hover,
   nav.post-controls .btn-primary.show-replies:hover,
   .small-action button.btn-primary:hover,
@@ -766,13 +779,13 @@ nav.post-controls .btn-primary.show-replies:focus,
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, #share-link .reply-as-new-topic a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, .user-preferences .save-button .btn {
+div.poll .poll-buttons .btn, .modal-footer a, .modal-footer .btn, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, #share-link .reply-as-new-topic a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, .user-preferences .save-button .btn {
   margin-left: 8px;
   padding-right: 8px;
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, #share-link .reply-as-new-topic a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .user-preferences .save-button .btn:first-child {
+div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-footer .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, #share-link .reply-as-new-topic a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .user-preferences .save-button .btn:first-child {
   margin-left: 0;
 }
 
@@ -1572,6 +1585,9 @@ body textarea:focus {
 
 body .control-group {
   margin-bottom: 24px;
+}
+body .control-group:last-child {
+  margin-bottom: 0;
 }
 
 .controls .static {
@@ -3249,6 +3265,149 @@ div.menu-links-header .menu-links-row {
   background-color: transparent;
 }
 
+.bootbox.modal,
+.modal-inner-container {
+  background-color: color-chooser(#424242, #ffffff);
+  border-radius: 2px;
+  -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
+  max-width: 560px;
+  outline: 0;
+  width: calc(100% - 32px);
+}
+
+.bootbox.modal {
+  border: 0;
+  margin-left: -280px;
+}
+
+.close {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  font-size: 14px;
+}
+
+.modal .modal-body .alert {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0 -24px 20px;
+  padding: 20px 24px;
+}
+.modal .modal-body .alert:last-child {
+  margin-bottom: 0;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.38);
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 24px 24px;
+}
+.modal-header ~ .modal-body {
+  padding-top: 20px;
+}
+
+.modal-close {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 4px 0 0 auto;
+}
+
+.modal-footer {
+  border-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 0 8px 8px;
+}
+body .bootbox.modal .modal-footer a.btn-primary {
+  color: $tertiary;
+}
+.modal-footer .btn:first-child {
+  margin-left: 8px;
+}
+
+.modal-header {
+  border-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 24px 0;
+}
+.modal-header:last-child {
+  padding-bottom: 24px;
+}
+.modal-header h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  margin: 0 24px 0 0;
+  padding: 0;
+}
+
+.modal-middle-container {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.modal-outer-container {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .alert {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
