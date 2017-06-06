@@ -2153,6 +2153,10 @@ div.ac-wrap input[type='text'][disabled]:focus, div.ac-wrap input[type='text'][r
   height: auto;
   width: auto;
 }
+.d-header .icons .badge-notification,
+.d-header .icons .ring {
+  top: -4px;
+}
 .d-header .icons .icon {
   -webkit-box-align: center;
   -webkit-align-items: center;

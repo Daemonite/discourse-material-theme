@@ -70,6 +70,11 @@
       width: auto;
     }
 
+    .badge-notification,
+    .ring {
+      top: ($chip-padding-y / -2);
+    }
+
     .icon {
       align-items: center;
       border: 0;
