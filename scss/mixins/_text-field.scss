@@ -15,7 +15,7 @@
   width: 100%;
 
   @include focus-hover {
-    border-bottom-width: ($text-field-border-width * 2);
+    border-width: ($text-field-border-width * 2);
     padding-bottom: ($text-field-padding-y - $text-field-border-width * 2);
   }
 
@@ -26,12 +26,12 @@
 
   &[disabled],
   &[readonly] {
-    border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
-    border-bottom-style: dotted;
+    border-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+    border-style: dotted;
     color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
 
     @include focus-hover {
-      border-bottom-width: $text-field-border-width;
+      border-width: $text-field-border-width;
       padding-bottom: ($text-field-padding-y - $text-field-border-width);
     }
   }

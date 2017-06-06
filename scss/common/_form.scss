@@ -31,7 +31,8 @@ input[type="tel"],
 input[type="text"],
 input[type="time"],
 input[type="url"],
-input[type="week"] {
+input[type="week"],
+textarea {
   body & {
     @include text-field;
 
@@ -42,6 +43,19 @@ input[type="week"] {
 label {
   body & {
     margin-bottom: $spacer-sm;
+  }
+}
+
+textarea {
+  body & {
+    border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+    border-radius: $text-field-box-border-radius;
+    height: auto;
+    padding: ($text-field-box-padding-y - $text-field-border-width) ($text-field-box-padding-x - $text-field-border-width);
+
+    @include focus-hover {
+      padding: ($text-field-box-padding-y - $text-field-border-width * 2) ($text-field-box-padding-x - $text-field-border-width * 2);
+    }
   }
 }
 
@@ -147,6 +161,15 @@ label {
       .static,
       .uploaded-image-preview {
         margin-bottom: 0;
+      }
+
+      .d-editor {
+        margin-top: $spacer-sm;
+        margin-bottom: $spacer-sm;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
