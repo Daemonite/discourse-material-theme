@@ -30,6 +30,7 @@
 // - Menu panel
 // - Modal
 // - Nav
+// - Picker
 // - Progress
 // - Table
 // - Text field
@@ -328,6 +329,20 @@ $modal-width:            560px !default;
 // Nav
 
 $nav-link-opacity: .7 !default;
+
+
+
+// Picker
+
+$picker-bg-dark:        $modal-bg-dark !default;
+$picker-bg-light:       $modal-bg-light !default;
+$picker-border-radius:  2px !default;
+$picker-box-shadow:     $modal-box-shadow !default;
+$picker-cell-size:      40px !default;
+$picker-inner-spacer-x: 8px !default;
+$picker-inner-spacer-y: 8px !default;
+$picker-padding-x:      8px !default;
+$picker-padding-y:      8px !default;
 
 
 

@@ -1,0 +1,33 @@
+.edit-topic-timer-modal {
+  label {
+    margin-right: $card-inner-spacer-x;
+    margin-bottom: 0;
+  }
+
+  .auto-update-input {
+    .control-group {
+      align-items: center;
+      display: flex;
+
+      > .fa {
+        margin-right: $card-inner-spacer-x;
+      }
+    }
+
+    .pika-single {
+      position: absolute !important;
+    }
+
+    .topic-status-info h3 {
+      @include typography-body;
+
+      > .fa {
+        margin-right: $card-inner-spacer-x;
+      }
+    }
+  }
+
+  .modal-body {
+    overflow: visible;
+  }
+}

@@ -18,6 +18,10 @@
   @include material-icons('menu');
 }
 
+.fa-bed {
+  @include material-icons('airline_seat_flat');
+}
+
 .fa-bold {
   @include material-icons('format_bold');
 }
@@ -26,7 +30,15 @@
   @include material-icons('bookmark_border');
 }
 
+.fa-briefcase {
+  @include material-icons('work');
+}
+
 .fa-calendar {
+  @include material-icons('event');
+}
+
+.fa-calendar-plus-o {
   @include material-icons('event');
 }
 
@@ -210,6 +222,10 @@
   @include material-icons('phone_iphone');
 }
 
+.fa-moon-o {
+  @include material-icons('brightness_3');
+}
+
 .fa-paint-brush {
   @include material-icons('brush');
 }
@@ -268,6 +284,10 @@
 
 .fa-square-o {
   @include material-icons('check_box_outline_blank');
+}
+
+.fa-sun-o {
+  @include material-icons('brightness_5');
 }
 
 .fa-tasks {

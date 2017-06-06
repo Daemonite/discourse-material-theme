@@ -1,0 +1,141 @@
+.change-timestamp {
+  max-height: none;
+  min-height: 0;
+
+  .pika-single {
+    float: left;
+    position: static !important;
+  }
+}
+
+.date-picker {
+  text-align: left;
+  text-align: start;
+}
+
+.pika-button {
+  @extend %btn-flat;
+
+  border-radius: 50%;
+  font-weight: normal;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  width: $btn-height;
+
+  &:hover {
+    background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+    border-radius: 50%;
+    color: $btn-color;
+  }
+
+  .is-disabled & {
+    color: color-chooser($btn-color-disabled-dark, $btn-color-disabled-light);
+    opacity: 1;
+  }
+
+  .is-selected & {
+    border-radius: 50%;
+    box-shadow: none;
+    font-weight: normal;
+  }
+
+  .is-today & {
+    font-weight: normal;
+  }
+}
+
+.pika-label {
+  background-color: transparent;
+  font-weight: normal;
+  padding: 0 ($picker-inner-spacer-x / 2);
+}
+
+.pika-lendar {
+  border-radius: $picker-border-radius;
+  margin: 0;
+  padding: $picker-padding-y $picker-padding-x;
+  width: ($picker-cell-size * 7 + $picker-padding-x * 2);
+}
+
+.pika-next,
+.pika-prev {
+  @extend %btn-flat;
+
+  background-image: none;
+  height: $btn-height;
+  opacity: 1;
+  padding-right: 0;
+  padding-left: 0;
+  text-indent: 100%;
+  width: $btn-height;
+
+  &::before {
+    position: absolute;
+    top: $btn-padding-y;
+    left: (($btn-height - $material-icon-size) / 2);
+    text-indent: 0;
+  }
+
+  &.is-disabled {
+    color: color-chooser($btn-color-disabled-dark, $btn-color-disabled-light);
+    opacity: 1;
+
+    @include focus-hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.pika-next {
+  @include material-icons('keyboard_arrow_right');
+
+  margin-left: auto;
+}
+
+.pika-prev {
+  @include material-icons('keyboard_arrow_left');
+
+  margin-right: auto;
+  order: -1;
+}
+
+.pika-single {
+  background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+  border: 0;
+  font-family: inherit;
+
+  &.is-bound {
+    background-color: color-chooser($picker-bg-dark, $picker-bg-light);
+    box-shadow: $picker-box-shadow;
+  }
+}
+
+.pika-table {
+  td,
+  th {
+    height: $picker-cell-size;
+    vertical-align: middle;
+    width: $picker-cell-size;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  th {
+    color: color-chooser($thead-color-dark, $thead-color-light);
+    font-size: $font-size-base;
+    font-weight: normal;
+    line-height: 1;
+
+    abbr[title] {
+      text-decoration: none;
+    }
+  }
+}
+
+.pika-title {
+  align-items: center;
+  display: flex;
+}
