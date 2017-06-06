@@ -6,6 +6,10 @@
   @include material-icons('arrow_downward');
 }
 
+.fa-asterisk {
+  @include material-icons('new_releases');
+}
+
 .fa-bar-chart-o {
   @include material-icons('insert_chart');
 }
@@ -32,6 +36,10 @@
 
 .fa-caret-right {
   @include material-icons('expand_more');
+}
+
+.fa-caret-up {
+  @include material-icons('expand_less');
 }
 
 .fa-certificate {
@@ -62,6 +70,10 @@
   @include material-icons('radio_button_unchecked');
 }
 
+.fa-clipboard {
+  @include material-icons('content_paste');
+}
+
 .fa-close {
   @include material-icons('close');
 }
@@ -74,6 +86,10 @@
   @include material-icons('code');
 }
 
+.fa-copy {
+  @include material-icons('content_copy');
+}
+
 .fa-cog {
   @include material-icons('settings');
 }
@@ -84,6 +100,14 @@
 
 .fa-comment-o {
   @include material-icons('comment');
+}
+
+.fa-compress {
+  @include material-icons('fullscreen_exit');
+}
+
+.fa-desktop {
+  @include material-icons('desktop_mac');
 }
 
 .fa-dot-circle-o {
@@ -110,12 +134,20 @@
   @include material-icons('error');
 }
 
+.fa-expand {
+  @include material-icons('fullscreen');
+}
+
 .fa-eye {
   @include material-icons('visibility');
 }
 
 .fa-eye-slash {
   @include material-icons('visibility_off');
+}
+
+.fa-file-text-o {
+  @include material-icons('description');
 }
 
 .fa-flag {
@@ -166,8 +198,20 @@
   @include material-icons('forward');
 }
 
+.fa-meh-o {
+  @include material-icons('sentiment_neutral');
+}
+
 .fa-minus {
   @include material-icons('remove');
+}
+
+.fa-mobile {
+  @include material-icons('phone_iphone');
+}
+
+.fa-paint-brush {
+  @include material-icons('brush');
 }
 
 .fa-pencil {
@@ -176,6 +220,10 @@
 
 .fa-picture-o {
   @include material-icons('crop_original');
+}
+
+.fa-play {
+  @include material-icons('play_arrow');
 }
 
 .fa-plus {
@@ -190,8 +238,16 @@
   @include material-icons('format_quote');
 }
 
+.fa-refresh {
+  @include material-icons('refresh');
+}
+
 .fa-reply {
   @include material-icons('reply');
+}
+
+.fa-rocket {
+  @include material-icons('flight_takeoff');
 }
 
 .fa-search {
@@ -236,6 +292,10 @@
 
 .fa-times-circle {
   @include material-icons('cancel');
+}
+
+.fa-trash {
+  @include material-icons('delete');
 }
 
 .fa-trash-o {
