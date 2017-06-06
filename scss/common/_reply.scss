@@ -46,8 +46,6 @@
     .contents {
       input {
         &#reply-title {
-          @include text-field;
-
           border-bottom: 0;
           height: auto;
           padding: $card-padding-y $card-padding-x;

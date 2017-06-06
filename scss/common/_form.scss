@@ -1,0 +1,161 @@
+button,
+label {
+  body & {
+    font-size: inherit;
+    font-weight: bolder;
+    line-height: inherit;
+  }
+}
+
+form {
+  body & {
+    margin: 0 0 $spacer-lg;
+
+    > br,
+    > .ember-view:empty {
+      display: none;
+    }
+  }
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  body & {
+    @include text-field;
+
+    margin-bottom: $spacer-sm;
+  }
+}
+
+label {
+  body & {
+    margin-bottom: $spacer-sm;
+  }
+}
+
+.checkbox-label {
+  align-items: center;
+  display: flex;
+
+  input {
+    &[type='checkbox'],
+    &[type='radio'] {
+      margin: 0 $spacer-sm 0 0;
+    }
+  }
+}
+
+.control-group {
+  body & {
+    margin-bottom: $spacer-lg;
+  }
+}
+
+.controls .static {
+  @include text-field;
+
+  border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+  border-bottom-style: dotted;
+  color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+  margin-bottom: $spacer-sm;
+
+  @include focus-hover {
+    border-bottom-width: $text-field-border-width;
+    padding-bottom: ($text-field-padding-y - $text-field-border-width);
+  }
+}
+
+.form-vertical {
+  body & {
+
+    .checkbox-label {
+      margin-bottom: $spacer-sm;
+
+      &:last-child {
+        margin-bottom:  0;
+      }
+    }
+
+    .control-group {
+      margin-bottom: $spacer-lg;
+    }
+
+    .control-label {
+      @include typography-small;
+
+      margin-bottom: 0;
+    }
+
+    .controls {
+      align-items: center;
+      display: flex;
+      margin-bottom: $spacer-sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.category-controls,
+      &.controls-dropdown {
+        margin-top: $spacer-sm;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      > :first-child {
+        margin-right: $spacer-sm;
+      }
+
+      > :last-child {
+        margin-right: 0;
+      }
+
+      input[type="color"],
+      input[type="date"],
+      input[type="datetime"],
+      input[type="datetime-local"],
+      input[type="email"],
+      input[type="month"],
+      input[type="number"],
+      input[type="password"],
+      input[type="search"],
+      input[type="tel"],
+      input[type="text"],
+      input[type="time"],
+      input[type="url"],
+      input[type="week"],
+      label,
+      .static,
+      .uploaded-image-preview {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.image-upload-controls {
+  padding: ($card-padding-y / 2) ($card-padding-x / 2);
+
+  label.btn {
+    padding: $btn-padding-y-sm $btn-padding-x-sm;
+  }
+
+  .btn {
+    @extend %btn-raised;
+    @extend %btn-sm;
+  }
+}

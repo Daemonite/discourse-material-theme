@@ -3,7 +3,7 @@
   background-color: transparent;
   background-image: none;
   border: 0;
-  border-bottom: $text-field-border-width solid $text-field-border-color;
+  border-bottom: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
   border-radius: 0;
   box-shadow: none;
   color: inherit;
@@ -14,8 +14,7 @@
   padding: $text-field-padding-y $text-field-padding-x ($text-field-padding-y - $text-field-border-width);
   width: 100%;
 
-  &:focus,
-  &:hover {
+  @include focus-hover {
     border-bottom-width: ($text-field-border-width * 2);
     padding-bottom: ($text-field-padding-y - $text-field-border-width * 2);
   }
@@ -24,11 +23,21 @@
     border-color: unquote('$tertiary');
     box-shadow: none;
   }
+
+  &[disabled],
+  &[readonly] {
+    border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+    border-bottom-style: dotted;
+    color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+
+    @include focus-hover {
+      border-bottom-width: $text-field-border-width;
+      padding-bottom: ($text-field-padding-y - $text-field-border-width);
+    }
+  }
 }
 
 @mixin text-field-box {
-  @include text-field;
-
   background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
   border-radius: $text-field-box-border-radius;
   height: $text-field-box-height;

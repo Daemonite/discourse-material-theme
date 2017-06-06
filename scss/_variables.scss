@@ -352,14 +352,17 @@ $thead-font-size:          12px !default;
 
 // Text field
 
-$text-field-border-color: rgba(0, 0, 0, .42) !default;
-$text-field-border-width: 1px !default;
-$text-field-font-size:    16px !default;
-$text-field-height:       36px !default;
-$text-field-margin-x:     $spacer-sm !default;
-$text-field-margin-y:     $spacer-sm !default;
-$text-field-padding-x:    0 !default;
-$text-field-padding-y:    8px !default;
+$text-field-border-color-dark:           rgba(255, 255, 255, .7) !default;
+$text-field-border-color-light:          rgba(0, 0, 0, .42) !default;
+$text-field-border-color-disabled-dark:  rgba(255, 255, 255, .5) !default;
+$text-field-border-color-disabled-light: rgba(0, 0, 0, .42) !default;
+$text-field-border-width:                1px !default;
+$text-field-font-size:                   16px !default;
+$text-field-height:                      36px !default;
+$text-field-margin-x:                    $spacer-sm !default;
+$text-field-margin-y:                    $spacer-sm !default;
+$text-field-padding-x:                   0 !default;
+$text-field-padding-y:                   8px !default;
 
 
 
