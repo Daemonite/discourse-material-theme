@@ -19,7 +19,7 @@
 }
 
 blockquote::after, blockquote::before, aside.quote .quote-controls .back::before,
-aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bold::before, .fa-bookmark::before, .fa-calendar::before, .fa-caret-down::before, .fa-caret-right::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-eye::before, .fa-eye-slash::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-minus::before, .fa-pencil::before, .fa-picture-o::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-reply::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, nav.post-controls button .read-icon::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before, .select2-container .select2-choice .select2-arrow b::before {
+aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select2-container a.select2-choice .select2-arrow b::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bold::before, .fa-bookmark::before, .fa-calendar::before, .fa-caret-down::before, .fa-caret-right::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-eye::before, .fa-eye-slash::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-minus::before, .fa-pencil::before, .fa-picture-o::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-reply::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, nav.post-controls button .read-icon::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -224,6 +224,9 @@ sup {
   top: -.5em;
 }
 
+.btn.no-text .fa {
+  line-height: inherit;
+}
 .btn i.fa {
   opacity: 1;
 }
@@ -360,6 +363,7 @@ body .nav-stacked li a:focus {
 .nav-pills > li > a,
 .nav-stacked li a,
 div.poll .poll-buttons a,
+.select2-container a.select2-choice,
 .list-controls .category-breadcrumb li > a.badge-category,
 nav.post-controls button,
 nav.post-controls .show-replies,
@@ -367,9 +371,7 @@ nav.post-controls .show-replies,
 .topic-map .link-summary a,
 .topic-meta-data .post-info a,
 #reply-control .contents .submit-panel .cancel,
-#reply-control .d-editor-button-bar button,
 #reply-control .toggle-preview,
-.select2-container a.select2-choice,
 #share-link .reply-as-new-topic a,
 .period-chooser button,
 .stats-section li.linked-stat a,
@@ -402,6 +404,7 @@ nav.post-controls .show-replies,
 .nav-pills > li > a:focus,
 .nav-stacked li a:focus,
 div.poll .poll-buttons a:focus,
+.select2-container a.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.badge-category:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
@@ -409,9 +412,7 @@ nav.post-controls .show-replies:focus,
 .topic-map .link-summary a:focus,
 .topic-meta-data .post-info a:focus,
 #reply-control .contents .submit-panel .cancel:focus,
-#reply-control .d-editor-button-bar button:focus,
 #reply-control .toggle-preview:focus,
-.select2-container a.select2-choice:focus,
 #share-link .reply-as-new-topic a:focus,
 .period-chooser button:focus,
 .stats-section li.linked-stat a:focus,
@@ -424,6 +425,7 @@ nav.post-controls .show-replies:focus,
   .nav-pills > li > a:hover,
   .nav-stacked li a:hover,
   div.poll .poll-buttons a:hover,
+  .select2-container a.select2-choice:hover,
   .list-controls .category-breadcrumb li > a.badge-category:hover,
   nav.post-controls button:hover,
   nav.post-controls .show-replies:hover,
@@ -431,9 +433,7 @@ nav.post-controls .show-replies:focus,
   .topic-map .link-summary a:hover,
   .topic-meta-data .post-info a:hover,
   #reply-control .contents .submit-panel .cancel:hover,
-  #reply-control .d-editor-button-bar button:hover,
   #reply-control .toggle-preview:hover,
-  .select2-container a.select2-choice:hover,
   #share-link .reply-as-new-topic a:hover,
   .period-chooser button:hover,
   .stats-section li.linked-stat a:hover,
@@ -446,6 +446,7 @@ nav.post-controls .show-replies:focus,
 .nav-pills > li > a:active,
 .nav-stacked li a:active,
 div.poll .poll-buttons a:active,
+.select2-container a.select2-choice:active,
 .list-controls .category-breadcrumb li > a.badge-category:active,
 nav.post-controls button:active,
 nav.post-controls .show-replies:active,
@@ -453,9 +454,7 @@ nav.post-controls .show-replies:active,
 .topic-map .link-summary a:active,
 .topic-meta-data .post-info a:active,
 #reply-control .contents .submit-panel .cancel:active,
-#reply-control .d-editor-button-bar button:active,
 #reply-control .toggle-preview:active,
-.select2-container a.select2-choice:active,
 #share-link .reply-as-new-topic a:active,
 .period-chooser button:active,
 .stats-section li.linked-stat a:active,
@@ -467,6 +466,7 @@ nav.post-controls .show-replies:active,
 .nav-pills > li > a:focus,
 .nav-stacked li a:focus,
 div.poll .poll-buttons a:focus,
+.select2-container a.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.badge-category:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
@@ -474,9 +474,7 @@ nav.post-controls .show-replies:focus,
 .topic-map .link-summary a:focus,
 .topic-meta-data .post-info a:focus,
 #reply-control .contents .submit-panel .cancel:focus,
-#reply-control .d-editor-button-bar button:focus,
 #reply-control .toggle-preview:focus,
-.select2-container a.select2-choice:focus,
 #share-link .reply-as-new-topic a:focus,
 .period-chooser button:focus,
 .stats-section li.linked-stat a:focus,
@@ -487,6 +485,7 @@ nav.post-controls .show-replies:focus,
 .nav-pills > li > a[disabled],
 .nav-stacked li a[disabled],
 div.poll .poll-buttons a[disabled],
+.select2-container a[disabled].select2-choice,
 .list-controls .category-breadcrumb li > a[disabled].badge-category,
 nav.post-controls button[disabled],
 nav.post-controls [disabled].show-replies,
@@ -494,9 +493,7 @@ nav.post-controls [disabled].show-replies,
 .topic-map .link-summary a[disabled],
 .topic-meta-data .post-info a[disabled],
 #reply-control .contents .submit-panel [disabled].cancel,
-#reply-control .d-editor-button-bar button[disabled],
 #reply-control [disabled].toggle-preview,
-.select2-container a[disabled].select2-choice,
 #share-link .reply-as-new-topic a[disabled],
 .period-chooser button[disabled],
 .stats-section li.linked-stat a[disabled],
@@ -504,6 +501,7 @@ nav.post-controls [disabled].show-replies,
 .nav-pills > li > a.disabled,
 .nav-stacked li a.disabled,
 div.poll .poll-buttons a.disabled,
+.select2-container a.disabled.select2-choice,
 .list-controls .category-breadcrumb li > a.disabled.badge-category,
 nav.post-controls button.disabled,
 nav.post-controls .disabled.show-replies,
@@ -511,9 +509,7 @@ nav.post-controls .disabled.show-replies,
 .topic-map .link-summary a.disabled,
 .topic-meta-data .post-info a.disabled,
 #reply-control .contents .submit-panel .disabled.cancel,
-#reply-control .d-editor-button-bar button.disabled,
 #reply-control .disabled.toggle-preview,
-.select2-container a.disabled.select2-choice,
 #share-link .reply-as-new-topic a.disabled,
 .period-chooser button.disabled,
 .stats-section li.linked-stat a.disabled,
@@ -525,6 +521,7 @@ nav.post-controls .disabled.show-replies,
 .nav-pills > li > a.btn-danger,
 .nav-stacked li a.btn-danger,
 div.poll .poll-buttons a.btn-danger,
+.select2-container a.btn-danger.select2-choice,
 .list-controls .category-breadcrumb li > a.btn-danger.badge-category,
 nav.post-controls button.btn-danger,
 nav.post-controls .btn-danger.show-replies,
@@ -532,9 +529,7 @@ nav.post-controls .btn-danger.show-replies,
 .topic-map .link-summary a.btn-danger,
 .topic-meta-data .post-info a.btn-danger,
 #reply-control .contents .submit-panel .btn-danger.cancel,
-#reply-control .d-editor-button-bar button.btn-danger,
 #reply-control .btn-danger.toggle-preview,
-.select2-container a.btn-danger.select2-choice,
 #share-link .reply-as-new-topic a.btn-danger,
 .period-chooser button.btn-danger,
 .stats-section li.linked-stat a.btn-danger,
@@ -545,6 +540,7 @@ nav.post-controls .btn-danger.show-replies,
 .nav-pills > li > a.btn-danger:focus,
 .nav-stacked li a.btn-danger:focus,
 div.poll .poll-buttons a.btn-danger:focus,
+.select2-container a.btn-danger.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus,
 nav.post-controls button.btn-danger:focus,
 nav.post-controls .btn-danger.show-replies:focus,
@@ -552,9 +548,7 @@ nav.post-controls .btn-danger.show-replies:focus,
 .topic-map .link-summary a.btn-danger:focus,
 .topic-meta-data .post-info a.btn-danger:focus,
 #reply-control .contents .submit-panel .btn-danger.cancel:focus,
-#reply-control .d-editor-button-bar button.btn-danger:focus,
 #reply-control .btn-danger.toggle-preview:focus,
-.select2-container a.btn-danger.select2-choice:focus,
 #share-link .reply-as-new-topic a.btn-danger:focus,
 .period-chooser button.btn-danger:focus,
 .stats-section li.linked-stat a.btn-danger:focus,
@@ -566,6 +560,7 @@ nav.post-controls .btn-danger.show-replies:focus,
   .nav-pills > li > a.btn-danger:hover,
   .nav-stacked li a.btn-danger:hover,
   div.poll .poll-buttons a.btn-danger:hover,
+  .select2-container a.btn-danger.select2-choice:hover,
   .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover,
   nav.post-controls button.btn-danger:hover,
   nav.post-controls .btn-danger.show-replies:hover,
@@ -573,9 +568,7 @@ nav.post-controls .btn-danger.show-replies:focus,
   .topic-map .link-summary a.btn-danger:hover,
   .topic-meta-data .post-info a.btn-danger:hover,
   #reply-control .contents .submit-panel .btn-danger.cancel:hover,
-  #reply-control .d-editor-button-bar button.btn-danger:hover,
   #reply-control .btn-danger.toggle-preview:hover,
-  .select2-container a.btn-danger.select2-choice:hover,
   #share-link .reply-as-new-topic a.btn-danger:hover,
   .period-chooser button.btn-danger:hover,
   .stats-section li.linked-stat a.btn-danger:hover,
@@ -587,6 +580,7 @@ nav.post-controls .btn-danger.show-replies:focus,
 .nav-pills > li > a.btn-primary,
 .nav-stacked li a.btn-primary,
 div.poll .poll-buttons a.btn-primary,
+.select2-container a.btn-primary.select2-choice,
 .list-controls .category-breadcrumb li > a.btn-primary.badge-category,
 nav.post-controls button.btn-primary,
 nav.post-controls .btn-primary.show-replies,
@@ -594,9 +588,7 @@ nav.post-controls .btn-primary.show-replies,
 .topic-map .link-summary a.btn-primary,
 .topic-meta-data .post-info a.btn-primary,
 #reply-control .contents .submit-panel .btn-primary.cancel,
-#reply-control .d-editor-button-bar button.btn-primary,
 #reply-control .btn-primary.toggle-preview,
-.select2-container a.btn-primary.select2-choice,
 #share-link .reply-as-new-topic a.btn-primary,
 .period-chooser button.btn-primary,
 .stats-section li.linked-stat a.btn-primary,
@@ -607,6 +599,7 @@ nav.post-controls .btn-primary.show-replies,
 .nav-pills > li > a.btn-primary:focus,
 .nav-stacked li a.btn-primary:focus,
 div.poll .poll-buttons a.btn-primary:focus,
+.select2-container a.btn-primary.select2-choice:focus,
 .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus,
 nav.post-controls button.btn-primary:focus,
 nav.post-controls .btn-primary.show-replies:focus,
@@ -614,9 +607,7 @@ nav.post-controls .btn-primary.show-replies:focus,
 .topic-map .link-summary a.btn-primary:focus,
 .topic-meta-data .post-info a.btn-primary:focus,
 #reply-control .contents .submit-panel .btn-primary.cancel:focus,
-#reply-control .d-editor-button-bar button.btn-primary:focus,
 #reply-control .btn-primary.toggle-preview:focus,
-.select2-container a.btn-primary.select2-choice:focus,
 #share-link .reply-as-new-topic a.btn-primary:focus,
 .period-chooser button.btn-primary:focus,
 .stats-section li.linked-stat a.btn-primary:focus,
@@ -628,6 +619,7 @@ nav.post-controls .btn-primary.show-replies:focus,
   .nav-pills > li > a.btn-primary:hover,
   .nav-stacked li a.btn-primary:hover,
   div.poll .poll-buttons a.btn-primary:hover,
+  .select2-container a.btn-primary.select2-choice:hover,
   .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover,
   nav.post-controls button.btn-primary:hover,
   nav.post-controls .btn-primary.show-replies:hover,
@@ -635,9 +627,7 @@ nav.post-controls .btn-primary.show-replies:focus,
   .topic-map .link-summary a.btn-primary:hover,
   .topic-meta-data .post-info a.btn-primary:hover,
   #reply-control .contents .submit-panel .btn-primary.cancel:hover,
-  #reply-control .d-editor-button-bar button.btn-primary:hover,
   #reply-control .btn-primary.toggle-preview:hover,
-  .select2-container a.btn-primary.select2-choice:hover,
   #share-link .reply-as-new-topic a.btn-primary:hover,
   .period-chooser button.btn-primary:hover,
   .stats-section li.linked-stat a.btn-primary:hover,
@@ -646,7 +636,7 @@ nav.post-controls .btn-primary.show-replies:focus,
   }
 }
 
-.list-controls .btn, .list-controls .category-breadcrumb li > a.badge-category, #topic-footer-buttons div > button.btn,
+.image-upload-controls .btn, .select2-container a.select2-choice, .list-controls .btn, .list-controls .category-breadcrumb li > a.badge-category, #topic-footer-buttons div > button.btn,
 #topic-footer-buttons span > button.btn,
 #topic-footer-buttons > button.btn, #reply-control .contents .submit-panel .btn, .timeline-container .topic-timeline div > button.btn,
 .timeline-container .topic-timeline span > button.btn, .period-chooser button, .top-title-buttons button {
@@ -654,49 +644,49 @@ nav.post-controls .btn-primary.show-replies:focus,
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
-.list-controls .btn:focus, .list-controls .category-breadcrumb li > a.badge-category:focus, #topic-footer-buttons div > button.btn:focus,
+.image-upload-controls .btn:focus, .select2-container a.select2-choice:focus, .list-controls .btn:focus, .list-controls .category-breadcrumb li > a.badge-category:focus, #topic-footer-buttons div > button.btn:focus,
 #topic-footer-buttons span > button.btn:focus,
 #topic-footer-buttons > button.btn:focus, #reply-control .contents .submit-panel .btn:focus, .timeline-container .topic-timeline div > button.btn:focus,
 .timeline-container .topic-timeline span > button.btn:focus, .period-chooser button:focus, .top-title-buttons button:focus {
   background-color: color-chooser($tertiary, #ffffff);
 }
-.list-controls .btn:focus::before, .list-controls .category-breadcrumb li > a.badge-category:focus::before, #topic-footer-buttons div > button.btn:focus::before,
+.image-upload-controls .btn:focus::before, .select2-container a.select2-choice:focus::before, .list-controls .btn:focus::before, .list-controls .category-breadcrumb li > a.badge-category:focus::before, #topic-footer-buttons div > button.btn:focus::before,
 #topic-footer-buttons span > button.btn:focus::before,
 #topic-footer-buttons > button.btn:focus::before, #reply-control .contents .submit-panel .btn:focus::before, .timeline-container .topic-timeline div > button.btn:focus::before,
 .timeline-container .topic-timeline span > button.btn:focus::before, .period-chooser button:focus::before, .top-title-buttons button:focus::before {
   opacity: 1;
 }
 @media (hover: hover) {
-  .list-controls .btn:hover, .list-controls .category-breadcrumb li > a.badge-category:hover, #topic-footer-buttons div > button.btn:hover,
+  .image-upload-controls .btn:hover, .select2-container a.select2-choice:hover, .list-controls .btn:hover, .list-controls .category-breadcrumb li > a.badge-category:hover, #topic-footer-buttons div > button.btn:hover,
   #topic-footer-buttons span > button.btn:hover,
   #topic-footer-buttons > button.btn:hover, #reply-control .contents .submit-panel .btn:hover, .timeline-container .topic-timeline div > button.btn:hover,
   .timeline-container .topic-timeline span > button.btn:hover, .period-chooser button:hover, .top-title-buttons button:hover {
     background-color: color-chooser($tertiary, #ffffff);
   }
-  .list-controls .btn:hover::before, .list-controls .category-breadcrumb li > a.badge-category:hover::before, #topic-footer-buttons div > button.btn:hover::before,
+  .image-upload-controls .btn:hover::before, .select2-container a.select2-choice:hover::before, .list-controls .btn:hover::before, .list-controls .category-breadcrumb li > a.badge-category:hover::before, #topic-footer-buttons div > button.btn:hover::before,
   #topic-footer-buttons span > button.btn:hover::before,
   #topic-footer-buttons > button.btn:hover::before, #reply-control .contents .submit-panel .btn:hover::before, .timeline-container .topic-timeline div > button.btn:hover::before,
   .timeline-container .topic-timeline span > button.btn:hover::before, .period-chooser button:hover::before, .top-title-buttons button:hover::before {
     opacity: 1;
   }
 }
-.list-controls .btn:active, .list-controls .category-breadcrumb li > a.badge-category:active, #topic-footer-buttons div > button.btn:active,
+.image-upload-controls .btn:active, .select2-container a.select2-choice:active, .list-controls .btn:active, .list-controls .category-breadcrumb li > a.badge-category:active, #topic-footer-buttons div > button.btn:active,
 #topic-footer-buttons span > button.btn:active,
 #topic-footer-buttons > button.btn:active, #reply-control .contents .submit-panel .btn:active, .timeline-container .topic-timeline div > button.btn:active,
 .timeline-container .topic-timeline span > button.btn:active, .period-chooser button:active, .top-title-buttons button:active {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
-.list-controls .btn:active::before, .list-controls .category-breadcrumb li > a.badge-category:active::before, #topic-footer-buttons div > button.btn:active::before,
+.image-upload-controls .btn:active::before, .select2-container a.select2-choice:active::before, .list-controls .btn:active::before, .list-controls .category-breadcrumb li > a.badge-category:active::before, #topic-footer-buttons div > button.btn:active::before,
 #topic-footer-buttons span > button.btn:active::before,
 #topic-footer-buttons > button.btn:active::before, #reply-control .contents .submit-panel .btn:active::before, .timeline-container .topic-timeline div > button.btn:active::before,
 .timeline-container .topic-timeline span > button.btn:active::before, .period-chooser button:active::before, .top-title-buttons button:active::before {
   opacity: 1;
 }
-.list-controls [disabled].btn, .list-controls .category-breadcrumb li > a[disabled].badge-category, #topic-footer-buttons div > button[disabled].btn,
+.image-upload-controls [disabled].btn, .select2-container a[disabled].select2-choice, .list-controls [disabled].btn, .list-controls .category-breadcrumb li > a[disabled].badge-category, #topic-footer-buttons div > button[disabled].btn,
 #topic-footer-buttons span > button[disabled].btn,
 #topic-footer-buttons > button[disabled].btn, #reply-control .contents .submit-panel [disabled].btn, .timeline-container .topic-timeline div > button[disabled].btn,
-.timeline-container .topic-timeline span > button[disabled].btn, .period-chooser button[disabled], .top-title-buttons button[disabled], .list-controls .disabled.btn, .list-controls .category-breadcrumb li > a.disabled.badge-category, #topic-footer-buttons div > button.disabled.btn,
+.timeline-container .topic-timeline span > button[disabled].btn, .period-chooser button[disabled], .top-title-buttons button[disabled], .image-upload-controls .disabled.btn, .select2-container a.disabled.select2-choice, .list-controls .disabled.btn, .list-controls .category-breadcrumb li > a.disabled.badge-category, #topic-footer-buttons div > button.disabled.btn,
 #topic-footer-buttons span > button.disabled.btn,
 #topic-footer-buttons > button.disabled.btn, #reply-control .contents .submit-panel .disabled.btn, .timeline-container .topic-timeline div > button.disabled.btn,
 .timeline-container .topic-timeline span > button.disabled.btn, .period-chooser button.disabled, .top-title-buttons button.disabled {
@@ -704,23 +694,23 @@ nav.post-controls .btn-primary.show-replies:focus,
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
-.list-controls [disabled].btn::before, .list-controls .category-breadcrumb li > a[disabled].badge-category::before, #topic-footer-buttons div > button[disabled].btn::before,
+.image-upload-controls [disabled].btn::before, .select2-container a[disabled].select2-choice::before, .list-controls [disabled].btn::before, .list-controls .category-breadcrumb li > a[disabled].badge-category::before, #topic-footer-buttons div > button[disabled].btn::before,
 #topic-footer-buttons span > button[disabled].btn::before,
 #topic-footer-buttons > button[disabled].btn::before, #reply-control .contents .submit-panel [disabled].btn::before, .timeline-container .topic-timeline div > button[disabled].btn::before,
-.timeline-container .topic-timeline span > button[disabled].btn::before, .period-chooser button[disabled]::before, .top-title-buttons button[disabled]::before, .list-controls .disabled.btn::before, .list-controls .category-breadcrumb li > a.disabled.badge-category::before, #topic-footer-buttons div > button.disabled.btn::before,
+.timeline-container .topic-timeline span > button[disabled].btn::before, .period-chooser button[disabled]::before, .top-title-buttons button[disabled]::before, .image-upload-controls .disabled.btn::before, .select2-container a.disabled.select2-choice::before, .list-controls .disabled.btn::before, .list-controls .category-breadcrumb li > a.disabled.badge-category::before, #topic-footer-buttons div > button.disabled.btn::before,
 #topic-footer-buttons span > button.disabled.btn::before,
 #topic-footer-buttons > button.disabled.btn::before, #reply-control .contents .submit-panel .disabled.btn::before, .timeline-container .topic-timeline div > button.disabled.btn::before,
 .timeline-container .topic-timeline span > button.disabled.btn::before, .period-chooser button.disabled::before, .top-title-buttons button.disabled::before {
   display: none;
 }
-.list-controls .btn-danger.btn, .list-controls .category-breadcrumb li > a.btn-danger.badge-category, #topic-footer-buttons div > button.btn-danger.btn,
+.image-upload-controls .btn-danger.btn, .select2-container a.btn-danger.select2-choice, .list-controls .btn-danger.btn, .list-controls .category-breadcrumb li > a.btn-danger.badge-category, #topic-footer-buttons div > button.btn-danger.btn,
 #topic-footer-buttons span > button.btn-danger.btn,
 #topic-footer-buttons > button.btn-danger.btn, #reply-control .contents .submit-panel .btn-danger.btn, .timeline-container .topic-timeline div > button.btn-danger.btn,
 .timeline-container .topic-timeline span > button.btn-danger.btn, .period-chooser button.btn-danger, .top-title-buttons button.btn-danger {
   background-color: $danger;
   color: color-dynamic($danger);
 }
-.list-controls .btn-danger.btn:focus, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
+.image-upload-controls .btn-danger.btn:focus, .select2-container a.btn-danger.select2-choice:focus, .list-controls .btn-danger.btn:focus, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
 #topic-footer-buttons span > button.btn-danger.btn:focus,
 #topic-footer-buttons > button.btn-danger.btn:focus, #reply-control .contents .submit-panel .btn-danger.btn:focus, .timeline-container .topic-timeline div > button.btn-danger.btn:focus,
 .timeline-container .topic-timeline span > button.btn-danger.btn:focus, .period-chooser button.btn-danger:focus, .top-title-buttons button.btn-danger:focus {
@@ -728,7 +718,7 @@ nav.post-controls .btn-primary.show-replies:focus,
   color: color-dynamic($danger);
 }
 @media (hover: hover) {
-  .list-controls .btn-danger.btn:hover, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
+  .image-upload-controls .btn-danger.btn:hover, .select2-container a.btn-danger.select2-choice:hover, .list-controls .btn-danger.btn:hover, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
   #topic-footer-buttons span > button.btn-danger.btn:hover,
   #topic-footer-buttons > button.btn-danger.btn:hover, #reply-control .contents .submit-panel .btn-danger.btn:hover, .timeline-container .topic-timeline div > button.btn-danger.btn:hover,
   .timeline-container .topic-timeline span > button.btn-danger.btn:hover, .period-chooser button.btn-danger:hover, .top-title-buttons button.btn-danger:hover {
@@ -736,14 +726,14 @@ nav.post-controls .btn-primary.show-replies:focus,
     color: color-dynamic($danger);
   }
 }
-.list-controls .btn-primary.btn, .list-controls .category-breadcrumb li > a.btn-primary.badge-category, #topic-footer-buttons div > button.btn-primary.btn,
+.image-upload-controls .btn-primary.btn, .select2-container a.btn-primary.select2-choice, .list-controls .btn-primary.btn, .list-controls .category-breadcrumb li > a.btn-primary.badge-category, #topic-footer-buttons div > button.btn-primary.btn,
 #topic-footer-buttons span > button.btn-primary.btn,
 #topic-footer-buttons > button.btn-primary.btn, #reply-control .contents .submit-panel .btn-primary.btn, .timeline-container .topic-timeline div > button.btn-primary.btn,
 .timeline-container .topic-timeline span > button.btn-primary.btn, .period-chooser button.btn-primary, .top-title-buttons button.btn-primary {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
-.list-controls .btn-primary.btn:focus, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
+.image-upload-controls .btn-primary.btn:focus, .select2-container a.btn-primary.select2-choice:focus, .list-controls .btn-primary.btn:focus, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
 #topic-footer-buttons span > button.btn-primary.btn:focus,
 #topic-footer-buttons > button.btn-primary.btn:focus, #reply-control .contents .submit-panel .btn-primary.btn:focus, .timeline-container .topic-timeline div > button.btn-primary.btn:focus,
 .timeline-container .topic-timeline span > button.btn-primary.btn:focus, .period-chooser button.btn-primary:focus, .top-title-buttons button.btn-primary:focus {
@@ -751,7 +741,7 @@ nav.post-controls .btn-primary.show-replies:focus,
   color: color-dynamic($tertiary);
 }
 @media (hover: hover) {
-  .list-controls .btn-primary.btn:hover, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
+  .image-upload-controls .btn-primary.btn:hover, .select2-container a.btn-primary.select2-choice:hover, .list-controls .btn-primary.btn:hover, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
   #topic-footer-buttons span > button.btn-primary.btn:hover,
   #topic-footer-buttons > button.btn-primary.btn:hover, #reply-control .contents .submit-panel .btn-primary.btn:hover, .timeline-container .topic-timeline div > button.btn-primary.btn:hover,
   .timeline-container .topic-timeline span > button.btn-primary.btn:hover, .period-chooser button.btn-primary:hover, .top-title-buttons button.btn-primary:hover {
@@ -759,7 +749,7 @@ nav.post-controls .btn-primary.show-replies:focus,
     color: color-dynamic($tertiary);
   }
 }
-.list-controls .btn::before, .list-controls .category-breadcrumb li > a.badge-category::before, #topic-footer-buttons div > button.btn::before,
+.image-upload-controls .btn::before, .select2-container a.select2-choice::before, .list-controls .btn::before, .list-controls .category-breadcrumb li > a.badge-category::before, #topic-footer-buttons div > button.btn::before,
 #topic-footer-buttons span > button.btn::before,
 #topic-footer-buttons > button.btn::before, #reply-control .contents .submit-panel .btn::before, .timeline-container .topic-timeline div > button.btn::before,
 .timeline-container .topic-timeline span > button.btn::before, .period-chooser button::before, .top-title-buttons button::before {
@@ -776,17 +766,17 @@ nav.post-controls .btn-primary.show-replies:focus,
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, #share-link .reply-as-new-topic a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn {
+div.poll .poll-buttons .btn, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, #share-link .reply-as-new-topic a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, .user-preferences .save-button .btn {
   margin-left: 8px;
   padding-right: 8px;
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, #share-link .reply-as-new-topic a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child {
+div.poll .poll-buttons .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, #share-link .reply-as-new-topic a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .user-preferences .save-button .btn:first-child {
   margin-left: 0;
 }
 
-.small-action button, .topic-meta-data .post-info a, #reply-control .d-editor-button-bar button {
+.image-upload-controls .btn, .d-editor-button-bar button, .small-action button, .topic-meta-data .post-info a {
   font-size: 13px;
   padding: 9.5px 16px;
 }
@@ -1201,71 +1191,6 @@ div.poll .results .option {
   padding-bottom: 0;
 }
 
-.autocomplete {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
-.autocomplete ul li {
-  border-bottom: 0;
-}
-.autocomplete ul li a {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
-  padding: 6.25px 24px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.autocomplete ul li a:focus, .discourse-no-touch .autocomplete ul li a:focus {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-}
-@media (hover: hover) {
-  .autocomplete ul li a:hover, .discourse-no-touch .autocomplete ul li a:hover {
-    background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  }
-}
-.autocomplete ul li a span {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.autocomplete ul li a span.name {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  margin-left: 8px;
-}
-.autocomplete ul li a span.username {
-  color: inherit;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-}
-.autocomplete ul li a .avatar {
-  margin-right: 8px;
-}
-
 .dropdown-menu {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
@@ -1405,6 +1330,744 @@ div.poll .results .option {
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
+}
+
+body button, body
+label {
+  font-size: inherit;
+  font-weight: bolder;
+  line-height: inherit;
+}
+
+body form {
+  margin: 0 0 24px;
+}
+body form > br,
+body form > .ember-view:empty {
+  display: none;
+}
+
+body input[type="color"], body
+input[type="date"], body
+input[type="datetime"], body
+input[type="datetime-local"], body
+input[type="email"], body
+input[type="month"], body
+input[type="number"], body
+input[type="password"], body
+input[type="search"], body
+input[type="tel"], body
+input[type="text"], body
+input[type="time"], body
+input[type="url"], body
+input[type="week"], body
+textarea {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 0 7px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+body input[type="color"]:focus, body
+input[type="date"]:focus, body
+input[type="datetime"]:focus, body
+input[type="datetime-local"]:focus, body
+input[type="email"]:focus, body
+input[type="month"]:focus, body
+input[type="number"]:focus, body
+input[type="password"]:focus, body
+input[type="search"]:focus, body
+input[type="tel"]:focus, body
+input[type="text"]:focus, body
+input[type="time"]:focus, body
+input[type="url"]:focus, body
+input[type="week"]:focus, body
+textarea:focus {
+  border-width: 2px;
+  padding-bottom: 6px;
+}
+@media (hover: hover) {
+  body input[type="color"]:hover, body
+  input[type="date"]:hover, body
+  input[type="datetime"]:hover, body
+  input[type="datetime-local"]:hover, body
+  input[type="email"]:hover, body
+  input[type="month"]:hover, body
+  input[type="number"]:hover, body
+  input[type="password"]:hover, body
+  input[type="search"]:hover, body
+  input[type="tel"]:hover, body
+  input[type="text"]:hover, body
+  input[type="time"]:hover, body
+  input[type="url"]:hover, body
+  input[type="week"]:hover, body
+  textarea:hover {
+    border-width: 2px;
+    padding-bottom: 6px;
+  }
+}
+body input[type="color"]:focus, body
+input[type="date"]:focus, body
+input[type="datetime"]:focus, body
+input[type="datetime-local"]:focus, body
+input[type="email"]:focus, body
+input[type="month"]:focus, body
+input[type="number"]:focus, body
+input[type="password"]:focus, body
+input[type="search"]:focus, body
+input[type="tel"]:focus, body
+input[type="text"]:focus, body
+input[type="time"]:focus, body
+input[type="url"]:focus, body
+input[type="week"]:focus, body
+textarea:focus {
+  border-color: $tertiary;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+body input[type="color"][disabled], body input[type="color"][readonly], body
+input[type="date"][disabled], body
+input[type="date"][readonly], body
+input[type="datetime"][disabled], body
+input[type="datetime"][readonly], body
+input[type="datetime-local"][disabled], body
+input[type="datetime-local"][readonly], body
+input[type="email"][disabled], body
+input[type="email"][readonly], body
+input[type="month"][disabled], body
+input[type="month"][readonly], body
+input[type="number"][disabled], body
+input[type="number"][readonly], body
+input[type="password"][disabled], body
+input[type="password"][readonly], body
+input[type="search"][disabled], body
+input[type="search"][readonly], body
+input[type="tel"][disabled], body
+input[type="tel"][readonly], body
+input[type="text"][disabled], body
+input[type="text"][readonly], body
+input[type="time"][disabled], body
+input[type="time"][readonly], body
+input[type="url"][disabled], body
+input[type="url"][readonly], body
+input[type="week"][disabled], body
+input[type="week"][readonly], body
+textarea[disabled], body
+textarea[readonly] {
+  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  border-style: dotted;
+  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+}
+body input[type="color"][disabled]:focus, body input[type="color"][readonly]:focus, body
+input[type="date"][disabled]:focus, body
+input[type="date"][readonly]:focus, body
+input[type="datetime"][disabled]:focus, body
+input[type="datetime"][readonly]:focus, body
+input[type="datetime-local"][disabled]:focus, body
+input[type="datetime-local"][readonly]:focus, body
+input[type="email"][disabled]:focus, body
+input[type="email"][readonly]:focus, body
+input[type="month"][disabled]:focus, body
+input[type="month"][readonly]:focus, body
+input[type="number"][disabled]:focus, body
+input[type="number"][readonly]:focus, body
+input[type="password"][disabled]:focus, body
+input[type="password"][readonly]:focus, body
+input[type="search"][disabled]:focus, body
+input[type="search"][readonly]:focus, body
+input[type="tel"][disabled]:focus, body
+input[type="tel"][readonly]:focus, body
+input[type="text"][disabled]:focus, body
+input[type="text"][readonly]:focus, body
+input[type="time"][disabled]:focus, body
+input[type="time"][readonly]:focus, body
+input[type="url"][disabled]:focus, body
+input[type="url"][readonly]:focus, body
+input[type="week"][disabled]:focus, body
+input[type="week"][readonly]:focus, body
+textarea[disabled]:focus, body
+textarea[readonly]:focus {
+  border-width: 1px;
+  padding-bottom: 7px;
+}
+@media (hover: hover) {
+  body input[type="color"][disabled]:hover, body input[type="color"][readonly]:hover, body
+  input[type="date"][disabled]:hover, body
+  input[type="date"][readonly]:hover, body
+  input[type="datetime"][disabled]:hover, body
+  input[type="datetime"][readonly]:hover, body
+  input[type="datetime-local"][disabled]:hover, body
+  input[type="datetime-local"][readonly]:hover, body
+  input[type="email"][disabled]:hover, body
+  input[type="email"][readonly]:hover, body
+  input[type="month"][disabled]:hover, body
+  input[type="month"][readonly]:hover, body
+  input[type="number"][disabled]:hover, body
+  input[type="number"][readonly]:hover, body
+  input[type="password"][disabled]:hover, body
+  input[type="password"][readonly]:hover, body
+  input[type="search"][disabled]:hover, body
+  input[type="search"][readonly]:hover, body
+  input[type="tel"][disabled]:hover, body
+  input[type="tel"][readonly]:hover, body
+  input[type="text"][disabled]:hover, body
+  input[type="text"][readonly]:hover, body
+  input[type="time"][disabled]:hover, body
+  input[type="time"][readonly]:hover, body
+  input[type="url"][disabled]:hover, body
+  input[type="url"][readonly]:hover, body
+  input[type="week"][disabled]:hover, body
+  input[type="week"][readonly]:hover, body
+  textarea[disabled]:hover, body
+  textarea[readonly]:hover {
+    border-width: 1px;
+    padding-bottom: 7px;
+  }
+}
+
+body label {
+  margin-bottom: 8px;
+}
+
+body textarea {
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 4px;
+  height: auto;
+  padding: 19px 15px;
+}
+body textarea:focus {
+  padding: 18px 14px;
+}
+@media (hover: hover) {
+  body textarea:hover {
+    padding: 18px 14px;
+  }
+}
+
+.checkbox-label {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.checkbox-label input[type='checkbox'], .checkbox-label input[type='radio'] {
+  margin: 0 8px 0 0;
+}
+
+body .control-group {
+  margin-bottom: 24px;
+}
+
+.controls .static {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 0 7px;
+  width: 100%;
+  border-bottom-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  border-bottom-style: dotted;
+  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  margin-bottom: 8px;
+}
+.controls .static:focus {
+  border-width: 2px;
+  padding-bottom: 6px;
+}
+@media (hover: hover) {
+  .controls .static:hover {
+    border-width: 2px;
+    padding-bottom: 6px;
+  }
+}
+.controls .static:focus {
+  border-color: $tertiary;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.controls .static[disabled], .controls .static[readonly] {
+  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  border-style: dotted;
+  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+}
+.controls .static[disabled]:focus, .controls .static[readonly]:focus {
+  border-width: 1px;
+  padding-bottom: 7px;
+}
+@media (hover: hover) {
+  .controls .static[disabled]:hover, .controls .static[readonly]:hover {
+    border-width: 1px;
+    padding-bottom: 7px;
+  }
+}
+.controls .static:focus {
+  border-bottom-width: 1px;
+  padding-bottom: 7px;
+}
+@media (hover: hover) {
+  .controls .static:hover {
+    border-bottom-width: 1px;
+    padding-bottom: 7px;
+  }
+}
+
+body .form-vertical .checkbox-label {
+  margin-bottom: 8px;
+}
+body .form-vertical .checkbox-label:last-child {
+  margin-bottom: 0;
+}
+body .form-vertical .control-group {
+  margin-bottom: 24px;
+}
+body .form-vertical .control-label {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+body .form-vertical .controls {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+body .form-vertical .controls:last-child {
+  margin-bottom: 0;
+}
+body .form-vertical .controls.category-controls, body .form-vertical .controls.controls-dropdown {
+  margin-top: 8px;
+}
+body .form-vertical .controls.category-controls:first-child, body .form-vertical .controls.controls-dropdown:first-child {
+  margin-top: 0;
+}
+body .form-vertical .controls.category-controls label, body .form-vertical .controls.controls-dropdown label {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-top: 8.000003px;
+}
+body .form-vertical .controls > :first-child {
+  margin-right: 8px;
+}
+body .form-vertical .controls > :last-child {
+  margin-right: 0;
+}
+body .form-vertical .controls input[type="color"],
+body .form-vertical .controls input[type="date"],
+body .form-vertical .controls input[type="datetime"],
+body .form-vertical .controls input[type="datetime-local"],
+body .form-vertical .controls input[type="email"],
+body .form-vertical .controls input[type="month"],
+body .form-vertical .controls input[type="number"],
+body .form-vertical .controls input[type="password"],
+body .form-vertical .controls input[type="search"],
+body .form-vertical .controls input[type="tel"],
+body .form-vertical .controls input[type="text"],
+body .form-vertical .controls input[type="time"],
+body .form-vertical .controls input[type="url"],
+body .form-vertical .controls input[type="week"],
+body .form-vertical .controls label,
+body .form-vertical .controls .static,
+body .form-vertical .controls .uploaded-image-preview {
+  margin-bottom: 0;
+}
+body .form-vertical .controls .d-editor {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+body .form-vertical .controls .d-editor:last-child {
+  margin-bottom: 0;
+}
+
+.image-upload-controls {
+  padding: 8px 8px;
+}
+.image-upload-controls label.btn {
+  padding: 9.5px 16px;
+}
+
+div.ac-wrap {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  min-height: 36px;
+  min-width: 100%;
+  padding: 0;
+}
+div.ac-wrap div.item {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  border-radius: 16px;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  font-size: 13px;
+  font-weight: normal;
+  height: 32px;
+  line-height: 1;
+  margin-top: 2px;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  padding: 0 12px;
+}
+div.ac-wrap div.item a.remove {
+  border: 0;
+  border-radius: 0;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  font-size: inherit;
+  line-height: 1;
+  margin-right: -8px;
+  margin-left: 4px;
+  padding: 0;
+  width: auto;
+}
+div.ac-wrap div.item a.remove:hover {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+}
+div.ac-wrap div.item a.remove .fa-times::before {
+  content: 'cancel';
+}
+div.ac-wrap div.item span {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: auto;
+  line-height: 1;
+}
+div.ac-wrap div.item .badge-wrapper {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-right: 0;
+  margin-left: -12px;
+  padding-right: 0;
+}
+div.ac-wrap input[type='text'] {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 0 7px;
+  width: 100%;
+  margin-bottom: 0;
+}
+div.ac-wrap input[type='text']:focus {
+  border-width: 2px;
+  padding-bottom: 6px;
+}
+@media (hover: hover) {
+  div.ac-wrap input[type='text']:hover {
+    border-width: 2px;
+    padding-bottom: 6px;
+  }
+}
+div.ac-wrap input[type='text']:focus {
+  border-color: $tertiary;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonly] {
+  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  border-style: dotted;
+  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+}
+div.ac-wrap input[type='text'][disabled]:focus, div.ac-wrap input[type='text'][readonly]:focus {
+  border-width: 1px;
+  padding-bottom: 7px;
+}
+@media (hover: hover) {
+  div.ac-wrap input[type='text'][disabled]:hover, div.ac-wrap input[type='text'][readonly]:hover {
+    border-width: 1px;
+    padding-bottom: 7px;
+  }
+}
+
+.autocomplete {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+}
+.autocomplete ul li {
+  border-bottom: 0;
+}
+.autocomplete ul li a {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 12px 16px;
+  padding: 6.25px 24px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.autocomplete ul li a:focus, .discourse-no-touch .autocomplete ul li a:focus {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+@media (hover: hover) {
+  .autocomplete ul li a:hover, .discourse-no-touch .autocomplete ul li a:hover {
+    background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  }
+}
+.autocomplete ul li a span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.autocomplete ul li a span.name {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  margin-left: 8px;
+}
+.autocomplete ul li a span.username {
+  color: inherit;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.autocomplete ul li a .avatar {
+  margin-right: 8px;
+}
+
+.d-editor {
+  border: 0;
+}
+
+.d-editor-button-bar {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  height: auto;
+  margin: 0;
+  padding: 8px 0;
+}
+.d-editor-button-bar button {
+  margin: 0;
+  min-width: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.d-editor-container {
+  background-color: color-chooser(#212121, #f5f5f5);
+  border-radius: 2px;
+  padding: 0 16px 16px;
+}
+
+.d-editor-preview {
+  border: 1px dotted color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  border-radius: 4px;
+  margin: 16px 0 0;
+  padding: 20px 16px;
+}
+.d-editor-preview > :last-child {
+  margin-bottom: 0;
+}
+
+.d-editor-spacer {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  height: 32px;
+  margin: 0 4px;
+}
+
+.select2-container {
+  border: 0;
+  border-radius: 0;
+}
+.select2-container.select2-container-active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 0;
+}
+.select2-container.select2-container-active a.select2-choice {
+  border-radius: 2px 2px 0 0;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.select2-container.select2-container-active a.select2-choice::before {
+  border-radius: 2px 2px 0 0;
+  opacity: 1;
+}
+.select2-container a.select2-choice {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 36px;
+}
+.select2-container a.select2-choice > .select2-chosen {
+  margin-right: 0;
+}
+.select2-container a.select2-choice .select2-arrow {
+  border-radius: 0;
+  height: auto;
+  position: static;
+  width: auto;
+}
+.select2-container a.select2-choice .select2-arrow b {
+  background-color: transparent;
+  background-image: none;
+  height: auto;
+  margin-left: 4px;
+  width: 14px;
+}
+.select2-container a.select2-choice .select2-arrow b::before {
+  content: 'arrow_drop_down';
+}
+
+.select2-drop .category-desc,
+.select2-drop .topic-count {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+.select2-drop .category-desc {
+  margin-top: 3.125px;
+}
+
+.select2-results {
+  margin: 0;
+  padding: 0;
+}
+.select2-results .select2-highlighted {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+.select2-results .select2-no-results {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin: 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 6.25px 24px;
+  background-color: transparent;
+}
+.select2-results .select2-result-label {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 12px 16px;
+  padding: 6.25px 24px;
+}
+
+.select2-search {
+  display: block;
+  min-height: 0;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.select2-search input[type='text'] {
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border-radius: 4px;
+  height: 56px;
+  line-height: 16px;
+  padding: 20px 16px 19px;
+  height: 56px !important;
+  margin-bottom: 12.5px;
+}
+.select2-search input[type='text']:focus, .select2-search input[type='text']:hover {
+  padding-bottom: 18px;
 }
 
 .d-header {
@@ -2331,22 +2994,6 @@ div.menu-links-header .menu-links-row {
 }
 
 .search-menu input[type='text'] {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
@@ -2354,15 +3001,6 @@ div.menu-links-header .menu-links-row {
   padding: 20px 16px 19px;
   margin: 0;
   width: 100%;
-}
-.search-menu input[type='text']:focus, .search-menu input[type='text']:hover {
-  border-bottom-width: 2px;
-  padding-bottom: 6px;
-}
-.search-menu input[type='text']:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 .search-menu input[type='text']:focus, .search-menu input[type='text']:hover {
   padding-bottom: 18px;
@@ -3174,35 +3812,10 @@ nav.post-controls .show-replies i {
   content: 'close';
 }
 #reply-control.edit-title .contents input#reply-title {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
   border-bottom: 0;
   height: auto;
   padding: 16px 16px;
   margin: 0;
-}
-#reply-control.edit-title .contents input#reply-title:focus, #reply-control.edit-title .contents input#reply-title:hover {
-  border-bottom-width: 2px;
-  padding-bottom: 6px;
-}
-#reply-control.edit-title .contents input#reply-title:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 #reply-control.edit-title .contents input#reply-title:focus {
   padding-bottom: 16px;
@@ -3217,6 +3830,9 @@ nav.post-controls .show-replies i {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 #reply-control .add-warning {
   margin-right: 16px;
@@ -3243,6 +3859,9 @@ nav.post-controls .show-replies i {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -3294,9 +3913,6 @@ nav.post-controls .show-replies i {
           flex-grow: 1;
 }
 #reply-control .contents .form-element .select2-container {
-  border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   margin: 0;
   text-align: right;
 }
@@ -3306,10 +3922,6 @@ nav.post-controls .show-replies i {
 }
 #reply-control .contents .form-element .select2-container b {
   margin-top: 0;
-}
-#reply-control .contents .form-element .select2-dropdown-open a {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-  border-radius: 2px 2px 0 0;
 }
 #reply-control .contents #reply-title {
   margin: 0;
@@ -3354,32 +3966,20 @@ nav.post-controls .show-replies i {
   padding: 0;
 }
 #reply-control .d-editor {
-  border: 0;
-}
-#reply-control .d-editor-button-bar {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  border: 0;
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+}
+#reply-control .d-editor-button-bar {
+  background-color: transparent;
+  border: 0;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   height: auto;
   padding: 8px 4px;
 }
 #reply-control .d-editor-button-bar button {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  margin: 0;
-  min-width: 0;
-  padding-right: 8px;
-  padding-left: 8px;
 }
 #reply-control .d-editor-button-bar button:focus {
   color: $primary;
@@ -3389,9 +3989,12 @@ nav.post-controls .show-replies i {
     color: $primary;
   }
 }
-#reply-control .d-editor-spacer {
-  height: 32px;
-  margin: 0 4px;
+#reply-control .d-editor-container {
+  background-color: transparent;
+  border-radius: 0;
+}
+#reply-control .d-editor-preview {
+  border-radius: 0;
 }
 #reply-control #draft-status {
   background-color: transparent;
@@ -3557,10 +4160,6 @@ nav.post-controls .show-replies i {
 }
 #reply-control .wmd-controls .d-editor,
 #reply-control .wmd-controls .d-editor-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -3568,25 +4167,28 @@ nav.post-controls .show-replies i {
   height: auto;
   min-height: 0;
 }
-#reply-control .wmd-controls .d-editor {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+#reply-control .wmd-controls .d-editor-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 #reply-control .wmd-controls .d-editor-input,
 #reply-control .wmd-controls .d-editor-preview,
 #reply-control .wmd-controls .d-editor-preview-header {
   background-color: transparent;
-  padding: 16px 16px;
 }
 #reply-control .wmd-controls .d-editor-input,
 #reply-control .wmd-controls .d-editor-preview-header {
   border-top-width: 48px;
 }
 #reply-control .wmd-controls .d-editor-input {
+  padding: 0 16px 16px;
   position: static;
+}
+#reply-control .wmd-controls .d-editor-preview,
+#reply-control .wmd-controls .d-editor-preview-header {
+  padding: 16px 16px;
 }
 #reply-control .wmd-controls .d-editor-preview {
   border: 0;
@@ -3605,118 +4207,6 @@ nav.post-controls .show-replies i {
   height: auto;
   padding-right: 0;
   position: static;
-}
-
-.select2-container a.select2-choice {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-.select2-container .select2-choice > .select2-chosen {
-  margin-right: 0;
-}
-.select2-container .select2-choice .select2-arrow {
-  border-radius: 0;
-  height: auto;
-  position: static;
-  width: auto;
-}
-.select2-container .select2-choice .select2-arrow b {
-  background-color: transparent;
-  background-image: none;
-  height: auto;
-  margin-left: 4px;
-  width: 14px;
-}
-.select2-container .select2-choice .select2-arrow b::before {
-  content: 'arrow_drop_down';
-}
-
-.select2-drop .category-desc,
-.select2-drop .topic-count {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
-}
-.select2-drop .category-desc {
-  margin-top: 3.125px;
-}
-
-.select2-results {
-  margin: 0;
-  padding: 0;
-}
-.select2-results .select2-highlighted {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-}
-.select2-results .select2-no-results {
-  font-size: 16px;
-  font-weight: bolder;
-  line-height: 1.5;
-  margin: 0;
-  padding: 12px 16px;
-  white-space: nowrap;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
-  background-color: transparent;
-}
-.select2-results .select2-result-label {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
-  padding: 6.25px 24px;
-}
-
-.select2-search {
-  display: block;
-  min-height: 0;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-.select2-search input[type='text'] {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-  height: 56px !important;
-  margin-bottom: 12.5px;
-}
-.select2-search input[type='text']:focus, .select2-search input[type='text']:hover {
-  border-bottom-width: 2px;
-  padding-bottom: 6px;
-}
-.select2-search input[type='text']:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.select2-search input[type='text']:focus, .select2-search input[type='text']:hover {
-  padding-bottom: 18px;
 }
 
 #share-link {
@@ -3746,36 +4236,11 @@ nav.post-controls .show-replies i {
   margin: 0 32px 16px 0;
 }
 #share-link input[type='text'] {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
   line-height: 16px;
   padding: 20px 16px 19px;
-}
-#share-link input[type='text']:focus, #share-link input[type='text']:hover {
-  border-bottom-width: 2px;
-  padding-bottom: 6px;
-}
-#share-link input[type='text']:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 #share-link input[type='text']:focus, #share-link input[type='text']:hover {
   padding-bottom: 18px;
@@ -4902,14 +5367,66 @@ nav.post-controls .show-replies i {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  margin-right: 24px;
   min-width: 192px;
   padding-left: 0;
   width: auto;
 }
 
+.user-navigation {
+  margin-right: 24px;
+}
 .user-navigation .dismiss-notifications .fa-check::before {
   content: 'clear_all';
+}
+
+.user-preferences {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  color: $primary;
+  padding: 0;
+  padding: 16px 16px;
+}
+.user-preferences[href]:focus, .user-preferences[href]:hover, .user-preferences[tabindex]:focus, .user-preferences[tabindex]:hover {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.user-preferences[href]:focus, .user-preferences[tabindex]:focus {
+  outline: 0;
+}
+.user-preferences .avatar {
+  margin-left: 0;
+}
+.user-preferences .control-group.category-notifications .controls + .category-controls,
+.user-preferences .control-group.category-notifications .instructions + .category-controls {
+  margin-top: 24px;
+}
+.user-preferences .control-group.desktop-notifications .control-label + .controls, .user-preferences .control-group.muting .control-label + .controls, .user-preferences .control-group.other .control-label + .controls, .user-preferences .control-group.pref-activity-summary .control-label + .controls, .user-preferences .control-group.pref-avatar .control-label + .controls, .user-preferences .control-group.pref-card-badge .control-label + .controls, .user-preferences .control-group.pref-email-settings .control-label + .controls, .user-preferences .control-group.pref-mailing-list-mode .control-label + .controls {
+  margin-top: 8px;
+}
+.user-preferences .form-vertical:last-child {
+  margin-bottom: 0;
+}
+.user-preferences .form-vertical:last-child .control-group:last-child {
+  margin-bottom: 0;
+}
+.user-preferences .instructions {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 8px;
+}
+.user-preferences .instructions:last-child {
+  margin-bottom: 0;
+}
+.user-preferences .save-button {
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
 .user-table {
