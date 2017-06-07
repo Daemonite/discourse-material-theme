@@ -29,11 +29,7 @@
     border-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
     border-style: dotted;
     color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
-
-    @include focus-hover {
-      border-width: $text-field-border-width;
-      padding-bottom: ($text-field-padding-y - $text-field-border-width);
-    }
+    pointer-events: none;
   }
 }
 

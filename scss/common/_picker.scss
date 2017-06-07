@@ -18,6 +18,7 @@
 
   border-radius: 50%;
   font-weight: normal;
+  margin: 0 !important;
   padding-right: 0;
   padding-left: 0;
   text-align: center;
@@ -64,6 +65,7 @@
 
   background-image: none;
   height: $btn-height;
+  margin: 0 !important;
   opacity: 1;
   padding-right: 0;
   padding-left: 0;
@@ -90,13 +92,13 @@
 .pika-next {
   @include material-icons('keyboard_arrow_right');
 
-  margin-left: auto;
+  margin-left: auto !important;
 }
 
 .pika-prev {
   @include material-icons('keyboard_arrow_left');
 
-  margin-right: auto;
+  margin-right: auto !important;
   order: -1;
 }
 
@@ -115,6 +117,7 @@
   td,
   th {
     height: $picker-cell-size;
+    text-align: center !important;
     vertical-align: middle;
     width: $picker-cell-size;
   }
@@ -132,6 +135,10 @@
     abbr[title] {
       text-decoration: none;
     }
+  }
+
+  tr {
+    background-color: transparent !important;
   }
 }
 

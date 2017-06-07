@@ -42,19 +42,35 @@
     color: color-chooser($btn-color-disabled-dark, $btn-color-disabled-light) !important;
   }
 
-  &.btn-danger {
+  &.btn-danger,
+  &.cancel {
+    background-color: transparent;
     color: unquote('$danger');
 
     @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
       color: unquote('$danger');
     }
   }
 
   &.btn-primary {
+    background-color: transparent;
     color: unquote('$tertiary');
 
     @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
       color: unquote('$tertiary');
+    }
+  }
+
+  &.btn-success,
+  &.ok {
+    background-color: transparent;
+    color: unquote('$success');
+
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      color: unquote('$success');
     }
   }
 }
@@ -93,7 +109,8 @@
     }
   }
 
-  &.btn-danger {
+  &.btn-danger,
+  &.cancel {
     background-color: unquote('$danger');
     color: color-dynamic(unquote('$danger'));
 
@@ -110,6 +127,17 @@
     @include focus-hover {
       background-color: unquote('$tertiary');
       color: color-dynamic(unquote('$tertiary'));
+    }
+  }
+
+  &.btn-success,
+  &.ok {
+    background-color: unquote('$success');
+    color: color-dynamic(unquote('$success'));
+
+    @include focus-hover {
+      background-color: unquote('$success');
+      color: color-dynamic(unquote('$success'));
     }
   }
 

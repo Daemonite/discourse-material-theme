@@ -54,6 +54,10 @@
 }
 
 .modal {
+  &.history-modal .modal-header {
+    height: auto;
+  }
+
   form {
     margin-bottom: $modal-inner-spacer-y;
   }

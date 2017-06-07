@@ -56,6 +56,10 @@
     }
   }
 
+  &.select2-dropdown-open {
+    margin-bottom: 0;
+  }
+
   a.select2-choice {
     @extend %btn-flat;
     @extend %btn-raised;

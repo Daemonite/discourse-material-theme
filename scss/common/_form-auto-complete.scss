@@ -111,6 +111,7 @@ div.ac-wrap {
       }
 
       .avatar {
+        flex-shrink: 0;
         margin-right: ($dropdown-inner-spacer-x / 2);
       }
     }

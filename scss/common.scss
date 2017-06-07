@@ -36,6 +36,8 @@
 // - User
 //   - User badge
 //   - User card
+//
+// - Admin
 
 @import 'common/base';
 @import 'common/base-override';
@@ -68,3 +70,5 @@
 @import 'common/user';
 @import 'common/user-badge';
 @import 'common/user-card';
+
+@import 'common/admin';

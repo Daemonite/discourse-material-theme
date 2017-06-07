@@ -102,6 +102,10 @@
   @include material-icons('content_copy');
 }
 
+.fa-copyright {
+  @include material-icons('copyright');
+}
+
 .fa-cog {
   @include material-icons('settings');
 }
@@ -156,6 +160,14 @@
 
 .fa-eye-slash {
   @include material-icons('visibility_off');
+}
+
+.fa-fast-backward {
+  @include material-icons('fast_rewind');
+}
+
+.fa-fast-forward {
+  @include material-icons('fast_forward');
 }
 
 .fa-file-text-o {
