@@ -24,7 +24,7 @@
 }
 
 #user-card {
-  @include card;
+  @extend %card;
 
   min-height: 0;
 
@@ -103,7 +103,7 @@
   }
 
   .card-content {
-    @include card-block;
+    @extend %card-block;
 
     background-color: color-chooser($black-secondary, $white-secondary);
     display: flex;

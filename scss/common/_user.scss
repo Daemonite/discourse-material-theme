@@ -17,8 +17,8 @@
 }
 
 .stats-section {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   li {
     margin: 0 $spacer 0 0;
@@ -71,8 +71,8 @@
   &.links-section,
   &.replies-section,
   &.topics-section {
-    @include card;
-    @include card-block;
+    @extend %card;
+    @extend %card-block;
 
     padding-bottom: 0;
   }
@@ -92,7 +92,7 @@
 
 .user-main {
   .about {
-    @include card;
+    @extend %card;
 
     border-radius: $card-border-radius $card-border-radius 0 0;
     margin-bottom: 0;
@@ -164,7 +164,7 @@
     }
 
     .details {
-      @include card-block;
+      @extend %card-block;
 
       background-color: transparent;
 
@@ -213,7 +213,7 @@
     }
 
     .secondary {
-      @include card-block;
+      @extend %card-block;
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       border: 0;
@@ -345,7 +345,7 @@
   }
 
   .user-stream {
-    @include card;
+    @extend %card;
 
     overflow: hidden;
 
@@ -405,7 +405,7 @@
     }
 
     .no-content {
-      @include card-block;
+      @extend %card-block;
     }
 
     .notification {
@@ -454,8 +454,8 @@
 }
 
 .user-nav {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   border-radius: 0 0 $card-border-radius $card-border-radius;
   margin: 0 0 $spacer-lg;
@@ -473,12 +473,12 @@
   display: block;
   flex-shrink: 0;
   min-width: ($spacer * 12);
-  padding-left: 0;
   width: auto;
 }
 
 .user-navigation {
   margin-right: $spacer-lg;
+  padding-left: 0;
 
   .dismiss-notifications .fa-check::before {
     content: 'clear_all';
@@ -486,8 +486,8 @@
 }
 
 .user-preferences {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   .avatar {
     margin-left: 0;

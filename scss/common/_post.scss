@@ -108,7 +108,7 @@ nav {
   }
 
   .topic-body {
-    @include card-block;
+    @extend %card-block;
 
     background-color: color-chooser($dark-3, $light-3);
     box-shadow: none;
@@ -164,8 +164,8 @@ nav {
 }
 
 .small-action {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   align-items: center;
   border-top: 0;
@@ -251,7 +251,7 @@ nav {
 }
 
 .topic-body {
-  @include card;
+  @extend %card;
 
   margin-bottom: $card-margin-y;
 
@@ -264,7 +264,7 @@ nav {
   }
 
   .regular {
-    @include card-block;
+    @extend %card-block;
 
     margin: 0;
     padding-bottom: 0;
@@ -403,7 +403,7 @@ nav {
   }
 
   .information {
-    @include card-block;
+    @extend %card-block;
 
     background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
 
@@ -531,7 +531,7 @@ nav {
 }
 
 .topic-meta-data {
-  @include card-block;
+  @extend %card-block;
 
   align-items: center;
   display: flex;

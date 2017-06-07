@@ -1,4 +1,4 @@
-@mixin card {
+%card {
   background-color: color-chooser($card-bg-dark, $card-bg-light);
   border: 0;
   border-radius: $card-border-radius;
@@ -20,6 +20,6 @@
   }
 }
 
-@mixin card-block {
+%card-block {
   padding: $card-padding-y $card-padding-x;
 }

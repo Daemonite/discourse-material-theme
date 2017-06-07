@@ -51,17 +51,17 @@
   }
 
   .category-box-inner {
-    @include card;
+    @extend %card;
   }
 }
 
 .category-boxes-with-topics {
   .category-box-heading {
-    @include card-block;
+    @extend %card-block;
   }
 
   .featured-topics {
-    @include card-block;
+    @extend %card-block;
 
     padding-top: 0;
     padding-bottom: 0;

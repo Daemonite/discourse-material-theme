@@ -86,8 +86,8 @@
 }
 
 .admin-controls {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   margin-bottom: $spacer-lg;
   width: 100%;
@@ -211,8 +211,8 @@
     display: flex;
 
     .current-badge {
-      @include card;
-      @include card-block;
+      @extend %card;
+      @extend %card-block;
 
       flex-grow: 1;
       margin: 0;
@@ -226,8 +226,8 @@
 }
 
 .content-editor {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   flex-grow: 1;
   margin-left: 0;
@@ -438,8 +438,8 @@
   }
 
   .show-current-style {
-    @include card;
-    @include card-block;
+    @extend %card;
+    @extend %card-block;
 
     flex-grow: 1;
     margin-left: 0;
@@ -558,8 +558,8 @@ div.emoji {
     display: flex;
 
     > .span13 {
-      @include card;
-      @include card-block;
+      @extend %card;
+      @extend %card-block;
 
       flex-grow: 1;
       width: auto;
@@ -584,8 +584,8 @@ div.emoji {
 
 .groups-bulk {
   .admin-contents & {
-    @include card;
-    @include card-block;
+    @extend %card;
+    @extend %card-block;
 
     .control {
       margin-bottom: $card-inner-spacer-y;
@@ -686,12 +686,12 @@ div.emoji {
 }
 
 .settings {
-  @include card;
+  @extend %card;
 
   margin: 0;
 
   .setting {
-    @include card-block;
+    @extend %card-block;
 
     align-items: flex-start;
     border-bottom: 1px solid color-chooser($white-divider, $black-divider);
@@ -768,8 +768,8 @@ div.emoji {
 }
 
 .site-texts {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   .search-area {
     margin-bottom: $card-inner-spacer-y;
@@ -804,8 +804,8 @@ div.user-fields {
     flex-grow: 1;
 
     .user-field {
-      @include card;
-      @include card-block;
+      @extend %card;
+      @extend %card-block;
 
       margin-bottom: $card-margin-y;
 

@@ -1,5 +1,5 @@
 .badge-card {
-  @include card;
+  @extend %card;
 
   margin-top: ($card-margin-y / 2);
   margin-right: 0;
@@ -15,7 +15,7 @@
     min-height: 0;
 
     .badge-icon {
-      @include card-block;
+      @extend %card-block;
       @include typography-h2;
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
@@ -23,7 +23,7 @@
     }
 
     .badge-info {
-      @include card-block;
+      @extend %card-block;
 
       min-width: 0;
 
@@ -133,8 +133,8 @@
 }
 
 .user-info {
-  @include card;
-  @include card-block;
+  @extend %card;
+  @extend %card-block;
 
   break-inside: avoid;
   display: inline-flex;
