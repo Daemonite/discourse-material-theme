@@ -118,8 +118,15 @@
 }
 
 .select2-drop {
-  &.select2-drop-active.select2-drop-above {
-    border-top: 0;
+  @include dropdown-menu;
+  @include dropdown-menu-sm;
+
+  &.select2-drop-above {
+    box-shadow: $dropdown-box-shadow;
+
+    &.select2-drop-active {
+      border-top: 0;
+    }
   }
 
   .category-desc,

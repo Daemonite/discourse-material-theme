@@ -1687,21 +1687,6 @@ div.poll .results .option {
   }
 }
 
-.select2-drop {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
-
 body button, body
 label {
   font-size: inherit;
@@ -2451,7 +2436,25 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
   color: $primary !important;
 }
 
-.select2-drop.select2-drop-active.select2-drop-above {
+.select2-drop {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+}
+.select2-drop.select2-drop-above {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.select2-drop.select2-drop-above.select2-drop-active {
   border-top: 0;
 }
 .select2-drop .category-desc,
@@ -7182,6 +7185,17 @@ nav.post-controls .show-replies i {
 .web-hook-container .form-horizontal:last-child {
   margin-bottom: 0;
 }
+.badges .form-horizontal input,
+.badges .form-horizontal select,
+.badges .form-horizontal textarea,
+.groups .form-horizontal input,
+.groups .form-horizontal select,
+.groups .form-horizontal textarea,
+.web-hook-container .form-horizontal input,
+.web-hook-container .form-horizontal select,
+.web-hook-container .form-horizontal textarea {
+  width: 100%;
+}
 .badges .form-horizontal input[type='text'],
 .groups .form-horizontal input[type='text'],
 .web-hook-container .form-horizontal input[type='text'] {
@@ -7364,6 +7378,9 @@ nav.post-controls .show-replies i {
           flex-grow: 1;
   margin: 0;
 }
+.customize .admin-footer {
+  margin-top: 24px;
+}
 .customize .color-scheme .controls button {
   margin-right: 8px;
 }
@@ -7385,6 +7402,75 @@ nav.post-controls .show-replies i {
   margin-right: 8px;
   padding-right: 8px;
   padding-left: 8px;
+}
+.customize .current-style.maximized .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+}
+.customize .current-style.maximized .wrapper > h2,
+.customize .current-style.maximized .wrapper > .admin-controls,
+.customize .current-style.maximized .wrapper > .admin-footer,
+.customize .current-style.maximized .wrapper > .edit-main-nav {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.customize .current-style.maximized .wrapper > .ace-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 0;
+}
+.customize .current-style.maximized .wrapper .admin-footer {
+  position: static;
+}
+.customize .current-style .ace-wrapper {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+}
+.customize .current-style .status-actions {
+  margin-top: 8px;
+}
+.customize .edit-main-nav {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+.customize .edit-main-nav .nav.target {
+  margin: 0 24px 0 0;
+}
+.customize .edit-main-nav .nav.target .fa {
+  margin-left: 4px;
+}
+.customize .edit-main-nav .nav.target .fa-mobile {
+  position: static;
+}
+.customize .edit-main-nav .show-overidden {
+  margin-left: auto;
+}
+.customize .edit-main-nav .show-overidden label {
+  margin-bottom: 0;
+}
+.customize .nav.nav-pills.fields {
+  margin-left: 0;
 }
 .customize .removable-list li {
   -webkit-box-align: center;
@@ -7507,31 +7593,31 @@ nav.post-controls .show-replies i {
   margin-right: 0;
 }
 
-.admin-container .embeddable-hosts {
+.admin-container div.embeddable-hosts {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-bottom: 0;
 }
-.admin-container .embeddable-hosts table td:last-child {
+.admin-container div.embeddable-hosts table td:last-child {
   white-space: nowrap;
 }
 
-.admin-container .emoji {
+.admin-container div.emoji {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.admin-container .emoji input[type='text'] {
+.admin-container div.emoji input[type='text'] {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
   line-height: 16px;
   padding: 20px 16px 19px;
 }
-.admin-container .emoji input[type='text']:focus, .admin-container .emoji input[type='text']:hover {
+.admin-container div.emoji input[type='text']:focus, .admin-container div.emoji input[type='text']:hover {
   padding-bottom: 18px;
 }
 
@@ -7888,10 +7974,7 @@ nav.post-controls .show-replies i {
 }
 
 .sp-replacer {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  min-width: 49px;
 }
 
 .staff-action-logs-controls,
@@ -7900,13 +7983,13 @@ nav.post-controls .show-replies i {
   margin: 0 0 24px;
 }
 
-.admin-container .user-fields {
+.admin-container div.user-fields {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.admin-container .user-fields .user-field {
+.admin-container div.user-fields .user-field {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
   border-radius: 2px;
@@ -7917,20 +8000,25 @@ nav.post-controls .show-replies i {
   padding: 16px 16px;
   margin-bottom: 8px;
 }
-.admin-container .user-fields .user-field[href]:focus, .admin-container .user-fields .user-field[href]:hover, .admin-container .user-fields .user-field[tabindex]:focus, .admin-container .user-fields .user-field[tabindex]:hover {
+.admin-container div.user-fields .user-field[href]:focus, .admin-container div.user-fields .user-field[href]:hover, .admin-container div.user-fields .user-field[tabindex]:focus, .admin-container div.user-fields .user-field[tabindex]:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
-.admin-container .user-fields .user-field[href]:focus, .admin-container .user-fields .user-field[tabindex]:focus {
+.admin-container div.user-fields .user-field[href]:focus, .admin-container div.user-fields .user-field[tabindex]:focus {
   outline: 0;
 }
-.admin-container .user-fields .user-field .form-element {
-  margin-bottom: 16px;
+.admin-container div.user-fields .user-field .form-element {
   padding: 0;
 }
-.admin-container .user-fields .user-field .form-element.label-area label {
+.admin-container div.user-fields .user-field .form-element.label-area label {
   margin: 8.000003px 8px 0 0;
+}
+.admin-container div.user-fields .user-field .row {
+  margin-bottom: 8px;
+}
+.admin-container div.user-fields .user-field .row:last-child {
+  margin-bottom: 0;
 }
 
 .value-list input[type='text'] {
