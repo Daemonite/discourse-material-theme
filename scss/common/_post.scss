@@ -398,6 +398,7 @@ nav {
     right: 0;
 
     .btn {
+      @extend %btn-flat;
       @extend %btn-footer;
     }
   }
@@ -631,5 +632,9 @@ nav {
     line-height: 1;
     margin: 0;
     vertical-align: middle;
+
+    &:empty {
+      display: none;
+    }
   }
 }
