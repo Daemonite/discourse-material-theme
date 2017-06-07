@@ -70,15 +70,15 @@ div.ac-wrap {
 }
 
 .autocomplete {
-  @include dropdown-menu;
-  @include dropdown-menu-sm;
+  @extend %dropdown-menu;
+  @extend %dropdown-menu-sm;
 
   ul li {
     border-bottom: 0;
 
     a {
-      @include dropdown-link;
-      @include dropdown-link-sm;
+      @extend %dropdown-link;
+      @extend %dropdown-link-sm;
 
       align-items: center;
       color: inherit;

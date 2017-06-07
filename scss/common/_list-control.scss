@@ -18,12 +18,12 @@ ol {
 
 .category-notification-menu {
   .dropdown-menu {
-    @include dropdown-menu-sm;
+    @extend %dropdown-menu-sm;
 
     top: $btn-height;
 
     a {
-      @include dropdown-link-sm;
+      @extend %dropdown-link-sm;
     }
   }
 }
@@ -78,8 +78,8 @@ ol {
   }
 
   .category-dropdown-menu {
-    @include dropdown-menu;
-    @include dropdown-menu-sm;
+    @extend %dropdown-menu;
+    @extend %dropdown-menu-sm;
 
     min-width: 100%;
     padding-right: $dropdown-link-padding-x-sm;
@@ -87,7 +87,7 @@ ol {
 
     a {
       &.badge-category {
-        @include dropdown-header-sm;
+        @extend %dropdown-header-sm;
 
         padding-right: 0;
         padding-left: 0;

@@ -118,8 +118,8 @@
 }
 
 .select2-drop {
-  @include dropdown-menu;
-  @include dropdown-menu-sm;
+  @extend %dropdown-menu;
+  @extend %dropdown-menu-sm;
 
   &.select2-drop-above {
     box-shadow: $dropdown-box-shadow;
@@ -148,15 +148,15 @@
   }
 
   .select2-no-results {
-    @include dropdown-header;
-    @include dropdown-header-sm;
+    @extend %dropdown-header;
+    @extend %dropdown-header-sm;
 
     background-color: transparent;
   }
 
   .select2-result-label {
-    @include dropdown-link;
-    @include dropdown-link-sm;
+    @extend %dropdown-link;
+    @extend %dropdown-link-sm;
   }
 }
 

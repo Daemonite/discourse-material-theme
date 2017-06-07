@@ -32,8 +32,8 @@
   }
 
   #period-popup {
-    @include dropdown-menu;
-    @include dropdown-menu-sm;
+    @extend %dropdown-menu;
+    @extend %dropdown-menu-sm;
 
     ul li {
       &:hover {
@@ -41,8 +41,8 @@
       }
 
       a {
-        @include dropdown-link;
-        @include dropdown-link-sm;
+        @extend %dropdown-link;
+        @extend %dropdown-link-sm;
       }
 
       .top-date-string {

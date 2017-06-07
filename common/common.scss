@@ -1590,7 +1590,42 @@ div.poll .results .option {
   padding-bottom: 0;
 }
 
-.dropdown-menu {
+.popup-menu h1,
+.popup-menu h2,
+.popup-menu h3,
+.popup-menu h4,
+.popup-menu h5,
+.popup-menu h6, .select2-results .select2-no-results, .search-menu .no-results {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin: 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.select2-results .select2-no-results, .list-controls .category-dropdown-menu a.badge-category, .search-menu .no-results, #topic-footer-buttons .popup-menu h3, #reply-control .popup-menu h3, .timeline-container .topic-timeline .dropdown-menu h3,
+.timeline-container .topic-timeline .popup-menu h3 {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 6.25px 24px;
+}
+
+.dropdown-menu a, .popup-menu .btn, .autocomplete ul li a, .select2-results .select2-result-label, .period-chooser #period-popup ul li a {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 12px 16px;
+}
+
+.autocomplete ul li a, .select2-results .select2-result-label, .category-notification-menu .dropdown-menu a, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, #reply-control .popup-menu .btn, .timeline-container .topic-timeline .dropdown-menu a,
+.timeline-container .topic-timeline .dropdown-menu .btn,
+.timeline-container .topic-timeline .popup-menu a,
+.timeline-container .topic-timeline .popup-menu .btn, .period-chooser #period-popup ul li a {
+  padding: 6.25px 24px;
+}
+
+.dropdown-menu, .popup-menu, .autocomplete, .select2-drop, .list-controls .category-dropdown-menu, .period-chooser #period-popup {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   background-color: color-chooser(#424242, #ffffff);
@@ -1601,11 +1636,15 @@ div.poll .results .option {
   line-height: 1.5;
   padding: 8px 0;
 }
+
+.autocomplete, .select2-drop, .category-notification-menu .dropdown-menu, .list-controls .category-dropdown-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
+.timeline-container .topic-timeline .popup-menu, .period-chooser #period-popup {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+}
+
 .dropdown-menu a {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1641,15 +1680,6 @@ div.poll .results .option {
 }
 
 .popup-menu {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
   width: auto;
 }
 .popup-menu button {
@@ -1658,27 +1688,10 @@ div.poll .results .option {
 .popup-menu button i {
   width: auto;
 }
-.popup-menu h1,
-.popup-menu h2,
-.popup-menu h3,
-.popup-menu h4,
-.popup-menu h5,
-.popup-menu h6 {
-  font-size: 16px;
-  font-weight: bolder;
-  line-height: 1.5;
-  margin: 0;
-  padding: 12px 16px;
-  white-space: nowrap;
-}
 .popup-menu ul {
   margin: 0;
 }
 .popup-menu .btn {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
   background-color: transparent;
   border-radius: 0;
   white-space: nowrap;
@@ -2198,29 +2211,10 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
   pointer-events: none;
 }
 
-.autocomplete {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
 .autocomplete ul li {
   border-bottom: 0;
 }
 .autocomplete ul li a {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
-  padding: 6.25px 24px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2465,20 +2459,6 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
   color: $primary !important;
 }
 
-.select2-drop {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
 .select2-drop.select2-drop-above {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
@@ -2505,23 +2485,7 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 .select2-results .select2-no-results {
-  font-size: 16px;
-  font-weight: bolder;
-  line-height: 1.5;
-  margin: 0;
-  padding: 12px 16px;
-  white-space: nowrap;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
   background-color: transparent;
-}
-.select2-results .select2-result-label {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
-  padding: 6.25px 24px;
 }
 
 .select2-search {
@@ -2717,13 +2681,7 @@ ol.category-breadcrumb li + li {
 }
 
 .category-notification-menu .dropdown-menu {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
   top: 36px;
-}
-.category-notification-menu .dropdown-menu a {
-  padding: 6.25px 24px;
 }
 
 .list-controls {
@@ -2760,26 +2718,11 @@ ol.category-breadcrumb li + li {
   margin-left: 0;
 }
 .list-controls .category-dropdown-menu {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
   min-width: 100%;
   padding-right: 24px;
   padding-left: 24px;
 }
 .list-controls .category-dropdown-menu a.badge-category {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
   padding-right: 0;
   padding-left: 0;
 }
@@ -3701,15 +3644,6 @@ div.menu-links-header .menu-links-row {
   margin-bottom: 4px;
 }
 .search-menu .no-results {
-  font-size: 16px;
-  font-weight: bolder;
-  line-height: 1.5;
-  margin: 0;
-  padding: 12px 16px;
-  white-space: nowrap;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
   padding-right: 0;
   padding-left: 0;
 }
@@ -4565,29 +4499,8 @@ nav.post-controls .show-replies i {
 #topic-footer-buttons .btn {
   margin: 0;
 }
-#topic-footer-buttons .dropdown-menu {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
-#topic-footer-buttons .dropdown-menu a {
-  padding: 6.25px 24px;
-}
 #topic-footer-buttons .fa {
   opacity: 1;
-}
-#topic-footer-buttons .popup-menu {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
-#topic-footer-buttons .popup-menu h3 {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
-}
-#topic-footer-buttons .popup-menu .btn {
-  padding: 6.25px 24px;
 }
 #topic-footer-buttons > div {
   width: 100%;
@@ -5130,19 +5043,6 @@ nav.post-controls .show-replies i {
 #reply-control .hide-preview .toggle-preview::before {
   content: 'keyboard_arrow_left';
 }
-#reply-control .popup-menu {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
-#reply-control .popup-menu h3 {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
-}
-#reply-control .popup-menu .btn {
-  padding: 6.25px 24px;
-}
 #reply-control .reply-area {
   margin: 0;
   max-width: none;
@@ -5374,24 +5274,6 @@ nav.post-controls .show-replies i {
 .timeline-container .topic-timeline i.fa {
   opacity: 1;
 }
-.timeline-container .topic-timeline .dropdown-menu,
-.timeline-container .topic-timeline .popup-menu {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
-.timeline-container .topic-timeline .dropdown-menu a,
-.timeline-container .topic-timeline .dropdown-menu .btn,
-.timeline-container .topic-timeline .popup-menu a,
-.timeline-container .topic-timeline .popup-menu .btn {
-  padding: 6.25px 24px;
-}
-.timeline-container .topic-timeline .dropdown-menu h3,
-.timeline-container .topic-timeline .popup-menu h3 {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
-}
 .timeline-container .topic-timeline .fa {
   opacity: 1;
 }
@@ -5486,29 +5368,8 @@ nav.post-controls .show-replies i {
   line-height: 1.5;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
-.period-chooser #period-popup {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
 .period-chooser #period-popup ul li:hover {
   background-color: transparent;
-}
-.period-chooser #period-popup ul li a {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
-  padding: 6.25px 24px;
 }
 .period-chooser #period-popup ul li .top-date-string {
   font-size: 12px;

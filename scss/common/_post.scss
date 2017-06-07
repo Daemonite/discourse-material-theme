@@ -308,10 +308,10 @@ nav {
   }
 
   .dropdown-menu {
-    @include dropdown-menu-sm;
+    @extend %dropdown-menu-sm;
 
     a {
-      @include dropdown-link-sm;
+      @extend %dropdown-link-sm;
     }
   }
 
@@ -320,14 +320,14 @@ nav {
   }
 
   .popup-menu {
-    @include dropdown-menu-sm;
+    @extend %dropdown-menu-sm;
 
     h3 {
-      @include dropdown-header-sm;
+      @extend %dropdown-header-sm;
     }
 
     .btn {
-      @include dropdown-link-sm;
+      @extend %dropdown-link-sm;
     }
   }
 

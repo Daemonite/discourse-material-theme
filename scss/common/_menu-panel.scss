@@ -150,8 +150,8 @@ div {
   }
 
   .no-results {
-    @include dropdown-header;
-    @include dropdown-header-sm;
+    @extend %dropdown-header;
+    @extend %dropdown-header-sm;
 
     padding-right: 0;
     padding-left: 0;

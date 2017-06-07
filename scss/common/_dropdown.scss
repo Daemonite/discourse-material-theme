@@ -1,8 +1,52 @@
+%dropdown-header {
+  font-size: $dropdown-font-size;
+  font-weight: bolder;
+  line-height: $dropdown-line-height;
+  margin: 0;
+  padding: $dropdown-link-padding-y $dropdown-link-padding-x;
+  white-space: nowrap;
+}
+
+%dropdown-header-sm {
+  font-size: $dropdown-font-size-sm;
+  line-height: $dropdown-line-height-sm;
+  padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+}
+
+%dropdown-link {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: $dropdown-link-padding-y $dropdown-link-padding-x;
+}
+
+%dropdown-link-sm {
+  padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+}
+
+%dropdown-menu {
+  background-clip: padding-box;
+  background-color: color-chooser($dropdown-bg-dark, $dropdown-bg-light);
+  border: 0;
+  box-shadow: $dropdown-box-shadow;
+  font-size: $dropdown-font-size;
+  line-height: $dropdown-line-height;
+  padding: $dropdown-padding-y $dropdown-padding-x;
+}
+
+%dropdown-menu-sm {
+  font-size: $dropdown-font-size-sm;
+  line-height: $dropdown-line-height-sm;
+  padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
+}
+
+
+
 .dropdown-menu {
-  @include dropdown-menu;
+  @extend %dropdown-menu;
 
   a {
-    @include dropdown-link;
+    @extend %dropdown-link;
 
     display: flex;
 
@@ -38,7 +82,7 @@
 }
 
 .popup-menu {
-  @include dropdown-menu;
+  @extend %dropdown-menu;
 
   width: auto;
 
@@ -56,7 +100,7 @@
   h4,
   h5,
   h6 {
-    @include dropdown-header;
+    @extend %dropdown-header;
   }
 
   ul {
@@ -64,7 +108,7 @@
   }
 
   .btn {
-    @include dropdown-link;
+    @extend %dropdown-link;
 
     background-color: transparent;
     border-radius: 0;
