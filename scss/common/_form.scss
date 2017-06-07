@@ -191,3 +191,36 @@ textarea {
     @extend %btn-sm;
   }
 }
+
+.input-append,
+.input-prepend {
+  body & {
+    align-items: center;
+    display: flex;
+    margin-bottom: $spacer-sm;
+
+    input {
+      margin-bottom: 0;
+
+      + .add-on {
+        margin-left: $spacer;
+      }
+    }
+
+    .add-on {
+      background-color: transparent;
+      border: 0;
+      font-size: $material-icon-size;
+      height: auto;
+      justify-content: center;
+      line-height: 1;
+      margin: 0;
+      min-width: $material-icon-size;
+      padding: 0;
+
+      + input {
+        margin-left: $spacer;
+      }
+    }
+  }
+}

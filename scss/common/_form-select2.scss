@@ -45,6 +45,17 @@
     }
   }
 
+  &.select2-drop-above {
+    a.select2-choice {
+      border: 0;
+
+      &,
+      &::before {
+        border-radius: 0 0 $btn-border-radius $btn-border-radius;
+      }
+    }
+  }
+
   a.select2-choice {
     @extend %btn-flat;
     @extend %btn-raised;
@@ -103,6 +114,10 @@
 }
 
 .select2-drop {
+  &.select2-drop-active.select2-drop-above {
+    border-top: 0;
+  }
+
   .category-desc,
   .topic-count {
     @include typography-small;

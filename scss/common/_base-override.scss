@@ -31,7 +31,7 @@
 
       body & {
         @include focus-hover {
-          background-color: unquote('$quaternary;');
+          background-color: unquote('$quaternary');
           color: color-dynamic(unquote('$quaternary'));
 
           &::before {

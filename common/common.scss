@@ -248,7 +248,7 @@ sup {
 }
 body .nav-pills > li.active > a:focus, body
 .nav-pills > li > a.active:focus {
-  background-color: $quaternary;;
+  background-color: $quaternary;
   color: color-dynamic($quaternary);
 }
 body .nav-pills > li.active > a:focus::before, body
@@ -258,7 +258,7 @@ body .nav-pills > li.active > a:focus::before, body
 @media (hover: hover) {
   body .nav-pills > li.active > a:hover, body
   .nav-pills > li > a.active:hover {
-    background-color: $quaternary;;
+    background-color: $quaternary;
     color: color-dynamic($quaternary);
   }
   body .nav-pills > li.active > a:hover::before, body
@@ -688,7 +688,8 @@ nav.post-controls .btn-primary.show-replies:focus,
   }
 }
 
-.image-upload-controls .btn, .select2-container a.select2-choice, .list-controls .btn, .list-controls .category-breadcrumb li > a.badge-category, #topic-footer-buttons div > button.btn,
+.image-upload-controls .btn, .select2-container a.select2-choice, .list-controls .btn, .list-controls .category-breadcrumb li > a.badge-category, .edit-category-modal .edit-category-tab-general section.field > .btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn, #topic-footer-buttons div > button.btn,
 #topic-footer-buttons span > button.btn,
 #topic-footer-buttons > button.btn, #reply-control .contents .submit-panel .btn, .timeline-container .topic-timeline div > button.btn,
 .timeline-container .topic-timeline span > button.btn, .period-chooser button, .top-title-buttons button {
@@ -696,49 +697,57 @@ nav.post-controls .btn-primary.show-replies:focus,
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
-.image-upload-controls .btn:focus, .select2-container a.select2-choice:focus, .list-controls .btn:focus, .list-controls .category-breadcrumb li > a.badge-category:focus, #topic-footer-buttons div > button.btn:focus,
+.image-upload-controls .btn:focus, .select2-container a.select2-choice:focus, .list-controls .btn:focus, .list-controls .category-breadcrumb li > a.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn:focus, #topic-footer-buttons div > button.btn:focus,
 #topic-footer-buttons span > button.btn:focus,
 #topic-footer-buttons > button.btn:focus, #reply-control .contents .submit-panel .btn:focus, .timeline-container .topic-timeline div > button.btn:focus,
 .timeline-container .topic-timeline span > button.btn:focus, .period-chooser button:focus, .top-title-buttons button:focus {
   background-color: color-chooser($tertiary, #ffffff);
 }
-.image-upload-controls .btn:focus::before, .select2-container a.select2-choice:focus::before, .list-controls .btn:focus::before, .list-controls .category-breadcrumb li > a.badge-category:focus::before, #topic-footer-buttons div > button.btn:focus::before,
+.image-upload-controls .btn:focus::before, .select2-container a.select2-choice:focus::before, .list-controls .btn:focus::before, .list-controls .category-breadcrumb li > a.badge-category:focus::before, .edit-category-modal .edit-category-tab-general section.field > .btn:focus::before,
+.edit-category-modal .edit-category-tab-security section.field > .btn:focus::before, #topic-footer-buttons div > button.btn:focus::before,
 #topic-footer-buttons span > button.btn:focus::before,
 #topic-footer-buttons > button.btn:focus::before, #reply-control .contents .submit-panel .btn:focus::before, .timeline-container .topic-timeline div > button.btn:focus::before,
 .timeline-container .topic-timeline span > button.btn:focus::before, .period-chooser button:focus::before, .top-title-buttons button:focus::before {
   opacity: 1;
 }
 @media (hover: hover) {
-  .image-upload-controls .btn:hover, .select2-container a.select2-choice:hover, .list-controls .btn:hover, .list-controls .category-breadcrumb li > a.badge-category:hover, #topic-footer-buttons div > button.btn:hover,
+  .image-upload-controls .btn:hover, .select2-container a.select2-choice:hover, .list-controls .btn:hover, .list-controls .category-breadcrumb li > a.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .btn:hover, #topic-footer-buttons div > button.btn:hover,
   #topic-footer-buttons span > button.btn:hover,
   #topic-footer-buttons > button.btn:hover, #reply-control .contents .submit-panel .btn:hover, .timeline-container .topic-timeline div > button.btn:hover,
   .timeline-container .topic-timeline span > button.btn:hover, .period-chooser button:hover, .top-title-buttons button:hover {
     background-color: color-chooser($tertiary, #ffffff);
   }
-  .image-upload-controls .btn:hover::before, .select2-container a.select2-choice:hover::before, .list-controls .btn:hover::before, .list-controls .category-breadcrumb li > a.badge-category:hover::before, #topic-footer-buttons div > button.btn:hover::before,
+  .image-upload-controls .btn:hover::before, .select2-container a.select2-choice:hover::before, .list-controls .btn:hover::before, .list-controls .category-breadcrumb li > a.badge-category:hover::before, .edit-category-modal .edit-category-tab-general section.field > .btn:hover::before,
+  .edit-category-modal .edit-category-tab-security section.field > .btn:hover::before, #topic-footer-buttons div > button.btn:hover::before,
   #topic-footer-buttons span > button.btn:hover::before,
   #topic-footer-buttons > button.btn:hover::before, #reply-control .contents .submit-panel .btn:hover::before, .timeline-container .topic-timeline div > button.btn:hover::before,
   .timeline-container .topic-timeline span > button.btn:hover::before, .period-chooser button:hover::before, .top-title-buttons button:hover::before {
     opacity: 1;
   }
 }
-.image-upload-controls .btn:active, .select2-container a.select2-choice:active, .list-controls .btn:active, .list-controls .category-breadcrumb li > a.badge-category:active, #topic-footer-buttons div > button.btn:active,
+.image-upload-controls .btn:active, .select2-container a.select2-choice:active, .list-controls .btn:active, .list-controls .category-breadcrumb li > a.badge-category:active, .edit-category-modal .edit-category-tab-general section.field > .btn:active,
+.edit-category-modal .edit-category-tab-security section.field > .btn:active, #topic-footer-buttons div > button.btn:active,
 #topic-footer-buttons span > button.btn:active,
 #topic-footer-buttons > button.btn:active, #reply-control .contents .submit-panel .btn:active, .timeline-container .topic-timeline div > button.btn:active,
 .timeline-container .topic-timeline span > button.btn:active, .period-chooser button:active, .top-title-buttons button:active {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
-.image-upload-controls .btn:active::before, .select2-container a.select2-choice:active::before, .list-controls .btn:active::before, .list-controls .category-breadcrumb li > a.badge-category:active::before, #topic-footer-buttons div > button.btn:active::before,
+.image-upload-controls .btn:active::before, .select2-container a.select2-choice:active::before, .list-controls .btn:active::before, .list-controls .category-breadcrumb li > a.badge-category:active::before, .edit-category-modal .edit-category-tab-general section.field > .btn:active::before,
+.edit-category-modal .edit-category-tab-security section.field > .btn:active::before, #topic-footer-buttons div > button.btn:active::before,
 #topic-footer-buttons span > button.btn:active::before,
 #topic-footer-buttons > button.btn:active::before, #reply-control .contents .submit-panel .btn:active::before, .timeline-container .topic-timeline div > button.btn:active::before,
 .timeline-container .topic-timeline span > button.btn:active::before, .period-chooser button:active::before, .top-title-buttons button:active::before {
   opacity: 1;
 }
-.image-upload-controls [disabled].btn, .select2-container a[disabled].select2-choice, .list-controls [disabled].btn, .list-controls .category-breadcrumb li > a[disabled].badge-category, #topic-footer-buttons div > button[disabled].btn,
+.image-upload-controls [disabled].btn, .select2-container a[disabled].select2-choice, .list-controls [disabled].btn, .list-controls .category-breadcrumb li > a[disabled].badge-category, .edit-category-modal .edit-category-tab-general section.field > [disabled].btn,
+.edit-category-modal .edit-category-tab-security section.field > [disabled].btn, #topic-footer-buttons div > button[disabled].btn,
 #topic-footer-buttons span > button[disabled].btn,
 #topic-footer-buttons > button[disabled].btn, #reply-control .contents .submit-panel [disabled].btn, .timeline-container .topic-timeline div > button[disabled].btn,
-.timeline-container .topic-timeline span > button[disabled].btn, .period-chooser button[disabled], .top-title-buttons button[disabled], .image-upload-controls .disabled.btn, .select2-container a.disabled.select2-choice, .list-controls .disabled.btn, .list-controls .category-breadcrumb li > a.disabled.badge-category, #topic-footer-buttons div > button.disabled.btn,
+.timeline-container .topic-timeline span > button[disabled].btn, .period-chooser button[disabled], .top-title-buttons button[disabled], .image-upload-controls .disabled.btn, .select2-container a.disabled.select2-choice, .list-controls .disabled.btn, .list-controls .category-breadcrumb li > a.disabled.badge-category, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
+.edit-category-modal .edit-category-tab-security section.field > .disabled.btn, #topic-footer-buttons div > button.disabled.btn,
 #topic-footer-buttons span > button.disabled.btn,
 #topic-footer-buttons > button.disabled.btn, #reply-control .contents .submit-panel .disabled.btn, .timeline-container .topic-timeline div > button.disabled.btn,
 .timeline-container .topic-timeline span > button.disabled.btn, .period-chooser button.disabled, .top-title-buttons button.disabled {
@@ -746,23 +755,27 @@ nav.post-controls .btn-primary.show-replies:focus,
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
-.image-upload-controls [disabled].btn::before, .select2-container a[disabled].select2-choice::before, .list-controls [disabled].btn::before, .list-controls .category-breadcrumb li > a[disabled].badge-category::before, #topic-footer-buttons div > button[disabled].btn::before,
+.image-upload-controls [disabled].btn::before, .select2-container a[disabled].select2-choice::before, .list-controls [disabled].btn::before, .list-controls .category-breadcrumb li > a[disabled].badge-category::before, .edit-category-modal .edit-category-tab-general section.field > [disabled].btn::before,
+.edit-category-modal .edit-category-tab-security section.field > [disabled].btn::before, #topic-footer-buttons div > button[disabled].btn::before,
 #topic-footer-buttons span > button[disabled].btn::before,
 #topic-footer-buttons > button[disabled].btn::before, #reply-control .contents .submit-panel [disabled].btn::before, .timeline-container .topic-timeline div > button[disabled].btn::before,
-.timeline-container .topic-timeline span > button[disabled].btn::before, .period-chooser button[disabled]::before, .top-title-buttons button[disabled]::before, .image-upload-controls .disabled.btn::before, .select2-container a.disabled.select2-choice::before, .list-controls .disabled.btn::before, .list-controls .category-breadcrumb li > a.disabled.badge-category::before, #topic-footer-buttons div > button.disabled.btn::before,
+.timeline-container .topic-timeline span > button[disabled].btn::before, .period-chooser button[disabled]::before, .top-title-buttons button[disabled]::before, .image-upload-controls .disabled.btn::before, .select2-container a.disabled.select2-choice::before, .list-controls .disabled.btn::before, .list-controls .category-breadcrumb li > a.disabled.badge-category::before, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn::before,
+.edit-category-modal .edit-category-tab-security section.field > .disabled.btn::before, #topic-footer-buttons div > button.disabled.btn::before,
 #topic-footer-buttons span > button.disabled.btn::before,
 #topic-footer-buttons > button.disabled.btn::before, #reply-control .contents .submit-panel .disabled.btn::before, .timeline-container .topic-timeline div > button.disabled.btn::before,
 .timeline-container .topic-timeline span > button.disabled.btn::before, .period-chooser button.disabled::before, .top-title-buttons button.disabled::before {
   display: none;
 }
-.image-upload-controls .btn-danger.btn, .select2-container a.btn-danger.select2-choice, .list-controls .btn-danger.btn, .list-controls .category-breadcrumb li > a.btn-danger.badge-category, #topic-footer-buttons div > button.btn-danger.btn,
+.image-upload-controls .btn-danger.btn, .select2-container a.btn-danger.select2-choice, .list-controls .btn-danger.btn, .list-controls .category-breadcrumb li > a.btn-danger.badge-category, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn, #topic-footer-buttons div > button.btn-danger.btn,
 #topic-footer-buttons span > button.btn-danger.btn,
 #topic-footer-buttons > button.btn-danger.btn, #reply-control .contents .submit-panel .btn-danger.btn, .timeline-container .topic-timeline div > button.btn-danger.btn,
 .timeline-container .topic-timeline span > button.btn-danger.btn, .period-chooser button.btn-danger, .top-title-buttons button.btn-danger {
   background-color: $danger;
   color: color-dynamic($danger);
 }
-.image-upload-controls .btn-danger.btn:focus, .select2-container a.btn-danger.select2-choice:focus, .list-controls .btn-danger.btn:focus, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
+.image-upload-controls .btn-danger.btn:focus, .select2-container a.btn-danger.select2-choice:focus, .list-controls .btn-danger.btn:focus, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
 #topic-footer-buttons span > button.btn-danger.btn:focus,
 #topic-footer-buttons > button.btn-danger.btn:focus, #reply-control .contents .submit-panel .btn-danger.btn:focus, .timeline-container .topic-timeline div > button.btn-danger.btn:focus,
 .timeline-container .topic-timeline span > button.btn-danger.btn:focus, .period-chooser button.btn-danger:focus, .top-title-buttons button.btn-danger:focus {
@@ -770,7 +783,8 @@ nav.post-controls .btn-primary.show-replies:focus,
   color: color-dynamic($danger);
 }
 @media (hover: hover) {
-  .image-upload-controls .btn-danger.btn:hover, .select2-container a.btn-danger.select2-choice:hover, .list-controls .btn-danger.btn:hover, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
+  .image-upload-controls .btn-danger.btn:hover, .select2-container a.btn-danger.select2-choice:hover, .list-controls .btn-danger.btn:hover, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
   #topic-footer-buttons span > button.btn-danger.btn:hover,
   #topic-footer-buttons > button.btn-danger.btn:hover, #reply-control .contents .submit-panel .btn-danger.btn:hover, .timeline-container .topic-timeline div > button.btn-danger.btn:hover,
   .timeline-container .topic-timeline span > button.btn-danger.btn:hover, .period-chooser button.btn-danger:hover, .top-title-buttons button.btn-danger:hover {
@@ -778,14 +792,16 @@ nav.post-controls .btn-primary.show-replies:focus,
     color: color-dynamic($danger);
   }
 }
-.image-upload-controls .btn-primary.btn, .select2-container a.btn-primary.select2-choice, .list-controls .btn-primary.btn, .list-controls .category-breadcrumb li > a.btn-primary.badge-category, #topic-footer-buttons div > button.btn-primary.btn,
+.image-upload-controls .btn-primary.btn, .select2-container a.btn-primary.select2-choice, .list-controls .btn-primary.btn, .list-controls .category-breadcrumb li > a.btn-primary.badge-category, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn, #topic-footer-buttons div > button.btn-primary.btn,
 #topic-footer-buttons span > button.btn-primary.btn,
 #topic-footer-buttons > button.btn-primary.btn, #reply-control .contents .submit-panel .btn-primary.btn, .timeline-container .topic-timeline div > button.btn-primary.btn,
 .timeline-container .topic-timeline span > button.btn-primary.btn, .period-chooser button.btn-primary, .top-title-buttons button.btn-primary {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
-.image-upload-controls .btn-primary.btn:focus, .select2-container a.btn-primary.select2-choice:focus, .list-controls .btn-primary.btn:focus, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
+.image-upload-controls .btn-primary.btn:focus, .select2-container a.btn-primary.select2-choice:focus, .list-controls .btn-primary.btn:focus, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
 #topic-footer-buttons span > button.btn-primary.btn:focus,
 #topic-footer-buttons > button.btn-primary.btn:focus, #reply-control .contents .submit-panel .btn-primary.btn:focus, .timeline-container .topic-timeline div > button.btn-primary.btn:focus,
 .timeline-container .topic-timeline span > button.btn-primary.btn:focus, .period-chooser button.btn-primary:focus, .top-title-buttons button.btn-primary:focus {
@@ -793,7 +809,8 @@ nav.post-controls .btn-primary.show-replies:focus,
   color: color-dynamic($tertiary);
 }
 @media (hover: hover) {
-  .image-upload-controls .btn-primary.btn:hover, .select2-container a.btn-primary.select2-choice:hover, .list-controls .btn-primary.btn:hover, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
+  .image-upload-controls .btn-primary.btn:hover, .select2-container a.btn-primary.select2-choice:hover, .list-controls .btn-primary.btn:hover, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
   #topic-footer-buttons span > button.btn-primary.btn:hover,
   #topic-footer-buttons > button.btn-primary.btn:hover, #reply-control .contents .submit-panel .btn-primary.btn:hover, .timeline-container .topic-timeline div > button.btn-primary.btn:hover,
   .timeline-container .topic-timeline span > button.btn-primary.btn:hover, .period-chooser button.btn-primary:hover, .top-title-buttons button.btn-primary:hover {
@@ -801,7 +818,8 @@ nav.post-controls .btn-primary.show-replies:focus,
     color: color-dynamic($tertiary);
   }
 }
-.image-upload-controls .btn::before, .select2-container a.select2-choice::before, .list-controls .btn::before, .list-controls .category-breadcrumb li > a.badge-category::before, #topic-footer-buttons div > button.btn::before,
+.image-upload-controls .btn::before, .select2-container a.select2-choice::before, .list-controls .btn::before, .list-controls .category-breadcrumb li > a.badge-category::before, .edit-category-modal .edit-category-tab-general section.field > .btn::before,
+.edit-category-modal .edit-category-tab-security section.field > .btn::before, #topic-footer-buttons div > button.btn::before,
 #topic-footer-buttons span > button.btn::before,
 #topic-footer-buttons > button.btn::before, #reply-control .contents .submit-panel .btn::before, .timeline-container .topic-timeline div > button.btn::before,
 .timeline-container .topic-timeline span > button.btn::before, .period-chooser button::before, .top-title-buttons button::before {
@@ -828,11 +846,16 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   margin-left: 0;
 }
 
-.image-upload-controls .btn, .d-editor-button-bar button, .small-action button, .topic-meta-data .post-info a {
+.btn-small,
+.image-upload-controls .btn,
+.d-editor-button-bar button,
+.small-action button,
+.topic-meta-data .post-info a {
   font-size: 13px;
   padding: 9.5px 16px;
 }
 
+.badge-group,
 .badge-notification {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 1em;
@@ -840,8 +863,17 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   font-size: .857142857em;
   padding: 4px 6px;
 }
-.badge-notification:focus, .badge-notification:hover {
+.badge-group:focus, .badge-group:hover,
+.badge-notification:focus,
+.badge-notification:hover {
   color: $primary;
+}
+
+.badge-group {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
 }
 
 .badge-wrapper {
@@ -1774,6 +1806,46 @@ body .form-vertical .controls .d-editor:last-child {
   padding: 9.5px 16px;
 }
 
+body .input-append, body
+.input-prepend {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+body .input-append input, body
+.input-prepend input {
+  margin-bottom: 0;
+}
+body .input-append input + .add-on, body
+.input-prepend input + .add-on {
+  margin-left: 16px;
+}
+body .input-append .add-on, body
+.input-prepend .add-on {
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+  height: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+  margin: 0;
+  min-width: 24px;
+  padding: 0;
+}
+body .input-append .add-on + input, body
+.input-prepend .add-on + input {
+  margin-left: 16px;
+}
+
 div.ac-wrap {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -1970,6 +2042,45 @@ div.ac-wrap input[type='text'][disabled]:focus, div.ac-wrap input[type='text'][r
   margin-right: 8px;
 }
 
+.category-color-editor .color-title {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-right: 16px;
+  width: auto;
+}
+.category-color-editor .colors-container {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: -4px -4px 0 16px;
+  min-width: 40px;
+  padding: 0;
+}
+.category-color-editor .colors-container .colorpicker {
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  font-size: inherit;
+  height: 16px;
+  margin: 4px 4px 0 0;
+  width: 16px;
+}
+
 .d-editor {
   border: 0;
 }
@@ -2058,6 +2169,12 @@ div.ac-wrap input[type='text'][disabled]:focus, div.ac-wrap input[type='text'][r
   border-radius: 2px 2px 0 0;
   opacity: 1;
 }
+.select2-container.select2-drop-above a.select2-choice {
+  border: 0;
+}
+.select2-container.select2-drop-above a.select2-choice, .select2-container.select2-drop-above a.select2-choice::before {
+  border-radius: 0 0 2px 2px;
+}
 .select2-container a.select2-choice {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -2121,6 +2238,9 @@ div.ac-wrap input[type='text'][disabled]:focus, div.ac-wrap input[type='text'][r
   color: $primary !important;
 }
 
+.select2-drop.select2-drop-active.select2-drop-above {
+  border-top: 0;
+}
 .select2-drop .category-desc,
 .select2-drop .topic-count {
   font-size: 12px;
@@ -3418,6 +3538,57 @@ div.menu-links-header .menu-links-row {
   font-size: 14px;
 }
 
+.edit-category-modal .edit-category-tab-security section.field > .btn {
+  margin-top: 20px;
+}
+.edit-category-modal .edit-category-tab-settings section.field {
+  margin-bottom: 20px;
+}
+.edit-category-modal .edit-category-tab-settings section.field label {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.edit-category-modal .edit-category-tab-settings section.field label input {
+  margin: 0 0 0 8px;
+}
+.edit-category-modal .edit-category-tab-settings section.field label input[type='checkbox'] {
+  margin-right: 8px;
+  margin-left: 0;
+}
+.edit-category-modal .edit-category-tab-settings section.field label .select2-container {
+  margin-left: 8px;
+}
+
+.modal form {
+  margin-bottom: 20px;
+}
+.modal section.field {
+  margin-bottom: 20px;
+}
+.modal section.field > br + * {
+  margin-top: 8px;
+}
+.modal section.field .field-item {
+  margin-right: 24px;
+}
+.modal section.field .field-item label,
+.modal section.field .field-item > :last-child {
+  margin-bottom: 0;
+}
+.modal section.field .input-append,
+.modal section.field .input-prepend {
+  margin-top: 8px !important;
+  margin-bottom: 8px;
+}
+.modal .modal-body p {
+  font-size: inherit;
+}
 .modal .modal-body .alert {
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -3428,6 +3599,54 @@ div.menu-links-header .menu-links-row {
 .modal .modal-body .alert:last-child {
   margin-bottom: 0;
 }
+.modal .modal-body .uploaded-image-preview {
+  width: 100%;
+}
+.modal .nav {
+  background-color: transparent;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  padding: 20px 0 0;
+}
+.modal .nav > li {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: -1px;
+}
+.modal .nav > li.active > a,
+.modal .nav > li > a.active {
+  background-color: transparent;
+  color: $quaternary;
+}
+.modal .nav > li.active > a:focus,
+.modal .nav > li > a.active:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  color: $primary;
+}
+@media (hover: hover) {
+  .modal .nav > li.active > a:hover,
+  .modal .nav > li > a.active:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+    color: $primary;
+  }
+}
+.modal .nav > li.active > a::before,
+.modal .nav > li > a.active::before {
+  background-color: $quaternary;
+  border-radius: 0;
+  height: 2px;
+  opacity: 1;
+  top: auto;
+}
+.modal .nav > li > a {
+  border-radius: 2px 2px 0 0;
+}
 
 .modal-backdrop {
   background-color: rgba(0, 0, 0, 0.38);
@@ -3437,7 +3656,7 @@ div.menu-links-header .menu-links-row {
 .modal-body {
   padding: 24px 24px;
 }
-.modal-header ~ .modal-body {
+.modal-header ~ .modal-body, .modal-header ~ div > .modal-body {
   padding-top: 20px;
 }
 
@@ -3512,6 +3731,52 @@ body .bootbox.modal .modal-footer a.btn-primary {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
+}
+
+.modal-tab {
+  right: 24px;
+  left: 24px;
+  width: auto;
+}
+
+.permission-list {
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  margin: 0 -24px;
+}
+.permission-list:empty {
+  display: none;
+}
+.permission-list:first-child {
+  border-top: 0;
+}
+.permission-list:first-child li:first-child {
+  padding-top: 0;
+}
+.permission-list li {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 20px 24px;
+}
+.permission-list li > :last-child {
+  margin-left: auto;
+}
+.permission-list .fa-times-circle {
+  margin-left: 0;
+}
+.permission-list .name {
+  margin-right: 24px;
+}
+.permission-list .permission {
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 @-webkit-keyframes fade {

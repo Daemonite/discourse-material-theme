@@ -1,3 +1,4 @@
+.badge-group,
 .badge-notification {
   background-color: color-chooser($chip-bg-dark, $chip-bg-light);
   border-radius: 1em;
@@ -9,6 +10,12 @@
   &:hover {
     color: unquote('$primary');
   }
+}
+
+.badge-group {
+  border: 0;
+  box-shadow: none;
+  text-shadow: none;
 }
 
 .badge-wrapper {
