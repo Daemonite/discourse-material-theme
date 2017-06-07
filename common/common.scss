@@ -1570,33 +1570,10 @@ div.poll .poll-voters-list {
   margin-top: 4px;
 }
 div.poll .results .bar {
-  background-color: $tertiary;
-  border-radius: 0 2px 2px 0;
-  height: 4px;
-  position: relative;
   background-color: $primary;
 }
 div.poll .results .bar-back {
-  background-color: $tertiary;
-  border-radius: 2px;
-  height: 4px;
-  position: relative;
   background-color: $primary;
-}
-div.poll .results .bar-back::before {
-  background-color: inherit;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  border-radius: 2px;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 div.poll .results .chosen .bar,
 div.poll .results .chosen .bar-back {
@@ -4797,6 +4774,35 @@ nav.post-controls .show-replies i {
 }
 #topic-title .topic-statuses:empty {
   display: none;
+}
+
+div.poll .results .bar {
+  background-color: $tertiary;
+  border-radius: 0 2px 2px 0;
+  height: 4px;
+  position: relative;
+}
+
+div.poll .results .bar-back {
+  background-color: $tertiary;
+  border-radius: 2px;
+  height: 4px;
+  position: relative;
+}
+div.poll .results .bar-back::before {
+  background-color: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  border-radius: 2px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 #reply-control {

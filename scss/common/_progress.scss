@@ -1,11 +1,11 @@
-@mixin progress-bar {
+%progress-bar {
   background-color: $progress-bg;
   border-radius: 0 2px 2px 0;
   height: $progress-height;
   position: relative;
 }
 
-@mixin progress-base {
+%progress-base {
   background-color: $progress-bg;
   border-radius: 2px;
   height: $progress-height;

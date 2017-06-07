@@ -206,13 +206,13 @@ div {
 
     .results {
       .bar {
-        @include progress-bar;
+        @extend %progress-bar;
 
         background-color: $card-color;
       }
 
       .bar-back {
-        @include progress-base;
+        @extend %progress-base;
 
         background-color: $card-color;
       }
