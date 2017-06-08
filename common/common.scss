@@ -19,7 +19,7 @@
 }
 
 blockquote::after, blockquote::before, aside.quote .quote-controls .back::before,
-aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select2-container a.select2-choice abbr::before, .select2-container a.select2-choice .select2-arrow b::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-asterisk::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, nav.post-controls button .read-icon::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before {
+aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select2-container a.select2-choice abbr::before, .select2-container a.select2-choice .select2-arrow b::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-asterisk::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tasks::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggler::before, #reply-control .toggle-preview::before, nav.post-controls button .read-icon::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -87,10 +87,6 @@ strong {
 }
 
 blockquote {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
   background-color: color-chooser(#212121, #f5f5f5);
   border-left: 0;
   border-radius: 2px;
@@ -145,46 +141,83 @@ h6 {
   margin-bottom: 8px;
 }
 
-h1 {
+h1,
+#topic-title h1 {
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.066667;
 }
 
-h2 {
+h2,
+.user-main .about.collapsed-info .details .primary h1,
+.user-main .about .details h1,
+.badge-card .badge-contents .badge-icon {
   font-size: 34px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.176471;
 }
 
-h3 {
+h3,
+div.poll .poll-info .info-number {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.333333;
 }
 
-h4 {
+h4,
+.modal-header h3,
+#share-link h3,
+.category-boxes h3,
+.category-boxes-with-topics h3,
+#user-card h1 {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.4;
 }
 
-h5 {
+h5,
+blockquote,
+aside.onebox .onebox-body h3,
+aside.onebox .onebox-body h4,
+.user-main .about.collapsed-info .details .primary h2,
+.user-main .about .details h2,
+.badge-card .badge-contents .badge-info h3 {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5;
 }
 
-h6 {
+h6,
+div.poll .poll-info .info-text,
+.small-action .small-action-desc,
+.topic-map h3,
+.category-list tbody .category h3,
+.settings .setting h3 {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.428571;
+}
+
+.edit-topic-timer-modal .auto-update-input .topic-status-info h3, #user-card h2, #user-card h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.428571;
+}
+
+body .form-vertical .control-label, .autocomplete ul li a span.name, .select2-drop .category-desc,
+.select2-drop .topic-count, .gap, .topic-map h4, .topic-map .avatars .post-count, .period-chooser h2 .top-date-string, .period-chooser #period-popup ul li .top-date-string, .links-section .domain, .user-main .user-stream .time, .user-preferences .instructions, .admin-contents div.badges .current-badge p.help, .content-list h3, .content-list ul li a span.count, .customize .status-message, .settings .setting .desc,
+.settings .setting .validation-error {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
 }
 
 ol,
@@ -210,7 +243,7 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 0.857143 em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -373,15 +406,15 @@ div.poll .poll-buttons a,
 .pika-button,
 .pika-next,
 .pika-prev,
+#reply-control .contents .submit-panel .cancel,
+#reply-control .toggle-preview,
+#share-link .reply-as-new-topic a,
 nav.post-controls button,
 nav.post-controls .show-replies,
 .small-action button,
 .topic-map .buttons .btn,
 .topic-map .link-summary a,
 .topic-meta-data .post-info a,
-#reply-control .contents .submit-panel .cancel,
-#reply-control .toggle-preview,
-#share-link .reply-as-new-topic a,
 .period-chooser button,
 .stats-section li.linked-stat a,
 .user-main .about .controls a {
@@ -420,15 +453,15 @@ div.poll .poll-buttons a:focus,
 .pika-button:focus,
 .pika-next:focus,
 .pika-prev:focus,
+#reply-control .contents .submit-panel .cancel:focus,
+#reply-control .toggle-preview:focus,
+#share-link .reply-as-new-topic a:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
 .small-action button:focus,
 .topic-map .buttons .btn:focus,
 .topic-map .link-summary a:focus,
 .topic-meta-data .post-info a:focus,
-#reply-control .contents .submit-panel .cancel:focus,
-#reply-control .toggle-preview:focus,
-#share-link .reply-as-new-topic a:focus,
 .period-chooser button:focus,
 .stats-section li.linked-stat a:focus,
 .user-main .about .controls a:focus {
@@ -447,15 +480,15 @@ nav.post-controls .show-replies:focus,
   .pika-button:hover,
   .pika-next:hover,
   .pika-prev:hover,
+  #reply-control .contents .submit-panel .cancel:hover,
+  #reply-control .toggle-preview:hover,
+  #share-link .reply-as-new-topic a:hover,
   nav.post-controls button:hover,
   nav.post-controls .show-replies:hover,
   .small-action button:hover,
   .topic-map .buttons .btn:hover,
   .topic-map .link-summary a:hover,
   .topic-meta-data .post-info a:hover,
-  #reply-control .contents .submit-panel .cancel:hover,
-  #reply-control .toggle-preview:hover,
-  #share-link .reply-as-new-topic a:hover,
   .period-chooser button:hover,
   .stats-section li.linked-stat a:hover,
   .user-main .about .controls a:hover {
@@ -474,15 +507,15 @@ div.poll .poll-buttons a:active,
 .pika-button:active,
 .pika-next:active,
 .pika-prev:active,
+#reply-control .contents .submit-panel .cancel:active,
+#reply-control .toggle-preview:active,
+#share-link .reply-as-new-topic a:active,
 nav.post-controls button:active,
 nav.post-controls .show-replies:active,
 .small-action button:active,
 .topic-map .buttons .btn:active,
 .topic-map .link-summary a:active,
 .topic-meta-data .post-info a:active,
-#reply-control .contents .submit-panel .cancel:active,
-#reply-control .toggle-preview:active,
-#share-link .reply-as-new-topic a:active,
 .period-chooser button:active,
 .stats-section li.linked-stat a:active,
 .user-main .about .controls a:active {
@@ -500,15 +533,15 @@ div.poll .poll-buttons a:focus,
 .pika-button:focus,
 .pika-next:focus,
 .pika-prev:focus,
+#reply-control .contents .submit-panel .cancel:focus,
+#reply-control .toggle-preview:focus,
+#share-link .reply-as-new-topic a:focus,
 nav.post-controls button:focus,
 nav.post-controls .show-replies:focus,
 .small-action button:focus,
 .topic-map .buttons .btn:focus,
 .topic-map .link-summary a:focus,
 .topic-meta-data .post-info a:focus,
-#reply-control .contents .submit-panel .cancel:focus,
-#reply-control .toggle-preview:focus,
-#share-link .reply-as-new-topic a:focus,
 .period-chooser button:focus,
 .stats-section li.linked-stat a:focus,
 .user-main .about .controls a:focus {
@@ -525,15 +558,15 @@ div.poll .poll-buttons a[disabled],
 [disabled].pika-button,
 [disabled].pika-next,
 [disabled].pika-prev,
+#reply-control .contents .submit-panel [disabled].cancel,
+#reply-control [disabled].toggle-preview,
+#share-link .reply-as-new-topic a[disabled],
 nav.post-controls button[disabled],
 nav.post-controls [disabled].show-replies,
 .small-action button[disabled],
 .topic-map .buttons [disabled].btn,
 .topic-map .link-summary a[disabled],
 .topic-meta-data .post-info a[disabled],
-#reply-control .contents .submit-panel [disabled].cancel,
-#reply-control [disabled].toggle-preview,
-#share-link .reply-as-new-topic a[disabled],
 .period-chooser button[disabled],
 .stats-section li.linked-stat a[disabled],
 .user-main .about .controls a[disabled],
@@ -547,15 +580,15 @@ div.poll .poll-buttons a.disabled,
 .disabled.pika-button,
 .disabled.pika-next,
 .disabled.pika-prev,
+#reply-control .contents .submit-panel .disabled.cancel,
+#reply-control .disabled.toggle-preview,
+#share-link .reply-as-new-topic a.disabled,
 nav.post-controls button.disabled,
 nav.post-controls .disabled.show-replies,
 .small-action button.disabled,
 .topic-map .buttons .disabled.btn,
 .topic-map .link-summary a.disabled,
 .topic-meta-data .post-info a.disabled,
-#reply-control .contents .submit-panel .disabled.cancel,
-#reply-control .disabled.toggle-preview,
-#share-link .reply-as-new-topic a.disabled,
 .period-chooser button.disabled,
 .stats-section li.linked-stat a.disabled,
 .user-main .about .controls a.disabled {
@@ -573,15 +606,15 @@ div.poll .poll-buttons a.btn-danger,
 .btn-danger.pika-button,
 .btn-danger.pika-next,
 .btn-danger.pika-prev,
+#reply-control .contents .submit-panel .btn-danger.cancel,
+#reply-control .btn-danger.toggle-preview,
+#share-link .reply-as-new-topic a.btn-danger,
 nav.post-controls button.btn-danger,
 nav.post-controls .btn-danger.show-replies,
 .small-action button.btn-danger,
 .topic-map .buttons .btn-danger.btn,
 .topic-map .link-summary a.btn-danger,
 .topic-meta-data .post-info a.btn-danger,
-#reply-control .contents .submit-panel .btn-danger.cancel,
-#reply-control .btn-danger.toggle-preview,
-#share-link .reply-as-new-topic a.btn-danger,
 .period-chooser button.btn-danger,
 .stats-section li.linked-stat a.btn-danger,
 .user-main .about .controls a.btn-danger,
@@ -595,15 +628,15 @@ div.poll .poll-buttons a.cancel,
 .cancel.pika-button,
 .cancel.pika-next,
 .cancel.pika-prev,
+#reply-control .contents .submit-panel .cancel,
+#reply-control .cancel.toggle-preview,
+#share-link .reply-as-new-topic a.cancel,
 nav.post-controls button.cancel,
 nav.post-controls .cancel.show-replies,
 .small-action button.cancel,
 .topic-map .buttons .cancel.btn,
 .topic-map .link-summary a.cancel,
 .topic-meta-data .post-info a.cancel,
-#reply-control .contents .submit-panel .cancel,
-#reply-control .cancel.toggle-preview,
-#share-link .reply-as-new-topic a.cancel,
 .period-chooser button.cancel,
 .stats-section li.linked-stat a.cancel,
 .user-main .about .controls a.cancel {
@@ -621,15 +654,15 @@ div.poll .poll-buttons a.btn-danger:focus,
 .btn-danger.pika-button:focus,
 .btn-danger.pika-next:focus,
 .btn-danger.pika-prev:focus,
+#reply-control .contents .submit-panel .btn-danger.cancel:focus,
+#reply-control .btn-danger.toggle-preview:focus,
+#share-link .reply-as-new-topic a.btn-danger:focus,
 nav.post-controls button.btn-danger:focus,
 nav.post-controls .btn-danger.show-replies:focus,
 .small-action button.btn-danger:focus,
 .topic-map .buttons .btn-danger.btn:focus,
 .topic-map .link-summary a.btn-danger:focus,
 .topic-meta-data .post-info a.btn-danger:focus,
-#reply-control .contents .submit-panel .btn-danger.cancel:focus,
-#reply-control .btn-danger.toggle-preview:focus,
-#share-link .reply-as-new-topic a.btn-danger:focus,
 .period-chooser button.btn-danger:focus,
 .stats-section li.linked-stat a.btn-danger:focus,
 .user-main .about .controls a.btn-danger:focus,
@@ -643,15 +676,15 @@ div.poll .poll-buttons a.cancel:focus,
 .cancel.pika-button:focus,
 .cancel.pika-next:focus,
 .cancel.pika-prev:focus,
+#reply-control .contents .submit-panel .cancel:focus,
+#reply-control .cancel.toggle-preview:focus,
+#share-link .reply-as-new-topic a.cancel:focus,
 nav.post-controls button.cancel:focus,
 nav.post-controls .cancel.show-replies:focus,
 .small-action button.cancel:focus,
 .topic-map .buttons .cancel.btn:focus,
 .topic-map .link-summary a.cancel:focus,
 .topic-meta-data .post-info a.cancel:focus,
-#reply-control .contents .submit-panel .cancel:focus,
-#reply-control .cancel.toggle-preview:focus,
-#share-link .reply-as-new-topic a.cancel:focus,
 .period-chooser button.cancel:focus,
 .stats-section li.linked-stat a.cancel:focus,
 .user-main .about .controls a.cancel:focus {
@@ -670,15 +703,15 @@ nav.post-controls .cancel.show-replies:focus,
   .btn-danger.pika-button:hover,
   .btn-danger.pika-next:hover,
   .btn-danger.pika-prev:hover,
+  #reply-control .contents .submit-panel .btn-danger.cancel:hover,
+  #reply-control .btn-danger.toggle-preview:hover,
+  #share-link .reply-as-new-topic a.btn-danger:hover,
   nav.post-controls button.btn-danger:hover,
   nav.post-controls .btn-danger.show-replies:hover,
   .small-action button.btn-danger:hover,
   .topic-map .buttons .btn-danger.btn:hover,
   .topic-map .link-summary a.btn-danger:hover,
   .topic-meta-data .post-info a.btn-danger:hover,
-  #reply-control .contents .submit-panel .btn-danger.cancel:hover,
-  #reply-control .btn-danger.toggle-preview:hover,
-  #share-link .reply-as-new-topic a.btn-danger:hover,
   .period-chooser button.btn-danger:hover,
   .stats-section li.linked-stat a.btn-danger:hover,
   .user-main .about .controls a.btn-danger:hover,
@@ -692,15 +725,15 @@ nav.post-controls .cancel.show-replies:focus,
   .cancel.pika-button:hover,
   .cancel.pika-next:hover,
   .cancel.pika-prev:hover,
+  #reply-control .contents .submit-panel .cancel:hover,
+  #reply-control .cancel.toggle-preview:hover,
+  #share-link .reply-as-new-topic a.cancel:hover,
   nav.post-controls button.cancel:hover,
   nav.post-controls .cancel.show-replies:hover,
   .small-action button.cancel:hover,
   .topic-map .buttons .cancel.btn:hover,
   .topic-map .link-summary a.cancel:hover,
   .topic-meta-data .post-info a.cancel:hover,
-  #reply-control .contents .submit-panel .cancel:hover,
-  #reply-control .cancel.toggle-preview:hover,
-  #share-link .reply-as-new-topic a.cancel:hover,
   .period-chooser button.cancel:hover,
   .stats-section li.linked-stat a.cancel:hover,
   .user-main .about .controls a.cancel:hover {
@@ -719,15 +752,15 @@ div.poll .poll-buttons a.btn-primary,
 .btn-primary.pika-button,
 .btn-primary.pika-next,
 .btn-primary.pika-prev,
+#reply-control .contents .submit-panel .btn-primary.cancel,
+#reply-control .btn-primary.toggle-preview,
+#share-link .reply-as-new-topic a.btn-primary,
 nav.post-controls button.btn-primary,
 nav.post-controls .btn-primary.show-replies,
 .small-action button.btn-primary,
 .topic-map .buttons .btn-primary.btn,
 .topic-map .link-summary a.btn-primary,
 .topic-meta-data .post-info a.btn-primary,
-#reply-control .contents .submit-panel .btn-primary.cancel,
-#reply-control .btn-primary.toggle-preview,
-#share-link .reply-as-new-topic a.btn-primary,
 .period-chooser button.btn-primary,
 .stats-section li.linked-stat a.btn-primary,
 .user-main .about .controls a.btn-primary {
@@ -745,15 +778,15 @@ div.poll .poll-buttons a.btn-primary:focus,
 .btn-primary.pika-button:focus,
 .btn-primary.pika-next:focus,
 .btn-primary.pika-prev:focus,
+#reply-control .contents .submit-panel .btn-primary.cancel:focus,
+#reply-control .btn-primary.toggle-preview:focus,
+#share-link .reply-as-new-topic a.btn-primary:focus,
 nav.post-controls button.btn-primary:focus,
 nav.post-controls .btn-primary.show-replies:focus,
 .small-action button.btn-primary:focus,
 .topic-map .buttons .btn-primary.btn:focus,
 .topic-map .link-summary a.btn-primary:focus,
 .topic-meta-data .post-info a.btn-primary:focus,
-#reply-control .contents .submit-panel .btn-primary.cancel:focus,
-#reply-control .btn-primary.toggle-preview:focus,
-#share-link .reply-as-new-topic a.btn-primary:focus,
 .period-chooser button.btn-primary:focus,
 .stats-section li.linked-stat a.btn-primary:focus,
 .user-main .about .controls a.btn-primary:focus {
@@ -772,15 +805,15 @@ nav.post-controls .btn-primary.show-replies:focus,
   .btn-primary.pika-button:hover,
   .btn-primary.pika-next:hover,
   .btn-primary.pika-prev:hover,
+  #reply-control .contents .submit-panel .btn-primary.cancel:hover,
+  #reply-control .btn-primary.toggle-preview:hover,
+  #share-link .reply-as-new-topic a.btn-primary:hover,
   nav.post-controls button.btn-primary:hover,
   nav.post-controls .btn-primary.show-replies:hover,
   .small-action button.btn-primary:hover,
   .topic-map .buttons .btn-primary.btn:hover,
   .topic-map .link-summary a.btn-primary:hover,
   .topic-meta-data .post-info a.btn-primary:hover,
-  #reply-control .contents .submit-panel .btn-primary.cancel:hover,
-  #reply-control .btn-primary.toggle-preview:hover,
-  #share-link .reply-as-new-topic a.btn-primary:hover,
   .period-chooser button.btn-primary:hover,
   .stats-section li.linked-stat a.btn-primary:hover,
   .user-main .about .controls a.btn-primary:hover {
@@ -799,15 +832,15 @@ div.poll .poll-buttons a.btn-success,
 .btn-success.pika-button,
 .btn-success.pika-next,
 .btn-success.pika-prev,
+#reply-control .contents .submit-panel .btn-success.cancel,
+#reply-control .btn-success.toggle-preview,
+#share-link .reply-as-new-topic a.btn-success,
 nav.post-controls button.btn-success,
 nav.post-controls .btn-success.show-replies,
 .small-action button.btn-success,
 .topic-map .buttons .btn-success.btn,
 .topic-map .link-summary a.btn-success,
 .topic-meta-data .post-info a.btn-success,
-#reply-control .contents .submit-panel .btn-success.cancel,
-#reply-control .btn-success.toggle-preview,
-#share-link .reply-as-new-topic a.btn-success,
 .period-chooser button.btn-success,
 .stats-section li.linked-stat a.btn-success,
 .user-main .about .controls a.btn-success,
@@ -821,15 +854,15 @@ div.poll .poll-buttons a.ok,
 .ok.pika-button,
 .ok.pika-next,
 .ok.pika-prev,
+#reply-control .contents .submit-panel .ok.cancel,
+#reply-control .ok.toggle-preview,
+#share-link .reply-as-new-topic a.ok,
 nav.post-controls button.ok,
 nav.post-controls .ok.show-replies,
 .small-action button.ok,
 .topic-map .buttons .ok.btn,
 .topic-map .link-summary a.ok,
 .topic-meta-data .post-info a.ok,
-#reply-control .contents .submit-panel .ok.cancel,
-#reply-control .ok.toggle-preview,
-#share-link .reply-as-new-topic a.ok,
 .period-chooser button.ok,
 .stats-section li.linked-stat a.ok,
 .user-main .about .controls a.ok {
@@ -847,15 +880,15 @@ div.poll .poll-buttons a.btn-success:focus,
 .btn-success.pika-button:focus,
 .btn-success.pika-next:focus,
 .btn-success.pika-prev:focus,
+#reply-control .contents .submit-panel .btn-success.cancel:focus,
+#reply-control .btn-success.toggle-preview:focus,
+#share-link .reply-as-new-topic a.btn-success:focus,
 nav.post-controls button.btn-success:focus,
 nav.post-controls .btn-success.show-replies:focus,
 .small-action button.btn-success:focus,
 .topic-map .buttons .btn-success.btn:focus,
 .topic-map .link-summary a.btn-success:focus,
 .topic-meta-data .post-info a.btn-success:focus,
-#reply-control .contents .submit-panel .btn-success.cancel:focus,
-#reply-control .btn-success.toggle-preview:focus,
-#share-link .reply-as-new-topic a.btn-success:focus,
 .period-chooser button.btn-success:focus,
 .stats-section li.linked-stat a.btn-success:focus,
 .user-main .about .controls a.btn-success:focus,
@@ -869,15 +902,15 @@ div.poll .poll-buttons a.ok:focus,
 .ok.pika-button:focus,
 .ok.pika-next:focus,
 .ok.pika-prev:focus,
+#reply-control .contents .submit-panel .ok.cancel:focus,
+#reply-control .ok.toggle-preview:focus,
+#share-link .reply-as-new-topic a.ok:focus,
 nav.post-controls button.ok:focus,
 nav.post-controls .ok.show-replies:focus,
 .small-action button.ok:focus,
 .topic-map .buttons .ok.btn:focus,
 .topic-map .link-summary a.ok:focus,
 .topic-meta-data .post-info a.ok:focus,
-#reply-control .contents .submit-panel .ok.cancel:focus,
-#reply-control .ok.toggle-preview:focus,
-#share-link .reply-as-new-topic a.ok:focus,
 .period-chooser button.ok:focus,
 .stats-section li.linked-stat a.ok:focus,
 .user-main .about .controls a.ok:focus {
@@ -896,15 +929,15 @@ nav.post-controls .ok.show-replies:focus,
   .btn-success.pika-button:hover,
   .btn-success.pika-next:hover,
   .btn-success.pika-prev:hover,
+  #reply-control .contents .submit-panel .btn-success.cancel:hover,
+  #reply-control .btn-success.toggle-preview:hover,
+  #share-link .reply-as-new-topic a.btn-success:hover,
   nav.post-controls button.btn-success:hover,
   nav.post-controls .btn-success.show-replies:hover,
   .small-action button.btn-success:hover,
   .topic-map .buttons .btn-success.btn:hover,
   .topic-map .link-summary a.btn-success:hover,
   .topic-meta-data .post-info a.btn-success:hover,
-  #reply-control .contents .submit-panel .btn-success.cancel:hover,
-  #reply-control .btn-success.toggle-preview:hover,
-  #share-link .reply-as-new-topic a.btn-success:hover,
   .period-chooser button.btn-success:hover,
   .stats-section li.linked-stat a.btn-success:hover,
   .user-main .about .controls a.btn-success:hover,
@@ -918,15 +951,15 @@ nav.post-controls .ok.show-replies:focus,
   .ok.pika-button:hover,
   .ok.pika-next:hover,
   .ok.pika-prev:hover,
+  #reply-control .contents .submit-panel .ok.cancel:hover,
+  #reply-control .ok.toggle-preview:hover,
+  #share-link .reply-as-new-topic a.ok:hover,
   nav.post-controls button.ok:hover,
   nav.post-controls .ok.show-replies:hover,
   .small-action button.ok:hover,
   .topic-map .buttons .ok.btn:hover,
   .topic-map .link-summary a.ok:hover,
   .topic-meta-data .post-info a.ok:hover,
-  #reply-control .contents .submit-panel .ok.cancel:hover,
-  #reply-control .ok.toggle-preview:hover,
-  #share-link .reply-as-new-topic a.ok:hover,
   .period-chooser button.ok:hover,
   .stats-section li.linked-stat a.ok:hover,
   .user-main .about .controls a.ok:hover {
@@ -936,190 +969,190 @@ nav.post-controls .ok.show-replies:focus,
 }
 
 .image-upload-controls .btn, .select2-container a.select2-choice, .list-controls .btn, .list-controls .category-breadcrumb li > a.badge-category, .edit-category-modal .edit-category-tab-general section.field > .btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn, #topic-footer-buttons div > button.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn, #reply-control .contents .submit-panel .btn, .timeline-container .topic-timeline div > button.btn,
+.timeline-container .topic-timeline span > button.btn, #topic-footer-buttons div > button.btn,
 #topic-footer-buttons span > button.btn,
-#topic-footer-buttons > button.btn, #reply-control .contents .submit-panel .btn, .timeline-container .topic-timeline div > button.btn,
-.timeline-container .topic-timeline span > button.btn, .period-chooser button, .top-title-buttons button, .admin-contents .btn {
+#topic-footer-buttons > button.btn, .period-chooser button, .top-title-buttons button, .admin-contents .btn {
   background-color: color-chooser($tertiary, #ffffff);
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
 .image-upload-controls .btn:focus, .select2-container a.select2-choice:focus, .list-controls .btn:focus, .list-controls .category-breadcrumb li > a.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn:focus, #topic-footer-buttons div > button.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn:focus, #reply-control .contents .submit-panel .btn:focus, .timeline-container .topic-timeline div > button.btn:focus,
+.timeline-container .topic-timeline span > button.btn:focus, #topic-footer-buttons div > button.btn:focus,
 #topic-footer-buttons span > button.btn:focus,
-#topic-footer-buttons > button.btn:focus, #reply-control .contents .submit-panel .btn:focus, .timeline-container .topic-timeline div > button.btn:focus,
-.timeline-container .topic-timeline span > button.btn:focus, .period-chooser button:focus, .top-title-buttons button:focus, .admin-contents .btn:focus {
+#topic-footer-buttons > button.btn:focus, .period-chooser button:focus, .top-title-buttons button:focus, .admin-contents .btn:focus {
   background-color: color-chooser($tertiary, #ffffff);
 }
 .image-upload-controls .btn:focus::before, .select2-container a.select2-choice:focus::before, .list-controls .btn:focus::before, .list-controls .category-breadcrumb li > a.badge-category:focus::before, .edit-category-modal .edit-category-tab-general section.field > .btn:focus::before,
-.edit-category-modal .edit-category-tab-security section.field > .btn:focus::before, #topic-footer-buttons div > button.btn:focus::before,
+.edit-category-modal .edit-category-tab-security section.field > .btn:focus::before, #reply-control .contents .submit-panel .btn:focus::before, .timeline-container .topic-timeline div > button.btn:focus::before,
+.timeline-container .topic-timeline span > button.btn:focus::before, #topic-footer-buttons div > button.btn:focus::before,
 #topic-footer-buttons span > button.btn:focus::before,
-#topic-footer-buttons > button.btn:focus::before, #reply-control .contents .submit-panel .btn:focus::before, .timeline-container .topic-timeline div > button.btn:focus::before,
-.timeline-container .topic-timeline span > button.btn:focus::before, .period-chooser button:focus::before, .top-title-buttons button:focus::before, .admin-contents .btn:focus::before {
+#topic-footer-buttons > button.btn:focus::before, .period-chooser button:focus::before, .top-title-buttons button:focus::before, .admin-contents .btn:focus::before {
   opacity: 1;
 }
 @media (hover: hover) {
   .image-upload-controls .btn:hover, .select2-container a.select2-choice:hover, .list-controls .btn:hover, .list-controls .category-breadcrumb li > a.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
-  .edit-category-modal .edit-category-tab-security section.field > .btn:hover, #topic-footer-buttons div > button.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .btn:hover, #reply-control .contents .submit-panel .btn:hover, .timeline-container .topic-timeline div > button.btn:hover,
+  .timeline-container .topic-timeline span > button.btn:hover, #topic-footer-buttons div > button.btn:hover,
   #topic-footer-buttons span > button.btn:hover,
-  #topic-footer-buttons > button.btn:hover, #reply-control .contents .submit-panel .btn:hover, .timeline-container .topic-timeline div > button.btn:hover,
-  .timeline-container .topic-timeline span > button.btn:hover, .period-chooser button:hover, .top-title-buttons button:hover, .admin-contents .btn:hover {
+  #topic-footer-buttons > button.btn:hover, .period-chooser button:hover, .top-title-buttons button:hover, .admin-contents .btn:hover {
     background-color: color-chooser($tertiary, #ffffff);
   }
   .image-upload-controls .btn:hover::before, .select2-container a.select2-choice:hover::before, .list-controls .btn:hover::before, .list-controls .category-breadcrumb li > a.badge-category:hover::before, .edit-category-modal .edit-category-tab-general section.field > .btn:hover::before,
-  .edit-category-modal .edit-category-tab-security section.field > .btn:hover::before, #topic-footer-buttons div > button.btn:hover::before,
+  .edit-category-modal .edit-category-tab-security section.field > .btn:hover::before, #reply-control .contents .submit-panel .btn:hover::before, .timeline-container .topic-timeline div > button.btn:hover::before,
+  .timeline-container .topic-timeline span > button.btn:hover::before, #topic-footer-buttons div > button.btn:hover::before,
   #topic-footer-buttons span > button.btn:hover::before,
-  #topic-footer-buttons > button.btn:hover::before, #reply-control .contents .submit-panel .btn:hover::before, .timeline-container .topic-timeline div > button.btn:hover::before,
-  .timeline-container .topic-timeline span > button.btn:hover::before, .period-chooser button:hover::before, .top-title-buttons button:hover::before, .admin-contents .btn:hover::before {
+  #topic-footer-buttons > button.btn:hover::before, .period-chooser button:hover::before, .top-title-buttons button:hover::before, .admin-contents .btn:hover::before {
     opacity: 1;
   }
 }
 .image-upload-controls .btn:active, .select2-container a.select2-choice:active, .list-controls .btn:active, .list-controls .category-breadcrumb li > a.badge-category:active, .edit-category-modal .edit-category-tab-general section.field > .btn:active,
-.edit-category-modal .edit-category-tab-security section.field > .btn:active, #topic-footer-buttons div > button.btn:active,
+.edit-category-modal .edit-category-tab-security section.field > .btn:active, #reply-control .contents .submit-panel .btn:active, .timeline-container .topic-timeline div > button.btn:active,
+.timeline-container .topic-timeline span > button.btn:active, #topic-footer-buttons div > button.btn:active,
 #topic-footer-buttons span > button.btn:active,
-#topic-footer-buttons > button.btn:active, #reply-control .contents .submit-panel .btn:active, .timeline-container .topic-timeline div > button.btn:active,
-.timeline-container .topic-timeline span > button.btn:active, .period-chooser button:active, .top-title-buttons button:active, .admin-contents .btn:active {
+#topic-footer-buttons > button.btn:active, .period-chooser button:active, .top-title-buttons button:active, .admin-contents .btn:active {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
 .image-upload-controls .btn:active::before, .select2-container a.select2-choice:active::before, .list-controls .btn:active::before, .list-controls .category-breadcrumb li > a.badge-category:active::before, .edit-category-modal .edit-category-tab-general section.field > .btn:active::before,
-.edit-category-modal .edit-category-tab-security section.field > .btn:active::before, #topic-footer-buttons div > button.btn:active::before,
+.edit-category-modal .edit-category-tab-security section.field > .btn:active::before, #reply-control .contents .submit-panel .btn:active::before, .timeline-container .topic-timeline div > button.btn:active::before,
+.timeline-container .topic-timeline span > button.btn:active::before, #topic-footer-buttons div > button.btn:active::before,
 #topic-footer-buttons span > button.btn:active::before,
-#topic-footer-buttons > button.btn:active::before, #reply-control .contents .submit-panel .btn:active::before, .timeline-container .topic-timeline div > button.btn:active::before,
-.timeline-container .topic-timeline span > button.btn:active::before, .period-chooser button:active::before, .top-title-buttons button:active::before, .admin-contents .btn:active::before {
+#topic-footer-buttons > button.btn:active::before, .period-chooser button:active::before, .top-title-buttons button:active::before, .admin-contents .btn:active::before {
   opacity: 1;
 }
 .image-upload-controls [disabled].btn, .select2-container a[disabled].select2-choice, .list-controls [disabled].btn, .list-controls .category-breadcrumb li > a[disabled].badge-category, .edit-category-modal .edit-category-tab-general section.field > [disabled].btn,
-.edit-category-modal .edit-category-tab-security section.field > [disabled].btn, #topic-footer-buttons div > button[disabled].btn,
+.edit-category-modal .edit-category-tab-security section.field > [disabled].btn, #reply-control .contents .submit-panel [disabled].btn, .timeline-container .topic-timeline div > button[disabled].btn,
+.timeline-container .topic-timeline span > button[disabled].btn, #topic-footer-buttons div > button[disabled].btn,
 #topic-footer-buttons span > button[disabled].btn,
-#topic-footer-buttons > button[disabled].btn, #reply-control .contents .submit-panel [disabled].btn, .timeline-container .topic-timeline div > button[disabled].btn,
-.timeline-container .topic-timeline span > button[disabled].btn, .period-chooser button[disabled], .top-title-buttons button[disabled], .admin-contents [disabled].btn, .image-upload-controls .disabled.btn, .select2-container a.disabled.select2-choice, .list-controls .disabled.btn, .list-controls .category-breadcrumb li > a.disabled.badge-category, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
-.edit-category-modal .edit-category-tab-security section.field > .disabled.btn, #topic-footer-buttons div > button.disabled.btn,
+#topic-footer-buttons > button[disabled].btn, .period-chooser button[disabled], .top-title-buttons button[disabled], .admin-contents [disabled].btn, .image-upload-controls .disabled.btn, .select2-container a.disabled.select2-choice, .list-controls .disabled.btn, .list-controls .category-breadcrumb li > a.disabled.badge-category, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
+.edit-category-modal .edit-category-tab-security section.field > .disabled.btn, #reply-control .contents .submit-panel .disabled.btn, .timeline-container .topic-timeline div > button.disabled.btn,
+.timeline-container .topic-timeline span > button.disabled.btn, #topic-footer-buttons div > button.disabled.btn,
 #topic-footer-buttons span > button.disabled.btn,
-#topic-footer-buttons > button.disabled.btn, #reply-control .contents .submit-panel .disabled.btn, .timeline-container .topic-timeline div > button.disabled.btn,
-.timeline-container .topic-timeline span > button.disabled.btn, .period-chooser button.disabled, .top-title-buttons button.disabled, .admin-contents .disabled.btn {
+#topic-footer-buttons > button.disabled.btn, .period-chooser button.disabled, .top-title-buttons button.disabled, .admin-contents .disabled.btn {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 .image-upload-controls [disabled].btn::before, .select2-container a[disabled].select2-choice::before, .list-controls [disabled].btn::before, .list-controls .category-breadcrumb li > a[disabled].badge-category::before, .edit-category-modal .edit-category-tab-general section.field > [disabled].btn::before,
-.edit-category-modal .edit-category-tab-security section.field > [disabled].btn::before, #topic-footer-buttons div > button[disabled].btn::before,
+.edit-category-modal .edit-category-tab-security section.field > [disabled].btn::before, #reply-control .contents .submit-panel [disabled].btn::before, .timeline-container .topic-timeline div > button[disabled].btn::before,
+.timeline-container .topic-timeline span > button[disabled].btn::before, #topic-footer-buttons div > button[disabled].btn::before,
 #topic-footer-buttons span > button[disabled].btn::before,
-#topic-footer-buttons > button[disabled].btn::before, #reply-control .contents .submit-panel [disabled].btn::before, .timeline-container .topic-timeline div > button[disabled].btn::before,
-.timeline-container .topic-timeline span > button[disabled].btn::before, .period-chooser button[disabled]::before, .top-title-buttons button[disabled]::before, .admin-contents [disabled].btn::before, .image-upload-controls .disabled.btn::before, .select2-container a.disabled.select2-choice::before, .list-controls .disabled.btn::before, .list-controls .category-breadcrumb li > a.disabled.badge-category::before, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn::before,
-.edit-category-modal .edit-category-tab-security section.field > .disabled.btn::before, #topic-footer-buttons div > button.disabled.btn::before,
+#topic-footer-buttons > button[disabled].btn::before, .period-chooser button[disabled]::before, .top-title-buttons button[disabled]::before, .admin-contents [disabled].btn::before, .image-upload-controls .disabled.btn::before, .select2-container a.disabled.select2-choice::before, .list-controls .disabled.btn::before, .list-controls .category-breadcrumb li > a.disabled.badge-category::before, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn::before,
+.edit-category-modal .edit-category-tab-security section.field > .disabled.btn::before, #reply-control .contents .submit-panel .disabled.btn::before, .timeline-container .topic-timeline div > button.disabled.btn::before,
+.timeline-container .topic-timeline span > button.disabled.btn::before, #topic-footer-buttons div > button.disabled.btn::before,
 #topic-footer-buttons span > button.disabled.btn::before,
-#topic-footer-buttons > button.disabled.btn::before, #reply-control .contents .submit-panel .disabled.btn::before, .timeline-container .topic-timeline div > button.disabled.btn::before,
-.timeline-container .topic-timeline span > button.disabled.btn::before, .period-chooser button.disabled::before, .top-title-buttons button.disabled::before, .admin-contents .disabled.btn::before {
+#topic-footer-buttons > button.disabled.btn::before, .period-chooser button.disabled::before, .top-title-buttons button.disabled::before, .admin-contents .disabled.btn::before {
   display: none;
 }
 .image-upload-controls .btn-danger.btn, .select2-container a.btn-danger.select2-choice, .list-controls .btn-danger.btn, .list-controls .category-breadcrumb li > a.btn-danger.badge-category, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn, #topic-footer-buttons div > button.btn-danger.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn, #reply-control .contents .submit-panel .btn-danger.btn, .timeline-container .topic-timeline div > button.btn-danger.btn,
+.timeline-container .topic-timeline span > button.btn-danger.btn, #topic-footer-buttons div > button.btn-danger.btn,
 #topic-footer-buttons span > button.btn-danger.btn,
-#topic-footer-buttons > button.btn-danger.btn, #reply-control .contents .submit-panel .btn-danger.btn, .timeline-container .topic-timeline div > button.btn-danger.btn,
-.timeline-container .topic-timeline span > button.btn-danger.btn, .period-chooser button.btn-danger, .top-title-buttons button.btn-danger, .admin-contents .btn-danger.btn, .image-upload-controls .cancel.btn, .select2-container a.cancel.select2-choice, .list-controls .cancel.btn, .list-controls .category-breadcrumb li > a.cancel.badge-category, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
-.edit-category-modal .edit-category-tab-security section.field > .cancel.btn, #topic-footer-buttons div > button.cancel.btn,
+#topic-footer-buttons > button.btn-danger.btn, .period-chooser button.btn-danger, .top-title-buttons button.btn-danger, .admin-contents .btn-danger.btn, .image-upload-controls .cancel.btn, .select2-container a.cancel.select2-choice, .list-controls .cancel.btn, .list-controls .category-breadcrumb li > a.cancel.badge-category, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
+.edit-category-modal .edit-category-tab-security section.field > .cancel.btn, #reply-control .contents .submit-panel .cancel.btn, .timeline-container .topic-timeline div > button.cancel.btn,
+.timeline-container .topic-timeline span > button.cancel.btn, #topic-footer-buttons div > button.cancel.btn,
 #topic-footer-buttons span > button.cancel.btn,
-#topic-footer-buttons > button.cancel.btn, #reply-control .contents .submit-panel .cancel.btn, .timeline-container .topic-timeline div > button.cancel.btn,
-.timeline-container .topic-timeline span > button.cancel.btn, .period-chooser button.cancel, .top-title-buttons button.cancel, .admin-contents .cancel.btn {
+#topic-footer-buttons > button.cancel.btn, .period-chooser button.cancel, .top-title-buttons button.cancel, .admin-contents .cancel.btn {
   background-color: $danger;
   color: color-dynamic($danger);
 }
 .image-upload-controls .btn-danger.btn:focus, .select2-container a.btn-danger.select2-choice:focus, .list-controls .btn-danger.btn:focus, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:focus, #reply-control .contents .submit-panel .btn-danger.btn:focus, .timeline-container .topic-timeline div > button.btn-danger.btn:focus,
+.timeline-container .topic-timeline span > button.btn-danger.btn:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
 #topic-footer-buttons span > button.btn-danger.btn:focus,
-#topic-footer-buttons > button.btn-danger.btn:focus, #reply-control .contents .submit-panel .btn-danger.btn:focus, .timeline-container .topic-timeline div > button.btn-danger.btn:focus,
-.timeline-container .topic-timeline span > button.btn-danger.btn:focus, .period-chooser button.btn-danger:focus, .top-title-buttons button.btn-danger:focus, .admin-contents .btn-danger.btn:focus, .image-upload-controls .cancel.btn:focus, .select2-container a.cancel.select2-choice:focus, .list-controls .cancel.btn:focus, .list-controls .category-breadcrumb li > a.cancel.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .cancel.btn:focus, #topic-footer-buttons div > button.cancel.btn:focus,
+#topic-footer-buttons > button.btn-danger.btn:focus, .period-chooser button.btn-danger:focus, .top-title-buttons button.btn-danger:focus, .admin-contents .btn-danger.btn:focus, .image-upload-controls .cancel.btn:focus, .select2-container a.cancel.select2-choice:focus, .list-controls .cancel.btn:focus, .list-controls .category-breadcrumb li > a.cancel.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .cancel.btn:focus, #reply-control .contents .submit-panel .cancel.btn:focus, .timeline-container .topic-timeline div > button.cancel.btn:focus,
+.timeline-container .topic-timeline span > button.cancel.btn:focus, #topic-footer-buttons div > button.cancel.btn:focus,
 #topic-footer-buttons span > button.cancel.btn:focus,
-#topic-footer-buttons > button.cancel.btn:focus, #reply-control .contents .submit-panel .cancel.btn:focus, .timeline-container .topic-timeline div > button.cancel.btn:focus,
-.timeline-container .topic-timeline span > button.cancel.btn:focus, .period-chooser button.cancel:focus, .top-title-buttons button.cancel:focus, .admin-contents .cancel.btn:focus {
+#topic-footer-buttons > button.cancel.btn:focus, .period-chooser button.cancel:focus, .top-title-buttons button.cancel:focus, .admin-contents .cancel.btn:focus {
   background-color: $danger;
   color: color-dynamic($danger);
 }
 @media (hover: hover) {
   .image-upload-controls .btn-danger.btn:hover, .select2-container a.btn-danger.select2-choice:hover, .list-controls .btn-danger.btn:hover, .list-controls .category-breadcrumb li > a.btn-danger.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
-  .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:hover, #reply-control .contents .submit-panel .btn-danger.btn:hover, .timeline-container .topic-timeline div > button.btn-danger.btn:hover,
+  .timeline-container .topic-timeline span > button.btn-danger.btn:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
   #topic-footer-buttons span > button.btn-danger.btn:hover,
-  #topic-footer-buttons > button.btn-danger.btn:hover, #reply-control .contents .submit-panel .btn-danger.btn:hover, .timeline-container .topic-timeline div > button.btn-danger.btn:hover,
-  .timeline-container .topic-timeline span > button.btn-danger.btn:hover, .period-chooser button.btn-danger:hover, .top-title-buttons button.btn-danger:hover, .admin-contents .btn-danger.btn:hover, .image-upload-controls .cancel.btn:hover, .select2-container a.cancel.select2-choice:hover, .list-controls .cancel.btn:hover, .list-controls .category-breadcrumb li > a.cancel.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
-  .edit-category-modal .edit-category-tab-security section.field > .cancel.btn:hover, #topic-footer-buttons div > button.cancel.btn:hover,
+  #topic-footer-buttons > button.btn-danger.btn:hover, .period-chooser button.btn-danger:hover, .top-title-buttons button.btn-danger:hover, .admin-contents .btn-danger.btn:hover, .image-upload-controls .cancel.btn:hover, .select2-container a.cancel.select2-choice:hover, .list-controls .cancel.btn:hover, .list-controls .category-breadcrumb li > a.cancel.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .cancel.btn:hover, #reply-control .contents .submit-panel .cancel.btn:hover, .timeline-container .topic-timeline div > button.cancel.btn:hover,
+  .timeline-container .topic-timeline span > button.cancel.btn:hover, #topic-footer-buttons div > button.cancel.btn:hover,
   #topic-footer-buttons span > button.cancel.btn:hover,
-  #topic-footer-buttons > button.cancel.btn:hover, #reply-control .contents .submit-panel .cancel.btn:hover, .timeline-container .topic-timeline div > button.cancel.btn:hover,
-  .timeline-container .topic-timeline span > button.cancel.btn:hover, .period-chooser button.cancel:hover, .top-title-buttons button.cancel:hover, .admin-contents .cancel.btn:hover {
+  #topic-footer-buttons > button.cancel.btn:hover, .period-chooser button.cancel:hover, .top-title-buttons button.cancel:hover, .admin-contents .cancel.btn:hover {
     background-color: $danger;
     color: color-dynamic($danger);
   }
 }
 .image-upload-controls .btn-primary.btn, .select2-container a.btn-primary.select2-choice, .list-controls .btn-primary.btn, .list-controls .category-breadcrumb li > a.btn-primary.badge-category, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn, #topic-footer-buttons div > button.btn-primary.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn, #reply-control .contents .submit-panel .btn-primary.btn, .timeline-container .topic-timeline div > button.btn-primary.btn,
+.timeline-container .topic-timeline span > button.btn-primary.btn, #topic-footer-buttons div > button.btn-primary.btn,
 #topic-footer-buttons span > button.btn-primary.btn,
-#topic-footer-buttons > button.btn-primary.btn, #reply-control .contents .submit-panel .btn-primary.btn, .timeline-container .topic-timeline div > button.btn-primary.btn,
-.timeline-container .topic-timeline span > button.btn-primary.btn, .period-chooser button.btn-primary, .top-title-buttons button.btn-primary, .admin-contents .btn-primary.btn {
+#topic-footer-buttons > button.btn-primary.btn, .period-chooser button.btn-primary, .top-title-buttons button.btn-primary, .admin-contents .btn-primary.btn {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
 .image-upload-controls .btn-primary.btn:focus, .select2-container a.btn-primary.select2-choice:focus, .list-controls .btn-primary.btn:focus, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:focus, #reply-control .contents .submit-panel .btn-primary.btn:focus, .timeline-container .topic-timeline div > button.btn-primary.btn:focus,
+.timeline-container .topic-timeline span > button.btn-primary.btn:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
 #topic-footer-buttons span > button.btn-primary.btn:focus,
-#topic-footer-buttons > button.btn-primary.btn:focus, #reply-control .contents .submit-panel .btn-primary.btn:focus, .timeline-container .topic-timeline div > button.btn-primary.btn:focus,
-.timeline-container .topic-timeline span > button.btn-primary.btn:focus, .period-chooser button.btn-primary:focus, .top-title-buttons button.btn-primary:focus, .admin-contents .btn-primary.btn:focus {
+#topic-footer-buttons > button.btn-primary.btn:focus, .period-chooser button.btn-primary:focus, .top-title-buttons button.btn-primary:focus, .admin-contents .btn-primary.btn:focus {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
 @media (hover: hover) {
   .image-upload-controls .btn-primary.btn:hover, .select2-container a.btn-primary.select2-choice:hover, .list-controls .btn-primary.btn:hover, .list-controls .category-breadcrumb li > a.btn-primary.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
-  .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:hover, #reply-control .contents .submit-panel .btn-primary.btn:hover, .timeline-container .topic-timeline div > button.btn-primary.btn:hover,
+  .timeline-container .topic-timeline span > button.btn-primary.btn:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
   #topic-footer-buttons span > button.btn-primary.btn:hover,
-  #topic-footer-buttons > button.btn-primary.btn:hover, #reply-control .contents .submit-panel .btn-primary.btn:hover, .timeline-container .topic-timeline div > button.btn-primary.btn:hover,
-  .timeline-container .topic-timeline span > button.btn-primary.btn:hover, .period-chooser button.btn-primary:hover, .top-title-buttons button.btn-primary:hover, .admin-contents .btn-primary.btn:hover {
+  #topic-footer-buttons > button.btn-primary.btn:hover, .period-chooser button.btn-primary:hover, .top-title-buttons button.btn-primary:hover, .admin-contents .btn-primary.btn:hover {
     background-color: $tertiary;
     color: color-dynamic($tertiary);
   }
 }
 .image-upload-controls .btn-success.btn, .select2-container a.btn-success.select2-choice, .list-controls .btn-success.btn, .list-controls .category-breadcrumb li > a.btn-success.badge-category, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn, #topic-footer-buttons div > button.btn-success.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn, #reply-control .contents .submit-panel .btn-success.btn, .timeline-container .topic-timeline div > button.btn-success.btn,
+.timeline-container .topic-timeline span > button.btn-success.btn, #topic-footer-buttons div > button.btn-success.btn,
 #topic-footer-buttons span > button.btn-success.btn,
-#topic-footer-buttons > button.btn-success.btn, #reply-control .contents .submit-panel .btn-success.btn, .timeline-container .topic-timeline div > button.btn-success.btn,
-.timeline-container .topic-timeline span > button.btn-success.btn, .period-chooser button.btn-success, .top-title-buttons button.btn-success, .admin-contents .btn-success.btn, .image-upload-controls .ok.btn, .select2-container a.ok.select2-choice, .list-controls .ok.btn, .list-controls .category-breadcrumb li > a.ok.badge-category, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
-.edit-category-modal .edit-category-tab-security section.field > .ok.btn, #topic-footer-buttons div > button.ok.btn,
+#topic-footer-buttons > button.btn-success.btn, .period-chooser button.btn-success, .top-title-buttons button.btn-success, .admin-contents .btn-success.btn, .image-upload-controls .ok.btn, .select2-container a.ok.select2-choice, .list-controls .ok.btn, .list-controls .category-breadcrumb li > a.ok.badge-category, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
+.edit-category-modal .edit-category-tab-security section.field > .ok.btn, #reply-control .contents .submit-panel .ok.btn, .timeline-container .topic-timeline div > button.ok.btn,
+.timeline-container .topic-timeline span > button.ok.btn, #topic-footer-buttons div > button.ok.btn,
 #topic-footer-buttons span > button.ok.btn,
-#topic-footer-buttons > button.ok.btn, #reply-control .contents .submit-panel .ok.btn, .timeline-container .topic-timeline div > button.ok.btn,
-.timeline-container .topic-timeline span > button.ok.btn, .period-chooser button.ok, .top-title-buttons button.ok, .admin-contents .ok.btn {
+#topic-footer-buttons > button.ok.btn, .period-chooser button.ok, .top-title-buttons button.ok, .admin-contents .ok.btn {
   background-color: $success;
   color: color-dynamic($success);
 }
 .image-upload-controls .btn-success.btn:focus, .select2-container a.btn-success.select2-choice:focus, .list-controls .btn-success.btn:focus, .list-controls .category-breadcrumb li > a.btn-success.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:focus, #topic-footer-buttons div > button.btn-success.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:focus, #reply-control .contents .submit-panel .btn-success.btn:focus, .timeline-container .topic-timeline div > button.btn-success.btn:focus,
+.timeline-container .topic-timeline span > button.btn-success.btn:focus, #topic-footer-buttons div > button.btn-success.btn:focus,
 #topic-footer-buttons span > button.btn-success.btn:focus,
-#topic-footer-buttons > button.btn-success.btn:focus, #reply-control .contents .submit-panel .btn-success.btn:focus, .timeline-container .topic-timeline div > button.btn-success.btn:focus,
-.timeline-container .topic-timeline span > button.btn-success.btn:focus, .period-chooser button.btn-success:focus, .top-title-buttons button.btn-success:focus, .admin-contents .btn-success.btn:focus, .image-upload-controls .ok.btn:focus, .select2-container a.ok.select2-choice:focus, .list-controls .ok.btn:focus, .list-controls .category-breadcrumb li > a.ok.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .ok.btn:focus, #topic-footer-buttons div > button.ok.btn:focus,
+#topic-footer-buttons > button.btn-success.btn:focus, .period-chooser button.btn-success:focus, .top-title-buttons button.btn-success:focus, .admin-contents .btn-success.btn:focus, .image-upload-controls .ok.btn:focus, .select2-container a.ok.select2-choice:focus, .list-controls .ok.btn:focus, .list-controls .category-breadcrumb li > a.ok.badge-category:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .ok.btn:focus, #reply-control .contents .submit-panel .ok.btn:focus, .timeline-container .topic-timeline div > button.ok.btn:focus,
+.timeline-container .topic-timeline span > button.ok.btn:focus, #topic-footer-buttons div > button.ok.btn:focus,
 #topic-footer-buttons span > button.ok.btn:focus,
-#topic-footer-buttons > button.ok.btn:focus, #reply-control .contents .submit-panel .ok.btn:focus, .timeline-container .topic-timeline div > button.ok.btn:focus,
-.timeline-container .topic-timeline span > button.ok.btn:focus, .period-chooser button.ok:focus, .top-title-buttons button.ok:focus, .admin-contents .ok.btn:focus {
+#topic-footer-buttons > button.ok.btn:focus, .period-chooser button.ok:focus, .top-title-buttons button.ok:focus, .admin-contents .ok.btn:focus {
   background-color: $success;
   color: color-dynamic($success);
 }
 @media (hover: hover) {
   .image-upload-controls .btn-success.btn:hover, .select2-container a.btn-success.select2-choice:hover, .list-controls .btn-success.btn:hover, .list-controls .category-breadcrumb li > a.btn-success.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:hover,
-  .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:hover, #topic-footer-buttons div > button.btn-success.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:hover, #reply-control .contents .submit-panel .btn-success.btn:hover, .timeline-container .topic-timeline div > button.btn-success.btn:hover,
+  .timeline-container .topic-timeline span > button.btn-success.btn:hover, #topic-footer-buttons div > button.btn-success.btn:hover,
   #topic-footer-buttons span > button.btn-success.btn:hover,
-  #topic-footer-buttons > button.btn-success.btn:hover, #reply-control .contents .submit-panel .btn-success.btn:hover, .timeline-container .topic-timeline div > button.btn-success.btn:hover,
-  .timeline-container .topic-timeline span > button.btn-success.btn:hover, .period-chooser button.btn-success:hover, .top-title-buttons button.btn-success:hover, .admin-contents .btn-success.btn:hover, .image-upload-controls .ok.btn:hover, .select2-container a.ok.select2-choice:hover, .list-controls .ok.btn:hover, .list-controls .category-breadcrumb li > a.ok.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
-  .edit-category-modal .edit-category-tab-security section.field > .ok.btn:hover, #topic-footer-buttons div > button.ok.btn:hover,
+  #topic-footer-buttons > button.btn-success.btn:hover, .period-chooser button.btn-success:hover, .top-title-buttons button.btn-success:hover, .admin-contents .btn-success.btn:hover, .image-upload-controls .ok.btn:hover, .select2-container a.ok.select2-choice:hover, .list-controls .ok.btn:hover, .list-controls .category-breadcrumb li > a.ok.badge-category:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
+  .edit-category-modal .edit-category-tab-security section.field > .ok.btn:hover, #reply-control .contents .submit-panel .ok.btn:hover, .timeline-container .topic-timeline div > button.ok.btn:hover,
+  .timeline-container .topic-timeline span > button.ok.btn:hover, #topic-footer-buttons div > button.ok.btn:hover,
   #topic-footer-buttons span > button.ok.btn:hover,
-  #topic-footer-buttons > button.ok.btn:hover, #reply-control .contents .submit-panel .ok.btn:hover, .timeline-container .topic-timeline div > button.ok.btn:hover,
-  .timeline-container .topic-timeline span > button.ok.btn:hover, .period-chooser button.ok:hover, .top-title-buttons button.ok:hover, .admin-contents .ok.btn:hover {
+  #topic-footer-buttons > button.ok.btn:hover, .period-chooser button.ok:hover, .top-title-buttons button.ok:hover, .admin-contents .ok.btn:hover {
     background-color: $success;
     color: color-dynamic($success);
   }
 }
 .image-upload-controls .btn::before, .select2-container a.select2-choice::before, .list-controls .btn::before, .list-controls .category-breadcrumb li > a.badge-category::before, .edit-category-modal .edit-category-tab-general section.field > .btn::before,
-.edit-category-modal .edit-category-tab-security section.field > .btn::before, #topic-footer-buttons div > button.btn::before,
+.edit-category-modal .edit-category-tab-security section.field > .btn::before, #reply-control .contents .submit-panel .btn::before, .timeline-container .topic-timeline div > button.btn::before,
+.timeline-container .topic-timeline span > button.btn::before, #topic-footer-buttons div > button.btn::before,
 #topic-footer-buttons span > button.btn::before,
-#topic-footer-buttons > button.btn::before, #reply-control .contents .submit-panel .btn::before, .timeline-container .topic-timeline div > button.btn::before,
-.timeline-container .topic-timeline span > button.btn::before, .period-chooser button::before, .top-title-buttons button::before, .admin-contents .btn::before {
+#topic-footer-buttons > button.btn::before, .period-chooser button::before, .top-title-buttons button::before, .admin-contents .btn::before {
   background-color: rgba(0, 0, 0, 0.12);
   border-radius: 2px;
   content: '';
@@ -1133,7 +1166,7 @@ nav.post-controls .ok.show-replies:focus,
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, .modal-footer a, .modal-footer .btn, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, #share-link .reply-as-new-topic a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
+div.poll .poll-buttons .btn, .modal-footer a, .modal-footer .btn, #share-link .reply-as-new-topic a, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
 .screened-emails .col:not(.heading) .btn,
 .screened-ip-addresses .col:not(.heading) .btn,
 .screened-urls .col:not(.heading) .btn,
@@ -1144,7 +1177,7 @@ div.poll .poll-buttons .btn, .modal-footer a, .modal-footer .btn, nav.post-contr
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-footer .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, #share-link .reply-as-new-topic a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
+div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-footer .btn:first-child, #share-link .reply-as-new-topic a:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
 .screened-emails .col:not(.heading) .btn:first-child,
 .screened-ip-addresses .col:not(.heading) .btn:first-child,
 .screened-urls .col:not(.heading) .btn:first-child,
@@ -1163,8 +1196,8 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   padding: 9.5px 16px;
 }
 
-.alert, .small-action, .topic-body, #share-link, .category-boxes .category-box-inner,
-.category-boxes-with-topics .category-box-inner, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-contents .badges .current-badge, .content-editor, .customize .show-current-style, .admin-contents .groups > .span13, .admin-contents .groups-bulk, .settings, .site-texts, .admin-container div.user-fields .user-field {
+.alert, #share-link, .small-action, .topic-body, .category-boxes .category-box-inner,
+.category-boxes-with-topics .category-box-inner, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-contents div.badges .current-badge, .content-editor, .customize .show-current-style, .admin-contents div.groups > .span13, .admin-contents .groups-bulk, .settings, .site-texts, .admin-container div.user-fields .user-field {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
   border-radius: 2px;
@@ -1173,22 +1206,22 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   color: $primary;
   padding: 0;
 }
-[href].alert:focus, [href].small-action:focus, [href].topic-body:focus, [href]#share-link:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents .badges [href].current-badge:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents .groups > [href].span13:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, .admin-container div.user-fields [href].user-field:focus, [href].alert:hover, [href].small-action:hover, [href].topic-body:hover, [href]#share-link:hover, .category-boxes [href].category-box-inner:hover,
-.category-boxes-with-topics [href].category-box-inner:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, [href].admin-controls:hover, .admin-contents .badges [href].current-badge:hover, [href].content-editor:hover, .customize [href].show-current-style:hover, .admin-contents .groups > [href].span13:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, .admin-container div.user-fields [href].user-field:hover, [tabindex].alert:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex]#share-link:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents .badges [tabindex].current-badge:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents .groups > [tabindex].span13:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].alert:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, [tabindex]#share-link:hover, .category-boxes [tabindex].category-box-inner:hover,
-.category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, [tabindex].admin-controls:hover, .admin-contents .badges [tabindex].current-badge:hover, [tabindex].content-editor:hover, .customize [tabindex].show-current-style:hover, .admin-contents .groups > [tabindex].span13:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover, .admin-container div.user-fields [tabindex].user-field:hover {
+[href].alert:focus, [href]#share-link:focus, [href].small-action:focus, [href].topic-body:focus, .category-boxes [href].category-box-inner:focus,
+.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, .admin-container div.user-fields [href].user-field:focus, [href].alert:hover, [href]#share-link:hover, [href].small-action:hover, [href].topic-body:hover, .category-boxes [href].category-box-inner:hover,
+.category-boxes-with-topics [href].category-box-inner:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, [href].admin-controls:hover, .admin-contents div.badges [href].current-badge:hover, [href].content-editor:hover, .customize [href].show-current-style:hover, .admin-contents div.groups > [href].span13:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, .admin-container div.user-fields [href].user-field:hover, [tabindex].alert:focus, [tabindex]#share-link:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].alert:hover, [tabindex]#share-link:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, .category-boxes [tabindex].category-box-inner:hover,
+.category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, [tabindex].admin-controls:hover, .admin-contents div.badges [tabindex].current-badge:hover, [tabindex].content-editor:hover, .customize [tabindex].show-current-style:hover, .admin-contents div.groups > [tabindex].span13:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover, .admin-container div.user-fields [tabindex].user-field:hover {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
-[href].alert:focus, [href].small-action:focus, [href].topic-body:focus, [href]#share-link:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents .badges [href].current-badge:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents .groups > [href].span13:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, .admin-container div.user-fields [href].user-field:focus, [tabindex].alert:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex]#share-link:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents .badges [tabindex].current-badge:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents .groups > [tabindex].span13:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, .admin-container div.user-fields [tabindex].user-field:focus {
+[href].alert:focus, [href]#share-link:focus, [href].small-action:focus, [href].topic-body:focus, .category-boxes [href].category-box-inner:focus,
+.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, .admin-container div.user-fields [href].user-field:focus, [tabindex].alert:focus, [tabindex]#share-link:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, .admin-container div.user-fields [tabindex].user-field:focus {
   outline: 0;
 }
 
-.alert, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .topic-meta-data, #share-link, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, .admin-controls, .admin-contents .badges .current-badge, .content-editor, .customize .show-current-style, .admin-contents .groups > .span13, .admin-contents .groups-bulk, .settings .setting, .site-texts, .admin-container div.user-fields .user-field {
+.alert, #share-link, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .topic-meta-data, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, .admin-controls, .admin-contents div.badges .current-badge, .content-editor, .customize .show-current-style, .admin-contents div.groups > .span13, .admin-contents .groups-bulk, .settings .setting, .site-texts, .admin-container div.user-fields .user-field {
   padding: 16px 16px;
 }
 
@@ -1197,7 +1230,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 1em;
   color: $primary;
-  font-size: .857142857em;
+  font-size: 0.857143 em;
   padding: 4px 6px;
 }
 .badge-group:focus, .badge-group:hover,
@@ -1429,10 +1462,6 @@ aside.onebox header {
 }
 aside.onebox .onebox-body h3,
 aside.onebox .onebox-body h4 {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
   overflow: hidden;
   margin-bottom: 8px;
 }
@@ -1540,18 +1569,6 @@ div.poll .poll-info p:first-child {
 div.poll .poll-info p:last-child {
   margin-bottom: 0;
 }
-div.poll .poll-info .info-number {
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.333333;
-}
-div.poll .poll-info .info-text {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.428571;
-}
 div.poll .poll-voters {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1603,8 +1620,8 @@ div.poll .results .option {
   white-space: nowrap;
 }
 
-.select2-results .select2-no-results, .list-controls .category-dropdown-menu a.badge-category, .search-menu .no-results, #topic-footer-buttons .popup-menu h3, #reply-control .popup-menu h3, .timeline-container .topic-timeline .dropdown-menu h3,
-.timeline-container .topic-timeline .popup-menu h3 {
+.select2-results .select2-no-results, .list-controls .category-dropdown-menu a.badge-category, .search-menu .no-results, #reply-control .popup-menu h3, .timeline-container .topic-timeline .dropdown-menu h3,
+.timeline-container .topic-timeline .popup-menu h3, #topic-footer-buttons .popup-menu h3 {
   font-size: 13px;
   line-height: 1.5;
   padding: 6.25px 24px;
@@ -1617,10 +1634,10 @@ div.poll .results .option {
   padding: 12px 16px;
 }
 
-.autocomplete ul li a, .select2-results .select2-result-label, .category-notification-menu .dropdown-menu a, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, #reply-control .popup-menu .btn, .timeline-container .topic-timeline .dropdown-menu a,
+.autocomplete ul li a, .select2-results .select2-result-label, .category-notification-menu .dropdown-menu a, #reply-control .popup-menu .btn, .timeline-container .topic-timeline .dropdown-menu a,
 .timeline-container .topic-timeline .dropdown-menu .btn,
 .timeline-container .topic-timeline .popup-menu a,
-.timeline-container .topic-timeline .popup-menu .btn, .period-chooser #period-popup ul li a {
+.timeline-container .topic-timeline .popup-menu .btn, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, .period-chooser #period-popup ul li a {
   padding: 6.25px 24px;
 }
 
@@ -1636,8 +1653,8 @@ div.poll .results .option {
   padding: 8px 0;
 }
 
-.autocomplete, .select2-drop, .category-notification-menu .dropdown-menu, .list-controls .category-dropdown-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
-.timeline-container .topic-timeline .popup-menu, .period-chooser #period-popup {
+.autocomplete, .select2-drop, .category-notification-menu .dropdown-menu, .list-controls .category-dropdown-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
+.timeline-container .topic-timeline .popup-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, .period-chooser #period-popup {
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
@@ -1728,6 +1745,147 @@ div.poll .results .option {
   }
 }
 
+body input[type="color"], body
+input[type="date"], body
+input[type="datetime"], body
+input[type="datetime-local"], body
+input[type="email"], body
+input[type="month"], body
+input[type="number"], body
+input[type="password"], body
+input[type="search"], body
+input[type="tel"], body
+input[type="text"], body
+input[type="time"], body
+input[type="url"], body
+input[type="week"], body
+textarea, .controls .static, .value-list .value {
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  display: block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 0 7px;
+  width: 100%;
+}
+body input[type="color"]:focus, body
+input[type="date"]:focus, body
+input[type="datetime"]:focus, body
+input[type="datetime-local"]:focus, body
+input[type="email"]:focus, body
+input[type="month"]:focus, body
+input[type="number"]:focus, body
+input[type="password"]:focus, body
+input[type="search"]:focus, body
+input[type="tel"]:focus, body
+input[type="text"]:focus, body
+input[type="time"]:focus, body
+input[type="url"]:focus, body
+input[type="week"]:focus, body
+textarea:focus, .controls .static:focus, .value-list .value:focus {
+  border-width: 2px;
+  padding-bottom: 6px;
+}
+@media (hover: hover) {
+  body input[type="color"]:hover, body
+  input[type="date"]:hover, body
+  input[type="datetime"]:hover, body
+  input[type="datetime-local"]:hover, body
+  input[type="email"]:hover, body
+  input[type="month"]:hover, body
+  input[type="number"]:hover, body
+  input[type="password"]:hover, body
+  input[type="search"]:hover, body
+  input[type="tel"]:hover, body
+  input[type="text"]:hover, body
+  input[type="time"]:hover, body
+  input[type="url"]:hover, body
+  input[type="week"]:hover, body
+  textarea:hover, .controls .static:hover, .value-list .value:hover {
+    border-width: 2px;
+    padding-bottom: 6px;
+  }
+}
+body input[type="color"]:focus, body
+input[type="date"]:focus, body
+input[type="datetime"]:focus, body
+input[type="datetime-local"]:focus, body
+input[type="email"]:focus, body
+input[type="month"]:focus, body
+input[type="number"]:focus, body
+input[type="password"]:focus, body
+input[type="search"]:focus, body
+input[type="tel"]:focus, body
+input[type="text"]:focus, body
+input[type="time"]:focus, body
+input[type="url"]:focus, body
+input[type="week"]:focus, body
+textarea:focus, .controls .static:focus, .value-list .value:focus {
+  border-color: $tertiary;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+body input[disabled][type="color"], body
+input[disabled][type="date"], body
+input[disabled][type="datetime"], body
+input[disabled][type="datetime-local"], body
+input[disabled][type="email"], body
+input[disabled][type="month"], body
+input[disabled][type="number"], body
+input[disabled][type="password"], body
+input[disabled][type="search"], body
+input[disabled][type="tel"], body
+input[disabled][type="text"], body
+input[disabled][type="time"], body
+input[disabled][type="url"], body
+input[disabled][type="week"], body
+textarea[disabled], .controls [disabled].static, .value-list [disabled].value, body input[readonly][type="color"], body
+input[readonly][type="date"], body
+input[readonly][type="datetime"], body
+input[readonly][type="datetime-local"], body
+input[readonly][type="email"], body
+input[readonly][type="month"], body
+input[readonly][type="number"], body
+input[readonly][type="password"], body
+input[readonly][type="search"], body
+input[readonly][type="tel"], body
+input[readonly][type="text"], body
+input[readonly][type="time"], body
+input[readonly][type="url"], body
+input[readonly][type="week"], body
+textarea[readonly], .controls [readonly].static, .value-list [readonly].value {
+  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  border-style: dotted;
+  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  pointer-events: none;
+}
+
+.select2-search input[type='text'], .search-menu input[type='text'], #share-link input[type='text'], .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-controls .ac-wrap input[type='text'], div.badges .form-horizontal input[type='text'],
+div.groups .form-horizontal input[type='text'],
+div.web-hook-container .form-horizontal input[type='text'], .content-editor .email-template input[type='text'], .customize .show-current-style h1 input[type='text'], .admin-container div.emoji input[type='text'], .permalink-title ~ div input[type='text'], .settings .setting .ac-wrap input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value {
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border-radius: 4px;
+  height: 56px;
+  line-height: 16px;
+  padding: 20px 16px 19px;
+}
+.select2-search input[type='text']:focus, .search-menu input[type='text']:focus, #share-link input[type='text']:focus, .admin-container .controls.username input[type='text']:focus, .admin-controls input[type='text']:focus, div.badges .form-horizontal input[type='text']:focus,
+div.groups .form-horizontal input[type='text']:focus,
+div.web-hook-container .form-horizontal input[type='text']:focus, .content-editor .email-template input[type='text']:focus, .customize .show-current-style h1 input[type='text']:focus, .admin-container div.emoji input[type='text']:focus, .permalink-title ~ div input[type='text']:focus, .settings .setting .ac-wrap input[type='text']:focus, .settings .setting .input-setting-string:focus, .site-texts .search-area .site-text-search:focus, .value-list input[type='text']:focus, .value-list .value:focus, .select2-search input[type='text']:hover, .search-menu input[type='text']:hover, #share-link input[type='text']:hover, .admin-container .controls.username input[type='text']:hover, .admin-controls input[type='text']:hover, div.badges .form-horizontal input[type='text']:hover,
+div.groups .form-horizontal input[type='text']:hover,
+div.web-hook-container .form-horizontal input[type='text']:hover, .content-editor .email-template input[type='text']:hover, .customize .show-current-style h1 input[type='text']:hover, .admin-container div.emoji input[type='text']:hover, .permalink-title ~ div input[type='text']:hover, .settings .setting .ac-wrap input[type='text']:hover, .settings .setting .input-setting-string:hover, .site-texts .search-area .site-text-search:hover, .value-list input[type='text']:hover, .value-list .value:hover {
+  padding-bottom: 18px;
+}
+
 body button, body
 label {
   font-size: inherit;
@@ -1758,114 +1916,7 @@ input[type="time"], body
 input[type="url"], body
 input[type="week"], body
 textarea {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
   margin-bottom: 8px;
-}
-body input[type="color"]:focus, body
-input[type="date"]:focus, body
-input[type="datetime"]:focus, body
-input[type="datetime-local"]:focus, body
-input[type="email"]:focus, body
-input[type="month"]:focus, body
-input[type="number"]:focus, body
-input[type="password"]:focus, body
-input[type="search"]:focus, body
-input[type="tel"]:focus, body
-input[type="text"]:focus, body
-input[type="time"]:focus, body
-input[type="url"]:focus, body
-input[type="week"]:focus, body
-textarea:focus {
-  border-width: 2px;
-  padding-bottom: 6px;
-}
-@media (hover: hover) {
-  body input[type="color"]:hover, body
-  input[type="date"]:hover, body
-  input[type="datetime"]:hover, body
-  input[type="datetime-local"]:hover, body
-  input[type="email"]:hover, body
-  input[type="month"]:hover, body
-  input[type="number"]:hover, body
-  input[type="password"]:hover, body
-  input[type="search"]:hover, body
-  input[type="tel"]:hover, body
-  input[type="text"]:hover, body
-  input[type="time"]:hover, body
-  input[type="url"]:hover, body
-  input[type="week"]:hover, body
-  textarea:hover {
-    border-width: 2px;
-    padding-bottom: 6px;
-  }
-}
-body input[type="color"]:focus, body
-input[type="date"]:focus, body
-input[type="datetime"]:focus, body
-input[type="datetime-local"]:focus, body
-input[type="email"]:focus, body
-input[type="month"]:focus, body
-input[type="number"]:focus, body
-input[type="password"]:focus, body
-input[type="search"]:focus, body
-input[type="tel"]:focus, body
-input[type="text"]:focus, body
-input[type="time"]:focus, body
-input[type="url"]:focus, body
-input[type="week"]:focus, body
-textarea:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-body input[type="color"][disabled], body input[type="color"][readonly], body
-input[type="date"][disabled], body
-input[type="date"][readonly], body
-input[type="datetime"][disabled], body
-input[type="datetime"][readonly], body
-input[type="datetime-local"][disabled], body
-input[type="datetime-local"][readonly], body
-input[type="email"][disabled], body
-input[type="email"][readonly], body
-input[type="month"][disabled], body
-input[type="month"][readonly], body
-input[type="number"][disabled], body
-input[type="number"][readonly], body
-input[type="password"][disabled], body
-input[type="password"][readonly], body
-input[type="search"][disabled], body
-input[type="search"][readonly], body
-input[type="tel"][disabled], body
-input[type="tel"][readonly], body
-input[type="text"][disabled], body
-input[type="text"][readonly], body
-input[type="time"][disabled], body
-input[type="time"][readonly], body
-input[type="url"][disabled], body
-input[type="url"][readonly], body
-input[type="week"][disabled], body
-input[type="week"][readonly], body
-textarea[disabled], body
-textarea[readonly] {
-  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  border-style: dotted;
-  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  pointer-events: none;
 }
 
 body label {
@@ -1909,47 +1960,10 @@ body .control-group:last-child {
 }
 
 .controls .static {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
   border-bottom-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
   border-bottom-style: dotted;
   color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
   margin-bottom: 8px;
-}
-.controls .static:focus {
-  border-width: 2px;
-  padding-bottom: 6px;
-}
-@media (hover: hover) {
-  .controls .static:hover {
-    border-width: 2px;
-    padding-bottom: 6px;
-  }
-}
-.controls .static:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.controls .static[disabled], .controls .static[readonly] {
-  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  border-style: dotted;
-  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  pointer-events: none;
 }
 .controls .static:focus {
   border-bottom-width: 1px;
@@ -1976,10 +1990,6 @@ body .form-vertical .control-group {
   margin-bottom: 24px;
 }
 body .form-vertical .control-label {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   margin-bottom: 0;
 }
 body .form-vertical .controls {
@@ -2170,44 +2180,7 @@ div.ac-wrap div.item .badge-wrapper {
   padding-right: 0;
 }
 div.ac-wrap input[type='text'] {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
   margin-bottom: 0;
-}
-div.ac-wrap input[type='text']:focus {
-  border-width: 2px;
-  padding-bottom: 6px;
-}
-@media (hover: hover) {
-  div.ac-wrap input[type='text']:hover {
-    border-width: 2px;
-    padding-bottom: 6px;
-  }
-}
-div.ac-wrap input[type='text']:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonly] {
-  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  border-style: dotted;
-  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  pointer-events: none;
 }
 
 .autocomplete ul li {
@@ -2239,10 +2212,6 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
   white-space: nowrap;
 }
 .autocomplete ul li a span.name {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   margin-left: 8px;
 }
@@ -2454,6 +2423,39 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
   content: 'arrow_drop_down';
 }
 
+.select2-container-multi.select2-container-active {
+  border: 0;
+}
+.select2-container-multi.select2-container-active .select2-choices {
+  border: 0;
+  border-bottom: 2px solid $tertiary;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-bottom: 1px;
+}
+.select2-container-multi .select2-choices {
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border: 0;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 4px;
+  min-height: 56px;
+  padding: 1px 1px 2px;
+}
+@media (hover: hover) {
+  .select2-container-multi .select2-choices:hover {
+    border-bottom-width: 2px;
+    padding-bottom: 1px;
+  }
+}
+.select2-container-multi .select2-choices .select2-search-choice {
+  margin: 4px;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+  height: auto;
+  margin: 4px;
+  padding: 0;
+}
+
 .select2-default {
   color: $primary !important;
 }
@@ -2464,13 +2466,6 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
 }
 .select2-drop.select2-drop-above.select2-drop-active {
   border-top: 0;
-}
-.select2-drop .category-desc,
-.select2-drop .topic-count {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
 }
 .select2-drop .category-desc {
   margin-top: 3.125px;
@@ -2494,16 +2489,8 @@ div.ac-wrap input[type='text'][disabled], div.ac-wrap input[type='text'][readonl
   padding-left: 16px;
 }
 .select2-search input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
   height: 56px !important;
   margin-bottom: 12.5px;
-}
-.select2-search input[type='text']:focus, .select2-search input[type='text']:hover {
-  padding-bottom: 18px;
 }
 
 .d-header {
@@ -3597,16 +3584,8 @@ div.menu-links-header .menu-links-row {
 }
 
 .search-menu input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
   margin: 0;
   width: 100%;
-}
-.search-menu input[type='text']:focus, .search-menu input[type='text']:hover {
-  padding-bottom: 18px;
 }
 .search-menu li:not(.category):not(.heading) {
   font-size: inherit;
@@ -3905,10 +3884,6 @@ body .bootbox.modal .modal-footer a.btn-primary {
   padding-bottom: 24px;
 }
 .modal-header h3 {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
   margin: 0 24px 0 0;
   padding: 0;
 }
@@ -4029,12 +4004,6 @@ body .bootbox.modal .modal-footer a.btn-primary {
 }
 .edit-topic-timer-modal .auto-update-input .pika-single {
   position: absolute !important;
-}
-.edit-topic-timer-modal .auto-update-input .topic-status-info h3 {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.428571;
 }
 .edit-topic-timer-modal .auto-update-input .topic-status-info h3 > .fa {
   margin-right: 8px;
@@ -4207,6 +4176,673 @@ body .bootbox.modal .modal-footer a.btn-primary {
   display: flex;
 }
 
+div.poll .results .bar {
+  background-color: $tertiary;
+  border-radius: 0 2px 2px 0;
+  height: 4px;
+  position: relative;
+}
+
+div.poll .results .bar-back {
+  background-color: $tertiary;
+  border-radius: 2px;
+  height: 4px;
+  position: relative;
+}
+div.poll .results .bar-back::before {
+  background-color: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  border-radius: 2px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#reply-control {
+  background-color: color-chooser(#424242, #ffffff);
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1110px;
+  right: 0;
+}
+@media (min-width: 1111px) {
+  #reply-control {
+    border-radius: 4px 4px 0 0;
+    right: 1px;
+  }
+}
+@media (min-width: 1158px) {
+  #reply-control {
+    right: 24px;
+  }
+}
+#reply-control.draft {
+  border-top: 0;
+  height: auto !important;
+  text-align: center;
+}
+#reply-control.draft .draft-text {
+  padding: 11px 16px;
+}
+@media (hover: hover) {
+  #reply-control.draft .draft-text:hover {
+    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  }
+}
+#reply-control.draft .draft-text:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+#reply-control.draft .span24 {
+  display: block;
+  float: none;
+  width: auto;
+}
+#reply-control.draft .toggler {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  height: 24px;
+  margin-top: -12px;
+  top: 50%;
+  widows: 24px;
+}
+#reply-control.draft .toggler::before {
+  content: 'close';
+}
+#reply-control.edit-title .contents input#reply-title {
+  border-bottom: 0;
+  height: auto;
+  padding: 16px 16px;
+  margin: 0;
+}
+#reply-control.edit-title .contents input#reply-title:focus {
+  padding-bottom: 16px;
+}
+@media (hover: hover) {
+  #reply-control.edit-title .contents input#reply-title:hover {
+    padding-bottom: 16px;
+  }
+}
+#reply-control.open .grippie {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+#reply-control .add-warning {
+  margin-right: 16px;
+  margin-left: 0;
+  position: static;
+  width: auto;
+}
+#reply-control .add-warning input[type='checkbox'] {
+  margin-right: 4px;
+}
+#reply-control .add-warning label {
+  margin-bottom: 0;
+}
+#reply-control .category-input {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+#reply-control .composer-fields {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#reply-control .contents {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1110px;
+  padding: 0;
+}
+#reply-control .contents .control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#reply-control .contents .form-element {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#reply-control .contents .form-element .select2-container {
+  margin: 0;
+  text-align: right;
+}
+#reply-control .contents .form-element .select2-container a {
+  height: 36px;
+  padding-top: 11px;
+}
+#reply-control .contents .form-element .select2-container b {
+  margin-top: 0;
+}
+#reply-control .contents #reply-title {
+  margin: 0;
+}
+#reply-control .contents .submit-panel {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding: 16px 16px 16px;
+  position: static;
+  width: auto;
+}
+#reply-control .contents .submit-panel .cancel {
+  margin-left: 8px;
+}
+#reply-control .control-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+}
+#reply-control .control-row.reply-area {
+  padding: 0;
+}
+#reply-control .d-editor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#reply-control .d-editor-button-bar {
+  background-color: transparent;
+  border: 0;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  height: auto;
+  padding: 8px 4px;
+}
+#reply-control .d-editor-button-bar button {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+#reply-control .d-editor-button-bar button:focus {
+  color: $primary;
+}
+@media (hover: hover) {
+  #reply-control .d-editor-button-bar button:hover {
+    color: $primary;
+  }
+}
+#reply-control .d-editor-container {
+  background-color: transparent;
+  border-radius: 0;
+}
+#reply-control .d-editor-preview {
+  border-radius: 0;
+}
+#reply-control #draft-status {
+  background-color: transparent;
+  color: $tertiary;
+  font-size: 0.857143 em;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  right: 50%;
+  bottom: 68px;
+}
+#reply-control #draft-status:empty {
+  display: none;
+}
+#reply-control .grippie {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: color-chooser(#ffffff, #424242);
+  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+@media (min-width: 1111px) {
+  #reply-control .grippie {
+    border-radius: 2px 2px 0 0;
+  }
+}
+#reply-control .grippie::before {
+  border: 0;
+  content: 'drag_handle';
+}
+#reply-control .hide-preview #draft-status {
+  right: 0;
+}
+#reply-control .hide-preview .toggle-preview::before {
+  content: 'keyboard_arrow_left';
+}
+#reply-control .reply-area {
+  margin: 0;
+  max-width: none;
+}
+#reply-control .reply-area .ac-wrap {
+  margin-right: 16px;
+}
+#reply-control .reply-to {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  margin: 0;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+#reply-control .reply-to a {
+  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
+}
+#reply-control .reply-to img.avatar {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+#reply-control .title-input {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+#reply-control .toggler {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
+  font-size: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  top: 0;
+  right: 8px;
+  width: 32px;
+}
+#reply-control .toggler::before {
+  content: 'close';
+}
+#reply-control .toggle-preview {
+  margin: 0;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  text-indent: 100%;
+  width: 56px;
+}
+#reply-control .toggle-preview::before {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: 'keyboard_arrow_right';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-indent: 0;
+}
+#reply-control .wmd-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 100%;
+  position: static;
+}
+#reply-control .wmd-controls .d-editor,
+#reply-control .wmd-controls .d-editor-container {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: auto;
+  min-height: 0;
+}
+#reply-control .wmd-controls .d-editor-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#reply-control .wmd-controls .d-editor-input,
+#reply-control .wmd-controls .d-editor-preview,
+#reply-control .wmd-controls .d-editor-preview-header {
+  background-color: transparent;
+}
+#reply-control .wmd-controls .d-editor-input,
+#reply-control .wmd-controls .d-editor-preview-header {
+  border-top-width: 48px;
+}
+#reply-control .wmd-controls .d-editor-input {
+  padding: 0 16px 16px;
+  position: static;
+}
+#reply-control .wmd-controls .d-editor-preview,
+#reply-control .wmd-controls .d-editor-preview-header {
+  padding: 16px 16px;
+}
+#reply-control .wmd-controls .d-editor-preview {
+  border: 0;
+  border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+}
+#reply-control .wmd-controls .d-editor-preview img:not(.thumbnail) {
+  height: auto;
+  width: 100%;
+}
+#reply-control .wmd-controls .d-editor-preview-wrapper {
+  height: auto;
+  padding-left: 0;
+  position: static;
+}
+#reply-control .wmd-controls .d-editor-textarea-wrapper {
+  height: auto;
+  padding-right: 0;
+  position: static;
+}
+
+#share-link h3 {
+  float: none;
+  margin: 0 32px 16px 0;
+}
+#share-link .link {
+  font-size: inherit;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  right: 8px;
+}
+#share-link .link a {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+#share-link .reply-as-new-topic {
+  float: right;
+  margin-right: -8px;
+}
+#share-link .social-link {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  height: 36px;
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.table,
+.topic-list,
+.category-list,
+.admin-contents table:not(.pika-table),
+.permalinks,
+.screened-emails,
+.screened-ip-addresses,
+.screened-urls,
+.staff-actions,
+.web-hook-events {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.table tbody td,
+.table tbody th,
+.topic-list tbody td,
+.topic-list tbody th,
+.category-list tbody td,
+.category-list tbody th,
+.admin-contents table:not(.pika-table) td,
+.admin-contents table:not(.pika-table) th,
+.permalinks .col:not(.heading),
+.screened-emails .col:not(.heading),
+.screened-ip-addresses .col:not(.heading),
+.screened-urls .col:not(.heading),
+.staff-actions .col:not(.heading),
+.web-hook-events .col:not(.heading) {
+  color: $primary;
+  font-size: 13px;
+  height: 48px;
+  padding: 12px 12px;
+  vertical-align: middle;
+}
+
+.table tbody tr,
+.topic-list > tbody > tr,
+.topic-list > thead > tr,
+.category-list > tbody > tr,
+.category-list > thead > tr,
+.admin-contents table:not(.pika-table) tr {
+  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
+}
+
+.table thead td,
+.table thead th,
+.topic-list thead td,
+.topic-list thead th,
+.category-list thead td,
+.category-list thead th,
+.admin-contents table:not(.pika-table) thead td,
+.admin-contents table:not(.pika-table) thead th,
+.permalinks .col.heading,
+.screened-emails .col.heading,
+.screened-ip-addresses .col.heading,
+.screened-urls .col.heading,
+.staff-actions .col.heading,
+.web-hook-events .col.heading {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  font-size: 12px;
+  height: 56px;
+  padding: 12px 12px;
+  vertical-align: middle;
+}
+
+.fa-circle.tracking::before {
+  content: 'track_changes';
+}
+
+.fa-circle-o.regular::before {
+  content: "notifications";
+}
+
+.fa-exclamation-circle.watching::before {
+  content: 'notifications_active';
+}
+
+.fa-times-circle.muted::before {
+  content: "notifications_off";
+}
+
+.timeline-container .topic-timeline div > button.btn,
+.timeline-container .topic-timeline span > button.btn {
+  margin-right: 8px;
+}
+.timeline-container .topic-timeline i.fa {
+  opacity: 1;
+}
+.timeline-container .topic-timeline .fa {
+  opacity: 1;
+}
+.timeline-container .topic-timeline .now-date {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  margin-top: 0;
+}
+.timeline-container .topic-timeline .start-date {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+.timeline-container .topic-timeline .timeline-ago {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+.timeline-container .topic-timeline .timeline-controls {
+  margin-bottom: 16px;
+}
+.timeline-container .topic-timeline .timeline-footer-controls {
+  line-height: inherit;
+  margin-top: 16px;
+}
+.timeline-container .topic-timeline .timeline-handle {
+  background-color: $tertiary;
+  border-radius: 2px;
+  width: 4px;
+}
+.timeline-container .topic-timeline .timeline-padding {
+  background-color: $tertiary;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  width: 4px;
+}
+.timeline-container .topic-timeline .timeline-padding::before {
+  background-color: inherit;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  border-radius: 2px 2px 0 0;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.timeline-container .topic-timeline .timeline-padding ~ .timeline-padding, .timeline-container .topic-timeline .timeline-padding ~ .timeline-padding::before {
+  border-radius: 0 0 2px 2px;
+}
+.timeline-container .topic-timeline .timeline-scrollarea {
+  border-left: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+.timeline-container .topic-timeline .timeline-scroller {
+  margin-left: 0;
+}
+.timeline-container .topic-timeline .timeline-scroller-content {
+  padding-left: 16px;
+}
+
 nav.post-controls {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -4320,10 +4956,6 @@ nav.post-controls .show-replies i {
 }
 
 .gap {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   font-weight: bolder;
   margin: 8px 0;
@@ -4384,10 +5016,6 @@ nav.post-controls .show-replies i {
   margin-bottom: -6.000003px;
 }
 .small-action .small-action-desc {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.428571;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -4512,18 +5140,10 @@ nav.post-controls .show-replies i {
   position: relative;
 }
 .topic-map h3 {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.428571;
   color: $primary;
   margin-bottom: 8px;
 }
 .topic-map h4 {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   color: $primary;
   margin: 0 0 4px;
 }
@@ -4542,10 +5162,6 @@ nav.post-controls .show-replies i {
   padding: 16px 16px 8px;
 }
 .topic-map .avatars .post-count {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -4640,7 +5256,7 @@ nav.post-controls .show-replies i {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: .857142857em;
+  font-size: 0.857143 em;
   height: 32px;
   margin: 8px 8px 8px 0;
   padding: 0 12px 0 36px;
@@ -4669,7 +5285,7 @@ nav.post-controls .show-replies i {
   margin: 0 8px 0 0;
 }
 .topic-map .topic-links span.domain {
-  font-size: .857142857em;
+  font-size: 0.857143 em;
 }
 .topic-map .topic-links td {
   padding: 0 0 8px;
@@ -4748,10 +5364,6 @@ nav.post-controls .show-replies i {
   vertical-align: middle;
 }
 #topic-title h1 {
-  font-size: 45px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.066667;
   font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
   margin: 0 0 16px;
@@ -4774,597 +5386,6 @@ nav.post-controls .show-replies i {
 }
 #topic-title .topic-statuses:empty {
   display: none;
-}
-
-div.poll .results .bar {
-  background-color: $tertiary;
-  border-radius: 0 2px 2px 0;
-  height: 4px;
-  position: relative;
-}
-
-div.poll .results .bar-back {
-  background-color: $tertiary;
-  border-radius: 2px;
-  height: 4px;
-  position: relative;
-}
-div.poll .results .bar-back::before {
-  background-color: inherit;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  border-radius: 2px;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-#reply-control {
-  background-color: color-chooser(#424242, #ffffff);
-  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#reply-control.draft {
-  border-top: 0;
-  height: auto !important;
-  text-align: center;
-}
-#reply-control.draft .draft-text {
-  padding: 11px 16px;
-}
-@media (hover: hover) {
-  #reply-control.draft .draft-text:hover {
-    background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  }
-}
-#reply-control.draft .draft-text:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-}
-#reply-control.draft .span24 {
-  display: block;
-  float: none;
-  width: auto;
-}
-#reply-control.draft .toggler {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  height: 24px;
-  margin-top: -12px;
-  top: 50%;
-  widows: 24px;
-}
-#reply-control.draft .toggler::before {
-  content: 'close';
-}
-#reply-control.edit-title .contents input#reply-title {
-  border-bottom: 0;
-  height: auto;
-  padding: 16px 16px;
-  margin: 0;
-}
-#reply-control.edit-title .contents input#reply-title:focus {
-  padding-bottom: 16px;
-}
-@media (hover: hover) {
-  #reply-control.edit-title .contents input#reply-title:hover {
-    padding-bottom: 16px;
-  }
-}
-#reply-control.open .grippie {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-}
-#reply-control .add-warning {
-  margin-right: 16px;
-  margin-left: 0;
-  position: static;
-  width: auto;
-}
-#reply-control .add-warning input[type='checkbox'] {
-  margin-right: 4px;
-}
-#reply-control .add-warning label {
-  margin-bottom: 0;
-}
-#reply-control .category-input {
-  padding-right: 16px;
-  padding-left: 16px;
-}
-#reply-control .composer-fields {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-#reply-control .contents {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 0;
-}
-#reply-control .contents .control {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-#reply-control .contents .form-element {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-#reply-control .contents .form-element .select2-container {
-  margin: 0;
-  text-align: right;
-}
-#reply-control .contents .form-element .select2-container a {
-  height: 36px;
-  padding-top: 11px;
-}
-#reply-control .contents .form-element .select2-container b {
-  margin-top: 0;
-}
-#reply-control .contents #reply-title {
-  margin: 0;
-}
-#reply-control .contents .submit-panel {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  padding: 16px 16px 16px;
-  position: static;
-  width: auto;
-}
-#reply-control .contents .submit-panel .cancel {
-  margin-left: 8px;
-}
-#reply-control .control-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 0;
-}
-#reply-control .control-row.reply-area {
-  padding: 0;
-}
-#reply-control .d-editor {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-#reply-control .d-editor-button-bar {
-  background-color: transparent;
-  border: 0;
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  height: auto;
-  padding: 8px 4px;
-}
-#reply-control .d-editor-button-bar button {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-}
-#reply-control .d-editor-button-bar button:focus {
-  color: $primary;
-}
-@media (hover: hover) {
-  #reply-control .d-editor-button-bar button:hover {
-    color: $primary;
-  }
-}
-#reply-control .d-editor-container {
-  background-color: transparent;
-  border-radius: 0;
-}
-#reply-control .d-editor-preview {
-  border-radius: 0;
-}
-#reply-control #draft-status {
-  background-color: transparent;
-  color: $tertiary;
-  font-size: .857142857em;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  right: 50%;
-  bottom: 68px;
-}
-#reply-control #draft-status:empty {
-  display: none;
-}
-#reply-control .grippie {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: color-chooser(#ffffff, #424242);
-  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-  height: 32px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-}
-#reply-control .grippie::before {
-  border: 0;
-  content: 'drag_handle';
-}
-#reply-control .hide-preview #draft-status {
-  right: 0;
-}
-#reply-control .hide-preview .toggle-preview::before {
-  content: 'keyboard_arrow_left';
-}
-#reply-control .reply-area {
-  margin: 0;
-  max-width: none;
-}
-#reply-control .reply-area .ac-wrap {
-  margin-right: 16px;
-}
-#reply-control .reply-to {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 32px;
-  margin: 0;
-  max-width: none;
-  position: absolute;
-  top: 0;
-  left: 8px;
-}
-#reply-control .reply-to a {
-  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
-}
-#reply-control .reply-to img.avatar {
-  margin-right: 4px;
-  margin-left: 4px;
-}
-#reply-control .title-input {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-ordinal-group: 0;
-  -webkit-order: -1;
-      -ms-flex-order: -1;
-          order: -1;
-}
-#reply-control .toggler {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
-  font-size: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 32px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  top: 0;
-  right: 8px;
-  width: 32px;
-}
-#reply-control .toggler::before {
-  content: 'close';
-}
-#reply-control .toggle-preview {
-  margin: 0;
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  text-indent: 100%;
-  width: 56px;
-}
-#reply-control .toggle-preview::before {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  content: 'keyboard_arrow_right';
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-indent: 0;
-}
-#reply-control .wmd-controls {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  position: static;
-}
-#reply-control .wmd-controls .d-editor,
-#reply-control .wmd-controls .d-editor-container {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: auto;
-  min-height: 0;
-}
-#reply-control .wmd-controls .d-editor-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-#reply-control .wmd-controls .d-editor-input,
-#reply-control .wmd-controls .d-editor-preview,
-#reply-control .wmd-controls .d-editor-preview-header {
-  background-color: transparent;
-}
-#reply-control .wmd-controls .d-editor-input,
-#reply-control .wmd-controls .d-editor-preview-header {
-  border-top-width: 48px;
-}
-#reply-control .wmd-controls .d-editor-input {
-  padding: 0 16px 16px;
-  position: static;
-}
-#reply-control .wmd-controls .d-editor-preview,
-#reply-control .wmd-controls .d-editor-preview-header {
-  padding: 16px 16px;
-}
-#reply-control .wmd-controls .d-editor-preview {
-  border: 0;
-  border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-}
-#reply-control .wmd-controls .d-editor-preview img:not(.thumbnail) {
-  height: auto;
-  width: 100%;
-}
-#reply-control .wmd-controls .d-editor-preview-wrapper {
-  height: auto;
-  padding-left: 0;
-  position: static;
-}
-#reply-control .wmd-controls .d-editor-textarea-wrapper {
-  height: auto;
-  padding-right: 0;
-  position: static;
-}
-
-#share-link h3 {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-  float: none;
-  margin: 0 32px 16px 0;
-}
-#share-link input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-#share-link input[type='text']:focus, #share-link input[type='text']:hover {
-  padding-bottom: 18px;
-}
-#share-link .link {
-  font-size: inherit;
-  margin: 0;
-  position: absolute;
-  top: 20px;
-  right: 8px;
-}
-#share-link .link a {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-}
-#share-link .reply-as-new-topic {
-  float: right;
-  margin-right: -8px;
-}
-#share-link .social-link {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 24px;
-  height: 36px;
-  margin-right: 8px;
-  margin-left: 0;
-}
-
-.fa-circle.tracking::before {
-  content: 'track_changes';
-}
-
-.fa-circle-o.regular::before {
-  content: "notifications";
-}
-
-.fa-exclamation-circle.watching::before {
-  content: 'notifications_active';
-}
-
-.fa-times-circle.muted::before {
-  content: "notifications_off";
-}
-
-.timeline-container .topic-timeline div > button.btn,
-.timeline-container .topic-timeline span > button.btn {
-  margin-right: 8px;
-}
-.timeline-container .topic-timeline i.fa {
-  opacity: 1;
-}
-.timeline-container .topic-timeline .fa {
-  opacity: 1;
-}
-.timeline-container .topic-timeline .now-date {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  margin-top: 0;
-}
-.timeline-container .topic-timeline .start-date {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-}
-.timeline-container .topic-timeline .timeline-ago {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-}
-.timeline-container .topic-timeline .timeline-controls {
-  margin-bottom: 16px;
-}
-.timeline-container .topic-timeline .timeline-footer-controls {
-  line-height: inherit;
-  margin-top: 16px;
-}
-.timeline-container .topic-timeline .timeline-handle {
-  background-color: $tertiary;
-  border-radius: 2px;
-  width: 4px;
-}
-.timeline-container .topic-timeline .timeline-padding {
-  background-color: $tertiary;
-  border-radius: 2px 2px 0 0;
-  position: relative;
-  width: 4px;
-}
-.timeline-container .topic-timeline .timeline-padding::before {
-  background-color: inherit;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-  border-radius: 2px 2px 0 0;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.timeline-container .topic-timeline .timeline-padding ~ .timeline-padding, .timeline-container .topic-timeline .timeline-padding ~ .timeline-padding::before {
-  border-radius: 0 0 2px 2px;
-}
-.timeline-container .topic-timeline .timeline-scrollarea {
-  border-left: 0;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 8px;
-}
-.timeline-container .topic-timeline .timeline-scroller {
-  margin-left: 0;
-}
-.timeline-container .topic-timeline .timeline-scroller-content {
-  padding-left: 16px;
 }
 
 .create-topics-notice {
@@ -5393,20 +5414,12 @@ div.poll .results .bar-back::before {
   margin-bottom: 8px;
 }
 .period-chooser h2 .top-date-string {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
 .period-chooser #period-popup ul li:hover {
   background-color: transparent;
 }
 .period-chooser #period-popup ul li .top-date-string {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
 
@@ -5415,22 +5428,8 @@ div.poll .results .bar-back::before {
   margin-left: 4px;
 }
 
-.topic-list {
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-  max-width: 100%;
-  width: 100%;
-}
 .topic-list tbody td,
 .topic-list tbody th {
-  color: $primary;
-  font-size: 13px;
-  height: 48px;
-  padding: 12px 12px;
-  vertical-align: middle;
   line-height: inherit;
 }
 .topic-list tbody td:first-of-type,
@@ -5440,9 +5439,6 @@ div.poll .results .bar-back::before {
 .topic-list tbody td:last-of-type,
 .topic-list tbody th:last-of-type {
   padding-right: 24px;
-}
-.topic-list > tbody > tr {
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
 }
 .topic-list > tbody > tr:first-child {
   border-top: 0;
@@ -5478,11 +5474,6 @@ div.poll .results .bar-back::before {
 }
 .topic-list thead td,
 .topic-list thead th {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  font-size: 12px;
-  height: 56px;
-  padding: 12px 12px;
-  vertical-align: middle;
   line-height: inherit;
 }
 .topic-list thead td:first-of-type,
@@ -5496,9 +5487,6 @@ div.poll .results .bar-back::before {
 .topic-list thead th {
   font-weight: bold;
   white-space: nowrap;
-}
-.topic-list > thead > tr {
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
 }
 .topic-list .avatar {
   height: 24px;
@@ -5588,10 +5576,6 @@ div.poll .results .bar-back::before {
 }
 .category-boxes h3,
 .category-boxes-with-topics h3 {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
   margin-bottom: 0;
   text-align: left;
 }
@@ -5629,23 +5613,6 @@ div.poll .results .bar-back::before {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
 
-.category-list {
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-  max-width: 100%;
-  width: 100%;
-}
-.category-list tbody td,
-.category-list tbody th {
-  color: $primary;
-  font-size: 13px;
-  height: 48px;
-  padding: 12px 12px;
-  vertical-align: middle;
-}
 .category-list tbody td:first-of-type,
 .category-list tbody th:first-of-type {
   padding-left: 24px;
@@ -5658,28 +5625,13 @@ div.poll .results .bar-back::before {
   border-left-width: 2px;
 }
 .category-list tbody .category h3 {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.428571;
   margin-bottom: 0;
-}
-.category-list > tbody > tr {
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
 }
 .category-list > tbody > tr:first-child {
   border-top: 0;
 }
 .category-list > tbody > tr:last-child {
   border-bottom: 0;
-}
-.category-list thead td,
-.category-list thead th {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  font-size: 12px;
-  height: 56px;
-  padding: 12px 12px;
-  vertical-align: middle;
 }
 .category-list thead td:first-of-type,
 .category-list thead th:first-of-type {
@@ -5692,9 +5644,6 @@ div.poll .results .bar-back::before {
 .category-list thead th {
   font-weight: bold;
   white-space: nowrap;
-}
-.category-list > thead > tr {
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
 }
 .category-list .badge-wrapper {
   -webkit-transform: scale(0.75);
@@ -5780,13 +5729,6 @@ div.poll .results .bar-back::before {
   height: auto;
 }
 
-.links-section .domain {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
-}
-
 .stats-section li {
   margin: 0 16px 0 0;
   padding: 0;
@@ -5863,26 +5805,16 @@ div.poll .results .bar-back::before {
 .user-main .about.collapsed-info .details {
   padding: 16px 16px;
 }
-.user-main .about.collapsed-info .details .primary h1 {
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.176471;
-}
 .user-main .about.collapsed-info .details .primary h2 {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
   margin-top: 8px;
 }
 .user-main .about.collapsed-info .details .primary h2:empty {
   display: none;
 }
 .user-main .about.collapsed-info .details .primary .avatar {
-  height: 1.176471;
+  height: 1;
   margin-right: 8px;
-  width: 1.176471;
+  width: 1;
 }
 .user-main .about.has-background .details {
   background-color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
@@ -5916,22 +5848,10 @@ div.poll .results .bar-back::before {
 .user-main .about .details {
   background-color: transparent;
 }
-.user-main .about .details h1 {
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.176471;
-}
 .user-main .about .details h1 i::before {
   font-size: 14px;
   line-height: 1;
   vertical-align: middle;
-}
-.user-main .about .details h2 {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
 }
 .user-main .about .details img.avatar {
   -webkit-flex-shrink: 0;
@@ -5946,7 +5866,7 @@ div.poll .results .bar-back::before {
   display: flex;
 }
 .user-main .about .details .primary h1 {
-  font-weight: 400;
+  font-weight: 300;
 }
 .user-main .about .details .primary .primary-textual {
   margin-right: auto;
@@ -6193,10 +6113,6 @@ div.poll .results .bar-back::before {
   margin-bottom: 16px;
 }
 .user-main .user-stream .time {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   margin-right: 0;
   margin-left: auto;
@@ -6252,10 +6168,6 @@ div.poll .results .bar-back::before {
   margin-bottom: 0;
 }
 .user-preferences .instructions {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   display: block;
   margin-bottom: 8px;
 }
@@ -6307,21 +6219,13 @@ div.poll .results .bar-back::before {
   min-height: 0;
 }
 .badge-card .badge-contents .badge-icon {
-  font-size: 34px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.176471;
   background-color: color-chooser(#212121, #f5f5f5);
-  min-width: 90.285714px;
+  min-width: 224px;
 }
 .badge-card .badge-contents .badge-info {
   min-width: 0;
 }
 .badge-card .badge-contents .badge-info h3 {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
   margin-bottom: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6560,10 +6464,6 @@ div.poll .results .bar-back::before {
   width: auto;
 }
 #user-card h1 {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
   margin-bottom: 8px;
   min-width: 0;
 }
@@ -6579,18 +6479,8 @@ div.poll .results .bar-back::before {
   vertical-align: middle;
 }
 #user-card h2 {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.428571;
   margin-bottom: 8px;
   max-width: none;
-}
-#user-card h3 {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.428571;
 }
 #user-card .btn {
   margin: 0 0 1px;
@@ -6688,16 +6578,8 @@ div.poll .results .bar-back::before {
   margin-bottom: 24px;
 }
 .admin-container .controls.username input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
   margin-right: 24px;
   margin-bottom: 0;
-}
-.admin-container .controls.username input[type='text']:focus, .admin-container .controls.username input[type='text']:hover {
-  padding-bottom: 18px;
 }
 .admin-container .controls.username input[type='text']:last-child {
   margin-right: 0;
@@ -6715,39 +6597,16 @@ div.poll .results .bar-back::before {
   padding: 0;
 }
 .admin-contents table:not(.pika-table) {
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-  max-width: 100%;
-  width: 100%;
   margin-top: 0;
-}
-.admin-contents table:not(.pika-table) td,
-.admin-contents table:not(.pika-table) th {
-  color: $primary;
-  font-size: 13px;
-  height: 48px;
-  padding: 12px 12px;
-  vertical-align: middle;
 }
 .admin-contents table:not(.pika-table) td {
   border: 0;
-}
-.admin-contents table:not(.pika-table) tr {
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
 }
 .admin-contents table:not(.pika-table) tr:hover {
   background-color: color-chooser(#212121, #f5f5f5);
 }
 .admin-contents table:not(.pika-table) thead td,
 .admin-contents table:not(.pika-table) thead th {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  font-size: 12px;
-  height: 56px;
-  padding: 12px 12px;
-  vertical-align: middle;
   background-color: color-chooser(#212121, #f5f5f5);
 }
 
@@ -6758,32 +6617,12 @@ div.poll .results .bar-back::before {
 .admin-controls button {
   margin-right: 8px;
 }
-.admin-controls input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.admin-controls input[type='text']:focus, .admin-controls input[type='text']:hover {
-  padding-bottom: 18px;
-}
 .admin-controls label {
   margin-right: 8px;
 }
 .admin-controls .ac-wrap {
   margin-bottom: 8px;
   width: auto !important;
-}
-.admin-controls .ac-wrap input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.admin-controls .ac-wrap input[type='text']:focus, .admin-controls .ac-wrap input[type='text']:hover {
-  padding-bottom: 18px;
 }
 .admin-controls .controls {
   margin-left: 0;
@@ -6831,66 +6670,50 @@ div.poll .results .bar-back::before {
   display: table;
 }
 
-.badges,
-.groups,
-.web-hook-container {
+div.badges,
+div.groups,
+div.web-hook-container {
   margin-bottom: 16px;
 }
-.badges .form-horizontal:last-child,
-.groups .form-horizontal:last-child,
-.web-hook-container .form-horizontal:last-child {
+div.badges .form-horizontal:last-child,
+div.groups .form-horizontal:last-child,
+div.web-hook-container .form-horizontal:last-child {
   margin-bottom: 0;
 }
-.badges .form-horizontal input,
-.badges .form-horizontal select,
-.badges .form-horizontal textarea,
-.groups .form-horizontal input,
-.groups .form-horizontal select,
-.groups .form-horizontal textarea,
-.web-hook-container .form-horizontal input,
-.web-hook-container .form-horizontal select,
-.web-hook-container .form-horizontal textarea {
+div.badges .form-horizontal input,
+div.badges .form-horizontal select,
+div.badges .form-horizontal textarea,
+div.groups .form-horizontal input,
+div.groups .form-horizontal select,
+div.groups .form-horizontal textarea,
+div.web-hook-container .form-horizontal input,
+div.web-hook-container .form-horizontal select,
+div.web-hook-container .form-horizontal textarea {
   width: 100%;
 }
-.badges .form-horizontal input[type='text'],
-.groups .form-horizontal input[type='text'],
-.web-hook-container .form-horizontal input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.badges .form-horizontal input[type='text']:focus, .badges .form-horizontal input[type='text']:hover,
-.groups .form-horizontal input[type='text']:focus,
-.groups .form-horizontal input[type='text']:hover,
-.web-hook-container .form-horizontal input[type='text']:focus,
-.web-hook-container .form-horizontal input[type='text']:hover {
-  padding-bottom: 18px;
-}
-.badges .form-horizontal input[type='text']:last-child,
-.groups .form-horizontal input[type='text']:last-child,
-.web-hook-container .form-horizontal input[type='text']:last-child {
+div.badges .form-horizontal input[type='text']:last-child,
+div.groups .form-horizontal input[type='text']:last-child,
+div.web-hook-container .form-horizontal input[type='text']:last-child {
   margin-bottom: 0;
 }
-.badges .form-horizontal > div,
-.groups .form-horizontal > div,
-.web-hook-container .form-horizontal > div {
+div.badges .form-horizontal > div,
+div.groups .form-horizontal > div,
+div.web-hook-container .form-horizontal > div {
   margin-top: 0;
   margin-bottom: 16px;
 }
-.badges .form-horizontal > div:last-child,
-.groups .form-horizontal > div:last-child,
-.web-hook-container .form-horizontal > div:last-child {
+div.badges .form-horizontal > div:last-child,
+div.groups .form-horizontal > div:last-child,
+div.web-hook-container .form-horizontal > div:last-child {
   margin-bottom: 0;
 }
-.badges .form-horizontal > div.group-flair-inputs input[type='text'],
-.groups .form-horizontal > div.group-flair-inputs input[type='text'],
-.web-hook-container .form-horizontal > div.group-flair-inputs input[type='text'] {
+div.badges .form-horizontal > div.group-flair-inputs input[type='text'],
+div.groups .form-horizontal > div.group-flair-inputs input[type='text'],
+div.web-hook-container .form-horizontal > div.group-flair-inputs input[type='text'] {
   margin-bottom: 8px;
 }
 
-.admin-contents .badges {
+.admin-contents div.badges {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
@@ -6900,19 +6723,13 @@ div.poll .results .bar-back::before {
   display: -ms-flexbox;
   display: flex;
 }
-.admin-contents .badges .current-badge {
+.admin-contents div.badges .current-badge {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 0;
   width: auto;
-}
-.admin-contents .badges .current-badge p.help {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
 }
 
 .content-editor {
@@ -6938,16 +6755,6 @@ div.poll .results .bar-back::before {
 .content-editor .d-editor-input {
   width: 100%;
 }
-.content-editor .email-template input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.content-editor .email-template input[type='text']:focus, .content-editor .email-template input[type='text']:hover {
-  padding-bottom: 18px;
-}
 
 .badges .content-list, .customize .content-list, .groups .content-list {
   -webkit-flex-shrink: 0;
@@ -6956,10 +6763,6 @@ div.poll .results .bar-back::before {
   margin-right: 24px;
 }
 .content-list h3 {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   font-weight: bolder;
   margin-bottom: 8px;
   padding-left: 0;
@@ -6980,10 +6783,6 @@ div.poll .results .bar-back::before {
   font-weight: normal;
 }
 .content-list ul li a span.count {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 2px;
   color: inherit;
@@ -7135,16 +6934,6 @@ div.poll .results .bar-back::before {
   line-height: 1;
   vertical-align: middle;
 }
-.customize .show-current-style h1 input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.customize .show-current-style h1 input[type='text']:focus, .customize .show-current-style h1 input[type='text']:hover {
-  padding-bottom: 18px;
-}
 .customize .show-current-style h3 {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -7174,10 +6963,6 @@ div.poll .results .bar-back::before {
   padding: 0;
 }
 .customize .status-message {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   margin-top: 8px;
 }
 
@@ -7218,22 +7003,12 @@ div.poll .results .bar-back::before {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.admin-container div.emoji input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.admin-container div.emoji input[type='text']:focus, .admin-container div.emoji input[type='text']:hover {
-  padding-bottom: 18px;
-}
 
 .group-members-input > div:first-of-type {
   margin-bottom: 8px;
 }
 
-.admin-contents .groups {
+.admin-contents div.groups {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
@@ -7243,23 +7018,23 @@ div.poll .results .bar-back::before {
   display: -ms-flexbox;
   display: flex;
 }
-.admin-contents .groups > .span13 {
+.admin-contents div.groups > .span13 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: auto;
 }
-.admin-contents .groups .ac-wrap .item {
+.admin-contents div.groups .ac-wrap .item {
   margin-right: 8px;
 }
-.admin-contents .groups .ac-wrap .item .avatar {
+.admin-contents div.groups .ac-wrap .item .avatar {
   height: 32px;
   margin-right: 4px;
   margin-left: -12px;
   width: 32px;
 }
-.admin-contents .groups .controls {
+.admin-contents div.groups .controls {
   margin-top: 0;
 }
 
@@ -7307,15 +7082,7 @@ div.poll .results .bar-back::before {
   width: 100%;
 }
 .permalink-title ~ div input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
   margin-top: 8px;
-}
-.permalink-title ~ div input[type='text']:focus, .permalink-title ~ div input[type='text']:hover {
-  padding-bottom: 18px;
 }
 
 .permalinks,
@@ -7324,13 +7091,6 @@ div.poll .results .bar-back::before {
 .screened-urls,
 .staff-actions,
 .web-hook-events {
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-  max-width: 100%;
-  width: 100%;
   clear: both;
   display: table;
 }
@@ -7355,11 +7115,6 @@ div.poll .results .bar-back::before {
 .screened-urls .col:not(.heading),
 .staff-actions .col:not(.heading),
 .web-hook-events .col:not(.heading) {
-  color: $primary;
-  font-size: 13px;
-  height: 48px;
-  padding: 12px 12px;
-  vertical-align: middle;
   height: auto;
   min-height: 48px;
   padding-right: 0;
@@ -7370,11 +7125,6 @@ div.poll .results .bar-back::before {
 .screened-urls .col.heading,
 .staff-actions .col.heading,
 .web-hook-events .col.heading {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  font-size: 12px;
-  height: 56px;
-  padding: 12px 12px;
-  vertical-align: middle;
   height: auto;
   min-height: 56px;
   text-align: left;
@@ -7424,43 +7174,20 @@ div.poll .results .bar-back::before {
           box-shadow: none;
   margin-bottom: 0;
 }
-.settings .setting h3 {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.428571;
-}
 .settings .setting .ac-wrap {
   margin-bottom: 8px;
   width: auto !important;
 }
-.settings .setting .ac-wrap input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.settings .setting .ac-wrap input[type='text']:focus, .settings .setting .ac-wrap input[type='text']:hover {
-  padding-bottom: 18px;
-}
 .settings .setting .desc,
 .settings .setting .validation-error {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
   padding-top: 0;
 }
-.settings .setting .input-setting-string {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.settings .setting .input-setting-string:focus, .settings .setting .input-setting-string:hover {
-  padding-bottom: 18px;
+.settings .setting .input-setting-list {
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
 }
 .settings .setting .setting-label {
   margin-right: 0;
@@ -7494,16 +7221,6 @@ div.poll .results .bar-back::before {
 
 .site-texts .search-area {
   margin-bottom: 16px;
-}
-.site-texts .search-area .site-text-search {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.site-texts .search-area .site-text-search:focus, .site-texts .search-area .site-text-search:hover {
-  padding-bottom: 18px;
 }
 .site-texts .site-text {
   border-bottom: 0;
@@ -7546,20 +7263,12 @@ div.poll .results .bar-back::before {
 }
 
 .value-list input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-bottom: 0;
   width: auto;
-}
-.value-list input[type='text']:focus, .value-list input[type='text']:hover {
-  padding-bottom: 18px;
 }
 .value-list .input {
   -webkit-box-align: center;
@@ -7578,52 +7287,7 @@ div.poll .results .bar-back::before {
   padding: 0;
 }
 .value-list .value {
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: inherit;
-  display: block;
-  font-size: 16px;
-  height: 36px;
-  line-height: 20px;
-  padding: 8px 0 7px;
-  width: 100%;
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
   margin-bottom: 1px;
-}
-.value-list .value:focus {
-  border-width: 2px;
-  padding-bottom: 6px;
-}
-@media (hover: hover) {
-  .value-list .value:hover {
-    border-width: 2px;
-    padding-bottom: 6px;
-  }
-}
-.value-list .value:focus {
-  border-color: $tertiary;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.value-list .value[disabled], .value-list .value[readonly] {
-  border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  border-style: dotted;
-  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
-  pointer-events: none;
-}
-.value-list .value:focus, .value-list .value:hover {
-  padding-bottom: 18px;
 }
 .value-list .value .btn {
   background-color: transparent;
