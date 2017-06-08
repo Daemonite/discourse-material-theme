@@ -96,81 +96,82 @@ $spacer-xl: 48px !default;
 
 // Basics - Typography - Font family
 
-$font-family-monospace:     "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-sans-serif:    Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
-$font-family-serif:         "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
 
 
 
 // Basics - Typography - Font size
 
-$font-size-base:       14px !default;
-$font-size-root:       16px !default;
+$font-size-base:      14px !default;
+$font-size-root:      16px !default;
+$font-size-small:     .857142857em !default;
 
-$font-size-display-4:  112px !default;
-$font-size-display-3:  56px !default;
-$font-size-display-2:  45px !default;
-$font-size-display-1:  34px !default;
-$font-size-headline:   24px !default;
-$font-size-title:      20px !default;
-$font-size-subheading: 16px !default;
-$font-size-body-2:     14px !default;
-$font-size-body-1:     14px !default;
-$font-size-caption:    12px !default;
+$font-size-display-1: 112px !default;
+$font-size-display-2: 56px !default;
+$font-size-h1:        45px !default;
+$font-size-h2:        34px !default;
+$font-size-h3:        24px !default;
+$font-size-h4:        20px !default;
+$font-size-h5:        16px !default;
+$font-size-h6:        14px !default;
+$font-size-body:      14px !default;
+$font-size-caption:   12px !default;
 
-$material-icon-size:   24px !default;
+$material-icon-size:  24px !default;
 
 
 
 // Basics - Typography - Font weight
 
-$font-weight-bold:       700 !default;
-$font-weight-medium:     500 !default;
-$font-weight-regular:    400 !default;
-$font-weight-light:      300 !default;
+$font-weight-bold:      700 !default;
+$font-weight-medium:    500 !default;
+$font-weight-regular:   400 !default;
+$font-weight-light:     300 !default;
 
-$font-weight-display-4:  $font-weight-light !default;
-$font-weight-display-3:  $font-weight-regular !default;
-$font-weight-display-2:  $font-weight-regular !default;
-$font-weight-display-1:  $font-weight-regular !default;
-$font-weight-headline:   $font-weight-regular !default;
-$font-weight-title:      $font-weight-medium !default;
-$font-weight-subheading: $font-weight-regular !default;
-$font-weight-body-2:     $font-weight-medium !default;
-$font-weight-body-1:     $font-weight-regular !default;
-$font-weight-caption:    $font-weight-regular !default;
+$font-weight-display-1: $font-weight-light !default;
+$font-weight-display-2: $font-weight-regular !default;
+$font-weight-h1:        $font-weight-regular !default;
+$font-weight-h2:        $font-weight-regular !default;
+$font-weight-h3:        $font-weight-regular !default;
+$font-weight-h4:        $font-weight-medium !default;
+$font-weight-h5:        $font-weight-regular !default;
+$font-weight-h6:        $font-weight-medium !default;
+$font-weight-body:      $font-weight-regular !default;
+$font-weight-caption:   $font-weight-regular !default;
 
 
 
 // Basics - Typography - Letter spacing
 
-$letter-spacing-display-4:  -.04em !default;
-$letter-spacing-display-3:  -.02em !default;
-$letter-spacing-display-2:  0 !default;
-$letter-spacing-display-1:  0 !default;
-$letter-spacing-headline:   0 !default;
-$letter-spacing-title:      .02em !default;
-$letter-spacing-subheading: .04em !default;
-$letter-spacing-body-2:     0 !default;
-$letter-spacing-body-1:     0 !default;
-$letter-spacing-caption:    0 !default;
+$letter-spacing-display-1: -.04em !default;
+$letter-spacing-display-2: -.02em !default;
+$letter-spacing-h1:        0 !default;
+$letter-spacing-h2:        0 !default;
+$letter-spacing-h3:        0 !default;
+$letter-spacing-h4:        .02em !default;
+$letter-spacing-h5:        .04em !default;
+$letter-spacing-h6:        0 !default;
+$letter-spacing-body:      0 !default;
+$letter-spacing-caption:   0 !default;
 
 
 
 // Basics - Typography - Line height
 
-$line-height-base:       1.428571 !default; // 20px
+$line-height-base:      1.428571 !default; // 20px
 
-$line-height-display-4:  1 !default;        // 112px
-$line-height-display-3:  1.035714 !default; // 58px
-$line-height-display-2:  1.066667 !default; // 48px
-$line-height-display-1:  1.176471 !default; // 40px
-$line-height-headline:   1.333333 !default; // 32px
-$line-height-title:      1.4 !default;      // 28px
-$line-height-subheading: 1.5 !default;      // 24px
-$line-height-body-2:     1.428571 !default; // 20px
-$line-height-body-1:     1.428571 !default; // 20px
-$line-height-caption:    1.5 !default;      // 18px
+$line-height-display-1: 1 !default;        // 112px
+$line-height-display-2: 1.035714 !default; // 58px
+$line-height-h1:        1.066667 !default; // 48px
+$line-height-h2:        1.176471 !default; // 40px
+$line-height-h3:        1.333333 !default; // 32px
+$line-height-h4:        1.4 !default;      // 28px
+$line-height-h5:        1.5 !default;      // 24px
+$line-height-h6:        1.428571 !default; // 20px
+$line-height-body:      1.428571 !default; // 20px
+$line-height-caption:   1.5 !default;      // 18px
 
 
 

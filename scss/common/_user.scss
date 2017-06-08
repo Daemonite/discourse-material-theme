@@ -13,7 +13,7 @@
 }
 
 .links-section .domain {
-  @include typography-small;
+  @extend %typography-caption;
 }
 
 .stats-section {
@@ -112,11 +112,11 @@
 
         .primary {
           h1 {
-            @include typography-h2;
+            @extend %typography-h2;
           }
 
           h2 {
-            @include typography-h5;
+            @extend %typography-h5;
 
             margin-top: ($card-inner-spacer-y / 2);
 
@@ -169,7 +169,7 @@
       background-color: transparent;
 
       h1 {
-        @include typography-h2;
+        @extend %typography-h2;
 
         i::before {
           font-size: $font-size-base;
@@ -179,7 +179,7 @@
       }
 
       h2 {
-        @include typography-h5;
+        @extend %typography-h5;
       }
 
       img {
@@ -439,7 +439,7 @@
     }
 
     .time {
-      @include typography-small;
+      @extend %typography-caption;
 
       color: color-chooser($white-secondary, $black-secondary);
       margin-right: 0;
@@ -528,7 +528,7 @@
   }
 
   .instructions {
-    @include typography-small;
+    @extend %typography-caption;
 
     display: block;
     margin-bottom: $spacer-sm;

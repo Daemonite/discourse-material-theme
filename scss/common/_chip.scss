@@ -3,7 +3,7 @@
   background-color: color-chooser($chip-bg-dark, $chip-bg-light);
   border-radius: 1em;
   color: unquote('$primary');
-  font-size: .857142857em;
+  font-size: $font-size-small;
   padding: ($chip-padding-y / 2) ($chip-padding-x / 2);
 
   &:focus,

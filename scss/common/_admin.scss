@@ -219,7 +219,7 @@ div.badges {
       width: auto;
 
       p.help {
-        @include typography-small;
+        @extend %typography-caption;
       }
     }
   }
@@ -267,7 +267,7 @@ div.badges {
   }
 
   h3 {
-    @include typography-small;
+    @extend %typography-caption;
 
     font-weight: bolder;
     margin-bottom: $spacer-sm;
@@ -299,7 +299,7 @@ div.badges {
         }
 
         span.count {
-          @include typography-small;
+          @extend %typography-caption;
 
           background-color: color-chooser($chip-bg-dark, $chip-bg-light);
           border-radius: $btn-border-radius;
@@ -496,7 +496,7 @@ div.badges {
   }
 
   .status-message {
-    @include typography-small;
+    @extend %typography-caption;
 
     margin-top: ($card-inner-spacer-y / 2);
   }
@@ -709,7 +709,7 @@ div.groups {
     }
 
     h3 {
-      @include typography-h6;
+      @extend %typography-h6;
     }
 
     .ac-wrap {
@@ -723,7 +723,7 @@ div.groups {
 
     .desc,
     .validation-error {
-      @include typography-small;
+      @extend %typography-caption;
 
       padding-top: 0;
     }

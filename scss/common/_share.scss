@@ -3,7 +3,7 @@
   @extend %card-block;
 
   h3 {
-    @include typography-h4;
+    @extend %typography-h4;
 
     float: none;
     margin: 0 ($card-inner-spacer-x + $material-icon-size) $card-inner-spacer-y 0;
@@ -17,7 +17,7 @@
     font-size: inherit;
     margin: 0;
     position: absolute;
-    top: ($card-inner-spacer-y + ($font-size-title * $line-height-title - $material-icon-size));
+    top: ($card-inner-spacer-y + ($font-size-h4 * $line-height-h4 - $material-icon-size));
     right: $card-inner-spacer-x;
 
     a {

@@ -16,7 +16,7 @@
 
     .badge-icon {
       @extend %card-block;
-      @include typography-h2;
+      @extend %typography-h2;
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       min-width: ($card-padding-x * 2 + $font-size-display-1 / $font-size-base * $material-icon-size);
@@ -28,7 +28,7 @@
       min-width: 0;
 
       h3 {
-        @include typography-h5;
+        @extend %typography-h5;
 
         margin-bottom: ($card-inner-spacer-y / 2);
         overflow: hidden;

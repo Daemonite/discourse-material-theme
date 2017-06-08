@@ -159,7 +159,7 @@
 
 .modal-close {
   order: 1;
-  margin: ($font-size-title * $line-height-title - $material-icon-size) 0 0 auto;
+  margin: ($font-size-h4 * $line-height-h4 - $material-icon-size) 0 0 auto;
 }
 
 .modal-footer {
@@ -198,7 +198,7 @@
   }
 
   h3 {
-    @include typography-h4;
+    @extend %typography-h4;
 
     margin: 0 $modal-inner-spacer-x 0 0;
     padding: 0;

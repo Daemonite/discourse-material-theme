@@ -71,7 +71,7 @@
   }
 
   h1 {
-    @include typography-h4;
+    @extend %typography-h4;
 
     margin-bottom: ($card-inner-spacer-y / 2);
     min-width: 0;
@@ -88,14 +88,14 @@
   }
 
   h2 {
-    @include typography-body;
+    @extend %typography-body;
 
     margin-bottom: ($card-inner-spacer-y / 2);
     max-width: none;
   }
 
   h3 {
-    @include typography-body;
+    @extend %typography-body;
   }
 
   .btn {
@@ -128,13 +128,13 @@
     margin-bottom: $card-inner-spacer-y;
 
     img {
-      height: ($card-inner-spacer-y / 2 + $font-size-body-1 * $line-height-body-1 + $font-size-title * $line-height-title);
-      width: ($card-inner-spacer-y / 2 + $font-size-body-1 * $line-height-body-1 + $font-size-title * $line-height-title);
+      height: ($card-inner-spacer-y / 2 + $font-size-body * $line-height-body + $font-size-h4 * $line-height-h4);
+      width: ($card-inner-spacer-y / 2 + $font-size-body * $line-height-body + $font-size-h4 * $line-height-h4);
     }
   }
 
   .usercard-controls {
-    margin: (($btn-height - $font-size-title * $line-height-title) / -2) ($btn-padding-x / -2) ($card-inner-spacer-y / 2) 0;
+    margin: (($btn-height - $font-size-h4 * $line-height-h4) / -2) ($btn-padding-x / -2) ($card-inner-spacer-y / 2) 0;
 
     a {
       display: flex;

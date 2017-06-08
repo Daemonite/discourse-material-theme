@@ -168,7 +168,7 @@
 
   .category-desc,
   .topic-count {
-    @include typography-small;
+    @extend %typography-caption;
   }
 
   .category-desc {

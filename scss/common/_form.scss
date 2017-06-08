@@ -165,7 +165,7 @@ textarea {
     }
 
     .control-label {
-      @include typography-small;
+      @extend %typography-caption;
 
       margin-bottom: 0;
     }

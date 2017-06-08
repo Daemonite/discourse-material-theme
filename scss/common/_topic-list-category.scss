@@ -37,7 +37,7 @@
   width: auto;
 
   h3 {
-    @include typography-h4;
+    @extend %typography-h4;
 
     margin-bottom: 0;
     text-align: left;
@@ -115,7 +115,7 @@
       border-left-width: ($table-border-width * 2);
 
       h3 {
-        @include typography-h6;
+        @extend %typography-h6;
 
         margin-bottom: 0;
       }

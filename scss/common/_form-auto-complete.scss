@@ -96,7 +96,7 @@ div.ac-wrap {
         white-space: nowrap;
 
         &.name {
-          @include typography-small;
+          @extend %typography-caption;
 
           color: color-chooser($white-secondary, $black-secondary);
           margin-left: ($dropdown-inner-spacer-x / 2);

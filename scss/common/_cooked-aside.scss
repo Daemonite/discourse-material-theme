@@ -20,7 +20,7 @@ aside {
     .onebox-body {
       h3,
       h4 {
-        @include typography-h5;
+        @extend %typography-h5;
 
         overflow: hidden;
         margin-bottom: ($card-inner-spacer-y / 2);
@@ -181,11 +181,11 @@ div {
       }
 
       .info-number {
-        @include typography-h3;
+        @extend %typography-h3;
       }
 
       .info-text {
-        @include typography-h6;
+        @extend %typography-h6;
       }
     }
 

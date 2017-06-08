@@ -19,7 +19,7 @@
     }
 
     .topic-status-info h3 {
-      @include typography-body;
+      @extend %typography-body;
 
       > .fa {
         margin-right: $card-inner-spacer-x;

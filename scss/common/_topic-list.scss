@@ -25,7 +25,7 @@
 
   h2 {
     .top-date-string {
-      @include typography-small;
+      @extend %typography-caption;
 
       color: color-chooser($white-secondary, $black-secondary);
     }
@@ -46,7 +46,7 @@
       }
 
       .top-date-string {
-        @include typography-small;
+        @extend %typography-caption;
 
         color: color-chooser($white-secondary, $black-secondary);
       }
