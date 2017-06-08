@@ -64,12 +64,12 @@
 }
 
 .topic-list {
-  @include table;
+  @extend %table;
 
   tbody {
     td,
     th {
-      @include tbody-cell;
+      @extend %tbody-cell;
 
       line-height: inherit;
 
@@ -85,7 +85,7 @@
 
   > tbody {
     > tr {
-      @include table-row;
+      @extend %table-row;
 
       &:first-child {
         border-top: 0;
@@ -134,7 +134,7 @@
   thead {
     td,
     th {
-      @include thead-cell;
+      @extend %thead-cell;
 
       line-height: inherit;
 
@@ -155,7 +155,7 @@
 
   > thead {
     > tr {
-      @include table-row;
+      @extend %table-row;
     }
   }
 

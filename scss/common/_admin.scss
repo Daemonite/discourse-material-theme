@@ -49,13 +49,13 @@
   }
 
   table:not(.pika-table) {
-    @include table;
+    @extend %table;
 
     margin-top: 0;
 
     td,
     th {
-      @include tbody-cell;
+      @extend %tbody-cell;
     }
 
     td {
@@ -63,7 +63,7 @@
     }
 
     tr {
-      @include table-row;
+      @extend %table-row;
 
       &:hover {
         background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
@@ -73,7 +73,7 @@
     thead {
       td,
       th {
-        @include thead-cell;
+        @extend %thead-cell;
 
         background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
       }
@@ -643,7 +643,7 @@ div.emoji {
 .screened-urls,
 .staff-actions,
 .web-hook-events {
-  @include table;
+  @extend %table;
 
   clear: both;
   display: table;
