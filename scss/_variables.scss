@@ -107,8 +107,6 @@ $font-family-serif:      "Roboto Slab", Georgia, "Times New Roman", Times, serif
 // Basics - Typography - Font size
 
 $font-size-base:      14px !default;
-$font-size-root:      16px !default;
-$font-size-small:     .857142857em !default;
 
 $font-size-display-1: 112px !default;
 $font-size-display-2: 56px !default;
@@ -120,6 +118,8 @@ $font-size-h5:        16px !default;
 $font-size-h6:        14px !default;
 $font-size-body:      14px !default;
 $font-size-caption:   12px !default;
+
+$font-size-small:     ($font-size-caption / $font-size-body)em !default;
 
 $material-icon-size:  24px !default;
 
