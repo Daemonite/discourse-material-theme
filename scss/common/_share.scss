@@ -10,7 +10,7 @@
   }
 
   input[type='text'] {
-    @include text-field-box;
+    @extend %text-field-box;
   }
 
   .link {

@@ -113,7 +113,7 @@ div {
 .search-menu {
   input {
     &[type='text'] {
-      @include text-field-box;
+      @extend %text-field-box;
 
       margin: 0;
       width: 100%;

@@ -24,7 +24,7 @@
     margin-bottom: $spacer-lg;
 
     input[type='text'] {
-      @include text-field-box;
+      @extend %text-field-box;
 
       margin-right: $spacer-lg;
       margin-bottom: 0;
@@ -97,7 +97,7 @@
   }
 
   input[type='text'] {
-    @include text-field-box;
+    @extend %text-field-box;
   }
 
   label {
@@ -109,7 +109,7 @@
     width: auto !important;
 
     input[type='text'] {
-      @include text-field-box;
+      @extend %text-field-box;
     }
   }
 
@@ -183,7 +183,7 @@
     }
 
     input[type='text'] {
-      @include text-field-box;
+      @extend %text-field-box;
 
       &:last-child {
         margin-bottom: 0;
@@ -254,7 +254,7 @@
   }
 
   .email-template input[type='text'] {
-    @include text-field-box;
+    @extend %text-field-box;
   }
 }
 
@@ -458,7 +458,7 @@
 
     h1 {
       input[type='text'] {
-        @include text-field-box;
+        @extend %text-field-box;
       }
     }
 
@@ -543,7 +543,7 @@ div.emoji {
     flex-grow: 1;
 
     input[type='text'] {
-      @include text-field-box;
+      @extend %text-field-box;
     }
   }
 }
@@ -630,7 +630,7 @@ div.emoji {
     width: 100%;
 
     input[type='text'] {
-      @include text-field-box;
+      @extend %text-field-box;
 
       margin-top: $spacer-sm;
     }
@@ -653,7 +653,7 @@ div.emoji {
     display: flex;
 
     &:not(.heading) {
-      @include tbody-cell;
+      @extend %tbody-cell;
 
       height: auto;
       min-height: $tbody-cell-height;
@@ -665,7 +665,7 @@ div.emoji {
     }
 
     &.heading {
-      @include thead-cell;
+      @extend %thead-cell;
 
       height: auto;
       min-height: $thead-cell-height;
@@ -717,7 +717,7 @@ div.emoji {
       width: auto !important;
 
       input[type='text'] {
-        @include text-field-box;
+        @extend %text-field-box;
       }
     }
 
@@ -729,7 +729,7 @@ div.emoji {
     }
 
     .input-setting-string {
-      @include text-field-box;
+      @extend %text-field-box;
     }
 
     .setting-label {
@@ -775,7 +775,7 @@ div.emoji {
     margin-bottom: $card-inner-spacer-y;
 
     .site-text-search {
-      @include text-field-box;
+      @extend %text-field-box;
     }
   }
 
@@ -830,7 +830,7 @@ div.user-fields {
 
 .value-list {
   input[type='text'] {
-    @include text-field-box;
+    @extend %text-field-box;
 
     flex-grow: 1;
     margin-bottom: 0;
@@ -850,8 +850,8 @@ div.user-fields {
   }
 
   .value {
-    @include text-field;
-    @include text-field-box;
+    @extend %text-field;
+    @extend %text-field-box;
 
     margin-bottom: 1px;
 

@@ -63,8 +63,6 @@ div.ac-wrap {
   }
 
   input[type='text'] {
-    @include text-field;
-
     margin-bottom: 0;
   }
 }

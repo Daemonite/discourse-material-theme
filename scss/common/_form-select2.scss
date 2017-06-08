@@ -167,7 +167,7 @@
   padding-left: $dropdown-link-padding-x;
 
   input[type='text'] {
-    @include text-field-box;
+    @extend %text-field-box;
 
     height: $text-field-box-height !important;
     margin-bottom: ($dropdown-link-padding-y-sm * 2);
