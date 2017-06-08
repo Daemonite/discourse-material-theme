@@ -27,15 +27,16 @@
 //   - Edit topic status update
 // - Notification
 // - Picker
-// - Post
 // - Progress
 // - Reply
 // - Share
 // - Table
 // - Timeline
-// - Topic list
-//   - Category list
-//   - Suggested topics
+// - Topic
+//   - Topic body
+//   - Topic list
+//     - Category list
+//     - Suggested topics
 // - User
 //   - User badge
 //   - User card
@@ -64,12 +65,12 @@
 @import 'common/modal-edit-topic';
 @import 'common/notification';
 @import 'common/picker';
-@import 'common/post';
 @import 'common/progress';
 @import 'common/reply';
 @import 'common/share';
 @import 'common/table';
 @import 'common/timeline';
+@import 'common/topic-body';
 @import 'common/topic-list';
 @import 'common/topic-list-category';
 @import 'common/topic-list-suggested';

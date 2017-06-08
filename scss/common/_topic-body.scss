@@ -1,3 +1,5 @@
+$topic-body-width: 690px !default;
+
 nav {
   &.post-controls {
     align-items: center;
@@ -125,14 +127,14 @@ nav {
 }
 
 .gap {
-  @include typography-small;
+  @extend %typography-caption;
 
   color: color-chooser($white-secondary, $black-secondary);
   font-weight: bolder;
   margin: $card-margin-y 0;
   padding: $card-margin-y 0 $card-margin-y ($card-inner-spacer-x * 2 + $card-padding-x + $material-icon-size);
   text-transform: none;
-  width: 690px;
+  width: $topic-body-width;
 }
 
 .names {
@@ -173,7 +175,7 @@ nav {
   margin-top: $card-margin-y;
   margin-bottom: $card-margin-y;
   position: relative;
-  width: 690px;
+  width: $topic-body-width;
 
   &.time-gap {
     background-color: transparent;
@@ -192,7 +194,7 @@ nav {
   }
 
   .small-action-desc {
-    @include typography-h6;
+    @extend %typography-h6;
 
     align-items: center;
     color: color-chooser($white-secondary, $black-secondary);
@@ -284,7 +286,7 @@ nav {
   flex-wrap: wrap;
   margin-bottom: ($spacer-lg - $card-margin-y);
   padding: 0;
-  width: ($card-margin-x + 690);
+  width: ($card-margin-x + $topic-body-width);
 
   div > button,
   span > button,
@@ -343,14 +345,14 @@ nav {
   position: relative;
 
   h3 {
-    @include typography-h6;
+    @extend %typography-h6;
 
     color: $card-color;
     margin-bottom: ($card-inner-spacer-y / 2);
   }
 
   h4 {
-    @include typography-small;
+    @extend %typography-caption;
 
     color: $card-color;
     margin: 0 0 ($card-inner-spacer-y / 2 / 2);
@@ -376,7 +378,7 @@ nav {
     padding: $card-padding-y $card-padding-x ($card-padding-y - $card-inner-spacer-y / 2);
 
     .post-count {
-      @include typography-small;
+      @extend %typography-caption;
 
       align-items: center;
       border-radius: ($btn-height / 4);
@@ -479,7 +481,7 @@ nav {
       border-radius: ($chip-height / 2);
       color: inherit;
       display: flex;
-      font-size: .857142857em;
+      font-size: $font-size-small;
       height: $chip-height;
       margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
       padding: 0 $chip-padding-x 0 ($chip-height + $chip-inner-spacer-x);
@@ -517,7 +519,7 @@ nav {
 
     span {
       &.domain {
-        font-size: .857142857em;
+        font-size: $font-size-small;
       }
     }
 
@@ -609,7 +611,7 @@ nav {
   }
 
   h1 {
-    @include typography-h1;
+    @extend %typography-h1;
 
     font-family: $font-family-serif;
     font-weight: normal;
