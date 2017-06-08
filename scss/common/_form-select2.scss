@@ -113,6 +113,43 @@
   }
 }
 
+.select2-container-multi {
+  &.select2-container-active {
+    border: 0;
+
+    .select2-choices {
+      border: 0;
+      border-bottom: ($text-field-border-width * 2) solid unquote('$tertiary');
+      box-shadow: none;
+      padding-bottom: 1px;
+    }
+  }
+
+  .select2-choices {
+    background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+    border: 0;
+    border-bottom: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+    border-radius: $text-field-box-border-radius;
+    min-height: $text-field-box-height;
+    padding: 1px 1px 2px;
+
+    @include hover {
+      border-bottom-width: ($text-field-border-width * 2);
+      padding-bottom: 1px;
+    }
+
+    .select2-search-choice {
+      margin: $spacer-xs;
+    }
+
+    .select2-search-field input {
+      height: auto;
+      margin: $spacer-xs;
+      padding: 0;
+    }
+  }
+}
+
 .select2-default {
   color: $btn-color !important;
 }

@@ -728,6 +728,13 @@ div.groups {
       padding-top: 0;
     }
 
+    .input-setting-list {
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      padding: 0;
+    }
+
     .input-setting-string {
       @extend %text-field-box;
     }
