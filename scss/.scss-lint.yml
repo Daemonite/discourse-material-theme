@@ -65,6 +65,7 @@ linters:
       - border-left-width
       - box-shadow
       - box-sizing
+      - break-inside
       - caption-side
       - clear
       - clip
@@ -99,6 +100,7 @@ linters:
       - font-emphasize-position
       - font-emphasize-style
       - font-family
+      - font-feature-settings
       - font-size
       - font-size-adjust
       - font-smoothing
@@ -208,5 +210,11 @@ linters:
       - z-index
       - zoom
 
+  QualifyingElement:
+    allow_element_with_attribute: true
+
   SelectorDepth:
     max_depth: 6
+
+  SelectorFormat:
+    enabled: false
