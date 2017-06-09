@@ -6,7 +6,7 @@
   },
   "description": "Material Design for Discourse",
   "devDependencies": {
-    "autoprefixer": "^6.7.6",
+    "autoprefixer": "^7.1.1",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
