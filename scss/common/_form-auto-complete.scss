@@ -1,69 +1,77 @@
-div.ac-wrap {
-  align-items: center;
-  background-color: transparent;
-  border: 0;
-  display: flex;
-  flex-wrap: wrap;
-  min-height: $text-field-height;
-  min-width: 100%;
-  padding: 0;
-
-  div.item {
+div {
+  &.ac-wrap {
     align-items: center;
-    background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-    border-radius: ($chip-height / 2);
-    color: inherit;
+    background-color: transparent;
+    border: 0;
     display: flex;
-    flex-shrink: 0;
-    font-size: $chip-font-size;
-    font-weight: normal;
-    height: $chip-height;
-    line-height: 1;
-    margin-top: (($text-field-height - $chip-height) / 2);
-    margin-right: $spacer-xs;
-    margin-bottom: (($text-field-height - $chip-height) / 2);
-    padding: 0 $chip-padding-x;
+    flex-wrap: wrap;
+    min-height: $text-field-height;
+    min-width: 100%;
+    padding: 0;
 
-    a.remove {
-      border: 0;
-      border-radius: 0;
-      color: color-chooser($white-secondary, $black-secondary);
-      font-size: inherit;
-      line-height: 1;
-      margin-right: ($chip-inner-spacer-x - $chip-padding-x);
-      margin-left: $chip-inner-spacer-x;
-      padding: 0;
-      width: auto;
-
-      &:hover {
-        background-color: transparent;
-        border: 0;
+    div {
+      &.item {
+        align-items: center;
+        background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+        border-radius: ($chip-height / 2);
         color: inherit;
+        display: flex;
+        flex-shrink: 0;
+        font-size: $chip-font-size;
+        font-weight: normal;
+        height: $chip-height;
+        line-height: 1;
+        margin-top: (($text-field-height - $chip-height) / 2);
+        margin-right: $spacer-xs;
+        margin-bottom: (($text-field-height - $chip-height) / 2);
+        padding: 0 $chip-padding-x;
+
+        a {
+          &.remove {
+            border: 0;
+            border-radius: 0;
+            color: color-chooser($white-secondary, $black-secondary);
+            font-size: inherit;
+            line-height: 1;
+            margin-right: ($chip-inner-spacer-x - $chip-padding-x);
+            margin-left: $chip-inner-spacer-x;
+            padding: 0;
+            width: auto;
+
+            @include focus-hover {
+              background-color: transparent;
+              border: 0;
+              color: inherit;
+            }
+          }
+        }
+
+        span {
+          align-items: center;
+          display: inline-flex;
+          height: auto;
+          line-height: 1;
+        }
+
+        .badge-wrapper {
+          background-color: transparent;
+          box-shadow: none;
+          margin-right: 0;
+          margin-left: ($chip-padding-x * -1);
+          padding-right: 0;
+        }
+
+        .fa-times::before {
+          content: 'cancel';
+        }
       }
-
-      .fa-times::before {
-        content: 'cancel';
-      }
     }
 
-    span {
-      align-items: center;
-      display: inline-flex;
-      height: auto;
-      line-height: 1;
-    }
+    input[type='text'] {
+      @extend %text-field;
 
-    .badge-wrapper {
-      background-color: transparent;
-      box-shadow: none;
-      margin-right: 0;
-      margin-left: ($chip-padding-x * -1);
-      padding-right: 0;
+      margin-bottom: 0;
     }
-  }
-
-  input[type='text'] {
-    margin-bottom: 0;
   }
 }
 

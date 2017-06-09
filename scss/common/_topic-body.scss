@@ -70,7 +70,7 @@ nav {
     .show-replies {
       @extend %btn-flat;
       @extend %btn-footer;
-      
+
       margin-top: ($card-padding-y / 2);
       margin-right: ($card-inner-spacer-x * 2);
       margin-bottom: ($card-padding-y / 2);
@@ -137,16 +137,14 @@ nav {
   width: $topic-body-width;
 }
 
-.names {
-  .fa {
-    color: inherit;
-    margin-left: $spacer-xs;
+.names .fa {
+  color: inherit;
+  margin-left: $spacer-xs;
 
-    &::before {
-      font-size: inherit;
-      line-height: 1;
-      vertical-align: middle;
-    }
+  &::before {
+    font-size: inherit;
+    line-height: 1;
+    vertical-align: middle;
   }
 }
 
@@ -206,8 +204,8 @@ nav {
     text-transform: none;
 
     &.timegap {
-      display: block;
       color: color-chooser($white-secondary, $black-secondary);
+      display: block;
     }
 
     > p {
@@ -218,7 +216,7 @@ nav {
     .avatar {
       height: $material-icon-size;
       margin-right: $card-inner-spacer-x;
-      weight: $material-icon-size;
+      width: $material-icon-size;
     }
   }
 
@@ -257,11 +255,9 @@ nav {
 
   margin-bottom: $card-margin-y;
 
-  .actions {
-    .fade-out {
-      .discourse-no-touch & {
-        opacity: 1;
-      }
+  .actions .fade-out {
+    .discourse-no-touch & {
+      opacity: 1;
     }
   }
 
@@ -305,6 +301,10 @@ nav {
     vertical-align: middle;
   }
 
+  > div {
+    width: 100%;
+  }
+
   .btn {
     margin: 0;
   }
@@ -331,10 +331,6 @@ nav {
     .btn {
       @extend %dropdown-link-sm;
     }
-  }
-
-  > div {
-    width: 100%;
   }
 }
 
@@ -377,6 +373,10 @@ nav {
   .avatars {
     padding: $card-padding-y $card-padding-x ($card-padding-y - $card-inner-spacer-y / 2);
 
+    > div {
+      margin: 0 0 ($card-inner-spacer-y / 2);
+    }
+
     .post-count {
       @extend %typography-caption;
 
@@ -387,10 +387,6 @@ nav {
       padding: 0 ($card-inner-spacer-x / 2);
       top: ($btn-height / 2 / -4);
       right: ($card-inner-spacer-x / 2);
-    }
-
-    > div {
-      margin: 0 0 ($card-inner-spacer-y / 2);
     }
   }
 
@@ -448,7 +444,7 @@ nav {
       &:nth-child(3),
       &.secondary {
         display: flex;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
       }
     }
 
@@ -554,9 +550,9 @@ nav {
       padding-right: $card-inner-spacer-x;
 
       a {
-        &,
-        &:focus,
-        &:hover {
+        color: unquote('$primary');
+
+        @include focus-hover {
           color: unquote('$primary');
         }
       }

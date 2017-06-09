@@ -19,35 +19,41 @@
 }
 
 .edit-category-modal {
-  .edit-category-tab-general section.field,
-  .edit-category-tab-security section.field {
-    > .btn {
-      @extend %btn-raised;
+  .edit-category-tab-general,
+  .edit-category-tab-security {
+    section {
+      &.field > .btn {
+        @extend %btn-raised;
+      }
     }
   }
 
-  .edit-category-tab-security section.field > .btn {
-    margin-top: $modal-inner-spacer-y;
+  .edit-category-tab-security section {
+    &.field > .btn {
+      margin-top: $modal-inner-spacer-y;
+    }
   }
 
-  .edit-category-tab-settings section.field {
-    margin-bottom: $modal-inner-spacer-y;
+  .edit-category-tab-settings section {
+    &.field {
+      margin-bottom: $modal-inner-spacer-y;
 
-    label {
-      align-items: center;
-      display: flex;
+      label {
+        align-items: center;
+        display: flex;
 
-      input {
-        margin: 0 0 0 $spacer-sm;
+        input {
+          margin: 0 0 0 $spacer-sm;
 
-        &[type='checkbox'] {
-          margin-right: $spacer-sm;
-          margin-left: 0;
+          &[type='checkbox'] {
+            margin-right: $spacer-sm;
+            margin-left: 0;
+          }
         }
-      }
 
-      .select2-container {
-        margin-left: $spacer-sm;
+        .select2-container {
+          margin-left: $spacer-sm;
+        }
       }
     }
   }
@@ -62,26 +68,28 @@
     margin-bottom: $modal-inner-spacer-y;
   }
 
-  section.field {
-    margin-bottom: $modal-inner-spacer-y;
+  section {
+    &.field {
+      margin-bottom: $modal-inner-spacer-y;
 
-    > br + * {
-      margin-top: $spacer-sm;
-    }
-
-    .field-item {
-      margin-right: $modal-inner-spacer-x;
-
-      label,
-      > :last-child {
-        margin-bottom: 0;
+      > br + * {
+        margin-top: $spacer-sm;
       }
-    }
 
-    .input-append,
-    .input-prepend {
-      margin-top: $spacer-sm !important;
-      margin-bottom: $spacer-sm;
+      .field-item {
+        margin-right: $modal-inner-spacer-x;
+
+        label,
+        > :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .input-append,
+      .input-prepend {
+        margin-top: $spacer-sm !important;
+        margin-bottom: $spacer-sm;
+      }
     }
   }
 
@@ -117,8 +125,7 @@
       flex-grow: 1;
       margin-bottom: -1px;
 
-      &.active > a,
-      > a.active {
+      &.active > a {
         background-color: transparent;
         color: unquote('$quaternary');
 
@@ -128,16 +135,33 @@
         }
 
         &::before {
-          background-color: unquote('$quaternary');
-          border-radius: 0;
-          height: 2px;
           opacity: 1;
-          top: auto;
         }
       }
 
       > a {
         border-radius: $btn-border-radius $btn-border-radius 0 0;
+
+        &::before {
+          background-color: unquote('$quaternary');
+          border-radius: 0;
+          height: 2px;
+          top: auto;
+        }
+
+        &.active {
+          background-color: transparent;
+          color: unquote('$quaternary');
+
+          @include focus-hover {
+            background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+            color: $btn-color;
+          }
+
+          &::before {
+            opacity: 1;
+          }
+        }
       }
     }
   }
@@ -158,8 +182,8 @@
 }
 
 .modal-close {
-  order: 1;
   margin: ($font-size-h4 * $line-height-h4 - $material-icon-size) 0 0 auto;
+  order: 1;
 }
 
 .modal-footer {
@@ -270,6 +294,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

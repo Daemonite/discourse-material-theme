@@ -21,6 +21,11 @@
     }
   }
 
+  table {
+    margin-top: 0;
+    table-layout: auto;
+  }
+
   > h3:first-of-type {
     align-items: center;
     background-color: color-chooser($table-bg-dark, $table-bg-light);
@@ -29,11 +34,6 @@
     margin: 0;
     min-height: $thead-cell-height;
     padding: $card-padding-y ($thead-cell-padding-x * 2);
-  }
-
-  table {
-    margin-top: 0;
-    table-layout: auto;
   }
 
   .topics {

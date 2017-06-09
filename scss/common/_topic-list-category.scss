@@ -23,10 +23,8 @@
   .topic-list-latest {
     margin-left: $spacer-lg;
 
-    .main-link {
-      .badge-wrapper {
-        margin-top: $spacer-sm;
-      }
+    .main-link .badge-wrapper {
+      margin-top: $spacer-sm;
     }
   }
 }
@@ -44,8 +42,8 @@
   }
 
   .category-box {
-    border-left-width: 2px;
     border-radius: $card-border-radius 0 0 $card-border-radius;
+    border-left-width: 2px;
     margin: 0 ($card-margin-x / 2) $card-margin-y;
     width: calc(33.333333% - #{$card-margin-x});
   }
@@ -122,20 +120,6 @@
     }
   }
 
-  > tbody {
-    > tr {
-      @extend %table-row;
-
-      &:first-child {
-        border-top: 0;
-      }
-
-      &:last-child {
-        border-bottom: 0;
-      }
-    }
-  }
-
   thead {
     td,
     th {
@@ -156,6 +140,20 @@
     }
   }
 
+  > tbody {
+    > tr {
+      @extend %table-row;
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
   > thead {
     > tr {
       @extend %table-row;
@@ -163,7 +161,7 @@
   }
 
   .badge-wrapper {
-    transform: scale(.75);
+    transform: scale($chip-sm-scale);
     transform-origin: 0 50%;
   }
 
@@ -179,9 +177,7 @@
     }
   }
 
-  .topics {
-    .value {
-      font-size: inherit;
-    }
+  .topics .value {
+    font-size: inherit;
   }
 }

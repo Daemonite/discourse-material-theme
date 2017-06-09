@@ -7,11 +7,13 @@
   margin-right: $spacer-xs;
 
   + span {
-    .select2-container a.select2-choice & {
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+    .select2-container a {
+      &.select2-choice & {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
     }
   }
 }
@@ -21,11 +23,13 @@
   border-radius: 0;
 
   &.select2-allowclear {
-    a.select2-choice > .select2-chosen {
-      margin-right: $spacer-xs;
+    a {
+      &.select2-choice > .select2-chosen {
+        margin-right: $spacer-xs;
 
-      &:empty {
-        display: none;
+        &:empty {
+          display: none;
+        }
       }
     }
   }
@@ -34,24 +38,28 @@
     box-shadow: none;
     margin-bottom: 0;
 
-    a.select2-choice {
-      border-radius: $btn-border-radius $btn-border-radius 0 0;
-      box-shadow: $btn-box-shadow-active;
-
-      &::before {
+    a {
+      &.select2-choice {
         border-radius: $btn-border-radius $btn-border-radius 0 0;
-        opacity: 1;
+        box-shadow: $btn-box-shadow-active;
+
+        &::before {
+          border-radius: $btn-border-radius $btn-border-radius 0 0;
+          opacity: 1;
+        }
       }
     }
   }
 
   &.select2-drop-above {
-    a.select2-choice {
-      border: 0;
+    a {
+      &.select2-choice {
+        border: 0;
 
-      &,
-      &::before {
-        border-radius: 0 0 $btn-border-radius $btn-border-radius;
+        &,
+        &::before {
+          border-radius: 0 0 $btn-border-radius $btn-border-radius;
+        }
       }
     }
   }
@@ -60,53 +68,55 @@
     margin-bottom: 0;
   }
 
-  a.select2-choice {
-    @extend %btn-flat;
-    @extend %btn-raised;
+  a {
+    &.select2-choice {
+      @extend %btn-flat;
+      @extend %btn-raised;
 
-    align-items: center;
-    display: inline-flex;
-    height: $btn-height;
-
-    abbr {
-      @include material-icons('close');
-
-      background-image: none;
-      height: auto;
-      margin-left: $spacer-xs;
-      order: 1;
-      position: relative;
-      top: auto;
-      right: auto;
-      width: auto;
-    }
-
-    > .select2-chosen {
       align-items: center;
       display: inline-flex;
       height: $btn-height;
-      margin: ($btn-padding-y * -1) $spacer-xs ($btn-padding-y * -1) 0;
 
-      &:empty {
-        display: none;
-      }
-    }
+      abbr {
+        @include material-icons('close');
 
-    .select2-arrow {
-      border-radius: 0;
-      height: auto;
-      position: static;
-      width: auto;
-
-      b {
-        background-color: transparent;
         background-image: none;
         height: auto;
+        margin-left: $spacer-xs;
+        order: 1;
+        position: relative;
+        top: auto;
+        right: auto;
+        width: auto;
+      }
 
-        &::before {
-          @extend %material-icons;
+      > .select2-chosen {
+        align-items: center;
+        display: inline-flex;
+        height: $btn-height;
+        margin: ($btn-padding-y * -1) $spacer-xs ($btn-padding-y * -1) 0;
 
-          content: 'arrow_drop_down';
+        &:empty {
+          display: none;
+        }
+      }
+
+      .select2-arrow {
+        border-radius: 0;
+        height: auto;
+        position: static;
+        width: auto;
+
+        b {
+          background-color: transparent;
+          background-image: none;
+          height: auto;
+
+          &::before {
+            @extend %material-icons;
+
+            content: 'arrow_drop_down';
+          }
         }
       }
     }

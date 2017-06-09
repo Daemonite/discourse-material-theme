@@ -40,8 +40,7 @@
   line-height: ($text-field-box-height - $text-field-box-padding-y * 2);
   padding: $text-field-box-padding-y $text-field-box-padding-x ($text-field-box-padding-y - $text-field-border-width);
 
-  &:focus,
-  &:hover {
+  @include focus-hover {
     padding-bottom: ($text-field-box-padding-y - $text-field-border-width * 2);
   }
 }
@@ -151,12 +150,11 @@ textarea {
 
 .form-vertical {
   body & {
-
     .checkbox-label {
       margin-bottom: $spacer-sm;
 
       &:last-child {
-        margin-bottom:  0;
+        margin-bottom: 0;
       }
     }
 
@@ -236,8 +234,10 @@ textarea {
 .image-upload-controls {
   padding: ($card-padding-y / 2) ($card-padding-x / 2);
 
-  label.btn {
-    padding: $btn-padding-y-sm $btn-padding-x-sm;
+  label {
+    &.btn {
+      padding: $btn-padding-y-sm $btn-padding-x-sm;
+    }
   }
 
   .btn {

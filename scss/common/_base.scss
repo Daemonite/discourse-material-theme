@@ -7,13 +7,6 @@
 body {
   font-size: $font-size-base;
   line-height: $line-height-base;
-
-  button,
-  input,
-  select,
-  textarea {
-    font-family: $font-family-sans-serif;
-  }
 }
 
 html {
@@ -26,6 +19,19 @@ html {
 
 .wrap {
   padding: 0;
+}
+
+
+
+// Form
+
+button,
+input,
+select,
+textarea {
+  body & {
+    font-family: $font-family-sans-serif;
+  }
 }
 
 

@@ -2,7 +2,7 @@ code,
 kbd,
 pre,
 samp {
-  body {
+  body & {
     font-family: $font-family-monospace;
   }
 }
@@ -46,6 +46,11 @@ pre {
     padding: 0;
   }
 }
+
+
+
+// Styles for 'COPY TO CLIPBOARD' button for code blocks
+// https://github.com/Daemonite/discourse-clipboard
 
 .code-highlight {
   .bd-clipboard {

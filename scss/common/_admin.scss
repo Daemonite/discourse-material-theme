@@ -1,23 +1,6 @@
 .admin-container {
   margin-top: 0;
 
-  .customize & {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .customize > & {
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-
-    > .row:not(.site-texts) {
-      align-items: flex-start;
-      display: flex;
-      flex-grow: 1;
-    }
-  }
-
   .controls.username {
     align-items: center;
     display: flex;
@@ -62,19 +45,19 @@
       border: 0;
     }
 
-    tr {
-      @extend %table-row;
-
-      &:hover {
-        background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
-      }
-    }
-
     thead {
       td,
       th {
         @extend %thead-cell;
 
+        background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
+      }
+    }
+
+    tr {
+      @extend %table-row;
+
+      &:hover {
         background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
       }
     }
@@ -137,7 +120,7 @@
 .admin-detail {
   border-left: 0;
   padding: 0 0 0 $spacer-lg;
-  width: 80%
+  width: 80%;
 }
 
 .admin-list-item {
@@ -166,60 +149,144 @@
   }
 }
 
-div.badges,
-div.groups,
-div.web-hook-container {
-  margin-bottom: $card-inner-spacer-y;
+div {
+  &.badges,
+  &.groups,
+  &.web-hook-container {
+    margin-bottom: $card-inner-spacer-y;
 
-  .form-horizontal {
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-    }
-
-    input[type='text'] {
-      @extend %text-field-box;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    > div {
-      margin-top: 0;
-      margin-bottom: $card-inner-spacer-y;
-
+    .form-horizontal {
       &:last-child {
         margin-bottom: 0;
       }
 
-      &.group-flair-inputs input[type='text'] {
-        margin-bottom: $spacer-sm;
+      input,
+      select,
+      textarea {
+        width: 100%;
+      }
+
+      input[type='text'] {
+        @extend %text-field-box;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      > div {
+        margin-top: 0;
+        margin-bottom: $card-inner-spacer-y;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &.group-flair-inputs input[type='text'] {
+          margin-bottom: $spacer-sm;
+        }
       }
     }
   }
-}
 
-div.badges {
-  .admin-contents & {
-    align-items: flex-start;
-    display: flex;
+  &.badges {
+    .admin-contents & {
+      align-items: flex-start;
+      display: flex;
 
-    .current-badge {
-      @extend %card;
-      @extend %card-block;
+      .current-badge {
+        @extend %card;
+        @extend %card-block;
 
+        flex-grow: 1;
+        margin: 0;
+        width: auto;
+
+        p {
+          &.help {
+            @extend %typography-caption;
+          }
+        }
+      }
+    }
+  }
+
+  &.embeddable-hosts {
+    .admin-container & {
       flex-grow: 1;
-      margin: 0;
-      width: auto;
+      margin-bottom: 0;
 
-      p.help {
-        @extend %typography-caption;
+      table td:last-child {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &.emoji {
+    .admin-container & {
+      flex-grow: 1;
+
+      input[type='text'] {
+        @extend %text-field-box;
+      }
+    }
+  }
+
+  &.groups {
+    .admin-contents & {
+      align-items: flex-start;
+      display: flex;
+
+      > .span13 {
+        @extend %card;
+        @extend %card-block;
+
+        flex-grow: 1;
+        width: auto;
+      }
+
+      .ac-wrap .item {
+        margin-right: $card-inner-spacer-x;
+
+        .avatar {
+          height: $chip-height;
+          margin-right: $chip-inner-spacer-x;
+          margin-left: ($chip-padding-x * -1);
+          width: $chip-height;
+        }
+      }
+
+      .controls {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.user-fields {
+    .admin-container & {
+      flex-grow: 1;
+
+      .user-field {
+        @extend %card;
+        @extend %card-block;
+
+        margin-bottom: $card-margin-y;
+
+        .form-element {
+          padding: 0;
+
+          &.label-area label {
+            margin: (($text-field-height - $font-size-base * $line-height-base) / 2) $card-inner-spacer-x 0 0;
+          }
+        }
+
+        .row {
+          margin-bottom: ($card-inner-spacer-y / 2);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
@@ -275,7 +342,7 @@ div.badges {
   }
 
   ul {
-    @extend .nav-stacked;
+    @extend %nav-stacked;
 
     .badges &,
     .customize &,
@@ -298,15 +365,17 @@ div.badges {
           font-weight: normal;
         }
 
-        span.count {
-          @extend %typography-caption;
+        span {
+          &.count {
+            @extend %typography-caption;
 
-          background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-          border-radius: $btn-border-radius;
-          color: inherit;
-          line-height: 1;
-          margin-right: 0;
-          padding: ($btn-font-size - $font-size-caption) / 2 $spacer-xs;
+            background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+            border-radius: $btn-border-radius;
+            color: inherit;
+            line-height: 1;
+            margin-right: 0;
+            padding: ($btn-font-size - $font-size-caption) / 2 $spacer-xs;
+          }
         }
 
         .user-badge {
@@ -318,9 +387,26 @@ div.badges {
 }
 
 .customize {
-  .admin-container > .about {
-    flex-grow: 1;
-    margin: 0;
+  > .admin-container {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+
+    > .row:not(.site-texts) {
+      align-items: flex-start;
+      display: flex;
+      flex-grow: 1;
+    }
+  }
+
+  .admin-container {
+    padding-right: 0;
+    padding-left: 0;
+
+    > .about {
+      flex-grow: 1;
+      margin: 0;
+    }
   }
 
   .admin-footer {
@@ -336,9 +422,6 @@ div.badges {
       &.actions {
         white-space: nowrap;
         width: auto;
-      }
-
-      &.hex {
       }
     }
 
@@ -527,59 +610,8 @@ div.badges {
   }
 }
 
-div.embeddable-hosts {
-  .admin-container & {
-    flex-grow: 1;
-    margin-bottom: 0;
-
-    table td:last-child {
-      white-space: nowrap;
-    }
-  }
-}
-
-div.emoji {
-  .admin-container & {
-    flex-grow: 1;
-
-    input[type='text'] {
-      @extend %text-field-box;
-    }
-  }
-}
-
 .group-members-input > div:first-of-type {
   margin-bottom: $spacer-sm;
-}
-
-div.groups {
-  .admin-contents & {
-    align-items: flex-start;
-    display: flex;
-
-    > .span13 {
-      @extend %card;
-      @extend %card-block;
-
-      flex-grow: 1;
-      width: auto;
-    }
-
-    .ac-wrap .item {
-      margin-right: $card-inner-spacer-x;
-
-      .avatar {
-        height: $chip-height;
-        margin-right: $chip-inner-spacer-x;
-        margin-left: ($chip-padding-x * -1);
-        width: $chip-height;
-      }
-    }
-
-    .controls {
-      margin-top: 0;
-    }
-  }
 }
 
 .groups-bulk {
@@ -618,7 +650,6 @@ div.groups {
 
   .select2-container {
     text-align: right;
-    text-align: end;
   }
 }
 
@@ -804,35 +835,6 @@ div.groups {
 .staff-action-logs-instructions {
   clear: both;
   margin: 0 0 $spacer-lg;
-}
-
-div.user-fields {
-  .admin-container & {
-    flex-grow: 1;
-
-    .user-field {
-      @extend %card;
-      @extend %card-block;
-
-      margin-bottom: $card-margin-y;
-
-      .form-element {
-        padding: 0;
-
-        &.label-area label {
-          margin: (($text-field-height - $font-size-base * $line-height-base) / 2) $card-inner-spacer-x 0 0;
-        }
-      }
-
-      .row {
-        margin-bottom: ($card-inner-spacer-y / 2);
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
 }
 
 .value-list {

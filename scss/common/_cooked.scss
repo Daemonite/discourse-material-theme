@@ -30,11 +30,9 @@
     width: calc(100% + #{$card-padding-x * 2});
   }
 
-  img {
-    &:not(.thumbnail) {
-      height: auto;
-      max-width: 100%;
-    }
+  img:not(.thumbnail) {
+    height: auto;
+    max-width: 100%;
   }
 
   p:empty {
@@ -91,10 +89,6 @@
       width: 100%;
     }
 
-    .lightbox {
-      display: block;
-    }
-
     + a {
       display: block;
       margin-top: ($card-inner-spacer-y / -2);
@@ -102,6 +96,10 @@
       + p {
         display: block;
       }
+    }
+
+    .lightbox {
+      display: block;
     }
   }
 }

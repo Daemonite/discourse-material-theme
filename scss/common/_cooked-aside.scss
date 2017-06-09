@@ -17,13 +17,18 @@ aside {
       }
     }
 
+    + .onebox {
+      border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
+      margin-top: ($card-inner-spacer-y * -1);
+    }
+
     .onebox-body {
       h3,
       h4 {
         @extend %typography-h5;
 
-        overflow: hidden;
         margin-bottom: ($card-inner-spacer-y / 2);
+        overflow: hidden;
       }
 
       img {
@@ -38,11 +43,6 @@ aside {
           margin-bottom: 0;
         }
       }
-    }
-
-    + .onebox {
-      border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
-      margin-top: ($card-inner-spacer-y * -1);
     }
   }
 

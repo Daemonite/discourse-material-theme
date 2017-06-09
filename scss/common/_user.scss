@@ -3,8 +3,8 @@
   .user-info {
     border-radius: 0;
     box-shadow: none;
-    padding: 0;
     margin-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -80,7 +80,7 @@
   li {
     border-top: 1px solid color-chooser($white-divider, $black-divider);
     border-left: 0;
-    margin:0 ($card-padding-x * -1);
+    margin: 0 ($card-padding-x * -1);
     padding: $card-padding-y $card-padding-x;
   }
 
@@ -103,8 +103,8 @@
       }
 
       .controls ul a {
-        padding: $btn-padding-y $btn-padding-x;
         margin-bottom: 0;
+        padding: $btn-padding-y $btn-padding-x;
       }
 
       .details {
@@ -119,10 +119,6 @@
             @extend %typography-h5;
 
             margin-top: ($card-inner-spacer-y / 2);
-
-            &:empty {
-              display: none;
-            }
           }
 
           .avatar {
@@ -182,11 +178,9 @@
         @extend %typography-h5;
       }
 
-      img {
-        &.avatar {
-          flex-shrink: 0;
-          margin: 0 $card-inner-spacer-x 0 0;
-        }
+      .avatar {
+        flex-shrink: 0;
+        margin: 0 $card-inner-spacer-x 0 0;
       }
 
       .primary {
@@ -195,18 +189,22 @@
         h1 {
           font-weight: $font-weight-display-1;
         }
+      }
 
-        .primary-textual {
-          margin-right: auto;
-          padding: 0;
+      .primary-textual {
+        margin-right: auto;
+        padding: 0;
 
-          > * {
-            margin-top: ($card-inner-spacer-y / 2);
-            margin-bottom: 0;
+        > * {
+          margin-top: ($card-inner-spacer-y / 2);
+          margin-bottom: 0;
 
-            &:first-child {
-              margin-top: 0;
-            }
+          &:empty {
+            display: none;
+          }
+
+          &:first-child {
+            margin-top: 0;
           }
         }
       }
@@ -359,12 +357,12 @@
     }
 
     .category {
-      height: ($chip-height * .75);
+      height: ($chip-height * $chip-sm-scale);
       line-height: 1;
 
       .badge-wrapper {
         margin-right: 0;
-        transform: scale(.75);
+        transform: scale($chip-sm-scale);
         transform-origin: 0 0;
       }
     }

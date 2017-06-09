@@ -120,12 +120,12 @@
       color: inherit;
     }
 
-    &:focus {
-      outline: 0;
-    }
-
     &::before {
       display: none;
+    }
+
+    &:focus {
+      outline: 0;
     }
 
     .fa {

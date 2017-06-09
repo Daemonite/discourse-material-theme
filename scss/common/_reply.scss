@@ -59,8 +59,8 @@
         &#reply-title {
           border-bottom: 0;
           height: auto;
-          padding: $card-padding-y $card-padding-x;
           margin: 0;
+          padding: $card-padding-y $card-padding-x;
 
           @include focus-hover {
             padding-bottom: $card-padding-y;
@@ -70,11 +70,9 @@
     }
   }
 
-  &.open {
-    .grippie {
-      display: flex;
-      flex-shrink: 0;
-    }
+  &.open .grippie {
+    display: flex;
+    flex-shrink: 0;
   }
 
   .add-warning {
@@ -284,11 +282,9 @@
       color: color-chooser($black-secondary, $white-secondary);
     }
 
-    img {
-      &.avatar {
-        margin-right: $spacer-xs;
-        margin-left: $spacer-xs;
-      }
+    .avatar {
+      margin-right: $spacer-xs;
+      margin-left: $spacer-xs;
     }
   }
 
@@ -300,8 +296,8 @@
   .toggler {
     align-items: center;
     color: color-chooser($black-secondary, $white-secondary);
-    font-size: inherit;
     display: flex;
+    font-size: inherit;
     height: ($material-icon-size + $spacer-sm);
     justify-content: center;
     padding: 0;

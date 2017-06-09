@@ -153,10 +153,8 @@
     }
   }
 
-  > thead {
-    > tr {
-      @extend %table-row;
-    }
+  > thead > tr {
+    @extend %table-row;
   }
 
   .avatar {
@@ -166,7 +164,7 @@
   }
 
   .badge-wrapper {
-    transform: scale(.75);
+    transform: scale($chip-sm-scale);
     transform-origin: 0 50%;
     vertical-align: middle;
   }
@@ -188,11 +186,9 @@
     }
   }
 
-  .posters {
-    > a {
-      float: none;
-      margin-right: $tbody-cell-padding-x;
-    }
+  .posters > a {
+    float: none;
+    margin-right: $tbody-cell-padding-x;
   }
 
   .sortable {
@@ -213,7 +209,7 @@
 
       span {
         background-color: color-chooser($table-bg-dark, $table-bg-light);
-        color:  unquote('$tertiary');
+        color: unquote('$tertiary');
         font-size: inherit;
         padding: 0 ($tbody-cell-padding-x / 2);
       }
@@ -238,6 +234,6 @@
 .topic-statuses {
   .topic-status {
     margin: 0;
-    padding: 0; 
+    padding: 0;
   }
 }

@@ -3,7 +3,7 @@
 }
 
 .fa-circle-o.regular::before {
-  content: 'notifications'
+  content: 'notifications';
 }
 
 .fa-exclamation-circle.watching::before {
@@ -11,7 +11,7 @@
 }
 
 .fa-times-circle.muted::before {
-  content: 'notifications_off'
+  content: 'notifications_off';
 }
 
 .timeline-container {

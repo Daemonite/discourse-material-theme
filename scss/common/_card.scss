@@ -8,8 +8,7 @@
 
   &[href],
   &[tabindex] {
-    &:focus,
-    &:hover {
+    @include focus-hover {
       box-shadow: $card-box-shadow-hover;
       text-decoration: none;
     }

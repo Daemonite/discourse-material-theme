@@ -47,30 +47,28 @@ ol {
     margin-left: $spacer-sm;
   }
 
-  .category-breadcrumb {
-    li {
-      > a {
-        &.badge-category {
-          @extend %btn-flat;
-          @extend %btn-raised;
+  .category-breadcrumb li > {
+    a {
+      &.badge-category {
+        @extend %btn-flat;
+        @extend %btn-raised;
 
-          border-radius: $btn-border-radius 0 0 $btn-border-radius;
+        border-radius: $btn-border-radius 0 0 $btn-border-radius;
 
-          &:not(.category-dropdown-button) {
-            flex-grow: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
-          }
+        &:not(.category-dropdown-button) {
+          flex-grow: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
 
-          &.category-dropdown-button {
-            border-radius: 0 $btn-border-radius $btn-border-radius 0;
-            margin-left: -1px;
-            padding: $btn-padding-y ($btn-padding-x / 2);
-            width: auto;
+        &.category-dropdown-button {
+          border-radius: 0 $btn-border-radius $btn-border-radius 0;
+          margin-left: -1px;
+          padding: $btn-padding-y ($btn-padding-x / 2);
+          width: auto;
 
-            .fa-caret-right {
-              margin-left: 0;
-            }
+          .fa-caret-right {
+            margin-left: 0;
           }
         }
       }
