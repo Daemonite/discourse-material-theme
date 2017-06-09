@@ -187,7 +187,7 @@
       color: color-chooser($white-secondary, $black-secondary);
 
       @include focus-hover {
-        color: $btn-color;
+        color: color-chooser($btn-color-dark, $btn-color-light);
       }
     }
   }

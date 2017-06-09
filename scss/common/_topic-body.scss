@@ -343,14 +343,14 @@ nav {
   h3 {
     @extend %typography-h6;
 
-    color: $card-color;
+    color: color-chooser($card-color-dark, $card-color-light);
     margin-bottom: ($card-inner-spacer-y / 2);
   }
 
   h4 {
     @extend %typography-caption;
 
-    color: $card-color;
+    color: color-chooser($card-color-dark, $card-color-light);
     margin: 0 0 ($card-inner-spacer-y / 2 / 2);
   }
 

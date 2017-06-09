@@ -26,7 +26,7 @@
   &:hover {
     background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
     border-radius: 50%;
-    color: $btn-color;
+    color: color-chooser($btn-color-dark, $btn-color-light);
   }
 
   .is-disabled & {

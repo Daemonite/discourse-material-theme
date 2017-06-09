@@ -3,7 +3,7 @@
   border: 0;
   border-radius: $card-border-radius;
   box-shadow: $card-box-shadow;
-  color: $card-color;
+  color: color-chooser($card-color-dark, $card-color-light);
   padding: 0;
 
   &[href],

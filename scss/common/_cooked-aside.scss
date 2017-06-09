@@ -164,7 +164,7 @@ div {
 
     .poll-info {
       border-left-color: color-chooser($table-border-color-dark, $table-border-color-light);
-      color: $card-color;
+      color: color-chooser($card-color-dark, $card-color-light);
       padding: $card-padding-y $card-padding-x;
 
       p {
@@ -208,13 +208,13 @@ div {
       .bar {
         @extend %progress-bar;
 
-        background-color: $card-color;
+        background-color: color-chooser($card-color-dark, $card-color-light);
       }
 
       .bar-back {
         @extend %progress-base;
 
-        background-color: $card-color;
+        background-color: color-chooser($card-color-dark, $card-color-light);
       }
 
       .chosen {
@@ -225,7 +225,7 @@ div {
       }
 
       .percentage {
-        color: $card-color;
+        color: color-chooser($card-color-dark, $card-color-light);
         font-size: inherit;
         margin-left: $card-inner-spacer-x;
       }

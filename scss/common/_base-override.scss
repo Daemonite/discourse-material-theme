@@ -65,7 +65,7 @@
   }
 
   &::before {
-    background-color: $btn-bg-overlay;
+    background-color: color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light);
     border-radius: $btn-border-radius;
     content: '';
     display: block;
@@ -130,7 +130,7 @@
   }
 
   &::before {
-    background-color: $btn-bg-overlay;
+    background-color: color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light);
     border-radius: $btn-border-radius;
     content: '';
     display: block;

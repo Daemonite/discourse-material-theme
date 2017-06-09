@@ -10,7 +10,7 @@ samp {
 code {
   background-color: color-chooser($code-bg-dark, $code-bg-light);
   border-radius: $code-border-radius;
-  color: $code-color;
+  color: color-chooser($code-color-dark, $code-color-light);
   font-size: $code-font-size;
   padding: $code-padding;
 }

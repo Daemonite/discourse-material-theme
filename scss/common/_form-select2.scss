@@ -161,7 +161,7 @@
 }
 
 .select2-default {
-  color: $btn-color !important;
+  color: color-chooser($btn-color-dark, $btn-color-light) !important;
 }
 
 .select2-drop {

@@ -131,7 +131,7 @@
 
         @include focus-hover {
           background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-          color: $btn-color;
+          color: color-chooser($btn-color-dark, $btn-color-light);
         }
 
         &::before {
@@ -155,7 +155,7 @@
 
           @include focus-hover {
             background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-            color: $btn-color;
+            color: color-chooser($btn-color-dark, $btn-color-light);
           }
 
           &::before {
@@ -168,7 +168,7 @@
 }
 
 .modal-backdrop {
-  background-color: $modal-backdrop-bg;
+  background-color: color-chooser($modal-backdrop-bg-dark, $modal-backdrop-bg-light);
   opacity: 1;
 }
 

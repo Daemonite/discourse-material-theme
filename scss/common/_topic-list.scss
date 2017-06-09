@@ -179,7 +179,7 @@
         padding-bottom: $tbody-cell-padding-y;
 
         &.visited:not(.badge-notification) {
-          color: $tbody-color;
+          color: color-chooser($tbody-color-dark, $tbody-color-light);
           font-weight: normal;
         }
       }
