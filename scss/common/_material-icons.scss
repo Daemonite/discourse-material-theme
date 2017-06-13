@@ -154,6 +154,10 @@
   @include material-icons('error');
 }
 
+.fa-exclamation-triangle {
+  @include material-icons('warning');
+}
+
 .fa-expand {
   @include material-icons('fullscreen');
 }
