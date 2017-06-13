@@ -116,14 +116,14 @@
 
   .nav {
     background-color: transparent;
-    border-bottom: 1px solid color-chooser($white-divider, $black-divider);
+    border-bottom: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
     display: flex;
     margin-bottom: 0;
     padding: $modal-inner-spacer-y 0 0;
 
     > li {
       flex-grow: 1;
-      margin-bottom: -1px;
+      margin-bottom: ($modal-border-width * -1);
 
       &.active > a {
         background-color: transparent;
@@ -173,12 +173,7 @@
 }
 
 .modal-body {
-  padding: $modal-padding-y $modal-padding-x;
-
-  .modal-header ~ &,
-  .modal-header ~ div > & {
-    padding-top: $modal-inner-spacer-y;
-  }
+  padding: $modal-inner-spacer-y $modal-padding-x $modal-padding-y;
 }
 
 .modal-close {
@@ -191,7 +186,12 @@
   border-top: 0;
   display: flex;
   flex-direction: row-reverse;
-  padding: 0 $modal-footer-padding-x $modal-footer-padding-y;
+  padding: $modal-footer-padding-y $modal-footer-padding-x;
+
+  .modal-header ~ &,
+  .modal-header ~ div > & {
+    border-top: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
+  }
 
   a {
     @extend %btn-flat;
@@ -214,9 +214,9 @@
 }
 
 .modal-header {
-  border-bottom: 0;
+  border-bottom: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
   display: flex;
-  padding: $modal-padding-y $modal-padding-x 0;
+  padding: $modal-padding-y $modal-padding-x $modal-inner-spacer-y;
 
   &:last-child {
     padding-bottom: $modal-padding-y;
@@ -250,7 +250,7 @@
 }
 
 .permission-list {
-  border-top: 1px solid color-chooser($white-divider, $black-divider);
+  border-top: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
   margin: 0 ($modal-padding-x * -1);
 
   &:empty {
@@ -267,7 +267,7 @@
 
   li {
     align-items: center;
-    border-bottom: 1px solid color-chooser($white-divider, $black-divider);
+    border-bottom: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
     display: flex;
     margin: 0;
     padding: $modal-inner-spacer-y $modal-padding-x;

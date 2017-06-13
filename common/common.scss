@@ -3978,7 +3978,7 @@ div.menu-links-header .menu-links-row {
 }
 .modal .nav {
   background-color: transparent;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4043,10 +4043,7 @@ div.menu-links-header .menu-links-row {
 }
 
 .modal-body {
-  padding: 24px 24px;
-}
-.modal-header ~ .modal-body, .modal-header ~ div > .modal-body {
-  padding-top: 20px;
+  padding: 20px 24px 24px;
 }
 
 .modal-close {
@@ -4072,7 +4069,10 @@ div.menu-links-header .menu-links-row {
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  padding: 0 8px 8px;
+  padding: 8px 8px;
+}
+.modal-header ~ .modal-footer, .modal-header ~ div > .modal-footer {
+  border-top: 1px solid color-chooser(#000000, #e0e0e0);
 }
 body .bootbox.modal .modal-footer a.btn-primary {
   color: $tertiary;
@@ -4082,12 +4082,12 @@ body .bootbox.modal .modal-footer a.btn-primary {
 }
 
 .modal-header {
-  border-bottom: 0;
+  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 24px 24px 0;
+  padding: 24px 24px 20px;
 }
 .modal-header:last-child {
   padding-bottom: 24px;
@@ -4129,7 +4129,7 @@ body .bootbox.modal .modal-footer a.btn-primary {
 }
 
 .permission-list {
-  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border-top: 1px solid color-chooser(#000000, #e0e0e0);
   margin: 0 -24px;
 }
 .permission-list:empty {
@@ -4146,7 +4146,7 @@ body .bootbox.modal .modal-footer a.btn-primary {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
