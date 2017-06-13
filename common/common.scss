@@ -1264,7 +1264,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   color: inherit;
   padding-right: 12px;
 }
-.badge-wrapper, .badge-wrapper.bullet {
+.badge-wrapper, .badge-wrapper.box, .badge-wrapper.bullet {
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -1283,16 +1283,10 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
 .badge-wrapper[href]:focus {
   outline: 0;
 }
-.badge-wrapper.bullet {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.badge-wrapper.bullet span.badge-category {
+.badge-wrapper.box span.badge-category, .badge-wrapper.bullet span.badge-category {
   line-height: 32px;
 }
-.badge-wrapper.bullet span.badge-category-bg {
+.badge-wrapper.box span.badge-category-bg, .badge-wrapper.bullet span.badge-category-bg {
   border-radius: 50%;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1302,7 +1296,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   margin-right: 4px;
   width: 32px;
 }
-.badge-wrapper.bullet span.badge-category-parent-bg {
+.badge-wrapper.box span.badge-category-parent-bg, .badge-wrapper.bullet span.badge-category-parent-bg {
   border-radius: 16px 0 0 16px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1310,9 +1304,32 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   height: 32px;
   width: 16px;
 }
-.badge-wrapper.bullet span.badge-category-parent-bg + .badge-category-bg {
+.badge-wrapper.box span.badge-category-parent-bg + .badge-category-bg, .badge-wrapper.bullet span.badge-category-parent-bg + .badge-category-bg {
   border-radius: 0 16px 16px 0;
   width: 16px;
+}
+.badge-wrapper.box {
+  margin-top: 0;
+}
+.badge-wrapper.box span.badge-category {
+  color: $primary !important;
+  margin: 0;
+  padding: 0;
+}
+.badge-wrapper.box span.badge-category-bg + .badge-category {
+  margin-left: 36px;
+}
+.badge-wrapper.box span.badge-category-parent-bg + .badge-category-bg {
+  left: 16px;
+}
+.badge-wrapper.box span.badge-category-parent-bg + .badge-category-bg + .badge-category {
+  margin-left: 36px;
+}
+.badge-wrapper.bullet {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body code, body

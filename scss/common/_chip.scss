@@ -20,6 +20,7 @@
   padding-right: $chip-padding-x;
 
   &,
+  &.box,
   &.bullet {
     font-size: $chip-font-size;
     font-weight: normal;
@@ -37,9 +38,8 @@
     }
   }
 
+  &.box,
   &.bullet {
-    align-items: center;
-
     span {
       &.badge-category {
         line-height: $chip-height;
@@ -66,5 +66,33 @@
         }
       }
     }
+  }
+
+  &.box {
+    margin-top: 0;
+
+    span {
+      &.badge-category {
+        color: unquote('$primary') !important;
+        margin: 0;
+        padding: 0;
+      }
+
+      &.badge-category-bg + .badge-category {
+        margin-left: ($chip-width + $chip-inner-spacer-x);
+      }
+
+      &.badge-category-parent-bg + .badge-category-bg {
+        left: ($chip-width / 2);
+
+        + .badge-category {
+          margin-left: ($chip-width + $chip-inner-spacer-x);
+        }
+      }
+    }
+  }
+
+  &.bullet {
+    align-items: center;
   }
 }
