@@ -99,8 +99,18 @@ ol {
     }
 
     .badge-wrapper {
+      &.box,
       &.bullet {
         margin-right: 0;
+      }
+
+      &.box span {
+        &.badge-category {
+          padding: 0;
+        }
+      }
+
+      &.bullet {
         padding: 0 $chip-padding-x 0 0;
       }
     }

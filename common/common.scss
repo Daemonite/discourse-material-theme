@@ -2824,8 +2824,13 @@ ol.category-breadcrumb li + li {
 .list-controls .category-dropdown-menu .badge-category.home {
   margin-left: 0;
 }
-.list-controls .category-dropdown-menu .badge-wrapper.bullet {
+.list-controls .category-dropdown-menu .badge-wrapper.box, .list-controls .category-dropdown-menu .badge-wrapper.bullet {
   margin-right: 0;
+}
+.list-controls .category-dropdown-menu .badge-wrapper.box span.badge-category {
+  padding: 0;
+}
+.list-controls .category-dropdown-menu .badge-wrapper.bullet {
   padding: 0 12px 0 0;
 }
 .list-controls .category-dropdown-menu .cat + .cat {
