@@ -10,6 +10,10 @@
   @include material-icons('new_releases');
 }
 
+.fa-at {
+  @include material-icons('person_pin');
+}
+
 .fa-bar-chart-o {
   @include material-icons('insert_chart');
 }
