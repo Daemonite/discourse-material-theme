@@ -1940,18 +1940,27 @@ textarea[readonly], .controls [readonly].static, div.ac-wrap input[readonly][typ
   pointer-events: none;
 }
 
-.select2-search input[type='text'], #login-form table input[type='password'], #login-form table input[type='text'], .search-menu input[type='text'], #share-link input[type='text'], .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-controls .ac-wrap input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .customize .show-current-style h1 input[type='text'], .permalink-title ~ div input[type='text'], .settings .setting .ac-wrap input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value {
+.select2-search input[type='text'], .create-account table input[type='email'], .create-account table input[type='password'], .create-account table input[type='text'],
+#login-form table input[type='email'],
+#login-form table input[type='password'],
+#login-form table input[type='text'], .search-menu input[type='text'], #share-link input[type='text'], .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-controls .ac-wrap input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .customize .show-current-style h1 input[type='text'], .permalink-title ~ div input[type='text'], .settings .setting .ac-wrap input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
   line-height: 16px;
   padding: 20px 16px 19px;
 }
-.select2-search input[type='text']:focus, #login-form table input[type='password']:focus, #login-form table input[type='text']:focus, .search-menu input[type='text']:focus, #share-link input[type='text']:focus, .admin-container .controls.username input[type='text']:focus, .admin-controls input[type='text']:focus, div.badges .form-horizontal input[type='text']:focus, div.groups .form-horizontal input[type='text']:focus, div.web-hook-container .form-horizontal input[type='text']:focus, .admin-container div.emoji input[type='text']:focus, .content-editor .email-template input[type='text']:focus, .customize .show-current-style h1 input[type='text']:focus, .permalink-title ~ div input[type='text']:focus, .settings .setting .ac-wrap input[type='text']:focus, .settings .setting .input-setting-string:focus, .site-texts .search-area .site-text-search:focus, .value-list input[type='text']:focus, .value-list .value:focus {
+.select2-search input[type='text']:focus, .create-account table input[type='email']:focus, .create-account table input[type='password']:focus, .create-account table input[type='text']:focus,
+#login-form table input[type='email']:focus,
+#login-form table input[type='password']:focus,
+#login-form table input[type='text']:focus, .search-menu input[type='text']:focus, #share-link input[type='text']:focus, .admin-container .controls.username input[type='text']:focus, .admin-controls input[type='text']:focus, div.badges .form-horizontal input[type='text']:focus, div.groups .form-horizontal input[type='text']:focus, div.web-hook-container .form-horizontal input[type='text']:focus, .admin-container div.emoji input[type='text']:focus, .content-editor .email-template input[type='text']:focus, .customize .show-current-style h1 input[type='text']:focus, .permalink-title ~ div input[type='text']:focus, .settings .setting .ac-wrap input[type='text']:focus, .settings .setting .input-setting-string:focus, .site-texts .search-area .site-text-search:focus, .value-list input[type='text']:focus, .value-list .value:focus {
   padding-bottom: 18px;
 }
 @media (hover: hover) {
-  .select2-search input[type='text']:hover, #login-form table input[type='password']:hover, #login-form table input[type='text']:hover, .search-menu input[type='text']:hover, #share-link input[type='text']:hover, .admin-container .controls.username input[type='text']:hover, .admin-controls input[type='text']:hover, div.badges .form-horizontal input[type='text']:hover, div.groups .form-horizontal input[type='text']:hover, div.web-hook-container .form-horizontal input[type='text']:hover, .admin-container div.emoji input[type='text']:hover, .content-editor .email-template input[type='text']:hover, .customize .show-current-style h1 input[type='text']:hover, .permalink-title ~ div input[type='text']:hover, .settings .setting .ac-wrap input[type='text']:hover, .settings .setting .input-setting-string:hover, .site-texts .search-area .site-text-search:hover, .value-list input[type='text']:hover, .value-list .value:hover {
+  .select2-search input[type='text']:hover, .create-account table input[type='email']:hover, .create-account table input[type='password']:hover, .create-account table input[type='text']:hover,
+  #login-form table input[type='email']:hover,
+  #login-form table input[type='password']:hover,
+  #login-form table input[type='text']:hover, .search-menu input[type='text']:hover, #share-link input[type='text']:hover, .admin-container .controls.username input[type='text']:hover, .admin-controls input[type='text']:hover, div.badges .form-horizontal input[type='text']:hover, div.groups .form-horizontal input[type='text']:hover, div.web-hook-container .form-horizontal input[type='text']:hover, .admin-container div.emoji input[type='text']:hover, .content-editor .email-template input[type='text']:hover, .customize .show-current-style h1 input[type='text']:hover, .permalink-title ~ div input[type='text']:hover, .settings .setting .ac-wrap input[type='text']:hover, .settings .setting .input-setting-string:hover, .site-texts .search-area .site-text-search:hover, .value-list input[type='text']:hover, .value-list .value:hover {
     padding-bottom: 18px;
   }
 }
@@ -2829,6 +2838,51 @@ ol.category-breadcrumb li + li {
   margin-bottom: 0;
 }
 
+.create-account table,
+#login-form table {
+  width: 100%;
+}
+.create-account table input[type='email'], .create-account table input[type='password'], .create-account table input[type='text'],
+#login-form table input[type='email'],
+#login-form table input[type='password'],
+#login-form table input[type='text'] {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.create-account table td,
+#login-form table td {
+  padding-top: 18.000003px;
+  padding-right: 24px;
+  vertical-align: top;
+}
+.create-account table td:first-child + td,
+#login-form table td:first-child + td {
+  padding-top: 0;
+}
+.create-account table td:last-child,
+#login-form table td:last-child {
+  padding-right: 0;
+}
+
+.create-account tr.input td {
+  padding-top: 18.000003px;
+}
+.create-account tr.input .tip {
+  max-width: none;
+}
+.create-account .disclaimer {
+  margin-top: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  text-align: right;
+  width: 100%;
+}
+.create-account .modal-footer {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
 #login-buttons {
   margin-top: 0;
   margin-bottom: 20px;
@@ -2847,23 +2901,6 @@ ol.category-breadcrumb li + li {
 }
 #login-buttons button:last-child {
   margin-right: 0;
-}
-
-#login-form table {
-  width: 100%;
-}
-#login-form table td {
-  padding-top: 18.000003px;
-  padding-right: 24px;
-  vertical-align: top;
-}
-#login-form table td:first-child + td {
-  padding-top: 0;
-  width: 100%;
-}
-#login-form table td:last-child {
-  padding-right: 0;
-  white-space: nowrap;
 }
 
 .fa-angle-double-down {
@@ -4021,6 +4058,10 @@ div.menu-links-header .menu-links-row {
 }
 
 .modal-footer {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-top: 0;
   display: -webkit-box;
   display: -webkit-flex;

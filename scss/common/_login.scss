@@ -1,3 +1,61 @@
+.create-account,
+#login-form {
+  table {
+    width: 100%;
+
+    input {
+      &[type='email'],
+      &[type='password'],
+      &[type='text'] {
+        @extend %text-field-box;
+
+        display: inline-block;
+        margin-bottom: $spacer-xs;
+      }
+    }
+
+    td {
+      padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+      padding-right: $modal-inner-spacer-x;
+      vertical-align: top;
+
+      &:first-child + td {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.create-account {
+  tr {
+    &.input {
+      td {
+        padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+      }
+
+      .tip {
+        max-width: none;
+      }
+    }
+  }
+
+  .disclaimer {
+    margin-top: $modal-footer-padding-y;
+    padding-right: ($modal-padding-x - $modal-footer-padding-x);
+    padding-left: ($modal-padding-x - $modal-footer-padding-x);
+    text-align: right;
+    width: 100%;
+  }
+
+  .modal-footer {
+    flex-wrap: wrap;
+  }
+}
+
 #login-buttons {
   margin-top: 0;
   margin-bottom: $modal-inner-spacer-y;
@@ -11,33 +69,6 @@
 
     &:last-child {
       margin-right: 0;
-    }
-  }
-}
-
-#login-form table {
-  width: 100%;
-
-  input {
-    &[type='password'],
-    &[type='text'] {
-      @extend %text-field-box;
-    }
-  }
-
-  td {
-    padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
-    padding-right: $modal-inner-spacer-x;
-    vertical-align: top;
-
-    &:first-child + td {
-      padding-top: 0;
-      width: 100%;
-    }
-
-    &:last-child {
-      padding-right: 0;
-      white-space: nowrap;
     }
   }
 }
