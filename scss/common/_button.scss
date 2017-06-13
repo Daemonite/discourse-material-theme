@@ -174,3 +174,52 @@
   font-size: $btn-font-size-sm;
   padding: $btn-padding-y-sm $btn-padding-x-sm;
 }
+
+
+
+// Social button
+
+.btn-social {
+  text-shadow: none;
+
+  &::before {
+    font-size: inherit;
+    margin-right: $spacer-sm;
+  }
+
+  &.cas {
+    background-color: $social-cas-color;
+    color: color-dynamic($social-cas-color);
+  }
+
+  &.facebook {
+    background-color: $social-facebook-color;
+    color: color-dynamic($social-facebook-color);
+  }
+
+  &.github {
+    background-color: $social-github-color;
+    color: color-dynamic($social-github-color);
+  }
+
+  &.google,
+  &.google_oauth2 {
+    background-color: $social-google-color;
+    color: color-dynamic($social-google-color);
+  }
+
+  &.instagram {
+    background-color: $social-instagram-color;
+    color: color-dynamic($social-instagram-color);
+  }
+
+  &.twitter {
+    background-color: $social-twitter-color;
+    color: color-dynamic($social-twitter-color);
+  }
+
+  &.yahoo {
+    background-color: $social-yahoo-color;
+    color: color-dynamic($social-cas-color);
+  }
+}

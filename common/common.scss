@@ -1206,6 +1206,42 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   padding: 9.5px 16px;
 }
 
+.btn-social {
+  text-shadow: none;
+}
+.btn-social::before {
+  font-size: inherit;
+  margin-right: 8px;
+}
+.btn-social.cas {
+  background-color: #70ba61;
+  color: color-dynamic(#70ba61);
+}
+.btn-social.facebook {
+  background-color: #3b5998;
+  color: color-dynamic(#3b5998);
+}
+.btn-social.github {
+  background-color: #181717;
+  color: color-dynamic(#181717);
+}
+.btn-social.google, .btn-social.google_oauth2 {
+  background-color: #4285f4;
+  color: color-dynamic(#4285f4);
+}
+.btn-social.instagram {
+  background-color: #e4405f;
+  color: color-dynamic(#e4405f);
+}
+.btn-social.twitter {
+  background-color: #1da1f2;
+  color: color-dynamic(#1da1f2);
+}
+.btn-social.yahoo {
+  background-color: #440099;
+  color: color-dynamic(#70ba61);
+}
+
 .alert, #share-link, .small-action, .topic-body, .category-boxes .category-box-inner,
 .category-boxes-with-topics .category-box-inner, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-contents div.badges .current-badge, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-editor, .customize .show-current-style, .admin-contents .groups-bulk, .settings, .site-texts {
   background-color: color-chooser(#424242, #ffffff);

@@ -32,6 +32,7 @@
 // - Nav
 // - Picker
 // - Progress
+// - Social
 // - Table
 // - Text field
 //   - Text field box
@@ -359,6 +360,18 @@ $picker-padding-y:      8px !default;
 $progress-bg:     unquote('$tertiary') !default;
 $progress-height: 4px !default;
 $progress-mask:   $white-secondary !default;
+
+
+
+// Social
+
+$social-cas-color:       #70ba61 !default;
+$social-facebook-color:  #3b5998 !default;
+$social-github-color:    #181717 !default;
+$social-google-color:    #4285f4 !default;
+$social-instagram-color: #e4405f !default;
+$social-twitter-color:   #1da1f2 !default;
+$social-yahoo-color:     #440099 !default;
 
 
 
