@@ -1,0 +1,43 @@
+#login-buttons {
+  margin-top: 0;
+  margin-bottom: $modal-inner-spacer-y;
+
+  button {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: $modal-inner-spacer-x;
+    margin-bottom: 0;
+    min-width: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+#login-form table {
+  width: 100%;
+
+  input {
+    &[type='password'],
+    &[type='text'] {
+      @extend %text-field-box;
+    }
+  }
+
+  td {
+    padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+    padding-right: $modal-inner-spacer-x;
+    vertical-align: top;
+
+    &:first-child + td {
+      padding-top: 0;
+      width: 100%;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      white-space: nowrap;
+    }
+  }
+}
