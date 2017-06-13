@@ -213,7 +213,7 @@ div.poll .poll-info .info-text,
 }
 
 body .form-vertical .control-label, .autocomplete ul li a span.name, .select2-drop .category-desc,
-.select2-drop .topic-count, .gap, .topic-map h4, .topic-map .avatars .post-count, .period-chooser h2 .top-date-string, .period-chooser #period-popup ul li .top-date-string, .links-section .domain, .user-main .user-stream .time, .user-preferences .instructions, .admin-contents div.badges .current-badge p.help, .content-list h3, .content-list ul li a span.count, .customize .status-message, .settings .setting .desc,
+.select2-drop .topic-count, .menu-panel b.topics-count, .gap, .topic-map h4, .topic-map .avatars .post-count, .period-chooser h2 .top-date-string, .period-chooser #period-popup ul li .top-date-string, .links-section .domain, .user-main .user-stream .time, .user-preferences .instructions, .admin-contents div.badges .current-badge p.help, .content-list h3, .content-list ul li a span.count, .customize .status-message, .settings .setting .desc,
 .settings .setting .validation-error {
   font-size: 12px;
   font-weight: 400;
@@ -3759,6 +3759,14 @@ div.menu-links-header .menu-links-row {
   margin-right: 8px;
 }
 .menu-panel ul li.category-link {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 4px 8px;
   width: 50%;

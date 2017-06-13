@@ -50,6 +50,12 @@ div {
   outline: 0;
   padding: $menu-panel-padding-y $menu-panel-padding-x;
 
+  b {
+    &.topics-count {
+      @extend %typography-caption;
+    }
+  }
+
   hr {
     margin: $menu-panel-inner-spacer-y 0;
   }
@@ -88,6 +94,8 @@ div {
 
     li {
       &.category-link {
+        align-items: center;
+        display: flex;
         margin: 0;
         padding: ($menu-panel-inner-spacer-y / 2) $menu-panel-inner-spacer-x;
         width: 50%;
