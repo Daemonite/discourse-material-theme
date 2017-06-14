@@ -40,6 +40,8 @@
 
   &.box,
   &.bullet {
+    align-items: center;
+
     span {
       &.badge-category {
         line-height: $chip-height;
@@ -69,6 +71,7 @@
   }
 
   &.box {
+    display: inline-flex;
     margin-top: 0;
 
     span {
@@ -90,9 +93,5 @@
         }
       }
     }
-  }
-
-  &.bullet {
-    align-items: center;
   }
 }
