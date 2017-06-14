@@ -1685,7 +1685,7 @@ div.poll .results .option {
 .popup-menu h3,
 .popup-menu h4,
 .popup-menu h5,
-.popup-menu h6, .select2-results .select2-no-results, .search-menu .no-results {
+.popup-menu h6, .select2-results .select2-no-results, .search-menu .no-results, nav.post-controls .post-admin-menu h3 {
   font-size: 16px;
   font-weight: bolder;
   line-height: 1.5;
@@ -1695,13 +1695,13 @@ div.poll .results .option {
 }
 
 .select2-results .select2-no-results, .list-controls .category-dropdown-menu a.badge-category, .search-menu .no-results, #reply-control .popup-menu h3, .timeline-container .topic-timeline .dropdown-menu h3,
-.timeline-container .topic-timeline .popup-menu h3, #topic-footer-buttons .popup-menu h3 {
+.timeline-container .topic-timeline .popup-menu h3, nav.post-controls .post-admin-menu h3, #topic-footer-buttons .popup-menu h3 {
   font-size: 13px;
   line-height: 1.5;
   padding: 6.25px 24px;
 }
 
-.dropdown-menu a, .popup-menu .btn, .autocomplete ul li a, .select2-results .select2-result-label, .period-chooser #period-popup ul li a {
+.dropdown-menu a, .popup-menu .btn, .autocomplete ul li a, .select2-results .select2-result-label, nav.post-controls .post-admin-menu li, .period-chooser #period-popup ul li a {
   display: block;
   font-size: inherit;
   line-height: inherit;
@@ -1711,11 +1711,11 @@ div.poll .results .option {
 .autocomplete ul li a, .select2-results .select2-result-label, .category-notification-menu .dropdown-menu a, #reply-control .popup-menu .btn, .timeline-container .topic-timeline .dropdown-menu a,
 .timeline-container .topic-timeline .dropdown-menu .btn,
 .timeline-container .topic-timeline .popup-menu a,
-.timeline-container .topic-timeline .popup-menu .btn, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, .period-chooser #period-popup ul li a {
+.timeline-container .topic-timeline .popup-menu .btn, nav.post-controls .post-admin-menu li, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, .period-chooser #period-popup ul li a {
   padding: 6.25px 24px;
 }
 
-.dropdown-menu, .popup-menu, .autocomplete, .select2-drop, .list-controls .category-dropdown-menu, .period-chooser #period-popup {
+.dropdown-menu, .popup-menu, .autocomplete, .select2-drop, .list-controls .category-dropdown-menu, nav.post-controls .post-admin-menu, .period-chooser #period-popup {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   background-color: color-chooser(#424242, #ffffff);
@@ -1728,7 +1728,7 @@ div.poll .results .option {
 }
 
 .autocomplete, .select2-drop, .category-notification-menu .dropdown-menu, .list-controls .category-dropdown-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
-.timeline-container .topic-timeline .popup-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, .period-chooser #period-popup {
+.timeline-container .topic-timeline .popup-menu, nav.post-controls .post-admin-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, .period-chooser #period-popup {
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
@@ -5155,6 +5155,11 @@ nav.post-controls .highlight-action {
 }
 nav.post-controls .like-count {
   margin-right: 0;
+}
+nav.post-controls .post-admin-menu li {
+  margin: 0;
+  text-transform: none;
+  width: 100%;
 }
 nav.post-controls .show-replies {
   margin-top: 8px;

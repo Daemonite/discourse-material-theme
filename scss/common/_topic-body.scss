@@ -67,6 +67,25 @@ nav {
       margin-right: 0;
     }
 
+    .post-admin-menu {
+      @extend %dropdown-menu;
+      @extend %dropdown-menu-sm;
+
+      h3 {
+        @extend %dropdown-header;
+        @extend %dropdown-header-sm;
+      }
+
+      li {
+        @extend %dropdown-link;
+        @extend %dropdown-link-sm;
+
+        margin: 0;
+        text-transform: none;
+        width: 100%;
+      }
+    }
+
     .show-replies {
       @extend %btn-flat;
       @extend %btn-footer;
