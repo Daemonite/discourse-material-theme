@@ -39,6 +39,7 @@
       body & {
         display: block;
         opacity: $nav-link-opacity;
+        text-transform: none;
 
         @include focus-hover {
           background-color: transparent;
@@ -100,6 +101,7 @@
         display: block;
         opacity: $nav-link-opacity;
         text-align: left;
+        text-transform: none;
 
         @include focus-hover {
           background-color: transparent;

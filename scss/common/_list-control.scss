@@ -129,8 +129,14 @@ ol {
   .nav {
     margin: 0 auto $spacer-sm 0;
 
-    > li:last-child {
-      margin-right: $spacer-sm;
+    > li {
+      &:last-child {
+        margin-right: $spacer-sm;
+      }
+
+      > a {
+        text-transform: uppercase;
+      }
     }
   }
 }

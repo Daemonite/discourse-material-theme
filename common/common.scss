@@ -280,6 +280,7 @@ sup {
 body .nav-pills > li > a {
   display: block;
   opacity: 0.7;
+  text-transform: none;
 }
 body .nav-pills > li > a:focus {
   background-color: transparent;
@@ -337,6 +338,7 @@ body .nav-stacked li > a, body .content-list ul li > a, .content-list body ul li
   display: block;
   opacity: 0.7;
   text-align: left;
+  text-transform: none;
 }
 body .nav-stacked li > a:focus, body .content-list ul li > a:focus, .content-list body ul li > a:focus {
   background-color: transparent;
@@ -2861,6 +2863,9 @@ ol.category-breadcrumb li {
 }
 .list-controls .nav > li:last-child {
   margin-right: 8px;
+}
+.list-controls .nav > li > a {
+  text-transform: uppercase;
 }
 
 .create-account table,
