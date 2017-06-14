@@ -148,6 +148,27 @@ nav {
   }
 }
 
+.post-links-container {
+  ul li {
+    line-height: 1;
+    margin: (($btn-height + $card-padding-y - $card-padding-y * 2 - $font-size-base) / 2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    i {
+      margin: 0 $card-inner-spacer-x 0 0;
+    }
+  }
+
+  .post-links {
+    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+    border-top: 0;
+    margin: 0;
+    padding: $card-padding-y ($btn-padding-x + $card-padding-x + $material-icon-size) $card-padding-y $card-padding-x;
+  }
+}
+
 .post-menu-area {
   margin-top: $card-inner-spacer-y;
   margin-bottom: $card-inner-spacer-y;

@@ -5214,6 +5214,23 @@ nav.post-controls .show-replies i {
   vertical-align: middle;
 }
 
+.post-links-container ul li {
+  line-height: 1;
+  margin: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.post-links-container ul li i {
+  margin: 0 8px 0 0;
+}
+.post-links-container .post-links {
+  background-color: color-chooser(#212121, #f5f5f5);
+  border-top: 0;
+  margin: 0;
+  padding: 16px 56px 16px 16px;
+}
+
 .post-menu-area {
   margin-top: 16px;
   margin-bottom: 16px;
