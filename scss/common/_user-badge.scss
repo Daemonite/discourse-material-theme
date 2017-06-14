@@ -19,7 +19,7 @@
       @extend %typography-h2;
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
-      min-width: ($card-padding-x * 2 + $font-size-display-1 / $font-size-base * $material-icon-size);
+      min-width: ($card-padding-x * 2 + $font-size-h1 / $font-size-base * $material-icon-size);
     }
 
     .badge-info {
