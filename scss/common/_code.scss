@@ -38,6 +38,10 @@ pre {
   margin-bottom: $spacer;
   padding: $pre-padding;
 
+  .admin-interface & {
+    background-color: color-chooser($light-active, $dark-active);
+  }
+
   code {
     background-color: transparent;
     border-radius: 0;

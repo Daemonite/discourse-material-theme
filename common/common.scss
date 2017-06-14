@@ -1467,6 +1467,9 @@ pre {
   margin-bottom: 16px;
   padding: 16px 16px;
 }
+.admin-interface pre {
+  background-color: color-chooser(rgba(153, 153, 153, 0.4), rgba(204, 204, 204, 0.25));
+}
 pre code {
   background-color: transparent;
   border-radius: 0;
