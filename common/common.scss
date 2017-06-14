@@ -5698,7 +5698,6 @@ nav.post-controls .show-replies i {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
   border-radius: 2px 2px 0 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5726,6 +5725,19 @@ nav.post-controls .show-replies i {
   margin-left: 4px;
 }
 
+.top-lists + .topic-list {
+  position: relative;
+}
+.top-lists + .topic-list::before {
+  background-color: color-chooser(#424242, #ffffff);
+  content: '';
+  display: block;
+  height: 12px;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  left: 0;
+}
 .topic-list tbody td,
 .topic-list tbody th {
   line-height: inherit;
@@ -5842,7 +5854,7 @@ nav.post-controls .show-replies i {
 }
 
 .topic-list-bottom {
-  margin: 0 0 16px;
+  margin: 16px 0;
 }
 
 .topic-statuses .topic-status {

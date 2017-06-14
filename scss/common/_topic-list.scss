@@ -16,7 +16,6 @@
   @extend %card-block;
 
   align-items: center;
-  border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
   border-radius: $card-border-radius $card-border-radius 0 0;
   display: flex;
 
@@ -72,6 +71,21 @@
 
 .topic-list {
   @extend %table;
+
+  .top-lists + & {
+    position: relative;
+
+    &::before {
+      background-color: color-chooser($table-bg-dark, $table-bg-light);
+      content: '';
+      display: block;
+      height: $thead-cell-padding-y;
+      position: absolute;
+      top: ($thead-cell-padding-y * -1);
+      right: 0;
+      left: 0;
+    }
+  }
 
   tbody {
     td,
@@ -235,7 +249,7 @@
 }
 
 .topic-list-bottom {
-  margin: 0 0 $spacer;
+  margin: $spacer 0;
 }
 
 .topic-statuses {
