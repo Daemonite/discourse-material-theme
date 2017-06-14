@@ -5182,9 +5182,6 @@ nav.post-controls .show-replies i {
   margin-left: -16px;
   position: relative;
 }
-.topic-body .regular > .embedded-posts.bottom {
-  margin-bottom: 52px;
-}
 .embedded-posts.bottom .row {
   padding-top: 0;
 }
@@ -5480,6 +5477,7 @@ nav.post-controls .show-replies i {
   position: absolute;
   top: -44px;
   right: 0;
+  z-index: 2;
 }
 .topic-map .information {
   background-color: color-chooser(#212121, #f5f5f5);

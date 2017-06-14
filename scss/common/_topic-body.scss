@@ -110,14 +110,8 @@ nav {
   margin-left: ($card-padding-x * -1);
   position: relative;
 
-  &.bottom {
-    .topic-body .regular > & {
-      margin-bottom: ($btn-height + $card-inner-spacer-y);
-    }
-
-    .row {
-      padding-top: 0;
-    }
+  &.bottom .row {
+    padding-top: 0;
   }
 
   .cooked {
@@ -447,6 +441,7 @@ nav {
     position: absolute;
     top: (($btn-height + $card-inner-spacer-y / 2) * -1);
     right: 0;
+    z-index: 2;
 
     .btn {
       @extend %btn-flat;
