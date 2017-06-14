@@ -87,13 +87,16 @@ $shadow-1dp:     none !default;
 
 // Basics - Spacers
 
-$container-max-width: 1110px !default;
+$container-max-width:  1110px !default;
 
-$spacer-xs:           4px !default;
-$spacer-sm:           8px !default;
-$spacer:              16px !default;
-$spacer-lg:           24px !default;
-$spacer-xl:           48px !default;
+$grid-gutter-width:    16px !default;
+$grid-gutter-width-lg: 24px !default;
+
+$spacer-xs:            4px !default;
+$spacer-sm:            8px !default;
+$spacer:               16px !default;
+$spacer-lg:            24px !default;
+$spacer-xl:            48px !default;
 
 
 
