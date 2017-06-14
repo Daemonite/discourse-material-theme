@@ -334,6 +334,54 @@
     background-color: transparent;
     margin-bottom: $spacer-lg;
     padding: 0;
+
+    h2 {
+      margin-bottom: $spacer-sm;
+    }
+
+    .user-invite-controls {
+      @extend %card;
+
+      align-items: center;
+      display: flex;
+      height: auto;
+      padding: ($card-padding-y / 2) ($card-padding-x - $btn-padding-x / 2);
+
+      .btn {
+        @extend %btn-footer;
+      }
+
+      .nav {
+        margin-bottom: 0;
+      }
+
+      .span15 {
+        margin-left: 0;
+      }
+    }
+
+    .user-invite-list {
+      margin-top: $spacer;
+
+      td {
+        @extend %tbody-cell;
+      }
+
+      th {
+        @extend %thead-cell;
+
+        border-bottom: 0;
+      }
+
+      tr {
+        @extend %table-row;
+      }
+    }
+
+    .user-invite-none {
+      margin-top: $spacer;
+      padding: 0;
+    }
   }
 
   .user-right {

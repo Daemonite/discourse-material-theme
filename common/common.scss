@@ -1178,7 +1178,7 @@ nav.post-controls .ok.show-replies:focus,
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, .modal-footer a, .modal-footer .btn, #share-link .reply-as-new-topic a, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
+div.poll .poll-buttons .btn, .modal-footer a, .modal-footer .btn, #share-link .reply-as-new-topic a, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, .user-main .user-content .user-invite-controls .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
 .screened-emails .col:not(.heading) .btn,
 .screened-ip-addresses .col:not(.heading) .btn,
 .screened-urls .col:not(.heading) .btn,
@@ -1189,7 +1189,7 @@ div.poll .poll-buttons .btn, .modal-footer a, .modal-footer .btn, #share-link .r
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-footer .btn:first-child, #share-link .reply-as-new-topic a:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
+div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-footer .btn:first-child, #share-link .reply-as-new-topic a:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .user-main .user-content .user-invite-controls .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
 .screened-emails .col:not(.heading) .btn:first-child,
 .screened-ip-addresses .col:not(.heading) .btn:first-child,
 .screened-urls .col:not(.heading) .btn:first-child,
@@ -1245,7 +1245,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
 }
 
 .alert, #share-link, .small-action, .topic-body, .period-chooser, .category-boxes .category-box-inner,
-.category-boxes-with-topics .category-box-inner, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-contents div.badges .current-badge, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-editor, .customize .show-current-style, .admin-contents .groups-bulk, .settings, .site-texts {
+.category-boxes-with-topics .category-box-inner, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about, .user-main .user-content .user-invite-controls, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-contents div.badges .current-badge, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-editor, .customize .show-current-style, .admin-contents .groups-bulk, .settings, .site-texts {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
   border-radius: 2px;
@@ -1255,24 +1255,24 @@ div.poll .poll-buttons .btn:first-child, .modal-footer a:first-child, .modal-foo
   padding: 0;
 }
 [href].alert:focus, [href]#share-link:focus, [href].small-action:focus, [href].topic-body:focus, [href].period-chooser:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex]#share-link:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].period-chooser:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
+.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex]#share-link:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].period-chooser:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
   -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
 @media (hover: hover) {
   [href].alert:hover, [href]#share-link:hover, [href].small-action:hover, [href].topic-body:hover, [href].period-chooser:hover, .category-boxes [href].category-box-inner:hover,
-  .category-boxes-with-topics [href].category-box-inner:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, [href].admin-controls:hover, .admin-contents div.badges [href].current-badge:hover, .admin-contents div.groups > [href].span13:hover, .admin-container div.user-fields [href].user-field:hover, [href].content-editor:hover, .customize [href].show-current-style:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, [tabindex].alert:hover, [tabindex]#share-link:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, [tabindex].period-chooser:hover, .category-boxes [tabindex].category-box-inner:hover,
-  .category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, [tabindex].admin-controls:hover, .admin-contents div.badges [tabindex].current-badge:hover, .admin-contents div.groups > [tabindex].span13:hover, .admin-container div.user-fields [tabindex].user-field:hover, [tabindex].content-editor:hover, .customize [tabindex].show-current-style:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover {
+  .category-boxes-with-topics [href].category-box-inner:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main .user-content [href].user-invite-controls:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, [href].admin-controls:hover, .admin-contents div.badges [href].current-badge:hover, .admin-contents div.groups > [href].span13:hover, .admin-container div.user-fields [href].user-field:hover, [href].content-editor:hover, .customize [href].show-current-style:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, [tabindex].alert:hover, [tabindex]#share-link:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, [tabindex].period-chooser:hover, .category-boxes [tabindex].category-box-inner:hover,
+  .category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main .user-content [tabindex].user-invite-controls:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, [tabindex].admin-controls:hover, .admin-contents div.badges [tabindex].current-badge:hover, .admin-contents div.groups > [tabindex].span13:hover, .admin-container div.user-fields [tabindex].user-field:hover, [tabindex].content-editor:hover, .customize [tabindex].show-current-style:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover {
     -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
             box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
     text-decoration: none;
   }
 }
 [href].alert:focus, [href]#share-link:focus, [href].small-action:focus, [href].topic-body:focus, [href].period-chooser:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex]#share-link:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].period-chooser:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
+.category-boxes-with-topics [href].category-box-inner:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex]#share-link:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].period-chooser:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
   outline: 0;
 }
 
@@ -4954,6 +4954,7 @@ div.poll .results .bar-back::before {
 .topic-list tbody th,
 .category-list tbody td,
 .category-list tbody th,
+.user-main .user-content .user-invite-list td,
 .admin-contents table:not(.pika-table) td,
 .admin-contents table:not(.pika-table) th,
 .permalinks .col:not(.heading),
@@ -4974,6 +4975,7 @@ div.poll .results .bar-back::before {
 .topic-list > thead > tr,
 .category-list > tbody > tr,
 .category-list > thead > tr,
+.user-main .user-content .user-invite-list tr,
 .admin-contents table:not(.pika-table) tr {
   border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
 }
@@ -4984,6 +4986,7 @@ div.poll .results .bar-back::before {
 .topic-list thead th,
 .category-list thead td,
 .category-list thead th,
+.user-main .user-content .user-invite-list th,
 .admin-contents table:not(.pika-table) thead td,
 .admin-contents table:not(.pika-table) thead th,
 .permalinks .col.heading,
@@ -6319,6 +6322,37 @@ nav.post-controls .show-replies i {
 .user-main .user-content {
   background-color: transparent;
   margin-bottom: 24px;
+  padding: 0;
+}
+.user-main .user-content h2 {
+  margin-bottom: 8px;
+}
+.user-main .user-content .user-invite-controls {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding: 8px 8px;
+}
+.user-main .user-content .user-invite-controls .nav {
+  margin-bottom: 0;
+}
+.user-main .user-content .user-invite-controls .span15 {
+  margin-left: 0;
+}
+.user-main .user-content .user-invite-list {
+  margin-top: 16px;
+}
+.user-main .user-content .user-invite-list th {
+  border-bottom: 0;
+}
+.user-main .user-content .user-invite-none {
+  margin-top: 16px;
   padding: 0;
 }
 .user-main .user-right {
