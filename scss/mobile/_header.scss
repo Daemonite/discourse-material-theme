@@ -1,4 +1,11 @@
 .d-header {
+  button {
+    &.sign-up-button::before {
+      align-self: center;
+      position: static;
+    }
+  }
+
   .icons .icon:active {
     background-color: transparent;
   }
