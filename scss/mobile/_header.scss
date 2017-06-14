@@ -1,3 +1,9 @@
-.d-header .title {
-  height: auto;
+.d-header {
+  .icons .icon:active {
+    background-color: transparent;
+  }
+
+  .title {
+    height: auto;
+  }
 }
