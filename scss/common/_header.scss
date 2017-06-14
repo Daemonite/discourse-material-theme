@@ -139,7 +139,7 @@
   }
 
   #site-logo {
-    max-height: $material-icon-size;
+    max-height: ($header-height - $header-padding-y * 3);
   }
 
   .title {
