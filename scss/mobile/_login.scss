@@ -1,0 +1,14 @@
+#login-buttons {
+  display: block;
+
+  button {
+    display: block;
+    margin-right: 0;
+    margin-bottom: ($modal-inner-spacer-y / 2);
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
