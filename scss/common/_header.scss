@@ -61,14 +61,28 @@
     margin: 0;
   }
 
+  .extra-info {
+    &,
+    &.two-rows {
+      h1 {
+        @extend %typography-h4;
+
+        margin: 0;
+      }
+    }
+  }
+
   .extra-info-wrapper {
     margin-left: $header-inner-spacer-x;
     overflow: visible;
 
-    .badge-wrapper.bullet {
-      margin-top: 0;
+    .badge-wrapper {
       margin-right: 0;
       margin-left: $header-inner-spacer-x;
+
+      &.bullet {
+        margin-top: 0;
+      }
     }
   }
 

@@ -169,6 +169,8 @@ div.poll .poll-info .info-number {
 }
 
 h4,
+.d-header .extra-info h1,
+.d-header .extra-info.two-rows h1,
 .modal-header h3,
 #share-link h3,
 .category-boxes h3,
@@ -2654,14 +2656,19 @@ div.ac-wrap input[type='text'] {
           justify-content: space-between;
   margin: 0;
 }
+.d-header .extra-info h1, .d-header .extra-info.two-rows h1 {
+  margin: 0;
+}
 .d-header .extra-info-wrapper {
   margin-left: 8px;
   overflow: visible;
 }
-.d-header .extra-info-wrapper .badge-wrapper.bullet {
-  margin-top: 0;
+.d-header .extra-info-wrapper .badge-wrapper {
   margin-right: 0;
   margin-left: 8px;
+}
+.d-header .extra-info-wrapper .badge-wrapper.bullet {
+  margin-top: 0;
 }
 .d-header .icons {
   -webkit-box-align: center;
