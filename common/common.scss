@@ -1566,6 +1566,7 @@ aside.quote .quote-controls .quote-other-topic::before {
   margin-left: 8px;
 }
 aside.quote .title {
+  background-color: color-chooser(#212121, #f5f5f5);
   border-left: 0;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   padding: 16px 16px 0;

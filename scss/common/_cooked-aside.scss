@@ -68,6 +68,7 @@ aside {
     }
 
     .title {
+      background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       border-left: 0;
       color: color-chooser($white-secondary, $black-secondary);
       padding: $card-padding-y $card-padding-x 0;
