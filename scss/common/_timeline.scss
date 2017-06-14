@@ -43,6 +43,10 @@
       h3 {
         @extend %dropdown-header-sm;
       }
+
+      .btn {
+        text-transform: none;
+      }
     }
 
     .fa {

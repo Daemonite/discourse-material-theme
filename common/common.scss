@@ -5025,6 +5025,10 @@ div.poll .results .bar-back::before {
 .timeline-container .topic-timeline i.fa {
   opacity: 1;
 }
+.timeline-container .topic-timeline .dropdown-menu .btn,
+.timeline-container .topic-timeline .popup-menu .btn {
+  text-transform: none;
+}
 .timeline-container .topic-timeline .fa {
   opacity: 1;
 }
