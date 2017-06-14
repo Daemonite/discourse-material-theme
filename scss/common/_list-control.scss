@@ -1,19 +1,20 @@
 ol {
   &.category-breadcrumb {
-    margin-right: $spacer;
-    max-width: 25%;
+    margin: 0 0 $spacer-sm 0;
 
     li {
       display: flex;
-      float: none;
-      margin-right: 0;
+      margin-right: $spacer-sm;
+      max-width: ($container-max-width / 5);
       position: relative;
-
-      + li {
-        margin-top: $spacer-sm;
-      }
     }
   }
+}
+
+.category-navigation {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .category-notification-menu {
@@ -29,7 +30,7 @@ ol {
 }
 
 .list-controls {
-  margin-bottom: $spacer-lg;
+  margin-bottom: ($spacer-lg - $spacer-sm);
 
   a {
     &.badge-category {
@@ -43,8 +44,7 @@ ol {
 
     font-size: $btn-font-size;
     font-weight: $btn-font-weight;
-    margin-bottom: 0;
-    margin-left: $spacer-sm;
+    margin: 0 0 $spacer-sm $spacer-sm;
   }
 
   .category-breadcrumb li > {
@@ -127,6 +127,10 @@ ol {
   }
 
   .nav {
-    margin-bottom: 0;
+    margin: 0 auto $spacer-sm 0;
+
+    > li:last-child {
+      margin-right: $spacer-sm;
+    }
   }
 }

@@ -12,18 +12,25 @@
 }
 
 .period-chooser {
+  @extend %card;
+  @extend %card-block;
+
   align-items: center;
-  display: inline-flex;
+  border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+  border-radius: $card-border-radius $card-border-radius 0 0;
+  display: flex;
 
   button {
     @extend %btn-flat;
     @extend %btn-footer;
     @extend %btn-raised;
 
-    margin-bottom: $spacer-sm;
+    margin-bottom: 0;
   }
 
   h2 {
+    margin: 0 !important;
+
     .top-date-string {
       @extend %typography-caption;
 
