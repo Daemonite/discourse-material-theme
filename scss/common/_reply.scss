@@ -373,12 +373,9 @@
     }
 
     .d-editor-preview {
-      padding: $card-padding-y $card-padding-x;
-    }
-
-    .d-editor-preview {
       border: 0;
       border-left: 1px solid color-chooser($white-divider, $black-divider);
+      padding: $card-padding-y $card-padding-x;
 
       img:not(.thumbnail) {
         height: auto;

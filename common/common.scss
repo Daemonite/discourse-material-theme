@@ -4976,11 +4976,9 @@ div.poll .results .bar-back::before {
   position: static;
 }
 #reply-control .wmd-controls .d-editor-preview {
-  padding: 16px 16px;
-}
-#reply-control .wmd-controls .d-editor-preview {
   border: 0;
   border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  padding: 16px 16px;
 }
 #reply-control .wmd-controls .d-editor-preview img:not(.thumbnail) {
   height: auto;
