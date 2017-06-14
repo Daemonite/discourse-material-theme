@@ -224,6 +224,13 @@ body .form-vertical .control-label, .autocomplete ul li a span.name, .select2-dr
   line-height: 1.5;
 }
 
+hr {
+  border-top-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 16px 0;
+}
+
 ol,
 ul {
   margin-top: 0;

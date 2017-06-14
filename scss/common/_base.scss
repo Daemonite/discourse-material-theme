@@ -197,6 +197,12 @@ h6,
   line-height: $line-height-caption;
 }
 
+hr {
+  border-top-color: color-chooser($white-divider, $black-divider);
+  box-sizing: content-box;
+  margin: $spacer 0;
+}
+
 ol,
 ul {
   margin-top: 0;
