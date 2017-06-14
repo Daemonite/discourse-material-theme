@@ -803,6 +803,20 @@ div {
         margin-bottom: $card-inner-spacer-x;
         width: auto !important;
       }
+
+      .select2-container-multi {
+        &.select2-container-active .select2-choices {
+          border-bottom: ($text-field-border-width * 2) solid unquote('$tertiary');
+        }
+
+        .select2-choices {
+          border-bottom: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+
+          @include focus-hover {
+            border-width: ($text-field-border-width * 2);
+          }
+        }
+      }
     }
   }
 }
