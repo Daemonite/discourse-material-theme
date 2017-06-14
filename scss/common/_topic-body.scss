@@ -299,6 +299,7 @@ nav {
 }
 
 #topic-footer-buttons {
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: ($spacer-lg - $card-margin-y);
@@ -310,9 +311,8 @@ nav {
   > button {
     &.btn {
       @extend %btn-raised;
-
-      flex-grow: 1;
       margin: 0 $card-margin-x $card-margin-y 0;
+      max-width: ($topic-body-width / 3);
     }
   }
 
@@ -322,8 +322,21 @@ nav {
     vertical-align: middle;
   }
 
+  span > button,
+  > button {
+    &.btn {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+
   > div {
-    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: $card-margin-x;
+    white-space: nowrap;
   }
 
   .btn {
