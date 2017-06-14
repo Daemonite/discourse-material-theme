@@ -189,7 +189,8 @@
   padding: $modal-footer-padding-y $modal-footer-padding-x;
 
   .modal-header ~ &,
-  .modal-header ~ div > & {
+  .modal-header ~ div > &,
+  .modal-header ~ form > & {
     border-top: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
   }
 

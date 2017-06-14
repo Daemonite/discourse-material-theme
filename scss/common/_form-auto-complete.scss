@@ -6,7 +6,7 @@ div {
     display: flex;
     flex-wrap: wrap;
     min-height: $text-field-height;
-    min-width: 100%;
+    min-width: $text-field-min-width;
     padding: 0;
 
     div {

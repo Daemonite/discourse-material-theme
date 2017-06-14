@@ -418,6 +418,7 @@ $text-field-font-size:                   16px !default;
 $text-field-height:                      36px !default;
 $text-field-margin-x:                    $spacer-sm !default;
 $text-field-margin-y:                    $spacer-sm !default;
+$text-field-min-width:                   200px !default; // same value as the default Select2 min-width
 $text-field-padding-x:                   0 !default;
 $text-field-padding-y:                   8px !default;
 

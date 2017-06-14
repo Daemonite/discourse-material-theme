@@ -2248,7 +2248,7 @@ div.ac-wrap {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   min-height: 36px;
-  min-width: 100%;
+  min-width: 200px;
   padding: 0;
 }
 div.ac-wrap div.item {
@@ -4161,7 +4161,7 @@ div.menu-links-header .menu-links-row {
           flex-direction: row-reverse;
   padding: 8px 8px;
 }
-.modal-header ~ .modal-footer, .modal-header ~ div > .modal-footer {
+.modal-header ~ .modal-footer, .modal-header ~ div > .modal-footer, .modal-header ~ form > .modal-footer {
   border-top: 1px solid color-chooser(#000000, #e0e0e0);
 }
 body .bootbox.modal .modal-footer a.btn-primary {
