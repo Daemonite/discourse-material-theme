@@ -7638,6 +7638,17 @@ div.badges .form-horizontal > div.group-flair-inputs input[type='text'], div.gro
   margin-bottom: 0;
 }
 
+.https-warning,
+.query-create,
+.query-edit,
+.query-edit:not(.editing) .desc,
+.query-list,
+.query-params,
+.query-results,
+.query-run {
+  margin: 16px 0;
+}
+
 .inline-edit label {
   margin-right: 8px;
 }

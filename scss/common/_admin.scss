@@ -669,6 +669,17 @@ div {
   }
 }
 
+.https-warning,
+.query-create,
+.query-edit,
+.query-edit:not(.editing) .desc,
+.query-list,
+.query-params,
+.query-results,
+.query-run {
+  margin: $spacer 0;
+}
+
 .inline-edit label {
   margin-right: $spacer-sm;
 }
