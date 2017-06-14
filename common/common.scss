@@ -5225,11 +5225,13 @@ nav.post-controls .show-replies i {
 }
 
 .post-links-container ul li {
-  line-height: 1;
-  margin: 3px;
+  margin: 0.000003px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.post-links-container ul li a[href] {
+  display: inline;
 }
 .post-links-container ul li i {
   margin: 0 8px 0 0;

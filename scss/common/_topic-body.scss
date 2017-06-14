@@ -163,11 +163,14 @@ nav {
 
 .post-links-container {
   ul li {
-    line-height: 1;
-    margin: (($btn-height + $card-padding-y - $card-padding-y * 2 - $font-size-base) / 2);
+    margin: (($btn-height + $card-padding-y - $card-padding-y * 2 - $font-size-base * $line-height-base) / 2) 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    a[href] {
+      display: inline;
+    }
 
     i {
       margin: 0 $card-inner-spacer-x 0 0;
