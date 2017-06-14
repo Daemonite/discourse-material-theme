@@ -214,7 +214,11 @@ div {
   &.embeddable-hosts {
     .admin-container & {
       flex-grow: 1;
-      margin-bottom: 0;
+      margin-bottom: $spacer-lg;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       table td:last-child {
         white-space: nowrap;
@@ -607,6 +611,42 @@ div {
 
   .dashboard-right & {
     margin-right: 0;
+  }
+}
+
+.embedding-secondary {
+  @extend %card;
+  @extend %card-block;
+
+  margin-bottom: $spacer-lg;
+  width: 100%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > :last-child,
+  > :last-child > pre:last-child {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin: 0 0 $card-inner-spacer-y;
+  }
+
+  p {
+    &.description {
+      margin-bottom: $card-inner-spacer-y;
+      max-width: 100%;
+    }
+  }
+
+  .embed-setting {
+    margin: 0 0 $card-inner-spacer-y;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
