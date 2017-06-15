@@ -28,6 +28,7 @@
   background-clip: padding-box;
   background-color: color-chooser($dropdown-bg-dark, $dropdown-bg-light);
   border: 0;
+  border-radius: $dropdown-border-radius;
   box-shadow: $dropdown-box-shadow;
   font-size: $dropdown-font-size;
   line-height: $dropdown-line-height;
