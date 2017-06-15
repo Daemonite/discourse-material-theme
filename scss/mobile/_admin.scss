@@ -1,0 +1,82 @@
+.admin-detail {
+  min-height: 0;
+  padding: 0;
+  width: 100%;
+
+  &,
+  &.mobile-open {
+    transform: translate3d(calc(50% + #{$grid-gutter-width / 2}), 0, 0);
+  }
+
+  &.mobile-closed {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.admin-controls .controls:not(.search) {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-nav {
+  width: 50%;
+  width: calc(50% - #{$grid-gutter-width / 2});
+}
+
+.customize > .admin-container {
+  &,
+  > .row:not(.site-texts) {
+    display: block;
+  }
+}
+
+.dashboard-stats {
+  margin-right: 0;
+}
+
+.mobile-view .admin-contents {
+  div {
+    &.badges,
+    &.customize,
+    &.groups {
+      display: block;
+
+      .content-list {
+        margin-right: 0;
+        margin-bottom: $spacer-lg;
+
+        > br {
+          display: none;
+        }
+      }
+    }
+
+    &.badges .buttons {
+      float: none;
+      width: auto;
+    }
+  }
+
+  input[type='text'] {
+    @extend %text-field-box;
+  }
+}
+
+.mobile-view .admin-controls {
+  @extend %card-block;
+
+  > .pull-right {
+    clear: both;
+    float: none;
+    margin-top: ($card-inner-spacer-y / 2);
+
+    > :last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.paste-users {
+  max-width: 100%;
+}

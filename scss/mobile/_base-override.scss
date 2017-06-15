@@ -49,6 +49,10 @@ body .boxed .contents {
   }
 }
 
+.select2-container {
+  max-width: 100%;
+}
+
 .wrap {
   padding: 0 ($grid-gutter-width / 2);
 }

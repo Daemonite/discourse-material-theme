@@ -16,6 +16,8 @@
 // - Topic list
 // - Topic post
 // - User
+//
+// - Admin
 
 @import 'mobile/base-override';
 @import 'mobile/header';
@@ -27,3 +29,5 @@
 @import 'mobile/topic-list';
 @import 'mobile/topic-post';
 @import 'mobile/user';
+
+@import 'mobile/admin';
