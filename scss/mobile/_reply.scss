@@ -42,6 +42,16 @@
     }
   }
 
+  .control-row .reply-to {
+    max-width: calc(50% - #{$material-icon-size + $spacer-sm});
+
+    a {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
   .wmd-controls {
     &.toolbar-visible {
       .d-editor-button-bar {
