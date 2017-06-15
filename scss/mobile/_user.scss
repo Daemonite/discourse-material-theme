@@ -73,6 +73,21 @@
   }
 }
 
+.user-preferences {
+  .checkbox-label {
+    padding: 0;
+  }
+
+  .control-group {
+    padding: 0;
+  }
+
+  .controls-dropdown {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+}
+
 .user-navigation {
   margin: 0 0 $spacer-lg;
 
