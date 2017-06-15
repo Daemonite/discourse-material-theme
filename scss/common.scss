@@ -35,10 +35,10 @@
 // - Table
 // - Timeline
 // - Topic
-//   - Topic body
 //   - Topic list
 //     - Category list
 //     - Suggested topics
+//   - Topic post
 // - User
 //   - User badge
 //   - User card
@@ -73,10 +73,10 @@
 @import 'common/share';
 @import 'common/table';
 @import 'common/timeline';
-@import 'common/topic-body';
 @import 'common/topic-list';
 @import 'common/topic-list-category';
 @import 'common/topic-list-suggested';
+@import 'common/topic-post';
 @import 'common/user';
 @import 'common/user-badge';
 @import 'common/user-card';
