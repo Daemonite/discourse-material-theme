@@ -1,0 +1,28 @@
+%table {
+  background-color: color-chooser($table-bg-dark, $table-bg-light);
+  border: 0;
+  box-shadow: $table-box-shadow;
+  margin-bottom: $table-margin-y;
+  max-width: 100%;
+  width: 100%;
+}
+
+%table-row {
+  border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+}
+
+%tbody-cell {
+  color: color-chooser($tbody-color-dark, $tbody-color-light);
+  font-size: $tbody-font-size;
+  height: $tbody-cell-height;
+  padding: $tbody-cell-padding-y $tbody-cell-padding-x;
+  vertical-align: middle;
+}
+
+%thead-cell {
+  color: color-chooser($thead-color-dark, $thead-color-light);
+  font-size: $thead-font-size;
+  height: $thead-cell-height;
+  padding: $thead-cell-padding-y $thead-cell-padding-x;
+  vertical-align: middle;
+}
