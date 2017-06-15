@@ -16,6 +16,31 @@ body .boxed .contents {
   }
 }
 
+.mobile-view .mobile-nav {
+  background-color: transparent;
+  margin: $spacer-lg 0;
+  width: 100%;
+
+  > li > a {
+    @extend %btn-flat;
+    @extend %btn-raised;
+  }
+
+  .drop.expanded {
+    @extend %dropdown-menu;
+    @extend %dropdown-menu-sm;
+
+    li {
+      margin: 0;
+
+      a {
+        @extend %dropdown-link;
+        @extend %dropdown-link-sm;
+      }
+    }
+  }
+}
+
 .wrap {
   padding: 0 ($grid-gutter-width / 2);
 }
