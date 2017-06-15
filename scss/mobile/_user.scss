@@ -28,13 +28,29 @@
 
 .user-main {
   .about {
-    .controls a {
-      @extend %btn-sm;
+    .controls {
+      margin: 0;
+      width: 100%;
+
+      a {
+        @extend %btn-sm;
+      }
+
+      ul {
+        display: flex;
+        margin-top: ($card-inner-spacer-y / 2);
+      }
     }
 
-    .details .avatar {
-      height: ($font-size-h2 * $line-height-h2);
-      width: ($font-size-h2 * $line-height-h2);
+    .details {
+      .avatar {
+        height: ($font-size-h2 * $line-height-h2);
+        width: ($font-size-h2 * $line-height-h2);
+      }
+
+      .primary {
+        flex-wrap: wrap;
+      }
     }
 
     .secondary dl {
