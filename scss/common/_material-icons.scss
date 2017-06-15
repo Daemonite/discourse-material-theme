@@ -314,6 +314,10 @@
   @include material-icons('assignment');
 }
 
+.fa-television {
+  @include material-icons('tv');
+}
+
 .fa-thumb-tack {
   @include material-icons('flip_to_front');
 
