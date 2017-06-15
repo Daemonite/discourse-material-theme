@@ -47,6 +47,7 @@
 .user-navigation {
   margin: 0 0 $spacer-lg;
 
+  > .btn,
   .user-archive .btn {
     @extend %btn-raised;
   }

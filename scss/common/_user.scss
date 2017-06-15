@@ -470,7 +470,13 @@
       align-items: center;
       display: flex;
 
+      div {
+        align-items: flex-start;
+        display: flex;
+      }
+
       p {
+        flex-grow: 1;
         margin: 0 0 0 $card-inner-spacer-x;
       }
 
