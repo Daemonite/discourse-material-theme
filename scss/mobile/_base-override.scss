@@ -21,6 +21,14 @@ body .boxed .contents {
   margin: $spacer-lg 0;
   width: 100%;
 
+  &.activity-nav,
+  &.messages-nav,
+  &.notifications-nav,
+  &.preferences-nav {
+    margin-top: 0;
+    position: static;
+  }
+
   > li > a {
     @extend %btn-flat;
     @extend %btn-raised;

@@ -43,3 +43,15 @@
     }
   }
 }
+
+.user-navigation {
+  margin: 0 0 $spacer-lg;
+
+  .user-archive .btn {
+    @extend %btn-raised;
+  }
+}
+
+.user-table .wrapper {
+  display: block;
+}
