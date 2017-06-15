@@ -1,7 +1,32 @@
 .list-controls {
   margin-top: 0;
 
-  .nav li {
-    margin-top: 0;
+  .nav {
+    > li > a {
+      @extend %btn-raised;
+
+      opacity: 1;
+    }
+
+    li {
+      margin-top: 0;
+    }
+  }
+
+  .nav-pills .drop {
+    @extend %dropdown-menu;
+    @extend %dropdown-menu-sm;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        @extend %dropdown-link;
+        @extend %dropdown-link-sm;
+
+        color: inherit;
+      }
+    }
   }
 }
