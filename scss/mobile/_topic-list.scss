@@ -1,0 +1,32 @@
+.mobile-view .topic-list {
+  div + .topic-details {
+    min-height: 0;
+    padding-left: $tbody-cell-padding-x;
+  }
+
+  .num.activity {
+    clear: both;
+    float: right;
+    position: static;
+  }
+}
+
+.topic-list {
+  tbody td:first-of-type:last-of-type {
+    padding-right: $tbody-cell-padding-x;
+    padding-left: $tbody-cell-padding-x;
+  }
+
+  .num {
+    &.activity,
+    &.posts {
+      a {
+        padding: 0;
+      }
+    }
+  }
+
+  .posts-map {
+    font-size: inherit;
+  }
+}
