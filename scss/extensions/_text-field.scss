@@ -22,6 +22,7 @@
   &:focus {
     border-color: unquote('$tertiary');
     box-shadow: none;
+    outline: 0;
   }
 
   &[disabled],
