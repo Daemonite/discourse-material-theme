@@ -12,11 +12,6 @@
 }
 
 .topic-list {
-  tbody td:first-of-type:last-of-type {
-    padding-right: $tbody-cell-padding-x;
-    padding-left: $tbody-cell-padding-x;
-  }
-
   .num {
     &.activity,
     &.posts {
