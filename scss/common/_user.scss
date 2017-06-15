@@ -400,6 +400,14 @@
     display: block;
     flex-grow: 1;
     width: auto;
+
+    .list-actions {
+      margin-bottom: $spacer;
+
+      .btn {
+        @extend %btn-raised;
+      }
+    }
   }
 
   .user-stream {
@@ -546,6 +554,14 @@
 
   .dismiss-notifications .fa-check::before {
     content: 'clear_all';
+  }
+
+  .new-private-message {
+    @extend %btn-raised;
+
+    display: block;
+    margin-bottom: $spacer;
+    width: 100%;
   }
 }
 
