@@ -24,11 +24,23 @@
   width: calc(50% - #{$grid-gutter-width / 2});
 }
 
-.customize > .admin-container {
-  &,
-  > .row:not(.site-texts) {
-    display: block;
+.customize {
+  > .admin-container {
+    &,
+    > .row:not(.site-texts) {
+      display: block;
+    }
   }
+
+  .content-list {
+    float: none;
+  }
+}
+
+.dashboard-left,
+.dashboard-right {
+  float: none;
+  width: auto;
 }
 
 .dashboard-stats {

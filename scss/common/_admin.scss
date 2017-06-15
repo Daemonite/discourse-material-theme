@@ -539,7 +539,8 @@ div {
 
     flex-grow: 1;
     margin-left: 0;
-    width: 0;
+    min-width: 0;
+    width: auto;
 
     h1,
     h2 {
