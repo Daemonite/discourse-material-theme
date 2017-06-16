@@ -1,0 +1,93 @@
+#reply-control {
+  .btn-primary {
+    margin-bottom: 0;
+  }
+
+  .category-input {
+    border-top: 1px solid color-chooser($white-divider, $black-divider);
+    padding-top: (($text-field-box-height - $btn-height) / 2);
+    padding-bottom: (($text-field-box-height - $btn-height) / 2);
+  }
+
+  .composer-bottom-right {
+    line-height: $btn-height-sm;
+    position: absolute;
+    right: 0;
+    bottom: $card-padding-y;
+  }
+
+  .contents {
+    min-width: 0;
+
+    .d-editor-input {
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 0;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .form-element {
+      display: block;
+    }
+
+    .submit-panel .btn {
+      @extend %btn-sm;
+
+      max-width: none;
+      padding-right: ($btn-padding-x-sm / 2);
+      padding-left: ($btn-padding-x-sm / 2);
+    }
+  }
+
+  .control-row .reply-to {
+    max-width: calc(50% - #{$material-icon-size + $spacer-sm});
+
+    a {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .wmd-controls {
+    &.toolbar-visible {
+      .d-editor-button-bar {
+        background-color: transparent;
+        margin: 0;
+        width: 100%;
+
+        button {
+          &.btn.no-text {
+            @extend %btn-sm;
+
+            margin: 0;
+            padding-right: ($btn-padding-x-sm / 2);
+            padding-left: ($btn-padding-x-sm / 2);
+          }
+        }
+      }
+
+      .d-editor-input {
+        border-top-width: ($btn-height-sm + $card-inner-spacer-y);
+        padding-top: 0;
+      }
+    }
+
+    .d-editor-container {
+      flex-direction: column;
+    }
+
+    .d-editor-input {
+      border-top-width: $card-inner-spacer-y;
+      flex-grow: 1;
+    }
+
+    .d-editor-textarea-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

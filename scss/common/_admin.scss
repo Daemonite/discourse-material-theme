@@ -98,6 +98,15 @@
 
   .controls {
     margin-left: 0;
+
+    .menu-toggle {
+      border: 0;
+      border-radius: $btn-border-radius;
+      font-size: $btn-font-size;
+      margin-right: $card-inner-spacer-x;
+      margin-bottom: ($card-inner-spacer-y / 2);
+      padding: $btn-padding-y $btn-padding-x;
+    }
   }
 
   .nav {
@@ -530,7 +539,8 @@ div {
 
     flex-grow: 1;
     margin-left: 0;
-    width: 0;
+    min-width: 0;
+    width: auto;
 
     h1,
     h2 {

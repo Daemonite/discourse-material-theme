@@ -1,0 +1,58 @@
+body .boxed .contents {
+  padding: $card-padding-y $card-padding-x 0;
+}
+
+.cooked {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+.dropdown-menu {
+  margin: 0;
+  position: absolute;
+
+  li {
+    margin: 0;
+  }
+}
+
+.mobile-view .mobile-nav {
+  background-color: transparent;
+  margin: $spacer-lg 0;
+  width: 100%;
+
+  &.activity-nav,
+  &.messages-nav,
+  &.notifications-nav,
+  &.preferences-nav {
+    margin-top: 0;
+    position: static;
+  }
+
+  > li > a {
+    @extend %btn-flat;
+    @extend %btn-raised;
+  }
+
+  .drop.expanded {
+    @extend %dropdown-menu;
+    @extend %dropdown-menu-sm;
+
+    li {
+      margin: 0;
+
+      a {
+        @extend %dropdown-link;
+        @extend %dropdown-link-sm;
+      }
+    }
+  }
+}
+
+.select2-container {
+  max-width: 100%;
+}
+
+.wrap {
+  padding: 0 ($grid-gutter-width / 2);
+}

@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'extensions';
 
 
 
@@ -7,9 +8,9 @@
 //
 // - Base
 //   - Base override
+//
+// - Badge
 // - Button
-// - Card
-// - Chip
 // - Code
 // - Cooked
 //   - Aside
@@ -28,17 +29,16 @@
 //   - Edit topic status update
 // - Notification
 // - Picker
-// - Progress
 // - Reply
 // - Search
 // - Share
 // - Table
 // - Timeline
 // - Topic
-//   - Topic body
 //   - Topic list
 //     - Category list
 //     - Suggested topics
+//   - Topic post
 // - User
 //   - User badge
 //   - User card
@@ -47,9 +47,9 @@
 
 @import 'common/base';
 @import 'common/base-override';
+
+@import 'common/badge';
 @import 'common/button';
-@import 'common/card';
-@import 'common/chip';
 @import 'common/code';
 @import 'common/cooked';
 @import 'common/cooked-aside';
@@ -68,16 +68,15 @@
 @import 'common/modal-edit-topic';
 @import 'common/notification';
 @import 'common/picker';
-@import 'common/progress';
 @import 'common/reply';
 @import 'common/search';
 @import 'common/share';
 @import 'common/table';
 @import 'common/timeline';
-@import 'common/topic-body';
 @import 'common/topic-list';
 @import 'common/topic-list-category';
 @import 'common/topic-list-suggested';
+@import 'common/topic-post';
 @import 'common/user';
 @import 'common/user-badge';
 @import 'common/user-card';

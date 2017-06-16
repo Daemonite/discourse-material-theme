@@ -57,7 +57,7 @@
     .contents {
       input {
         &#reply-title {
-          border-bottom: 0;
+          border: 0;
           height: auto;
           margin: 0;
           padding: $card-padding-y $card-padding-x;
@@ -138,6 +138,10 @@
 
     #reply-title {
       margin: 0;
+
+      &:focus {
+        outline: 0;
+      }
     }
 
     .submit-panel {
@@ -293,25 +297,6 @@
     order: -1;
   }
 
-  .toggler {
-    align-items: center;
-    color: color-chooser($black-secondary, $white-secondary);
-    display: flex;
-    font-size: inherit;
-    height: ($material-icon-size + $spacer-sm);
-    justify-content: center;
-    padding: 0;
-    top: 0;
-    right: $spacer-sm;
-    width: ($material-icon-size + $spacer-sm);
-
-    &::before {
-      @extend %material-icons;
-
-      content: 'close';
-    }
-  }
-
   .toggle-preview {
     @extend %btn-flat;
 
@@ -335,6 +320,35 @@
       bottom: 0;
       left: 0;
       text-indent: 0;
+    }
+  }
+
+  .toggle-toolbar,
+  .toggler {
+    align-items: center;
+    color: color-chooser($black-secondary, $white-secondary);
+    display: flex;
+    font-size: inherit;
+    height: ($material-icon-size + $spacer-sm);
+    justify-content: center;
+    padding: 0;
+    top: 0;
+    width: ($material-icon-size + $spacer-sm);
+  }
+
+  .toggle-toolbar {
+    @include material-icons('menu');
+
+    right: ($material-icon-size + $spacer-sm + $spacer-sm * 2);
+  }
+
+  .toggler {
+    right: $spacer-sm;
+
+    &::before {
+      @extend %material-icons;
+
+      content: 'close';
     }
   }
 
@@ -368,6 +382,7 @@
     }
 
     .d-editor-input {
+      border-top-color: transparent;
       padding: 0 $card-padding-x $card-padding-y;
       position: static;
     }

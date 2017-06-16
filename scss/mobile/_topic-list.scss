@@ -1,0 +1,120 @@
+.categories-list .category-list {
+  margin-bottom: 0;
+  margin-left: 0;
+
+  .subcategories:first-child {
+    margin-top: 0;
+  }
+}
+
+.category-list-item {
+  border-left-width: ($table-border-width * 2);
+
+  &.category .posts {
+    vertical-align: middle;
+  }
+
+  > footer {
+    align-items: center;
+    border-top: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+    border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+    display: flex;
+    min-height: $tbody-cell-height;
+    padding: $tbody-cell-padding-y ($tbody-cell-padding-x * 2);
+
+    figure {
+      @extend %typography-caption;
+
+      margin: 0 auto 0 0;
+    }
+
+    .btn {
+      margin-left: $spacer-xs;
+    }
+  }
+
+  .age {
+    margin-left: $spacer-xs;
+  }
+
+  .category-topic-link .main-link .age {
+    @extend %typography-caption;
+  }
+
+  .topic-list {
+    box-shadow: none;
+    margin-bottom: 0;
+
+    td {
+      @extend %tbody-cell;
+
+      &:first-of-type {
+        padding-left: ($tbody-cell-padding-x * 2);
+      }
+
+      &:last-of-type {
+        padding-right: ($tbody-cell-padding-x * 2);
+      }
+    }
+
+    th {
+      @extend %thead-cell;
+    }
+  }
+}
+
+.mobile-view .topic-list {
+  div + .topic-details {
+    min-height: 0;
+    padding-left: $tbody-cell-padding-x;
+  }
+
+  .num.activity {
+    clear: both;
+    float: right;
+    margin-left: $spacer-xs;
+    position: static;
+  }
+}
+
+.topic-list {
+  .badge-notification {
+    font-size: inherit;
+    padding: ($chip-padding-y / 2) ($chip-padding-x / 2);
+  }
+
+  .category-topic-link td {
+    &.num .badge-notification {
+      font-size: inherit;
+      padding: ($chip-padding-y / 2) ($chip-padding-x / 2);
+    }
+  }
+
+  .num {
+    &.activity,
+    &.posts {
+      a {
+        padding: 0;
+      }
+    }
+  }
+
+  .posts-map {
+    font-size: inherit;
+  }
+
+  .topic-item-stats {
+    align-items: center;
+    display: flex;
+
+    > .pull-right {
+      order: 1;
+      margin-left: auto;
+    }
+
+    .category {
+      line-height: 1;
+      margin-right: $tbody-cell-padding-x;
+    }
+  }
+}

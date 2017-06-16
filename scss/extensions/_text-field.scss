@@ -1,0 +1,47 @@
+%text-field {
+  background-clip: padding-box;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-bottom: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+  border-radius: 0;
+  box-shadow: none;
+  color: inherit;
+  display: block;
+  font-size: $text-field-font-size;
+  height: $text-field-height;
+  line-height: ($text-field-height - $text-field-padding-y * 2);
+  padding: $text-field-padding-y $text-field-padding-x ($text-field-padding-y - $text-field-border-width);
+  width: 100%;
+
+  @include focus-hover {
+    border-width: ($text-field-border-width * 2);
+    padding-bottom: ($text-field-padding-y - $text-field-border-width * 2);
+  }
+
+  &:focus {
+    border-color: unquote('$tertiary');
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &[disabled],
+  &[readonly] {
+    border-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+    border-style: dotted;
+    color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+    pointer-events: none;
+  }
+}
+
+%text-field-box {
+  background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+  border-radius: $text-field-box-border-radius;
+  height: $text-field-box-height;
+  line-height: ($text-field-box-height - $text-field-box-padding-y * 2);
+  padding: $text-field-box-padding-y $text-field-box-padding-x ($text-field-box-padding-y - $text-field-border-width);
+
+  @include focus-hover {
+    padding-bottom: ($text-field-box-padding-y - $text-field-border-width * 2);
+  }
+}

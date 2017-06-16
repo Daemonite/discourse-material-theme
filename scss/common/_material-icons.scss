@@ -254,6 +254,10 @@
   @include material-icons('edit');
 }
 
+.fa-pencil-square-o {
+  @include material-icons('edit');
+}
+
 .fa-picture-o {
   @include material-icons('crop_original');
 }
@@ -312,6 +316,10 @@
 
 .fa-tasks {
   @include material-icons('assignment');
+}
+
+.fa-television {
+  @include material-icons('tv');
 }
 
 .fa-thumb-tack {
