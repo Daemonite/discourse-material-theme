@@ -57,7 +57,7 @@
     tr {
       @extend %table-row;
 
-      &:hover {
+      @include hover {
         background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
       }
     }

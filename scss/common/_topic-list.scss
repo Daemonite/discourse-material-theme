@@ -42,7 +42,7 @@
     @extend %dropdown-menu-sm;
 
     ul li {
-      &:hover {
+      @include hover {
         background-color: transparent;
       }
 
@@ -213,8 +213,7 @@
   }
 
   .sortable {
-    &:focus,
-    &:hover {
+    @include focus-hover {
       background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
     }
   }
