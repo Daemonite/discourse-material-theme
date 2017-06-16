@@ -520,11 +520,11 @@ body .boxed .contents {
   display: flex;
 }
 .topic-list .topic-item-stats > .pull-right {
+  margin-left: auto;
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
-  margin-left: auto;
 }
 .topic-list .topic-item-stats .category {
   line-height: 1;
@@ -758,7 +758,6 @@ body .boxed .contents {
 }
 
 .admin-nav {
-  width: 50%;
   width: calc(50% - 8px);
 }
 
