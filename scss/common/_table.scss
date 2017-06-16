@@ -1,17 +1,21 @@
 .table {
   @extend %table;
-}
 
-.table tbody td,
-.table tbody th {
-  @extend %tbody-cell;
-}
+  tbody {
+    td,
+    th {
+      @extend %tbody-cell;
+    }
 
-.table tbody tr {
-  @extend %table-row;
-}
+    tr {
+      @extend %table-row;
+    }
+  }
 
-.table thead td,
-.table thead th {
-  @extend %thead-cell;
+  thead {
+    td,
+    th {
+      @extend %thead-cell;
+    }
+  }
 }
