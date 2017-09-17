@@ -17,12 +17,14 @@
       display: flex;
       font-size: inherit;
       height: ($header-height - $header-padding-y * 2);
+      justify-content: center;
       line-height: inherit;
       margin-top: 0;
       margin-left: $header-inner-spacer-x;
       overflow: hidden;
-      padding: 0 (($header-height - $header-padding-y * 2 - $material-icon-size) / 2);
+      padding: 0;
       position: relative;
+      text-indent: 300%;
       white-space: nowrap;
       width: ($header-height - $header-padding-y * 2);
 
@@ -40,6 +42,7 @@
         color: unquote('$header-primary');
         margin-right: 100%;
         position: absolute;
+        text-indent: 0;
       }
     }
 
@@ -50,6 +53,7 @@
         color: unquote('$header-primary');
         margin-right: 100%;
         position: absolute;
+        text-indent: 0;
       }
     }
   }

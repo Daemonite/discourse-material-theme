@@ -2104,12 +2104,17 @@ div.ac-wrap input[type='text'] {
   display: flex;
   font-size: inherit;
   height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: inherit;
   margin-top: 0;
   margin-left: 8px;
   overflow: hidden;
-  padding: 0 8px;
+  padding: 0;
   position: relative;
+  text-indent: 300%;
   white-space: nowrap;
   width: 40px;
 }
@@ -2123,6 +2128,7 @@ div.ac-wrap input[type='text'] {
   color: $header-primary;
   margin-right: 100%;
   position: absolute;
+  text-indent: 0;
 }
 .d-header button.sign-up-button {
   font-size: inherit !important;
@@ -2135,6 +2141,7 @@ div.ac-wrap input[type='text'] {
   color: $header-primary;
   margin-right: 100%;
   position: absolute;
+  text-indent: 0;
 }
 .d-header .contents {
   -webkit-box-align: center;
