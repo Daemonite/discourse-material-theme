@@ -4525,6 +4525,11 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   float: none;
   margin: 0 32px 16px 0;
 }
+#share-link input[type='text'] {
+  font-size: 16px;
+  margin-bottom: 8px;
+  width: 100%;
+}
 #share-link .link {
   font-size: inherit;
   margin: 0;

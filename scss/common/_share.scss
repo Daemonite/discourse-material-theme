@@ -11,6 +11,10 @@
 
   input[type='text'] {
     @extend %text-field-box;
+
+    font-size: $text-field-font-size;
+    margin-bottom: $text-field-margin-y;
+    width: 100%;
   }
 
   .link {
