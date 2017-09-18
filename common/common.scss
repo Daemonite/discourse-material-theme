@@ -397,7 +397,6 @@ body .nav-pills > li > a {
   text-transform: none;
 }
 body .nav-pills > li > a:focus, body .nav-pills > li > a:hover {
-  background-color: transparent;
   opacity: 1;
 }
 
@@ -408,21 +407,6 @@ body .nav-pills > li > a:focus, body .nav-pills > li > a:hover {
 body .nav-pills > li.active > a:focus, body .nav-pills > li > a.active:focus, body .nav-pills > li.active > a:hover, body .nav-pills > li > a.active:hover {
   background-color: $quaternary;
   color: color-dynamic($quaternary);
-}
-body .nav-pills > li.active > a:focus::before, body .nav-pills > li > a.active:focus::before, body .nav-pills > li.active > a:hover::before, body .nav-pills > li > a.active:hover::before {
-  opacity: 1;
-}
-.nav-pills > li.active > a::before, .nav-pills > li > a.active::before {
-  background-color: color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
-  border-radius: 2px;
-  content: '';
-  display: block;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .nav-stacked, .content-list ul {
@@ -438,7 +422,6 @@ body .nav-stacked li > a, body .content-list ul li > a, .content-list body ul li
   text-transform: none;
 }
 body .nav-stacked li > a:focus, body .content-list ul li > a:focus, .content-list body ul li > a:focus, body .nav-stacked li > a:hover, body .content-list ul li > a:hover, .content-list body ul li > a:hover {
-  background-color: transparent;
   opacity: 1;
 }
 
@@ -450,23 +433,8 @@ body .nav-stacked li.active > a:focus, .nav-stacked body li.active > a:focus, bo
   background-color: $quaternary;;
   color: color-dynamic($quaternary);
 }
-body .nav-stacked li.active > a:focus::before, .nav-stacked body li.active > a:focus::before, body .content-list ul li.active > a:focus::before, .content-list ul body li.active > a:focus::before, body .nav-stacked li > a.active:focus::before, .nav-stacked body li > a.active:focus::before, body .content-list ul li > a.active:focus::before, .content-list ul body li > a.active:focus::before, body .nav-stacked li.active > a:hover::before, .nav-stacked body li.active > a:hover::before, body .content-list ul li.active > a:hover::before, .content-list ul body li.active > a:hover::before, body .nav-stacked li > a.active:hover::before, .nav-stacked body li > a.active:hover::before, body .content-list ul li > a.active:hover::before, .content-list ul body li > a.active:hover::before {
-  opacity: 1;
-}
 .nav-stacked li.active > a::after, .content-list ul li.active > a::after, .nav-stacked li > a.active::after, .content-list ul li > a.active::after {
   display: none;
-}
-.nav-stacked li.active > a::before, .content-list ul li.active > a::before, .nav-stacked li > a.active::before, .content-list ul li > a.active::before {
-  background-color: color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12));
-  border-radius: 2px;
-  content: '';
-  display: block;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 div.poll .results .bar {
