@@ -11,6 +11,14 @@
 .bootbox.modal {
   border: 0;
   margin-left: ($modal-width / -2);
+
+  .modal-footer {
+    a {
+      &.btn-primary {
+        color: unquote('$tertiary');
+      }
+    }
+  }
 }
 
 .close {

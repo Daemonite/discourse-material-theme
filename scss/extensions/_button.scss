@@ -1,6 +1,42 @@
 // Flat button
 
 %btn-flat {
+  @extend %btn-flat-simple;
+
+  &.btn-danger,
+  &.cancel {
+    background-color: transparent;
+    color: unquote('$danger');
+
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      color: unquote('$danger');
+    }
+  }
+
+  &.btn-primary {
+    background-color: transparent;
+    color: unquote('$tertiary');
+
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      color: unquote('$tertiary');
+    }
+  }
+
+  &.btn-success,
+  &.ok {
+    background-color: transparent;
+    color: unquote('$success');
+
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      color: unquote('$success');
+    }
+  }
+}
+
+%btn-flat-simple {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -39,38 +75,6 @@
   &.disabled {
     background-color: transparent !important;
     color: color-chooser($btn-color-disabled-dark, $btn-color-disabled-light) !important;
-  }
-
-  &.btn-danger,
-  &.cancel {
-    background-color: transparent;
-    color: unquote('$danger');
-
-    @include focus-hover {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-      color: unquote('$danger');
-    }
-  }
-
-  &.btn-primary {
-    background-color: transparent;
-    color: unquote('$tertiary');
-
-    @include focus-hover {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-      color: unquote('$tertiary');
-    }
-  }
-
-  &.btn-success,
-  &.ok {
-    background-color: transparent;
-    color: unquote('$success');
-
-    @include focus-hover {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-      color: unquote('$success');
-    }
   }
 }
 

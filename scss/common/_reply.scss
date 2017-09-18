@@ -158,7 +158,7 @@
       }
 
       .cancel {
-        @extend %btn-flat;
+        @extend %btn-flat-simple;
 
         margin-left: $card-inner-spacer-x;
       }

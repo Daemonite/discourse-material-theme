@@ -18,6 +18,31 @@
   }
 }
 
+.mobile-view .mobile-nav > li > a.btn-danger, .mobile-view .mobile-nav > li > a.cancel {
+  background-color: transparent;
+  color: $danger;
+}
+.mobile-view .mobile-nav > li > a.btn-danger:focus, .mobile-view .mobile-nav > li > a.btn-danger:hover, .mobile-view .mobile-nav > li > a.cancel:focus, .mobile-view .mobile-nav > li > a.cancel:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $danger;
+}
+.mobile-view .mobile-nav > li > a.btn-primary {
+  background-color: transparent;
+  color: $tertiary;
+}
+.mobile-view .mobile-nav > li > a.btn-primary:focus, .mobile-view .mobile-nav > li > a.btn-primary:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $tertiary;
+}
+.mobile-view .mobile-nav > li > a.btn-success, .mobile-view .mobile-nav > li > a.ok {
+  background-color: transparent;
+  color: $success;
+}
+.mobile-view .mobile-nav > li > a.btn-success:focus, .mobile-view .mobile-nav > li > a.btn-success:hover, .mobile-view .mobile-nav > li > a.ok:focus, .mobile-view .mobile-nav > li > a.ok:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $success;
+}
+
 .mobile-view .mobile-nav > li > a {
   background-color: transparent;
   background-image: none;
@@ -57,30 +82,6 @@
 .mobile-view .mobile-nav > li > a[disabled], .mobile-view .mobile-nav > li > a.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
-}
-.mobile-view .mobile-nav > li > a.btn-danger, .mobile-view .mobile-nav > li > a.cancel {
-  background-color: transparent;
-  color: $danger;
-}
-.mobile-view .mobile-nav > li > a.btn-danger:focus, .mobile-view .mobile-nav > li > a.btn-danger:hover, .mobile-view .mobile-nav > li > a.cancel:focus, .mobile-view .mobile-nav > li > a.cancel:hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $danger;
-}
-.mobile-view .mobile-nav > li > a.btn-primary {
-  background-color: transparent;
-  color: $tertiary;
-}
-.mobile-view .mobile-nav > li > a.btn-primary:focus, .mobile-view .mobile-nav > li > a.btn-primary:hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $tertiary;
-}
-.mobile-view .mobile-nav > li > a.btn-success, .mobile-view .mobile-nav > li > a.ok {
-  background-color: transparent;
-  color: $success;
-}
-.mobile-view .mobile-nav > li > a.btn-success:focus, .mobile-view .mobile-nav > li > a.btn-success:hover, .mobile-view .mobile-nav > li > a.ok:focus, .mobile-view .mobile-nav > li > a.ok:hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $success;
 }
 
 .mobile-view .mobile-nav > li > a, .list-controls .nav > li > a, .show-topic-admin, .user-navigation > .btn,
