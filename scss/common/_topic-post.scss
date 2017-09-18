@@ -333,7 +333,6 @@ nav {
   }
 
   p {
-    line-height: $btn-height;
     margin-bottom: $card-margin-y;
     vertical-align: middle;
   }
@@ -352,7 +351,6 @@ nav {
     flex-basis: 0;
     flex-grow: 1;
     margin-right: $card-margin-x;
-    white-space: nowrap;
   }
 
   .btn {
@@ -380,6 +378,17 @@ nav {
 
     .btn {
       @extend %dropdown-link-sm;
+    }
+  }
+
+  .topic-notifications-button {
+    min-width: 100%;
+
+    .reason {
+      line-height: $line-height-base;
+      margin-top: (($btn-height - $font-size-base * $line-height-base) / 2);
+      margin-bottom: 0;
+      margin-left: $card-margin-x;
     }
   }
 }

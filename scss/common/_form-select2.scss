@@ -19,6 +19,8 @@
 }
 
 .dropdown-select-box.dropdown-select-box {
+  height: $btn-height;
+
   .dropdown-header .btn {
     height: $btn-height;
   }
