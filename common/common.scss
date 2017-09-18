@@ -2080,6 +2080,14 @@ div.ac-wrap input[type='text'] {
   vertical-align: top;
 }
 
+.select-box {
+  border-radius: 2px;
+  height: 36px;
+}
+.select-box .select-box-header {
+  border-radius: 2px;
+}
+
 .d-header {
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
@@ -4008,7 +4016,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   height: 24px;
   margin-top: -12px;
   top: 50%;
-  widows: 24px;
+  width: 24px;
 }
 #reply-control.draft .toggler::before {
   content: 'close';
@@ -4340,6 +4348,9 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control .toggler::before {
   content: 'close';
+}
+#reply-control .toggler .fa {
+  display: none;
 }
 #reply-control .wmd-controls {
   display: -webkit-box;

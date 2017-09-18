@@ -43,7 +43,7 @@
       height: $material-icon-size;
       margin-top: ($material-icon-size / -2);
       top: 50%;
-      widows: $material-icon-size;
+      width: $material-icon-size;
 
       &::before {
         @extend %material-icons;
@@ -349,6 +349,10 @@
       @extend %material-icons;
 
       content: 'close';
+    }
+
+    .fa {
+      display: none;
     }
   }
 

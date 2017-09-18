@@ -246,3 +246,12 @@
     vertical-align: top;
   }
 }
+
+.select-box {
+  border-radius: $btn-border-radius;
+  height: $btn-height;
+
+  .select-box-header {
+    border-radius: $btn-border-radius;
+  }
+}
