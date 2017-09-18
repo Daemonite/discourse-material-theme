@@ -31,16 +31,19 @@
     width: calc(100% + .5em);
   }
 
-  td {
-    &.label {
-      padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
-    }
-  }
-
   tr {
     &.input {
       input {
+        margin-bottom: $spacer-xs;
         width: calc(100% - .5em);
+      }
+
+      td {
+        padding-top: 0;
+
+        &.label {
+          padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+        }
       }
 
       .tip {
@@ -117,6 +120,10 @@
 .login-modal {
   .btn-primary {
     margin-bottom: 0;
+  }
+
+  .modal-footer {
+    align-items: center;
   }
 
   .modal-header + .alert {

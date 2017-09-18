@@ -2398,11 +2398,15 @@ ol.category-breadcrumb li {
   margin-right: -.5em;
   width: calc(100% + .5em);
 }
-.create-account td.label {
-  padding-top: 18.000003px;
-}
 .create-account tr.input input {
+  margin-bottom: 4px;
   width: calc(100% - .5em);
+}
+.create-account tr.input td {
+  padding-top: 0;
+}
+.create-account tr.input td.label {
+  padding-top: 18.000003px;
 }
 .create-account tr.input .tip {
   margin-bottom: 4px;
@@ -2476,6 +2480,12 @@ ol.category-breadcrumb li {
 
 .login-modal .btn-primary {
   margin-bottom: 0;
+}
+.login-modal .modal-footer {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .login-modal .modal-header + .alert {
   border-radius: 0;
