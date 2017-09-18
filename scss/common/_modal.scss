@@ -194,7 +194,7 @@
     border-top: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
   }
 
-  a {
+  :not(.disclaimer) a {
     @extend %btn-flat;
     @extend %btn-footer;
 

@@ -89,6 +89,14 @@ $shadow-1dp:     none !default;
 
 $container-max-width:  1110px !default;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
 $grid-gutter-width:    16px !default;
 $grid-gutter-width-lg: 24px !default;
 
@@ -258,7 +266,7 @@ $code-border-radius: 2px !default;
 $code-color-dark:    #bd4147 !default;
 $code-color-light:   #bd4147 !default;
 $code-font-size:     87.5% !default;
-$code-padding:       .2rem .4rem !default;
+$code-padding:       .2em .4em !default;
 
 $kbd-bg:             #333333 !default;
 $kbd-color:          #ffffff !default;
@@ -301,7 +309,7 @@ $header-item-overlay-dark:  $white-divider !default;
 $header-item-overlay-light: $black-divider !default;
 $header-inner-spacer-x:     8px !default;
 $header-margin-y:           $spacer-lg !default;
-$header-padding-x:          0 !default;
+$header-padding-x:          8px !default;
 $header-padding-y:          8px !default;
 
 
