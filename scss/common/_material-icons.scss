@@ -194,6 +194,10 @@
   @include material-icons('settings');
 }
 
+.fa-hand-o-right {
+  @include material-icons('send');
+}
+
 .fa-header {
   @include material-icons('format_size');
 }
