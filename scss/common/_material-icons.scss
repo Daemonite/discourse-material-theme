@@ -14,6 +14,10 @@
   @include material-icons('person_pin');
 }
 
+.fa-backward {
+  @include material-icons('settings_backup_restore');
+}
+
 .fa-bar-chart-o {
   @include material-icons('insert_chart');
 }
@@ -316,6 +320,10 @@
 
 .fa-sun-o {
   @include material-icons('brightness_5');
+}
+
+.fa-tag {
+  @include material-icons('label');
 }
 
 .fa-tasks {
