@@ -73,6 +73,10 @@
     .timeline-footer-controls {
       line-height: inherit;
       margin-top: $spacer;
+
+      .widget-component-connector {
+        vertical-align: middle;
+      }
     }
 
     .timeline-handle {

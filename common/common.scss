@@ -1893,6 +1893,10 @@ div.ac-wrap input[type='text'] {
   white-space: nowrap;
 }
 
+.dropdown-select-box.dropdown-select-box .dropdown-header .btn {
+  height: 36px;
+}
+
 .select2-container {
   border: 0;
   border-radius: 0;
@@ -4619,6 +4623,9 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 .timeline-container .topic-timeline .timeline-footer-controls {
   line-height: inherit;
   margin-top: 16px;
+}
+.timeline-container .topic-timeline .timeline-footer-controls .widget-component-connector {
+  vertical-align: middle;
 }
 .timeline-container .topic-timeline .timeline-handle {
   background-color: $tertiary;
