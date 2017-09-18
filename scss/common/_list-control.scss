@@ -47,13 +47,20 @@ ol {
     margin: 0 0 $spacer-sm $spacer-sm;
   }
 
-  .category-breadcrumb li > {
-    a {
-      &.badge-category {
+  .category-breadcrumb > li {
+    box-shadow: $btn-box-shadow;
+
+    > a {
+      &.dropdown-header {
         @extend %btn-flat;
         @extend %btn-raised;
 
         border-radius: $btn-border-radius 0 0 $btn-border-radius;
+        box-shadow: none;
+
+        &::before {
+          border-radius: $btn-border-radius 0 0 $btn-border-radius;
+        }
 
         &:not(.category-dropdown-button) {
           flex-grow: 1;
@@ -62,10 +69,15 @@ ol {
         }
 
         &.category-dropdown-button {
+          border-left: 1px solid $black-divider;
           border-radius: 0 $btn-border-radius $btn-border-radius 0;
           margin-left: -1px;
           padding: $btn-padding-y ($btn-padding-x / 2);
           width: auto;
+
+          &::before {
+            border-radius: 0 $btn-border-radius $btn-border-radius 0;
+          }
 
           .fa-caret-right {
             margin-left: 0;
