@@ -84,41 +84,19 @@
 
   @include focus-hover {
     background-color: color-chooser($btn-bg-dark, $btn-bg-light);
-
-    &::before {
-      opacity: 1;
-    }
-  }
-
-  &::before {
-    background-color: color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light);
-    border-radius: $btn-border-radius;
-    content: '';
-    display: block;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
   }
 
   &:active {
+    background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
     box-shadow: $btn-box-shadow-active;
-
-    &::before {
-      opacity: 1;
-    }
   }
 
   &[disabled],
   &.disabled {
     background-color: color-chooser($btn-bg-disabled-dark, $btn-bg-disabled-light) !important;
+    background-image: none;
     box-shadow: none !important;
-
-    &::before {
-      display: none;
-    }
   }
 
   &.btn-danger,
