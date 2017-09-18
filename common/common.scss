@@ -1896,6 +1896,21 @@ div.ac-wrap input[type='text'] {
 .dropdown-select-box.dropdown-select-box .dropdown-header .btn {
   height: 36px;
 }
+.dropdown-select-box.dropdown-select-box .select-box-body {
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.dropdown-select-box.dropdown-select-box .select-box-row {
+  padding: 6.25px 24px;
+}
+.dropdown-select-box.dropdown-select-box .select-box-row .icons {
+  margin-top: 0;
+  margin-right: 16px;
+}
 
 .select2-container {
   border: 0;
@@ -2087,6 +2102,9 @@ div.ac-wrap input[type='text'] {
 .select-box {
   border-radius: 2px;
   height: 36px;
+}
+.select-box .select-box-collection {
+  background-color: color-chooser(#424242, #ffffff);
 }
 .select-box .select-box-header {
   border-radius: 2px;
