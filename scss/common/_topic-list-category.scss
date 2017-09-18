@@ -1,7 +1,8 @@
 .categories-and-latest {
-  .category-list,
-  .topic-list-latest {
-    width: calc(50% - #{$spacer-lg / 2});
+  div {
+    &.categories.column {
+      margin-right: $grid-gutter-width;
+    }
   }
 
   .topic-list {
@@ -17,14 +18,6 @@
 
     .posts {
       margin-bottom: $spacer-xs;
-    }
-  }
-
-  .topic-list-latest {
-    margin-left: $spacer-lg;
-
-    .main-link .badge-wrapper {
-      margin-top: $spacer-sm;
     }
   }
 }
@@ -135,7 +128,7 @@
     }
 
     th {
-      font-weight: bold;
+      font-weight: bolder;
       white-space: nowrap;
     }
   }
@@ -179,5 +172,72 @@
 
   .topics .value {
     font-size: inherit;
+  }
+}
+
+.latest-topic-list {
+  @extend %table;
+
+  .more-topics,
+  .table-heading {
+    @extend %thead-cell;
+    @extend %thead-cell;
+
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+  }
+
+  .more-topics {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .table-heading {
+    @extend %table-row;
+  }
+}
+
+.latest-topic-list-item {
+  @extend %table-row;
+  @extend %tbody-cell;
+
+  align-items: flex-start;
+  display: flex;
+  height: auto;
+  min-height: $tbody-cell-height;
+
+  .main-link {
+    font-size: inherit;
+
+    a {
+      &.title {
+        font-weight: bold;
+        padding-top: $tbody-cell-padding-y;
+        padding-bottom: $tbody-cell-padding-y;
+
+        &.visited:not(.badge-notification) {
+          color: color-chooser($tbody-color-dark, $tbody-color-light);
+          font-weight: normal;
+        }
+      }
+    }
+
+    .top-row {
+      margin-bottom: $spacer-xs;
+    }
+  }
+
+  .topic-poster {
+    width: ($material-icon-size + $tbody-cell-padding-x);
+
+    .avatar {
+      height: $material-icon-size;
+      width: $material-icon-size;
+    }
+  }
+
+  .topic-stats {
+    margin-left: ($tbody-cell-padding-x / 2);
   }
 }

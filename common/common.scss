@@ -498,7 +498,7 @@ div.poll .results .bar-back::before {
   left: 0;
 }
 
-.table, .topic-list, .category-list, .admin-contents table:not(.pika-table), .permalinks,
+.table, .topic-list, .category-list, .latest-topic-list, .admin-contents table:not(.pika-table), .permalinks,
 .screened-emails,
 .screened-ip-addresses,
 .screened-urls,
@@ -513,14 +513,14 @@ div.poll .results .bar-back::before {
   width: 100%;
 }
 
-.table tbody tr, .topic-list > tbody > tr, .topic-list > thead > tr, .category-list > tbody > tr, .category-list > thead > tr, .user-main .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
+.table tbody tr, .topic-list > tbody > tr, .topic-list > thead > tr, .category-list > tbody > tr, .category-list > thead > tr, .latest-topic-list .table-heading, .latest-topic-list-item, .user-main .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
   border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
 }
 
 .table tbody td,
 .table tbody th, .topic-list tbody td,
 .topic-list tbody th, .category-list tbody td,
-.category-list tbody th, .user-main .user-content .user-invite-list td, .admin-contents table:not(.pika-table) td,
+.category-list tbody th, .latest-topic-list-item, .user-main .user-content .user-invite-list td, .admin-contents table:not(.pika-table) td,
 .admin-contents table:not(.pika-table) th, .permalinks .col:not(.heading),
 .screened-emails .col:not(.heading),
 .screened-ip-addresses .col:not(.heading),
@@ -537,7 +537,8 @@ div.poll .results .bar-back::before {
 .table thead td,
 .table thead th, .topic-list thead td,
 .topic-list thead th, .category-list thead td,
-.category-list thead th, .user-main .user-content .user-invite-list th, .admin-contents table:not(.pika-table) thead td,
+.category-list thead th, .latest-topic-list .more-topics,
+.latest-topic-list .table-heading, .user-main .user-content .user-invite-list th, .admin-contents table:not(.pika-table) thead td,
 .admin-contents table:not(.pika-table) thead th, .permalinks .col.heading,
 .screened-emails .col.heading,
 .screened-ip-addresses .col.heading,
@@ -2360,6 +2361,12 @@ ol.category-breadcrumb li {
 }
 .list-controls .nav > li > a {
   text-transform: uppercase;
+}
+.list-controls .select-box {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  margin-bottom: 8px;
 }
 
 .caps-lock-warning.invisible {
@@ -4908,21 +4915,14 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   padding: 0;
 }
 
-.categories-and-latest .category-list,
-.categories-and-latest .topic-list-latest {
-  width: calc(50% - 12px);
+.categories-and-latest div.categories.column {
+  margin-right: 16px;
 }
 .categories-and-latest .topic-list .more-topics td {
   padding-right: 16px;
 }
 .categories-and-latest .topic-list .posts {
   margin-bottom: 4px;
-}
-.categories-and-latest .topic-list-latest {
-  margin-left: 24px;
-}
-.categories-and-latest .topic-list-latest .main-link .badge-wrapper {
-  margin-top: 8px;
 }
 
 .category-boxes,
@@ -4992,7 +4992,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   padding-right: 24px;
 }
 .category-list thead th {
-  font-weight: bold;
+  font-weight: bolder;
   white-space: nowrap;
 }
 .category-list > tbody > tr:first-child {
@@ -5020,6 +5020,64 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 .category-list .topics .value {
   font-size: inherit;
+}
+
+.latest-topic-list .more-topics,
+.latest-topic-list .table-heading {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bolder;
+}
+.latest-topic-list .more-topics {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0;
+}
+
+.latest-topic-list-item {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  min-height: 48px;
+}
+.latest-topic-list-item .main-link {
+  font-size: inherit;
+}
+.latest-topic-list-item .main-link a.title {
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.latest-topic-list-item .main-link a.title.visited:not(.badge-notification) {
+  color: color-chooser($primary, $primary);
+  font-weight: normal;
+}
+.latest-topic-list-item .main-link .top-row {
+  margin-bottom: 4px;
+}
+.latest-topic-list-item .topic-poster {
+  width: 36px;
+}
+.latest-topic-list-item .topic-poster .avatar {
+  height: 24px;
+  width: 24px;
+}
+.latest-topic-list-item .topic-stats {
+  margin-left: 6px;
 }
 
 #suggested-topics {

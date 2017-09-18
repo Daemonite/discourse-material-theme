@@ -151,4 +151,9 @@ ol {
       }
     }
   }
+
+  .select-box {
+    align-self: flex-start;
+    margin-bottom: $spacer-sm;
+  }
 }
