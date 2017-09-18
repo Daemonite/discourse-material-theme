@@ -219,8 +219,12 @@ div {
         }
 
         div {
-          align-items: center;
+          align-items: flex-start;
           display: flex;
+
+          > span {
+            margin-right: $menu-panel-inner-spacer-x;
+          }
         }
       }
 
