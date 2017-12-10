@@ -290,6 +290,7 @@ nav {
 .topic-body {
   @extend %card;
 
+  float: none;
   margin-bottom: $card-margin-y;
 
   .actions .fade-out {
@@ -319,8 +320,9 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: ($spacer-lg - $card-margin-y);
+  max-width: ($card-margin-x + $topic-body-width);
   padding: 0;
-  width: ($card-margin-x + $topic-body-width);
+  width: 100%;
 
   div > button,
   span > button,
@@ -391,6 +393,10 @@ nav {
       margin-left: $card-margin-x;
     }
   }
+}
+
+.topic-footer-main-buttons {
+  flex-wrap: wrap;
 }
 
 .topic-map {
@@ -681,6 +687,15 @@ nav {
     line-height: 1;
     margin: 0;
     vertical-align: middle;
+  }
+
+  .title-wrapper {
+    float: none;
+    width: auto;
+  }
+
+  .topic-category {
+    margin-top: 0;
   }
 
   .topic-statuses {
