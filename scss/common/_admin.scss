@@ -73,6 +73,7 @@
   @extend %card-block;
 
   margin-bottom: $spacer-lg;
+  padding-bottom: ($card-padding-y - $card-inner-spacer-y);
   width: 100%;
 
   button {
@@ -96,8 +97,41 @@
     }
   }
 
+  > .pull-right,
+  > .span15 {
+    margin: 0 0 $card-inner-spacer-y;
+  }
+
+  > .pull-right {
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+      margin-right: 0;
+      margin-left: $card-inner-spacer-x;
+    }
+  }
+
   .controls {
+    margin-bottom: $card-inner-spacer-y;
     margin-left: 0;
+
+    &.search {
+      margin-bottom: 0;
+
+      @media (max-width: 700px) {
+        margin-top: (($btn-height - $font-size-base * $line-height-base) / 2);
+      }
+
+      label {
+        margin-right: 0;
+      }
+    }
+
+    input[type='text'] {
+      display: block;
+      float: none;
+    }
 
     .menu-toggle {
       border: 0;
@@ -119,10 +153,6 @@
     label {
       margin-top: 0;
     }
-  }
-
-  .span15:first-child {
-    margin-left: 0;
   }
 }
 
