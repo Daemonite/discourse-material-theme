@@ -83,7 +83,7 @@
   margin-top: 0;
   margin-bottom: $modal-inner-spacer-y;
 
-  @media (min-width: map-get($grid-breakpoints, sm)) {
+  @media (min-width: 569px) {
     display: flex;
   }
 
@@ -96,7 +96,7 @@
     min-width: 0;
     width: 100%;
 
-    @media (min-width: map-get($grid-breakpoints, sm)) {
+    @media (min-width: 569px) {
       margin-right: $modal-inner-spacer-x;
       margin-bottom: 0;
     }
