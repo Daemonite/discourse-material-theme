@@ -655,6 +655,68 @@ nav {
   }
 }
 
+#topic-progress {
+  flex-shrink: 0;
+  height: $btn-height;
+}
+
+#topic-progress-wrapper {
+  box-shadow: $card-box-shadow;
+  display: flex;
+  right: 0;
+  width: auto;
+
+  &.docked {
+    margin-bottom: ($spacer-lg + 1);
+    right: 0;
+
+    .topic-admin-popup-menu {
+      &.left-side,
+      &.right-side {
+        right: 0;
+      }
+    }
+  }
+
+  .popup-menu {
+    @extend %dropdown-menu-sm;
+
+    h3 {
+      @extend %dropdown-header-sm;
+    }
+
+    .btn {
+      @extend %dropdown-link-sm;
+    }
+  }
+
+  .topic-admin-menu-button-container {
+    background-color: unquote('$secondary');
+    top: auto;
+    right: auto;
+
+    .toggle-admin-menu.widget-button {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      height: auto;
+
+      .fa {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .topic-admin-popup-menu {
+    &.left-side,
+    &.right-side {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
 .topic-status-info {
   border-top: 0;
   height: auto;
