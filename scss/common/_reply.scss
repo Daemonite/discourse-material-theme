@@ -187,12 +187,20 @@
     height: auto;
     padding: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2);
 
-    button {
-      color: color-chooser($white-secondary, $black-secondary);
+    button,
+    .btn {
+      body & {
+        color: color-chooser($white-secondary, $black-secondary);
 
-      @include focus-hover {
-        color: color-chooser($btn-color-dark, $btn-color-light);
+        @include focus-hover {
+          color: color-chooser($white-secondary, $black-secondary);
+        }
       }
+    }
+
+    .btn.heading {
+      font-family: inherit;
+      font-weight: $btn-font-weight;
     }
   }
 
