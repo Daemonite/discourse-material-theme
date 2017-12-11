@@ -3308,6 +3308,13 @@ div.menu-links-header .menu-links-row {
   outline: 0;
   padding: 20px 24px;
 }
+.menu-panel.slide-in {
+  right: 8px;
+}
+.menu-panel.slide-in .panel-body {
+  position: static;
+  width: 100%;
+}
 .menu-panel hr {
   margin: 8px 0;
 }
@@ -3396,6 +3403,9 @@ div.menu-links-header .menu-links-row {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 4px;
+}
+.search-menu .menu-panel {
+  min-height: 123px;
 }
 .search-menu .no-results {
   padding-right: 0;
@@ -4072,8 +4082,10 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  min-width: 1110px;
+  max-width: 100%;
+  min-width: 0;
   padding: 0;
+  width: 1110px;
 }
 #reply-control .contents .control {
   display: -webkit-box;
@@ -4174,11 +4186,18 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   height: auto;
   padding: 8px 4px;
 }
-#reply-control .d-editor-button-bar button {
+body #reply-control .d-editor-button-bar button,
+body #reply-control .d-editor-button-bar .btn {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
-#reply-control .d-editor-button-bar button:focus, #reply-control .d-editor-button-bar button:hover {
-  color: color-chooser($primary, $primary);
+body #reply-control .d-editor-button-bar button:focus, body #reply-control .d-editor-button-bar button:hover,
+body #reply-control .d-editor-button-bar .btn:focus,
+body #reply-control .d-editor-button-bar .btn:hover {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+#reply-control .d-editor-button-bar .btn.heading {
+  font-family: inherit;
+  font-weight: 500;
 }
 #reply-control .d-editor-container {
   background-color: transparent;
@@ -5209,8 +5228,8 @@ nav.post-controls .show-replies i {
 .gap {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   font-weight: bolder;
-  margin: 8px 0;
-  padding: 8px 0 8px 56px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
   text-transform: none;
   width: 690px;
 }
@@ -5255,6 +5274,8 @@ nav.post-controls .show-replies i {
 
 .read-state {
   font-size: 14px;
+  height: 24px;
+  line-height: 24px;
   top: 0;
   right: 0;
 }
@@ -5269,7 +5290,6 @@ nav.post-controls .show-replies i {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 8px;
   margin-bottom: 8px;
   position: relative;
   width: 690px;
@@ -5320,6 +5340,10 @@ nav.post-controls .show-replies i {
   height: 24px;
   margin-right: 8px;
   width: 24px;
+}
+.small-action .small-action-desc .custom-message {
+  font-size: inherit;
+  margin: 0;
 }
 .small-action .topic-avatar {
   padding: 0;
@@ -5684,7 +5708,7 @@ nav.post-controls .show-replies i {
   width: auto;
 }
 #topic-progress-wrapper.docked {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   right: 0;
 }
 #topic-progress-wrapper.docked .topic-admin-popup-menu.left-side, #topic-progress-wrapper.docked .topic-admin-popup-menu.right-side {
@@ -6186,6 +6210,9 @@ nav.post-controls .show-replies i {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+.user-main .user-stream .notification div span {
+  margin-right: 4px;
 }
 .user-main .user-stream .notification p {
   -webkit-box-flex: 1;
