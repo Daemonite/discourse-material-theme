@@ -348,7 +348,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
 }
 
 .select2-results .select2-no-results, .list-controls .category-dropdown-menu a.badge-category, .search-menu .no-results, #reply-control .popup-menu h3, .timeline-container .topic-timeline .dropdown-menu h3,
-.timeline-container .topic-timeline .popup-menu h3, nav.post-controls .post-admin-menu h3, #topic-footer-buttons .popup-menu h3 {
+.timeline-container .topic-timeline .popup-menu h3, nav.post-controls .post-admin-menu h3, #topic-footer-buttons .popup-menu h3, #topic-progress-wrapper .popup-menu h3 {
   font-size: 13px;
   line-height: 1.5;
   padding: 6.25px 24px;
@@ -364,7 +364,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
 .autocomplete ul li a, .select2-results .select2-result-label, .category-notification-menu .dropdown-menu a, #reply-control .popup-menu .btn, .timeline-container .topic-timeline .dropdown-menu a,
 .timeline-container .topic-timeline .dropdown-menu .btn,
 .timeline-container .topic-timeline .popup-menu a,
-.timeline-container .topic-timeline .popup-menu .btn, .period-chooser #period-popup ul li a, nav.post-controls .post-admin-menu li, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn {
+.timeline-container .topic-timeline .popup-menu .btn, .period-chooser #period-popup ul li a, nav.post-controls .post-admin-menu li, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, #topic-progress-wrapper .popup-menu .btn {
   padding: 6.25px 24px;
 }
 
@@ -382,7 +382,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
 }
 
 .autocomplete, .select2-drop, .category-notification-menu .dropdown-menu, .list-controls .category-dropdown-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
-.timeline-container .topic-timeline .popup-menu, .period-chooser #period-popup, nav.post-controls .post-admin-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu {
+.timeline-container .topic-timeline .popup-menu, .period-chooser #period-popup, nav.post-controls .post-admin-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, #topic-progress-wrapper .popup-menu {
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
@@ -520,21 +520,21 @@ div.poll .results .bar-back::before {
   vertical-align: middle;
 }
 
-body input[type="color"], body
-input[type="date"], body
-input[type="datetime"], body
-input[type="datetime-local"], body
-input[type="email"], body
-input[type="month"], body
-input[type="number"], body
-input[type="password"], body
-input[type="search"], body
-input[type="tel"], body
-input[type="text"], body
-input[type="time"], body
-input[type="url"], body
-input[type="week"], body
-textarea, .controls .static, div.ac-wrap input[type='text'], .value-list .value {
+body input[type="color"],
+body input[type="date"],
+body input[type="datetime"],
+body input[type="datetime-local"],
+body input[type="email"],
+body input[type="month"],
+body input[type="number"],
+body input[type="password"],
+body input[type="search"],
+body input[type="tel"],
+body input[type="text"],
+body input[type="time"],
+body input[type="url"],
+body input[type="week"],
+body textarea, .controls .static, div.ac-wrap input[type='text'], .value-list .value {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   background-color: transparent;
@@ -552,87 +552,87 @@ textarea, .controls .static, div.ac-wrap input[type='text'], .value-list .value 
   padding: 8px 0 7px;
   width: 100%;
 }
-body input[type="color"]:focus, body
-input[type="date"]:focus, body
-input[type="datetime"]:focus, body
-input[type="datetime-local"]:focus, body
-input[type="email"]:focus, body
-input[type="month"]:focus, body
-input[type="number"]:focus, body
-input[type="password"]:focus, body
-input[type="search"]:focus, body
-input[type="tel"]:focus, body
-input[type="text"]:focus, body
-input[type="time"]:focus, body
-input[type="url"]:focus, body
-input[type="week"]:focus, body
-textarea:focus, .controls .static:focus, div.ac-wrap input[type='text']:focus, .value-list .value:focus, body input[type="color"]:hover, body
-input[type="date"]:hover, body
-input[type="datetime"]:hover, body
-input[type="datetime-local"]:hover, body
-input[type="email"]:hover, body
-input[type="month"]:hover, body
-input[type="number"]:hover, body
-input[type="password"]:hover, body
-input[type="search"]:hover, body
-input[type="tel"]:hover, body
-input[type="text"]:hover, body
-input[type="time"]:hover, body
-input[type="url"]:hover, body
-input[type="week"]:hover, body
-textarea:hover, .controls .static:hover, div.ac-wrap input[type='text']:hover, .value-list .value:hover {
+body input[type="color"]:focus,
+body input[type="date"]:focus,
+body input[type="datetime"]:focus,
+body input[type="datetime-local"]:focus,
+body input[type="email"]:focus,
+body input[type="month"]:focus,
+body input[type="number"]:focus,
+body input[type="password"]:focus,
+body input[type="search"]:focus,
+body input[type="tel"]:focus,
+body input[type="text"]:focus,
+body input[type="time"]:focus,
+body input[type="url"]:focus,
+body input[type="week"]:focus,
+body textarea:focus, .controls .static:focus, div.ac-wrap input[type='text']:focus, .value-list .value:focus, body input[type="color"]:hover,
+body input[type="date"]:hover,
+body input[type="datetime"]:hover,
+body input[type="datetime-local"]:hover,
+body input[type="email"]:hover,
+body input[type="month"]:hover,
+body input[type="number"]:hover,
+body input[type="password"]:hover,
+body input[type="search"]:hover,
+body input[type="tel"]:hover,
+body input[type="text"]:hover,
+body input[type="time"]:hover,
+body input[type="url"]:hover,
+body input[type="week"]:hover,
+body textarea:hover, .controls .static:hover, div.ac-wrap input[type='text']:hover, .value-list .value:hover {
   border-width: 2px;
   padding-bottom: 6px;
 }
-body input[type="color"]:focus, body
-input[type="date"]:focus, body
-input[type="datetime"]:focus, body
-input[type="datetime-local"]:focus, body
-input[type="email"]:focus, body
-input[type="month"]:focus, body
-input[type="number"]:focus, body
-input[type="password"]:focus, body
-input[type="search"]:focus, body
-input[type="tel"]:focus, body
-input[type="text"]:focus, body
-input[type="time"]:focus, body
-input[type="url"]:focus, body
-input[type="week"]:focus, body
-textarea:focus, .controls .static:focus, div.ac-wrap input[type='text']:focus, .value-list .value:focus {
+body input[type="color"]:focus,
+body input[type="date"]:focus,
+body input[type="datetime"]:focus,
+body input[type="datetime-local"]:focus,
+body input[type="email"]:focus,
+body input[type="month"]:focus,
+body input[type="number"]:focus,
+body input[type="password"]:focus,
+body input[type="search"]:focus,
+body input[type="tel"]:focus,
+body input[type="text"]:focus,
+body input[type="time"]:focus,
+body input[type="url"]:focus,
+body input[type="week"]:focus,
+body textarea:focus, .controls .static:focus, div.ac-wrap input[type='text']:focus, .value-list .value:focus {
   border-color: $tertiary;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
 }
-body input[disabled][type="color"], body
-input[disabled][type="date"], body
-input[disabled][type="datetime"], body
-input[disabled][type="datetime-local"], body
-input[disabled][type="email"], body
-input[disabled][type="month"], body
-input[disabled][type="number"], body
-input[disabled][type="password"], body
-input[disabled][type="search"], body
-input[disabled][type="tel"], body
-input[disabled][type="text"], body
-input[disabled][type="time"], body
-input[disabled][type="url"], body
-input[disabled][type="week"], body
-textarea[disabled], .controls [disabled].static, div.ac-wrap input[disabled][type='text'], .value-list [disabled].value, body input[readonly][type="color"], body
-input[readonly][type="date"], body
-input[readonly][type="datetime"], body
-input[readonly][type="datetime-local"], body
-input[readonly][type="email"], body
-input[readonly][type="month"], body
-input[readonly][type="number"], body
-input[readonly][type="password"], body
-input[readonly][type="search"], body
-input[readonly][type="tel"], body
-input[readonly][type="text"], body
-input[readonly][type="time"], body
-input[readonly][type="url"], body
-input[readonly][type="week"], body
-textarea[readonly], .controls [readonly].static, div.ac-wrap input[readonly][type='text'], .value-list [readonly].value {
+body input[disabled][type="color"],
+body input[disabled][type="date"],
+body input[disabled][type="datetime"],
+body input[disabled][type="datetime-local"],
+body input[disabled][type="email"],
+body input[disabled][type="month"],
+body input[disabled][type="number"],
+body input[disabled][type="password"],
+body input[disabled][type="search"],
+body input[disabled][type="tel"],
+body input[disabled][type="text"],
+body input[disabled][type="time"],
+body input[disabled][type="url"],
+body input[disabled][type="week"],
+body textarea[disabled], .controls [disabled].static, div.ac-wrap input[disabled][type='text'], .value-list [disabled].value, body input[readonly][type="color"],
+body input[readonly][type="date"],
+body input[readonly][type="datetime"],
+body input[readonly][type="datetime-local"],
+body input[readonly][type="email"],
+body input[readonly][type="month"],
+body input[readonly][type="number"],
+body input[readonly][type="password"],
+body input[readonly][type="search"],
+body input[readonly][type="tel"],
+body input[readonly][type="text"],
+body input[readonly][type="time"],
+body input[readonly][type="url"],
+body input[readonly][type="week"],
+body textarea[readonly], .controls [readonly].static, div.ac-wrap input[readonly][type='text'], .value-list [readonly].value {
   border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
   border-style: dotted;
   color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
@@ -745,17 +745,18 @@ html {
   padding: 0;
 }
 
-body button, body
-input, body
-select, body
-textarea {
+body button,
+body input,
+body select,
+body textarea {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 abbr[data-original-title], abbr[title] {
   border-bottom: 0;
   cursor: help;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 address {
@@ -812,12 +813,12 @@ dt {
   font-weight: bold;
 }
 
-body h1, body
-h2, body
-h3, body
-h4, body
-h5, body
-h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   color: $primary;
   font-family: inherit;
   margin-top: 0;
@@ -1006,10 +1007,10 @@ sup {
   color: color-dynamic(#70ba61);
 }
 
-body code, body
-kbd, body
-pre, body
-samp {
+body code,
+body kbd,
+body pre,
+body samp {
   font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -1355,6 +1356,7 @@ div.poll .results .option {
   width: auto;
 }
 .popup-menu button {
+  margin-bottom: 0;
   width: auto;
 }
 .popup-menu button i {
@@ -1390,8 +1392,8 @@ div.poll .results .option {
   color: $danger;
 }
 
-body button, body
-label {
+body button,
+body label {
   font-size: inherit;
   font-weight: bolder;
   line-height: inherit;
@@ -1405,21 +1407,21 @@ body form > .ember-view:empty {
   display: none;
 }
 
-body input[type="color"], body
-input[type="date"], body
-input[type="datetime"], body
-input[type="datetime-local"], body
-input[type="email"], body
-input[type="month"], body
-input[type="number"], body
-input[type="password"], body
-input[type="search"], body
-input[type="tel"], body
-input[type="text"], body
-input[type="time"], body
-input[type="url"], body
-input[type="week"], body
-textarea {
+body input[type="color"],
+body input[type="date"],
+body input[type="datetime"],
+body input[type="datetime-local"],
+body input[type="email"],
+body input[type="month"],
+body input[type="number"],
+body input[type="password"],
+body input[type="search"],
+body input[type="tel"],
+body input[type="text"],
+body input[type="time"],
+body input[type="url"],
+body input[type="week"],
+body textarea {
   margin-bottom: 8px;
 }
 
@@ -1551,8 +1553,8 @@ body .form-vertical .controls .d-editor:last-child {
   padding: 9.5px 16px;
 }
 
-body .input-append, body
-.input-prepend {
+body .input-append,
+body .input-prepend {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1563,16 +1565,16 @@ body .input-append, body
   display: flex;
   margin-bottom: 8px;
 }
-body .input-append input, body
-.input-prepend input {
+body .input-append input,
+body .input-prepend input {
   margin-bottom: 0;
 }
-body .input-append input + .add-on, body
-.input-prepend input + .add-on {
+body .input-append input + .add-on,
+body .input-prepend input + .add-on {
   margin-left: 16px;
 }
-body .input-append .add-on, body
-.input-prepend .add-on {
+body .input-append .add-on,
+body .input-prepend .add-on {
   background-color: transparent;
   border: 0;
   font-size: 24px;
@@ -1586,8 +1588,8 @@ body .input-append .add-on, body
   min-width: 24px;
   padding: 0;
 }
-body .input-append .add-on + input, body
-.input-prepend .add-on + input {
+body .input-append .add-on + input,
+body .input-prepend .add-on + input {
   margin-left: 16px;
 }
 
@@ -2216,6 +2218,8 @@ div.ac-wrap input[type='text'] {
 
 #main-outlet {
   padding-top: 80px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 ol.category-breadcrumb {
@@ -2403,7 +2407,7 @@ ol.category-breadcrumb li {
   margin-top: 0;
   margin-bottom: 20px;
 }
-@media (min-width: 576px) {
+@media (min-width: 569px) {
   #login-buttons {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2425,7 +2429,7 @@ ol.category-breadcrumb li {
   min-width: 0;
   width: 100%;
 }
-@media (min-width: 576px) {
+@media (min-width: 569px) {
   #login-buttons button {
     margin-right: 24px;
     margin-bottom: 0;
@@ -5347,10 +5351,19 @@ nav.post-controls .show-replies i {
 }
 
 .topic-body {
+  float: none;
   margin-bottom: 8px;
+}
+@media (max-width: 870px) {
+  .topic-body {
+    width: auto;
+  }
 }
 .discourse-no-touch .topic-body .actions .fade-out {
   opacity: 1;
+}
+.topic-body .cooked img:not(.thumbnail) {
+  max-width: 100%;
 }
 .topic-body .regular {
   margin: 0;
@@ -5376,8 +5389,9 @@ nav.post-controls .show-replies i {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin-bottom: 16px;
+  max-width: 698px;
   padding: 0;
-  width: 698px;
+  width: 100%;
 }
 #topic-footer-buttons div > button.btn,
 #topic-footer-buttons span > button.btn,
@@ -5431,6 +5445,12 @@ nav.post-controls .show-replies i {
   margin-top: 8.000003px;
   margin-bottom: 0;
   margin-left: 8px;
+}
+
+.topic-footer-main-buttons {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .topic-map {
@@ -5646,6 +5666,50 @@ nav.post-controls .show-replies i {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
 
+#topic-progress {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 36px;
+}
+
+#topic-progress-wrapper {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  width: auto;
+}
+#topic-progress-wrapper.docked {
+  margin-bottom: 25px;
+  right: 0;
+}
+#topic-progress-wrapper.docked .topic-admin-popup-menu.left-side, #topic-progress-wrapper.docked .topic-admin-popup-menu.right-side {
+  right: 0;
+}
+#topic-progress-wrapper .topic-admin-menu-button-container {
+  background-color: $secondary;
+  top: auto;
+  right: auto;
+}
+#topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu.widget-button {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: auto;
+}
+#topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu.widget-button .fa {
+  vertical-align: top;
+}
+#topic-progress-wrapper .topic-admin-popup-menu.left-side, #topic-progress-wrapper .topic-admin-popup-menu.right-side {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .topic-status-info {
   border-top: 0;
   height: auto;
@@ -5679,6 +5743,13 @@ nav.post-controls .show-replies i {
   line-height: 1;
   margin: 0;
   vertical-align: middle;
+}
+#topic-title .title-wrapper {
+  float: none;
+  width: auto;
+}
+#topic-title .topic-category {
+  margin-top: 0;
 }
 #topic-title .topic-statuses {
   display: inline-block;
