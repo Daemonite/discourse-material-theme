@@ -6,14 +6,31 @@
     display: flex;
     margin-bottom: $spacer-lg;
 
+    @media (max-width: 700px) {
+      display: block;
+    }
+
     input[type='text'] {
       @extend %text-field-box;
 
       margin-right: $spacer-lg;
       margin-bottom: 0;
 
+      @media (max-width: 700px) {
+        margin-right: 0;
+      }
+
       &:last-child {
         margin-right: 0;
+      }
+    }
+
+    .pull-right {
+      float: none;
+      text-align: right;
+
+      @media (max-width: 700px) {
+        margin-top: $spacer-sm;
       }
     }
   }
@@ -31,34 +48,44 @@
     padding: 0;
   }
 
-  table:not(.pika-table) {
-    @extend %table;
+  table {
+    &:not(.pika-table) {
+      @extend %table;
 
-    margin-top: 0;
+      margin-top: 0;
 
-    td,
-    th {
-      @extend %tbody-cell;
-    }
-
-    td {
-      border: 0;
-    }
-
-    thead {
       td,
       th {
-        @extend %thead-cell;
+        @extend %tbody-cell;
+      }
 
-        background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
+      td {
+        border: 0;
+      }
+
+      thead {
+        td,
+        th {
+          @extend %thead-cell;
+
+          background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
+        }
+      }
+
+      tr {
+        @extend %table-row;
+
+        @include hover {
+          background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
+        }
       }
     }
 
-    tr {
-      @extend %table-row;
-
-      @include hover {
-        background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
+    &.users-list {
+      @media (max-width: 900px) {
+        display: block;
+        overflow-x: auto;
+        overflow-y: hidden;
       }
     }
   }
