@@ -10,7 +10,8 @@
 
 .bootbox.modal {
   border: 0;
-  margin-left: ($modal-width / -2);
+  margin-left: 0;
+  transform: translateX(-50%);
 
   .modal-footer {
     a {
