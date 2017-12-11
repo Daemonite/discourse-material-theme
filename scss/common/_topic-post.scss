@@ -144,8 +144,8 @@ nav {
 
   color: color-chooser($white-secondary, $black-secondary);
   font-weight: bolder;
-  margin: $card-margin-y 0;
-  padding: $card-margin-y 0 $card-margin-y ($card-inner-spacer-x * 2 + $card-padding-x + $material-icon-size);
+  margin-bottom: $card-margin-y;
+  padding: $card-margin-y ($card-inner-spacer-x * 2);
   text-transform: none;
   width: $topic-body-width;
 }
@@ -196,6 +196,8 @@ nav {
 
 .read-state {
   font-size: $font-size-base;
+  height: $material-icon-size;
+  line-height: $material-icon-size;
   top: 0;
   right: 0;
 }
@@ -207,7 +209,6 @@ nav {
   align-items: center;
   border-top: 0;
   display: flex;
-  margin-top: $card-margin-y;
   margin-bottom: $card-margin-y;
   position: relative;
   width: $topic-body-width;
@@ -254,6 +255,11 @@ nav {
       height: $material-icon-size;
       margin-right: $card-inner-spacer-x;
       width: $material-icon-size;
+    }
+
+    .custom-message {
+      font-size: inherit;
+      margin: 0;
     }
   }
 
