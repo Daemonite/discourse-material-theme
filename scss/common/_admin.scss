@@ -883,6 +883,7 @@ div {
 
       .select2-container {
         margin-bottom: $card-inner-spacer-x;
+        max-width: 100%;
         width: auto !important;
       }
 
