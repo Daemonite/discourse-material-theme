@@ -6,12 +6,12 @@
   },
   "description": "Material Design for Discourse",
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^7.2.2",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-dev-update": "^2.0.0",
-    "grunt-postcss": "^0.8.0",
+    "grunt-postcss": "^0.9.0",
     "grunt-scss-lint": "^0.5.0",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"
