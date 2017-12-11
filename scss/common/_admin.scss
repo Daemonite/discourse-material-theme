@@ -270,11 +270,16 @@ div {
       align-items: flex-start;
       display: flex;
 
+      @media (max-width: 700px) {
+        display: block;
+      }
+
       .current-badge {
         @extend %card;
         @extend %card-block;
 
         flex-grow: 1;
+        float: none;
         margin: 0;
         width: auto;
 
@@ -284,6 +289,11 @@ div {
           }
         }
       }
+    }
+
+    .buttons {
+      float: none;
+      width: auto;
     }
   }
 
@@ -411,6 +421,23 @@ div {
   .groups & {
     flex-shrink: 0;
     margin-right: $spacer-lg;
+  }
+
+  .badges & {
+    float: none;
+
+    @media (max-width: 700px) {
+      background-color: color-chooser($card-bg-dark, $card-bg-light);
+      border-radius: $card-border-radius;
+      box-shadow: $card-box-shadow;
+      margin-right: 0;
+      margin-bottom: $spacer-lg;
+      max-height: 500px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: $card-padding-y $card-padding-x 0;
+      width: 100%;
+    }
   }
 
   h3 {
