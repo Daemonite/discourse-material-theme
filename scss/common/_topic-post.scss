@@ -293,10 +293,18 @@ nav {
   float: none;
   margin-bottom: $card-margin-y;
 
+  @media (max-width: 870px) {
+    width: auto;
+  }
+
   .actions .fade-out {
     .discourse-no-touch & {
       opacity: 1;
     }
+  }
+
+  .cooked img:not(.thumbnail) {
+    max-width: 100%;
   }
 
   .regular {
