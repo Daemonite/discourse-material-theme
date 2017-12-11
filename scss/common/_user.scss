@@ -481,6 +481,10 @@
       div {
         align-items: flex-start;
         display: flex;
+
+        span {
+          margin-right: $spacer-xs;
+        }
       }
 
       p {
