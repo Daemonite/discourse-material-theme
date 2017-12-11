@@ -50,6 +50,15 @@ div {
   outline: 0;
   padding: $menu-panel-padding-y $menu-panel-padding-x;
 
+  &.slide-in {
+    right: $header-padding-x;
+
+    .panel-body {
+      position: static;
+      width: 100%;
+    }
+  }
+
   b {
     &.topics-count {
       @extend %typography-caption;
@@ -153,6 +162,10 @@ div {
         margin-bottom: ($menu-panel-inner-spacer-y / 2);
       }
     }
+  }
+
+  .menu-panel {
+    min-height: 123px;
   }
 
   .no-results {
