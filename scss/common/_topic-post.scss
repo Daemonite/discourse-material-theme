@@ -667,7 +667,7 @@ nav {
   width: auto;
 
   &.docked {
-    margin-bottom: ($spacer-lg + 1);
+    margin-bottom: $spacer-lg;
     right: 0;
 
     .topic-admin-popup-menu {
