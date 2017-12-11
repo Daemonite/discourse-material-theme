@@ -601,17 +601,27 @@ div {
 
 .dashboard-left,
 .dashboard-right {
-  > :last-child {
-    margin-bottom: 0;
+  @media (max-width: 700px) {
+    float: none;
+    width: auto;
   }
 }
 
 .dashboard-stats {
+  box-shadow: $table-box-shadow;
   margin-right: $table-margin-y;
-  margin-bottom: 0;
+  margin-bottom: $table-margin-y;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  @media (max-width: 700px) {
+    margin-right: 0;
+  }
 
   &.pull-right {
+    box-shadow: none;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   &.totals {
@@ -621,6 +631,17 @@ div {
 
   .dashboard-right & {
     margin-right: 0;
+  }
+
+  > a {
+    display: inline-block;
+    margin: $tbody-cell-padding-y $tbody-cell-padding-x;
+  }
+
+  table,
+  table:not(.pika-table) {
+    box-shadow: none;
+    margin-bottom: 0;
   }
 }
 
