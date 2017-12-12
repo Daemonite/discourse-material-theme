@@ -28,6 +28,7 @@
 // - Dropdown
 // - Header
 // - Menu panel
+// - Misc
 // - Modal
 // - Nav
 // - Picker
@@ -318,6 +319,13 @@ $menu-panel-item-overlay-dark:  $dark-hover !default;
 $menu-panel-item-overlay-light: $light-hover !default;
 $menu-panel-padding-x:          24px !default;
 $menu-panel-padding-y:          20px !default;
+
+
+
+// Misc
+
+$admin-breakpoint:     700px !default;
+$admin-nav-max-height: 500px !default;
 
 
 

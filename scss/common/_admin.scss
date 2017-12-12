@@ -6,7 +6,7 @@
     display: flex;
     margin-bottom: $spacer-lg;
 
-    @media (max-width: 700px) {
+    @media (max-width: $admin-breakpoint) {
       display: block;
     }
 
@@ -16,7 +16,7 @@
       margin-right: $spacer-lg;
       margin-bottom: 0;
 
-      @media (max-width: 700px) {
+      @media (max-width: $admin-breakpoint) {
         margin-right: 0;
       }
 
@@ -29,7 +29,7 @@
       float: none;
       text-align: right;
 
-      @media (max-width: 700px) {
+      @media (max-width: $admin-breakpoint) {
         margin-top: $spacer-sm;
       }
     }
@@ -146,7 +146,7 @@
     &.search {
       margin-bottom: 0;
 
-      @media (max-width: 700px) {
+      @media (max-width: $admin-breakpoint) {
         margin-top: (($btn-height - $font-size-base * $line-height-base) / 2);
       }
 
@@ -188,7 +188,7 @@
   padding: 0 0 0 $spacer-lg;
   width: 80%;
 
-  @media (max-width: 700px) {
+  @media (max-width: $admin-breakpoint) {
     padding-left: 0;
     width: 100%;
   }
@@ -209,7 +209,7 @@
   margin-bottom: 0;
   width: 20%;
 
-  @media (max-width: 700px) {
+  @media (max-width: $admin-breakpoint) {
     padding-right: $spacer-lg;
     width: 50%;
   }
@@ -270,7 +270,7 @@ div {
       align-items: flex-start;
       display: flex;
 
-      @media (max-width: 700px) {
+      @media (max-width: $admin-breakpoint) {
         display: block;
       }
 
