@@ -78,6 +78,14 @@
     }
   }
 
+  &.select2-container-disabled {
+    a {
+      background-color: $text-field-bg-disabled !important;
+      background-image: none !important;
+      box-shadow: none !important;
+    }
+  }
+
   &.select2-drop-above {
     a {
       &.select2-choice {
