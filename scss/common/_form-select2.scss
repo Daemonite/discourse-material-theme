@@ -46,6 +46,8 @@
 .select2-container {
   border: 0;
   border-radius: 0;
+  max-width: 100%;
+  width: auto !important;
 
   &.select2-allowclear {
     a {

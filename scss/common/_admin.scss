@@ -977,8 +977,10 @@ div {
 
       .select2-container {
         margin-bottom: $card-inner-spacer-x;
-        max-width: 100%;
-        width: auto !important;
+
+        &.combobox {
+          width: auto !important;
+        }
       }
 
       .select2-container-multi {
