@@ -778,6 +778,31 @@ div {
     margin-right: 0;
   }
 
+  &.detected-problems {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: $table-margin-y;
+
+    .look-here {
+      margin: $tbody-cell-padding-y 0 $tbody-cell-padding-y $tbody-cell-padding-x;
+    }
+
+    .problem-messages {
+      margin-left: 0;
+      padding: $tbody-cell-padding-y $tbody-cell-padding-x;
+      width: 100%;
+
+      .actions {
+        margin-bottom: 0;
+
+        small {
+          display: block;
+          margin-bottom: ($tbody-cell-padding-y / 2);
+        }
+      }
+    }
+  }
+
   &.pull-right {
     box-shadow: none;
     margin-right: 0;
