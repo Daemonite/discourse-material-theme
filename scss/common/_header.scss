@@ -135,10 +135,15 @@
     }
 
     .active .icon {
+      .drop-down-mode &,
       .drop-down-visible & {
         background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
         border: 0;
         color: inherit;
+
+        &::after {
+          display: none;
+        }
       }
     }
   }
