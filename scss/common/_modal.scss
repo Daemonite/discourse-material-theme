@@ -217,6 +217,8 @@
   .btn {
     @extend %btn-footer;
 
+    margin: 0;
+
     &:first-child {
       margin-left: $card-inner-spacer-x;
     }
