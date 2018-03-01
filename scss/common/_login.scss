@@ -115,6 +115,11 @@
   td:first-child:not(:empty) {
     padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
   }
+
+  #forgot-password-link {
+    display: block;
+    margin-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+  }
 }
 
 .login-modal {
