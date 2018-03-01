@@ -112,6 +112,10 @@ div {
         margin: 0;
         padding: ($menu-panel-inner-spacer-y / 2) $menu-panel-inner-spacer-x;
         width: 50%;
+
+        .badge-wrapper {
+          display: inline-flex;
+        }
       }
 
       &.heading {

@@ -73,6 +73,7 @@
   &.box {
     display: inline-flex;
     margin-top: 0;
+    padding: 0 $chip-padding-x 0 0;
 
     span {
       &.badge-category {
