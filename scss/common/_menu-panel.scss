@@ -48,7 +48,11 @@ div {
   box-shadow: $menu-panel-box-shadow;
   color: unquote('$primary');
   outline: 0;
-  padding: $menu-panel-padding-y $menu-panel-padding-x;
+  padding: 0;
+
+  &.drop-down {
+    right: 0;
+  }
 
   &.slide-in {
     right: $header-padding-x;
@@ -125,6 +129,11 @@ div {
       }
     }
   }
+
+  .panel-body {
+    max-height: calc(100vh - #{$header-height + $spacer});
+    padding: $menu-panel-padding-y $menu-panel-padding-x;
+  }
 }
 
 .search-menu {
@@ -145,7 +154,7 @@ div {
       }
     }
 
-    a {
+    a:not(.discourse-tag) {
       padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
       @include focus-hover {
@@ -189,22 +198,36 @@ div {
     padding: 0;
   }
 
-  .searching {
-    position: static;
+  .search-link {
+    .blurb {
+      @extend %typography-caption;
+    }
 
+    .topic-statuses .fa {
+      margin-right: ($menu-panel-inner-spacer-x / 2);
+      padding-right: 0;
+    }
+
+    .topic-title {
+      margin-right: $menu-panel-inner-spacer-x;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .searching {
+    &,
+    .drop-down-mode &,
     .drop-down-visible & {
-      top: ($menu-panel-padding-y + $text-field-height / 2);
-      right: $menu-panel-padding-x;
+      top: ($text-field-box-height / 2 - $text-field-font-size / 2);
+      right: $text-field-box-padding-x;
     }
 
     .spinner {
       border-color: currentColor;
       border-right-color: transparent;
       height: $text-field-font-size;
-      margin-top: 0;
-      position: absolute;
-      top: ($menu-panel-padding-y + $text-field-box-height / 2 - $text-field-font-size / 2);
-      right: ($menu-panel-padding-x + $text-field-box-padding-x);
       width: $text-field-font-size;
     }
   }
@@ -217,6 +240,15 @@ div {
 
       @include hover {
         background-color: transparent;
+      }
+
+      &:not(.show-all) {
+        padding: 0;
+
+        i {
+          margin-right: $menu-panel-inner-spacer-x;
+          padding-top: 0;
+        }
       }
 
       a {
@@ -254,6 +286,10 @@ div {
 
     .read {
       background-color: transparent;
+    }
+
+    .show-all .btn {
+      padding: $btn-padding-y-sm 0;
     }
   }
 }
