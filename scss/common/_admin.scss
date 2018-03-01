@@ -48,6 +48,11 @@
     padding: 0;
   }
 
+  input[type='text'],
+  textarea {
+    max-width: 100%;
+  }
+
   table {
     &:not(.pika-table) {
       @extend %table;
@@ -102,6 +107,32 @@
   margin-bottom: $spacer-lg;
   padding-bottom: ($card-padding-y - $card-inner-spacer-y);
   width: 100%;
+
+  &.email-preview .controls {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: ($card-inner-spacer-y - $spacer-sm);
+
+    > button {
+      margin-right: ($card-inner-spacer-x * 2);
+      margin-bottom: $spacer-sm;
+      margin-left: auto;
+    }
+
+    > div:not(.toggle) {
+      margin-right: $card-inner-spacer-x;
+    }
+
+    .toggle {
+      margin-top: 0;
+      margin-bottom: $spacer-sm;
+
+      label {
+        margin-bottom: 0;
+      }
+    }
+  }
 
   button {
     margin-right: $card-inner-spacer-x;
@@ -327,11 +358,16 @@ div {
       align-items: flex-start;
       display: flex;
 
+      @media (max-width: $admin-breakpoint) {
+        display: block;
+      }
+
       > .span13 {
         @extend %card;
         @extend %card-block;
 
         flex-grow: 1;
+        float: none;
         width: auto;
       }
 
@@ -423,20 +459,27 @@ div {
     margin-right: $spacer-lg;
   }
 
-  .badges & {
+  .badges &,
+  .groups & {
     float: none;
 
-    @media (max-width: 700px) {
+    @media (max-width: $admin-breakpoint) {
       background-color: color-chooser($card-bg-dark, $card-bg-light);
       border-radius: $card-border-radius;
       box-shadow: $card-box-shadow;
       margin-right: 0;
       margin-bottom: $spacer-lg;
-      max-height: 500px;
+      max-height: $admin-nav-max-height;
       overflow-x: hidden;
       overflow-y: auto;
-      padding: $card-padding-y $card-padding-x 0;
+      padding: $card-padding-y $card-padding-x;
       width: 100%;
+    }
+  }
+
+  .badges & {
+    @media (max-width: $admin-breakpoint) {
+      padding-bottom: 0;
     }
   }
 
@@ -499,6 +542,10 @@ div {
     display: flex;
     flex-wrap: wrap;
 
+    @media (max-width: $admin-breakpoint) {
+      display: block;
+    }
+
     > .row:not(.site-texts) {
       align-items: flex-start;
       display: flex;
@@ -544,7 +591,26 @@ div {
     }
   }
 
+  .content-list {
+    float: none;
+
+    @media (max-width: $admin-breakpoint) {
+      background-color: color-chooser($card-bg-dark, $card-bg-light);
+      border-radius: $card-border-radius;
+      box-shadow: $card-box-shadow;
+      margin-right: 0;
+      margin-bottom: $spacer-lg;
+      max-height: $admin-nav-max-height;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: $card-padding-y $card-padding-x;
+      width: 100%;
+    }
+  }
+
   .current-style {
+    float: none;
+
     &.maximized .wrapper {
       display: flex;
       flex-direction: column;
@@ -695,7 +761,7 @@ div {
 
 .dashboard-left,
 .dashboard-right {
-  @media (max-width: 700px) {
+  @media (max-width: $admin-breakpoint) {
     float: none;
     width: auto;
   }
@@ -708,7 +774,7 @@ div {
   overflow-x: auto;
   overflow-y: hidden;
 
-  @media (max-width: 700px) {
+  @media (max-width: $admin-breakpoint) {
     margin-right: 0;
   }
 
@@ -736,6 +802,37 @@ div {
   table:not(.pika-table) {
     box-shadow: none;
     margin-bottom: 0;
+  }
+}
+
+.email-preview-digest {
+  > br {
+    display: none;
+  }
+
+  .controls {
+    @extend %card;
+    @extend %card-block;
+
+    margin-bottom: $spacer-lg;
+    margin-left: 0;
+
+    input[type='text'] {
+      @extend %text-field-box;
+    }
+
+    label {
+      display: inline-block;
+    }
+  }
+
+  .preview-output {
+    margin-bottom: $spacer-lg;
+
+    iframe {
+      border: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+      display: block;
+    }
   }
 }
 
