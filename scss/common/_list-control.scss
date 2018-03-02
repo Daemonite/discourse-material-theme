@@ -131,8 +131,22 @@ ol {
 
   &.combo-box {
     &.is-expanded {
+      &.is-above {
+        .select-kit-body {
+          border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+        }
+
+        .select-kit-header {
+          border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+        }
+      }
+
       .select-kit-body {
         border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+      }
+
+      .select-kit-header {
+        border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
       }
 
       .select-kit-wrapper {

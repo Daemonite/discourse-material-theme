@@ -79,6 +79,7 @@
 .topic-bulk-actions-modal {
   .bulk-buttons {
     border-top: $modal-border-width solid $black-divider;
+    display: block;
     margin-right: ($modal-padding-x * -1);
     margin-left: ($modal-padding-x * -1);
 
@@ -92,6 +93,7 @@
       display: block;
       font-weight: normal;
       margin: 0 0 ($modal-border-width * -1);
+      max-width: none;
       padding: $modal-inner-spacer-y $modal-padding-x;
       text-align: inherit;
       text-transform: none;
@@ -110,6 +112,36 @@
 
   .modal-body:last-child {
     padding-bottom: 0;
+
+    > .btn:last-child {
+      float: right;
+      margin-right: ($modal-footer-padding-x - $modal-padding-x);
+      margin-bottom: $modal-footer-padding-y;
+
+      &:not(:disabled) {
+        color: unquote('$tertiary');
+
+        @include focus-hover {
+          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+          color: unquote('$tertiary');
+        }
+      }
+    }
+
+    .loading-container {
+      margin-right: ($modal-footer-padding-x - $modal-padding-x);
+      padding-bottom: $modal-footer-padding-y;
+      text-align: right;
+
+      .btn:not(:disabled) {
+        color: unquote('$tertiary');
+
+        @include focus-hover {
+          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+          color: unquote('$tertiary');
+        }
+      }
+    }
   }
 }
 
