@@ -7,16 +7,16 @@
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  margin: 0;
-  padding: ($card-inner-spacer-x) 0;
+  margin: 0 0 $card-inner-spacer-y;
+  padding: 0;
 
   button {
     @extend %btn-sm;
 
     margin: 0;
     min-width: 0;
-    padding-right: ($btn-padding-x / 2);
-    padding-left: ($btn-padding-x / 2);
+    padding-right: ($btn-padding-x-sm / 2);
+    padding-left: ($btn-padding-x-sm / 2);
   }
 }
 
@@ -29,11 +29,20 @@
 .d-editor-preview {
   border: 1px dotted color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
   border-radius: $text-field-box-border-radius;
-  margin: $card-inner-spacer-y 0 0;
-  padding: $text-field-box-padding-y $text-field-box-padding-x;
+  margin: 0;
+  padding: 0 $text-field-box-padding-x;
 
   > :last-child {
     margin-bottom: 0;
+  }
+}
+
+.d-editor-preview-wrapper {
+  margin-left: $card-padding-x;
+  max-width: calc(50% - #{$card-padding-x / 2});
+
+  .edit-title & {
+    margin-top: (($text-field-height + $card-inner-spacer-y) * -1);
   }
 }
 

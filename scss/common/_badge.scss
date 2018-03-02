@@ -77,7 +77,7 @@
 
     span {
       &.badge-category {
-        color: unquote('$primary') !important;
+        color: inherit !important;
         margin: 0;
         padding: 0;
       }
