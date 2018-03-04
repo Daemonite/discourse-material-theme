@@ -16,55 +16,59 @@
   .top-lists h2 {
     margin: 0 0 $spacer;
   }
+
+  .top-lists .period-chooser h2 {
+    display: inline;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    line-height: 1;
+    margin: 0;
+  }
 }
 
 .period-chooser {
-  @extend %card;
-  @extend %card-block;
+  &.dropdown-select-box.select-kit {
+    .period-chooser-header {
+      @extend %btn-flat;
+      @extend %btn-raised;
 
-  align-items: center;
-  border-radius: $card-border-radius $card-border-radius 0 0;
-  display: flex;
+      h2 {
+        &.selected-name {
+          .date-section {
+            margin-right: $spacer-xs;
+          }
 
-  button {
-    @extend %btn-flat;
-    @extend %btn-footer;
-    @extend %btn-raised;
+          .top-date-string {
+            @extend %typography-caption;
 
-    margin-bottom: 0;
-  }
+            color: color-chooser($white-secondary, $black-secondary);
+            line-height: 1;
+          }
+        }
+      }
 
-  h2 {
-    margin: 0 !important;
+      .d-icon {
+        color: inherit;
+        margin: 0 ($spacer-xs / -2) 0 $spacer-xs;
+      }
+    }
 
-    .top-date-string {
+    .period-chooser-row .top-date-string {
       @extend %typography-caption;
 
       color: color-chooser($white-secondary, $black-secondary);
+      line-height: 1;
+    }
+
+    .select-kit-collection {
+      padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
     }
   }
+}
 
-  #period-popup {
-    @extend %dropdown-menu;
-    @extend %dropdown-menu-sm;
-
-    ul li {
-      @include hover {
-        background-color: transparent;
-      }
-
-      a {
-        @extend %dropdown-link;
-        @extend %dropdown-link-sm;
-      }
-
-      .top-date-string {
-        @extend %typography-caption;
-
-        color: color-chooser($white-secondary, $black-secondary);
-      }
-    }
-  }
+.top-lists {
+  @extend %card;
+  @extend %card-block;
 }
 
 .top-title-buttons {
