@@ -16,6 +16,10 @@
     right: $spacer-lg;
   }
 
+  &.closed {
+    display: none;
+  }
+
   &.draft {
     background-color: color-chooser($dropdown-bg-light, $dropdown-bg-dark);
     border-top: 0;
