@@ -18,8 +18,7 @@
   }
 }
 
-blockquote::after, blockquote::before, aside.quote .quote-controls .back::before,
-aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select2-container a.select2-choice abbr::before, .select2-container a.select2-choice .select2-arrow b::before, .select2-search-choice-close::before, .d-header button.sign-up-button::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-gear::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, #reply-control .toggler::before, nav.post-controls button .read-icon::before {
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .d-header button.sign-up-button::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-gavel::before, .fa-gear::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, #reply-control .toggler::before, nav.post-controls button .read-icon::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -37,48 +36,48 @@ aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.po
   word-wrap: normal;
 }
 
-.nav-pills > li > a.btn-danger, .nav-stacked li > a.btn-danger, .content-list ul li > a.btn-danger, .btn-danger.btn, div.poll .poll-buttons a.btn-danger, .select2-container a.btn-danger.select2-choice, .list-controls .category-breadcrumb > li > a.btn-danger.dropdown-header, .modal-footer :not(.disclaimer) a.btn-danger, .btn-danger.pika-button, .btn-danger.pika-next,
-.btn-danger.pika-prev, #reply-control .btn-danger.toggle-preview, .fps-select a.btn-danger, #share-link .reply-as-new-topic a.btn-danger, .period-chooser button.btn-danger, nav.post-controls button.btn-danger, nav.post-controls .btn-danger.show-replies, .small-action button.btn-danger, .topic-map .buttons .btn-danger.btn, .topic-map .link-summary a.btn-danger, .topic-meta-data .post-info a.btn-danger, .stats-section li.linked-stat a.btn-danger, .user-main .about .controls a.btn-danger, .nav-pills > li > a.cancel, .nav-stacked li > a.cancel, .content-list ul li > a.cancel, .cancel.btn, div.poll .poll-buttons a.cancel, .select2-container a.cancel.select2-choice, .list-controls .category-breadcrumb > li > a.cancel.dropdown-header, .modal-footer :not(.disclaimer) a.cancel, .cancel.pika-button, .cancel.pika-next,
-.cancel.pika-prev, #reply-control .cancel.toggle-preview, .fps-select a.cancel, #share-link .reply-as-new-topic a.cancel, .period-chooser button.cancel, nav.post-controls button.cancel, nav.post-controls .cancel.show-replies, .small-action button.cancel, .topic-map .buttons .cancel.btn, .topic-map .link-summary a.cancel, .topic-meta-data .post-info a.cancel, .stats-section li.linked-stat a.cancel, .user-main .about .controls a.cancel {
+.nav-pills > li > a.btn-danger, .nav-stacked li > a.btn-danger, .content-list ul li > a.btn-danger, .btn-danger.btn, div.poll .poll-buttons a.btn-danger, .select-kit.category-drop.combo-box .btn-danger.category-drop-header, .select-kit.combo-box .btn-danger.select-kit-header, .modal-footer :not(.disclaimer) a.btn-danger, .btn-danger.pika-button, .btn-danger.pika-next,
+.btn-danger.pika-prev, #reply-control .btn-danger.toggle-preview, .fps-select a.btn-danger, #share-link .reply-as-new-topic a.btn-danger, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, nav.post-controls button.btn-danger, nav.post-controls .btn-danger.show-replies, .small-action button.btn-danger, .topic-map .buttons .btn-danger.btn, .topic-map .link-summary a.btn-danger, .topic-meta-data .post-info a.btn-danger, .stats-section li.linked-stat a.btn-danger, .user-main .about .controls a.btn-danger, .badges-section.top-section > p .btn-danger.more, .nav-pills > li > a.cancel, .nav-stacked li > a.cancel, .content-list ul li > a.cancel, .cancel.btn, div.poll .poll-buttons a.cancel, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .modal-footer :not(.disclaimer) a.cancel, .cancel.pika-button, .cancel.pika-next,
+.cancel.pika-prev, #reply-control .cancel.toggle-preview, .fps-select a.cancel, #share-link .reply-as-new-topic a.cancel, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header, nav.post-controls button.cancel, nav.post-controls .cancel.show-replies, .small-action button.cancel, .topic-map .buttons .cancel.btn, .topic-map .link-summary a.cancel, .topic-meta-data .post-info a.cancel, .stats-section li.linked-stat a.cancel, .user-main .about .controls a.cancel, .badges-section.top-section > p .cancel.more {
   background-color: transparent;
   color: $danger;
 }
-.nav-pills > li > a.btn-danger:focus, .nav-stacked li > a.btn-danger:focus, .content-list ul li > a.btn-danger:focus, .btn-danger.btn:focus, div.poll .poll-buttons a.btn-danger:focus, .select2-container a.btn-danger.select2-choice:focus, .list-controls .category-breadcrumb > li > a.btn-danger.dropdown-header:focus, .modal-footer :not(.disclaimer) a.btn-danger:focus, .btn-danger.pika-button:focus, .btn-danger.pika-next:focus,
-.btn-danger.pika-prev:focus, #reply-control .btn-danger.toggle-preview:focus, .fps-select a.btn-danger:focus, #share-link .reply-as-new-topic a.btn-danger:focus, .period-chooser button.btn-danger:focus, nav.post-controls button.btn-danger:focus, nav.post-controls .btn-danger.show-replies:focus, .small-action button.btn-danger:focus, .topic-map .link-summary a.btn-danger:focus, .topic-meta-data .post-info a.btn-danger:focus, .stats-section li.linked-stat a.btn-danger:focus, .user-main .about .controls a.btn-danger:focus, .nav-pills > li > a.btn-danger:hover, .nav-stacked li > a.btn-danger:hover, .content-list ul li > a.btn-danger:hover, .btn-danger.btn:hover, div.poll .poll-buttons a.btn-danger:hover, .select2-container a.btn-danger.select2-choice:hover, .list-controls .category-breadcrumb > li > a.btn-danger.dropdown-header:hover, .modal-footer :not(.disclaimer) a.btn-danger:hover, .btn-danger.pika-button:hover, .btn-danger.pika-next:hover,
-.btn-danger.pika-prev:hover, #reply-control .btn-danger.toggle-preview:hover, .fps-select a.btn-danger:hover, #share-link .reply-as-new-topic a.btn-danger:hover, .period-chooser button.btn-danger:hover, nav.post-controls button.btn-danger:hover, nav.post-controls .btn-danger.show-replies:hover, .small-action button.btn-danger:hover, .topic-map .link-summary a.btn-danger:hover, .topic-meta-data .post-info a.btn-danger:hover, .stats-section li.linked-stat a.btn-danger:hover, .user-main .about .controls a.btn-danger:hover, .nav-pills > li > a.cancel:focus, .nav-stacked li > a.cancel:focus, .content-list ul li > a.cancel:focus, .cancel.btn:focus, div.poll .poll-buttons a.cancel:focus, .select2-container a.cancel.select2-choice:focus, .list-controls .category-breadcrumb > li > a.cancel.dropdown-header:focus, .modal-footer :not(.disclaimer) a.cancel:focus, .cancel.pika-button:focus, .cancel.pika-next:focus,
-.cancel.pika-prev:focus, #reply-control .cancel.toggle-preview:focus, .fps-select a.cancel:focus, #share-link .reply-as-new-topic a.cancel:focus, .period-chooser button.cancel:focus, nav.post-controls button.cancel:focus, nav.post-controls .cancel.show-replies:focus, .small-action button.cancel:focus, .topic-map .link-summary a.cancel:focus, .topic-meta-data .post-info a.cancel:focus, .stats-section li.linked-stat a.cancel:focus, .user-main .about .controls a.cancel:focus, .nav-pills > li > a.cancel:hover, .nav-stacked li > a.cancel:hover, .content-list ul li > a.cancel:hover, .cancel.btn:hover, div.poll .poll-buttons a.cancel:hover, .select2-container a.cancel.select2-choice:hover, .list-controls .category-breadcrumb > li > a.cancel.dropdown-header:hover, .modal-footer :not(.disclaimer) a.cancel:hover, .cancel.pika-button:hover, .cancel.pika-next:hover,
-.cancel.pika-prev:hover, #reply-control .cancel.toggle-preview:hover, .fps-select a.cancel:hover, #share-link .reply-as-new-topic a.cancel:hover, .period-chooser button.cancel:hover, nav.post-controls button.cancel:hover, nav.post-controls .cancel.show-replies:hover, .small-action button.cancel:hover, .topic-map .link-summary a.cancel:hover, .topic-meta-data .post-info a.cancel:hover, .stats-section li.linked-stat a.cancel:hover, .user-main .about .controls a.cancel:hover {
+.nav-pills > li > a.btn-danger:focus, .nav-stacked li > a.btn-danger:focus, .content-list ul li > a.btn-danger:focus, .btn-danger.btn:focus, div.poll .poll-buttons a.btn-danger:focus, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:focus, .select-kit.combo-box .btn-danger.select-kit-header:focus, .modal-footer :not(.disclaimer) a.btn-danger:focus, .btn-danger.pika-button:focus, .btn-danger.pika-next:focus,
+.btn-danger.pika-prev:focus, #reply-control .btn-danger.toggle-preview:focus, .fps-select a.btn-danger:focus, #share-link .reply-as-new-topic a.btn-danger:focus, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:focus, nav.post-controls button.btn-danger:focus, nav.post-controls .btn-danger.show-replies:focus, .small-action button.btn-danger:focus, .topic-map .link-summary a.btn-danger:focus, .topic-meta-data .post-info a.btn-danger:focus, .stats-section li.linked-stat a.btn-danger:focus, .user-main .about .controls a.btn-danger:focus, .badges-section.top-section > p .btn-danger.more:focus, .nav-pills > li > a.btn-danger:hover, .nav-stacked li > a.btn-danger:hover, .content-list ul li > a.btn-danger:hover, .btn-danger.btn:hover, div.poll .poll-buttons a.btn-danger:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-danger:hover, .btn-danger.pika-button:hover, .btn-danger.pika-next:hover,
+.btn-danger.pika-prev:hover, #reply-control .btn-danger.toggle-preview:hover, .fps-select a.btn-danger:hover, #share-link .reply-as-new-topic a.btn-danger:hover, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:hover, nav.post-controls button.btn-danger:hover, nav.post-controls .btn-danger.show-replies:hover, .small-action button.btn-danger:hover, .topic-map .link-summary a.btn-danger:hover, .topic-meta-data .post-info a.btn-danger:hover, .stats-section li.linked-stat a.btn-danger:hover, .user-main .about .controls a.btn-danger:hover, .badges-section.top-section > p .btn-danger.more:hover, .nav-pills > li > a.cancel:focus, .nav-stacked li > a.cancel:focus, .content-list ul li > a.cancel:focus, .cancel.btn:focus, div.poll .poll-buttons a.cancel:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .modal-footer :not(.disclaimer) a.cancel:focus, .cancel.pika-button:focus, .cancel.pika-next:focus,
+.cancel.pika-prev:focus, #reply-control .cancel.toggle-preview:focus, .fps-select a.cancel:focus, #share-link .reply-as-new-topic a.cancel:focus, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:focus, nav.post-controls button.cancel:focus, nav.post-controls .cancel.show-replies:focus, .small-action button.cancel:focus, .topic-map .link-summary a.cancel:focus, .topic-meta-data .post-info a.cancel:focus, .stats-section li.linked-stat a.cancel:focus, .user-main .about .controls a.cancel:focus, .badges-section.top-section > p .cancel.more:focus, .nav-pills > li > a.cancel:hover, .nav-stacked li > a.cancel:hover, .content-list ul li > a.cancel:hover, .cancel.btn:hover, div.poll .poll-buttons a.cancel:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .modal-footer :not(.disclaimer) a.cancel:hover, .cancel.pika-button:hover, .cancel.pika-next:hover,
+.cancel.pika-prev:hover, #reply-control .cancel.toggle-preview:hover, .fps-select a.cancel:hover, #share-link .reply-as-new-topic a.cancel:hover, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:hover, nav.post-controls button.cancel:hover, nav.post-controls .cancel.show-replies:hover, .small-action button.cancel:hover, .topic-map .link-summary a.cancel:hover, .topic-meta-data .post-info a.cancel:hover, .stats-section li.linked-stat a.cancel:hover, .user-main .about .controls a.cancel:hover, .badges-section.top-section > p .cancel.more:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $danger;
 }
-.nav-pills > li > a.btn-primary, .nav-stacked li > a.btn-primary, .content-list ul li > a.btn-primary, .btn-primary.btn, div.poll .poll-buttons a.btn-primary, .select2-container a.btn-primary.select2-choice, .list-controls .category-breadcrumb > li > a.btn-primary.dropdown-header, .modal-footer :not(.disclaimer) a.btn-primary, .btn-primary.pika-button, .btn-primary.pika-next,
-.btn-primary.pika-prev, #reply-control .btn-primary.toggle-preview, .fps-select a.btn-primary, #share-link .reply-as-new-topic a.btn-primary, .period-chooser button.btn-primary, nav.post-controls button.btn-primary, nav.post-controls .btn-primary.show-replies, .small-action button.btn-primary, .topic-map .buttons .btn-primary.btn, .topic-map .link-summary a.btn-primary, .topic-meta-data .post-info a.btn-primary, .stats-section li.linked-stat a.btn-primary, .user-main .about .controls a.btn-primary {
+.nav-pills > li > a.btn-primary, .nav-stacked li > a.btn-primary, .content-list ul li > a.btn-primary, .btn-primary.btn, div.poll .poll-buttons a.btn-primary, .select-kit.category-drop.combo-box .btn-primary.category-drop-header, .select-kit.combo-box .btn-primary.select-kit-header, .modal-footer :not(.disclaimer) a.btn-primary, .btn-primary.pika-button, .btn-primary.pika-next,
+.btn-primary.pika-prev, #reply-control .btn-primary.toggle-preview, .fps-select a.btn-primary, #share-link .reply-as-new-topic a.btn-primary, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, nav.post-controls button.btn-primary, nav.post-controls .btn-primary.show-replies, .small-action button.btn-primary, .topic-map .buttons .btn-primary.btn, .topic-map .link-summary a.btn-primary, .topic-meta-data .post-info a.btn-primary, .stats-section li.linked-stat a.btn-primary, .user-main .about .controls a.btn-primary, .badges-section.top-section > p .btn-primary.more {
   background-color: transparent;
   color: $tertiary;
 }
-.nav-pills > li > a.btn-primary:focus, .nav-stacked li > a.btn-primary:focus, .content-list ul li > a.btn-primary:focus, .btn-primary.btn:focus, div.poll .poll-buttons a.btn-primary:focus, .select2-container a.btn-primary.select2-choice:focus, .list-controls .category-breadcrumb > li > a.btn-primary.dropdown-header:focus, .modal-footer :not(.disclaimer) a.btn-primary:focus, .btn-primary.pika-button:focus, .btn-primary.pika-next:focus,
-.btn-primary.pika-prev:focus, #reply-control .btn-primary.toggle-preview:focus, .fps-select a.btn-primary:focus, #share-link .reply-as-new-topic a.btn-primary:focus, .period-chooser button.btn-primary:focus, nav.post-controls button.btn-primary:focus, nav.post-controls .btn-primary.show-replies:focus, .small-action button.btn-primary:focus, .topic-map .link-summary a.btn-primary:focus, .topic-meta-data .post-info a.btn-primary:focus, .stats-section li.linked-stat a.btn-primary:focus, .user-main .about .controls a.btn-primary:focus, .nav-pills > li > a.btn-primary:hover, .nav-stacked li > a.btn-primary:hover, .content-list ul li > a.btn-primary:hover, .btn-primary.btn:hover, div.poll .poll-buttons a.btn-primary:hover, .select2-container a.btn-primary.select2-choice:hover, .list-controls .category-breadcrumb > li > a.btn-primary.dropdown-header:hover, .modal-footer :not(.disclaimer) a.btn-primary:hover, .btn-primary.pika-button:hover, .btn-primary.pika-next:hover,
-.btn-primary.pika-prev:hover, #reply-control .btn-primary.toggle-preview:hover, .fps-select a.btn-primary:hover, #share-link .reply-as-new-topic a.btn-primary:hover, .period-chooser button.btn-primary:hover, nav.post-controls button.btn-primary:hover, nav.post-controls .btn-primary.show-replies:hover, .small-action button.btn-primary:hover, .topic-map .link-summary a.btn-primary:hover, .topic-meta-data .post-info a.btn-primary:hover, .stats-section li.linked-stat a.btn-primary:hover, .user-main .about .controls a.btn-primary:hover {
+.nav-pills > li > a.btn-primary:focus, .nav-stacked li > a.btn-primary:focus, .content-list ul li > a.btn-primary:focus, .btn-primary.btn:focus, div.poll .poll-buttons a.btn-primary:focus, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:focus, .select-kit.combo-box .btn-primary.select-kit-header:focus, .modal-footer :not(.disclaimer) a.btn-primary:focus, .btn-primary.pika-button:focus, .btn-primary.pika-next:focus,
+.btn-primary.pika-prev:focus, #reply-control .btn-primary.toggle-preview:focus, .fps-select a.btn-primary:focus, #share-link .reply-as-new-topic a.btn-primary:focus, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:focus, nav.post-controls button.btn-primary:focus, nav.post-controls .btn-primary.show-replies:focus, .small-action button.btn-primary:focus, .topic-map .link-summary a.btn-primary:focus, .topic-meta-data .post-info a.btn-primary:focus, .stats-section li.linked-stat a.btn-primary:focus, .user-main .about .controls a.btn-primary:focus, .badges-section.top-section > p .btn-primary.more:focus, .nav-pills > li > a.btn-primary:hover, .nav-stacked li > a.btn-primary:hover, .content-list ul li > a.btn-primary:hover, .btn-primary.btn:hover, div.poll .poll-buttons a.btn-primary:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-primary:hover, .btn-primary.pika-button:hover, .btn-primary.pika-next:hover,
+.btn-primary.pika-prev:hover, #reply-control .btn-primary.toggle-preview:hover, .fps-select a.btn-primary:hover, #share-link .reply-as-new-topic a.btn-primary:hover, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:hover, nav.post-controls button.btn-primary:hover, nav.post-controls .btn-primary.show-replies:hover, .small-action button.btn-primary:hover, .topic-map .link-summary a.btn-primary:hover, .topic-meta-data .post-info a.btn-primary:hover, .stats-section li.linked-stat a.btn-primary:hover, .user-main .about .controls a.btn-primary:hover, .badges-section.top-section > p .btn-primary.more:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $tertiary;
 }
-.nav-pills > li > a.btn-success, .nav-stacked li > a.btn-success, .content-list ul li > a.btn-success, .btn-success.btn, div.poll .poll-buttons a.btn-success, .select2-container a.btn-success.select2-choice, .list-controls .category-breadcrumb > li > a.btn-success.dropdown-header, .modal-footer :not(.disclaimer) a.btn-success, .btn-success.pika-button, .btn-success.pika-next,
-.btn-success.pika-prev, #reply-control .btn-success.toggle-preview, .fps-select a.btn-success, #share-link .reply-as-new-topic a.btn-success, .period-chooser button.btn-success, nav.post-controls button.btn-success, nav.post-controls .btn-success.show-replies, .small-action button.btn-success, .topic-map .buttons .btn-success.btn, .topic-map .link-summary a.btn-success, .topic-meta-data .post-info a.btn-success, .stats-section li.linked-stat a.btn-success, .user-main .about .controls a.btn-success, .nav-pills > li > a.ok, .nav-stacked li > a.ok, .content-list ul li > a.ok, .ok.btn, div.poll .poll-buttons a.ok, .select2-container a.ok.select2-choice, .list-controls .category-breadcrumb > li > a.ok.dropdown-header, .modal-footer :not(.disclaimer) a.ok, .ok.pika-button, .ok.pika-next,
-.ok.pika-prev, #reply-control .ok.toggle-preview, .fps-select a.ok, #share-link .reply-as-new-topic a.ok, .period-chooser button.ok, nav.post-controls button.ok, nav.post-controls .ok.show-replies, .small-action button.ok, .topic-map .buttons .ok.btn, .topic-map .link-summary a.ok, .topic-meta-data .post-info a.ok, .stats-section li.linked-stat a.ok, .user-main .about .controls a.ok {
+.nav-pills > li > a.btn-success, .nav-stacked li > a.btn-success, .content-list ul li > a.btn-success, .btn-success.btn, div.poll .poll-buttons a.btn-success, .select-kit.category-drop.combo-box .btn-success.category-drop-header, .select-kit.combo-box .btn-success.select-kit-header, .modal-footer :not(.disclaimer) a.btn-success, .btn-success.pika-button, .btn-success.pika-next,
+.btn-success.pika-prev, #reply-control .btn-success.toggle-preview, .fps-select a.btn-success, #share-link .reply-as-new-topic a.btn-success, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header, nav.post-controls button.btn-success, nav.post-controls .btn-success.show-replies, .small-action button.btn-success, .topic-map .buttons .btn-success.btn, .topic-map .link-summary a.btn-success, .topic-meta-data .post-info a.btn-success, .stats-section li.linked-stat a.btn-success, .user-main .about .controls a.btn-success, .badges-section.top-section > p .btn-success.more, .nav-pills > li > a.ok, .nav-stacked li > a.ok, .content-list ul li > a.ok, .ok.btn, div.poll .poll-buttons a.ok, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .modal-footer :not(.disclaimer) a.ok, .ok.pika-button, .ok.pika-next,
+.ok.pika-prev, #reply-control .ok.toggle-preview, .fps-select a.ok, #share-link .reply-as-new-topic a.ok, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header, nav.post-controls button.ok, nav.post-controls .ok.show-replies, .small-action button.ok, .topic-map .buttons .ok.btn, .topic-map .link-summary a.ok, .topic-meta-data .post-info a.ok, .stats-section li.linked-stat a.ok, .user-main .about .controls a.ok, .badges-section.top-section > p .ok.more {
   background-color: transparent;
   color: $success;
 }
-.nav-pills > li > a.btn-success:focus, .nav-stacked li > a.btn-success:focus, .content-list ul li > a.btn-success:focus, .btn-success.btn:focus, div.poll .poll-buttons a.btn-success:focus, .select2-container a.btn-success.select2-choice:focus, .list-controls .category-breadcrumb > li > a.btn-success.dropdown-header:focus, .modal-footer :not(.disclaimer) a.btn-success:focus, .btn-success.pika-button:focus, .btn-success.pika-next:focus,
-.btn-success.pika-prev:focus, #reply-control .btn-success.toggle-preview:focus, .fps-select a.btn-success:focus, #share-link .reply-as-new-topic a.btn-success:focus, .period-chooser button.btn-success:focus, nav.post-controls button.btn-success:focus, nav.post-controls .btn-success.show-replies:focus, .small-action button.btn-success:focus, .topic-map .link-summary a.btn-success:focus, .topic-meta-data .post-info a.btn-success:focus, .stats-section li.linked-stat a.btn-success:focus, .user-main .about .controls a.btn-success:focus, .nav-pills > li > a.btn-success:hover, .nav-stacked li > a.btn-success:hover, .content-list ul li > a.btn-success:hover, .btn-success.btn:hover, div.poll .poll-buttons a.btn-success:hover, .select2-container a.btn-success.select2-choice:hover, .list-controls .category-breadcrumb > li > a.btn-success.dropdown-header:hover, .modal-footer :not(.disclaimer) a.btn-success:hover, .btn-success.pika-button:hover, .btn-success.pika-next:hover,
-.btn-success.pika-prev:hover, #reply-control .btn-success.toggle-preview:hover, .fps-select a.btn-success:hover, #share-link .reply-as-new-topic a.btn-success:hover, .period-chooser button.btn-success:hover, nav.post-controls button.btn-success:hover, nav.post-controls .btn-success.show-replies:hover, .small-action button.btn-success:hover, .topic-map .link-summary a.btn-success:hover, .topic-meta-data .post-info a.btn-success:hover, .stats-section li.linked-stat a.btn-success:hover, .user-main .about .controls a.btn-success:hover, .nav-pills > li > a.ok:focus, .nav-stacked li > a.ok:focus, .content-list ul li > a.ok:focus, .ok.btn:focus, div.poll .poll-buttons a.ok:focus, .select2-container a.ok.select2-choice:focus, .list-controls .category-breadcrumb > li > a.ok.dropdown-header:focus, .modal-footer :not(.disclaimer) a.ok:focus, .ok.pika-button:focus, .ok.pika-next:focus,
-.ok.pika-prev:focus, #reply-control .ok.toggle-preview:focus, .fps-select a.ok:focus, #share-link .reply-as-new-topic a.ok:focus, .period-chooser button.ok:focus, nav.post-controls button.ok:focus, nav.post-controls .ok.show-replies:focus, .small-action button.ok:focus, .topic-map .link-summary a.ok:focus, .topic-meta-data .post-info a.ok:focus, .stats-section li.linked-stat a.ok:focus, .user-main .about .controls a.ok:focus, .nav-pills > li > a.ok:hover, .nav-stacked li > a.ok:hover, .content-list ul li > a.ok:hover, .ok.btn:hover, div.poll .poll-buttons a.ok:hover, .select2-container a.ok.select2-choice:hover, .list-controls .category-breadcrumb > li > a.ok.dropdown-header:hover, .modal-footer :not(.disclaimer) a.ok:hover, .ok.pika-button:hover, .ok.pika-next:hover,
-.ok.pika-prev:hover, #reply-control .ok.toggle-preview:hover, .fps-select a.ok:hover, #share-link .reply-as-new-topic a.ok:hover, .period-chooser button.ok:hover, nav.post-controls button.ok:hover, nav.post-controls .ok.show-replies:hover, .small-action button.ok:hover, .topic-map .link-summary a.ok:hover, .topic-meta-data .post-info a.ok:hover, .stats-section li.linked-stat a.ok:hover, .user-main .about .controls a.ok:hover {
+.nav-pills > li > a.btn-success:focus, .nav-stacked li > a.btn-success:focus, .content-list ul li > a.btn-success:focus, .btn-success.btn:focus, div.poll .poll-buttons a.btn-success:focus, .select-kit.category-drop.combo-box .btn-success.category-drop-header:focus, .select-kit.combo-box .btn-success.select-kit-header:focus, .modal-footer :not(.disclaimer) a.btn-success:focus, .btn-success.pika-button:focus, .btn-success.pika-next:focus,
+.btn-success.pika-prev:focus, #reply-control .btn-success.toggle-preview:focus, .fps-select a.btn-success:focus, #share-link .reply-as-new-topic a.btn-success:focus, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:focus, nav.post-controls button.btn-success:focus, nav.post-controls .btn-success.show-replies:focus, .small-action button.btn-success:focus, .topic-map .link-summary a.btn-success:focus, .topic-meta-data .post-info a.btn-success:focus, .stats-section li.linked-stat a.btn-success:focus, .user-main .about .controls a.btn-success:focus, .badges-section.top-section > p .btn-success.more:focus, .nav-pills > li > a.btn-success:hover, .nav-stacked li > a.btn-success:hover, .content-list ul li > a.btn-success:hover, .btn-success.btn:hover, div.poll .poll-buttons a.btn-success:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-success:hover, .btn-success.pika-button:hover, .btn-success.pika-next:hover,
+.btn-success.pika-prev:hover, #reply-control .btn-success.toggle-preview:hover, .fps-select a.btn-success:hover, #share-link .reply-as-new-topic a.btn-success:hover, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:hover, nav.post-controls button.btn-success:hover, nav.post-controls .btn-success.show-replies:hover, .small-action button.btn-success:hover, .topic-map .link-summary a.btn-success:hover, .topic-meta-data .post-info a.btn-success:hover, .stats-section li.linked-stat a.btn-success:hover, .user-main .about .controls a.btn-success:hover, .badges-section.top-section > p .btn-success.more:hover, .nav-pills > li > a.ok:focus, .nav-stacked li > a.ok:focus, .content-list ul li > a.ok:focus, .ok.btn:focus, div.poll .poll-buttons a.ok:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .modal-footer :not(.disclaimer) a.ok:focus, .ok.pika-button:focus, .ok.pika-next:focus,
+.ok.pika-prev:focus, #reply-control .ok.toggle-preview:focus, .fps-select a.ok:focus, #share-link .reply-as-new-topic a.ok:focus, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:focus, nav.post-controls button.ok:focus, nav.post-controls .ok.show-replies:focus, .small-action button.ok:focus, .topic-map .link-summary a.ok:focus, .topic-meta-data .post-info a.ok:focus, .stats-section li.linked-stat a.ok:focus, .user-main .about .controls a.ok:focus, .badges-section.top-section > p .ok.more:focus, .nav-pills > li > a.ok:hover, .nav-stacked li > a.ok:hover, .content-list ul li > a.ok:hover, .ok.btn:hover, div.poll .poll-buttons a.ok:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .modal-footer :not(.disclaimer) a.ok:hover, .ok.pika-button:hover, .ok.pika-next:hover,
+.ok.pika-prev:hover, #reply-control .ok.toggle-preview:hover, .fps-select a.ok:hover, #share-link .reply-as-new-topic a.ok:hover, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:hover, nav.post-controls button.ok:hover, nav.post-controls .ok.show-replies:hover, .small-action button.ok:hover, .topic-map .link-summary a.ok:hover, .topic-meta-data .post-info a.ok:hover, .stats-section li.linked-stat a.ok:hover, .user-main .about .controls a.ok:hover, .badges-section.top-section > p .ok.more:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $success;
 }
 
-.nav-pills > li > a, .nav-stacked li > a, .content-list ul li > a, .btn, div.poll .poll-buttons a, .select2-container a.select2-choice, .list-controls .category-breadcrumb > li > a.dropdown-header, .modal-footer :not(.disclaimer) a, .pika-button, .pika-next,
-.pika-prev, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser button, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .stats-section li.linked-stat a, .user-main .about .controls a, #reply-control .contents .submit-panel .cancel {
+.nav-pills > li > a, .nav-stacked li > a, .content-list ul li > a, .btn, div.poll .poll-buttons a, .select-kit.category-drop.combo-box .category-drop-header, .select-kit.combo-box .select-kit-header, .modal-footer :not(.disclaimer) a, .pika-button, .pika-next,
+.pika-prev, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .stats-section li.linked-stat a, .user-main .about .controls a, .badges-section.top-section > p .more, #reply-control .submit-panel .cancel {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -102,177 +101,177 @@ aside.quote .quote-controls .quote-other-topic::before, .d-editor-preview div.po
   vertical-align: middle;
   white-space: nowrap;
 }
-.nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select2-container a.select2-choice:focus, .list-controls .category-breadcrumb > li > a.dropdown-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser button:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, #reply-control .contents .submit-panel .cancel:focus, .nav-pills > li > a:hover, .nav-stacked li > a:hover, .content-list ul li > a:hover, .btn:hover, div.poll .poll-buttons a:hover, .select2-container a.select2-choice:hover, .list-controls .category-breadcrumb > li > a.dropdown-header:hover, .modal-footer :not(.disclaimer) a:hover, .pika-button:hover, .pika-next:hover,
-.pika-prev:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser button:hover, nav.post-controls button:hover, nav.post-controls .show-replies:hover, .small-action button:hover, .topic-map .buttons .btn:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, #reply-control .contents .submit-panel .cancel:hover {
+.nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit.category-drop.combo-box .category-drop-header:focus, .select-kit.combo-box .select-kit-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
+.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, #reply-control .submit-panel .cancel:focus, .nav-pills > li > a:hover, .nav-stacked li > a:hover, .content-list ul li > a:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .modal-footer :not(.disclaimer) a:hover, .pika-button:hover, .pika-next:hover,
+.pika-prev:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, nav.post-controls button:hover, nav.post-controls .show-replies:hover, .small-action button:hover, .topic-map .buttons .btn:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, .badges-section.top-section > p .more:hover, #reply-control .submit-panel .cancel:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: color-chooser($primary, $primary);
 }
-.nav-pills > li > a:active, .nav-stacked li > a:active, .content-list ul li > a:active, .btn:active, div.poll .poll-buttons a:active, .select2-container a.select2-choice:active, .list-controls .category-breadcrumb > li > a.dropdown-header:active, .modal-footer :not(.disclaimer) a:active, .pika-button:active, .pika-next:active,
-.pika-prev:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser button:active, nav.post-controls button:active, nav.post-controls .show-replies:active, .small-action button:active, .topic-map .buttons .btn:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .stats-section li.linked-stat a:active, .user-main .about .controls a:active, #reply-control .contents .submit-panel .cancel:active {
+.nav-pills > li > a:active, .nav-stacked li > a:active, .content-list ul li > a:active, .btn:active, div.poll .poll-buttons a:active, .select-kit.category-drop.combo-box .category-drop-header:active, .select-kit.combo-box .select-kit-header:active, .modal-footer :not(.disclaimer) a:active, .pika-button:active, .pika-next:active,
+.pika-prev:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, nav.post-controls button:active, nav.post-controls .show-replies:active, .small-action button:active, .topic-map .buttons .btn:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .badges-section.top-section > p .more:active, #reply-control .submit-panel .cancel:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
-.nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select2-container a.select2-choice:focus, .list-controls .category-breadcrumb > li > a.dropdown-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser button:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, #reply-control .contents .submit-panel .cancel:focus {
+.nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit.category-drop.combo-box .category-drop-header:focus, .select-kit.combo-box .select-kit-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
+.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, #reply-control .submit-panel .cancel:focus {
   outline: 0;
 }
-.nav-pills > li > a[disabled], .nav-stacked li > a[disabled], .content-list ul li > a[disabled], [disabled].btn, div.poll .poll-buttons a[disabled], .select2-container a[disabled].select2-choice, .list-controls .category-breadcrumb > li > a[disabled].dropdown-header, .modal-footer :not(.disclaimer) a[disabled], [disabled].pika-button, [disabled].pika-next,
-[disabled].pika-prev, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser button[disabled], nav.post-controls button[disabled], nav.post-controls [disabled].show-replies, .small-action button[disabled], .topic-map .buttons [disabled].btn, .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], #reply-control .contents .submit-panel [disabled].cancel, .nav-pills > li > a.disabled, .nav-stacked li > a.disabled, .content-list ul li > a.disabled, .disabled.btn, div.poll .poll-buttons a.disabled, .select2-container a.disabled.select2-choice, .list-controls .category-breadcrumb > li > a.disabled.dropdown-header, .modal-footer :not(.disclaimer) a.disabled, .disabled.pika-button, .disabled.pika-next,
-.disabled.pika-prev, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser button.disabled, nav.post-controls button.disabled, nav.post-controls .disabled.show-replies, .small-action button.disabled, .topic-map .buttons .disabled.btn, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, #reply-control .contents .submit-panel .disabled.cancel {
+.nav-pills > li > a[disabled], .nav-stacked li > a[disabled], .content-list ul li > a[disabled], [disabled].btn, div.poll .poll-buttons a[disabled], .select-kit.category-drop.combo-box [disabled].category-drop-header, .select-kit.combo-box [disabled].select-kit-header, .modal-footer :not(.disclaimer) a[disabled], [disabled].pika-button, [disabled].pika-next,
+[disabled].pika-prev, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, nav.post-controls button[disabled], nav.post-controls [disabled].show-replies, .small-action button[disabled], .topic-map .buttons [disabled].btn, .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .badges-section.top-section > p [disabled].more, #reply-control .submit-panel [disabled].cancel, .nav-pills > li > a.disabled, .nav-stacked li > a.disabled, .content-list ul li > a.disabled, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .modal-footer :not(.disclaimer) a.disabled, .disabled.pika-button, .disabled.pika-next,
+.disabled.pika-prev, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, nav.post-controls button.disabled, nav.post-controls .disabled.show-replies, .small-action button.disabled, .topic-map .buttons .disabled.btn, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .badges-section.top-section > p .disabled.more, #reply-control .submit-panel .disabled.cancel {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
 }
 
-.image-upload-controls .btn, .select2-container a.select2-choice, .list-controls .btn, .list-controls .category-breadcrumb > li > a.dropdown-header, .edit-category-modal .edit-category-tab-general section.field > .btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn, #reply-control .contents .submit-panel .btn, .fps-select a, .search.row > .btn,
+.image-upload-controls .btn, .select-kit.category-drop.combo-box .category-drop-header, .select-kit.combo-box .select-kit-header, .list-controls .btn, .edit-category-modal .edit-category-tab-general section.field > .btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn, #reply-control .submit-panel .btn, .fps-select a, .search.row > .btn,
 .search.row .new-topic-btn .btn, .timeline-container .topic-timeline div > button.btn,
-.timeline-container .topic-timeline span > button.btn, .period-chooser button, .top-title-buttons button, #topic-footer-buttons div > button.btn,
+.timeline-container .topic-timeline span > button.btn, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .top-title-buttons button, #topic-footer-buttons div > button.btn,
 #topic-footer-buttons span > button.btn,
-#topic-footer-buttons > button.btn, .user-main .user-right .list-actions .btn, .user-navigation .new-private-message, .admin-contents .btn {
+#topic-footer-buttons > button.btn, .user-main .user-right .list-actions .btn, .user-navigation .new-private-message, .badges-section.top-section > p .more, .admin-contents .btn {
   background-color: color-chooser($tertiary, #ffffff);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
-.image-upload-controls .btn:focus, .select2-container a.select2-choice:focus, .list-controls .btn:focus, .list-controls .category-breadcrumb > li > a.dropdown-header:focus, .edit-category-modal .edit-category-tab-general section.field > .btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn:focus, #reply-control .contents .submit-panel .btn:focus, .fps-select a:focus, .search.row > .btn:focus,
+.image-upload-controls .btn:focus, .select-kit.category-drop.combo-box .category-drop-header:focus, .select-kit.combo-box .select-kit-header:focus, .list-controls .btn:focus, .edit-category-modal .edit-category-tab-general section.field > .btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn:focus, #reply-control .submit-panel .btn:focus, .fps-select a:focus, .search.row > .btn:focus,
 .search.row .new-topic-btn .btn:focus, .timeline-container .topic-timeline div > button.btn:focus,
-.timeline-container .topic-timeline span > button.btn:focus, .period-chooser button:focus, .top-title-buttons button:focus, #topic-footer-buttons div > button.btn:focus,
+.timeline-container .topic-timeline span > button.btn:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .top-title-buttons button:focus, #topic-footer-buttons div > button.btn:focus,
 #topic-footer-buttons span > button.btn:focus,
-#topic-footer-buttons > button.btn:focus, .user-main .user-right .list-actions .btn:focus, .user-navigation .new-private-message:focus, .admin-contents .btn:focus, .image-upload-controls .btn:hover, .select2-container a.select2-choice:hover, .list-controls .btn:hover, .list-controls .category-breadcrumb > li > a.dropdown-header:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
-.edit-category-modal .edit-category-tab-security section.field > .btn:hover, #reply-control .contents .submit-panel .btn:hover, .fps-select a:hover, .search.row > .btn:hover,
+#topic-footer-buttons > button.btn:focus, .user-main .user-right .list-actions .btn:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .admin-contents .btn:focus, .image-upload-controls .btn:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .list-controls .btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
+.edit-category-modal .edit-category-tab-security section.field > .btn:hover, #reply-control .submit-panel .btn:hover, .fps-select a:hover, .search.row > .btn:hover,
 .search.row .new-topic-btn .btn:hover, .timeline-container .topic-timeline div > button.btn:hover,
-.timeline-container .topic-timeline span > button.btn:hover, .period-chooser button:hover, .top-title-buttons button:hover, #topic-footer-buttons div > button.btn:hover,
+.timeline-container .topic-timeline span > button.btn:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .top-title-buttons button:hover, #topic-footer-buttons div > button.btn:hover,
 #topic-footer-buttons span > button.btn:hover,
-#topic-footer-buttons > button.btn:hover, .user-main .user-right .list-actions .btn:hover, .user-navigation .new-private-message:hover, .admin-contents .btn:hover {
+#topic-footer-buttons > button.btn:hover, .user-main .user-right .list-actions .btn:hover, .user-navigation .new-private-message:hover, .badges-section.top-section > p .more:hover, .admin-contents .btn:hover {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
-.image-upload-controls .btn:active, .select2-container a.select2-choice:active, .list-controls .btn:active, .list-controls .category-breadcrumb > li > a.dropdown-header:active, .edit-category-modal .edit-category-tab-general section.field > .btn:active,
-.edit-category-modal .edit-category-tab-security section.field > .btn:active, #reply-control .contents .submit-panel .btn:active, .fps-select a:active, .search.row > .btn:active,
+.image-upload-controls .btn:active, .select-kit.category-drop.combo-box .category-drop-header:active, .select-kit.combo-box .select-kit-header:active, .list-controls .btn:active, .edit-category-modal .edit-category-tab-general section.field > .btn:active,
+.edit-category-modal .edit-category-tab-security section.field > .btn:active, #reply-control .submit-panel .btn:active, .fps-select a:active, .search.row > .btn:active,
 .search.row .new-topic-btn .btn:active, .timeline-container .topic-timeline div > button.btn:active,
-.timeline-container .topic-timeline span > button.btn:active, .period-chooser button:active, .top-title-buttons button:active, #topic-footer-buttons div > button.btn:active,
+.timeline-container .topic-timeline span > button.btn:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .top-title-buttons button:active, #topic-footer-buttons div > button.btn:active,
 #topic-footer-buttons span > button.btn:active,
-#topic-footer-buttons > button.btn:active, .user-main .user-right .list-actions .btn:active, .user-navigation .new-private-message:active, .admin-contents .btn:active {
+#topic-footer-buttons > button.btn:active, .user-main .user-right .list-actions .btn:active, .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .admin-contents .btn:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
-.image-upload-controls [disabled].btn, .select2-container a[disabled].select2-choice, .list-controls [disabled].btn, .list-controls .category-breadcrumb > li > a[disabled].dropdown-header, .edit-category-modal .edit-category-tab-general section.field > [disabled].btn,
-.edit-category-modal .edit-category-tab-security section.field > [disabled].btn, #reply-control .contents .submit-panel [disabled].btn, .fps-select a[disabled], .search.row > [disabled].btn,
+.image-upload-controls [disabled].btn, .select-kit.category-drop.combo-box [disabled].category-drop-header, .select-kit.combo-box [disabled].select-kit-header, .list-controls [disabled].btn, .edit-category-modal .edit-category-tab-general section.field > [disabled].btn,
+.edit-category-modal .edit-category-tab-security section.field > [disabled].btn, #reply-control .submit-panel [disabled].btn, .fps-select a[disabled], .search.row > [disabled].btn,
 .search.row .new-topic-btn [disabled].btn, .timeline-container .topic-timeline div > button[disabled].btn,
-.timeline-container .topic-timeline span > button[disabled].btn, .period-chooser button[disabled], .top-title-buttons button[disabled], #topic-footer-buttons div > button[disabled].btn,
+.timeline-container .topic-timeline span > button[disabled].btn, .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .top-title-buttons button[disabled], #topic-footer-buttons div > button[disabled].btn,
 #topic-footer-buttons span > button[disabled].btn,
-#topic-footer-buttons > button[disabled].btn, .user-main .user-right .list-actions [disabled].btn, .user-navigation [disabled].new-private-message, .admin-contents [disabled].btn, .image-upload-controls .disabled.btn, .select2-container a.disabled.select2-choice, .list-controls .disabled.btn, .list-controls .category-breadcrumb > li > a.disabled.dropdown-header, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
-.edit-category-modal .edit-category-tab-security section.field > .disabled.btn, #reply-control .contents .submit-panel .disabled.btn, .fps-select a.disabled, .search.row > .disabled.btn,
+#topic-footer-buttons > button[disabled].btn, .user-main .user-right .list-actions [disabled].btn, .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .admin-contents [disabled].btn, .image-upload-controls .disabled.btn, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .list-controls .disabled.btn, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
+.edit-category-modal .edit-category-tab-security section.field > .disabled.btn, #reply-control .submit-panel .disabled.btn, .fps-select a.disabled, .search.row > .disabled.btn,
 .search.row .new-topic-btn .disabled.btn, .timeline-container .topic-timeline div > button.disabled.btn,
-.timeline-container .topic-timeline span > button.disabled.btn, .period-chooser button.disabled, .top-title-buttons button.disabled, #topic-footer-buttons div > button.disabled.btn,
+.timeline-container .topic-timeline span > button.disabled.btn, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .top-title-buttons button.disabled, #topic-footer-buttons div > button.disabled.btn,
 #topic-footer-buttons span > button.disabled.btn,
-#topic-footer-buttons > button.disabled.btn, .user-main .user-right .list-actions .disabled.btn, .user-navigation .disabled.new-private-message, .admin-contents .disabled.btn {
+#topic-footer-buttons > button.disabled.btn, .user-main .user-right .list-actions .disabled.btn, .user-navigation .disabled.new-private-message, .badges-section.top-section > p .disabled.more, .admin-contents .disabled.btn {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
   background-image: none;
   box-shadow: none !important;
 }
-.image-upload-controls .btn-danger.btn, .select2-container a.btn-danger.select2-choice, .list-controls .btn-danger.btn, .list-controls .category-breadcrumb > li > a.btn-danger.dropdown-header, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn, #reply-control .contents .submit-panel .btn-danger.btn, .fps-select a.btn-danger, .search.row > .btn-danger.btn,
+.image-upload-controls .btn-danger.btn, .select-kit.category-drop.combo-box .btn-danger.category-drop-header, .select-kit.combo-box .btn-danger.select-kit-header, .list-controls .btn-danger.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn, #reply-control .submit-panel .btn-danger.btn, .fps-select a.btn-danger, .search.row > .btn-danger.btn,
 .search.row .new-topic-btn .btn-danger.btn, .timeline-container .topic-timeline div > button.btn-danger.btn,
-.timeline-container .topic-timeline span > button.btn-danger.btn, .period-chooser button.btn-danger, .top-title-buttons button.btn-danger, #topic-footer-buttons div > button.btn-danger.btn,
+.timeline-container .topic-timeline span > button.btn-danger.btn, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, .top-title-buttons button.btn-danger, #topic-footer-buttons div > button.btn-danger.btn,
 #topic-footer-buttons span > button.btn-danger.btn,
-#topic-footer-buttons > button.btn-danger.btn, .user-main .user-right .list-actions .btn-danger.btn, .user-navigation .btn-danger.new-private-message, .admin-contents .btn-danger.btn, .image-upload-controls .cancel.btn, .select2-container a.cancel.select2-choice, .list-controls .cancel.btn, .list-controls .category-breadcrumb > li > a.cancel.dropdown-header, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
-.edit-category-modal .edit-category-tab-security section.field > .cancel.btn, #reply-control .contents .submit-panel .cancel.btn, .fps-select a.cancel, .search.row > .cancel.btn,
+#topic-footer-buttons > button.btn-danger.btn, .user-main .user-right .list-actions .btn-danger.btn, .user-navigation .btn-danger.new-private-message, .badges-section.top-section > p .btn-danger.more, .admin-contents .btn-danger.btn, .image-upload-controls .cancel.btn, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .list-controls .cancel.btn, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
+.edit-category-modal .edit-category-tab-security section.field > .cancel.btn, #reply-control .submit-panel .cancel.btn, .fps-select a.cancel, .search.row > .cancel.btn,
 .search.row .new-topic-btn .cancel.btn, .timeline-container .topic-timeline div > button.cancel.btn,
-.timeline-container .topic-timeline span > button.cancel.btn, .period-chooser button.cancel, .top-title-buttons button.cancel, #topic-footer-buttons div > button.cancel.btn,
+.timeline-container .topic-timeline span > button.cancel.btn, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header, .top-title-buttons button.cancel, #topic-footer-buttons div > button.cancel.btn,
 #topic-footer-buttons span > button.cancel.btn,
-#topic-footer-buttons > button.cancel.btn, .user-main .user-right .list-actions .cancel.btn, .user-navigation .cancel.new-private-message, .admin-contents .cancel.btn {
+#topic-footer-buttons > button.cancel.btn, .user-main .user-right .list-actions .cancel.btn, .user-navigation .cancel.new-private-message, .badges-section.top-section > p .cancel.more, .admin-contents .cancel.btn {
   background-color: $danger;
   color: color-dynamic($danger);
 }
-.image-upload-controls .btn-danger.btn:focus, .select2-container a.btn-danger.select2-choice:focus, .list-controls .btn-danger.btn:focus, .list-controls .category-breadcrumb > li > a.btn-danger.dropdown-header:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:focus, #reply-control .contents .submit-panel .btn-danger.btn:focus, .fps-select a.btn-danger:focus, .search.row > .btn-danger.btn:focus,
+.image-upload-controls .btn-danger.btn:focus, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:focus, .select-kit.combo-box .btn-danger.select-kit-header:focus, .list-controls .btn-danger.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:focus, #reply-control .submit-panel .btn-danger.btn:focus, .fps-select a.btn-danger:focus, .search.row > .btn-danger.btn:focus,
 .search.row .new-topic-btn .btn-danger.btn:focus, .timeline-container .topic-timeline div > button.btn-danger.btn:focus,
-.timeline-container .topic-timeline span > button.btn-danger.btn:focus, .period-chooser button.btn-danger:focus, .top-title-buttons button.btn-danger:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
+.timeline-container .topic-timeline span > button.btn-danger.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:focus, .top-title-buttons button.btn-danger:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
 #topic-footer-buttons span > button.btn-danger.btn:focus,
-#topic-footer-buttons > button.btn-danger.btn:focus, .user-main .user-right .list-actions .btn-danger.btn:focus, .user-navigation .btn-danger.new-private-message:focus, .admin-contents .btn-danger.btn:focus, .image-upload-controls .btn-danger.btn:hover, .select2-container a.btn-danger.select2-choice:hover, .list-controls .btn-danger.btn:hover, .list-controls .category-breadcrumb > li > a.btn-danger.dropdown-header:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
-.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:hover, #reply-control .contents .submit-panel .btn-danger.btn:hover, .fps-select a.btn-danger:hover, .search.row > .btn-danger.btn:hover,
+#topic-footer-buttons > button.btn-danger.btn:focus, .user-main .user-right .list-actions .btn-danger.btn:focus, .user-navigation .btn-danger.new-private-message:focus, .badges-section.top-section > p .btn-danger.more:focus, .admin-contents .btn-danger.btn:focus, .image-upload-controls .btn-danger.btn:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .list-controls .btn-danger.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
+.edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:hover, #reply-control .submit-panel .btn-danger.btn:hover, .fps-select a.btn-danger:hover, .search.row > .btn-danger.btn:hover,
 .search.row .new-topic-btn .btn-danger.btn:hover, .timeline-container .topic-timeline div > button.btn-danger.btn:hover,
-.timeline-container .topic-timeline span > button.btn-danger.btn:hover, .period-chooser button.btn-danger:hover, .top-title-buttons button.btn-danger:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
+.timeline-container .topic-timeline span > button.btn-danger.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:hover, .top-title-buttons button.btn-danger:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
 #topic-footer-buttons span > button.btn-danger.btn:hover,
-#topic-footer-buttons > button.btn-danger.btn:hover, .user-main .user-right .list-actions .btn-danger.btn:hover, .user-navigation .btn-danger.new-private-message:hover, .admin-contents .btn-danger.btn:hover, .image-upload-controls .cancel.btn:focus, .select2-container a.cancel.select2-choice:focus, .list-controls .cancel.btn:focus, .list-controls .category-breadcrumb > li > a.cancel.dropdown-header:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .cancel.btn:focus, #reply-control .contents .submit-panel .cancel.btn:focus, .fps-select a.cancel:focus, .search.row > .cancel.btn:focus,
+#topic-footer-buttons > button.btn-danger.btn:hover, .user-main .user-right .list-actions .btn-danger.btn:hover, .user-navigation .btn-danger.new-private-message:hover, .badges-section.top-section > p .btn-danger.more:hover, .admin-contents .btn-danger.btn:hover, .image-upload-controls .cancel.btn:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .list-controls .cancel.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .cancel.btn:focus, #reply-control .submit-panel .cancel.btn:focus, .fps-select a.cancel:focus, .search.row > .cancel.btn:focus,
 .search.row .new-topic-btn .cancel.btn:focus, .timeline-container .topic-timeline div > button.cancel.btn:focus,
-.timeline-container .topic-timeline span > button.cancel.btn:focus, .period-chooser button.cancel:focus, .top-title-buttons button.cancel:focus, #topic-footer-buttons div > button.cancel.btn:focus,
+.timeline-container .topic-timeline span > button.cancel.btn:focus, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:focus, .top-title-buttons button.cancel:focus, #topic-footer-buttons div > button.cancel.btn:focus,
 #topic-footer-buttons span > button.cancel.btn:focus,
-#topic-footer-buttons > button.cancel.btn:focus, .user-main .user-right .list-actions .cancel.btn:focus, .user-navigation .cancel.new-private-message:focus, .admin-contents .cancel.btn:focus, .image-upload-controls .cancel.btn:hover, .select2-container a.cancel.select2-choice:hover, .list-controls .cancel.btn:hover, .list-controls .category-breadcrumb > li > a.cancel.dropdown-header:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
-.edit-category-modal .edit-category-tab-security section.field > .cancel.btn:hover, #reply-control .contents .submit-panel .cancel.btn:hover, .fps-select a.cancel:hover, .search.row > .cancel.btn:hover,
+#topic-footer-buttons > button.cancel.btn:focus, .user-main .user-right .list-actions .cancel.btn:focus, .user-navigation .cancel.new-private-message:focus, .badges-section.top-section > p .cancel.more:focus, .admin-contents .cancel.btn:focus, .image-upload-controls .cancel.btn:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .list-controls .cancel.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
+.edit-category-modal .edit-category-tab-security section.field > .cancel.btn:hover, #reply-control .submit-panel .cancel.btn:hover, .fps-select a.cancel:hover, .search.row > .cancel.btn:hover,
 .search.row .new-topic-btn .cancel.btn:hover, .timeline-container .topic-timeline div > button.cancel.btn:hover,
-.timeline-container .topic-timeline span > button.cancel.btn:hover, .period-chooser button.cancel:hover, .top-title-buttons button.cancel:hover, #topic-footer-buttons div > button.cancel.btn:hover,
+.timeline-container .topic-timeline span > button.cancel.btn:hover, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:hover, .top-title-buttons button.cancel:hover, #topic-footer-buttons div > button.cancel.btn:hover,
 #topic-footer-buttons span > button.cancel.btn:hover,
-#topic-footer-buttons > button.cancel.btn:hover, .user-main .user-right .list-actions .cancel.btn:hover, .user-navigation .cancel.new-private-message:hover, .admin-contents .cancel.btn:hover {
+#topic-footer-buttons > button.cancel.btn:hover, .user-main .user-right .list-actions .cancel.btn:hover, .user-navigation .cancel.new-private-message:hover, .badges-section.top-section > p .cancel.more:hover, .admin-contents .cancel.btn:hover {
   background-color: $danger;
   color: color-dynamic($danger);
 }
-.image-upload-controls .btn-primary.btn, .select2-container a.btn-primary.select2-choice, .list-controls .btn-primary.btn, .list-controls .category-breadcrumb > li > a.btn-primary.dropdown-header, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn, #reply-control .contents .submit-panel .btn-primary.btn, .fps-select a.btn-primary, .search.row > .btn-primary.btn,
+.image-upload-controls .btn-primary.btn, .select-kit.category-drop.combo-box .btn-primary.category-drop-header, .select-kit.combo-box .btn-primary.select-kit-header, .list-controls .btn-primary.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn, #reply-control .submit-panel .btn-primary.btn, .fps-select a.btn-primary, .search.row > .btn-primary.btn,
 .search.row .new-topic-btn .btn-primary.btn, .timeline-container .topic-timeline div > button.btn-primary.btn,
-.timeline-container .topic-timeline span > button.btn-primary.btn, .period-chooser button.btn-primary, .top-title-buttons button.btn-primary, #topic-footer-buttons div > button.btn-primary.btn,
+.timeline-container .topic-timeline span > button.btn-primary.btn, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, .top-title-buttons button.btn-primary, #topic-footer-buttons div > button.btn-primary.btn,
 #topic-footer-buttons span > button.btn-primary.btn,
-#topic-footer-buttons > button.btn-primary.btn, .user-main .user-right .list-actions .btn-primary.btn, .user-navigation .btn-primary.new-private-message, .admin-contents .btn-primary.btn {
+#topic-footer-buttons > button.btn-primary.btn, .user-main .user-right .list-actions .btn-primary.btn, .user-navigation .btn-primary.new-private-message, .badges-section.top-section > p .btn-primary.more, .admin-contents .btn-primary.btn {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
-.image-upload-controls .btn-primary.btn:focus, .select2-container a.btn-primary.select2-choice:focus, .list-controls .btn-primary.btn:focus, .list-controls .category-breadcrumb > li > a.btn-primary.dropdown-header:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:focus, #reply-control .contents .submit-panel .btn-primary.btn:focus, .fps-select a.btn-primary:focus, .search.row > .btn-primary.btn:focus,
+.image-upload-controls .btn-primary.btn:focus, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:focus, .select-kit.combo-box .btn-primary.select-kit-header:focus, .list-controls .btn-primary.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:focus, #reply-control .submit-panel .btn-primary.btn:focus, .fps-select a.btn-primary:focus, .search.row > .btn-primary.btn:focus,
 .search.row .new-topic-btn .btn-primary.btn:focus, .timeline-container .topic-timeline div > button.btn-primary.btn:focus,
-.timeline-container .topic-timeline span > button.btn-primary.btn:focus, .period-chooser button.btn-primary:focus, .top-title-buttons button.btn-primary:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
+.timeline-container .topic-timeline span > button.btn-primary.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:focus, .top-title-buttons button.btn-primary:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
 #topic-footer-buttons span > button.btn-primary.btn:focus,
-#topic-footer-buttons > button.btn-primary.btn:focus, .user-main .user-right .list-actions .btn-primary.btn:focus, .user-navigation .btn-primary.new-private-message:focus, .admin-contents .btn-primary.btn:focus, .image-upload-controls .btn-primary.btn:hover, .select2-container a.btn-primary.select2-choice:hover, .list-controls .btn-primary.btn:hover, .list-controls .category-breadcrumb > li > a.btn-primary.dropdown-header:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
-.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:hover, #reply-control .contents .submit-panel .btn-primary.btn:hover, .fps-select a.btn-primary:hover, .search.row > .btn-primary.btn:hover,
+#topic-footer-buttons > button.btn-primary.btn:focus, .user-main .user-right .list-actions .btn-primary.btn:focus, .user-navigation .btn-primary.new-private-message:focus, .badges-section.top-section > p .btn-primary.more:focus, .admin-contents .btn-primary.btn:focus, .image-upload-controls .btn-primary.btn:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .list-controls .btn-primary.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
+.edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:hover, #reply-control .submit-panel .btn-primary.btn:hover, .fps-select a.btn-primary:hover, .search.row > .btn-primary.btn:hover,
 .search.row .new-topic-btn .btn-primary.btn:hover, .timeline-container .topic-timeline div > button.btn-primary.btn:hover,
-.timeline-container .topic-timeline span > button.btn-primary.btn:hover, .period-chooser button.btn-primary:hover, .top-title-buttons button.btn-primary:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
+.timeline-container .topic-timeline span > button.btn-primary.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:hover, .top-title-buttons button.btn-primary:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
 #topic-footer-buttons span > button.btn-primary.btn:hover,
-#topic-footer-buttons > button.btn-primary.btn:hover, .user-main .user-right .list-actions .btn-primary.btn:hover, .user-navigation .btn-primary.new-private-message:hover, .admin-contents .btn-primary.btn:hover {
+#topic-footer-buttons > button.btn-primary.btn:hover, .user-main .user-right .list-actions .btn-primary.btn:hover, .user-navigation .btn-primary.new-private-message:hover, .badges-section.top-section > p .btn-primary.more:hover, .admin-contents .btn-primary.btn:hover {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
-.image-upload-controls .btn-success.btn, .select2-container a.btn-success.select2-choice, .list-controls .btn-success.btn, .list-controls .category-breadcrumb > li > a.btn-success.dropdown-header, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn,
-.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn, #reply-control .contents .submit-panel .btn-success.btn, .fps-select a.btn-success, .search.row > .btn-success.btn,
+.image-upload-controls .btn-success.btn, .select-kit.category-drop.combo-box .btn-success.category-drop-header, .select-kit.combo-box .btn-success.select-kit-header, .list-controls .btn-success.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn,
+.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn, #reply-control .submit-panel .btn-success.btn, .fps-select a.btn-success, .search.row > .btn-success.btn,
 .search.row .new-topic-btn .btn-success.btn, .timeline-container .topic-timeline div > button.btn-success.btn,
-.timeline-container .topic-timeline span > button.btn-success.btn, .period-chooser button.btn-success, .top-title-buttons button.btn-success, #topic-footer-buttons div > button.btn-success.btn,
+.timeline-container .topic-timeline span > button.btn-success.btn, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header, .top-title-buttons button.btn-success, #topic-footer-buttons div > button.btn-success.btn,
 #topic-footer-buttons span > button.btn-success.btn,
-#topic-footer-buttons > button.btn-success.btn, .user-main .user-right .list-actions .btn-success.btn, .user-navigation .btn-success.new-private-message, .admin-contents .btn-success.btn, .image-upload-controls .ok.btn, .select2-container a.ok.select2-choice, .list-controls .ok.btn, .list-controls .category-breadcrumb > li > a.ok.dropdown-header, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
-.edit-category-modal .edit-category-tab-security section.field > .ok.btn, #reply-control .contents .submit-panel .ok.btn, .fps-select a.ok, .search.row > .ok.btn,
+#topic-footer-buttons > button.btn-success.btn, .user-main .user-right .list-actions .btn-success.btn, .user-navigation .btn-success.new-private-message, .badges-section.top-section > p .btn-success.more, .admin-contents .btn-success.btn, .image-upload-controls .ok.btn, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .list-controls .ok.btn, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
+.edit-category-modal .edit-category-tab-security section.field > .ok.btn, #reply-control .submit-panel .ok.btn, .fps-select a.ok, .search.row > .ok.btn,
 .search.row .new-topic-btn .ok.btn, .timeline-container .topic-timeline div > button.ok.btn,
-.timeline-container .topic-timeline span > button.ok.btn, .period-chooser button.ok, .top-title-buttons button.ok, #topic-footer-buttons div > button.ok.btn,
+.timeline-container .topic-timeline span > button.ok.btn, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header, .top-title-buttons button.ok, #topic-footer-buttons div > button.ok.btn,
 #topic-footer-buttons span > button.ok.btn,
-#topic-footer-buttons > button.ok.btn, .user-main .user-right .list-actions .ok.btn, .user-navigation .ok.new-private-message, .admin-contents .ok.btn {
+#topic-footer-buttons > button.ok.btn, .user-main .user-right .list-actions .ok.btn, .user-navigation .ok.new-private-message, .badges-section.top-section > p .ok.more, .admin-contents .ok.btn {
   background-color: $success;
   color: color-dynamic($success);
 }
-.image-upload-controls .btn-success.btn:focus, .select2-container a.btn-success.select2-choice:focus, .list-controls .btn-success.btn:focus, .list-controls .category-breadcrumb > li > a.btn-success.dropdown-header:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:focus, #reply-control .contents .submit-panel .btn-success.btn:focus, .fps-select a.btn-success:focus, .search.row > .btn-success.btn:focus,
+.image-upload-controls .btn-success.btn:focus, .select-kit.category-drop.combo-box .btn-success.category-drop-header:focus, .select-kit.combo-box .btn-success.select-kit-header:focus, .list-controls .btn-success.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:focus, #reply-control .submit-panel .btn-success.btn:focus, .fps-select a.btn-success:focus, .search.row > .btn-success.btn:focus,
 .search.row .new-topic-btn .btn-success.btn:focus, .timeline-container .topic-timeline div > button.btn-success.btn:focus,
-.timeline-container .topic-timeline span > button.btn-success.btn:focus, .period-chooser button.btn-success:focus, .top-title-buttons button.btn-success:focus, #topic-footer-buttons div > button.btn-success.btn:focus,
+.timeline-container .topic-timeline span > button.btn-success.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:focus, .top-title-buttons button.btn-success:focus, #topic-footer-buttons div > button.btn-success.btn:focus,
 #topic-footer-buttons span > button.btn-success.btn:focus,
-#topic-footer-buttons > button.btn-success.btn:focus, .user-main .user-right .list-actions .btn-success.btn:focus, .user-navigation .btn-success.new-private-message:focus, .admin-contents .btn-success.btn:focus, .image-upload-controls .btn-success.btn:hover, .select2-container a.btn-success.select2-choice:hover, .list-controls .btn-success.btn:hover, .list-controls .category-breadcrumb > li > a.btn-success.dropdown-header:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:hover,
-.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:hover, #reply-control .contents .submit-panel .btn-success.btn:hover, .fps-select a.btn-success:hover, .search.row > .btn-success.btn:hover,
+#topic-footer-buttons > button.btn-success.btn:focus, .user-main .user-right .list-actions .btn-success.btn:focus, .user-navigation .btn-success.new-private-message:focus, .badges-section.top-section > p .btn-success.more:focus, .admin-contents .btn-success.btn:focus, .image-upload-controls .btn-success.btn:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .list-controls .btn-success.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:hover,
+.edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:hover, #reply-control .submit-panel .btn-success.btn:hover, .fps-select a.btn-success:hover, .search.row > .btn-success.btn:hover,
 .search.row .new-topic-btn .btn-success.btn:hover, .timeline-container .topic-timeline div > button.btn-success.btn:hover,
-.timeline-container .topic-timeline span > button.btn-success.btn:hover, .period-chooser button.btn-success:hover, .top-title-buttons button.btn-success:hover, #topic-footer-buttons div > button.btn-success.btn:hover,
+.timeline-container .topic-timeline span > button.btn-success.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:hover, .top-title-buttons button.btn-success:hover, #topic-footer-buttons div > button.btn-success.btn:hover,
 #topic-footer-buttons span > button.btn-success.btn:hover,
-#topic-footer-buttons > button.btn-success.btn:hover, .user-main .user-right .list-actions .btn-success.btn:hover, .user-navigation .btn-success.new-private-message:hover, .admin-contents .btn-success.btn:hover, .image-upload-controls .ok.btn:focus, .select2-container a.ok.select2-choice:focus, .list-controls .ok.btn:focus, .list-controls .category-breadcrumb > li > a.ok.dropdown-header:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
-.edit-category-modal .edit-category-tab-security section.field > .ok.btn:focus, #reply-control .contents .submit-panel .ok.btn:focus, .fps-select a.ok:focus, .search.row > .ok.btn:focus,
+#topic-footer-buttons > button.btn-success.btn:hover, .user-main .user-right .list-actions .btn-success.btn:hover, .user-navigation .btn-success.new-private-message:hover, .badges-section.top-section > p .btn-success.more:hover, .admin-contents .btn-success.btn:hover, .image-upload-controls .ok.btn:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .list-controls .ok.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
+.edit-category-modal .edit-category-tab-security section.field > .ok.btn:focus, #reply-control .submit-panel .ok.btn:focus, .fps-select a.ok:focus, .search.row > .ok.btn:focus,
 .search.row .new-topic-btn .ok.btn:focus, .timeline-container .topic-timeline div > button.ok.btn:focus,
-.timeline-container .topic-timeline span > button.ok.btn:focus, .period-chooser button.ok:focus, .top-title-buttons button.ok:focus, #topic-footer-buttons div > button.ok.btn:focus,
+.timeline-container .topic-timeline span > button.ok.btn:focus, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:focus, .top-title-buttons button.ok:focus, #topic-footer-buttons div > button.ok.btn:focus,
 #topic-footer-buttons span > button.ok.btn:focus,
-#topic-footer-buttons > button.ok.btn:focus, .user-main .user-right .list-actions .ok.btn:focus, .user-navigation .ok.new-private-message:focus, .admin-contents .ok.btn:focus, .image-upload-controls .ok.btn:hover, .select2-container a.ok.select2-choice:hover, .list-controls .ok.btn:hover, .list-controls .category-breadcrumb > li > a.ok.dropdown-header:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
-.edit-category-modal .edit-category-tab-security section.field > .ok.btn:hover, #reply-control .contents .submit-panel .ok.btn:hover, .fps-select a.ok:hover, .search.row > .ok.btn:hover,
+#topic-footer-buttons > button.ok.btn:focus, .user-main .user-right .list-actions .ok.btn:focus, .user-navigation .ok.new-private-message:focus, .badges-section.top-section > p .ok.more:focus, .admin-contents .ok.btn:focus, .image-upload-controls .ok.btn:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .list-controls .ok.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
+.edit-category-modal .edit-category-tab-security section.field > .ok.btn:hover, #reply-control .submit-panel .ok.btn:hover, .fps-select a.ok:hover, .search.row > .ok.btn:hover,
 .search.row .new-topic-btn .ok.btn:hover, .timeline-container .topic-timeline div > button.ok.btn:hover,
-.timeline-container .topic-timeline span > button.ok.btn:hover, .period-chooser button.ok:hover, .top-title-buttons button.ok:hover, #topic-footer-buttons div > button.ok.btn:hover,
+.timeline-container .topic-timeline span > button.ok.btn:hover, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:hover, .top-title-buttons button.ok:hover, #topic-footer-buttons div > button.ok.btn:hover,
 #topic-footer-buttons span > button.ok.btn:hover,
-#topic-footer-buttons > button.ok.btn:hover, .user-main .user-right .list-actions .ok.btn:hover, .user-navigation .ok.new-private-message:hover, .admin-contents .ok.btn:hover {
+#topic-footer-buttons > button.ok.btn:hover, .user-main .user-right .list-actions .ok.btn:hover, .user-navigation .ok.new-private-message:hover, .badges-section.top-section > p .ok.more:hover, .admin-contents .ok.btn:hover {
   background-color: $success;
   color: color-dynamic($success);
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, .modal-footer :not(.disclaimer) a, .modal-footer .btn, #share-link .reply-as-new-topic a, .period-chooser button, .categories-and-latest .topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .user-main .user-content .user-invite-controls .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
+div.poll .poll-buttons .btn, .modal-footer :not(.disclaimer) a, .modal-footer .btn, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
 .screened-emails .col:not(.heading) .btn,
 .screened-ip-addresses .col:not(.heading) .btn,
 .screened-urls .col:not(.heading) .btn,
@@ -283,7 +282,7 @@ div.poll .poll-buttons .btn, .modal-footer :not(.disclaimer) a, .modal-footer .b
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first-child, .modal-footer .btn:first-child, #share-link .reply-as-new-topic a:first-child, .period-chooser button:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .small-action button:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .topic-meta-data .post-info a:first-child, .user-main .user-content .user-invite-controls .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
+div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first-child, .modal-footer .btn:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
 .screened-emails .col:not(.heading) .btn:first-child,
 .screened-ip-addresses .col:not(.heading) .btn:first-child,
 .screened-urls .col:not(.heading) .btn:first-child,
@@ -292,13 +291,13 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
   margin-left: 0;
 }
 
-.btn-small, .image-upload-controls .btn, .d-editor-button-bar button, .fps-select a, .small-action button, .topic-meta-data .post-info a, .admin-logs-table .btn {
+.btn-small, .image-upload-controls .btn, .d-editor-button-bar .btn, .fps-select a, .admin-logs-table .btn {
   font-size: 13px;
   padding: 9.5px 16px;
 }
 
-.alert, .fps-result, .search-advanced, #share-link, .period-chooser, .category-boxes .category-box-inner,
-.category-boxes-with-topics .category-box-inner, .small-action, .topic-body, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about, .user-main .user-content .user-invite-controls, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-contents div.badges .current-badge, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-editor, .customize .show-current-style, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings, .site-texts {
+.alert, .fps-result, .search-advanced, #share-link, .top-lists, .category-boxes .category-box-inner,
+.category-boxes-with-topics .category-box-inner, .small-action, .topic-body, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about, .user-main .user-content .user-invite-controls, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings, .site-texts {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
   border-radius: 2px;
@@ -306,21 +305,21 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
   color: color-chooser($primary, $primary);
   padding: 0;
 }
-[href].alert:focus, [href].fps-result:focus, [href].search-advanced:focus, [href]#share-link:focus, [href].period-chooser:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [href].alert:hover, [href].fps-result:hover, [href].search-advanced:hover, [href]#share-link:hover, [href].period-chooser:hover, .category-boxes [href].category-box-inner:hover,
-.category-boxes-with-topics [href].category-box-inner:hover, [href].small-action:hover, [href].topic-body:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main .user-content [href].user-invite-controls:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, [href].admin-controls:hover, .admin-contents div.badges [href].current-badge:hover, .admin-contents div.groups > [href].span13:hover, .admin-container div.user-fields [href].user-field:hover, [href].content-editor:hover, .customize [href].show-current-style:hover, .email-preview-digest [href].controls:hover, [href].embedding-secondary:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].period-chooser:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, [tabindex].alert:hover, [tabindex].fps-result:hover, [tabindex].search-advanced:hover, [tabindex]#share-link:hover, [tabindex].period-chooser:hover, .category-boxes [tabindex].category-box-inner:hover,
-.category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main .user-content [tabindex].user-invite-controls:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, [tabindex].admin-controls:hover, .admin-contents div.badges [tabindex].current-badge:hover, .admin-contents div.groups > [tabindex].span13:hover, .admin-container div.user-fields [tabindex].user-field:hover, [tabindex].content-editor:hover, .customize [tabindex].show-current-style:hover, .email-preview-digest [tabindex].controls:hover, [tabindex].embedding-secondary:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover {
+[href].alert:focus, [href].fps-result:focus, [href].search-advanced:focus, [href]#share-link:focus, [href].top-lists:focus, .category-boxes [href].category-box-inner:focus,
+.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.summary-user-list:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-customize .admin-container > [href].about:focus, .admin-customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-body:focus, [href].content-editor:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [href].alert:hover, [href].fps-result:hover, [href].search-advanced:hover, [href]#share-link:hover, [href].top-lists:hover, .category-boxes [href].category-box-inner:hover,
+.category-boxes-with-topics [href].category-box-inner:hover, [href].small-action:hover, [href].topic-body:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.summary-user-list:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main .user-content [href].user-invite-controls:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, [href].admin-controls:hover, .admin-customize .admin-container > [href].about:hover, .admin-customize [href].show-current-style:hover, .admin-contents div.groups > [href].span13:hover, .admin-container div.user-fields [href].user-field:hover, [href].content-body:hover, [href].content-editor:hover, .email-preview-digest [href].controls:hover, [href].embedding-secondary:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].top-lists:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.summary-user-list:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-customize .admin-container > [tabindex].about:focus, .admin-customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-body:focus, [tabindex].content-editor:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, [tabindex].alert:hover, [tabindex].fps-result:hover, [tabindex].search-advanced:hover, [tabindex]#share-link:hover, [tabindex].top-lists:hover, .category-boxes [tabindex].category-box-inner:hover,
+.category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.summary-user-list:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main .user-content [tabindex].user-invite-controls:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, [tabindex].admin-controls:hover, .admin-customize .admin-container > [tabindex].about:hover, .admin-customize [tabindex].show-current-style:hover, .admin-contents div.groups > [tabindex].span13:hover, .admin-container div.user-fields [tabindex].user-field:hover, [tabindex].content-body:hover, [tabindex].content-editor:hover, .email-preview-digest [tabindex].controls:hover, [tabindex].embedding-secondary:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
-[href].alert:focus, [href].fps-result:focus, [href].search-advanced:focus, [href]#share-link:focus, [href].period-chooser:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-contents div.badges [href].current-badge:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-editor:focus, .customize [href].show-current-style:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].period-chooser:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-contents div.badges [tabindex].current-badge:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-editor:focus, .customize [tabindex].show-current-style:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
+[href].alert:focus, [href].fps-result:focus, [href].search-advanced:focus, [href]#share-link:focus, [href].top-lists:focus, .category-boxes [href].category-box-inner:focus,
+.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.summary-user-list:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-customize .admin-container > [href].about:focus, .admin-customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-body:focus, [href].content-editor:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].top-lists:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.summary-user-list:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-customize .admin-container > [tabindex].about:focus, .admin-customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-body:focus, [tabindex].content-editor:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
   outline: 0;
 }
 
-.alert, .fps-result, .search-advanced .search-advanced-options, #share-link, .period-chooser, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .topic-meta-data, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, .admin-controls, .admin-contents div.badges .current-badge, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-editor, .customize .show-current-style, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings .setting, .site-texts {
+.alert, .fps-result, .search-advanced .search-advanced-options, #share-link, .top-lists, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .topic-meta-data, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings .setting, .site-texts {
   padding: 16px 16px;
 }
 
@@ -329,7 +328,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
 .popup-menu h3,
 .popup-menu h4,
 .popup-menu h5,
-.popup-menu h6, .select2-results .select2-no-results, .search-menu .no-results, nav.post-controls .post-admin-menu h3 {
+.popup-menu h6, .select-kit.dropdown-select-box.toolbar-popup-menu-options .collection-header h3, .search-menu .no-results, nav.post-controls .post-admin-menu h3 {
   font-size: 16px;
   font-weight: bolder;
   line-height: 1.5;
@@ -338,28 +337,28 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
   white-space: nowrap;
 }
 
-.select2-results .select2-no-results, .list-controls .category-dropdown-menu a.badge-category, .search-menu .no-results, #reply-control .popup-menu h3, .timeline-container .topic-timeline .dropdown-menu h3,
+.select-kit.category-drop.combo-box .select-kit-collection .collection-header .category-filter, .select-kit.dropdown-select-box.toolbar-popup-menu-options .collection-header h3, .search-menu .no-results, #reply-control .popup-menu h3, .timeline-container .topic-timeline .dropdown-menu h3,
 .timeline-container .topic-timeline .popup-menu h3, nav.post-controls .post-admin-menu h3, #topic-footer-buttons .popup-menu h3, #topic-progress-wrapper .popup-menu h3 {
   font-size: 13px;
   line-height: 1.5;
   padding: 6.25px 24px;
 }
 
-.dropdown-menu a, .popup-menu .btn, .autocomplete ul li a, .select2-results .select2-result-label, .period-chooser #period-popup ul li a, nav.post-controls .post-admin-menu li {
+.dropdown-menu a, .popup-menu .btn, .autocomplete ul li a, nav.post-controls .post-admin-menu li {
   display: block;
   font-size: inherit;
   line-height: inherit;
   padding: 12px 16px;
 }
 
-.autocomplete ul li a, .select2-results .select2-result-label, .category-notification-menu .dropdown-menu a, #reply-control .popup-menu .btn, .timeline-container .topic-timeline .dropdown-menu a,
+.autocomplete ul li a, .select-kit.category-drop.combo-box .select-kit-row, .select-kit.combo-box .select-kit-row, .select-kit.dropdown-select-box .select-kit-row, .category-notification-menu .dropdown-menu a, #reply-control .popup-menu .btn, .timeline-container .topic-timeline .dropdown-menu a,
 .timeline-container .topic-timeline .dropdown-menu .btn,
 .timeline-container .topic-timeline .popup-menu a,
-.timeline-container .topic-timeline .popup-menu .btn, .period-chooser #period-popup ul li a, nav.post-controls .post-admin-menu li, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, #topic-progress-wrapper .popup-menu .btn {
+.timeline-container .topic-timeline .popup-menu .btn, nav.post-controls .post-admin-menu li, #topic-footer-buttons .dropdown-menu a, #topic-footer-buttons .popup-menu .btn, #topic-progress-wrapper .popup-menu .btn {
   padding: 6.25px 24px;
 }
 
-.dropdown-menu, .popup-menu, .autocomplete, .select2-drop, .list-controls .category-dropdown-menu, .period-chooser #period-popup, nav.post-controls .post-admin-menu {
+.dropdown-menu, .popup-menu, .autocomplete, .select-kit .select-kit-body, .select-kit.category-drop.combo-box .select-kit-body, .select-kit.dropdown-select-box .select-kit-body, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-body, nav.post-controls .post-admin-menu {
   background-clip: padding-box;
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
@@ -370,8 +369,8 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
   padding: 8px 0;
 }
 
-.autocomplete, .select2-drop, .category-notification-menu .dropdown-menu, .list-controls .category-dropdown-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
-.timeline-container .topic-timeline .popup-menu, .period-chooser #period-popup, nav.post-controls .post-admin-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, #topic-progress-wrapper .popup-menu {
+.autocomplete, .select-kit .select-kit-body, .select-kit.category-drop.combo-box .select-kit-body, .select-kit.dropdown-select-box .select-kit-body, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-body, .category-notification-menu .dropdown-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
+.timeline-container .topic-timeline .popup-menu, nav.post-controls .post-admin-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, #topic-progress-wrapper .popup-menu {
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
@@ -621,23 +620,23 @@ body textarea[readonly], .controls [readonly].static, div.ac-wrap input[readonly
   pointer-events: none;
 }
 
-.select2-search input[type='text'], .create-account input[type='email'], .create-account input[type='password'], .create-account input[type='text'],
+.create-account input[type='email'], .create-account input[type='password'], .create-account input[type='text'],
 #login-form input[type='email'],
 #login-form input[type='password'],
-#login-form input[type='text'], .search-menu input[type='text'], .search.row input[type='date'], .search.row input[type='number'], .search.row input[type='text'], #share-link input[type='text'], .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-controls .ac-wrap input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .customize .show-current-style h1 input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .settings .setting .ac-wrap input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value {
+#login-form input[type='text'], .search-menu input[type='text'], .search.row input[type='date'], .search.row input[type='number'], .search.row input[type='text'], #share-link input[type='text'], .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-customize .show-current-style h1 input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .settings .setting .ac-wrap input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
   line-height: 16px;
   padding: 20px 16px 19px;
 }
-.select2-search input[type='text']:focus, .create-account input[type='email']:focus, .create-account input[type='password']:focus, .create-account input[type='text']:focus,
+.create-account input[type='email']:focus, .create-account input[type='password']:focus, .create-account input[type='text']:focus,
 #login-form input[type='email']:focus,
 #login-form input[type='password']:focus,
-#login-form input[type='text']:focus, .search-menu input[type='text']:focus, .search.row input[type='date']:focus, .search.row input[type='number']:focus, .search.row input[type='text']:focus, #share-link input[type='text']:focus, .admin-container .controls.username input[type='text']:focus, .admin-controls input[type='text']:focus, div.badges .form-horizontal input[type='text']:focus, div.groups .form-horizontal input[type='text']:focus, div.web-hook-container .form-horizontal input[type='text']:focus, .admin-container div.emoji input[type='text']:focus, .content-editor .email-template input[type='text']:focus, .customize .show-current-style h1 input[type='text']:focus, .email-preview-digest .controls input[type='text']:focus, .permalink-title ~ div input[type='text']:focus, .settings .setting .ac-wrap input[type='text']:focus, .settings .setting .input-setting-string:focus, .site-texts .search-area .site-text-search:focus, .value-list input[type='text']:focus, .value-list .value:focus, .select2-search input[type='text']:hover, .create-account input[type='email']:hover, .create-account input[type='password']:hover, .create-account input[type='text']:hover,
+#login-form input[type='text']:focus, .search-menu input[type='text']:focus, .search.row input[type='date']:focus, .search.row input[type='number']:focus, .search.row input[type='text']:focus, #share-link input[type='text']:focus, .admin-container .controls.username input[type='text']:focus, .admin-controls input[type='text']:focus, .admin-customize .show-current-style h1 input[type='text']:focus, div.badges .form-horizontal input[type='text']:focus, div.groups .form-horizontal input[type='text']:focus, div.web-hook-container .form-horizontal input[type='text']:focus, .admin-container div.emoji input[type='text']:focus, .content-editor .email-template input[type='text']:focus, .email-preview-digest .controls input[type='text']:focus, .permalink-title ~ div input[type='text']:focus, .settings .setting .ac-wrap input[type='text']:focus, .settings .setting .input-setting-string:focus, .site-texts .search-area .site-text-search:focus, .value-list input[type='text']:focus, .value-list .value:focus, .create-account input[type='email']:hover, .create-account input[type='password']:hover, .create-account input[type='text']:hover,
 #login-form input[type='email']:hover,
 #login-form input[type='password']:hover,
-#login-form input[type='text']:hover, .search-menu input[type='text']:hover, .search.row input[type='date']:hover, .search.row input[type='number']:hover, .search.row input[type='text']:hover, #share-link input[type='text']:hover, .admin-container .controls.username input[type='text']:hover, .admin-controls input[type='text']:hover, div.badges .form-horizontal input[type='text']:hover, div.groups .form-horizontal input[type='text']:hover, div.web-hook-container .form-horizontal input[type='text']:hover, .admin-container div.emoji input[type='text']:hover, .content-editor .email-template input[type='text']:hover, .customize .show-current-style h1 input[type='text']:hover, .email-preview-digest .controls input[type='text']:hover, .permalink-title ~ div input[type='text']:hover, .settings .setting .ac-wrap input[type='text']:hover, .settings .setting .input-setting-string:hover, .site-texts .search-area .site-text-search:hover, .value-list input[type='text']:hover, .value-list .value:hover {
+#login-form input[type='text']:hover, .search-menu input[type='text']:hover, .search.row input[type='date']:hover, .search.row input[type='number']:hover, .search.row input[type='text']:hover, #share-link input[type='text']:hover, .admin-container .controls.username input[type='text']:hover, .admin-controls input[type='text']:hover, .admin-customize .show-current-style h1 input[type='text']:hover, div.badges .form-horizontal input[type='text']:hover, div.groups .form-horizontal input[type='text']:hover, div.web-hook-container .form-horizontal input[type='text']:hover, .admin-container div.emoji input[type='text']:hover, .content-editor .email-template input[type='text']:hover, .email-preview-digest .controls input[type='text']:hover, .permalink-title ~ div input[type='text']:hover, .settings .setting .ac-wrap input[type='text']:hover, .settings .setting .input-setting-string:hover, .site-texts .search-area .site-text-search:hover, .value-list input[type='text']:hover, .value-list .value:hover {
   padding-bottom: 18px;
 }
 
@@ -678,7 +677,7 @@ aside.onebox .onebox-body h4, .user-main .about.collapsed-info .details .primary
   line-height: 1.5;
 }
 
-h6, div.poll .poll-info .info-text, .category-list tbody .category h3, .small-action .small-action-desc, .topic-map h3, .settings .setting h3 {
+h6, div.poll .poll-info .info-text, .select-kit.dropdown-select-box .select-kit-row .texts .name, .category-list tbody .category h3, .small-action .small-action-desc, .topic-map h3, .settings .setting h3 {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
@@ -692,8 +691,7 @@ h6, div.poll .poll-info .info-text, .category-list tbody .category h3, .small-ac
   line-height: 1.428571;
 }
 
-body .form-vertical .control-label, .autocomplete ul li a span.name, .select2-drop .category-desc,
-.select2-drop .topic-count, .menu-panel b.topics-count, .period-chooser h2 .top-date-string, .period-chooser #period-popup ul li .top-date-string, .gap, .topic-map h4, .topic-map .avatars .post-count, .links-section .domain, .user-main .user-stream .time, .user-preferences .instructions, .admin-contents div.badges .current-badge p.help, .content-list h3, .content-list ul li a span.count, .customize .status-message, .settings .setting .desc,
+body .form-vertical .control-label, .autocomplete ul li a span.name, .select-kit.dropdown-select-box .select-kit-row .texts .desc, .select-kit .category-row .category-desc, .menu-panel b.topics-count, .search-menu .search-link .blurb, .period-chooser.dropdown-select-box.select-kit .period-chooser-header h2.selected-name .top-date-string, .period-chooser.dropdown-select-box.select-kit .period-chooser-row .top-date-string, .gap, .topic-map h4, .topic-map .avatars .post-count, .links-section .domain, .user-main .user-stream .time, .user-preferences .instructions, .admin-customize .status-message, .admin-contents div.badges .current-badge p.help, .content-list h3, .content-list ul li a span.count, .settings .setting .desc,
 .settings .setting .validation-error {
   font-size: 12px;
   font-weight: 400;
@@ -927,9 +925,13 @@ sup {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-top: 0;
+  padding: 0 12px 0 0;
+}
+.suggested-topics-message .badge-wrapper.box {
+  vertical-align: middle;
 }
 .badge-wrapper.box span.badge-category {
-  color: $primary !important;
+  color: inherit !important;
   margin: 0;
   padding: 0;
 }
@@ -1070,7 +1072,7 @@ pre .hljs {
   max-width: none;
   width: calc(100% + 32px);
 }
-.cooked img:not(.thumbnail) {
+.cooked img:not(.avatar):not(.thumbnail) {
   height: auto;
   max-width: 100%;
 }
@@ -1172,12 +1174,6 @@ aside.quote blockquote {
 }
 aside.quote .quote-controls {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-}
-aside.quote .quote-controls .back::before,
-aside.quote .quote-controls .quote-other-topic::before {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  content: 'arrow_upward';
-  margin-left: 8px;
 }
 aside.quote .title {
   background-color: color-chooser(#212121, #f5f5f5);
@@ -1547,15 +1543,22 @@ body .input-prepend .add-on + input {
 div.ac-wrap {
   -ms-flex-align: center;
       align-items: center;
-  background-color: transparent;
-  border: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 4px;
   min-height: 36px;
   min-width: 200px;
-  padding: 0;
+  padding: 18px 16px;
+}
+div.ac-wrap:hover {
+  border-width: 2px;
+  padding: 17px 15px;
+}
+.admin-controls div.ac-wrap {
+  padding: 1px 1px 1px 5px;
+}
+.admin-controls div.ac-wrap:hover {
+  padding: 0 0 0 4px;
 }
 div.ac-wrap div.item {
   -ms-flex-align: center;
@@ -1682,43 +1685,62 @@ div.ac-wrap input[type='text'] {
 }
 
 .d-editor-button-bar {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
+  border-bottom: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
   margin: 0;
-  padding: 8px 0;
+  min-height: 0;
+  padding: 8px 8px;
 }
-.d-editor-button-bar button {
+.d-editor-button-bar .btn {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
   margin: 0;
   min-width: 0;
   padding-right: 8px;
   padding-left: 8px;
 }
-
-.d-editor-container {
-  background-color: color-chooser(#212121, #f5f5f5);
-  border-radius: 2px;
-  padding: 0 16px 16px;
+.d-editor-button-bar .btn:focus, .d-editor-button-bar .btn:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  background-image: none;
+  color: color-chooser($primary, $primary);
+}
+.d-editor-button-bar .btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  background-image: none;
 }
 
 .d-editor-preview {
   border: 1px dotted color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
   border-radius: 4px;
-  margin: 16px 0 0;
-  padding: 20px 16px;
+  margin: 0;
+  padding: 16px 16px;
 }
 .d-editor-preview > :last-child {
   margin-bottom: 0;
+}
+
+.d-editor-preview-wrapper {
+  margin-left: 16px;
+  max-width: calc(50% - 8px);
+}
+.edit-title .d-editor-preview-wrapper {
+  margin-top: -52px;
 }
 
 .d-editor-spacer {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   height: 32px;
   margin: 0 4px;
+}
+
+.d-editor-textarea-wrapper {
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 4px;
+  display: block;
 }
 
 .auto-update-input-selector-datetime {
@@ -1757,195 +1779,139 @@ div.ac-wrap input[type='text'] {
   margin-right: 16px;
 }
 
-.select2-container {
-  border: 0;
-  border-radius: 0;
-  max-width: 100%;
-  width: auto !important;
+.select-kit .select-kit-body, .select-kit.category-drop.combo-box .select-kit-body, .select-kit.dropdown-select-box .select-kit-body, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-body {
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.select2-container.select2-allowclear a.select2-choice > .select2-chosen {
-  margin-right: 4px;
+.select-kit .select-kit-collection, .select-kit.category-drop.combo-box .select-kit-collection, .select-kit.dropdown-select-box .select-kit-collection, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-collection {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-.select2-container.select2-allowclear a.select2-choice > .select2-chosen:empty {
-  display: none;
+.select-kit.category-drop.combo-box .select-kit-row:not(.no-content), .select-kit.combo-box .select-kit-row:not(.no-content), .select-kit.dropdown-select-box .select-kit-row:not(.no-content) {
+  padding: 6.25px 24px;
 }
-.select2-container.select2-container-active {
-  box-shadow: none;
-  margin-bottom: 0;
-}
-.select2-container.select2-container-active a.select2-choice {
-  border-radius: 2px 2px 0 0;
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-}
-.select2-container.select2-container-active a.select2-choice::before {
-  border-radius: 2px 2px 0 0;
-  opacity: 1;
-}
-.select2-container.select2-container-disabled a {
-  background-color: #f4f4f4 !important;
-  background-image: none !important;
-  box-shadow: none !important;
-}
-.select2-container.select2-drop-above a.select2-choice {
-  border: 0;
-}
-.select2-container.select2-drop-above a.select2-choice, .select2-container.select2-drop-above a.select2-choice::before {
-  border-radius: 0 0 2px 2px;
-}
-.select2-container.select2-dropdown-open {
-  margin-bottom: 0;
-}
-.select2-container a.select2-choice {
+.select-kit.category-drop.combo-box .category-drop-header, .select-kit.combo-box .select-kit-header {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
   display: flex;
   height: 36px;
 }
-.select2-container a.select2-choice abbr {
-  font-size: inherit !important;
-  line-height: inherit !important;
-  background-image: none;
-  height: auto;
-  margin-left: 4px;
-  -ms-flex-order: 1;
-      order: 1;
-  position: relative;
-  top: auto;
-  right: auto;
-  width: auto;
+.select-kit.category-drop.combo-box .category-drop-header .fa, .select-kit.combo-box .select-kit-header .fa {
+  background-color: transparent !important;
 }
-.select2-container a.select2-choice abbr::before {
-  content: "close";
+.select-kit.category-drop.combo-box .select-kit-collection .collection-header .category-filter:focus, .select-kit.category-drop.combo-box .select-kit-collection .collection-header .category-filter:hover {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  text-decoration: none;
 }
-.select2-container a.select2-choice > .select2-chosen {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 36px;
-  margin: -11px 4px -11px 0;
-}
-.select2-container a.select2-choice > .select2-chosen:empty {
-  display: none;
-}
-.select2-container a.select2-choice .select2-arrow {
-  border-radius: 0;
-  height: auto;
-  margin-left: auto;
-  position: static;
-  width: auto;
-}
-.select2-container a.select2-choice .select2-arrow b {
-  background-color: transparent;
-  background-image: none;
-  height: auto;
-}
-.select2-container a.select2-choice .select2-arrow b::before {
-  content: 'arrow_drop_down';
-}
-
-.select2-container-multi.select2-container-active {
+.select-kit.category-drop.combo-box.is-expanded .category-drop-header, .select-kit.combo-box .select-kit-header.is-focused {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   border: 0;
-}
-.select2-container-multi.select2-container-active .select2-choices {
-  border: 0;
-  border-bottom: 2px solid $tertiary;
-  box-shadow: none;
-  padding-bottom: 1px;
-}
-.select2-container-multi .select2-choices {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border: 0;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
-  border-radius: 4px;
-  min-height: 56px;
-  padding: 1px 1px 2px;
-}
-.select2-container-multi .select2-choices:hover {
-  border-bottom-width: 2px;
-  padding-bottom: 1px;
-}
-.select2-container-multi .select2-choices .select2-search-choice {
-  font-size: 14px;
-  line-height: 1;
-  margin: 2px;
-  padding-top: 2px;
-  padding-right: 4px;
-  padding-bottom: 2px;
-}
-.select2-container-multi .select2-choices .select2-search-field input {
-  height: auto;
-  margin: 2px;
-  padding: 0;
-}
-
-.select2-default {
-  color: color-chooser($primary, $primary) !important;
-}
-
-.select2-drop.select2-drop-above {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
-.select2-drop.select2-drop-above.select2-drop-active {
+.select-kit.combo-box.is-expanded.is-above .select-kit-body {
+  border-radius: 2px 2px 0 0;
+}
+.select-kit.combo-box.is-expanded.is-above .select-kit-header {
+  border-radius: 0 0 2px 2px;
+}
+.select-kit.combo-box.is-expanded .select-kit-body {
+  border-radius: 0 0 2px 2px;
+}
+.select-kit.combo-box.is-expanded .select-kit-header {
+  border-radius: 2px 2px 0 0;
+}
+.select-kit.combo-box.is-expanded .select-kit-wrapper {
+  border: 0;
+  box-shadow: none;
+}
+.select-kit.combo-box .select-kit-filter {
   border-top: 0;
+  line-height: inherit;
+  padding: 6.25px 24px;
 }
-.select2-drop .category-desc {
-  margin-top: 3.125px;
+.select-kit.combo-box .select-kit-filter .filter-input {
+  margin-right: 8px;
 }
-
-.select2-results {
+.select-kit.combo-box .select-kit-row {
   margin: 0;
+}
+.select-kit.composer-actions.dropdown-select-box .select-kit-header {
+  margin-right: 4px;
+  opacity: 0.7;
+}
+.select-kit.composer-actions.dropdown-select-box .select-kit-header:focus, .select-kit.composer-actions.dropdown-select-box .select-kit-header:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+.select-kit.composer-actions.dropdown-select-box .select-kit-header.is-focused {
+  opacity: 1;
+}
+.select-kit.composer-actions.dropdown-select-box .select-kit-header .d-icon {
+  border: 0;
   padding: 0;
 }
-.select2-results .select2-highlighted {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+.select-kit.dropdown-select-box.is-expanded .select-kit-body,
+.select-kit.dropdown-select-box.is-expanded .select-kit-collection {
+  border-radius: 2px;
 }
-.select2-results .select2-no-results {
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row {
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0;
+  transition: none;
+}
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row .d-icon,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row .texts .desc,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row .texts .name, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-highlighted .d-icon,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-highlighted .texts .desc,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-highlighted .texts .name {
+  color: inherit;
+}
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row:focus, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row:hover, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-highlighted, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-highlighted.is-selected, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-selected {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  color: inherit;
+}
+.select-kit.dropdown-select-box .dropdown-select-box-header:focus .d-icon, .select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
+  color: inherit;
+}
+.select-kit.dropdown-select-box .dropdown-select-box-header.is-focused {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  outline: 0;
+}
+.select-kit.dropdown-select-box .select-kit-row .icons {
+  margin-top: 0;
+  margin-right: 8px;
+  width: auto;
+}
+.select-kit.dropdown-select-box .select-kit-row .texts {
+  line-height: 1;
+}
+.settings .setting .setting-value .select-kit {
+  margin-bottom: 8px;
+}
+.select-kit .d-icon {
+  opacity: 0.7;
+}
+.select-kit .d-icon:focus, .select-kit .d-icon:hover {
+  opacity: 1;
+}
+.select-kit .select-kit-collection {
   background-color: transparent;
 }
-
-.select2-search {
-  display: block;
-  min-height: 0;
-  padding-right: 16px;
-  padding-left: 16px;
+.select-kit .select-kit-header .caret-icon {
+  margin-right: -2px;
+  margin-left: 4px;
 }
-.select2-search input[type='text'] {
-  height: 56px !important;
-  margin-bottom: 12.5px;
+.select-kit .select-kit-header .selected-name .badge-wrapper {
+  margin-right: 0;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
 }
-
-.select2-search-choice-close {
-  font-size: inherit !important;
-  line-height: inherit !important;
-  background-image: none;
-  color: $primary;
-  height: 14px;
-  top: 3px;
-  width: 14px;
-}
-.select2-search-choice-close::before {
-  content: "close";
-}
-.select2-search-choice-close:focus, .select2-search-choice-close:hover {
-  color: $tertiary;
-}
-.select2-search-choice-close::before {
-  font-size: inherit;
-  line-height: 1;
-  vertical-align: top;
-}
-
-.select-box {
-  border-radius: 2px;
-  height: 36px;
-}
-.select-box .select-box-collection {
-  background-color: color-chooser(#424242, #ffffff);
-}
-.select-box .select-box-header {
-  border-radius: 2px;
+.select-kit .select-kit-row {
+  line-height: 1.428571;
 }
 
 .d-header {
@@ -2018,13 +1984,19 @@ div.ac-wrap input[type='text'] {
 }
 .d-header .extra-info-wrapper {
   margin-left: 8px;
-  overflow: visible;
 }
 .d-header .extra-info-wrapper .badge-wrapper {
   margin-right: 0;
   margin-left: 8px;
 }
 .d-header .extra-info-wrapper .badge-wrapper.bullet {
+  margin-top: 0;
+}
+.d-header .header-buttons {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0;
 }
 .d-header .icons {
@@ -2065,10 +2037,13 @@ div.ac-wrap input[type='text'] {
 .d-header .icons .icon:focus {
   outline: 0;
 }
-.drop-down-visible .d-header .icons .active .icon {
+.drop-down-mode .d-header .icons .active .icon, .drop-down-visible .d-header .icons .active .icon {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   border: 0;
   color: inherit;
+}
+.drop-down-mode .d-header .icons .active .icon::after, .drop-down-visible .d-header .icons .active .icon::after {
+  display: none;
 }
 .d-header .panel {
   margin-left: auto;
@@ -2087,8 +2062,9 @@ div.ac-wrap input[type='text'] {
 .d-header .title-wrapper {
   -ms-flex-align: center;
       align-items: center;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: auto;
 }
 
 #main-outlet {
@@ -2100,12 +2076,16 @@ div.ac-wrap input[type='text'] {
 ol.category-breadcrumb {
   margin: 0 0 8px;
 }
-ol.category-breadcrumb li {
+ol.category-breadcrumb > li {
   display: -ms-flexbox;
   display: flex;
   margin-right: 8px;
   max-width: 222px;
   position: relative;
+}
+
+.category-drop.combo-box.select-kit .badge-wrapper.box span.badge-category {
+  margin-left: 36px;
 }
 
 .category-navigation {
@@ -2133,61 +2113,8 @@ ol.category-breadcrumb li {
   font-weight: 500;
   margin: 0 0 8px 8px;
 }
-.list-controls .category-breadcrumb > li {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-}
-.list-controls .category-breadcrumb > li > a.dropdown-header {
-  border-radius: 2px 0 0 2px;
-  box-shadow: none;
-}
-.list-controls .category-breadcrumb > li > a.dropdown-header::before {
-  border-radius: 2px 0 0 2px;
-}
-.list-controls .category-breadcrumb > li > a.dropdown-header:not(.category-dropdown-button) {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.list-controls .category-breadcrumb > li > a.dropdown-header.category-dropdown-button {
-  border-left: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 0 2px 2px 0;
-  margin-left: -1px;
-  padding: 11px 8px;
-  width: auto;
-}
-.list-controls .category-breadcrumb > li > a.dropdown-header.category-dropdown-button::before {
-  border-radius: 0 2px 2px 0;
-}
-.list-controls .category-breadcrumb > li > a.dropdown-header.category-dropdown-button .fa-caret-right {
-  margin-left: 0;
-}
-.list-controls .category-dropdown-menu {
-  min-width: 100%;
-  padding-right: 24px;
-  padding-left: 24px;
-}
-.list-controls .category-dropdown-menu a.badge-category {
-  padding-right: 0;
-  padding-left: 0;
-}
-.list-controls .category-dropdown-menu .badge-category.home {
-  margin-left: 0;
-}
-.list-controls .category-dropdown-menu .badge-wrapper.box, .list-controls .category-dropdown-menu .badge-wrapper.bullet {
-  margin-right: 0;
-}
-.list-controls .category-dropdown-menu .badge-wrapper.box span.badge-category {
-  padding: 0;
-}
-.list-controls .category-dropdown-menu .badge-wrapper.bullet {
-  padding: 0 12px 0 0;
-}
-.list-controls .category-dropdown-menu .cat + .cat {
-  margin-top: 12.5px;
-}
-.list-controls .category-dropdown-menu .home {
-  margin-left: 16px;
+.list-controls .categories-admin-dropdown.select-kit .btn {
+  margin-bottom: 0;
 }
 .list-controls .nav {
   margin: 0 auto 8px 0;
@@ -2197,11 +2124,6 @@ ol.category-breadcrumb li {
 }
 .list-controls .nav > li > a {
   text-transform: uppercase;
-}
-.list-controls .select-box {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-bottom: 8px;
 }
 
 .caps-lock-warning.invisible {
@@ -2300,6 +2222,10 @@ ol.category-breadcrumb li {
 #login-form td:first-child:not(:empty) {
   padding-top: 18.000003px;
 }
+#login-form #forgot-password-link {
+  display: block;
+  margin-top: 18.000003px;
+}
 
 .login-modal .btn-primary {
   margin-bottom: 0;
@@ -2329,6 +2255,14 @@ ol.category-breadcrumb li {
 }
 .fa-arrow-down::before {
   content: "arrow_downward";
+}
+
+.fa-arrow-up {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-arrow-up::before {
+  content: "arrow_upward";
 }
 
 .fa-asterisk {
@@ -2705,6 +2639,14 @@ ol.category-breadcrumb li {
 }
 .fa-folder::before {
   content: "archive";
+}
+
+.fa-gavel {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-gavel::before {
+  content: "gavel";
 }
 
 .fa-gear {
@@ -3144,7 +3086,10 @@ div.menu-links-header .menu-links-row {
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
   color: $primary;
   outline: 0;
-  padding: 20px 24px;
+  padding: 0;
+}
+.menu-panel.drop-down {
+  right: 0;
 }
 .menu-panel.slide-in {
   right: 8px;
@@ -3190,6 +3135,10 @@ div.menu-links-header .menu-links-row {
   padding: 4px 8px;
   width: 50%;
 }
+.menu-panel ul li.category-link .badge-wrapper {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 .menu-panel ul li.heading a {
   padding: 8px 8px;
 }
@@ -3198,6 +3147,10 @@ div.menu-links-header .menu-links-row {
 }
 .menu-panel ul li.heading a:focus {
   outline: 0;
+}
+.menu-panel .panel-body {
+  max-height: calc(100vh - 72px);
+  padding: 20px 24px;
 }
 
 .search-menu input[type='text'] {
@@ -3211,16 +3164,16 @@ div.menu-links-header .menu-links-row {
 .search-menu li:not(.category):not(.heading):hover a:not(.badge-notification) {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-.search-menu li:not(.category):not(.heading) a {
+.search-menu li:not(.category):not(.heading) a:not(.discourse-tag) {
   padding: 8px 8px;
 }
-.search-menu li:not(.category):not(.heading) a:focus, .search-menu li:not(.category):not(.heading) a:hover {
+.search-menu li:not(.category):not(.heading) a:not(.discourse-tag):focus, .search-menu li:not(.category):not(.heading) a:not(.discourse-tag):hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-.search-menu li:not(.category):not(.heading) a:focus {
+.search-menu li:not(.category):not(.heading) a:not(.discourse-tag):focus {
   outline: 0;
 }
-.search-menu li:not(.category):not(.heading) a .topic {
+.search-menu li:not(.category):not(.heading) a:not(.discourse-tag) .topic {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
@@ -3244,21 +3197,24 @@ div.menu-links-header .menu-links-row {
   margin-top: 8px;
   padding: 0;
 }
-.search-menu .searching {
-  position: static;
+.search-menu .search-link .topic-statuses .fa {
+  margin-right: 4px;
+  padding-right: 0;
 }
-.drop-down-visible .search-menu .searching {
-  top: 38px;
-  right: 24px;
+.search-menu .search-link .topic-title {
+  margin-right: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search-menu .searching, .drop-down-mode .search-menu .searching, .drop-down-visible .search-menu .searching {
+  top: 20px;
+  right: 16px;
 }
 .search-menu .searching .spinner {
   border-color: currentColor;
   border-right-color: transparent;
   height: 16px;
-  margin-top: 0;
-  position: absolute;
-  top: 40px;
-  right: 40px;
   width: 16px;
 }
 
@@ -3267,6 +3223,13 @@ div.menu-links-header .menu-links-row {
 }
 .user-menu .notifications li:hover {
   background-color: transparent;
+}
+.user-menu .notifications li:not(.show-all) {
+  padding: 0;
+}
+.user-menu .notifications li:not(.show-all) i {
+  margin-right: 8px;
+  padding-top: 0;
 }
 .user-menu .notifications li a {
   display: block;
@@ -3297,6 +3260,9 @@ div.menu-links-header .menu-links-row {
 }
 .user-menu .notifications .read {
   background-color: transparent;
+}
+.user-menu .notifications .show-all .btn {
+  padding: 9.5px 0;
 }
 
 .bootbox.modal,
@@ -3439,6 +3405,9 @@ div.menu-links-header .menu-links-row {
 .modal-body {
   padding: 20px 24px 24px;
 }
+.modal-body > form:last-child {
+  margin-bottom: 0;
+}
 
 .modal-close {
   margin: 4px 0 0 auto;
@@ -3461,6 +3430,9 @@ div.menu-links-header .menu-links-row {
 }
 body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   color: $tertiary;
+}
+.modal-footer .btn {
+  margin: 0;
 }
 .modal-footer .btn:first-child {
   margin-left: 8px;
@@ -3742,6 +3714,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 @media (min-width: 1111px) {
   #reply-control {
     border-radius: 4px 4px 0 0;
+    margin-right: 0;
     right: 1px;
   }
 }
@@ -3750,15 +3723,26 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
     right: 24px;
   }
 }
+#reply-control.closed {
+  display: none;
+}
 #reply-control.draft {
+  background-color: color-chooser(#ffffff, #424242);
   border-top: 0;
+  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
   height: auto !important;
+  left: auto;
   text-align: center;
+  width: auto;
+}
+#reply-control.draft .composer-controls {
+  padding-right: 16px;
+  padding-left: 16px;
 }
 #reply-control.draft .draft-text {
-  padding: 11px 16px;
+  padding: 6.000003px 16px;
 }
-#reply-control.draft .draft-text:hover {
+#reply-control.draft .draft-text:focus, #reply-control.draft .draft-text:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 #reply-control.draft .draft-text:active {
@@ -3770,10 +3754,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   width: auto;
 }
 #reply-control.draft .toggler {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   height: 24px;
-  margin-top: -12px;
-  top: 50%;
   width: 24px;
 }
 #reply-control.draft .toggler::before {
@@ -3787,6 +3768,9 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control.edit-title .contents input#reply-title:focus, #reply-control.edit-title .contents input#reply-title:hover {
   padding-bottom: 16px;
+}
+#reply-control.hide-preview {
+  max-width: 1110px;
 }
 #reply-control.open .grippie {
   display: -ms-flexbox;
@@ -3807,8 +3791,12 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   margin-bottom: 0;
 }
 #reply-control .category-input {
+  margin: 0;
   padding-right: 16px;
   padding-left: 16px;
+}
+#reply-control .composer-bottom-right {
+  padding-left: 8px;
 }
 #reply-control .composer-fields {
   -ms-flex-align: center;
@@ -3819,67 +3807,6 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
       flex-shrink: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-#reply-control .contents {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0;
-  width: 1110px;
-}
-#reply-control .contents .control {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-}
-#reply-control .contents .form-element {
-  -ms-flex-align: center;
-      align-items: center;
-  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-}
-#reply-control .contents .form-element .select2-container {
-  margin: 0;
-  text-align: right;
-}
-#reply-control .contents .form-element .select2-container a {
-  height: 36px;
-  padding-top: 11px;
-}
-#reply-control .contents .form-element .select2-container b {
-  margin-top: 0;
-}
-#reply-control .contents #reply-title {
-  margin: 0;
-}
-#reply-control .contents #reply-title:focus {
-  outline: 0;
-}
-#reply-control .contents .submit-panel {
-  -ms-flex-align: center;
-      align-items: center;
-  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  padding: 16px 16px 16px;
-  position: static;
-  width: auto;
-}
-#reply-control .contents .submit-panel .cancel {
-  margin-left: 8px;
 }
 #reply-control .control-row {
   display: -ms-flexbox;
@@ -3902,39 +3829,38 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   border: 0;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   height: auto;
-  padding: 8px 4px;
 }
-body #reply-control .d-editor-button-bar button,
-body #reply-control .d-editor-button-bar .btn {
+#reply-control .d-editor-button-bar button,
+#reply-control .d-editor-button-bar .btn {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  padding: 9.5px 8px;
 }
-body #reply-control .d-editor-button-bar button:focus, body #reply-control .d-editor-button-bar button:hover,
-body #reply-control .d-editor-button-bar .btn:focus,
-body #reply-control .d-editor-button-bar .btn:hover {
+#reply-control .d-editor-button-bar button:focus, #reply-control .d-editor-button-bar button:hover,
+#reply-control .d-editor-button-bar .btn:focus,
+#reply-control .d-editor-button-bar .btn:hover {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
 #reply-control .d-editor-button-bar .btn.heading {
   font-family: inherit;
   font-weight: 500;
 }
+#reply-control .d-editor-button-bar .toolbar-popup-menu-options .btn.select-kit-header {
+  padding: 9.5px 8px;
+}
 #reply-control .d-editor-container {
   background-color: transparent;
   border-radius: 0;
+  padding: 0;
 }
 #reply-control .d-editor-preview {
   border-radius: 0;
 }
-#reply-control #draft-status {
+#reply-control .d-editor-textarea-wrapper {
   background-color: transparent;
-  color: $tertiary;
-  font-size: 0.857143 em;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  right: 50%;
-  bottom: 68px;
+  border: 0;
 }
-#reply-control #draft-status:empty {
-  display: none;
+#reply-control .dropdown-select-box {
+  height: auto;
 }
 #reply-control .grippie {
   -ms-flex-align: center;
@@ -3964,24 +3890,19 @@ body #reply-control .d-editor-button-bar .btn:hover {
   content: 'keyboard_arrow_left';
 }
 #reply-control .reply-area {
+  height: 100%;
   margin: 0;
-  max-width: none;
+  padding: 16px 16px;
 }
 #reply-control .reply-area .ac-wrap {
   margin-right: 16px;
 }
-#reply-control .reply-to {
-  -ms-flex-align: center;
-      align-items: center;
-  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
-  display: -ms-flexbox;
-  display: flex;
-  height: 32px;
+#reply-control #reply-title {
   margin: 0;
-  max-width: none;
-  position: absolute;
-  top: 0;
-  left: 8px;
+}
+#reply-control .reply-to {
+  color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
+  margin: 0;
 }
 #reply-control .reply-to a {
   color: color-chooser(rgba(0, 0, 0, 0.54), rgba(255, 255, 255, 0.7));
@@ -3990,6 +3911,59 @@ body #reply-control .d-editor-button-bar .btn:hover {
   margin-right: 4px;
   margin-left: 4px;
 }
+#reply-control .reply-to .composer-action-title img.avatar {
+  margin-right: 4px;
+}
+#reply-control .reply-to .composer-action-title .avatar {
+  vertical-align: bottom;
+}
+#reply-control .reply-to .composer-action-title .d-icon,
+#reply-control .reply-to .composer-action-title .user-link {
+  margin-right: 0;
+}
+#reply-control .reply-to .composer-controls {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+#reply-control .reply-to .reply-details {
+  max-width: calc(50% - 20px);
+  position: absolute;
+  top: 6.000003px;
+  left: 16px;
+}
+#reply-control .reply-to .select-kit.composer-actions.dropdown-select-box .select-kit-header.is-focused {
+  background-color: transparent;
+}
+#reply-control .save-or-cancel {
+  width: calc(50% + 8px);
+}
+#reply-control .save-or-cancel #draft-status {
+  color: $tertiary;
+}
+#reply-control .save-or-cancel #draft-status:empty {
+  display: none;
+}
+#reply-control .submit-panel {
+  -ms-flex-align: center;
+      align-items: center;
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  padding: 16px 0 0;
+}
+#reply-control .submit-panel .btn {
+  margin-right: 0;
+}
+#reply-control .submit-panel .cancel {
+  margin-left: 8px;
+}
+#reply-control .title-and-category {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 16px;
+}
 #reply-control .title-input {
   -ms-flex-positive: 1;
       flex-grow: 1;
@@ -3997,10 +3971,6 @@ body #reply-control .d-editor-button-bar .btn:hover {
       order: -1;
 }
 #reply-control .toggle-preview {
-  margin: 0;
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
   text-indent: 100%;
   width: 56px;
 }
@@ -4077,33 +4047,18 @@ body #reply-control .d-editor-button-bar .btn:hover {
 #reply-control .wmd-controls .d-editor-preview-header {
   background-color: transparent;
 }
-#reply-control .wmd-controls .d-editor-input,
-#reply-control .wmd-controls .d-editor-preview-header {
-  border-top-width: 48px;
-}
 #reply-control .wmd-controls .d-editor-input {
   border-top-color: transparent;
-  padding: 0 16px 16px;
+  padding: 0;
   position: static;
 }
 #reply-control .wmd-controls .d-editor-preview {
   border: 0;
   border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  padding: 16px 16px;
 }
-#reply-control .wmd-controls .d-editor-preview img:not(.thumbnail) {
+#reply-control .wmd-controls .d-editor-preview img:not(.avatar):not(.thumbnail) {
   height: auto;
   width: 100%;
-}
-#reply-control .wmd-controls .d-editor-preview-wrapper {
-  height: auto;
-  padding-left: 0;
-  position: static;
-}
-#reply-control .wmd-controls .d-editor-textarea-wrapper {
-  height: auto;
-  padding-right: 0;
-  position: static;
 }
 
 .fps-result {
@@ -4356,28 +4311,31 @@ body #reply-control .d-editor-button-bar .btn:hover {
 #list-area .top-lists h2 {
   margin: 0 0 16px;
 }
+#list-area .top-lists .period-chooser h2 {
+  display: inline;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
 
-.period-chooser {
-  -ms-flex-align: center;
-      align-items: center;
-  border-radius: 2px 2px 0 0;
-  display: -ms-flexbox;
-  display: flex;
+.period-chooser.dropdown-select-box.select-kit .period-chooser-header h2.selected-name .date-section {
+  margin-right: 4px;
 }
-.period-chooser button {
-  margin-bottom: 0;
-}
-.period-chooser h2 {
-  margin: 0 !important;
-}
-.period-chooser h2 .top-date-string {
+.period-chooser.dropdown-select-box.select-kit .period-chooser-header h2.selected-name .top-date-string {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  line-height: 1;
 }
-.period-chooser #period-popup ul li:hover {
-  background-color: transparent;
+.period-chooser.dropdown-select-box.select-kit .period-chooser-header .d-icon {
+  color: inherit;
+  margin: 0 -2px 0 4px;
 }
-.period-chooser #period-popup ul li .top-date-string {
+.period-chooser.dropdown-select-box.select-kit .period-chooser-row .top-date-string {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  line-height: 1;
+}
+.period-chooser.dropdown-select-box.select-kit .select-kit-collection {
+  padding: 16px 0;
 }
 
 .top-title-buttons button {
@@ -4387,6 +4345,7 @@ body #reply-control .d-editor-button-bar .btn:hover {
 
 .topic-bulk-actions-modal .bulk-buttons {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
+  display: block;
   margin-right: -24px;
   margin-left: -24px;
 }
@@ -4399,6 +4358,7 @@ body #reply-control .d-editor-button-bar .btn:hover {
   display: block;
   font-weight: normal;
   margin: 0 0 -1px;
+  max-width: none;
   padding: 20px 24px;
   text-align: inherit;
   text-transform: none;
@@ -4413,6 +4373,30 @@ body #reply-control .d-editor-button-bar .btn:hover {
 }
 .topic-bulk-actions-modal .modal-body:last-child {
   padding-bottom: 0;
+}
+.topic-bulk-actions-modal .modal-body:last-child > .btn:last-child {
+  float: right;
+  margin-right: -16px;
+  margin-bottom: 8px;
+}
+.topic-bulk-actions-modal .modal-body:last-child > .btn:last-child:not(:disabled) {
+  color: $tertiary;
+}
+.topic-bulk-actions-modal .modal-body:last-child > .btn:last-child:not(:disabled):focus, .topic-bulk-actions-modal .modal-body:last-child > .btn:last-child:not(:disabled):hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $tertiary;
+}
+.topic-bulk-actions-modal .modal-body:last-child .loading-container {
+  margin-right: -16px;
+  padding-bottom: 8px;
+  text-align: right;
+}
+.topic-bulk-actions-modal .modal-body:last-child .loading-container .btn:not(:disabled) {
+  color: $tertiary;
+}
+.topic-bulk-actions-modal .modal-body:last-child .loading-container .btn:not(:disabled):focus, .topic-bulk-actions-modal .modal-body:last-child .loading-container .btn:not(:disabled):hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $tertiary;
 }
 
 .top-lists + .topic-list {
@@ -4523,6 +4507,11 @@ body #reply-control .d-editor-button-bar .btn:hover {
 .topic-list .main-link a.title.visited:not(.badge-notification) {
   color: color-chooser($primary, $primary);
   font-weight: normal;
+}
+.topic-list .posters a:first-child .avatar.latest:not(.single) {
+  border: 0;
+  box-shadow: none;
+  position: static;
 }
 .topic-list .posters > a {
   float: none;
@@ -4693,7 +4682,7 @@ body #reply-control .d-editor-button-bar .btn:hover {
   font-size: inherit;
 }
 .latest-topic-list-item .main-link a.title {
-  font-weight: bold;
+  font-weight: 500;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -4702,6 +4691,7 @@ body #reply-control .d-editor-button-bar .btn:hover {
   font-weight: normal;
 }
 .latest-topic-list-item .main-link .top-row {
+  font-size: inherit;
   margin-bottom: 4px;
 }
 .latest-topic-list-item .topic-poster {
@@ -4761,10 +4751,8 @@ body #reply-control .d-editor-button-bar .btn:hover {
 }
 
 nav.post-controls {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
+  float: left;
+  position: relative;
 }
 nav.post-controls button {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
@@ -4795,8 +4783,8 @@ nav.post-controls button .read-icon::before {
 nav.post-controls .actions {
   -ms-flex-align: center;
       align-items: center;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   float: none;
   margin-right: -8px;
   margin-left: -8px;
@@ -4828,12 +4816,42 @@ nav.post-controls .show-replies i {
 }
 
 .embedded-posts {
+  border: 0;
+  border-radius: 0;
   margin-right: -16px;
   margin-left: -16px;
   position: relative;
 }
+.embedded-posts.bottom {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.embedded-posts.bottom .collapse-up {
+  -webkit-transform: none;
+          transform: none;
+}
 .embedded-posts.bottom .row {
-  padding-top: 0;
+  padding-bottom: 8px;
+}
+.embedded-posts.bottom .row .topic-avatar,
+.embedded-posts.bottom .row .topic-body {
+  border-top: 0;
+}
+.embedded-posts .collapse-up {
+  background-color: transparent;
+  border: 0;
+  color: color-chooser($primary, $primary);
+  margin: 0 8px 8px;
+  padding: 9.5px 8px;
+  position: static;
+}
+.embedded-posts .collapse-up:focus, .embedded-posts .collapse-up:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: color-chooser($primary, $primary);
+}
+.embedded-posts .collapse-up:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  background-image: none;
 }
 .embedded-posts .cooked {
   margin-top: 16px;
@@ -4873,6 +4891,31 @@ nav.post-controls .show-replies i {
   vertical-align: middle;
 }
 
+.post-actions {
+  -ms-flex-align: center;
+      align-items: center;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+.post-actions .post-action {
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  margin: 0;
+  padding: 16px 16px;
+}
+.post-actions .post-action .avatar {
+  height: 24px;
+  margin-right: 0;
+  margin-left: 8px;
+  width: 24px;
+}
+.post-actions .post-action .relative-date {
+  margin-left: 8px;
+}
+
 .post-links-container ul li {
   margin: 0.000003px 0;
   overflow: hidden;
@@ -4910,11 +4953,7 @@ nav.post-controls .show-replies i {
 }
 
 .small-action {
-  -ms-flex-align: center;
-      align-items: center;
   border-top: 0;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 8px;
   position: relative;
   width: 690px;
@@ -4926,19 +4965,16 @@ nav.post-controls .show-replies i {
 }
 .small-action button {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  font-size: 13px;
   margin-top: -6.000003px;
   margin-bottom: -6.000003px;
+  padding: 9.5px 8px;
+}
+.small-action button:first-child {
+  margin-right: -8px;
 }
 .small-action .small-action-desc {
-  -ms-flex-align: center;
-      align-items: center;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
   margin-top: 0;
   padding: 0 0 0 16px;
   text-transform: none;
@@ -4948,8 +4984,12 @@ nav.post-controls .show-replies i {
   display: block;
 }
 .small-action .small-action-desc > p {
+  line-height: 1;
   margin-right: auto;
+  overflow: hidden;
   padding: 0 8px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .small-action .small-action-desc .avatar {
   height: 24px;
@@ -4958,9 +4998,15 @@ nav.post-controls .show-replies i {
 }
 .small-action .small-action-desc .custom-message {
   font-size: inherit;
-  margin: 0;
+  margin-top: 8px;
+  width: 100%;
+}
+.small-action .small-action-desc .trigger-user-card ~ .custom-message {
+  padding-left: 32px;
 }
 .small-action .topic-avatar {
+  margin-top: 2.000003px;
+  margin-right: 0;
   padding: 0;
   position: static;
   width: auto;
@@ -4968,10 +5014,6 @@ nav.post-controls .show-replies i {
 .small-action .topic-avatar .fa {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
   width: auto;
-}
-.small-action .trigger-user-card {
-  -ms-flex-order: 1;
-      order: 1;
 }
 
 .topic-avatar {
@@ -5011,6 +5053,13 @@ nav.post-controls .show-replies i {
 }
 .topic-body .regular > :last-child {
   margin-bottom: 0;
+}
+.topic-body .reply-to-tab {
+  margin: 0 8px 0 0;
+}
+.topic-body .reply-to-tab .avatar {
+  height: 19.999994px;
+  width: 19.999994px;
 }
 
 #topic-footer-buttons {
@@ -5259,6 +5308,8 @@ nav.post-controls .show-replies i {
 }
 .topic-meta-data .post-info a {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  font-size: 13px;
+  padding: 9.5px 8px;
 }
 
 #topic-progress {
@@ -5388,15 +5439,20 @@ nav.post-controls .show-replies i {
   text-transform: none;
 }
 
+.summary-user-list li {
+  height: auto;
+}
+.summary-user-list li .user-info {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .top-section {
   margin-bottom: 24px;
-}
-.top-section:not(.badges-section):not(.stats-section) {
-  display: -ms-flexbox;
-  display: flex;
-}
-.top-section > :last-child {
-  margin-bottom: 0;
 }
 
 .top-sub-section {
@@ -5407,7 +5463,7 @@ nav.post-controls .show-replies i {
 .top-sub-section:first-child {
   margin-left: 0;
 }
-.top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.topics-section {
+.top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section {
   padding-bottom: 0;
 }
 .top-sub-section li {
@@ -5599,6 +5655,7 @@ nav.post-controls .show-replies i {
 .user-main .staff-counters > div:first-of-type {
   padding-left: 0;
 }
+.user-main .staff-counters > div a span,
 .user-main .staff-counters > div span {
   -ms-flex-align: center;
       align-items: center;
@@ -5919,6 +5976,12 @@ nav.post-controls .show-replies i {
           column-gap: 24px;
   margin-bottom: 16px;
 }
+.badges-section.top-section {
+  margin-bottom: 24px;
+}
+.badges-section.top-section > p .more {
+  margin-top: 8px;
+}
 .badges-section > h3,
 .badges-section > p {
   -webkit-column-span: all;
@@ -6126,6 +6189,27 @@ nav.post-controls .show-replies i {
 .admin-container {
   margin-top: 0;
 }
+.admin-customize-themes .admin-container {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+}
+.admin-container > .row {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+.admin-container > .row:not(.site-texts) {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .admin-container > .row:not(.site-texts) {
+    display: block;
+  }
+}
 .admin-container .controls.username {
   -ms-flex-align: center;
       align-items: center;
@@ -6149,10 +6233,6 @@ nav.post-controls .show-replies i {
 }
 .admin-container .controls.username input[type='text']:last-child {
   margin-right: 0;
-}
-.admin-container .controls.username .pull-right {
-  float: none;
-  text-align: right;
 }
 @media (max-width: 700px) {
   .admin-container .controls.username .pull-right {
@@ -6218,6 +6298,12 @@ nav.post-controls .show-replies i {
 .admin-controls.email-preview .controls > div:not(.toggle) {
   margin-right: 8px;
 }
+.admin-controls.email-preview .controls > div.ac-wrap {
+  width: auto !important;
+}
+.admin-controls.email-preview .controls > div.ac-wrap .item {
+  margin: 2px 4px 2px 0;
+}
 .admin-controls.email-preview .controls .toggle {
   margin-top: 0;
   margin-bottom: 8px;
@@ -6231,13 +6317,13 @@ nav.post-controls .show-replies i {
 .admin-controls label {
   margin-right: 8px;
 }
-.admin-controls .ac-wrap {
-  margin-bottom: 8px;
-  width: auto !important;
-}
-.admin-controls > .pull-right,
-.admin-controls > .span15 {
+.admin-controls > nav,
+.admin-controls > .nav,
+.admin-controls > .pull-right {
   margin: 0 0 16px;
+}
+.admin-controls > nav .nav {
+  margin-bottom: 0;
 }
 .admin-controls > .pull-right {
   display: -ms-flexbox;
@@ -6276,9 +6362,6 @@ nav.post-controls .show-replies i {
   margin-bottom: 8px;
   padding: 11px 16px;
 }
-.admin-controls .nav {
-  margin-bottom: 0;
-}
 .admin-controls .search {
   margin-left: 8px;
 }
@@ -6286,7 +6369,164 @@ nav.post-controls .show-replies i {
   margin-top: 0;
 }
 
+.admin-customize > .admin-container {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .admin-customize > .admin-container {
+    display: block;
+  }
+}
+.admin-customize .admin-container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.admin-customize .admin-container > .about {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  margin: 0;
+}
+.admin-customize .admin-footer {
+  margin-top: 24px;
+}
+.admin-customize .color-scheme .controls button {
+  margin-right: 8px;
+}
+.admin-customize .colors td.actions {
+  white-space: nowrap;
+  width: auto;
+}
+.admin-customize .colors .color-picker {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+.admin-customize .colors .hex-input {
+  margin-right: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.admin-customize .content-list {
+  float: none;
+}
+@media (max-width: 700px) {
+  .admin-customize .content-list {
+    background-color: color-chooser(#424242, #ffffff);
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+    margin-right: 0;
+    margin-bottom: 24px;
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 16px 16px;
+    width: 100%;
+  }
+}
+.admin-customize .current-style .toggle-maximize {
+  right: 8px;
+}
+.admin-customize .current-style .toggle-maximize > a {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.admin-customize .current-style .toggle-maximize > a .d-icon {
+  margin-right: 0;
+}
+.admin-customize .edit-main-nav {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+.admin-customize .edit-main-nav .nav.target {
+  margin: 0 24px 0 0;
+}
+.admin-customize .edit-main-nav .nav.target .fa {
+  margin-left: 4px;
+}
+.admin-customize .edit-main-nav .nav.target .fa-mobile {
+  position: static;
+}
+.admin-customize .edit-main-nav .show-overidden {
+  margin-left: auto;
+}
+.admin-customize .edit-main-nav .show-overidden label {
+  margin-bottom: 0;
+}
+.admin-customize .nav.nav-pills.fields {
+  margin-left: 0;
+}
+.admin-customize .removable-list li {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+.admin-customize .removable-list li .col:first-child {
+  margin-right: 8px;
+  min-width: 0;
+  padding: 0;
+}
+.admin-customize .removable-list li .col:last-child {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: auto;
+}
+.admin-customize .show-current-style {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  margin-left: 0;
+  min-width: 0;
+  width: auto;
+}
+.admin-customize .show-current-style h1,
+.admin-customize .show-current-style h2 {
+  margin-bottom: 16px;
+}
+.admin-customize .show-current-style h1 a,
+.admin-customize .show-current-style h2 a {
+  font-size: 14px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.admin-customize .show-current-style h3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.admin-customize .show-current-style table {
+  box-shadow: none;
+  margin-right: -16px;
+  margin-left: -16px;
+  max-width: calc(100% + 32px);
+  width: calc(100% + 32px);
+}
+.admin-customize .show-current-style table:last-child {
+  margin-bottom: 0;
+}
+.admin-customize .show-current-style table tr:last-child {
+  border-bottom: 0;
+}
+.admin-customize .show-current-style table .btn.invisible {
+  display: none;
+}
+.admin-customize .show-current-style .admin-controls {
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 16px;
+  padding: 0;
+}
+.admin-customize .status-message {
+  margin-top: 8px;
+}
+
 .admin-detail {
+  background-color: transparent;
   border-left: 0;
   padding: 0 0 0 24px;
   width: 80%;
@@ -6366,11 +6606,7 @@ div.badges .form-horizontal > div.group-flair-inputs input[type='text'], div.gro
   }
 }
 .admin-contents div.badges .current-badge {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  float: none;
   margin: 0;
-  width: auto;
 }
 div.badges .buttons {
   float: none;
@@ -6386,21 +6622,6 @@ div.badges .buttons {
 }
 .admin-container div.embeddable-hosts table td:last-child {
   white-space: nowrap;
-}
-.admin-container div.emoji {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-}
-.admin-contents div.groups {
-  -ms-flex-align: start;
-      align-items: flex-start;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media (max-width: 700px) {
-  .admin-contents div.groups {
-    display: block;
-  }
 }
 .admin-contents div.groups > .span13 {
   -ms-flex-positive: 1;
@@ -6440,10 +6661,16 @@ div.badges .buttons {
   margin-bottom: 0;
 }
 
+.content-body {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
 .content-editor {
   -ms-flex-positive: 1;
       flex-grow: 1;
   margin-left: 0;
+  min-height: 0;
   width: auto;
 }
 .content-editor > :last-child {
@@ -6453,25 +6680,27 @@ div.badges .buttons {
   margin-top: 16px;
 }
 .content-editor .controls .save-messages {
-  margin-top: 16px;
+  margin-top: 0;
 }
 .content-editor .controls .save-messages:empty {
   display: none;
 }
+.content-editor .controls .save-messages > div {
+  margin-top: 16px;
+}
 .content-editor .d-editor-input {
+  padding: 16px 16px;
   width: 100%;
 }
 
-.badges .content-list, .customize .content-list, .groups .content-list {
+.content-list {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 24px;
-}
-.badges .content-list, .groups .content-list {
-  float: none;
+  width: 20%;
 }
 @media (max-width: 700px) {
-  .badges .content-list, .groups .content-list {
+  .content-list {
     background-color: color-chooser(#424242, #ffffff);
     border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
@@ -6484,10 +6713,8 @@ div.badges .buttons {
     width: 100%;
   }
 }
-@media (max-width: 700px) {
-  .badges .content-list {
-    padding-bottom: 0;
-  }
+.content-list > br {
+  display: none;
 }
 .content-list h3 {
   font-weight: bolder;
@@ -6521,196 +6748,6 @@ div.badges .buttons {
   color: inherit;
 }
 
-.customize > .admin-container {
-  -ms-flex-align: start;
-      align-items: flex-start;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-@media (max-width: 700px) {
-  .customize > .admin-container {
-    display: block;
-  }
-}
-.customize > .admin-container > .row:not(.site-texts) {
-  -ms-flex-align: start;
-      align-items: flex-start;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-}
-.customize .admin-container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.customize .admin-container > .about {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  margin: 0;
-}
-.customize .admin-footer {
-  margin-top: 24px;
-}
-.customize .color-scheme .controls button {
-  margin-right: 8px;
-}
-.customize .colors td.actions {
-  white-space: nowrap;
-  width: auto;
-}
-.customize .colors .color-picker {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
-}
-.customize .colors .hex-input {
-  margin-right: 8px;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-.customize .content-list {
-  float: none;
-}
-@media (max-width: 700px) {
-  .customize .content-list {
-    background-color: color-chooser(#424242, #ffffff);
-    border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-    margin-right: 0;
-    margin-bottom: 24px;
-    max-height: 500px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 16px 16px;
-    width: 100%;
-  }
-}
-.customize .current-style {
-  float: none;
-}
-.customize .current-style.maximized .wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  top: 16px;
-  right: 16px;
-  bottom: 16px;
-  left: 16px;
-}
-.customize .current-style.maximized .wrapper > h2,
-.customize .current-style.maximized .wrapper > .admin-controls,
-.customize .current-style.maximized .wrapper > .admin-footer,
-.customize .current-style.maximized .wrapper > .edit-main-nav {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-.customize .current-style.maximized .wrapper > .ace-wrapper {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  height: 0;
-}
-.customize .current-style.maximized .wrapper .admin-footer {
-  position: static;
-}
-.customize .current-style .ace-wrapper {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-}
-.customize .current-style .status-actions {
-  margin-top: 8px;
-}
-.customize .edit-main-nav {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 24px;
-}
-.customize .edit-main-nav .nav.target {
-  margin: 0 24px 0 0;
-}
-.customize .edit-main-nav .nav.target .fa {
-  margin-left: 4px;
-}
-.customize .edit-main-nav .nav.target .fa-mobile {
-  position: static;
-}
-.customize .edit-main-nav .show-overidden {
-  margin-left: auto;
-}
-.customize .edit-main-nav .show-overidden label {
-  margin-bottom: 0;
-}
-.customize .nav.nav-pills.fields {
-  margin-left: 0;
-}
-.customize .removable-list li {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
-}
-.customize .removable-list li .col:first-child {
-  margin-right: 8px;
-  min-width: 0;
-  padding: 0;
-}
-.customize .removable-list li .col:last-child {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-left: auto;
-}
-.customize .show-current-style {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  margin-left: 0;
-  min-width: 0;
-  width: auto;
-}
-.customize .show-current-style h1,
-.customize .show-current-style h2 {
-  margin-bottom: 16px;
-}
-.customize .show-current-style h1 a,
-.customize .show-current-style h2 a {
-  font-size: 14px;
-  line-height: 1;
-  vertical-align: middle;
-}
-.customize .show-current-style h3 {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.customize .show-current-style table {
-  box-shadow: none;
-  margin-right: -16px;
-  margin-left: -16px;
-  max-width: calc(100% + 32px);
-  width: calc(100% + 32px);
-}
-.customize .show-current-style table:last-child {
-  margin-bottom: 0;
-}
-.customize .show-current-style table tr:last-child {
-  border-bottom: 0;
-}
-.customize .show-current-style table .btn.invisible {
-  display: none;
-}
-.customize .show-current-style .admin-controls {
-  border-radius: 0;
-  box-shadow: none;
-  margin-bottom: 16px;
-  padding: 0;
-}
-.customize .status-message {
-  margin-top: 8px;
-}
-
 @media (max-width: 700px) {
   .dashboard-left,
   .dashboard-right {
@@ -6730,6 +6767,28 @@ div.badges .buttons {
   .dashboard-stats {
     margin-right: 0;
   }
+}
+.dashboard-stats.detected-problems {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+.dashboard-stats.detected-problems .look-here {
+  margin: 12px 0 12px 12px;
+}
+.dashboard-stats.detected-problems .problem-messages {
+  margin-left: 0;
+  padding: 12px 12px;
+  width: 100%;
+}
+.dashboard-stats.detected-problems .problem-messages .actions {
+  margin-bottom: 0;
+}
+.dashboard-stats.detected-problems .problem-messages .actions small {
+  display: block;
+  margin-bottom: 6px;
 }
 .dashboard-stats.pull-right {
   box-shadow: none;
@@ -6848,9 +6907,6 @@ div.badges .buttons {
 }
 .permalink-title ~ div {
   width: 100%;
-}
-.permalink-title ~ div input[type='text'] {
-  margin-top: 8px;
 }
 
 .permalinks,
@@ -7011,6 +7067,9 @@ div.badges .buttons {
       flex-grow: 1;
   margin-bottom: 0;
   width: auto;
+}
+.value-list input[type='text'] + .btn {
+  margin-left: 8px;
 }
 .value-list .input {
   -ms-flex-align: center;
