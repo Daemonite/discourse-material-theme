@@ -75,6 +75,10 @@
     margin-top: 0;
     padding: 0 $chip-padding-x 0 0;
 
+    .suggested-topics-message & {
+      vertical-align: middle;
+    }
+
     span {
       &.badge-category {
         color: inherit !important;
