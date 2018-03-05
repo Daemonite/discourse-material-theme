@@ -183,6 +183,10 @@
 
 .modal-body {
   padding: $modal-inner-spacer-y $modal-padding-x $modal-padding-y;
+
+  > form:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .modal-close {

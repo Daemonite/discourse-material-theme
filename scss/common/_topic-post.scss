@@ -2,8 +2,8 @@ $topic-body-width: 690px !default;
 
 nav {
   &.post-controls {
-    align-items: center;
-    display: flex;
+    float: left;
+    position: relative;
 
     button {
       @extend %btn-flat;
@@ -50,7 +50,7 @@ nav {
 
     .actions {
       align-items: center;
-      display: flex;
+      display: inline-flex;
       float: none;
       margin-right: ($card-inner-spacer-x * -1);
       margin-left: ($card-inner-spacer-x * -1);
@@ -106,12 +106,47 @@ nav {
 }
 
 .embedded-posts {
+  border: 0;
+  border-radius: 0;
   margin-right: ($card-padding-x * -1);
   margin-left: ($card-padding-x * -1);
   position: relative;
 
-  &.bottom .row {
-    padding-top: 0;
+  &.bottom {
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+
+    .collapse-up {
+      transform: none;
+    }
+
+    .row {
+      padding-bottom: ($card-inner-spacer-y / 2);
+
+      .topic-avatar,
+      .topic-body {
+        border-top: 0;
+      }
+    }
+  }
+
+  .collapse-up {
+    background-color: transparent;
+    border: 0;
+    color: color-chooser($btn-color-dark, $btn-color-light);
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2);
+    padding: $btn-padding-y-sm $card-inner-spacer-x;
+    position: static;
+
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      color: color-chooser($btn-color-dark, $btn-color-light);
+    }
+
+    &:active {
+      background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+      background-image: none;
+    }
   }
 
   .cooked {
@@ -161,6 +196,31 @@ nav {
   }
 }
 
+.post-actions {
+  align-items: center;
+  color: color-chooser($white-secondary, $black-secondary);
+  display: flex;
+  margin-bottom: 0;
+
+  .post-action {
+    border-top: 1px solid color-chooser($white-divider, $black-divider);
+    flex-grow: 1;
+    margin: 0;
+    padding: $card-padding-y $card-padding-x;
+
+    .avatar {
+      height: $material-icon-size;
+      margin-right: 0;
+      margin-left: $card-inner-spacer-x;
+      width: $material-icon-size;
+    }
+
+    .relative-date {
+      margin-left: $card-inner-spacer-x;
+    }
+  }
+}
+
 .post-links-container {
   ul li {
     margin: (($btn-height + $card-padding-y - $card-padding-y * 2 - $font-size-base * $line-height-base) / 2) 0;
@@ -206,9 +266,7 @@ nav {
   @extend %card;
   @extend %card-block;
 
-  align-items: center;
   border-top: 0;
-  display: flex;
   margin-bottom: $card-margin-y;
   position: relative;
   width: $topic-body-width;
@@ -221,22 +279,22 @@ nav {
 
   button {
     @extend %btn-flat;
-    @extend %btn-footer;
-    @extend %btn-sm;
 
     color: color-chooser($white-secondary, $black-secondary);
+    font-size: $btn-font-size-sm;
     margin-top: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
     margin-bottom: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
+    padding: $btn-padding-y-sm $card-inner-spacer-x;
+
+    &:first-child {
+      margin-right: ($card-inner-spacer-x * -1);
+    }
   }
 
   .small-action-desc {
     @extend %typography-h6;
 
-    align-items: center;
     color: color-chooser($white-secondary, $black-secondary);
-    display: flex;
-    flex-direction: row-reverse;
-    flex-grow: 1;
     margin-top: 0;
     padding: 0 0 0 ($card-inner-spacer-x * 2);
     text-transform: none;
@@ -247,8 +305,12 @@ nav {
     }
 
     > p {
+      line-height: 1;
       margin-right: auto;
+      overflow: hidden;
       padding: 0 $card-inner-spacer-x 0 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .avatar {
@@ -259,11 +321,18 @@ nav {
 
     .custom-message {
       font-size: inherit;
-      margin: 0;
+      margin-top: ($card-inner-spacer-y / 2);
+      width: 100%;
+    }
+
+    .trigger-user-card ~ .custom-message {
+      padding-left: ($card-inner-spacer-x + $material-icon-size);
     }
   }
 
   .topic-avatar {
+    margin-top: (($material-icon-size - $font-size-base * $line-height-base) / 2);
+    margin-right: 0;
     padding: 0;
     position: static;
     width: auto;
@@ -272,10 +341,6 @@ nav {
       color: color-chooser($white-secondary, $black-secondary);
       width: auto;
     }
-  }
-
-  .trigger-user-card {
-    order: 1;
   }
 }
 
@@ -325,6 +390,15 @@ nav {
 
     > :last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .reply-to-tab {
+    margin: 0 $card-inner-spacer-x 0 0;
+
+    .avatar {
+      height: ($font-size-base * $line-height-base);
+      width: ($font-size-base * $line-height-base);
     }
   }
 }
@@ -653,10 +727,10 @@ nav {
 
     a {
       @extend %btn-flat;
-      @extend %btn-footer;
-      @extend %btn-sm;
 
       color: color-chooser($white-secondary, $black-secondary);
+      font-size: $btn-font-size-sm;
+      padding: $btn-padding-y-sm $card-inner-spacer-x;
     }
   }
 }

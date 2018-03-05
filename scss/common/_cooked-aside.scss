@@ -54,17 +54,6 @@ aside {
 
     .quote-controls {
       color: color-chooser($white-secondary, $black-secondary);
-
-      .back,
-      .quote-other-topic {
-        &::before {
-          @extend %material-icons;
-
-          color: color-chooser($white-secondary, $black-secondary);
-          content: 'arrow_upward';
-          margin-left: $card-inner-spacer-x;
-        }
-      }
     }
 
     .title {

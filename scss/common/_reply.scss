@@ -418,7 +418,7 @@
       border: 0;
       border-left: 1px solid color-chooser($white-divider, $black-divider);
 
-      img:not(.thumbnail) {
+      img:not(.avatar):not(.thumbnail) {
         height: auto;
         width: 100%;
       }
