@@ -358,7 +358,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
   padding: 6.25px 24px;
 }
 
-.dropdown-menu, .popup-menu, .autocomplete, .select-kit .select-kit-body, .select-kit.category-drop.combo-box .select-kit-body, .select-kit.dropdown-select-box .select-kit-body, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-body, nav.post-controls .post-admin-menu {
+.dropdown-menu, .popup-menu, .autocomplete, .select-kit .select-kit-body, .select-kit.category-drop.combo-box .select-kit-body, .select-kit.dropdown-select-box .select-kit-body, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-body, #topic-entrance, nav.post-controls .post-admin-menu {
   background-clip: padding-box;
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
@@ -370,7 +370,7 @@ div.poll .poll-buttons .btn:first-child, .modal-footer :not(.disclaimer) a:first
 }
 
 .autocomplete, .select-kit .select-kit-body, .select-kit.category-drop.combo-box .select-kit-body, .select-kit.dropdown-select-box .select-kit-body, .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-body, .category-notification-menu .dropdown-menu, #reply-control .popup-menu, .timeline-container .topic-timeline .dropdown-menu,
-.timeline-container .topic-timeline .popup-menu, nav.post-controls .post-admin-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, #topic-progress-wrapper .popup-menu {
+.timeline-container .topic-timeline .popup-menu, #topic-entrance, nav.post-controls .post-admin-menu, #topic-footer-buttons .dropdown-menu, #topic-footer-buttons .popup-menu, #topic-progress-wrapper .popup-menu {
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
@@ -1686,6 +1686,8 @@ div.ac-wrap input[type='text'] {
 
 .d-editor-button-bar {
   border-bottom: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
@@ -1710,6 +1712,13 @@ div.ac-wrap input[type='text'] {
 .d-editor-button-bar .btn:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
+}
+
+.d-editor-input {
+  padding: 16px 16px;
+}
+.d-editor-button-bar ~ .d-editor-input {
+  padding-top: 8px;
 }
 
 .d-editor-preview {
@@ -1740,7 +1749,6 @@ div.ac-wrap input[type='text'] {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
   border-radius: 4px;
-  display: block;
 }
 
 .auto-update-input-selector-datetime {
@@ -3795,6 +3803,9 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   padding-right: 16px;
   padding-left: 16px;
 }
+#reply-control .category-input:last-child {
+  padding-right: 0;
+}
 #reply-control .composer-bottom-right {
   padding-left: 8px;
 }
@@ -3828,6 +3839,8 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   background-color: transparent;
   border: 0;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   height: auto;
 }
 #reply-control .d-editor-button-bar button,
@@ -3854,6 +3867,10 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control .d-editor-preview {
   border-radius: 0;
+}
+#reply-control .d-editor-preview-wrapper {
+  margin-left: 0;
+  max-width: 50%;
 }
 #reply-control .d-editor-textarea-wrapper {
   background-color: transparent;
@@ -3892,7 +3909,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 #reply-control .reply-area {
   height: 100%;
   margin: 0;
-  padding: 16px 16px;
+  padding: 0;
 }
 #reply-control .reply-area .ac-wrap {
   margin-right: 16px;
@@ -3950,8 +3967,8 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16px;
-  padding: 16px 0 0;
+  margin-top: 0;
+  padding: 16px 16px;
 }
 #reply-control .submit-panel .btn {
   margin-right: 0;
@@ -3962,7 +3979,10 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 #reply-control .title-and-category {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 #reply-control .title-input {
   -ms-flex-positive: 1;
@@ -4020,37 +4040,6 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control .toggler .fa {
   display: none;
-}
-#reply-control .wmd-controls {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  max-width: 100%;
-  position: static;
-}
-#reply-control .wmd-controls .d-editor,
-#reply-control .wmd-controls .d-editor-container {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  height: auto;
-  min-height: 0;
-}
-#reply-control .wmd-controls .d-editor-container {
-  display: -ms-flexbox;
-  display: flex;
-}
-#reply-control .wmd-controls .d-editor-input,
-#reply-control .wmd-controls .d-editor-preview,
-#reply-control .wmd-controls .d-editor-preview-header {
-  background-color: transparent;
-}
-#reply-control .wmd-controls .d-editor-input {
-  border-top-color: transparent;
-  padding: 0;
-  position: static;
 }
 #reply-control .wmd-controls .d-editor-preview {
   border: 0;
@@ -4397,6 +4386,22 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 .topic-bulk-actions-modal .modal-body:last-child .loading-container .btn:not(:disabled):focus, .topic-bulk-actions-modal .modal-body:last-child .loading-container .btn:not(:disabled):hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $tertiary;
+}
+
+#topic-entrance button.btn.jump-bottom {
+  margin: 0;
+}
+#topic-entrance button.full {
+  margin-bottom: 0;
+  text-align: left;
+}
+#topic-entrance button.full i {
+  display: inline-block;
+  float: left;
+  margin-top: 0;
+  margin-right: 4px;
+  margin-bottom: 0;
+  vertical-align: top;
 }
 
 .top-lists + .topic-list {
@@ -6689,7 +6694,6 @@ div.badges .buttons {
   margin-top: 16px;
 }
 .content-editor .d-editor-input {
-  padding: 16px 16px;
   width: 100%;
 }
 
