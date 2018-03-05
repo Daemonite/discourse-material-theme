@@ -109,6 +109,10 @@
     margin: 0;
     padding-right: $card-padding-x;
     padding-left: $card-padding-x;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   .composer-bottom-right {
@@ -141,6 +145,7 @@
     background-color: transparent;
     border: 0;
     color: color-chooser($white-secondary, $black-secondary);
+    flex-shrink: 0;
     height: auto;
 
     button,
@@ -171,6 +176,11 @@
 
   .d-editor-preview {
     border-radius: 0;
+  }
+
+  .d-editor-preview-wrapper {
+    margin-left: 0;
+    max-width: 50%;
   }
 
   .d-editor-textarea-wrapper {
@@ -228,7 +238,7 @@
   .reply-area {
     height: 100%;
     margin: 0;
-    padding: $card-padding-y $card-padding-x;
+    padding: 0;
 
     .ac-wrap {
       margin-right: $card-padding-x;
@@ -303,8 +313,8 @@
     align-items: center;
     border-top: 1px solid color-chooser($white-divider, $black-divider);
     display: flex;
-    margin-top: $card-inner-spacer-y;
-    padding: $card-inner-spacer-y 0 0;
+    margin-top: 0;
+    padding: $card-padding-y $card-padding-x;
 
     .btn {
       @extend %btn-raised;
@@ -321,7 +331,10 @@
 
   .title-and-category {
     flex-wrap: nowrap;
-    margin-bottom: $card-inner-spacer-y;
+    margin-top: ($card-inner-spacer-y / 2);
+    margin-bottom: ($card-inner-spacer-y / 2);
+    padding-right: $card-padding-x;
+    padding-left: $card-padding-x;
   }
 
   .title-input {
@@ -384,44 +397,13 @@
     }
   }
 
-  .wmd-controls {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    max-width: 100%;
-    position: static;
+  .wmd-controls .d-editor-preview {
+    border: 0;
+    border-left: 1px solid color-chooser($white-divider, $black-divider);
 
-    .d-editor,
-    .d-editor-container {
-      flex-grow: 1;
+    img:not(.avatar):not(.thumbnail) {
       height: auto;
-      min-height: 0;
-    }
-
-    .d-editor-container {
-      display: flex;
-    }
-
-    .d-editor-input,
-    .d-editor-preview,
-    .d-editor-preview-header {
-      background-color: transparent;
-    }
-
-    .d-editor-input {
-      border-top-color: transparent;
-      padding: 0;
-      position: static;
-    }
-
-    .d-editor-preview {
-      border: 0;
-      border-left: 1px solid color-chooser($white-divider, $black-divider);
-
-      img:not(.avatar):not(.thumbnail) {
-        height: auto;
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 }

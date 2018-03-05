@@ -4,6 +4,7 @@
 
 .d-editor-button-bar {
   border-bottom: 0;
+  flex-shrink: 0;
   flex-wrap: wrap;
   height: auto;
   margin: 0;
@@ -31,6 +32,14 @@
       background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
       background-image: none;
     }
+  }
+}
+
+.d-editor-input {
+  padding: $card-padding-y $card-padding-x;
+
+  .d-editor-button-bar ~ & {
+    padding-top: ($card-inner-spacer-y / 2);
   }
 }
 
@@ -64,5 +73,4 @@
   background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
   border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
   border-radius: $text-field-box-border-radius;
-  display: block;
 }
