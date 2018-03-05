@@ -149,6 +149,31 @@
   }
 }
 
+#topic-entrance {
+  @extend %dropdown-menu;
+  @extend %dropdown-menu-sm;
+
+  button {
+    &.btn.jump-bottom {
+      margin: 0;
+    }
+
+    &.full {
+      margin-bottom: 0;
+      text-align: left;
+
+      i {
+        display: inline-block;
+        float: left;
+        margin-top: 0;
+        margin-right: $spacer-xs;
+        margin-bottom: 0;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
 .topic-list {
   @extend %table;
 
