@@ -6,6 +6,10 @@
   @include material-icons('arrow_downward');
 }
 
+.fa-arrow-up {
+  @include material-icons('arrow_upward');
+}
+
 .fa-asterisk {
   @include material-icons('new_releases');
 }
