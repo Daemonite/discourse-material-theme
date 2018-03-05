@@ -191,6 +191,10 @@
   .more-topics {
     justify-content: flex-end;
     margin-top: 0;
+
+    .btn {
+      @extend %btn-footer;
+    }
   }
 
   .table-heading {
@@ -212,7 +216,7 @@
 
     a {
       &.title {
-        font-weight: bold;
+        font-weight: $font-weight-h6;
         padding-top: $tbody-cell-padding-y;
         padding-bottom: $tbody-cell-padding-y;
 
@@ -224,6 +228,7 @@
     }
 
     .top-row {
+      font-size: inherit;
       margin-bottom: $spacer-xs;
     }
   }
