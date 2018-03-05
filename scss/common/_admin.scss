@@ -1,6 +1,24 @@
 .admin-container {
   margin-top: 0;
 
+  .admin-customize-themes & {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  > .row {
+    flex-grow: 1;
+
+    &:not(.site-texts) {
+      align-items: flex-start;
+      display: flex;
+
+      @media (max-width: $admin-breakpoint) {
+        display: block;
+      }
+    }
+  }
+
   .controls.username {
     align-items: center;
     display: flex;
@@ -26,9 +44,6 @@
     }
 
     .pull-right {
-      float: none;
-      text-align: right;
-
       @media (max-width: $admin-breakpoint) {
         margin-top: $spacer-sm;
       }
@@ -120,8 +135,18 @@
       margin-left: auto;
     }
 
-    > div:not(.toggle) {
-      margin-right: $card-inner-spacer-x;
+    > div {
+      &:not(.toggle) {
+        margin-right: $card-inner-spacer-x;
+      }
+
+      &.ac-wrap {
+        width: auto !important;
+
+        .item {
+          margin: (($text-field-height - $chip-height) / 2) $spacer-xs (($text-field-height - $chip-height) / 2) 0;
+        }
+      }
     }
 
     .toggle {
@@ -146,18 +171,16 @@
     margin-right: $card-inner-spacer-x;
   }
 
-  .ac-wrap {
-    margin-bottom: $card-inner-spacer-x;
-    width: auto !important;
-
-    input[type='text'] {
-      @extend %text-field-box;
-    }
+  > nav,
+  > .nav,
+  > .pull-right {
+    margin: 0 0 $card-inner-spacer-y;
   }
 
-  > .pull-right,
-  > .span15 {
-    margin: 0 0 $card-inner-spacer-y;
+  > nav {
+    .nav {
+      margin-bottom: 0;
+    }
   }
 
   > .pull-right {
@@ -201,10 +224,6 @@
     }
   }
 
-  .nav {
-    margin-bottom: 0;
-  }
-
   .search {
     margin-left: $card-inner-spacer-x;
 
@@ -214,342 +233,13 @@
   }
 }
 
-.admin-detail {
-  border-left: 0;
-  padding: 0 0 0 $spacer-lg;
-  width: 80%;
-
-  @media (max-width: $admin-breakpoint) {
-    padding-left: 0;
-    width: 100%;
-  }
-}
-
-.admin-list-item {
-  border-top: 1px solid color-chooser($white-divider, $black-divider);
-  display: flex;
-  padding: 0;
-}
-
-.admin-logs-table .btn {
-  @extend %btn-sm;
-}
-
-.admin-nav {
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 20%;
-
-  @media (max-width: $admin-breakpoint) {
-    padding-right: $spacer-lg;
-    width: 50%;
-  }
-}
-
-.admin-title {
-  height: auto;
-
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
-}
-
-div {
-  &.badges,
-  &.groups,
-  &.web-hook-container {
-    margin-bottom: $card-inner-spacer-y;
-
-    .form-horizontal {
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      input,
-      select,
-      textarea {
-        width: 100%;
-      }
-
-      input[type='text'] {
-        @extend %text-field-box;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-
-      > div {
-        margin-top: 0;
-        margin-bottom: $card-inner-spacer-y;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &.group-flair-inputs input[type='text'] {
-          margin-bottom: $spacer-sm;
-        }
-      }
-    }
-  }
-
-  &.badges {
-    .admin-contents & {
-      align-items: flex-start;
-      display: flex;
-
-      @media (max-width: $admin-breakpoint) {
-        display: block;
-      }
-
-      .current-badge {
-        @extend %card;
-        @extend %card-block;
-
-        flex-grow: 1;
-        float: none;
-        margin: 0;
-        width: auto;
-
-        p {
-          &.help {
-            @extend %typography-caption;
-          }
-        }
-      }
-    }
-
-    .buttons {
-      float: none;
-      width: auto;
-    }
-  }
-
-  &.embeddable-hosts {
-    .admin-container & {
-      flex-grow: 1;
-      margin-bottom: $spacer-lg;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      table td:last-child {
-        white-space: nowrap;
-      }
-    }
-  }
-
-  &.emoji {
-    .admin-container & {
-      flex-grow: 1;
-
-      input[type='text'] {
-        @extend %text-field-box;
-      }
-    }
-  }
-
-  &.groups {
-    .admin-contents & {
-      align-items: flex-start;
-      display: flex;
-
-      @media (max-width: $admin-breakpoint) {
-        display: block;
-      }
-
-      > .span13 {
-        @extend %card;
-        @extend %card-block;
-
-        flex-grow: 1;
-        float: none;
-        width: auto;
-      }
-
-      .ac-wrap .item {
-        margin-right: $card-inner-spacer-x;
-
-        .avatar {
-          height: $chip-height;
-          margin-right: $chip-inner-spacer-x;
-          margin-left: ($chip-padding-x * -1);
-          width: $chip-height;
-        }
-      }
-
-      .controls {
-        margin-top: 0;
-      }
-    }
-  }
-
-  &.user-fields {
-    .admin-container & {
-      flex-grow: 1;
-
-      .user-field {
-        @extend %card;
-        @extend %card-block;
-
-        margin-bottom: $card-margin-y;
-
-        .form-element {
-          padding: 0;
-
-          &.label-area label {
-            margin: (($text-field-height - $font-size-base * $line-height-base) / 2) $card-inner-spacer-x 0 0;
-          }
-        }
-
-        .row {
-          margin-bottom: ($card-inner-spacer-y / 2);
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-.content-editor {
-  @extend %card;
-  @extend %card-block;
-
-  flex-grow: 1;
-  margin-left: 0;
-  width: auto;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-
-  .controls {
-    margin-top: $card-inner-spacer-y;
-
-    .save-messages {
-      margin-top: $card-inner-spacer-y;
-
-      &:empty {
-        display: none;
-      }
-    }
-  }
-
-  .d-editor-input {
-    width: 100%;
-  }
-
-  .email-template input[type='text'] {
-    @extend %text-field-box;
-  }
-}
-
-.content-list {
-  .badges &,
-  .customize &,
-  .groups & {
-    flex-shrink: 0;
-    margin-right: $spacer-lg;
-  }
-
-  .badges &,
-  .groups & {
-    float: none;
-
-    @media (max-width: $admin-breakpoint) {
-      background-color: color-chooser($card-bg-dark, $card-bg-light);
-      border-radius: $card-border-radius;
-      box-shadow: $card-box-shadow;
-      margin-right: 0;
-      margin-bottom: $spacer-lg;
-      max-height: $admin-nav-max-height;
-      overflow-x: hidden;
-      overflow-y: auto;
-      padding: $card-padding-y $card-padding-x;
-      width: 100%;
-    }
-  }
-
-  .badges & {
-    @media (max-width: $admin-breakpoint) {
-      padding-bottom: 0;
-    }
-  }
-
-  h3 {
-    @extend %typography-caption;
-
-    font-weight: bolder;
-    margin-bottom: $spacer-sm;
-    padding-left: 0;
-  }
-
-  ul {
-    @extend %nav-stacked;
-
-    .badges &,
-    .customize &,
-    .groups & {
-      margin-bottom: $spacer;
-    }
-
-    li {
-      &:first-of-type {
-        border-top: 0;
-      }
-
-      a {
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        &.active {
-          background-color: unquote('$quaternary');
-          color: color-dynamic(unquote('$quaternary'));
-          font-weight: normal;
-        }
-
-        span {
-          &.count {
-            @extend %typography-caption;
-
-            background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-            border-radius: $btn-border-radius;
-            color: inherit;
-            line-height: 1;
-            margin-right: 0;
-            padding: ($btn-font-size - $font-size-caption) / 2 $spacer-xs;
-          }
-        }
-
-        .user-badge {
-          color: inherit;
-        }
-      }
-    }
-  }
-}
-
-.customize {
+.admin-customize {
   > .admin-container {
     align-items: flex-start;
     display: flex;
-    flex-wrap: wrap;
 
     @media (max-width: $admin-breakpoint) {
       display: block;
-    }
-
-    > .row:not(.site-texts) {
-      align-items: flex-start;
-      display: flex;
-      flex-grow: 1;
     }
   }
 
@@ -558,6 +248,9 @@ div {
     padding-left: 0;
 
     > .about {
+      @extend %card;
+      @extend %card-block;
+
       flex-grow: 1;
       margin: 0;
     }
@@ -608,40 +301,16 @@ div {
     }
   }
 
-  .current-style {
-    float: none;
+  .current-style .toggle-maximize {
+    right: $card-inner-spacer-x;
 
-    &.maximized .wrapper {
-      display: flex;
-      flex-direction: column;
-      top: $spacer;
-      right: $spacer;
-      bottom: $spacer;
-      left: $spacer;
+    > a {
+      padding-right: $card-inner-spacer-x;
+      padding-left: $card-inner-spacer-x;
 
-      > h2,
-      > .admin-controls,
-      > .admin-footer,
-      > .edit-main-nav {
-        flex-shrink: 0;
+      .d-icon {
+        margin-right: 0;
       }
-
-      > .ace-wrapper {
-        flex-grow: 1;
-        height: 0;
-      }
-
-      .admin-footer {
-        position: static;
-      }
-    }
-
-    .ace-wrapper {
-      box-shadow: $card-box-shadow;
-    }
-
-    .status-actions {
-      margin-top: $spacer-sm;
     }
   }
 
@@ -756,6 +425,317 @@ div {
     @extend %typography-caption;
 
     margin-top: ($card-inner-spacer-y / 2);
+  }
+}
+
+.admin-detail {
+  background-color: transparent;
+  border-left: 0;
+  padding: 0 0 0 $spacer-lg;
+  width: 80%;
+
+  @media (max-width: $admin-breakpoint) {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.admin-list-item {
+  border-top: 1px solid color-chooser($white-divider, $black-divider);
+  display: flex;
+  padding: 0;
+}
+
+.admin-logs-table .btn {
+  @extend %btn-sm;
+}
+
+.admin-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 20%;
+
+  @media (max-width: $admin-breakpoint) {
+    padding-right: $spacer-lg;
+    width: 50%;
+  }
+}
+
+.admin-title {
+  height: auto;
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+div {
+  &.badges,
+  &.groups,
+  &.web-hook-container {
+    margin-bottom: $card-inner-spacer-y;
+
+    .form-horizontal {
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+      }
+
+      input[type='text'] {
+        @extend %text-field-box;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      > div {
+        margin-top: 0;
+        margin-bottom: $card-inner-spacer-y;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &.group-flair-inputs input[type='text'] {
+          margin-bottom: $spacer-sm;
+        }
+      }
+    }
+  }
+
+  &.badges {
+    .admin-contents & {
+      align-items: flex-start;
+      display: flex;
+
+      @media (max-width: $admin-breakpoint) {
+        display: block;
+      }
+
+      .current-badge {
+        margin: 0;
+
+        p {
+          &.help {
+            @extend %typography-caption;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      float: none;
+      width: auto;
+    }
+  }
+
+  &.embeddable-hosts {
+    .admin-container & {
+      flex-grow: 1;
+      margin-bottom: $spacer-lg;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      table td:last-child {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &.emoji {
+    .admin-container & {
+      input[type='text'] {
+        @extend %text-field-box;
+      }
+    }
+  }
+
+  &.groups {
+    .admin-contents & {
+      > .span13 {
+        @extend %card;
+        @extend %card-block;
+
+        flex-grow: 1;
+        float: none;
+        width: auto;
+      }
+
+      .ac-wrap .item {
+        margin-right: $card-inner-spacer-x;
+
+        .avatar {
+          height: $chip-height;
+          margin-right: $chip-inner-spacer-x;
+          margin-left: ($chip-padding-x * -1);
+          width: $chip-height;
+        }
+      }
+
+      .controls {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.user-fields {
+    .admin-container & {
+      flex-grow: 1;
+
+      .user-field {
+        @extend %card;
+        @extend %card-block;
+
+        margin-bottom: $card-margin-y;
+
+        .form-element {
+          padding: 0;
+
+          &.label-area label {
+            margin: (($text-field-height - $font-size-base * $line-height-base) / 2) $card-inner-spacer-x 0 0;
+          }
+        }
+
+        .row {
+          margin-bottom: ($card-inner-spacer-y / 2);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-body {
+  @extend %card;
+  @extend %card-block;
+
+  flex-grow: 1;
+}
+
+.content-editor {
+  @extend %card;
+  @extend %card-block;
+
+  flex-grow: 1;
+  margin-left: 0;
+  min-height: 0;
+  width: auto;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  .controls {
+    margin-top: $card-inner-spacer-y;
+
+    .save-messages {
+      margin-top: 0;
+
+      &:empty {
+        display: none;
+      }
+
+      > div {
+        margin-top: $card-inner-spacer-y;
+      }
+    }
+  }
+
+  .d-editor-input {
+    padding: $card-padding-y $card-padding-x;
+    width: 100%;
+  }
+
+  .email-template input[type='text'] {
+    @extend %text-field-box;
+  }
+}
+
+.content-list {
+  flex-shrink: 0;
+  margin-right: $spacer-lg;
+  width: 20%;
+
+  @media (max-width: $admin-breakpoint) {
+    background-color: color-chooser($card-bg-dark, $card-bg-light);
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
+    margin-right: 0;
+    margin-bottom: $spacer-lg;
+    max-height: $admin-nav-max-height;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: $card-padding-y $card-padding-x;
+    width: 100%;
+  }
+
+  > br {
+    display: none;
+  }
+
+  h3 {
+    @extend %typography-caption;
+
+    font-weight: bolder;
+    margin-bottom: $spacer-sm;
+    padding-left: 0;
+  }
+
+  ul {
+    @extend %nav-stacked;
+
+    .badges &,
+    .customize &,
+    .groups & {
+      margin-bottom: $spacer;
+    }
+
+    li {
+      &:first-of-type {
+        border-top: 0;
+      }
+
+      a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.active {
+          background-color: unquote('$quaternary');
+          color: color-dynamic(unquote('$quaternary'));
+          font-weight: normal;
+        }
+
+        span {
+          &.count {
+            @extend %typography-caption;
+
+            background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+            border-radius: $btn-border-radius;
+            color: inherit;
+            line-height: 1;
+            margin-right: 0;
+            padding: ($btn-font-size - $font-size-caption) / 2 $spacer-xs;
+          }
+        }
+
+        .user-badge {
+          color: inherit;
+        }
+      }
+    }
   }
 }
 
@@ -960,8 +940,6 @@ div {
 
     input[type='text'] {
       @extend %text-field-box;
-
-      margin-top: $spacer-sm;
     }
   }
 }
@@ -1161,6 +1139,10 @@ div {
     flex-grow: 1;
     margin-bottom: 0;
     width: auto;
+
+    + .btn {
+      margin-left: $card-inner-spacer-x;
+    }
   }
 
   .input {

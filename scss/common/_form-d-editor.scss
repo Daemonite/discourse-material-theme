@@ -3,34 +3,42 @@
 }
 
 .d-editor-button-bar {
-  align-items: center;
-  display: flex;
+  border-bottom: 0;
   flex-wrap: wrap;
   height: auto;
-  margin: 0 0 $card-inner-spacer-y;
-  padding: 0;
+  margin: 0;
+  min-height: 0;
+  padding: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
 
-  button {
+  .btn {
     @extend %btn-sm;
 
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
     margin: 0;
     min-width: 0;
     padding-right: ($btn-padding-x-sm / 2);
     padding-left: ($btn-padding-x-sm / 2);
-  }
-}
 
-.d-editor-container {
-  background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
-  border-radius: $card-border-radius;
-  padding: 0 $card-padding-x $card-padding-y;
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      background-image: none;
+      color: color-chooser($btn-color-dark, $btn-color-light);
+    }
+
+    &:active {
+      background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+      background-image: none;
+    }
+  }
 }
 
 .d-editor-preview {
   border: 1px dotted color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
   border-radius: $text-field-box-border-radius;
   margin: 0;
-  padding: 0 $text-field-box-padding-x;
+  padding: $card-padding-y $card-padding-x;
 
   > :last-child {
     margin-bottom: 0;
@@ -50,4 +58,11 @@
   background-color: color-chooser($white-divider, $black-divider);
   height: $btn-height-sm;
   margin: 0 ($card-inner-spacer-x / 2);
+}
+
+.d-editor-textarea-wrapper {
+  background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+  border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+  border-radius: $text-field-box-border-radius;
+  display: block;
 }

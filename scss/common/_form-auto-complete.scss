@@ -1,13 +1,25 @@
 div {
   &.ac-wrap {
     align-items: center;
-    background-color: transparent;
-    border: 0;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+    border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+    border-radius: $text-field-box-border-radius;
     min-height: $text-field-height;
     min-width: $text-field-min-width;
-    padding: 0;
+    padding: ($text-field-box-padding-y - ($text-field-height - $chip-height) / 2) $text-field-box-padding-x;
+
+    &:hover {
+      border-width: ($text-field-border-width * 2);
+      padding: ($text-field-box-padding-y - ($text-field-height - $chip-height) / 2 - $text-field-border-width) ($text-field-box-padding-x - $text-field-border-width);
+    }
+
+    .admin-controls & {
+      padding: $text-field-border-width $text-field-border-width $text-field-border-width ($spacer-xs + $text-field-border-width);
+
+      &:hover {
+        padding: 0 0 0 $spacer-xs;
+      }
+    }
 
     div {
       &.item {
