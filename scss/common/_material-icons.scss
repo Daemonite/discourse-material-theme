@@ -198,6 +198,10 @@
   @include material-icons('archive');
 }
 
+.fa-gavel {
+  @include material-icons('gavel');
+}
+
 .fa-gear {
   @include material-icons('settings');
 }
