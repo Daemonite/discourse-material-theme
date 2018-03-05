@@ -92,6 +92,19 @@
   column-gap: $spacer-lg;
   margin-bottom: ($spacer-lg - $card-margin-y);
 
+  &.top-section {
+    margin-bottom: $spacer-lg;
+
+    > p {
+      .more {
+        @extend %btn-flat;
+        @extend %btn-raised;
+
+        margin-top: $card-margin-y;
+      }
+    }
+  }
+
   > h3,
   > p {
     column-span: all;
