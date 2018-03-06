@@ -375,25 +375,21 @@
     padding: 0;
     top: 0;
     width: ($material-icon-size + $spacer-sm);
+
+    .fa {
+      display: none;
+    }
   }
 
   .toggle-toolbar {
     @include material-icons('menu');
-
-    right: ($material-icon-size + $spacer-sm + $spacer-sm * 2);
   }
 
   .toggler {
-    right: $spacer-sm;
-
     &::before {
       @extend %material-icons;
 
       content: 'close';
-    }
-
-    .fa {
-      display: none;
     }
   }
 
