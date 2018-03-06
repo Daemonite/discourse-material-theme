@@ -1,6 +1,10 @@
 .list-controls {
   margin-top: 0;
 
+  .categories-admin-dropdown.select-kit {
+    margin: 0 0 $spacer-sm $spacer-sm;
+  }
+
   .nav {
     > li > a {
       @extend %btn-raised;
