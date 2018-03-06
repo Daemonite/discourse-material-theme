@@ -180,6 +180,7 @@ nav {
   color: color-chooser($white-secondary, $black-secondary);
   font-weight: bolder;
   margin-bottom: $card-margin-y;
+  max-width: 100%;
   padding: $card-margin-y ($card-inner-spacer-x * 2);
   text-transform: none;
   width: $topic-body-width;
@@ -743,11 +744,12 @@ nav {
 #topic-progress-wrapper {
   box-shadow: $card-box-shadow;
   display: flex;
+  margin-right: auto;
   right: 0;
   width: auto;
 
   &.docked {
-    margin-bottom: $spacer-lg;
+    margin-bottom: $spacer;
     right: 0;
 
     .topic-admin-popup-menu {
