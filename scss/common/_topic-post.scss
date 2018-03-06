@@ -268,8 +268,8 @@ nav {
 
   border-top: 0;
   margin-bottom: $card-margin-y;
+  max-width: $topic-body-width;
   position: relative;
-  width: $topic-body-width;
 
   &.time-gap {
     background-color: transparent;
