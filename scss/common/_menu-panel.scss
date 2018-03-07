@@ -58,6 +58,7 @@ div {
     right: $header-padding-x;
 
     .panel-body {
+      max-height: 100%;
       position: static;
       width: 100%;
     }
@@ -115,6 +116,10 @@ div {
 
         .badge-wrapper {
           display: inline-flex;
+
+          &.box {
+            color: inherit;
+          }
         }
       }
 
