@@ -53,8 +53,15 @@ ol {
     margin: 0 0 $spacer-sm $spacer-sm;
   }
 
-  .categories-admin-dropdown.select-kit .btn {
-    margin-bottom: 0;
+  .categories-admin-dropdown.select-kit,
+  .dropdown-select-box.dropdown-select-box {
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+
+  .dropdown-select-box.dropdown-select-box {
+    margin-bottom: $spacer-sm;
   }
 
   .nav {
