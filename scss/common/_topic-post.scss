@@ -739,6 +739,10 @@ nav {
 #topic-progress {
   flex-shrink: 0;
   height: $btn-height;
+
+  .bg {
+    max-width: 100%;
+  }
 }
 
 #topic-progress-wrapper {
