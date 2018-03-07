@@ -46,36 +46,10 @@
   margin-right: 0;
 }
 
-.mobile-view .admin-contents {
-  div {
-    &.badges,
-    &.customize,
-    &.groups {
-      display: block;
-
-      .content-list {
-        margin-right: 0;
-        margin-bottom: $spacer-lg;
-
-        > br {
-          display: none;
-        }
-      }
-    }
-
-    &.badges .buttons {
-      float: none;
-      width: auto;
-    }
-  }
-
-  input[type='text'] {
-    @extend %text-field-box;
-  }
-}
-
 .mobile-view .admin-controls {
   @extend %card-block;
+
+  padding-bottom: 0;
 
   > .pull-right {
     clear: both;

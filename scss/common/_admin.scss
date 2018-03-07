@@ -286,19 +286,6 @@
 
   .content-list {
     float: none;
-
-    @media (max-width: $admin-breakpoint) {
-      background-color: color-chooser($card-bg-dark, $card-bg-light);
-      border-radius: $card-border-radius;
-      box-shadow: $card-box-shadow;
-      margin-right: 0;
-      margin-bottom: $spacer-lg;
-      max-height: $admin-nav-max-height;
-      overflow-x: hidden;
-      overflow-y: auto;
-      padding: $card-padding-y $card-padding-x;
-      width: 100%;
-    }
   }
 
   .current-style .toggle-maximize {
@@ -623,6 +610,11 @@ div {
   @extend %card-block;
 
   flex-grow: 1;
+
+  @media (max-width: $admin-breakpoint) {
+    float: none;
+    width: auto;
+  }
 }
 
 .content-editor {
@@ -672,6 +664,7 @@ div {
     background-color: color-chooser($card-bg-dark, $card-bg-light);
     border-radius: $card-border-radius;
     box-shadow: $card-box-shadow;
+    float: none;
     margin-right: 0;
     margin-bottom: $spacer-lg;
     max-height: $admin-nav-max-height;
@@ -1129,6 +1122,13 @@ div {
 .staff-action-logs-instructions {
   clear: both;
   margin: 0 0 $spacer-lg;
+}
+
+.staff-action-logs-controls::after {
+  clear: both;
+  content: '';
+  display: table;
+  line-height: 0;
 }
 
 .value-list {
