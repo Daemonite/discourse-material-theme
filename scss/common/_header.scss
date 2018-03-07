@@ -42,7 +42,10 @@
         color: unquote('$header-primary');
         margin-right: 100%;
         position: absolute;
+        top: 50%;
+        left: 50%;
         text-indent: 0;
+        transform: translate(-50%, -50%);
       }
     }
 
@@ -53,7 +56,10 @@
         color: unquote('$header-primary');
         margin-right: 100%;
         position: absolute;
+        top: 50%;
+        left: 50%;
         text-indent: 0;
+        transform: translate(-50%, -50%);
       }
     }
   }
