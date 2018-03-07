@@ -80,9 +80,8 @@ div {
     }
 
     input[type='text'] {
-      @extend %text-field;
-
-      margin-bottom: 0;
+      height: auto;
+      padding: 0;
     }
   }
 }
