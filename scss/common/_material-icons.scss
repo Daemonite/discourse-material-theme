@@ -206,6 +206,10 @@
   @include material-icons('settings');
 }
 
+.fa-group {
+  @include material-icons('group');
+}
+
 .fa-hand-o-right {
   @include material-icons('send');
 }
