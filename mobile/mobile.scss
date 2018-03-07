@@ -146,7 +146,7 @@
   color: color-dynamic($success);
 }
 
-#reply-control .contents .submit-panel .btn, #reply-control .wmd-controls.toolbar-visible .d-editor-button-bar button.btn.no-text, .user-main .about .controls a {
+#reply-control .contents .submit-panel .btn, .user-main .about .controls a {
   font-size: 13px;
   padding: 9.5px 16px;
 }
@@ -203,17 +203,6 @@
   height: 56px;
   padding: 12px 12px;
   vertical-align: middle;
-}
-
-.mobile-view .admin-contents input[type='text'] {
-  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
-  border-radius: 4px;
-  height: 56px;
-  line-height: 16px;
-  padding: 20px 16px 19px;
-}
-.mobile-view .admin-contents input[type='text']:focus, .mobile-view .admin-contents input[type='text']:hover {
-  padding-bottom: 18px;
 }
 
 .category-list-item > footer figure, .category-list-item .category-topic-link .main-link .age {
@@ -276,6 +265,9 @@ body .boxed .contents {
 .list-controls {
   margin-top: 0;
 }
+.list-controls .categories-admin-dropdown.select-kit {
+  margin: 0 0 8px 8px;
+}
 .list-controls .nav > li > a {
   opacity: 1;
 }
@@ -317,19 +309,20 @@ body .boxed .contents {
   max-width: none;
 }
 
+#reply-control.open {
+  max-height: 100vh;
+  min-height: 100vh;
+}
 #reply-control .btn-primary {
   margin-bottom: 0;
 }
 #reply-control .category-input {
-  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 8px;
+  padding-right: 0;
+  padding-left: 0;
 }
-#reply-control .composer-bottom-right {
-  line-height: 32px;
-  position: absolute;
-  right: 0;
-  bottom: 16px;
+#reply-control .category-input:first-child {
+  margin-top: 0;
 }
 #reply-control .contents {
   min-width: 0;
@@ -358,32 +351,16 @@ body .boxed .contents {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#reply-control .wmd-controls.toolbar-visible .d-editor-button-bar {
-  background-color: transparent;
-  margin: 0;
-  width: 100%;
+#reply-control .grippie::before {
+  display: none;
 }
-#reply-control .wmd-controls.toolbar-visible .d-editor-button-bar button.btn.no-text {
-  margin: 0;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-#reply-control .wmd-controls.toolbar-visible .d-editor-input {
-  border-top-width: 48px;
-  padding-top: 0;
-}
-#reply-control .wmd-controls .d-editor-container {
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-#reply-control .wmd-controls .d-editor-input {
-  border-top-width: 16px;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-}
-#reply-control .wmd-controls .d-editor-textarea-wrapper {
+#reply-control .reply-to .composer-controls {
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
+}
+#reply-control .title-and-category {
   -ms-flex-direction: column;
       flex-direction: column;
 }
@@ -393,6 +370,10 @@ body .boxed .contents {
 }
 .search-advanced .search-advanced-options .control-group.pull-left:last-child {
   padding-left: 0;
+}
+
+tr.category-topic-link:last-child {
+  border-bottom: 0;
 }
 
 .categories-list .category-list {
@@ -417,7 +398,7 @@ body .boxed .contents {
   display: -ms-flexbox;
   display: flex;
   min-height: 48px;
-  padding: 12px 24px;
+  padding: 12px 8px 12px 24px;
 }
 .category-list-item > footer figure {
   margin: 0 auto 0 0;
@@ -701,21 +682,9 @@ body .boxed .contents {
   margin-right: 0;
 }
 
-.mobile-view .admin-contents div.badges, .mobile-view .admin-contents div.customize, .mobile-view .admin-contents div.groups {
-  display: block;
+.mobile-view .admin-controls {
+  padding-bottom: 0;
 }
-.mobile-view .admin-contents div.badges .content-list, .mobile-view .admin-contents div.customize .content-list, .mobile-view .admin-contents div.groups .content-list {
-  margin-right: 0;
-  margin-bottom: 24px;
-}
-.mobile-view .admin-contents div.badges .content-list > br, .mobile-view .admin-contents div.customize .content-list > br, .mobile-view .admin-contents div.groups .content-list > br {
-  display: none;
-}
-.mobile-view .admin-contents div.badges .buttons {
-  float: none;
-  width: auto;
-}
-
 .mobile-view .admin-controls > .pull-right {
   clear: both;
   float: none;
