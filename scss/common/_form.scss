@@ -229,3 +229,12 @@ textarea {
     }
   }
 }
+
+.upload-selector .radios .inputs {
+  input {
+    @extend %text-field-box;
+
+    margin-bottom: $text-field-margin-y;
+    width: 100%;
+  }
+}
