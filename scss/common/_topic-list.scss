@@ -17,6 +17,13 @@
     margin: 0 0 $spacer;
   }
 
+  .show-more.has-topics .alert {
+    border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+    border-radius: 0;
+    box-shadow: none;
+    padding: (($thead-cell-height - $font-size-base * $line-height-base) / 2) ($thead-cell-padding-x * 2);
+  }
+
   .top-lists .period-chooser h2 {
     display: inline;
     font-size: $btn-font-size;
