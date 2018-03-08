@@ -4337,6 +4337,12 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 #list-area .top-lists h2 {
   margin: 0 0 16px;
 }
+#list-area .show-more.has-topics .alert {
+  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 18.000003px 24px;
+}
 #list-area .top-lists .period-chooser h2 {
   display: inline;
   font-size: 14px;
