@@ -1967,7 +1967,11 @@ div.ac-wrap input[type='text'] {
   color: $header-primary;
   margin-right: 100%;
   position: absolute;
+  top: 50%;
+  left: 50%;
   text-indent: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .d-header button.sign-up-button {
   font-size: inherit !important;
@@ -1980,7 +1984,11 @@ div.ac-wrap input[type='text'] {
   color: $header-primary;
   margin-right: 100%;
   position: absolute;
+  top: 50%;
+  left: 50%;
   text-indent: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .d-header .contents {
   -ms-flex-align: center;
@@ -2128,8 +2136,12 @@ ol.category-breadcrumb > li {
   font-weight: 500;
   margin: 0 0 8px 8px;
 }
-.list-controls .categories-admin-dropdown.select-kit .btn {
+.list-controls .categories-admin-dropdown.select-kit .btn,
+.list-controls .dropdown-select-box.dropdown-select-box .btn {
   margin-bottom: 0;
+}
+.list-controls .dropdown-select-box.dropdown-select-box {
+  margin-bottom: 8px;
 }
 .list-controls .nav {
   margin: 0 auto 8px 0;
@@ -4787,6 +4799,9 @@ nav.post-controls {
   float: left;
   position: relative;
 }
+#post_1 nav.post-controls {
+  max-width: calc(100% - 48px);
+}
 nav.post-controls button {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
 }
@@ -4818,6 +4833,8 @@ nav.post-controls .actions {
       align-items: center;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   float: none;
   margin-right: -8px;
   margin-left: -8px;
@@ -5183,10 +5200,10 @@ nav.post-controls .show-replies i {
   width: 36px;
 }
 .topic-map .avatars {
-  padding: 16px 16px 8px;
+  padding: 16px 16px;
 }
 .topic-map .avatars > div {
-  margin: 0 0 8px;
+  margin: 0;
 }
 .topic-map .avatars .post-count {
   -ms-flex-align: center;
@@ -5202,7 +5219,7 @@ nav.post-controls .show-replies i {
 .topic-map .buttons {
   position: absolute;
   top: -44px;
-  right: 0;
+  right: 8px;
   z-index: 2;
 }
 .topic-map .information {
@@ -5251,9 +5268,6 @@ nav.post-controls .show-replies i {
   font-size: 19.999994px;
   line-height: 1;
   margin-top: 1px;
-}
-.topic-map .map-collapsed {
-  display: none;
 }
 .topic-map .participants .user {
   -ms-flex-align: center;
