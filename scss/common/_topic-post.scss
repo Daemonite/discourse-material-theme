@@ -5,6 +5,10 @@ nav {
     float: left;
     position: relative;
 
+    #post_1 & {
+      max-width: calc(100% - #{$card-inner-spacer-x * 3 + $material-icon-size});
+    }
+
     button {
       @extend %btn-flat;
       @extend %btn-footer;
@@ -51,6 +55,7 @@ nav {
     .actions {
       align-items: center;
       display: inline-flex;
+      flex-wrap: wrap;
       float: none;
       margin-right: ($card-inner-spacer-x * -1);
       margin-left: ($card-inner-spacer-x * -1);
@@ -525,10 +530,10 @@ nav {
   }
 
   .avatars {
-    padding: $card-padding-y $card-padding-x ($card-padding-y - $card-inner-spacer-y / 2);
+    padding: $card-padding-y $card-padding-x;
 
     > div {
-      margin: 0 0 ($card-inner-spacer-y / 2);
+      margin: 0;
     }
 
     .post-count {
@@ -547,7 +552,7 @@ nav {
   .buttons {
     position: absolute;
     top: (($btn-height + $card-inner-spacer-y / 2) * -1);
-    right: 0;
+    right: ($card-inner-spacer-x);
     z-index: 2;
 
     .btn {
@@ -619,10 +624,6 @@ nav {
       line-height: 1;
       margin-top: 1px;
     }
-  }
-
-  .map-collapsed {
-    display: none;
   }
 
   .participants {
