@@ -27,6 +27,17 @@
   font-size: $font-size-base;
 }
 
+.d-modal-cancel {
+  @extend %btn-flat-simple;
+  @extend %btn-footer;
+
+  margin: 0;
+
+  &:first-child {
+    margin-left: $card-inner-spacer-x;
+  }
+}
+
 .edit-category-modal {
   .edit-category-tab-general,
   .edit-category-tab-security {
