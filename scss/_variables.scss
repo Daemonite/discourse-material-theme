@@ -82,7 +82,6 @@ $shadow-6dp:     0 6px 10px 0 $shadow-color-1, 0 1px 18px 0 $shadow-color-2, 0 3
 $shadow-4dp:     0 4px 5px 0 $shadow-color-1, 0 1px 10px 0 $shadow-color-2, 0 2px 4px -1px $shadow-color-3 !default;
 $shadow-3dp:     0 3px 4px 0 $shadow-color-1, 0 1px 8px 0 $shadow-color-2, 0 3px 3px -2px $shadow-color-3 !default;
 $shadow-2dp:     0 2px 2px 0 $shadow-color-1, 0 1px 5px 0 $shadow-color-2, 0 3px 1px -2px $shadow-color-3 !default;
-$shadow-1dp:     none !default;
 
 
 
@@ -132,7 +131,6 @@ $material-icon-size:  24px !default;
 
 // Basics - Typography - Font weight
 
-$font-weight-bold:      700 !default;
 $font-weight-medium:    500 !default;
 $font-weight-regular:   400 !default;
 $font-weight-light:     300 !default;
@@ -213,6 +211,14 @@ $btn-padding-y-sm:         (($btn-height-sm - $btn-font-size-sm) / 2) !default;
 
 
 
+// Button float
+
+$btn-float-box-shadow:        $shadow-6dp !default;
+$btn-float-box-shadow-active: $shadow-12dp !default;
+$btn-float-size:              56px !default;
+
+
+
 // Card
 
 $card-avatar-size:      36px !default;
@@ -281,8 +287,6 @@ $dropdown-line-height:         1.5 !default;
 $dropdown-line-height-sm:      1.5 !default;
 $dropdown-link-bg-hover-dark:  $white-divider !default;
 $dropdown-link-bg-hover-light: $black-divider !default;
-$dropdown-link-height:         48px !default;
-$dropdown-link-height-sm:      32px !default;
 $dropdown-link-padding-x:      16px !default;
 $dropdown-link-padding-x-sm:   24px !default;
 $dropdown-link-padding-y:      12px !default;
@@ -363,7 +367,6 @@ $picker-border-radius:  2px !default;
 $picker-box-shadow:     $modal-box-shadow !default;
 $picker-cell-size:      40px !default;
 $picker-inner-spacer-x: 8px !default;
-$picker-inner-spacer-y: 8px !default;
 $picker-padding-x:      8px !default;
 $picker-padding-y:      8px !default;
 
@@ -399,7 +402,6 @@ $table-border-width:       1px !default;
 $table-border-color-dark:  $dark-1 !default;
 $table-border-color-light: $light-1 !default;
 $table-box-shadow:         $card-box-shadow !default;
-$table-margin-x:           auto !default;
 $table-margin-y:           $spacer !default;
 $tbody-cell-height:        48px !default;
 $tbody-cell-padding-x:     12px !default;
@@ -420,7 +422,6 @@ $thead-font-size:          12px !default;
 
 // Text field
 
-$text-field-bg-disabled:                 #f4f4f4 !default; // same value as the disabled Select2 background colour
 $text-field-border-color-dark:           rgba(255, 255, 255, .7) !default;
 $text-field-border-color-light:          rgba(0, 0, 0, .42) !default;
 $text-field-border-color-disabled-dark:  rgba(255, 255, 255, .5) !default;
@@ -428,9 +429,8 @@ $text-field-border-color-disabled-light: rgba(0, 0, 0, .42) !default;
 $text-field-border-width:                1px !default;
 $text-field-font-size:                   16px !default;
 $text-field-height:                      36px !default;
-$text-field-margin-x:                    $spacer-sm !default;
 $text-field-margin-y:                    $spacer-sm !default;
-$text-field-min-width:                   200px !default; // same value as the default Select2 min-width
+$text-field-min-width:                   200px !default;
 $text-field-padding-x:                   0 !default;
 $text-field-padding-y:                   8px !default;
 
