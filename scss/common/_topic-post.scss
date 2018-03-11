@@ -639,6 +639,10 @@ nav {
       padding: 0 $chip-padding-x 0 ($chip-height + $chip-inner-spacer-x);
       position: relative;
 
+      &.group {
+        padding-left: $chip-padding-x;
+      }
+
       a {
         color: inherit;
         font-size: inherit;
@@ -651,6 +655,10 @@ nav {
         top: 0;
         left: 0;
         width: $chip-height;
+      }
+
+      .d-icon-users {
+        margin-right: $chip-inner-spacer-x;
       }
 
       .remove-invited {
