@@ -462,6 +462,10 @@
       &:empty {
         display: none;
       }
+
+      + .excerpt {
+        margin-top: 0;
+      }
     }
 
     .info {
