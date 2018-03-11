@@ -79,6 +79,12 @@
   }
 }
 
+#keyboard-shortcuts-help {
+  ul:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .modal {
   &.history-modal .modal-header {
     height: auto;
