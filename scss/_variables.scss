@@ -123,7 +123,7 @@ $font-size-h6:        14px !default;
 $font-size-body:      14px !default;
 $font-size-caption:   12px !default;
 
-$font-size-small:     ($font-size-caption / $font-size-body)em !default;
+$font-size-small:     ($font-size-caption / $font-size-body * 1em) !default;
 
 $material-icon-size:  24px !default;
 
