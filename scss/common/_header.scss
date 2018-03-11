@@ -167,6 +167,8 @@
   }
 
   .title {
+    margin-left: $header-inner-spacer-x;
+
     a {
       align-items: center;
       display: flex;
