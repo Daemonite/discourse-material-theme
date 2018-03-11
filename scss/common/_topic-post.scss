@@ -566,6 +566,10 @@ nav {
 
     background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
 
+    > h3 {
+      margin-bottom: 0;
+    }
+
     .btn {
       @extend %btn-footer;
     }
@@ -573,6 +577,10 @@ nav {
     .controls {
       margin-right: ($card-inner-spacer-x * -1);
       margin-left: ($card-inner-spacer-x * -1);
+
+      &:last-child {
+        margin-bottom: ($card-inner-spacer-y / -2);
+      }
     }
   }
 
