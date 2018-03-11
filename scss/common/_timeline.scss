@@ -31,6 +31,10 @@
       }
     }
 
+    .back-button {
+      @extend %btn-sm;
+    }
+
     .dropdown-menu,
     .popup-menu {
       @extend %dropdown-menu-sm;
@@ -83,6 +87,16 @@
       background-color: $progress-bg;
       border-radius: 2px;
       width: $progress-height;
+    }
+
+    .timeline-last-read {
+      margin-left: ($progress-height * -1);
+
+      i {
+        &.progress {
+          margin-right: 0;
+        }
+      }
     }
 
     .timeline-padding {
