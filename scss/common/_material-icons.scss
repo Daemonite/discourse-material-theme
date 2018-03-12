@@ -187,11 +187,11 @@
 }
 
 .fa-fast-backward {
-  @include material-icons('fast_rewind');
+  @include material-icons('skip_previous');
 }
 
 .fa-fast-forward {
-  @include material-icons('fast_forward');
+  @include material-icons('skip_next');
 }
 
 .fa-file-text-o {
