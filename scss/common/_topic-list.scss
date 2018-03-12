@@ -41,6 +41,12 @@
 
       h2 {
         &.selected-name {
+          font-size: $btn-font-size;
+          font-weight: $btn-font-weight;
+          line-height: 1;
+          margin: 0;
+          overflow: hidden;
+
           .date-section {
             margin-right: $spacer-xs;
           }
@@ -57,6 +63,7 @@
       .d-icon {
         color: inherit;
         margin: 0 ($spacer-xs / -2) 0 $spacer-xs;
+        vertical-align: top;
       }
     }
 
