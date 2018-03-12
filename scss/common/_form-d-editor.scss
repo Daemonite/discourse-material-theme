@@ -38,8 +38,16 @@
 .d-editor-input {
   padding: $card-padding-y $card-padding-x;
 
+  @include focus-hover {
+    padding: $card-padding-y $card-padding-x;
+  }
+
   .d-editor-button-bar ~ & {
     padding-top: ($card-inner-spacer-y / 2);
+
+    @include focus-hover {
+      padding-top: ($card-inner-spacer-y / 2);
+    }
   }
 }
 
