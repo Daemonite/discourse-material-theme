@@ -6,6 +6,10 @@
   @include material-icons('arrow_downward');
 }
 
+.fa-arrows-h {
+  @include material-icons('swap_horiz');
+}
+
 .fa-arrow-up {
   @include material-icons('arrow_upward');
 }
