@@ -114,6 +114,10 @@
   @include material-icons('code');
 }
 
+.fa-columns {
+  @include material-icons('view_column');
+}
+
 .fa-copy {
   @include material-icons('content_copy');
 }
