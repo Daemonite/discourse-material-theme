@@ -206,6 +206,10 @@
   @include material-icons('archive');
 }
 
+.fa-forward {
+  @include material-icons('fast_forward');
+}
+
 .fa-gavel {
   @include material-icons('gavel');
 }
