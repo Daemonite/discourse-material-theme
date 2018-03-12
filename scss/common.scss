@@ -43,7 +43,9 @@
 //   - User badge
 //   - User card
 //
-// - Admin
+// - Other pages
+//   - About
+//   - Admin
 
 @import 'common/base';
 @import 'common/base-override';
@@ -81,4 +83,5 @@
 @import 'common/user-badge';
 @import 'common/user-card';
 
+@import 'common/about';
 @import 'common/admin';

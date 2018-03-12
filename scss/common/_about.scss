@@ -1,0 +1,155 @@
+section {
+  &.about {
+    @extend %card;
+    @extend %card-block;
+
+    margin-bottom: $spacer-lg;
+
+    &.admins {
+      padding-bottom: 0;
+
+      .user-info {
+        align-items: center;
+        border-top: 1px solid color-chooser($white-divider, $black-divider);
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        margin-right: ($card-padding-x * -1);
+        margin-bottom: 0;
+        margin-left: ($card-padding-x * -1);
+        width: auto;
+      }
+    }
+
+    &.stats {
+      table {
+        border-top: 1px solid color-chooser($white-divider, $black-divider);
+        border-radius: 0;
+        box-shadow: none;
+        margin-right: ($card-padding-x * -1);
+        margin-left: ($card-padding-x * -1);
+        max-width: none;
+        width: calc(100% + #{$card-padding-x * 2});
+
+        &:last-of-type {
+          margin-bottom: ($card-padding-y * -1);
+        }
+      }
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    h3,
+    p,
+    table {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-bottom: $card-inner-spacer-y;
+    }
+
+    p,
+    table {
+      margin-bottom: $spacer;
+    }
+
+    table {
+      td,
+      th {
+        border-bottom-color: color-chooser($white-divider, $black-divider);
+        height: $tbody-cell-height;
+        padding: $tbody-cell-padding-y $tbody-cell-padding-x;
+      }
+    }
+  }
+}
+
+.body-page {
+  max-width: $topic-body-width;
+  padding-left: 0;
+  width: auto;
+
+  .static-faq &,
+  .static-privacy &,
+  .static-tos & {
+    [itemprop='mainContentOfPage'] {
+      @extend %card;
+      @extend %card-block;
+
+      margin-bottom: $spacer-lg;
+
+      > :first-child {
+        margin-top: 0;
+      }
+
+      > :last-child {
+        margin-bottom: 0;
+      }
+
+      > p:first-child + h2 {
+        margin-top: ($spacer * -1);
+      }
+    }
+  }
+
+  blockquote {
+    @extend %typography-h5;
+
+    margin-bottom: $spacer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-bottom: $spacer-sm;
+  }
+
+  h1 {
+    @extend %typography-h1;
+  }
+
+  h2 {
+    @extend %typography-h2;
+  }
+
+  h3 {
+    @extend %typography-h3;
+  }
+
+  hr {
+    margin: $spacer 0;
+  }
+
+  ol,
+  ul {
+    @extend %typography-body;
+
+    margin-bottom: $spacer;
+
+    ol,
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    @extend %typography-body;
+
+    margin-bottom: $spacer;
+  }
+
+  pre {
+    @extend %typography-body;
+
+    margin-bottom: $spacer;
+  }
+
+  table {
+    @extend %typography-body;
+
+    margin-bottom: $spacer;
+  }
+}
