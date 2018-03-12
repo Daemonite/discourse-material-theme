@@ -26,4 +26,9 @@
 
 .nav-stacked {
   @extend %nav-stacked;
+
+  .count {
+    font-size: inherit;
+    line-height: inherit;
+  }
 }
