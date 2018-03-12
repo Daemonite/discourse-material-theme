@@ -586,8 +586,27 @@
   @extend %card;
   @extend %card-block;
 
+  input[type='text'] {
+    @extend %text-field-box;
+  }
+
+  .ac-wrap {
+    input[type='text'] {
+      padding: 0;
+    }
+  }
+
   .avatar {
     margin-left: 0;
+  }
+
+  .bio-composer {
+    border: 0;
+    padding: 0;
+  }
+
+  .btn {
+    @extend %btn-raised;
   }
 
   .control-group {
@@ -612,6 +631,23 @@
         margin-top: $spacer-sm;
       }
     }
+
+    &.desktop-notifications .controls {
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+        margin-bottom: $spacer-sm;
+      }
+    }
+  }
+
+  .controls .static {
+    @extend %text-field-box;
+
+    border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+    border-bottom-style: dotted;
+    color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
   }
 
   .form-vertical {
@@ -632,15 +668,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  .save-button {
-    margin-right: ($btn-padding-x / -2);
-    margin-left: ($btn-padding-x / -2);
-
-    .btn {
-      @extend %btn-footer;
     }
   }
 }
