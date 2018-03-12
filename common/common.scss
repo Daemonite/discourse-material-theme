@@ -18,7 +18,7 @@
   }
 }
 
-blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .d-header button.sign-up-button::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-gavel::before, .fa-gear::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, #reply-control .toggler::before, nav.post-controls button .read-icon::before {
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .d-header button.sign-up-button::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, #reply-control .toggler::before, nav.post-controls button .read-icon::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -271,7 +271,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, .d-modal-cancel, .modal-footer :not(.disclaimer) a, .modal-footer .btn, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
+div.poll .poll-buttons .btn, .modal.history-modal #revision .btn, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
 .screened-emails .col:not(.heading) .btn,
 .screened-ip-addresses .col:not(.heading) .btn,
 .screened-urls .col:not(.heading) .btn,
@@ -282,7 +282,7 @@ div.poll .poll-buttons .btn, .d-modal-cancel, .modal-footer :not(.disclaimer) a,
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, .d-modal-cancel:first-child, .modal-footer :not(.disclaimer) a:first-child, .modal-footer .btn:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
+div.poll .poll-buttons .btn:first-child, .modal.history-modal #revision .btn:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
 .screened-emails .col:not(.heading) .btn:first-child,
 .screened-ip-addresses .col:not(.heading) .btn:first-child,
 .screened-urls .col:not(.heading) .btn:first-child,
@@ -291,13 +291,13 @@ div.poll .poll-buttons .btn:first-child, .d-modal-cancel:first-child, .modal-foo
   margin-left: 0;
 }
 
-.btn-small, .image-upload-controls .btn, .d-editor-button-bar .btn, .fps-select a, .admin-logs-table .btn {
+.btn-small, .image-upload-controls .btn, .d-editor-button-bar .btn, .fps-select a, .timeline-container .topic-timeline .back-button, .admin-logs-table .btn {
   font-size: 13px;
   padding: 9.5px 16px;
 }
 
 .alert, .fps-result, .search-advanced, #share-link, .top-lists, .category-boxes .category-box-inner,
-.category-boxes-with-topics .category-box-inner, .small-action, .topic-body, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about, .user-main .user-content .user-invite-controls, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings, .site-texts {
+.category-boxes-with-topics .category-box-inner, .small-action, .topic-body, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about, .user-main .user-content .user-invite-controls, .user-main .user-stream, .user-nav, .user-preferences, .badge-card, .user-info, #user-card, section.about, .static-faq .body-page [itemprop='mainContentOfPage'], .static-privacy .body-page [itemprop='mainContentOfPage'], .static-tos .body-page [itemprop='mainContentOfPage'], .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings, .site-texts {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
   border-radius: 2px;
@@ -306,20 +306,20 @@ div.poll .poll-buttons .btn:first-child, .d-modal-cancel:first-child, .modal-foo
   padding: 0;
 }
 [href].alert:focus, [href].fps-result:focus, [href].search-advanced:focus, [href]#share-link:focus, [href].top-lists:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.summary-user-list:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-customize .admin-container > [href].about:focus, .admin-customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-body:focus, [href].content-editor:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [href].alert:hover, [href].fps-result:hover, [href].search-advanced:hover, [href]#share-link:hover, [href].top-lists:hover, .category-boxes [href].category-box-inner:hover,
-.category-boxes-with-topics [href].category-box-inner:hover, [href].small-action:hover, [href].topic-body:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.summary-user-list:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main .user-content [href].user-invite-controls:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, [href].admin-controls:hover, .admin-customize .admin-container > [href].about:hover, .admin-customize [href].show-current-style:hover, .admin-contents div.groups > [href].span13:hover, .admin-container div.user-fields [href].user-field:hover, [href].content-body:hover, [href].content-editor:hover, .email-preview-digest [href].controls:hover, [href].embedding-secondary:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].top-lists:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.summary-user-list:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-customize .admin-container > [tabindex].about:focus, .admin-customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-body:focus, [tabindex].content-editor:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, [tabindex].alert:hover, [tabindex].fps-result:hover, [tabindex].search-advanced:hover, [tabindex]#share-link:hover, [tabindex].top-lists:hover, .category-boxes [tabindex].category-box-inner:hover,
-.category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.summary-user-list:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main .user-content [tabindex].user-invite-controls:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, [tabindex].admin-controls:hover, .admin-customize .admin-container > [tabindex].about:hover, .admin-customize [tabindex].show-current-style:hover, .admin-contents div.groups > [tabindex].span13:hover, .admin-container div.user-fields [tabindex].user-field:hover, [tabindex].content-body:hover, [tabindex].content-editor:hover, .email-preview-digest [tabindex].controls:hover, [tabindex].embedding-secondary:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover {
+.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.summary-user-list:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, section[href].about:focus, .static-faq .body-page [href][itemprop='mainContentOfPage']:focus, .static-privacy .body-page [href][itemprop='mainContentOfPage']:focus, .static-tos .body-page [href][itemprop='mainContentOfPage']:focus, [href].admin-controls:focus, .admin-customize .admin-container > [href].about:focus, .admin-customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-body:focus, [href].content-editor:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [href].alert:hover, [href].fps-result:hover, [href].search-advanced:hover, [href]#share-link:hover, [href].top-lists:hover, .category-boxes [href].category-box-inner:hover,
+.category-boxes-with-topics [href].category-box-inner:hover, [href].small-action:hover, [href].topic-body:hover, [href].stats-section:hover, [href].top-sub-section.likes-section:hover, [href].top-sub-section.links-section:hover, [href].top-sub-section.replies-section:hover, [href].top-sub-section.summary-user-list:hover, [href].top-sub-section.topics-section:hover, .user-main [href].about:hover, .user-main .user-content [href].user-invite-controls:hover, .user-main [href].user-stream:hover, [href].user-nav:hover, [href].user-preferences:hover, [href].badge-card:hover, [href].user-info:hover, [href]#user-card:hover, section[href].about:hover, .static-faq .body-page [href][itemprop='mainContentOfPage']:hover, .static-privacy .body-page [href][itemprop='mainContentOfPage']:hover, .static-tos .body-page [href][itemprop='mainContentOfPage']:hover, [href].admin-controls:hover, .admin-customize .admin-container > [href].about:hover, .admin-customize [href].show-current-style:hover, .admin-contents div.groups > [href].span13:hover, .admin-container div.user-fields [href].user-field:hover, [href].content-body:hover, [href].content-editor:hover, .email-preview-digest [href].controls:hover, [href].embedding-secondary:hover, .admin-contents [href].groups-bulk:hover, [href].settings:hover, [href].site-texts:hover, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].top-lists:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.summary-user-list:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, section[tabindex].about:focus, .static-faq .body-page [tabindex][itemprop='mainContentOfPage']:focus, .static-privacy .body-page [tabindex][itemprop='mainContentOfPage']:focus, .static-tos .body-page [tabindex][itemprop='mainContentOfPage']:focus, [tabindex].admin-controls:focus, .admin-customize .admin-container > [tabindex].about:focus, .admin-customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-body:focus, [tabindex].content-editor:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus, [tabindex].alert:hover, [tabindex].fps-result:hover, [tabindex].search-advanced:hover, [tabindex]#share-link:hover, [tabindex].top-lists:hover, .category-boxes [tabindex].category-box-inner:hover,
+.category-boxes-with-topics [tabindex].category-box-inner:hover, [tabindex].small-action:hover, [tabindex].topic-body:hover, [tabindex].stats-section:hover, [tabindex].top-sub-section.likes-section:hover, [tabindex].top-sub-section.links-section:hover, [tabindex].top-sub-section.replies-section:hover, [tabindex].top-sub-section.summary-user-list:hover, [tabindex].top-sub-section.topics-section:hover, .user-main [tabindex].about:hover, .user-main .user-content [tabindex].user-invite-controls:hover, .user-main [tabindex].user-stream:hover, [tabindex].user-nav:hover, [tabindex].user-preferences:hover, [tabindex].badge-card:hover, [tabindex].user-info:hover, [tabindex]#user-card:hover, section[tabindex].about:hover, .static-faq .body-page [tabindex][itemprop='mainContentOfPage']:hover, .static-privacy .body-page [tabindex][itemprop='mainContentOfPage']:hover, .static-tos .body-page [tabindex][itemprop='mainContentOfPage']:hover, [tabindex].admin-controls:hover, .admin-customize .admin-container > [tabindex].about:hover, .admin-customize [tabindex].show-current-style:hover, .admin-contents div.groups > [tabindex].span13:hover, .admin-container div.user-fields [tabindex].user-field:hover, [tabindex].content-body:hover, [tabindex].content-editor:hover, .email-preview-digest [tabindex].controls:hover, [tabindex].embedding-secondary:hover, .admin-contents [tabindex].groups-bulk:hover, [tabindex].settings:hover, [tabindex].site-texts:hover {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
 [href].alert:focus, [href].fps-result:focus, [href].search-advanced:focus, [href]#share-link:focus, [href].top-lists:focus, .category-boxes [href].category-box-inner:focus,
-.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.summary-user-list:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, [href].admin-controls:focus, .admin-customize .admin-container > [href].about:focus, .admin-customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-body:focus, [href].content-editor:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].top-lists:focus, .category-boxes [tabindex].category-box-inner:focus,
-.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.summary-user-list:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, [tabindex].admin-controls:focus, .admin-customize .admin-container > [tabindex].about:focus, .admin-customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-body:focus, [tabindex].content-editor:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
+.category-boxes-with-topics [href].category-box-inner:focus, [href].small-action:focus, [href].topic-body:focus, [href].stats-section:focus, [href].top-sub-section.likes-section:focus, [href].top-sub-section.links-section:focus, [href].top-sub-section.replies-section:focus, [href].top-sub-section.summary-user-list:focus, [href].top-sub-section.topics-section:focus, .user-main [href].about:focus, .user-main .user-content [href].user-invite-controls:focus, .user-main [href].user-stream:focus, [href].user-nav:focus, [href].user-preferences:focus, [href].badge-card:focus, [href].user-info:focus, [href]#user-card:focus, section[href].about:focus, .static-faq .body-page [href][itemprop='mainContentOfPage']:focus, .static-privacy .body-page [href][itemprop='mainContentOfPage']:focus, .static-tos .body-page [href][itemprop='mainContentOfPage']:focus, [href].admin-controls:focus, .admin-customize .admin-container > [href].about:focus, .admin-customize [href].show-current-style:focus, .admin-contents div.groups > [href].span13:focus, .admin-container div.user-fields [href].user-field:focus, [href].content-body:focus, [href].content-editor:focus, .email-preview-digest [href].controls:focus, [href].embedding-secondary:focus, .admin-contents [href].groups-bulk:focus, [href].settings:focus, [href].site-texts:focus, [tabindex].alert:focus, [tabindex].fps-result:focus, [tabindex].search-advanced:focus, [tabindex]#share-link:focus, [tabindex].top-lists:focus, .category-boxes [tabindex].category-box-inner:focus,
+.category-boxes-with-topics [tabindex].category-box-inner:focus, [tabindex].small-action:focus, [tabindex].topic-body:focus, [tabindex].stats-section:focus, [tabindex].top-sub-section.likes-section:focus, [tabindex].top-sub-section.links-section:focus, [tabindex].top-sub-section.replies-section:focus, [tabindex].top-sub-section.summary-user-list:focus, [tabindex].top-sub-section.topics-section:focus, .user-main [tabindex].about:focus, .user-main .user-content [tabindex].user-invite-controls:focus, .user-main [tabindex].user-stream:focus, [tabindex].user-nav:focus, [tabindex].user-preferences:focus, [tabindex].badge-card:focus, [tabindex].user-info:focus, [tabindex]#user-card:focus, section[tabindex].about:focus, .static-faq .body-page [tabindex][itemprop='mainContentOfPage']:focus, .static-privacy .body-page [tabindex][itemprop='mainContentOfPage']:focus, .static-tos .body-page [tabindex][itemprop='mainContentOfPage']:focus, [tabindex].admin-controls:focus, .admin-customize .admin-container > [tabindex].about:focus, .admin-customize [tabindex].show-current-style:focus, .admin-contents div.groups > [tabindex].span13:focus, .admin-container div.user-fields [tabindex].user-field:focus, [tabindex].content-body:focus, [tabindex].content-editor:focus, .email-preview-digest [tabindex].controls:focus, [tabindex].embedding-secondary:focus, .admin-contents [tabindex].groups-bulk:focus, [tabindex].settings:focus, [tabindex].site-texts:focus {
   outline: 0;
 }
 
-.alert, .fps-result, .search-advanced .search-advanced-options, #share-link, .top-lists, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .topic-meta-data, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings .setting, .site-texts {
+.alert, .fps-result, .search-advanced .search-advanced-options, #share-link, .top-lists, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .topic-meta-data, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, section.about, .static-faq .body-page [itemprop='mainContentOfPage'], .static-privacy .body-page [itemprop='mainContentOfPage'], .static-tos .body-page [itemprop='mainContentOfPage'], .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings .setting, .site-texts {
   padding: 16px 16px;
 }
 
@@ -640,21 +640,21 @@ body textarea[readonly], .controls [readonly].static, .value-list [readonly].val
   padding-bottom: 18px;
 }
 
-h1, #topic-title h1 {
+h1, #topic-title h1, .body-page h1 {
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.066667;
 }
 
-h2, .user-main .about.collapsed-info .details .primary h1, .user-main .about .details h1, .badge-card .badge-contents .badge-icon {
+h2, .user-main .about.collapsed-info .details .primary h1, .user-main .about .details h1, .badge-card .badge-contents .badge-icon, .body-page h2 {
   font-size: 34px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.176471;
 }
 
-h3, div.poll .poll-info .info-number {
+h3, div.poll .poll-info .info-number, .body-page h3 {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 0;
@@ -670,7 +670,7 @@ h4, .d-header .extra-info h1, .d-header .extra-info.two-rows h1, .modal-header h
 }
 
 blockquote, h5, aside.onebox .onebox-body h3,
-aside.onebox .onebox-body h4, .user-main .about.collapsed-info .details .primary h2, .user-main .about .details h2, .badge-card .badge-contents .badge-info h3 {
+aside.onebox .onebox-body h4, .user-main .about.collapsed-info .details .primary h2, .user-main .about .details h2, .badge-card .badge-contents .badge-info h3, .body-page blockquote {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -684,7 +684,8 @@ h6, div.poll .poll-info .info-text, .select-kit.dropdown-select-box .select-kit-
   line-height: 1.428571;
 }
 
-.edit-topic-timer-modal .auto-update-input .topic-status-info h3, #user-card h2, #user-card h3 {
+.edit-topic-timer-modal .auto-update-input .topic-status-info h3, #user-card h2, #user-card h3, .body-page ol,
+.body-page ul, .body-page p, .body-page pre, .body-page table {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
@@ -833,7 +834,7 @@ small {
 
 sub,
 sup {
-  font-size: 0.857143 em;
+  font-size: 0.857143em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -866,7 +867,7 @@ sup {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   border-radius: 1em;
   color: $primary;
-  font-size: 0.857143 em;
+  font-size: 0.857143em;
   padding: 4px 6px;
 }
 
@@ -1726,7 +1727,13 @@ div.ac-wrap input[type='text'] {
 .d-editor-input {
   padding: 16px 16px;
 }
+.d-editor-input:focus, .d-editor-input:hover {
+  padding: 16px 16px;
+}
 .d-editor-button-bar ~ .d-editor-input {
+  padding-top: 8px;
+}
+.d-editor-button-bar ~ .d-editor-input:focus, .d-editor-button-bar ~ .d-editor-input:hover {
   padding-top: 8px;
 }
 
@@ -2006,6 +2013,7 @@ div.ac-wrap input[type='text'] {
 }
 .d-header .extra-info h1, .d-header .extra-info.two-rows h1 {
   margin: 0;
+  min-width: 0;
 }
 .d-header .extra-info-wrapper {
   margin-left: 8px;
@@ -2080,6 +2088,9 @@ div.ac-wrap input[type='text'] {
 }
 .d-header #site-logo {
   max-height: 32px;
+}
+.d-header .title {
+  margin-left: 8px;
 }
 .d-header .title a {
   -ms-flex-align: center;
@@ -2287,6 +2298,14 @@ ol.category-breadcrumb > li {
 }
 .fa-arrow-down::before {
   content: "arrow_downward";
+}
+
+.fa-arrows-h {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-arrows-h::before {
+  content: "swap_horiz";
 }
 
 .fa-arrow-up {
@@ -2497,6 +2516,14 @@ ol.category-breadcrumb > li {
   content: "code";
 }
 
+.fa-columns {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-columns::before {
+  content: "view_column";
+}
+
 .fa-copy {
   font-size: inherit !important;
   line-height: inherit !important;
@@ -2638,7 +2665,7 @@ ol.category-breadcrumb > li {
   line-height: inherit !important;
 }
 .fa-fast-backward::before {
-  content: "fast_rewind";
+  content: "skip_previous";
 }
 
 .fa-fast-forward {
@@ -2646,7 +2673,7 @@ ol.category-breadcrumb > li {
   line-height: inherit !important;
 }
 .fa-fast-forward::before {
-  content: "fast_forward";
+  content: "skip_next";
 }
 
 .fa-file-text-o {
@@ -2671,6 +2698,14 @@ ol.category-breadcrumb > li {
 }
 .fa-folder::before {
   content: "archive";
+}
+
+.fa-forward {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-forward::before {
+  content: "fast_forward";
 }
 
 .fa-gavel {
@@ -3335,10 +3370,12 @@ div.menu-links-header .menu-links-row {
 }
 
 .d-modal-cancel {
-  margin: 0;
+  margin: 0 0 0 8px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
-.d-modal-cancel:first-child {
-  margin-left: 8px;
+.d-modal-cancel:last-child {
+  margin-left: 0;
 }
 
 .edit-category-modal .edit-category-tab-security section.field > .btn {
@@ -3364,8 +3401,61 @@ div.menu-links-header .menu-links-row {
   margin-left: 8px;
 }
 
+#keyboard-shortcuts-help ul:last-child {
+  margin-bottom: 0;
+}
+
+.modal.history-modal #display-modes .btn {
+  background-color: transparent;
+}
+.modal.history-modal #display-modes .btn:focus, .modal.history-modal #display-modes .btn:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+.modal.history-modal #display-modes .btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.modal.history-modal .markdown {
+  border-collapse: collapse;
+}
+.modal.history-modal .markdown td {
+  background-clip: content-box;
+}
+.modal.history-modal .markdown td:first-child {
+  padding-right: 12px;
+}
+.modal.history-modal .markdown td:last-child {
+  padding-left: 12px;
+}
 .modal.history-modal .modal-header {
   height: auto;
+}
+.modal.history-modal #revision {
+  margin-right: -8px;
+  margin-bottom: 20px;
+  margin-left: -8px;
+}
+.modal.history-modal .revision-content {
+  width: calc(50% - 12px);
+}
+.modal.history-modal .revision-content:nth-of-type(2) {
+  margin-left: 24px;
+}
+.modal.history-modal .revision-content > :last-child {
+  margin-bottom: 0;
+}
+.modal.history-modal #revision-controls {
+  margin-bottom: 0;
+}
+.modal.history-modal #revisions table {
+  margin-top: 10px;
+}
+.modal.history-modal #revisions .row, .modal.history-modal #revisions .row:first-of-type {
+  margin-top: 10px;
+}
+.modal.history-modal #revision-details {
+  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
+  margin-top: 0;
+  padding: 0 0 10px;
 }
 .modal form {
   margin-bottom: 20px;
@@ -3479,14 +3569,24 @@ div.menu-links-header .menu-links-row {
 .modal-header ~ .modal-footer, .modal-header ~ div > .modal-footer, .modal-header ~ form > .modal-footer {
   border-top: 1px solid color-chooser(#000000, #e0e0e0);
 }
+.modal-footer :not(.disclaimer) a {
+  margin-left: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.modal-footer :not(.disclaimer) a:last-child {
+  margin-left: 0;
+}
 body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   color: $tertiary;
 }
 .modal-footer .btn {
-  margin: 0;
+  margin: 0 0 0 8px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
-.modal-footer .btn:first-child {
-  margin-left: 8px;
+.modal-footer .btn:last-child {
+  margin-left: 0;
 }
 
 .modal-header {
@@ -3827,6 +3927,15 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+#reply-control.saving .grippie {
+  display: none;
+}
+#reply-control.saving .spinner {
+  height: 19.999994px;
+  margin: 0 0 0 4px;
+  vertical-align: middle;
+  width: 19.999994px;
+}
 #reply-control .add-warning {
   margin-right: 16px;
   margin-left: 0;
@@ -3919,6 +4028,16 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control .dropdown-select-box {
   height: auto;
+}
+#reply-control #edit-reason {
+  background-color: color-chooser(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.12));
+  border-bottom: 0;
+  display: inline-block;
+  font-size: 0.857143em;
+  height: 19.999994px;
+  margin: 0 0 0 4px;
+  padding: 0 4px;
+  width: auto;
 }
 #reply-control .grippie {
   -ms-flex-align: center;
@@ -4294,6 +4413,12 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   background-color: $tertiary;
   border-radius: 2px;
   width: 4px;
+}
+.timeline-container .topic-timeline .timeline-last-read {
+  margin-left: -4px;
+}
+.timeline-container .topic-timeline .timeline-last-read i.progress {
+  margin-right: 0;
 }
 .timeline-container .topic-timeline .timeline-padding {
   background-color: $tertiary;
@@ -5241,9 +5366,15 @@ nav.post-controls .show-replies i {
 .topic-map .information {
   background-color: color-chooser(#212121, #f5f5f5);
 }
+.topic-map .information > h3 {
+  margin-bottom: 0;
+}
 .topic-map .information .controls {
   margin-right: -8px;
   margin-left: -8px;
+}
+.topic-map .information .controls:last-child {
+  margin-bottom: -8px;
 }
 .topic-map .links {
   padding: 16px 16px 8px;
@@ -5293,11 +5424,14 @@ nav.post-controls .show-replies i {
   color: inherit;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0.857143 em;
+  font-size: 0.857143em;
   height: 32px;
   margin: 8px 8px 8px 0;
   padding: 0 12px 0 36px;
   position: relative;
+}
+.topic-map .participants .user.group {
+  padding-left: 12px;
 }
 .topic-map .participants .user a {
   color: inherit;
@@ -5311,6 +5445,9 @@ nav.post-controls .show-replies i {
   left: 0;
   width: 32px;
 }
+.topic-map .participants .user .d-icon-users {
+  margin-right: 4px;
+}
 .topic-map .participants .user .remove-invited {
   margin-left: 4px;
 }
@@ -5322,7 +5459,7 @@ nav.post-controls .show-replies i {
   margin: 0 8px 0 0;
 }
 .topic-map .topic-links span.domain {
-  font-size: 0.857143 em;
+  font-size: 0.857143em;
 }
 .topic-map .topic-links td {
   padding: 0 0 8px;
@@ -5822,6 +5959,9 @@ nav.post-controls .show-replies i {
 .user-main .user-stream .excerpt:empty {
   display: none;
 }
+.user-main .user-stream .excerpt + .excerpt {
+  margin-top: 0;
+}
 .user-main .user-stream .info {
   -ms-flex-align: center;
       align-items: center;
@@ -6255,6 +6395,107 @@ nav.post-controls .show-replies i {
   display: flex;
   min-width: 0;
   text-align: left;
+}
+
+section.about {
+  margin-bottom: 24px;
+}
+section.about.admins {
+  padding-bottom: 0;
+}
+section.about.admins .user-info {
+  -ms-flex-align: center;
+      align-items: center;
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border-radius: 0;
+  box-shadow: none;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -16px;
+  margin-bottom: 0;
+  margin-left: -16px;
+  width: auto;
+}
+section.about.stats table {
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border-radius: 0;
+  box-shadow: none;
+  margin-right: -16px;
+  margin-left: -16px;
+  max-width: none;
+  width: calc(100% + 32px);
+}
+section.about.stats table:last-of-type {
+  margin-bottom: -16px;
+}
+section.about > :last-child {
+  margin-bottom: 0;
+}
+section.about h3,
+section.about p,
+section.about table {
+  margin-top: 0;
+}
+section.about h3 {
+  margin-bottom: 16px;
+}
+section.about p,
+section.about table {
+  margin-bottom: 16px;
+}
+section.about table td,
+section.about table th {
+  border-bottom-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  height: 48px;
+  padding: 12px 12px;
+}
+
+.body-page {
+  max-width: 690px;
+  padding-left: 0;
+  width: auto;
+}
+.static-faq .body-page [itemprop='mainContentOfPage'], .static-privacy .body-page [itemprop='mainContentOfPage'], .static-tos .body-page [itemprop='mainContentOfPage'] {
+  margin-bottom: 24px;
+}
+.static-faq .body-page [itemprop='mainContentOfPage'] > :first-child, .static-privacy .body-page [itemprop='mainContentOfPage'] > :first-child, .static-tos .body-page [itemprop='mainContentOfPage'] > :first-child {
+  margin-top: 0;
+}
+.static-faq .body-page [itemprop='mainContentOfPage'] > :last-child, .static-privacy .body-page [itemprop='mainContentOfPage'] > :last-child, .static-tos .body-page [itemprop='mainContentOfPage'] > :last-child {
+  margin-bottom: 0;
+}
+.static-faq .body-page [itemprop='mainContentOfPage'] > p:first-child + h2, .static-privacy .body-page [itemprop='mainContentOfPage'] > p:first-child + h2, .static-tos .body-page [itemprop='mainContentOfPage'] > p:first-child + h2 {
+  margin-top: -16px;
+}
+.body-page blockquote {
+  margin-bottom: 16px;
+}
+.body-page h1,
+.body-page h2,
+.body-page h3 {
+  margin-bottom: 8px;
+}
+.body-page hr {
+  margin: 16px 0;
+}
+.body-page ol,
+.body-page ul {
+  margin-bottom: 16px;
+}
+.body-page ol ol,
+.body-page ol ul,
+.body-page ul ol,
+.body-page ul ul {
+  margin-bottom: 0;
+}
+.body-page p {
+  margin-bottom: 16px;
+}
+.body-page pre {
+  margin-bottom: 16px;
+}
+.body-page table {
+  margin-bottom: 16px;
 }
 
 .admin-container {
