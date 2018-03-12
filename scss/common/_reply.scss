@@ -90,6 +90,19 @@
     flex-shrink: 0;
   }
 
+  &.saving {
+    .grippie {
+      display: none;
+    }
+
+    .spinner {
+      height: ($font-size-base * $line-height-base);
+      margin: 0 0 0 ($card-inner-spacer-x / 2);
+      vertical-align: middle;
+      width: ($font-size-base * $line-height-base);
+    }
+  }
+
   .add-warning {
     margin-right: $card-padding-x;
     margin-left: 0;
