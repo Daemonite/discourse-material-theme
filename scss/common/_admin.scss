@@ -244,6 +244,14 @@
     }
   }
 
+  &.admin-embedding {
+    input[type='text'] {
+      @extend %text-field-box;
+
+      margin-bottom: 0;
+    }
+  }
+
   .admin-container {
     padding-right: 0;
     padding-left: 0;
