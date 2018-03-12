@@ -87,8 +87,83 @@
 }
 
 .modal {
-  &.history-modal .modal-header {
-    height: auto;
+  &.history-modal {
+    #display-modes .btn {
+      background-color: transparent;
+
+      @include focus-hover {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      }
+
+      &:active {
+        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+      }
+    }
+
+    .markdown {
+      border-collapse: collapse;
+
+      td {
+        background-clip: content-box;
+
+        &:first-child {
+          padding-right: ($modal-inner-spacer-x / 2);
+        }
+
+        &:last-child {
+          padding-left: ($modal-inner-spacer-x / 2);
+        }
+      }
+    }
+
+    .modal-header {
+      height: auto;
+    }
+
+    #revision {
+      margin-right: ($card-inner-spacer-x * -1);
+      margin-bottom: $modal-inner-spacer-y;
+      margin-left: ($card-inner-spacer-x * -1);
+
+      .btn {
+        @extend %btn-footer;
+      }
+    }
+
+    .revision-content {
+      width: calc(50% - #{$modal-inner-spacer-x / 2});
+
+      &:nth-of-type(2) {
+        margin-left: $modal-inner-spacer-x;
+      }
+
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    #revision-controls {
+      margin-bottom: 0;
+    }
+
+    #revisions {
+      table {
+        margin-top: ($modal-inner-spacer-y / 2);
+      }
+
+      .row {
+        &,
+        &:first-of-type {
+          margin-top: ($modal-inner-spacer-y / 2);
+        }
+      }
+    }
+
+    #revision-details {
+      border-bottom: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
+      margin-top: 0;
+      padding: 0 0 ($modal-inner-spacer-y / 2);
+    }
   }
 
   form {
