@@ -413,7 +413,7 @@
     width: auto;
 
     .list-actions {
-      margin-bottom: $spacer;
+      margin-bottom: $spacer-lg;
 
       .btn {
         @extend %btn-raised;
@@ -571,15 +571,24 @@
   margin-right: $spacer-lg;
   padding-left: 0;
 
-  .dismiss-notifications .fa-check::before {
-    content: 'clear_all';
+  .dismiss-notifications {
+    margin-bottom: $spacer-lg;
+
+    .fa-check::before {
+      content: 'clear_all';
+    }
+  }
+
+  .nav-stacked,
+  .user-archive {
+    margin-bottom: $spacer-lg;
   }
 
   .new-private-message {
     @extend %btn-raised;
 
     display: block;
-    margin-bottom: $spacer;
+    margin-bottom: $spacer-lg;
     width: 100%;
   }
 }
