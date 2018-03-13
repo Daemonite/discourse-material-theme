@@ -218,6 +218,10 @@
   @include material-icons('settings');
 }
 
+.fa-globe {
+  @include material-icons('public');
+}
+
 .fa-group {
   @include material-icons('group');
 }
