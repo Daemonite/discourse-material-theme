@@ -111,6 +111,8 @@
 }
 
 .user-main {
+  margin-bottom: 0;
+
   .about {
     @extend %card;
 
@@ -669,7 +671,17 @@
 .user-table {
   display: flex;
   margin-top: 0;
-  margin-bottom: $spacer-lg;
+  margin-bottom: 0;
+
+  .user-preferences,
+  .user-right .topic-list,
+  .user-stream {
+    margin-bottom: $spacer-lg;
+  }
+
+  .user-stream .user-stream {
+    margin-bottom: 0;
+  }
 
   .wrapper {
     display: flex;

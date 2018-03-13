@@ -96,6 +96,10 @@
     margin-bottom: $spacer-lg;
 
     > p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+
       .more {
         @extend %btn-flat;
         @extend %btn-raised;
