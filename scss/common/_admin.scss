@@ -456,6 +456,7 @@
     padding: 0;
     text-decoration: underline;
     text-transform: none;
+    white-space: normal;
 
     @include focus-hover {
       background-color: transparent;
@@ -1286,6 +1287,30 @@ div {
   .select-kit {
     margin-right: $spacer-sm;
     margin-left: $spacer-sm;
+  }
+}
+
+.staff-actions.table {
+  .created_at {
+    width: 6%;
+  }
+
+  .loading-container {
+    padding: $tbody-cell-padding-y $tbody-cell-padding-x;
+
+    .admin-list-item {
+      margin-right: ($tbody-cell-padding-x * -1);
+      margin-left: ($tbody-cell-padding-x * -1);
+      width: calc(100% + #{$tbody-cell-padding-x * 2});
+
+      &:first-child {
+        margin-top: ($tbody-cell-padding-y * -1);
+      }
+
+      &:last-child {
+        margin-bottom: ($tbody-cell-padding-y * -1);
+      }
+    }
   }
 }
 
