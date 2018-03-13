@@ -428,6 +428,7 @@
       border-right: 0;
       border-left: 0;
       border-radius: 0;
+      min-height: $text-field-height;
       padding: 0 $text-field-padding-x;
 
       @include focus-hover {
@@ -441,8 +442,8 @@
       }
 
       .item {
-        margin-top: 1px;
-        margin-bottom: 1px;
+        margin-top: 0;
+        margin-bottom: ($text-field-height - $text-field-border-width - $chip-height);
       }
     }
 

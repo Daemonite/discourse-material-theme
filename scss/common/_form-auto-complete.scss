@@ -4,20 +4,24 @@ div {
     background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
     border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
     border-radius: $text-field-box-border-radius;
-    min-height: $text-field-height;
+    min-height: $text-field-box-height;
     min-width: $text-field-min-width;
-    padding: ($text-field-box-padding-y - ($text-field-height - $chip-height) / 2) $text-field-box-padding-x;
+    padding: (($text-field-box-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2) $text-field-box-padding-x;
+    padding-right: ($text-field-box-padding-x - $spacer-xs);
 
     &:hover {
       border-width: ($text-field-border-width * 2);
-      padding: ($text-field-box-padding-y - ($text-field-height - $chip-height) / 2 - $text-field-border-width) ($text-field-box-padding-x - $text-field-border-width);
+      padding: (($text-field-box-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2 - $text-field-border-width) ($text-field-box-padding-x - $text-field-border-width);
+      padding-right: ($text-field-box-padding-x - $spacer-xs - $text-field-border-width);
     }
 
     .admin-controls & {
-      padding: $text-field-border-width $text-field-border-width $text-field-border-width ($spacer-xs + $text-field-border-width);
+      padding: (($text-field-box-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2) $text-field-box-padding-x;
+      padding-right: ($text-field-box-padding-x - $spacer-xs);
 
       &:hover {
-        padding: 0 0 0 $spacer-xs;
+        padding: (($text-field-box-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2 - $text-field-border-width) ($text-field-box-padding-x - $text-field-border-width);
+        padding-right: ($text-field-box-padding-x - $spacer-xs - $text-field-border-width);
       }
     }
 
@@ -33,9 +37,9 @@ div {
         font-weight: normal;
         height: $chip-height;
         line-height: 1;
-        margin-top: (($text-field-height - $chip-height) / 2);
+        margin-top: ($spacer-xs / 2);
         margin-right: $spacer-xs;
-        margin-bottom: (($text-field-height - $chip-height) / 2);
+        margin-bottom: ($spacer-xs / 2);
         padding: 0 $chip-padding-x;
 
         a {
@@ -82,7 +86,8 @@ div {
     input[type='text'] {
       border-radius: 0;
       height: auto;
-      padding: 0;
+      margin-right: $spacer-xs;
+      padding: 0 !important;
     }
   }
 }
