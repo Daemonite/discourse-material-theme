@@ -62,6 +62,11 @@ ol {
 
   .dropdown-select-box.dropdown-select-box {
     margin-bottom: $spacer-sm;
+    margin-left: $spacer-sm;
+
+    .btn {
+      margin-left: 0;
+    }
   }
 
   .nav {
