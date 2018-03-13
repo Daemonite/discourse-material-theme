@@ -318,6 +318,10 @@
   @include material-icons('add');
 }
 
+.fa-power-off {
+  @include material-icons('power_settings_new');
+}
+
 .fa-question-circle {
   @include material-icons('help');
 }
