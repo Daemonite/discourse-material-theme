@@ -274,6 +274,10 @@
   @include material-icons('sentiment_neutral');
 }
 
+.fa-microphone {
+  @include material-icons('mic');
+}
+
 .fa-minus {
   @include material-icons('remove');
 }
