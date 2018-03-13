@@ -1271,6 +1271,14 @@ div {
   display: flex;
   justify-content: space-between;
 
+  a {
+    &.filter {
+      border-radius: ($chip-height / 2);
+      font-size: $font-size-small;
+      padding: $chip-padding-y $chip-padding-x;
+    }
+  }
+
   .pull-right {
     margin-left: auto;
   }
