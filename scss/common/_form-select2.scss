@@ -242,6 +242,85 @@
     }
   }
 
+  &.multi-select {
+    background-color: transparent;
+
+    &.is-expanded {
+      .multi-select-header {
+        border-radius: $text-field-box-border-radius $text-field-box-border-radius 0 0;
+        box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) unquote('$tertiary'), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) unquote('$tertiary');
+      }
+
+      .select-kit-wrapper {
+        border: 0;
+        box-shadow: none;
+      }
+    }
+
+    .choices {
+      align-items: center;
+      min-height: ($text-field-box-height - $text-field-border-width * 2);
+      padding: (($text-field-box-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2) $text-field-box-padding-x;
+      padding-right: ($text-field-box-padding-x - $spacer-xs);
+
+      .choice {
+        border: 0;
+        margin: ($spacer-xs / 2) $spacer-xs ($spacer-xs / 2) 0;
+        padding: 0;
+      }
+
+      .filter .filter-input {
+        height: auto;
+      }
+
+      .selected-name {
+        background-clip: border-box;
+        background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+        border-radius: ($chip-height / 2);
+        font-size: $chip-font-size;
+        font-weight: normal;
+        height: $chip-height;
+        line-height: 1;
+        padding: 0 $chip-padding-x;
+
+        .name {
+          line-height: inherit;
+          padding: 0;
+
+          &::after {
+            @extend %material-icons;
+
+            content: 'cancel';
+            font-size: $material-icon-size;
+            margin-right: ($chip-inner-spacer-x - $chip-padding-x);
+            margin-left: $chip-inner-spacer-x;
+          }
+        }
+      }
+    }
+
+    .multi-select-header {
+      background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+      border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+      border-radius: $text-field-box-border-radius;
+
+      &:hover {
+        box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-dark, $text-field-border-color-light), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+      }
+
+      &.is-focused {
+        border-color: unquote('$tertiary');
+        border-radius: $text-field-box-border-radius $text-field-box-border-radius 0 0;
+        box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) unquote('$tertiary'), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) unquote('$tertiary');
+      }
+    }
+
+    .select-kit-row {
+      margin: 0;
+      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+    }
+  }
+
   .settings .setting .setting-value & {
     margin-bottom: $text-field-margin-y;
   }
@@ -260,6 +339,10 @@
 
   .select-kit-collection {
     background-color: transparent;
+  }
+
+  .select-kit-filter .filter-input {
+    height: auto;
   }
 
   .select-kit-header {
