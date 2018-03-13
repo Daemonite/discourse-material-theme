@@ -278,6 +278,10 @@
   @include material-icons('mic');
 }
 
+.fa-microphone-slash {
+  @include material-icons('mic_off');
+}
+
 .fa-minus {
   @include material-icons('remove');
 }
