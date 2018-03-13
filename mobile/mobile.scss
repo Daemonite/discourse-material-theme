@@ -268,6 +268,9 @@ body .boxed .contents {
 .list-controls .categories-admin-dropdown.select-kit {
   margin: 0 0 8px 8px;
 }
+.list-controls .nav > li:last-child {
+  margin-right: 0;
+}
 .list-controls .nav > li > a {
   opacity: 1;
 }
@@ -555,6 +558,7 @@ tr.category-topic-link:last-child {
 .top-section:not(.badges-section):not(.stats-section) {
   -ms-flex-direction: column;
       flex-direction: column;
+  margin-bottom: 0;
 }
 
 .top-sub-section {
