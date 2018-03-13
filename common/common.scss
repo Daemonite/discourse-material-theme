@@ -18,7 +18,7 @@
   }
 }
 
-blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .d-header button.sign-up-button::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, #reply-control .toggler::before, nav.post-controls button .read-icon::before {
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header button.sign-up-button::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, #reply-control .toggler::before, nav.post-controls button .read-icon::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -77,7 +77,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 }
 
 .nav-pills > li > a, .nav-stacked li > a, .content-list ul li > a, .btn, div.poll .poll-buttons a, .select-kit.category-drop.combo-box .category-drop-header, .select-kit.combo-box .select-kit-header, .modal-footer :not(.disclaimer) a, .pika-button, .pika-next,
-.pika-prev, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .stats-section li.linked-stat a, .user-main .about .controls a, .badges-section.top-section > p .more, .d-modal-cancel, #reply-control .submit-panel .cancel {
+.pika-prev, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .stats-section li.linked-stat a, .user-main .about .controls a, .badges-section.top-section > p .more, .d-modal-cancel, #reply-control .submit-panel .cancel, .screened-ip-addresses .actions.col a {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -102,23 +102,23 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   white-space: nowrap;
 }
 .nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit.category-drop.combo-box .category-drop-header:focus, .select-kit.combo-box .select-kit-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus, .nav-pills > li > a:hover, .nav-stacked li > a:hover, .content-list ul li > a:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .modal-footer :not(.disclaimer) a:hover, .pika-button:hover, .pika-next:hover,
-.pika-prev:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, nav.post-controls button:hover, nav.post-controls .show-replies:hover, .small-action button:hover, .topic-map .buttons .btn:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, .badges-section.top-section > p .more:hover, .d-modal-cancel:hover, #reply-control .submit-panel .cancel:hover {
+.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus, .screened-ip-addresses .actions.col a:focus, .nav-pills > li > a:hover, .nav-stacked li > a:hover, .content-list ul li > a:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .modal-footer :not(.disclaimer) a:hover, .pika-button:hover, .pika-next:hover,
+.pika-prev:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, nav.post-controls button:hover, nav.post-controls .show-replies:hover, .small-action button:hover, .topic-map .buttons .btn:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, .badges-section.top-section > p .more:hover, .d-modal-cancel:hover, #reply-control .submit-panel .cancel:hover, .screened-ip-addresses .actions.col a:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: color-chooser($primary, $primary);
 }
 .nav-pills > li > a:active, .nav-stacked li > a:active, .content-list ul li > a:active, .btn:active, div.poll .poll-buttons a:active, .select-kit.category-drop.combo-box .category-drop-header:active, .select-kit.combo-box .select-kit-header:active, .modal-footer :not(.disclaimer) a:active, .pika-button:active, .pika-next:active,
-.pika-prev:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, nav.post-controls button:active, nav.post-controls .show-replies:active, .small-action button:active, .topic-map .buttons .btn:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .badges-section.top-section > p .more:active, .d-modal-cancel:active, #reply-control .submit-panel .cancel:active {
+.pika-prev:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, nav.post-controls button:active, nav.post-controls .show-replies:active, .small-action button:active, .topic-map .buttons .btn:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .badges-section.top-section > p .more:active, .d-modal-cancel:active, #reply-control .submit-panel .cancel:active, .screened-ip-addresses .actions.col a:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
 .nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit.category-drop.combo-box .category-drop-header:focus, .select-kit.combo-box .select-kit-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus {
+.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus, .screened-ip-addresses .actions.col a:focus {
   outline: 0;
 }
 .nav-pills > li > a[disabled], .nav-stacked li > a[disabled], .content-list ul li > a[disabled], [disabled].btn, div.poll .poll-buttons a[disabled], .select-kit.category-drop.combo-box [disabled].category-drop-header, .select-kit.combo-box [disabled].select-kit-header, .modal-footer :not(.disclaimer) a[disabled], [disabled].pika-button, [disabled].pika-next,
-[disabled].pika-prev, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, nav.post-controls button[disabled], nav.post-controls [disabled].show-replies, .small-action button[disabled], .topic-map .buttons [disabled].btn, .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .badges-section.top-section > p [disabled].more, [disabled].d-modal-cancel, #reply-control .submit-panel [disabled].cancel, .nav-pills > li > a.disabled, .nav-stacked li > a.disabled, .content-list ul li > a.disabled, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .modal-footer :not(.disclaimer) a.disabled, .disabled.pika-button, .disabled.pika-next,
-.disabled.pika-prev, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, nav.post-controls button.disabled, nav.post-controls .disabled.show-replies, .small-action button.disabled, .topic-map .buttons .disabled.btn, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .badges-section.top-section > p .disabled.more, .disabled.d-modal-cancel, #reply-control .submit-panel .disabled.cancel {
+[disabled].pika-prev, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, nav.post-controls button[disabled], nav.post-controls [disabled].show-replies, .small-action button[disabled], .topic-map .buttons [disabled].btn, .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .badges-section.top-section > p [disabled].more, [disabled].d-modal-cancel, #reply-control .submit-panel [disabled].cancel, .screened-ip-addresses .actions.col a[disabled], .nav-pills > li > a.disabled, .nav-stacked li > a.disabled, .content-list ul li > a.disabled, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .modal-footer :not(.disclaimer) a.disabled, .disabled.pika-button, .disabled.pika-next,
+.disabled.pika-prev, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, nav.post-controls button.disabled, nav.post-controls .disabled.show-replies, .small-action button.disabled, .topic-map .buttons .disabled.btn, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .badges-section.top-section > p .disabled.more, .disabled.d-modal-cancel, #reply-control .submit-panel .disabled.cancel, .screened-ip-addresses .actions.col a.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
 }
@@ -128,7 +128,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn, .search.row .search-bar .btn, .timeline-container .topic-timeline div > button.btn,
 .timeline-container .topic-timeline span > button.btn, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .top-title-buttons button, #topic-footer-buttons div > button.btn,
 #topic-footer-buttons span > button.btn,
-#topic-footer-buttons > button.btn, .user-main .user-right .list-actions .btn, .user-navigation .new-private-message, .badges-section.top-section > p .more, .admin-contents .btn {
+#topic-footer-buttons > button.btn, .user-main .user-right .list-actions .btn, .user-navigation .new-private-message, .user-preferences .btn, .badges-section.top-section > p .more, .admin-contents .btn, .screened-ip-addresses .actions.col a {
   background-color: color-chooser($tertiary, #ffffff);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
@@ -137,12 +137,12 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn:focus, .search.row .search-bar .btn:focus, .timeline-container .topic-timeline div > button.btn:focus,
 .timeline-container .topic-timeline span > button.btn:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .top-title-buttons button:focus, #topic-footer-buttons div > button.btn:focus,
 #topic-footer-buttons span > button.btn:focus,
-#topic-footer-buttons > button.btn:focus, .user-main .user-right .list-actions .btn:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .admin-contents .btn:focus, .image-upload-controls .btn:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .list-controls .btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
+#topic-footer-buttons > button.btn:focus, .user-main .user-right .list-actions .btn:focus, .user-navigation .new-private-message:focus, .user-preferences .btn:focus, .badges-section.top-section > p .more:focus, .admin-contents .btn:focus, .screened-ip-addresses .actions.col a:focus, .image-upload-controls .btn:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .list-controls .btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn:hover, #reply-control .submit-panel .btn:hover, .fps-select a:hover, .search.row > .btn:hover,
 .search.row .new-topic-btn .btn:hover, .search.row .search-bar .btn:hover, .timeline-container .topic-timeline div > button.btn:hover,
 .timeline-container .topic-timeline span > button.btn:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .top-title-buttons button:hover, #topic-footer-buttons div > button.btn:hover,
 #topic-footer-buttons span > button.btn:hover,
-#topic-footer-buttons > button.btn:hover, .user-main .user-right .list-actions .btn:hover, .user-navigation .new-private-message:hover, .badges-section.top-section > p .more:hover, .admin-contents .btn:hover {
+#topic-footer-buttons > button.btn:hover, .user-main .user-right .list-actions .btn:hover, .user-navigation .new-private-message:hover, .user-preferences .btn:hover, .badges-section.top-section > p .more:hover, .admin-contents .btn:hover, .screened-ip-addresses .actions.col a:hover {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
@@ -151,7 +151,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn:active, .search.row .search-bar .btn:active, .timeline-container .topic-timeline div > button.btn:active,
 .timeline-container .topic-timeline span > button.btn:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .top-title-buttons button:active, #topic-footer-buttons div > button.btn:active,
 #topic-footer-buttons span > button.btn:active,
-#topic-footer-buttons > button.btn:active, .user-main .user-right .list-actions .btn:active, .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .admin-contents .btn:active {
+#topic-footer-buttons > button.btn:active, .user-main .user-right .list-actions .btn:active, .user-navigation .new-private-message:active, .user-preferences .btn:active, .badges-section.top-section > p .more:active, .admin-contents .btn:active, .screened-ip-addresses .actions.col a:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
@@ -160,12 +160,12 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn [disabled].btn, .search.row .search-bar [disabled].btn, .timeline-container .topic-timeline div > button[disabled].btn,
 .timeline-container .topic-timeline span > button[disabled].btn, .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .top-title-buttons button[disabled], #topic-footer-buttons div > button[disabled].btn,
 #topic-footer-buttons span > button[disabled].btn,
-#topic-footer-buttons > button[disabled].btn, .user-main .user-right .list-actions [disabled].btn, .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .admin-contents [disabled].btn, .image-upload-controls .disabled.btn, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .list-controls .disabled.btn, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
+#topic-footer-buttons > button[disabled].btn, .user-main .user-right .list-actions [disabled].btn, .user-navigation [disabled].new-private-message, .user-preferences [disabled].btn, .badges-section.top-section > p [disabled].more, .admin-contents [disabled].btn, .screened-ip-addresses .actions.col a[disabled], .image-upload-controls .disabled.btn, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .list-controls .disabled.btn, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
 .edit-category-modal .edit-category-tab-security section.field > .disabled.btn, #reply-control .submit-panel .disabled.btn, .fps-select a.disabled, .search.row > .disabled.btn,
 .search.row .new-topic-btn .disabled.btn, .search.row .search-bar .disabled.btn, .timeline-container .topic-timeline div > button.disabled.btn,
 .timeline-container .topic-timeline span > button.disabled.btn, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .top-title-buttons button.disabled, #topic-footer-buttons div > button.disabled.btn,
 #topic-footer-buttons span > button.disabled.btn,
-#topic-footer-buttons > button.disabled.btn, .user-main .user-right .list-actions .disabled.btn, .user-navigation .disabled.new-private-message, .badges-section.top-section > p .disabled.more, .admin-contents .disabled.btn {
+#topic-footer-buttons > button.disabled.btn, .user-main .user-right .list-actions .disabled.btn, .user-navigation .disabled.new-private-message, .user-preferences .disabled.btn, .badges-section.top-section > p .disabled.more, .admin-contents .disabled.btn, .screened-ip-addresses .actions.col a.disabled {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
   background-image: none;
   box-shadow: none !important;
@@ -175,12 +175,12 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn-danger.btn, .search.row .search-bar .btn-danger.btn, .timeline-container .topic-timeline div > button.btn-danger.btn,
 .timeline-container .topic-timeline span > button.btn-danger.btn, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, .top-title-buttons button.btn-danger, #topic-footer-buttons div > button.btn-danger.btn,
 #topic-footer-buttons span > button.btn-danger.btn,
-#topic-footer-buttons > button.btn-danger.btn, .user-main .user-right .list-actions .btn-danger.btn, .user-navigation .btn-danger.new-private-message, .badges-section.top-section > p .btn-danger.more, .admin-contents .btn-danger.btn, .image-upload-controls .cancel.btn, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .list-controls .cancel.btn, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
+#topic-footer-buttons > button.btn-danger.btn, .user-main .user-right .list-actions .btn-danger.btn, .user-navigation .btn-danger.new-private-message, .user-preferences .btn-danger.btn, .badges-section.top-section > p .btn-danger.more, .admin-contents .btn-danger.btn, .screened-ip-addresses .actions.col a.btn-danger, .image-upload-controls .cancel.btn, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .list-controls .cancel.btn, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn, #reply-control .submit-panel .cancel.btn, .fps-select a.cancel, .search.row > .cancel.btn,
 .search.row .new-topic-btn .cancel.btn, .search.row .search-bar .cancel.btn, .timeline-container .topic-timeline div > button.cancel.btn,
 .timeline-container .topic-timeline span > button.cancel.btn, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header, .top-title-buttons button.cancel, #topic-footer-buttons div > button.cancel.btn,
 #topic-footer-buttons span > button.cancel.btn,
-#topic-footer-buttons > button.cancel.btn, .user-main .user-right .list-actions .cancel.btn, .user-navigation .cancel.new-private-message, .badges-section.top-section > p .cancel.more, .admin-contents .cancel.btn {
+#topic-footer-buttons > button.cancel.btn, .user-main .user-right .list-actions .cancel.btn, .user-navigation .cancel.new-private-message, .user-preferences .cancel.btn, .badges-section.top-section > p .cancel.more, .admin-contents .cancel.btn, .screened-ip-addresses .actions.col a.cancel {
   background-color: $danger;
   color: color-dynamic($danger);
 }
@@ -189,22 +189,22 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn-danger.btn:focus, .search.row .search-bar .btn-danger.btn:focus, .timeline-container .topic-timeline div > button.btn-danger.btn:focus,
 .timeline-container .topic-timeline span > button.btn-danger.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:focus, .top-title-buttons button.btn-danger:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
 #topic-footer-buttons span > button.btn-danger.btn:focus,
-#topic-footer-buttons > button.btn-danger.btn:focus, .user-main .user-right .list-actions .btn-danger.btn:focus, .user-navigation .btn-danger.new-private-message:focus, .badges-section.top-section > p .btn-danger.more:focus, .admin-contents .btn-danger.btn:focus, .image-upload-controls .btn-danger.btn:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .list-controls .btn-danger.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
+#topic-footer-buttons > button.btn-danger.btn:focus, .user-main .user-right .list-actions .btn-danger.btn:focus, .user-navigation .btn-danger.new-private-message:focus, .user-preferences .btn-danger.btn:focus, .badges-section.top-section > p .btn-danger.more:focus, .admin-contents .btn-danger.btn:focus, .screened-ip-addresses .actions.col a.btn-danger:focus, .image-upload-controls .btn-danger.btn:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .list-controls .btn-danger.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:hover, #reply-control .submit-panel .btn-danger.btn:hover, .fps-select a.btn-danger:hover, .search.row > .btn-danger.btn:hover,
 .search.row .new-topic-btn .btn-danger.btn:hover, .search.row .search-bar .btn-danger.btn:hover, .timeline-container .topic-timeline div > button.btn-danger.btn:hover,
 .timeline-container .topic-timeline span > button.btn-danger.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:hover, .top-title-buttons button.btn-danger:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
 #topic-footer-buttons span > button.btn-danger.btn:hover,
-#topic-footer-buttons > button.btn-danger.btn:hover, .user-main .user-right .list-actions .btn-danger.btn:hover, .user-navigation .btn-danger.new-private-message:hover, .badges-section.top-section > p .btn-danger.more:hover, .admin-contents .btn-danger.btn:hover, .image-upload-controls .cancel.btn:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .list-controls .cancel.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
+#topic-footer-buttons > button.btn-danger.btn:hover, .user-main .user-right .list-actions .btn-danger.btn:hover, .user-navigation .btn-danger.new-private-message:hover, .user-preferences .btn-danger.btn:hover, .badges-section.top-section > p .btn-danger.more:hover, .admin-contents .btn-danger.btn:hover, .screened-ip-addresses .actions.col a.btn-danger:hover, .image-upload-controls .cancel.btn:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .list-controls .cancel.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn:focus, #reply-control .submit-panel .cancel.btn:focus, .fps-select a.cancel:focus, .search.row > .cancel.btn:focus,
 .search.row .new-topic-btn .cancel.btn:focus, .search.row .search-bar .cancel.btn:focus, .timeline-container .topic-timeline div > button.cancel.btn:focus,
 .timeline-container .topic-timeline span > button.cancel.btn:focus, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:focus, .top-title-buttons button.cancel:focus, #topic-footer-buttons div > button.cancel.btn:focus,
 #topic-footer-buttons span > button.cancel.btn:focus,
-#topic-footer-buttons > button.cancel.btn:focus, .user-main .user-right .list-actions .cancel.btn:focus, .user-navigation .cancel.new-private-message:focus, .badges-section.top-section > p .cancel.more:focus, .admin-contents .cancel.btn:focus, .image-upload-controls .cancel.btn:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .list-controls .cancel.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
+#topic-footer-buttons > button.cancel.btn:focus, .user-main .user-right .list-actions .cancel.btn:focus, .user-navigation .cancel.new-private-message:focus, .user-preferences .cancel.btn:focus, .badges-section.top-section > p .cancel.more:focus, .admin-contents .cancel.btn:focus, .screened-ip-addresses .actions.col a.cancel:focus, .image-upload-controls .cancel.btn:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .list-controls .cancel.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn:hover, #reply-control .submit-panel .cancel.btn:hover, .fps-select a.cancel:hover, .search.row > .cancel.btn:hover,
 .search.row .new-topic-btn .cancel.btn:hover, .search.row .search-bar .cancel.btn:hover, .timeline-container .topic-timeline div > button.cancel.btn:hover,
 .timeline-container .topic-timeline span > button.cancel.btn:hover, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:hover, .top-title-buttons button.cancel:hover, #topic-footer-buttons div > button.cancel.btn:hover,
 #topic-footer-buttons span > button.cancel.btn:hover,
-#topic-footer-buttons > button.cancel.btn:hover, .user-main .user-right .list-actions .cancel.btn:hover, .user-navigation .cancel.new-private-message:hover, .badges-section.top-section > p .cancel.more:hover, .admin-contents .cancel.btn:hover {
+#topic-footer-buttons > button.cancel.btn:hover, .user-main .user-right .list-actions .cancel.btn:hover, .user-navigation .cancel.new-private-message:hover, .user-preferences .cancel.btn:hover, .badges-section.top-section > p .cancel.more:hover, .admin-contents .cancel.btn:hover, .screened-ip-addresses .actions.col a.cancel:hover {
   background-color: $danger;
   color: color-dynamic($danger);
 }
@@ -213,7 +213,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn-primary.btn, .search.row .search-bar .btn-primary.btn, .timeline-container .topic-timeline div > button.btn-primary.btn,
 .timeline-container .topic-timeline span > button.btn-primary.btn, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, .top-title-buttons button.btn-primary, #topic-footer-buttons div > button.btn-primary.btn,
 #topic-footer-buttons span > button.btn-primary.btn,
-#topic-footer-buttons > button.btn-primary.btn, .user-main .user-right .list-actions .btn-primary.btn, .user-navigation .btn-primary.new-private-message, .badges-section.top-section > p .btn-primary.more, .admin-contents .btn-primary.btn {
+#topic-footer-buttons > button.btn-primary.btn, .user-main .user-right .list-actions .btn-primary.btn, .user-navigation .btn-primary.new-private-message, .user-preferences .btn-primary.btn, .badges-section.top-section > p .btn-primary.more, .admin-contents .btn-primary.btn, .screened-ip-addresses .actions.col a.btn-primary {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
@@ -222,12 +222,12 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn-primary.btn:focus, .search.row .search-bar .btn-primary.btn:focus, .timeline-container .topic-timeline div > button.btn-primary.btn:focus,
 .timeline-container .topic-timeline span > button.btn-primary.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:focus, .top-title-buttons button.btn-primary:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
 #topic-footer-buttons span > button.btn-primary.btn:focus,
-#topic-footer-buttons > button.btn-primary.btn:focus, .user-main .user-right .list-actions .btn-primary.btn:focus, .user-navigation .btn-primary.new-private-message:focus, .badges-section.top-section > p .btn-primary.more:focus, .admin-contents .btn-primary.btn:focus, .image-upload-controls .btn-primary.btn:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .list-controls .btn-primary.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
+#topic-footer-buttons > button.btn-primary.btn:focus, .user-main .user-right .list-actions .btn-primary.btn:focus, .user-navigation .btn-primary.new-private-message:focus, .user-preferences .btn-primary.btn:focus, .badges-section.top-section > p .btn-primary.more:focus, .admin-contents .btn-primary.btn:focus, .screened-ip-addresses .actions.col a.btn-primary:focus, .image-upload-controls .btn-primary.btn:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .list-controls .btn-primary.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:hover, #reply-control .submit-panel .btn-primary.btn:hover, .fps-select a.btn-primary:hover, .search.row > .btn-primary.btn:hover,
 .search.row .new-topic-btn .btn-primary.btn:hover, .search.row .search-bar .btn-primary.btn:hover, .timeline-container .topic-timeline div > button.btn-primary.btn:hover,
 .timeline-container .topic-timeline span > button.btn-primary.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:hover, .top-title-buttons button.btn-primary:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
 #topic-footer-buttons span > button.btn-primary.btn:hover,
-#topic-footer-buttons > button.btn-primary.btn:hover, .user-main .user-right .list-actions .btn-primary.btn:hover, .user-navigation .btn-primary.new-private-message:hover, .badges-section.top-section > p .btn-primary.more:hover, .admin-contents .btn-primary.btn:hover {
+#topic-footer-buttons > button.btn-primary.btn:hover, .user-main .user-right .list-actions .btn-primary.btn:hover, .user-navigation .btn-primary.new-private-message:hover, .user-preferences .btn-primary.btn:hover, .badges-section.top-section > p .btn-primary.more:hover, .admin-contents .btn-primary.btn:hover, .screened-ip-addresses .actions.col a.btn-primary:hover {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
@@ -236,12 +236,12 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn-success.btn, .search.row .search-bar .btn-success.btn, .timeline-container .topic-timeline div > button.btn-success.btn,
 .timeline-container .topic-timeline span > button.btn-success.btn, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header, .top-title-buttons button.btn-success, #topic-footer-buttons div > button.btn-success.btn,
 #topic-footer-buttons span > button.btn-success.btn,
-#topic-footer-buttons > button.btn-success.btn, .user-main .user-right .list-actions .btn-success.btn, .user-navigation .btn-success.new-private-message, .badges-section.top-section > p .btn-success.more, .admin-contents .btn-success.btn, .image-upload-controls .ok.btn, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .list-controls .ok.btn, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
+#topic-footer-buttons > button.btn-success.btn, .user-main .user-right .list-actions .btn-success.btn, .user-navigation .btn-success.new-private-message, .user-preferences .btn-success.btn, .badges-section.top-section > p .btn-success.more, .admin-contents .btn-success.btn, .screened-ip-addresses .actions.col a.btn-success, .image-upload-controls .ok.btn, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .list-controls .ok.btn, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn, #reply-control .submit-panel .ok.btn, .fps-select a.ok, .search.row > .ok.btn,
 .search.row .new-topic-btn .ok.btn, .search.row .search-bar .ok.btn, .timeline-container .topic-timeline div > button.ok.btn,
 .timeline-container .topic-timeline span > button.ok.btn, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header, .top-title-buttons button.ok, #topic-footer-buttons div > button.ok.btn,
 #topic-footer-buttons span > button.ok.btn,
-#topic-footer-buttons > button.ok.btn, .user-main .user-right .list-actions .ok.btn, .user-navigation .ok.new-private-message, .badges-section.top-section > p .ok.more, .admin-contents .ok.btn {
+#topic-footer-buttons > button.ok.btn, .user-main .user-right .list-actions .ok.btn, .user-navigation .ok.new-private-message, .user-preferences .ok.btn, .badges-section.top-section > p .ok.more, .admin-contents .ok.btn, .screened-ip-addresses .actions.col a.ok {
   background-color: $success;
   color: color-dynamic($success);
 }
@@ -250,44 +250,34 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .search.row .new-topic-btn .btn-success.btn:focus, .search.row .search-bar .btn-success.btn:focus, .timeline-container .topic-timeline div > button.btn-success.btn:focus,
 .timeline-container .topic-timeline span > button.btn-success.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:focus, .top-title-buttons button.btn-success:focus, #topic-footer-buttons div > button.btn-success.btn:focus,
 #topic-footer-buttons span > button.btn-success.btn:focus,
-#topic-footer-buttons > button.btn-success.btn:focus, .user-main .user-right .list-actions .btn-success.btn:focus, .user-navigation .btn-success.new-private-message:focus, .badges-section.top-section > p .btn-success.more:focus, .admin-contents .btn-success.btn:focus, .image-upload-controls .btn-success.btn:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .list-controls .btn-success.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:hover,
+#topic-footer-buttons > button.btn-success.btn:focus, .user-main .user-right .list-actions .btn-success.btn:focus, .user-navigation .btn-success.new-private-message:focus, .user-preferences .btn-success.btn:focus, .badges-section.top-section > p .btn-success.more:focus, .admin-contents .btn-success.btn:focus, .screened-ip-addresses .actions.col a.btn-success:focus, .image-upload-controls .btn-success.btn:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .list-controls .btn-success.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:hover, #reply-control .submit-panel .btn-success.btn:hover, .fps-select a.btn-success:hover, .search.row > .btn-success.btn:hover,
 .search.row .new-topic-btn .btn-success.btn:hover, .search.row .search-bar .btn-success.btn:hover, .timeline-container .topic-timeline div > button.btn-success.btn:hover,
 .timeline-container .topic-timeline span > button.btn-success.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:hover, .top-title-buttons button.btn-success:hover, #topic-footer-buttons div > button.btn-success.btn:hover,
 #topic-footer-buttons span > button.btn-success.btn:hover,
-#topic-footer-buttons > button.btn-success.btn:hover, .user-main .user-right .list-actions .btn-success.btn:hover, .user-navigation .btn-success.new-private-message:hover, .badges-section.top-section > p .btn-success.more:hover, .admin-contents .btn-success.btn:hover, .image-upload-controls .ok.btn:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .list-controls .ok.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
+#topic-footer-buttons > button.btn-success.btn:hover, .user-main .user-right .list-actions .btn-success.btn:hover, .user-navigation .btn-success.new-private-message:hover, .user-preferences .btn-success.btn:hover, .badges-section.top-section > p .btn-success.more:hover, .admin-contents .btn-success.btn:hover, .screened-ip-addresses .actions.col a.btn-success:hover, .image-upload-controls .ok.btn:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .list-controls .ok.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn:focus, #reply-control .submit-panel .ok.btn:focus, .fps-select a.ok:focus, .search.row > .ok.btn:focus,
 .search.row .new-topic-btn .ok.btn:focus, .search.row .search-bar .ok.btn:focus, .timeline-container .topic-timeline div > button.ok.btn:focus,
 .timeline-container .topic-timeline span > button.ok.btn:focus, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:focus, .top-title-buttons button.ok:focus, #topic-footer-buttons div > button.ok.btn:focus,
 #topic-footer-buttons span > button.ok.btn:focus,
-#topic-footer-buttons > button.ok.btn:focus, .user-main .user-right .list-actions .ok.btn:focus, .user-navigation .ok.new-private-message:focus, .badges-section.top-section > p .ok.more:focus, .admin-contents .ok.btn:focus, .image-upload-controls .ok.btn:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .list-controls .ok.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
+#topic-footer-buttons > button.ok.btn:focus, .user-main .user-right .list-actions .ok.btn:focus, .user-navigation .ok.new-private-message:focus, .user-preferences .ok.btn:focus, .badges-section.top-section > p .ok.more:focus, .admin-contents .ok.btn:focus, .screened-ip-addresses .actions.col a.ok:focus, .image-upload-controls .ok.btn:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .list-controls .ok.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn:hover, #reply-control .submit-panel .ok.btn:hover, .fps-select a.ok:hover, .search.row > .ok.btn:hover,
 .search.row .new-topic-btn .ok.btn:hover, .search.row .search-bar .ok.btn:hover, .timeline-container .topic-timeline div > button.ok.btn:hover,
 .timeline-container .topic-timeline span > button.ok.btn:hover, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:hover, .top-title-buttons button.ok:hover, #topic-footer-buttons div > button.ok.btn:hover,
 #topic-footer-buttons span > button.ok.btn:hover,
-#topic-footer-buttons > button.ok.btn:hover, .user-main .user-right .list-actions .ok.btn:hover, .user-navigation .ok.new-private-message:hover, .badges-section.top-section > p .ok.more:hover, .admin-contents .ok.btn:hover {
+#topic-footer-buttons > button.ok.btn:hover, .user-main .user-right .list-actions .ok.btn:hover, .user-navigation .ok.new-private-message:hover, .user-preferences .ok.btn:hover, .badges-section.top-section > p .ok.more:hover, .admin-contents .ok.btn:hover, .screened-ip-addresses .actions.col a.ok:hover {
   background-color: $success;
   color: color-dynamic($success);
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, .modal.history-modal #revision .btn, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn, .user-preferences .save-button .btn, .permalinks .col:not(.heading) .btn,
-.screened-emails .col:not(.heading) .btn,
-.screened-ip-addresses .col:not(.heading) .btn,
-.screened-urls .col:not(.heading) .btn,
-.staff-actions .col:not(.heading) .btn,
-.web-hook-events .col:not(.heading) .btn {
+div.poll .poll-buttons .btn, .modal.history-modal #revision .btn, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .buttons .btn, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn {
   margin-left: 8px;
   padding-right: 8px;
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, .modal.history-modal #revision .btn:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child, .user-preferences .save-button .btn:first-child, .permalinks .col:not(.heading) .btn:first-child,
-.screened-emails .col:not(.heading) .btn:first-child,
-.screened-ip-addresses .col:not(.heading) .btn:first-child,
-.screened-urls .col:not(.heading) .btn:first-child,
-.staff-actions .col:not(.heading) .btn:first-child,
-.web-hook-events .col:not(.heading) .btn:first-child {
+div.poll .poll-buttons .btn:first-child, .modal.history-modal #revision .btn:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .buttons .btn:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child {
   margin-left: 0;
 }
 
@@ -451,12 +441,7 @@ div.poll .results .bar-back::before {
   left: 0;
 }
 
-.table, .topic-list, .category-list, .latest-topic-list, .admin-contents table:not(.pika-table), .permalinks,
-.screened-emails,
-.screened-ip-addresses,
-.screened-urls,
-.staff-actions,
-.web-hook-events {
+.table, .topic-list, .category-list, .latest-topic-list, .admin-contents table:not(.pika-table) {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
@@ -477,6 +462,7 @@ div.poll .results .bar-back::before {
 .screened-emails .col:not(.heading),
 .screened-ip-addresses .col:not(.heading),
 .screened-urls .col:not(.heading),
+.search-logs-list .col:not(.heading),
 .staff-actions .col:not(.heading),
 .web-hook-events .col:not(.heading) {
   color: color-chooser($primary, $primary);
@@ -495,6 +481,7 @@ div.poll .results .bar-back::before {
 .screened-emails .col.heading,
 .screened-ip-addresses .col.heading,
 .screened-urls .col.heading,
+.search-logs-list .col.heading,
 .staff-actions .col.heading,
 .web-hook-events .col.heading {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
@@ -623,7 +610,7 @@ body textarea[readonly], .controls [readonly].static, .value-list [readonly].val
 .upload-selector .radios .inputs input, .create-account input[type='email'], .create-account input[type='password'], .create-account input[type='text'],
 #login-form input[type='email'],
 #login-form input[type='password'],
-#login-form input[type='text'], .search-menu input[type='text'], .search.row input[type='date'], .search.row input[type='number'], .search.row input[type='text']:not(.user-selector), #share-link input[type='text'], .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-customize .show-current-style h1 input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .settings .setting .ac-wrap input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value {
+#login-form input[type='text'], .search-menu input[type='text'], .search.row input[type='date'], .search.row input[type='number'], .search.row input[type='text']:not(.user-selector), #share-link input[type='text'], .user-preferences input[type='text'], .user-preferences .controls .static, .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-customize.admin-embedding input[type='text'], .admin-customize .show-current-style h1 input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .screened-ip-addresses .admin-container input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value, .watched-word-form input[type='text'] {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
@@ -633,10 +620,10 @@ body textarea[readonly], .controls [readonly].static, .value-list [readonly].val
 .upload-selector .radios .inputs input:focus, .create-account input[type='email']:focus, .create-account input[type='password']:focus, .create-account input[type='text']:focus,
 #login-form input[type='email']:focus,
 #login-form input[type='password']:focus,
-#login-form input[type='text']:focus, .search-menu input[type='text']:focus, .search.row input[type='date']:focus, .search.row input[type='number']:focus, .search.row input[type='text']:focus:not(.user-selector), #share-link input[type='text']:focus, .admin-container .controls.username input[type='text']:focus, .admin-controls input[type='text']:focus, .admin-customize .show-current-style h1 input[type='text']:focus, div.badges .form-horizontal input[type='text']:focus, div.groups .form-horizontal input[type='text']:focus, div.web-hook-container .form-horizontal input[type='text']:focus, .admin-container div.emoji input[type='text']:focus, .content-editor .email-template input[type='text']:focus, .email-preview-digest .controls input[type='text']:focus, .permalink-title ~ div input[type='text']:focus, .settings .setting .ac-wrap input[type='text']:focus, .settings .setting .input-setting-string:focus, .site-texts .search-area .site-text-search:focus, .value-list input[type='text']:focus, .value-list .value:focus, .upload-selector .radios .inputs input:hover, .create-account input[type='email']:hover, .create-account input[type='password']:hover, .create-account input[type='text']:hover,
+#login-form input[type='text']:focus, .search-menu input[type='text']:focus, .search.row input[type='date']:focus, .search.row input[type='number']:focus, .search.row input[type='text']:focus:not(.user-selector), #share-link input[type='text']:focus, .user-preferences input[type='text']:focus, .user-preferences .controls .static:focus, .admin-container .controls.username input[type='text']:focus, .admin-controls input[type='text']:focus, .admin-customize.admin-embedding input[type='text']:focus, .admin-customize .show-current-style h1 input[type='text']:focus, div.badges .form-horizontal input[type='text']:focus, div.groups .form-horizontal input[type='text']:focus, div.web-hook-container .form-horizontal input[type='text']:focus, .admin-container div.emoji input[type='text']:focus, .content-editor .email-template input[type='text']:focus, .email-preview-digest .controls input[type='text']:focus, .permalink-title ~ div input[type='text']:focus, .screened-ip-addresses .admin-container input[type='text']:focus, .settings .setting .input-setting-string:focus, .site-texts .search-area .site-text-search:focus, .value-list input[type='text']:focus, .value-list .value:focus, .watched-word-form input[type='text']:focus, .upload-selector .radios .inputs input:hover, .create-account input[type='email']:hover, .create-account input[type='password']:hover, .create-account input[type='text']:hover,
 #login-form input[type='email']:hover,
 #login-form input[type='password']:hover,
-#login-form input[type='text']:hover, .search-menu input[type='text']:hover, .search.row input[type='date']:hover, .search.row input[type='number']:hover, .search.row input[type='text']:hover:not(.user-selector), #share-link input[type='text']:hover, .admin-container .controls.username input[type='text']:hover, .admin-controls input[type='text']:hover, .admin-customize .show-current-style h1 input[type='text']:hover, div.badges .form-horizontal input[type='text']:hover, div.groups .form-horizontal input[type='text']:hover, div.web-hook-container .form-horizontal input[type='text']:hover, .admin-container div.emoji input[type='text']:hover, .content-editor .email-template input[type='text']:hover, .email-preview-digest .controls input[type='text']:hover, .permalink-title ~ div input[type='text']:hover, .settings .setting .ac-wrap input[type='text']:hover, .settings .setting .input-setting-string:hover, .site-texts .search-area .site-text-search:hover, .value-list input[type='text']:hover, .value-list .value:hover {
+#login-form input[type='text']:hover, .search-menu input[type='text']:hover, .search.row input[type='date']:hover, .search.row input[type='number']:hover, .search.row input[type='text']:hover:not(.user-selector), #share-link input[type='text']:hover, .user-preferences input[type='text']:hover, .user-preferences .controls .static:hover, .admin-container .controls.username input[type='text']:hover, .admin-controls input[type='text']:hover, .admin-customize.admin-embedding input[type='text']:hover, .admin-customize .show-current-style h1 input[type='text']:hover, div.badges .form-horizontal input[type='text']:hover, div.groups .form-horizontal input[type='text']:hover, div.web-hook-container .form-horizontal input[type='text']:hover, .admin-container div.emoji input[type='text']:hover, .content-editor .email-template input[type='text']:hover, .email-preview-digest .controls input[type='text']:hover, .permalink-title ~ div input[type='text']:hover, .screened-ip-addresses .admin-container input[type='text']:hover, .settings .setting .input-setting-string:hover, .site-texts .search-area .site-text-search:hover, .value-list input[type='text']:hover, .value-list .value:hover, .watched-word-form input[type='text']:hover {
   padding-bottom: 18px;
 }
 
@@ -860,6 +847,11 @@ sup {
 
 .fa-thumb-tack.unpinned {
   padding-left: 0;
+}
+
+.nav-stacked .count {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .badge-group,
@@ -1555,19 +1547,23 @@ div.ac-wrap {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
   border-radius: 4px;
-  min-height: 36px;
+  min-height: 56px;
   min-width: 200px;
-  padding: 18px 16px;
+  padding: 9px 16px;
+  padding-right: 12px;
 }
 div.ac-wrap:hover {
   border-width: 2px;
-  padding: 17px 15px;
+  padding: 8px 15px;
+  padding-right: 11px;
 }
 .admin-controls div.ac-wrap {
-  padding: 1px 1px 1px 5px;
+  padding: 9px 16px;
+  padding-right: 12px;
 }
 .admin-controls div.ac-wrap:hover {
-  padding: 0 0 0 4px;
+  padding: 8px 15px;
+  padding-right: 11px;
 }
 div.ac-wrap div.item {
   -ms-flex-align: center;
@@ -1623,8 +1619,10 @@ div.ac-wrap div.item .fa-times::before {
   content: 'cancel';
 }
 div.ac-wrap input[type='text'] {
+  border-radius: 0;
   height: auto;
-  padding: 0;
+  margin-right: 4px;
+  padding: 0 !important;
 }
 
 .autocomplete ul li {
@@ -1911,6 +1909,69 @@ div.ac-wrap input[type='text'] {
 .select-kit.dropdown-select-box .select-kit-row .texts {
   line-height: 1;
 }
+.select-kit.multi-select {
+  background-color: transparent;
+}
+.select-kit.multi-select.is-expanded .multi-select-header {
+  border-radius: 4px 4px 0 0;
+  box-shadow: inset 2px 2px 0 -1px $tertiary, inset -2px -2px 0 -1px $tertiary;
+}
+.select-kit.multi-select.is-expanded .select-kit-wrapper {
+  border: 0;
+  box-shadow: none;
+}
+.select-kit.multi-select .choices {
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 54px;
+  padding: 9px 16px;
+  padding-right: 12px;
+}
+.select-kit.multi-select .choices .choice {
+  border: 0;
+  margin: 2px 4px 2px 0;
+  padding: 0;
+}
+.select-kit.multi-select .choices .filter .filter-input {
+  height: auto;
+}
+.select-kit.multi-select .choices .selected-name {
+  background-clip: border-box;
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: normal;
+  height: 32px;
+  line-height: 1;
+  padding: 0 12px;
+}
+.select-kit.multi-select .choices .selected-name .name {
+  line-height: inherit;
+  padding: 0;
+}
+.select-kit.multi-select .choices .selected-name .name::after {
+  content: 'cancel';
+  font-size: 24px;
+  margin-right: -8px;
+  margin-left: 4px;
+}
+.select-kit.multi-select .multi-select-header {
+  background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+  border-radius: 4px;
+}
+.select-kit.multi-select .multi-select-header:hover {
+  box-shadow: inset 2px 2px 0 -1px color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42)), inset -2px -2px 0 -1px color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+}
+.select-kit.multi-select .multi-select-header.is-focused {
+  border-color: $tertiary;
+  border-radius: 4px 4px 0 0;
+  box-shadow: inset 2px 2px 0 -1px $tertiary, inset -2px -2px 0 -1px $tertiary;
+}
+.select-kit.multi-select .select-kit-row {
+  margin: 0;
+  padding: 6.25px 24px;
+}
 .settings .setting .setting-value .select-kit {
   margin-bottom: 8px;
 }
@@ -1922,6 +1983,9 @@ div.ac-wrap input[type='text'] {
 }
 .select-kit .select-kit-collection {
   background-color: transparent;
+}
+.select-kit .select-kit-filter .filter-input {
+  height: auto;
 }
 .select-kit .select-kit-header .caret-icon {
   margin-right: -2px;
@@ -2158,6 +2222,10 @@ ol.category-breadcrumb > li {
 }
 .list-controls .dropdown-select-box.dropdown-select-box {
   margin-bottom: 8px;
+  margin-left: 8px;
+}
+.list-controls .dropdown-select-box.dropdown-select-box .btn {
+  margin-left: 0;
 }
 .list-controls .nav {
   margin: 0 auto 8px 0;
@@ -4198,6 +4266,35 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 #reply-control .toggler::before {
   content: 'close';
 }
+#reply-control .user-selector {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+#reply-control .user-selector .ac-wrap {
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  min-height: 36px;
+  padding: 0 0;
+}
+#reply-control .user-selector .ac-wrap:focus, #reply-control .user-selector .ac-wrap:hover {
+  border-width: 1px;
+  box-shadow: inset 0 -2px 0 -1px color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.42));
+}
+#reply-control .user-selector .ac-wrap input[type='text'] {
+  margin-top: 8px;
+  margin-bottom: 7px;
+}
+#reply-control .user-selector .ac-wrap .item {
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+#reply-control .user-selector .add-warning {
+  margin-bottom: 0;
+}
 #reply-control .wmd-controls .d-editor-preview {
   border: 0;
   border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
@@ -4486,6 +4583,13 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   margin: 0;
 }
 
+.period-chooser.dropdown-select-box.select-kit .period-chooser-header h2.selected-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  overflow: hidden;
+}
 .period-chooser.dropdown-select-box.select-kit .period-chooser-header h2.selected-name .date-section {
   margin-right: 4px;
 }
@@ -4496,6 +4600,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 .period-chooser.dropdown-select-box.select-kit .period-chooser-header .d-icon {
   color: inherit;
   margin: 0 -2px 0 4px;
+  vertical-align: top;
 }
 .period-chooser.dropdown-select-box.select-kit .period-chooser-row .top-date-string {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
@@ -6057,12 +6162,30 @@ nav.post-controls .show-replies i {
 .user-preferences .avatar {
   margin-left: 0;
 }
+.user-preferences .bio-composer {
+  border: 0;
+  padding: 0;
+}
 .user-preferences .control-group.category-notifications .controls + .category-controls,
 .user-preferences .control-group.category-notifications .instructions + .category-controls {
   margin-top: 24px;
 }
 .user-preferences .control-group.desktop-notifications .control-label + .controls, .user-preferences .control-group.muting .control-label + .controls, .user-preferences .control-group.other .control-label + .controls, .user-preferences .control-group.pref-activity-summary .control-label + .controls, .user-preferences .control-group.pref-avatar .control-label + .controls, .user-preferences .control-group.pref-card-badge .control-label + .controls, .user-preferences .control-group.pref-email-settings .control-label + .controls, .user-preferences .control-group.pref-mailing-list-mode .control-label + .controls {
   margin-top: 8px;
+}
+.user-preferences .control-group.desktop-notifications .controls {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.user-preferences .control-group.desktop-notifications .controls .btn {
+  margin-bottom: 8px;
+}
+.user-preferences .controls .static {
+  border-bottom-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
+  border-bottom-style: dotted;
+  color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
 }
 .user-preferences .form-vertical:last-child {
   margin-bottom: 0;
@@ -6076,10 +6199,6 @@ nav.post-controls .show-replies i {
 }
 .user-preferences .instructions:last-child {
   margin-bottom: 0;
-}
-.user-preferences .save-button {
-  margin-right: -8px;
-  margin-left: -8px;
 }
 
 .user-table {
@@ -6638,6 +6757,8 @@ section.about table th {
   margin-bottom: 0;
 }
 .admin-controls > .pull-right {
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -6646,6 +6767,10 @@ section.about table th {
 .admin-controls > .pull-right button {
   margin-right: 0;
   margin-left: 8px;
+}
+.admin-controls .ac-wrap {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .admin-controls .controls {
   margin-bottom: 16px;
@@ -6681,16 +6806,19 @@ section.about table th {
   margin-top: 0;
 }
 
-.admin-customize > .admin-container {
+.admin-customize:not(.admin-embedding):not(.admin-emojis):not(.admin-permalinks) > .admin-container {
   -ms-flex-align: start;
       align-items: flex-start;
   display: -ms-flexbox;
   display: flex;
 }
 @media (max-width: 700px) {
-  .admin-customize > .admin-container {
+  .admin-customize:not(.admin-embedding):not(.admin-emojis):not(.admin-permalinks) > .admin-container {
     display: block;
   }
+}
+.admin-customize.admin-embedding input[type='text'] {
+  margin-bottom: 0;
 }
 .admin-customize .admin-container {
   padding-right: 0;
@@ -6842,6 +6970,29 @@ section.about table th {
   display: flex;
   padding: 0;
 }
+.admin-list-item .btn-small {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  color: $tertiary;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: inherit;
+  padding: 0;
+  text-decoration: underline;
+  text-transform: none;
+}
+.admin-list-item .btn-small:focus, .admin-list-item .btn-small:hover {
+  background-color: transparent;
+  background-image: none;
+}
+.admin-list-item .btn-small:active {
+  background-color: transparent;
+  box-shadow: none;
+}
+.admin-list-item .clearfix {
+  display: none;
+}
 
 .admin-nav {
   margin-top: 0;
@@ -6853,6 +7004,19 @@ section.about table th {
     padding-right: 24px;
     width: 50%;
   }
+}
+
+.admin-search-logs .admin-container > p:first-child {
+  margin-bottom: 24px;
+}
+.admin-search-logs .admin-container > p:first-child::after {
+  clear: both;
+  content: '';
+  display: table;
+  line-height: 0;
+}
+.admin-search-logs .admin-container > p:first-child + br {
+  display: none;
 }
 
 .admin-title {
@@ -6928,7 +7092,7 @@ div.badges .buttons {
   width: auto;
 }
 .admin-contents div.groups .ac-wrap .item {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 .admin-contents div.groups .ac-wrap .item .avatar {
   height: 32px;
@@ -7217,56 +7381,84 @@ div.badges .buttons {
 .screened-emails,
 .screened-ip-addresses,
 .screened-urls,
+.search-logs-list,
 .staff-actions,
 .web-hook-events {
-  clear: both;
-  display: table;
-}
-.permalinks .col,
-.screened-emails .col,
-.screened-ip-addresses .col,
-.screened-urls .col,
-.staff-actions .col,
-.web-hook-events .col {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
+  border-bottom: 0;
 }
 .permalinks .col:not(.heading),
 .screened-emails .col:not(.heading),
 .screened-ip-addresses .col:not(.heading),
 .screened-urls .col:not(.heading),
+.search-logs-list .col:not(.heading),
 .staff-actions .col:not(.heading),
 .web-hook-events .col:not(.heading) {
   height: auto;
-  min-height: 48px;
-  padding-right: 0;
 }
 .permalinks .col.heading,
 .screened-emails .col.heading,
 .screened-ip-addresses .col.heading,
 .screened-urls .col.heading,
+.search-logs-list .col.heading,
 .staff-actions .col.heading,
 .web-hook-events .col.heading {
   height: auto;
-  min-height: 56px;
-  text-align: left;
 }
 .permalinks .heading-container,
 .screened-emails .heading-container,
 .screened-ip-addresses .heading-container,
 .screened-urls .heading-container,
+.search-logs-list .heading-container,
 .staff-actions .heading-container,
 .web-hook-events .heading-container {
   background-color: transparent;
   display: -ms-flexbox;
   display: flex;
 }
+.permalinks .loading-container::after,
+.screened-emails .loading-container::after,
+.screened-ip-addresses .loading-container::after,
+.screened-urls .loading-container::after,
+.search-logs-list .loading-container::after,
+.staff-actions .loading-container::after,
+.web-hook-events .loading-container::after {
+  clear: both;
+  content: '';
+  display: table;
+  line-height: 0;
+}
+
+.screened-emails > .admin-container > p:first-child,
+.screened-urls > .admin-container > p:first-child {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 24px;
+}
+.screened-emails > .admin-container > p:first-child .btn.pull-right,
+.screened-urls > .admin-container > p:first-child .btn.pull-right {
+  margin-left: 8px;
+}
+.screened-emails > .admin-container > p:first-child + br,
+.screened-urls > .admin-container > p:first-child + br {
+  display: none;
+}
+
+.screened-ip-addresses .actions.col a {
+  @extned %btn-sm;
+  font-size: 13px;
+  padding: 9.5px 16px;
+  text-decoration: none;
+}
+.screened-ip-addresses .admin-container input[type='text'] {
+  display: inline-block;
+  width: auto;
+}
 
 .screened-ip-address-form {
-  float: left;
-  margin-right: 24px;
   margin-bottom: 24px;
   margin-left: 0;
 }
@@ -7366,11 +7558,20 @@ div.badges .buttons {
   margin: 0 0 24px;
 }
 
-.staff-action-logs-controls::after {
-  clear: both;
-  content: '';
-  display: table;
-  line-height: 0;
+.staff-action-logs-controls {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.staff-action-logs-controls .pull-right {
+  margin-left: auto;
+}
+.staff-action-logs-controls .select-kit {
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .value-list input[type='text'] {
@@ -7411,4 +7612,46 @@ div.badges .buttons {
 .version-check .version-number {
   font-size: inherit;
   font-weight: bolder;
+}
+
+.watched-word-box {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  border-radius: 16px;
+  color: inherit;
+  font-size: 0.857143em;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  width: auto;
+}
+
+.watched-word-form {
+  margin-bottom: 24px;
+}
+.watched-word-form input[type='text'] {
+  display: inline-block;
+  margin-bottom: 0;
+  width: auto;
+}
+
+.watched-words-detail .about {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.watched-words-list {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.watched-words-uploader {
+  float: none;
+  margin-bottom: 24px;
+  text-align: inherit;
 }
