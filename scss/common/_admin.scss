@@ -965,6 +965,60 @@ div {
   width: auto;
 }
 
+.ip-lookup .location-box {
+  background-color: color-chooser($modal-bg-dark, $modal-bg-light);
+  border-radius: $modal-border-radius;
+  box-shadow: $modal-box-shadow;
+  margin: 0;
+  outline: 0;
+  padding: $modal-padding-y $modal-padding-x;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  dt::after {
+    clear: both;
+    content: '';
+    display: table;
+    line-height: 0;
+  }
+
+  .close {
+    margin-top: (($font-size-h4 * $line-height-h4 - $font-size-base * $line-height-base) / 2);
+  }
+
+  .inline-spinner {
+    max-width: 100%;
+  }
+
+  .other-accounts {
+    border: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+    margin-top: $modal-inner-spacer-y;
+    max-width: 100%;
+
+    .table {
+      box-shadow: none;
+      margin-bottom: 0;
+
+      tbody:last-child tr:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .powered-by {
+    @extend %typography-caption;
+
+    position: static;
+  }
+
+  .spinner {
+    height: ($font-size-base * $line-height-base);
+    width: ($font-size-base * $line-height-base);
+  }
+}
+
 .permalink-form {
   align-items: center;
   display: flex;

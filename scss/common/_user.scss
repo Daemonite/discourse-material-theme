@@ -28,13 +28,17 @@
   }
 
   .controls {
-    a[data-ember-action] {
+    a[data-ember-action]:not(.close) {
       @extend %btn-flat-simple;
       @extend %btn-raised;
     }
 
     .btn {
       margin: 0 $spacer-xs 0 0;
+    }
+
+    .ip-lookup .location-box {
+      margin-right: $spacer-xs;
     }
   }
 
