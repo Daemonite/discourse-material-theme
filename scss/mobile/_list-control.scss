@@ -6,10 +6,16 @@
   }
 
   .nav {
-    > li > a {
-      @extend %btn-raised;
+    > li {
+      &:last-child {
+        margin-right: 0;
+      }
 
-      opacity: 1;
+      > a {
+        @extend %btn-raised;
+
+        opacity: 1;
+      }
     }
 
     li {
