@@ -150,6 +150,15 @@
           line-height: 1;
           margin: 0 $spacer-xs $spacer-xs 0;
           padding: $code-padding;
+
+          &::after {
+            @extend %material-icons;
+
+            content: 'close';
+            font-size: inherit;
+            line-height: 1;
+            vertical-align: top;
+          }
         }
 
         .selected-tags {
