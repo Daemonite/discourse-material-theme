@@ -130,6 +130,44 @@
       }
     }
 
+    &.mini-tag-chooser {
+      &.is-expanded {
+        border: 0;
+      }
+
+      .select-kit-body {
+        border: 0;
+        box-shadow: $dropdown-box-shadow;
+      }
+
+      .select-kit-collection .collection-header {
+        margin-top: ($dropdown-padding-y-sm * -1);
+        margin-bottom: ($dropdown-padding-y-sm / 2);
+
+        .selected-tag {
+          border-radius: $code-border-radius;
+          font-size: $code-font-size;
+          line-height: 1;
+          margin: 0 $spacer-xs $spacer-xs 0;
+          padding: $code-padding;
+        }
+
+        .selected-tags {
+          padding: $dropdown-link-padding-y-sm ($dropdown-link-padding-x-sm - $spacer-xs) ($dropdown-link-padding-y-sm - $spacer-xs) $dropdown-link-padding-x-sm;
+        }
+      }
+
+      .select-kit-header {
+        .selected-name {
+          height: auto;
+        }
+      }
+
+      .select-kit-row .discourse-tag-count {
+        margin-left: $spacer-xs;
+      }
+    }
+
     .select-kit-filter {
       border-top: 0;
       line-height: inherit;
