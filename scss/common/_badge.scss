@@ -104,3 +104,15 @@
     }
   }
 }
+
+.discourse-tag {
+  &.box {
+    border-radius: $code-border-radius;
+    font-size: $code-font-size;
+    padding: $code-padding;
+  }
+
+  &.bullet {
+    margin-right: 0;
+  }
+}
