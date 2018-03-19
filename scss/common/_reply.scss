@@ -119,13 +119,7 @@
   }
 
   .category-input {
-    margin: 0;
-    padding-right: $card-padding-x;
-    padding-left: $card-padding-x;
-
-    &:last-child {
-      padding-right: 0;
-    }
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
   }
 
   .composer-bottom-right {
@@ -247,6 +241,11 @@
     }
   }
 
+  .mini-tag-chooser {
+    margin-right: $card-inner-spacer-x;
+    margin-bottom: ($card-inner-spacer-y / 2);
+  }
+
   .popup-menu {
     @extend %dropdown-menu-sm;
 
@@ -310,7 +309,7 @@
     }
 
     .reply-details {
-      max-width: calc(50% - #{$material-icon-size / 2 + $spacer-sm});
+      max-width: calc(50% - #{$material-icon-size / 2 + $card-inner-spacer-x + $card-padding-x});
       position: absolute;
       top: (($material-icon-size + $spacer-sm - $font-size-base * $line-height-base) / 2);
       left: $card-padding-x;
@@ -354,16 +353,14 @@
   }
 
   .title-and-category {
-    flex-wrap: nowrap;
     margin-top: ($card-inner-spacer-y / 2);
-    margin-bottom: ($card-inner-spacer-y / 2);
-    padding-right: $card-padding-x;
+    margin-bottom: 0;
+    padding-right: $card-inner-spacer-x;
     padding-left: $card-padding-x;
   }
 
   .title-input {
-    flex-grow: 1;
-    order: -1;
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
   }
 
   .toggle-preview {

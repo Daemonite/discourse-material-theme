@@ -67,7 +67,11 @@
   max-width: calc(50% - #{$card-padding-x / 2});
 
   .edit-title & {
-    margin-top: (($text-field-height + $card-inner-spacer-y) * -1);
+    margin-top: (($card-inner-spacer-y + $text-field-height) * -1);
+  }
+
+  .edit-title .with-tags & {
+    margin-top: (($btn-height + $card-inner-spacer-y * 1.5 + $text-field-height) * -1);
   }
 }
 
