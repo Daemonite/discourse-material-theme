@@ -86,6 +86,222 @@
   }
 }
 
+.mfp-bg {
+  background-color: $black-primary;
+  background-image: linear-gradient(to bottom, $black-primary 0, transparent $header-height);
+  opacity: 1;
+
+  &.mfp-zoom-in {
+    background-color: transparent;
+    opacity: 1;
+
+    &.mfp-ready {
+      background-color: $black-primary;
+      opacity: 1;
+    }
+  }
+}
+
+.mfp-arrow {
+  height: auto;
+  margin: 0;
+  opacity: 1;
+  transform: translateY(-50%);
+  width: auto;
+
+  &:active {
+    margin-top: 0;
+  }
+
+  &.mfp-arrow-left,
+  &.mfp-arrow-right {
+    align-items: center;
+    background-color: $black-primary;
+    border-radius: 50%;
+    color: $white-primary;
+    display: flex;
+    height: ($header-height - $header-padding-y * 2);
+    justify-content: center;
+    width: ($header-height - $header-padding-y * 2);
+
+    @include focus-hover {
+      background-color: unquote('$tertiary');
+      color: color-dynamic(unquote('$tertiary'));
+    }
+
+    &::after,
+    &::before {
+      border: 0;
+      height: auto;
+      line-height: 1;
+      margin: 0;
+      position: static;
+      vertical-align: middle;
+      width: auto;
+    }
+  }
+
+  &.mfp-arrow-left {
+    @include material-icons('keyboard_arrow_left');
+
+    left: $header-padding-x;
+  }
+
+  &.mfp-arrow-right {
+    @include material-icons('keyboard_arrow_right');
+
+    right: $header-padding-x;
+  }
+}
+
+.mfp-bottom-bar {
+  align-items: center;
+  display: flex;
+  height: $header-height;
+  margin-top: 0;
+  padding: $header-padding-y $header-padding-x;
+  position: fixed;
+  top: 0;
+  right: ($header-height + $header-padding-x - $header-padding-y * 2);
+  left: ($header-height + $header-padding-x - $header-padding-y * 2);
+  white-space: nowrap;
+  width: auto;
+}
+
+.mfp-close {
+  @include material-icons('close');
+
+  align-items: center;
+  border-radius: $btn-border-radius;
+  color: $white-primary;
+  cursor: pointer !important;
+  display: flex;
+  height: ($header-height - $header-padding-y * 2);
+  justify-content: center;
+  opacity: 1;
+  overflow: hidden !important;
+  padding: 0;
+  position: fixed;
+  top: $header-padding-y;
+  left: $header-padding-x;
+  text-align: center;
+  text-indent: ($header-height - $header-padding-y * 2);
+  width: ($header-height - $header-padding-y * 2);
+
+  @include focus-hover {
+    background-color: $white-divider;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-indent: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &:active {
+    top: $header-padding-y;
+  }
+
+  .mfp-iframe-holder &,
+  .mfp-image-holder & {
+    padding-right: 0;
+    right: auto;
+    text-align: center;
+    width: ($header-height - $header-padding-y * 2);
+  }
+}
+
+.mfp-container {
+  padding: 0 $header-padding-x;
+}
+
+.mfp-content {
+  .mfp-ready.mfp-zoom-in &,
+  .mfp-zoom-in & {
+    transform: none;
+  }
+}
+
+.mfp-counter {
+  @extend %typography-body;
+
+  color: $white-secondary;
+  flex-shrink: 0;
+  margin-left: $spacer-xs;
+  position: static;
+}
+
+.mfp-figure::after {
+  display: none;
+}
+
+.mfp-img {
+  .mfp-container {
+    padding: $header-height 0;
+  }
+}
+
+.mfp-preloader {
+  color: $white-primary;
+  margin-top: 0;
+  right: $header-padding-x;
+  left: $header-padding-x;
+  transform: translateY(-50%);
+}
+
+.mfp-title {
+  @extend %typography-body;
+
+  color: $white-primary;
+  overflow: hidden;
+  padding-right: 0;
+  text-overflow: ellipsis;
+
+  .mfp-image-holder & {
+    &::before {
+      @extend %material-icons;
+
+      color: unquote('$tertiary');
+      content: 'photo';
+      margin-right: $spacer-xs;
+    }
+  }
+
+  a {
+    &.image-source-link {
+      border-radius: $btn-border-radius;
+      color: $white-primary;
+      height: ($header-height - $header-padding-y * 2);
+      overflow: hidden;
+      position: absolute;
+      top: $header-padding-y;
+      right: (($header-height - $header-padding-y * 2) * -1);
+      text-align: center;
+      text-indent: ($header-height - $header-padding-y * 2);
+      white-space: nowrap;
+      width: ($header-height - $header-padding-y * 2);
+
+      @include focus-hover {
+        background-color: $white-divider;
+      }
+
+      &::before {
+        @extend %material-icons;
+
+        content: 'file_download';
+        padding-right: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-indent: 0;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
 .modal {
   &.history-modal {
     #display-modes .btn {
