@@ -189,6 +189,50 @@ nav {
   width: $topic-body-width;
 }
 
+.meta {
+  align-items: flex-end;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 0%, $black-divider percentage(2 / 3), $black-hint 100%);
+  color: $white-primary;
+  display: flex;
+  font-weight: normal;
+  height: ($header-height * 3);
+  white-space: nowrap;
+
+  .expand {
+    flex-shrink: 0;
+    margin: 0 $card-padding-x ($card-inner-spacer-y / 2) auto;
+    position: static;
+
+    &::before {
+      @extend %material-icons;
+
+      content: 'zoom_out_map';
+    }
+  }
+
+  .filename {
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) $card-padding-x;
+    max-width: none;
+
+    &::before {
+      @extend %material-icons;
+
+      content: 'photo';
+      margin-right: $spacer-xs;
+    }
+  }
+
+  .informations {
+    color: $white-secondary;
+    font-size: inherit;
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
+    overflow: hidden;
+    padding-right: 0;
+    text-overflow: ellipsis;
+  }
+}
+
 .names .fa {
   color: inherit;
   margin-left: $spacer-xs;
