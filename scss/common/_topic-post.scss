@@ -197,6 +197,7 @@ nav {
   display: flex;
   font-weight: normal;
   height: ($header-height * 3);
+  max-height: 100%;
   white-space: nowrap;
 
   .expand {
