@@ -1077,7 +1077,7 @@ pre .hljs {
   max-width: none;
   width: calc(100% + 32px);
 }
-.cooked img:not(.avatar):not(.emoji):not(.thumbnail) {
+.cooked img:not(.avatar):not(.emoji):not(.site-icon):not(.thumbnail) {
   height: auto;
   max-width: 100%;
 }
@@ -4581,7 +4581,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   border: 0;
   border-left: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
-#reply-control .wmd-controls .d-editor-preview img:not(.avatar):not(.emoji):not(.thumbnail) {
+#reply-control .wmd-controls .d-editor-preview img:not(.avatar):not(.emoji):not(.site-icon):not(.thumbnail) {
   height: auto;
   width: 100%;
 }
