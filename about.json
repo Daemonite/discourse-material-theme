@@ -1,5 +1,5 @@
 {
-  "about_url": "https://github.com/sesemaya/discourse-material-theme",
+  "about_url": "https://github.com/Daemonite/discourse-material-theme",
   "color_schemes": {
     "Material Light": {
       "primary": "212121",
@@ -14,6 +14,6 @@
       "love": "e91e63"
     }
   },
-  "license_url": "https://github.com/sesemaya/discourse-material-theme/blob/master/LICENSE",
+  "license_url": "https://github.com/Daemonite/discourse-material-theme/blob/master/LICENSE",
   "name": "Material Design for Discourse"
 }
