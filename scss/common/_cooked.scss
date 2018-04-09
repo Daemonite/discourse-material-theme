@@ -30,7 +30,7 @@
     width: calc(100% + #{$card-padding-x * 2});
   }
 
-  img:not(.avatar):not(.emoji):not(.thumbnail) {
+  img:not(.avatar):not(.emoji):not(.site-icon):not(.thumbnail) {
     height: auto;
     max-width: 100%;
   }

@@ -453,7 +453,7 @@
     border: 0;
     border-left: 1px solid color-chooser($white-divider, $black-divider);
 
-    img:not(.avatar):not(.emoji):not(.thumbnail) {
+    img:not(.avatar):not(.emoji):not(.site-icon):not(.thumbnail) {
       height: auto;
       width: 100%;
     }
