@@ -931,3 +931,25 @@ nav {
     }
   }
 }
+
+.who-liked {
+  align-items: center;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: ($card-inner-spacer-y / 2);
+  text-align: inherit;
+  width: calc(100% - #{$card-inner-spacer-x * 3 + $material-icon-size});
+
+  a {
+    margin-top: (($btn-height - $material-icon-size) / 2);
+    margin-right: $card-inner-spacer-x;
+    margin-bottom: (($btn-height - $material-icon-size) / 2);
+  }
+
+  .avatar {
+    height: $material-icon-size;
+    width: $material-icon-size;
+  }
+}
