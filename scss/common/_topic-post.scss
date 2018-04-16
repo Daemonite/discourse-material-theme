@@ -17,14 +17,27 @@ nav {
         box-shadow: none;
       }
 
+      &.bookmark {
+        padding: $btn-padding-y $card-inner-spacer-x;
+      }
+
       &.delete {
         @include focus-hover {
+          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
           color: unquote('$danger');
+        }
+
+        &:active {
+          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
         }
 
         &.d-hover {
           background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
           color: unquote('$danger');
+
+          &:active {
+            background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+          }
         }
       }
 
@@ -34,11 +47,6 @@ nav {
 
       &.like {
         @include focus-hover {
-          color: unquote('$love');
-        }
-
-        &.d-hover {
-          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
           color: unquote('$love');
         }
       }
@@ -64,6 +72,24 @@ nav {
 
     .highlight-action {
       color: color-chooser($white-secondary, $black-secondary);
+    }
+
+    .like-button {
+      border-radius: $btn-border-radius;
+
+      &:active {
+        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+        box-shadow: none;
+      }
+
+      .like-count {
+        font-size: $btn-font-size;
+      }
+
+      .toggle-like {
+        margin-left: 0;
+        padding: $btn-padding-y $card-inner-spacer-x;
+      }
     }
 
     .like-count {
