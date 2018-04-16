@@ -177,6 +177,42 @@
       }
     }
 
+    &.tag-drop {
+      &.is-expanded {
+        .tag-drop-header {
+          border: 0;
+          box-shadow: $btn-box-shadow-active;
+        }
+      }
+
+      .select-kit-body {
+        box-shadow: $dropdown-box-shadow;
+      }
+
+      .select-kit-collection .collection-header .tag-filter {
+        font-size: $dropdown-font-size-sm;
+        line-height: $dropdown-line-height-sm;
+        padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+
+        @include focus-hover {
+          background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
+          text-decoration: none;
+        }
+      }
+
+      .select-kit-row {
+        font-size: $dropdown-font-size-sm;
+        font-weight: normal;
+        line-height: $dropdown-line-height-sm;
+      }
+
+      .tag-drop-header {
+        border: 0;
+        font-size: $btn-font-size;
+        padding: $btn-padding-y $btn-padding-x;
+      }
+    }
+
     .select-kit-filter {
       border-top: 0;
       line-height: inherit;
