@@ -234,6 +234,8 @@
   }
 
   > tbody {
+    border-top: 0;
+
     > tr {
       @extend %table-row;
 
