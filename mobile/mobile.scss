@@ -396,8 +396,8 @@ tr.category-topic-link:last-child {
 .category-list-item > footer {
   -ms-flex-align: center;
       align-items: center;
-  border-top: 1px solid color-chooser(#000000, #e0e0e0);
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
+  border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   display: -ms-flexbox;
   display: flex;
   min-height: 48px;

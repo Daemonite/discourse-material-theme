@@ -451,7 +451,7 @@ div.poll .results .bar-back::before {
 }
 
 .table tbody tr, .topic-list > tbody > tr, .topic-list > thead > tr, .category-list > tbody > tr, .category-list > thead > tr, .latest-topic-list .table-heading, .latest-topic-list-item, .user-main .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 
 .table tbody td,
@@ -702,6 +702,8 @@ html {
   box-sizing: border-box;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: initial;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   line-height: initial;
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
@@ -1202,7 +1204,7 @@ div.poll {
   width: calc(100% + 32px);
 }
 .d-editor-preview div.poll, .expanded-quote div.poll {
-  border: 1px solid color-chooser(#000000, #e0e0e0);
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before {
   content: 'check_box_outline_blank';
@@ -1230,7 +1232,7 @@ div.poll li[data-poll-option-id]:last-child {
   margin-bottom: 0;
 }
 div.poll .poll-buttons {
-  border-top-color: color-chooser(#000000, #e0e0e0);
+  border-top-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   padding: 8px 8px;
 }
 div.poll .poll-buttons .fa {
@@ -1244,7 +1246,7 @@ div.poll .poll-container {
   padding: 16px 16px;
 }
 div.poll .poll-info {
-  border-left-color: color-chooser(#000000, #e0e0e0);
+  border-left-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   color: color-chooser($primary, $primary);
   padding: 16px 16px;
 }
@@ -2242,6 +2244,9 @@ div.ac-wrap input[type='text'] {
       align-items: center;
   display: -ms-flexbox;
   display: flex;
+}
+.d-header .title h1 {
+  color: inherit;
 }
 .d-header .title-wrapper {
   -ms-flex-align: center;
@@ -4761,6 +4766,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #share-link .reply-as-new-topic {
   float: right;
+  margin-top: 0;
   margin-right: -8px;
 }
 #share-link .social-link {
@@ -4888,7 +4894,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   margin: 0 0 16px;
 }
 #list-area .show-more.has-topics .alert {
-  border-bottom: 1px solid color-chooser(#000000, #e0e0e0);
+  border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   border-radius: 0;
   box-shadow: none;
   padding: 18.000003px 24px;
@@ -5375,21 +5381,27 @@ nav.post-controls button {
 nav.post-controls button:active {
   box-shadow: none;
 }
+nav.post-controls button.bookmark {
+  padding: 11px 8px;
+}
 nav.post-controls button.delete:focus, nav.post-controls button.delete:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $danger;
+}
+nav.post-controls button.delete:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 nav.post-controls button.delete.d-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $danger;
 }
+nav.post-controls button.delete.d-hover:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
 nav.post-controls button.has-like {
   color: $love;
 }
 nav.post-controls button.like:focus, nav.post-controls button.like:hover {
-  color: $love;
-}
-nav.post-controls button.like.d-hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $love;
 }
 nav.post-controls button .read-icon::before {
@@ -5411,6 +5423,20 @@ nav.post-controls .actions {
 }
 nav.post-controls .highlight-action {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.54));
+}
+nav.post-controls .like-button {
+  border-radius: 2px;
+}
+nav.post-controls .like-button:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  box-shadow: none;
+}
+nav.post-controls .like-button .like-count {
+  font-size: 14px;
+}
+nav.post-controls .like-button .toggle-like {
+  margin-left: 0;
+  padding: 11px 8px;
 }
 nav.post-controls .like-count {
   margin-right: 0;
@@ -5866,6 +5892,7 @@ nav.post-controls .show-replies i {
 }
 .topic-map .map li > a {
   display: block;
+  line-height: inherit;
 }
 .topic-map .map ul {
   -ms-flex-align: center;
@@ -5881,7 +5908,7 @@ nav.post-controls .show-replies i {
 }
 .topic-map .map .number {
   font-size: 19.999994px;
-  line-height: 36px;
+  line-height: 1;
 }
 .topic-map .map .topic-map-post {
   margin-top: 0;
@@ -7741,7 +7768,7 @@ div.badges .buttons {
   margin-bottom: 24px;
 }
 .email-preview-digest .preview-output iframe {
-  border: 1px solid color-chooser(#000000, #e0e0e0);
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   display: block;
 }
 
@@ -7825,7 +7852,7 @@ div.badges .buttons {
   max-width: 100%;
 }
 .ip-lookup .location-box .other-accounts {
-  border: 1px solid color-chooser(#000000, #e0e0e0);
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
   margin-top: 20px;
   max-width: 100%;
 }
