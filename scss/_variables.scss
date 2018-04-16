@@ -395,14 +395,14 @@ $social-yahoo-color:     #440099 !default;
 
 // Table
 
-$table-bg-dark:            $card-bg-dark !default;
-$table-bg-light:           $card-bg-light !default;
+$table-bg-dark:            $dark-4 !default;
+$table-bg-light:           $light-4 !default;
 $table-bg-hover-dark:      $dark-2 !default;
 $table-bg-hover-light:     $light-2 !default;
 $table-border-width:       1px !default;
-$table-border-color-dark:  $dark-1 !default;
-$table-border-color-light: $light-1 !default;
-$table-box-shadow:         $card-box-shadow !default;
+$table-border-color-dark:  $white-divider !default;
+$table-border-color-light: $black-divider !default;
+$table-box-shadow:         $shadow-2dp !default;
 $table-margin-y:           $spacer !default;
 $tbody-cell-height:        48px !default;
 $tbody-cell-padding-x:     12px !default;
