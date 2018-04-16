@@ -660,6 +660,7 @@ nav {
 
       > a {
         display: block;
+        line-height: inherit;
       }
     }
 
@@ -676,7 +677,7 @@ nav {
 
     .number {
       font-size: ($font-size-base * $line-height-base);
-      line-height: $btn-height;
+      line-height: 1;
     }
 
     .topic-map-post {
