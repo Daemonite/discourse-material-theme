@@ -1,6 +1,18 @@
 {
   "about_url": "https://github.com/Daemonite/discourse-material-theme",
   "color_schemes": {
+    "Material Default": {
+      "primary": "212121",
+      "secondary": "ffffff",
+      "tertiary": "e91e63",
+      "quaternary": "3f51b5",
+      "header_background": "3f51b5",
+      "header_primary": "ffffff",
+      "highlight": "eefd54",
+      "danger": "d32f2f",
+      "success": "2e7b32",
+      "love": "e91e63"
+    },
     "Material Light": {
       "primary": "212121",
       "secondary": "f5f5f5",
@@ -8,9 +20,9 @@
       "quaternary": "2196f3",
       "header_background": "e0e0e0",
       "header_primary": "212121",
-      "highlight": "ffeb3b",
-      "danger": "f44336",
-      "success": "4caf50",
+      "highlight": "eefd54",
+      "danger": "d32f2f",
+      "success": "2e7b32",
       "love": "e91e63"
     }
   },
