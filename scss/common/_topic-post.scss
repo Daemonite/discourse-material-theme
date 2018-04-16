@@ -657,6 +657,10 @@ nav {
         display: flex;
         flex-direction: column-reverse;
       }
+
+      > a {
+        display: block;
+      }
     }
 
     ul {
@@ -672,8 +676,11 @@ nav {
 
     .number {
       font-size: ($font-size-base * $line-height-base);
-      line-height: 1;
-      margin-top: 1px;
+      line-height: $btn-height;
+    }
+
+    .topic-map-post {
+      margin-top: 0;
     }
   }
 
