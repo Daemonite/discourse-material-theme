@@ -215,6 +215,14 @@ nav {
   width: $topic-body-width;
 }
 
+.has-pending-posts {
+  border-radius: $card-border-radius;
+  margin-top: 0;
+  margin-bottom: $spacer-lg;
+  max-width: 690px;
+  padding: $card-padding-y $card-padding-x;
+}
+
 .meta {
   align-items: flex-end;
   background-color: transparent;
