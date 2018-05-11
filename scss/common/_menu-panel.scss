@@ -86,6 +86,7 @@ div {
           align-items: center;
           display: flex;
           padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
+          white-space: nowrap;
 
           @include focus-hover {
             background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
@@ -97,6 +98,12 @@ div {
 
           .badge-notification {
             margin-left: $menu-panel-inner-spacer-x;
+          }
+
+          .d-label {
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
 
           .fa {
