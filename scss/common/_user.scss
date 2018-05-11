@@ -117,16 +117,36 @@
 }
 
 .top-section {
-  margin-bottom: $spacer-lg;
+  margin-bottom: 0;
+
+  @media (min-width: 569px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  &.stats-section {
+    display: block;
+    margin-bottom: $spacer-lg;
+  }
 }
 
 .top-sub-section {
-  margin-bottom: 0;
-  margin-left: $spacer-lg;
-  width: calc(50% - #{$spacer-lg / 2});
+  float: none;
+  margin-bottom: $spacer-lg;
+  width: auto;
 
-  &:first-child {
-    margin-left: 0;
+  @media (min-width: 569px) {
+    margin-right: $spacer-lg;
+    width: calc(50% - #{$spacer-lg / 2});
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &.likes-section,
@@ -757,8 +777,11 @@
     min-width: 0;
 
     > .ember-view {
-      flex-flow: 1;
       min-width: ($spacer * 12);
+
+      &:not(.user-navigation) {
+        flex-grow: 1;
+      }
     }
   }
 }

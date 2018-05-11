@@ -1,14 +1,22 @@
 .badge-card {
   @extend %card;
 
-  margin-top: ($card-margin-y / 2);
   margin-right: 0;
-  margin-bottom: ($card-margin-y / 2);
+  margin-bottom: $card-margin-y;
 
   &,
   &.large,
   &.medium {
     width: 100%;
+
+    @media (min-width: 569px) {
+      margin-right: $card-margin-x;
+      width: calc(50% - #{$card-margin-x});
+    }
+
+    @media (min-width: ($container-max-width + 1px)) {
+      width: calc(100% / 3 - #{$card-margin-x});
+    }
   }
 
   .badge-contents {
@@ -31,9 +39,6 @@
         @extend %typography-h5;
 
         margin-bottom: ($card-inner-spacer-y / 2);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
       }
     }
 
@@ -41,12 +46,6 @@
       flex-grow: 1;
       min-width: 0;
     }
-  }
-
-  .badge-summary {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .check-display {
@@ -70,31 +69,35 @@
 }
 
 .badge-grouping {
-  column-count: 3;
-  column-gap: $spacer-lg;
   margin-bottom: ($spacer-lg - $card-margin-y);
+
+  @media (min-width: 569px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: ($card-margin-x * -1);
+  }
 
   h3 {
     margin-bottom: $card-margin-y;
   }
 
   .title {
-    column-span: all;
+    width: 100%;
   }
 }
 
 .badge-groups {
-  margin: 0 0$spacer-lg;
+  margin: 0;
 }
 
 .badges-section {
-  column-count: 3;
-  column-gap: $spacer-lg;
-  margin-bottom: ($spacer-lg - $card-margin-y);
+  margin-bottom: $spacer-lg;
+
+  @media (min-width: 569px) {
+    margin-right: ($card-margin-x * -1);
+  }
 
   &.top-section {
-    margin-bottom: $spacer-lg;
-
     > p {
       &:last-child {
         margin-bottom: 0;
@@ -103,15 +106,13 @@
       .more {
         @extend %btn-flat;
         @extend %btn-raised;
-
-        margin-top: $card-margin-y;
       }
     }
   }
 
   > h3,
   > p {
-    column-span: all;
+    width: 100%;
   }
 }
 
@@ -122,8 +123,15 @@
 }
 
 .show-badge-details {
+  display: block;
   margin-top: 0;
   margin-bottom: ($spacer-lg - $card-margin-y);
+
+  @media (min-width: 569px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: ($card-margin-x * -1);
+  }
 
   .badge-grant-info {
     margin-left: $spacer-lg;
@@ -138,23 +146,44 @@
   margin-bottom: $spacer-lg;
 
   > .ember-view {
-    column-count: 3;
-    column-gap: $spacer-lg;
     margin-bottom: ($spacer-lg - $card-margin-y);
+
+    @media (min-width: 569px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: ($card-margin-x * -1);
+    }
   }
 }
 
 .user-badges-list {
-  column-count: 3;
-  column-gap: $spacer-lg;
+  @media (min-width: 569px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: ($card-margin-x * -1);
+
+    .badge-card {
+      margin-right: $card-margin-x;
+      width: calc(50% - #{$card-margin-x});
+    }
+  }
+
+  @media (min-width: ($container-max-width + 1)) {
+    .badge-card {
+      width: calc(100% / 3 - #{$card-margin-x});
+    }
+  }
+
+  .user-main &.user-content {
+    margin-bottom: ($spacer-lg - $card-margin-y);
+  }
 }
 
 .user-info {
   @extend %card;
   @extend %card-block;
 
-  break-inside: avoid;
-  display: inline-flex;
+  display: flex;
   margin-bottom: $card-margin-y;
 
   &,
@@ -163,6 +192,15 @@
   &.small {
     min-height: 0;
     width: 100%;
+
+    @media (min-width: 569px) {
+      margin-right: $card-margin-x;
+      width: calc(50% - #{$card-margin-x});
+    }
+
+    @media (min-width: ($container-max-width + 1px)) {
+      width: calc(100% / 3 - #{$card-margin-x});
+    }
 
     &.badge-info {
       min-height: 0;

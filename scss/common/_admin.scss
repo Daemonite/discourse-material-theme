@@ -520,8 +520,6 @@ div {
   &.badges,
   &.groups,
   &.web-hook-container {
-    margin-bottom: $card-inner-spacer-y;
-
     .form-horizontal {
       &:last-child {
         margin-bottom: 0;
