@@ -238,6 +238,10 @@
   @include material-icons('favorite');
 }
 
+.fa-heart-o {
+  @include material-icons('favorite_border');
+}
+
 .fa-italic {
   @include material-icons('format_italic');
 }
