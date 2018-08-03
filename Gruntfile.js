@@ -51,8 +51,9 @@ module.exports = function(grunt) {
         processors: [
           require('autoprefixer')({
             browsers: [
-              'last 1 major version',
               '>= 1%',
+              'last 1 major version',
+              'not dead',
               'Android >= 4.4',
               'Chrome >= 45',
               'Edge >= 12',
