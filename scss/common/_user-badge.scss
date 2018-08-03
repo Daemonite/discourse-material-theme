@@ -7,6 +7,7 @@
   &,
   &.large,
   &.medium {
+    flex: 0 0 auto;
     width: 100%;
 
     @media (min-width: 569px) {
@@ -16,6 +17,11 @@
 
     @media (min-width: ($container-max-width + 1px)) {
       width: calc(100% / 3 - #{$card-margin-x});
+    }
+
+    .badge-contents .badge-link {
+      padding: 0;
+      width: auto;
     }
   }
 
@@ -27,6 +33,7 @@
       @extend %typography-h2;
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+      margin-right: 0;
       min-width: ($card-padding-x * 2 + $font-size-h1 / $font-size-base * $material-icon-size);
     }
 
@@ -88,6 +95,10 @@
 
 .badge-groups {
   margin: 0;
+}
+
+.badges-granted {
+  width: 100%;
 }
 
 .badges-section {
@@ -184,12 +195,13 @@
   @extend %card-block;
 
   display: flex;
-  margin-bottom: $card-margin-y;
 
   &,
   &.large,
   &.medium,
   &.small {
+    flex: 0 0 auto;
+    margin: 0 0 $card-margin-y;
     min-height: 0;
     width: 100%;
 
