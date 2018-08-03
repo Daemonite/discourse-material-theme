@@ -62,6 +62,26 @@
     }
   }
 
+  &.box.category-drop.combo-box.has-selection .category-drop-header {
+    padding: $btn-padding-y $btn-padding-x;
+
+    &::before {
+      background-color: $black-divider;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .fa,
+    .selected-name {
+      position: relative;
+    }
+  }
+
   &.category-chooser.combo-box .combo-box-header {
     padding: $btn-padding-y $btn-padding-x;
   }
