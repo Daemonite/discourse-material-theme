@@ -8,6 +8,8 @@
 
   .avatar {
     margin-right: $card-inner-spacer-x;
+    max-height: ($font-size-h4 * $line-height-h4);
+    max-width: ($font-size-h4 * $line-height-h4);
   }
 
   .blurb {
@@ -20,6 +22,10 @@
     margin-top: ($card-inner-spacer-y / 2);
     padding-top: 0;
     width: 100%;
+  }
+
+  .search-link .topic-statuses {
+    @extend %typography-body;
   }
 
   .search-link .topic-title {
@@ -41,61 +47,19 @@
 }
 
 .fps-select {
-  margin-top: ($spacer-lg / -2);
-  margin-bottom: $spacer-lg;
+  align-items: center;
+  display: flex;
 
   a {
     @extend %btn-flat;
     @extend %btn-raised;
-    @extend %btn-sm;
 
-    margin-right: $spacer-sm;
-  }
-}
-
-.search.row {
-  margin-bottom: 0;
-
-  > input[type='text'] {
-    margin-bottom: $spacer-lg;
-    min-width: 50%;
-  }
-
-  > .btn,
-  .new-topic-btn .btn {
-    @extend %btn-raised;
-
-    margin-bottom: $spacer-lg;
-  }
-
-  input {
-    &[type='date'],
-    &[type='number'],
-    &[type='text']:not(.user-selector) {
-      @extend %text-field-box;
-
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
-
-  .search-bar {
-    align-items: center;
-
-    .btn {
-      @extend %btn-raised;
-    }
+    margin-left: $card-inner-spacer-x;
   }
 }
 
 .search-advanced {
-  @extend %card;
-
   margin-bottom: $spacer-lg;
-
-  .container {
-    padding: $card-padding-y $card-padding-x 0;
-  }
 
   .search-advanced-btn {
     border-radius: $card-border-radius;
@@ -123,34 +87,131 @@
       margin: 0 0 ($card-inner-spacer-y / 2);
     }
   }
+
+  .search-bar {
+    @extend %card;
+    @extend %card-block;
+
+    .search-container & {
+      margin-bottom: $spacer-lg;
+    }
+
+    .search-cta {
+      padding: $btn-padding-y $card-inner-spacer-x;
+    }
+
+    .search-query {
+      @extend %text-field-box;
+
+      margin-right: $card-padding-x;
+    }
+  }
+
+  .search-info {
+    .search-container & {
+      border-bottom: 0;
+      margin-bottom: $spacer-lg;
+      padding-bottom: 0;
+    }
+  }
+
+  .search-notice {
+    .search-container & {
+      margin-bottom: $spacer-lg;
+    }
+  }
+
+  .search-title {
+    .search-container & {
+      margin-bottom: $spacer-lg;
+
+      .bulk-select {
+        margin-left: $card-inner-spacer-x;
+      }
+
+      .fps-select a {
+        margin-left: $card-inner-spacer-x;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .btn {
+      @extend %btn-raised;
+    }
+  }
+}
+
+.search-advanced-sidebar {
+  @extend %card;
+  @extend %card-block;
+
+  margin-bottom: $spacer-lg;
+
+  .search-container & {
+    margin-left: $spacer-lg;
+
+    .date-picker-wrapper {
+      margin-top: $card-inner-spacer-y;
+
+      .date-picker {
+        padding: $text-field-box-padding-y $text-field-box-padding-x ($text-field-box-padding-y - $text-field-border-width);
+
+        @include focus-hover {
+          padding-bottom: ($text-field-box-padding-y - $text-field-border-width * 2);
+        }
+      }
+    }
+
+    .search-advanced-filters {
+      background-color: transparent;
+      padding: 0;
+
+      .control-group {
+        margin-bottom: $card-inner-spacer-y;
+
+        [id='search-min-post-count'] {
+          margin-bottom: 0;
+          padding-left: $text-field-box-padding-x;
+        }
+      }
+    }
+
+    .search-advanced-title {
+      @extend %typography-h4;
+
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+
+  input[type='number'],
+  input[type='text'] {
+    @extend %text-field-box;
+  }
+
+  section {
+    &.field {
+      margin-top: 0;
+    }
+  }
+
+  .ac-wrap {
+    max-width: 100%;
+  }
+
+  .search-cta {
+    @extend %btn-raised;
+  }
+}
+
+.search-container {
+  align-items: flex-start;
 }
 
 .search-footer {
   margin-top: $spacer-lg;
   margin-bottom: $spacer-lg;
-}
-
-.search-title {
-  align-items: center;
-  border-bottom: 0;
-  display: flex;
-  margin: 0 0 $spacer-lg;
-
-  .result-count,
-  .sort-by {
-    margin-bottom: 0;
-  }
-
-  .result-count {
-    margin-right: $spacer-sm;
-
-    span {
-      height: auto;
-      line-height: inherit;
-    }
-  }
-
-  .sort-by {
-    margin-left: auto;
-  }
 }
