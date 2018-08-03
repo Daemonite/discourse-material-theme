@@ -18,6 +18,8 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono|Roboto+Slab");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.combo-box.mini-tag-chooser .select-kit-collection .collection-header .selected-tag::after, .select-kit.multi-select .choices .selected-name .name::after, .d-header button.sign-up-button::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control.draft .toggler::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, #reply-control .toggler::before, nav.post-controls button .read-icon::before, .meta .expand::before, .meta .filename::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
@@ -491,20 +493,20 @@ div.poll .results .bar-back::before {
   vertical-align: middle;
 }
 
-body input[type="color"],
-body input[type="date"],
-body input[type="datetime"],
-body input[type="datetime-local"],
-body input[type="email"],
-body input[type="month"],
-body input[type="number"],
-body input[type="password"],
-body input[type="search"],
-body input[type="tel"],
-body input[type="text"],
-body input[type="time"],
-body input[type="url"],
-body input[type="week"],
+body input[type='color'],
+body input[type='date'],
+body input[type='datetime'],
+body input[type='datetime-local'],
+body input[type='email'],
+body input[type='month'],
+body input[type='number'],
+body input[type='password'],
+body input[type='search'],
+body input[type='tel'],
+body input[type='text'],
+body input[type='time'],
+body input[type='url'],
+body input[type='week'],
 body textarea, .controls .static, .value-list .value {
   background-clip: padding-box;
   background-color: transparent;
@@ -521,85 +523,85 @@ body textarea, .controls .static, .value-list .value {
   padding: 8px 0 7px;
   width: 100%;
 }
-body input[type="color"]:focus,
-body input[type="date"]:focus,
-body input[type="datetime"]:focus,
-body input[type="datetime-local"]:focus,
-body input[type="email"]:focus,
-body input[type="month"]:focus,
-body input[type="number"]:focus,
-body input[type="password"]:focus,
-body input[type="search"]:focus,
-body input[type="tel"]:focus,
-body input[type="text"]:focus,
-body input[type="time"]:focus,
-body input[type="url"]:focus,
-body input[type="week"]:focus,
-body textarea:focus, .controls .static:focus, .value-list .value:focus, body input[type="color"]:hover,
-body input[type="date"]:hover,
-body input[type="datetime"]:hover,
-body input[type="datetime-local"]:hover,
-body input[type="email"]:hover,
-body input[type="month"]:hover,
-body input[type="number"]:hover,
-body input[type="password"]:hover,
-body input[type="search"]:hover,
-body input[type="tel"]:hover,
-body input[type="text"]:hover,
-body input[type="time"]:hover,
-body input[type="url"]:hover,
-body input[type="week"]:hover,
+body input[type='color']:focus,
+body input[type='date']:focus,
+body input[type='datetime']:focus,
+body input[type='datetime-local']:focus,
+body input[type='email']:focus,
+body input[type='month']:focus,
+body input[type='number']:focus,
+body input[type='password']:focus,
+body input[type='search']:focus,
+body input[type='tel']:focus,
+body input[type='text']:focus,
+body input[type='time']:focus,
+body input[type='url']:focus,
+body input[type='week']:focus,
+body textarea:focus, .controls .static:focus, .value-list .value:focus, body input[type='color']:hover,
+body input[type='date']:hover,
+body input[type='datetime']:hover,
+body input[type='datetime-local']:hover,
+body input[type='email']:hover,
+body input[type='month']:hover,
+body input[type='number']:hover,
+body input[type='password']:hover,
+body input[type='search']:hover,
+body input[type='tel']:hover,
+body input[type='text']:hover,
+body input[type='time']:hover,
+body input[type='url']:hover,
+body input[type='week']:hover,
 body textarea:hover, .controls .static:hover, .value-list .value:hover {
   border-width: 2px;
   padding-bottom: 6px;
 }
-body input[type="color"]:focus,
-body input[type="date"]:focus,
-body input[type="datetime"]:focus,
-body input[type="datetime-local"]:focus,
-body input[type="email"]:focus,
-body input[type="month"]:focus,
-body input[type="number"]:focus,
-body input[type="password"]:focus,
-body input[type="search"]:focus,
-body input[type="tel"]:focus,
-body input[type="text"]:focus,
-body input[type="time"]:focus,
-body input[type="url"]:focus,
-body input[type="week"]:focus,
+body input[type='color']:focus,
+body input[type='date']:focus,
+body input[type='datetime']:focus,
+body input[type='datetime-local']:focus,
+body input[type='email']:focus,
+body input[type='month']:focus,
+body input[type='number']:focus,
+body input[type='password']:focus,
+body input[type='search']:focus,
+body input[type='tel']:focus,
+body input[type='text']:focus,
+body input[type='time']:focus,
+body input[type='url']:focus,
+body input[type='week']:focus,
 body textarea:focus, .controls .static:focus, .value-list .value:focus {
   border-color: $tertiary;
   box-shadow: none;
   outline: 0;
 }
-body input[disabled][type="color"],
-body input[disabled][type="date"],
-body input[disabled][type="datetime"],
-body input[disabled][type="datetime-local"],
-body input[disabled][type="email"],
-body input[disabled][type="month"],
-body input[disabled][type="number"],
-body input[disabled][type="password"],
-body input[disabled][type="search"],
-body input[disabled][type="tel"],
-body input[disabled][type="text"],
-body input[disabled][type="time"],
-body input[disabled][type="url"],
-body input[disabled][type="week"],
-body textarea[disabled], .controls [disabled].static, .value-list [disabled].value, body input[readonly][type="color"],
-body input[readonly][type="date"],
-body input[readonly][type="datetime"],
-body input[readonly][type="datetime-local"],
-body input[readonly][type="email"],
-body input[readonly][type="month"],
-body input[readonly][type="number"],
-body input[readonly][type="password"],
-body input[readonly][type="search"],
-body input[readonly][type="tel"],
-body input[readonly][type="text"],
-body input[readonly][type="time"],
-body input[readonly][type="url"],
-body input[readonly][type="week"],
+body input[disabled][type='color'],
+body input[disabled][type='date'],
+body input[disabled][type='datetime'],
+body input[disabled][type='datetime-local'],
+body input[disabled][type='email'],
+body input[disabled][type='month'],
+body input[disabled][type='number'],
+body input[disabled][type='password'],
+body input[disabled][type='search'],
+body input[disabled][type='tel'],
+body input[disabled][type='text'],
+body input[disabled][type='time'],
+body input[disabled][type='url'],
+body input[disabled][type='week'],
+body textarea[disabled], .controls [disabled].static, .value-list [disabled].value, body input[readonly][type='color'],
+body input[readonly][type='date'],
+body input[readonly][type='datetime'],
+body input[readonly][type='datetime-local'],
+body input[readonly][type='email'],
+body input[readonly][type='month'],
+body input[readonly][type='number'],
+body input[readonly][type='password'],
+body input[readonly][type='search'],
+body input[readonly][type='tel'],
+body input[readonly][type='text'],
+body input[readonly][type='time'],
+body input[readonly][type='url'],
+body input[readonly][type='week'],
 body textarea[readonly], .controls [readonly].static, .value-list [readonly].value {
   border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.42));
   border-style: dotted;
@@ -779,7 +781,7 @@ dl {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 body h1,
@@ -1376,20 +1378,20 @@ body form > .ember-view:empty {
   display: none;
 }
 
-body input[type="color"],
-body input[type="date"],
-body input[type="datetime"],
-body input[type="datetime-local"],
-body input[type="email"],
-body input[type="month"],
-body input[type="number"],
-body input[type="password"],
-body input[type="search"],
-body input[type="tel"],
-body input[type="text"],
-body input[type="time"],
-body input[type="url"],
-body input[type="week"],
+body input[type='color'],
+body input[type='date'],
+body input[type='datetime'],
+body input[type='datetime-local'],
+body input[type='email'],
+body input[type='month'],
+body input[type='number'],
+body input[type='password'],
+body input[type='search'],
+body input[type='tel'],
+body input[type='text'],
+body input[type='time'],
+body input[type='url'],
+body input[type='week'],
 body textarea {
   margin-bottom: 8px;
 }
@@ -1479,20 +1481,20 @@ body .form-vertical .controls > :first-child {
 body .form-vertical .controls > :last-child {
   margin-right: 0;
 }
-body .form-vertical .controls input[type="color"],
-body .form-vertical .controls input[type="date"],
-body .form-vertical .controls input[type="datetime"],
-body .form-vertical .controls input[type="datetime-local"],
-body .form-vertical .controls input[type="email"],
-body .form-vertical .controls input[type="month"],
-body .form-vertical .controls input[type="number"],
-body .form-vertical .controls input[type="password"],
-body .form-vertical .controls input[type="search"],
-body .form-vertical .controls input[type="tel"],
-body .form-vertical .controls input[type="text"],
-body .form-vertical .controls input[type="time"],
-body .form-vertical .controls input[type="url"],
-body .form-vertical .controls input[type="week"],
+body .form-vertical .controls input[type='color'],
+body .form-vertical .controls input[type='date'],
+body .form-vertical .controls input[type='datetime'],
+body .form-vertical .controls input[type='datetime-local'],
+body .form-vertical .controls input[type='email'],
+body .form-vertical .controls input[type='month'],
+body .form-vertical .controls input[type='number'],
+body .form-vertical .controls input[type='password'],
+body .form-vertical .controls input[type='search'],
+body .form-vertical .controls input[type='tel'],
+body .form-vertical .controls input[type='text'],
+body .form-vertical .controls input[type='time'],
+body .form-vertical .controls input[type='url'],
+body .form-vertical .controls input[type='week'],
 body .form-vertical .controls label,
 body .form-vertical .controls .static,
 body .form-vertical .controls .uploaded-image-preview {
@@ -5096,7 +5098,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   padding-right: 24px;
 }
 .topic-list thead th {
-  font-weight: bold;
+  font-weight: bolder;
   white-space: nowrap;
 }
 .topic-list thead .bulk-select-topics {
@@ -5121,7 +5123,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   font-size: inherit;
 }
 .topic-list .main-link a.title {
-  font-weight: bold;
+  font-weight: bolder;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -5529,6 +5531,14 @@ nav.post-controls .show-replies i {
   padding: 8px 16px;
   text-transform: none;
   width: 690px;
+}
+
+.has-pending-posts {
+  border-radius: 2px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  max-width: 690px;
+  padding: 16px 16px;
 }
 
 .meta {
