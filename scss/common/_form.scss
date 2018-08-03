@@ -115,8 +115,6 @@ textarea {
 
     .control-label {
       @extend %typography-caption;
-
-      margin-bottom: 0;
     }
 
     .controls {
@@ -171,7 +169,6 @@ textarea {
       }
 
       .d-editor {
-        margin-top: $spacer-sm;
         margin-bottom: $spacer-sm;
 
         &:last-child {
@@ -228,6 +225,10 @@ textarea {
       }
     }
   }
+}
+
+.pref-second-factor {
+  margin-top: $spacer-sm;
 }
 
 .upload-selector .radios .inputs {

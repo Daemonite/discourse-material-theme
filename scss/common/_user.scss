@@ -724,6 +724,11 @@
         margin-bottom: $spacer-sm;
       }
     }
+
+    &.pref-avatar .avatar {
+      max-height: $btn-height;
+      max-width: $btn-height;
+    }
   }
 
   .controls .static {
@@ -753,6 +758,18 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .warning {
+    border-radius: $card-border-radius;
+    margin-bottom: $card-inner-spacer-y;
+    padding: $card-padding-y $card-padding-x;
+    width: auto;
+  }
+
+  .warning-wrap {
+    height: auto;
+    margin-bottom: 0;
   }
 }
 
