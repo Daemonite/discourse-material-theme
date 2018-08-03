@@ -1,5 +1,9 @@
 // Override some basic CSS rules from Discourse
 
+tbody {
+  border-top: 0;
+}
+
 .btn {
   &.no-text .fa {
     line-height: inherit;
