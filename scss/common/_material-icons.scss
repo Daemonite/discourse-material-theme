@@ -194,6 +194,10 @@
   @include material-icons('skip_next');
 }
 
+.fa-file {
+  @include material-icons('insert_drive_file');
+}
+
 .fa-file-text-o {
   @include material-icons('description');
 }
