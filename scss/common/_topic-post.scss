@@ -288,6 +288,10 @@ nav {
   }
 }
 
+.pinned-button .reason {
+  margin-bottom: 0;
+}
+
 .post-actions {
   align-items: center;
   color: color-chooser($white-secondary, $black-secondary);
@@ -853,6 +857,10 @@ nav {
       padding: $btn-padding-y-sm $card-inner-spacer-x;
     }
   }
+}
+
+.topic-notifications-button .reason {
+  margin-bottom: 0;
 }
 
 #topic-progress {
