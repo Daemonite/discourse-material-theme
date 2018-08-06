@@ -241,13 +241,19 @@
       }
     }
 
+    .select-kit-collection {
+      max-width: none;
+      padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
+    }
+
     .select-kit-filter {
       border-top: 0;
       line-height: inherit;
-      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+      padding: ($dropdown-link-padding-y-sm * 2) $dropdown-link-padding-x-sm;
 
       .filter-input {
-        margin-right: $spacer-sm;
+        font-size: $dropdown-font-size-sm;
+        width: 100%;
       }
 
       .spinner {
@@ -464,6 +470,11 @@
   }
 
   .select-kit-header {
+    .btn-clear {
+      margin-left: $spacer-xs;
+      padding: 0;
+    }
+
     .caret-icon {
       margin-right: ($spacer-xs / -2);
       margin-left: $spacer-xs;
