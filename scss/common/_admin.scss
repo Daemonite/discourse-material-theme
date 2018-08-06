@@ -802,9 +802,23 @@ div {
 
 .dashboard-left,
 .dashboard-right {
+  width: 50%;
+
   @media (max-width: $admin-breakpoint) {
     float: none;
     width: auto;
+  }
+
+  .dashboard-stats {
+    margin: 0 0 $spacer-lg;
+  }
+}
+
+.dashboard-left {
+  padding-right: ($grid-gutter-width / 2);
+
+  @media (max-width: $admin-breakpoint) {
+    padding-right: 0;
   }
 }
 
@@ -820,6 +834,11 @@ div {
   .community-health,
   .section-top {
     margin-bottom: $spacer-lg;
+  }
+
+  .dashboard-stats {
+    @extend %card;
+    @extend %card-block;
   }
 
   .misc {
@@ -879,9 +898,22 @@ div {
   }
 }
 
+.dashboard-right {
+  padding-left: ($grid-gutter-width / 2);
+
+  @media (max-width: $admin-breakpoint) {
+    padding-left: 0;
+  }
+}
+
 .dashboard-stats {
-  @extend %card;
-  @extend %card-block;
+  &.pull-right {
+    margin-bottom: 0;
+  }
+
+  &.totals {
+    padding-left: 0;
+  }
 }
 
 .dashboard-table {
