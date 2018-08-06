@@ -2344,32 +2344,32 @@ ol.category-breadcrumb > li {
 #login-form input[type='email'],
 #login-form input[type='password'],
 #login-form input[type='text'] {
-  display: inline-block;
-  margin-bottom: 4px;
+  margin-bottom: 20px;
 }
 .create-account td,
 #login-form td {
-  padding-right: 24px;
+  padding: 0;
   vertical-align: top;
 }
-.create-account td:last-child,
-#login-form td:last-child {
-  padding-right: 0;
-}
 
-.create-account table {
-  margin-right: -.5em;
-  width: calc(100% + .5em);
+.create-account.d-modal tr.input input {
+  margin-bottom: 8px;
 }
-.create-account tr.input input {
-  margin-bottom: 4px;
-  width: calc(100% - .5em);
+.create-account.d-modal tr.input label {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.create-account.d-modal .login-form {
+  padding: 0 24px 20px;
+}
+.create-account.d-modal .login-form tr {
+  margin-top: 0;
+}
+.create-account.d-modal .modal-body {
+  padding: 0;
 }
 .create-account tr.input td {
   padding-top: 0;
-}
-.create-account tr.input td.label {
-  padding-top: 18.000003px;
 }
 .create-account tr.input .tip {
   margin-bottom: 4px;
@@ -2377,6 +2377,7 @@ ol.category-breadcrumb > li {
 }
 .create-account .disclaimer {
   margin-top: 8px;
+  margin-bottom: 8px;
   padding-right: 8px;
   padding-left: 8px;
   text-align: right;
@@ -2384,6 +2385,18 @@ ol.category-breadcrumb > li {
 }
 .create-account .instructions label {
   font-weight: normal;
+}
+.create-account #login-buttons:not(.hidden) {
+  border-left-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  min-height: 0;
+  padding: 20px 24px;
+}
+.create-account #login-buttons:not(.hidden) button {
+  margin: 0 0 8px;
+  width: 100%;
+}
+.create-account #login-buttons:not(.hidden) button:last-child {
+  margin-bottom: 0;
 }
 .create-account .modal-body form {
   margin-bottom: 0;
@@ -2393,62 +2406,48 @@ ol.category-breadcrumb > li {
       flex-wrap: wrap;
 }
 
-#login-buttons {
-  -ms-flex-align: center;
-      align-items: center;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-@media (min-width: 569px) {
-  #login-buttons {
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-#login-buttons button {
-  display: block;
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  margin-right: 0;
-  margin-bottom: 10px;
-  min-width: 0;
-  width: 100%;
-}
-@media (min-width: 569px) {
-  #login-buttons button {
-    margin-right: 24px;
-    margin-bottom: 0;
-  }
-}
-#login-buttons button:last-child {
-  margin-right: 0;
-}
-
 #login-form table {
   width: 100%;
 }
-#login-form td:first-child:not(:empty) {
-  padding-top: 18.000003px;
-}
-#login-form #forgot-password-link {
-  display: block;
-  margin-top: 18.000003px;
-}
 
-.login-modal .btn-primary {
-  margin-bottom: 0;
+.login-modal.d-modal #credentials {
+  padding: 0;
 }
-.login-modal .modal-footer {
-  -ms-flex-align: center;
-      align-items: center;
+.login-modal.d-modal .modal-body {
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  padding: 0;
 }
-.login-modal .modal-header + .alert {
+.login-modal td label {
+  margin-bottom: 8px;
+}
+.login-modal .alert {
   border-radius: 0;
   box-shadow: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.login-modal #login-buttons:not(.hidden) {
+  border-left-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  min-height: 0;
+  padding: 20px 24px;
+}
+.login-modal #login-buttons:not(.hidden) button {
+  margin: 0 0 8px;
+  width: 100%;
+}
+.login-modal #login-buttons:not(.hidden) button:last-child {
+  margin-bottom: 0;
+}
+.login-modal #login-form {
+  margin: 0;
+  padding: 20px 24px;
+}
+.login-modal .modal-footer {
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .fa-angle-double-down {
