@@ -299,17 +299,34 @@
 
   .content-list {
     float: none;
+
+    ul {
+      margin-bottom: $spacer;
+    }
   }
 
-  .current-style .toggle-maximize {
-    right: $card-inner-spacer-x;
+  .current-style {
+    .ace-wrapper {
+      border-top: 1px solid color-chooser($dark-1, $light-1);
+      box-shadow: $card-box-shadow;
+    }
 
-    > a {
-      padding-right: $card-inner-spacer-x;
-      padding-left: $card-inner-spacer-x;
+    .admin-controls {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: 0;
+    }
 
-      .d-icon {
-        margin-right: 0;
+    .toggle-maximize {
+      right: $card-inner-spacer-x;
+
+      > a {
+        padding-right: $card-inner-spacer-x;
+        padding-left: $card-inner-spacer-x;
+
+        .d-icon {
+          margin-right: 0;
+        }
       }
     }
   }

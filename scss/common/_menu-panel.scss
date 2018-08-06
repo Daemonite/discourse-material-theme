@@ -6,6 +6,7 @@ div {
     a {
       color: inherit;
       font-size: inherit;
+      padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
       @include focus-hover {
         background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);

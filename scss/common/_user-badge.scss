@@ -19,6 +19,10 @@
       width: calc(100% / 3 - #{$card-margin-x});
     }
 
+    &:hover {
+      box-shadow: $card-box-shadow-hover;
+    }
+
     .badge-contents .badge-link {
       padding: 0;
       width: auto;

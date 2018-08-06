@@ -1,5 +1,9 @@
 // Override some basic CSS rules from Discourse
 
+input[type='search'] {
+  box-sizing: border-box;
+}
+
 tbody {
   border-top: 0;
 }
@@ -39,5 +43,10 @@ tr {
   .count {
     font-size: inherit;
     line-height: inherit;
+  }
+
+  .glyph {
+    margin-right: $spacer-xs;
+    width: auto;
   }
 }
