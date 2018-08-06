@@ -787,6 +787,19 @@ div {
   }
 }
 
+.dashboard-inline-table {
+  @extend %card;
+  @extend %card-block;
+
+  margin-bottom: $spacer-lg;
+  margin-left: $grid-gutter-width;
+
+  .table-title {
+    border-bottom: 0;
+    margin-bottom: $card-inner-spacer-y;
+  }
+}
+
 .dashboard-left,
 .dashboard-right {
   @media (max-width: $admin-breakpoint) {
@@ -807,6 +820,33 @@ div {
   .community-health,
   .section-top {
     margin-bottom: $spacer-lg;
+  }
+
+  .misc {
+    @extend %card;
+    @extend %card-block;
+
+    margin-bottom: $spacer-lg;
+
+    .durability {
+      margin: 0;
+      padding: 0 $card-inner-spacer-x 0 0;
+    }
+
+    .last-dashboard-update {
+      border-left-color: color-chooser($white-divider, $black-divider);
+      margin: 0;
+      padding: 0 0 0 $card-inner-spacer-x;
+
+      .btn {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    + p {
+      margin-bottom: 0;
+    }
   }
 
   .section {
@@ -1302,6 +1342,23 @@ div {
       &:last-child {
         margin-bottom: ($tbody-cell-padding-y * -1);
       }
+    }
+  }
+}
+
+.user-metrics {
+  margin: 0 0 0 ($grid-gutter-width * -1);
+
+  .dashboard-inline-table {
+    max-width: calc(100% - #{$grid-gutter-width});
+  }
+
+  .table-cell {
+    margin-right: $card-inner-spacer-x;
+    margin-bottom: $spacer-xs;
+
+    .label .d-icon {
+      font-size: .75em !important;
     }
   }
 }
