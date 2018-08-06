@@ -53,8 +53,12 @@ textarea {
     height: auto;
     padding: ($text-field-box-padding-y - $text-field-border-width) ($text-field-box-padding-x - $text-field-border-width);
 
-    @include focus-hover {
-      padding: ($text-field-box-padding-y - $text-field-border-width * 2) ($text-field-box-padding-x - $text-field-border-width * 2);
+    &:hover {
+      box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
+    }
+
+    &:focus {
+      box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) unquote('$tertiary'), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) unquote('$tertiary');
     }
   }
 }
@@ -90,8 +94,8 @@ textarea {
   margin-bottom: $spacer-sm;
 
   @include focus-hover {
-    border-bottom-width: $text-field-border-width;
-    padding-bottom: ($text-field-padding-y - $text-field-border-width);
+    border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+    box-shadow: none;
   }
 }
 

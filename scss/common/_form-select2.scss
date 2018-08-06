@@ -394,7 +394,30 @@
       }
 
       .filter .filter-input {
-        height: auto;
+        &,
+        &:focus {
+          height: auto;
+        }
+      }
+
+      .selected-category .badge-wrapper {
+        background-color: transparent;
+        line-height: 1;
+        margin: 0 0 0 ($chip-padding-x * -1);
+        padding: 0;
+        transform: none;
+
+        &::after {
+          @extend %material-icons;
+
+          content: 'close';
+        }
+      }
+
+      .selected-color .color-preview {
+        border-radius: 4px;
+        height: 4px;
+        margin: 0;
       }
 
       .selected-name {
@@ -406,6 +429,10 @@
         height: $chip-height;
         line-height: 1;
         padding: 0 $chip-padding-x;
+
+        &.is-highlighted {
+          box-shadow: 2px 0 0 -1px unquote('$danger'), 0 2px 0 -1px unquote('$danger'), -2px 0 0 -1px unquote('$danger'), 0 -2px 0 -1px unquote('$danger');
+        }
 
         .name {
           line-height: inherit;
@@ -429,7 +456,8 @@
       border-radius: $text-field-box-border-radius;
 
       &:hover {
-        box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-dark, $text-field-border-color-light), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+        border-color: color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
+        box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
       }
 
       &.is-focused {
