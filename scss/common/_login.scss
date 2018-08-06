@@ -10,40 +10,48 @@
     &[type='text'] {
       @extend %text-field-box;
 
-      display: inline-block;
-      margin-bottom: $spacer-xs;
+      margin-bottom: $modal-inner-spacer-y;
     }
   }
 
   td {
-    padding-right: $modal-inner-spacer-x;
+    padding: 0;
     vertical-align: top;
-
-    &:last-child {
-      padding-right: 0;
-    }
   }
 }
 
 .create-account {
-  table {
-    margin-right: -.5em;
-    width: calc(100% + .5em);
+  &.d-modal {
+    tr {
+      &.input {
+        input {
+          margin-bottom: $spacer-sm;
+        }
+
+        label {
+          margin-top: $modal-inner-spacer-y;
+          margin-bottom: $spacer-sm;
+        }
+      }
+    }
+
+    .login-form {
+      padding: 0 $modal-padding-x $modal-inner-spacer-y;
+
+      tr {
+        margin-top: 0;
+      }
+    }
+
+    .modal-body {
+      padding: 0;
+    }
   }
 
   tr {
     &.input {
-      input {
-        margin-bottom: $spacer-xs;
-        width: calc(100% - .5em);
-      }
-
       td {
         padding-top: 0;
-
-        &.label {
-          padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
-        }
       }
 
       .tip {
@@ -55,6 +63,7 @@
 
   .disclaimer {
     margin-top: $modal-footer-padding-y;
+    margin-bottom: $modal-footer-padding-y;
     padding-right: $card-inner-spacer-x;
     padding-left: $card-inner-spacer-x;
     text-align: right;
@@ -64,6 +73,21 @@
   .instructions {
     label {
       font-weight: normal;
+    }
+  }
+
+  #login-buttons:not(.hidden) {
+    border-left-color: color-chooser($white-divider, $black-divider);
+    min-height: 0;
+    padding: $modal-inner-spacer-y $modal-padding-x;
+
+    button {
+      margin: 0 0 $spacer-sm;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -78,63 +102,58 @@
   }
 }
 
-#login-buttons {
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: $modal-inner-spacer-y;
-
-  @media (min-width: 569px) {
-    display: flex;
-  }
-
-  button {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    margin-right: 0;
-    margin-bottom: ($modal-inner-spacer-y / 2);
-    min-width: 0;
-    width: 100%;
-
-    @media (min-width: 569px) {
-      margin-right: $modal-inner-spacer-x;
-      margin-bottom: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
 #login-form {
   table {
     width: 100%;
   }
-
-  td:first-child:not(:empty) {
-    padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
-  }
-
-  #forgot-password-link {
-    display: block;
-    margin-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
-  }
 }
 
 .login-modal {
-  .btn-primary {
-    margin-bottom: 0;
+  &.d-modal {
+    #credentials {
+      padding: 0;
+    }
+
+    .modal-body {
+      align-items: stretch;
+      padding: 0;
+    }
   }
 
-  .modal-footer {
-    align-items: center;
+  td label {
+    margin-bottom: $spacer-sm;
   }
 
-  .modal-header + .alert {
+  .alert {
     border-radius: 0;
     box-shadow: none;
     margin-top: 0;
     margin-bottom: 0;
+    padding-right: $modal-padding-x;
+    padding-left: $modal-padding-x;
+  }
+
+  #login-buttons:not(.hidden) {
+    border-left-color: color-chooser($white-divider, $black-divider);
+    min-height: 0;
+    padding: $modal-inner-spacer-y $modal-padding-x;
+
+    button {
+      margin: 0 0 $spacer-sm;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #login-form {
+    margin: 0;
+    padding: $modal-inner-spacer-y $modal-padding-x;
+  }
+
+  .modal-footer {
+    align-items: center;
   }
 }
