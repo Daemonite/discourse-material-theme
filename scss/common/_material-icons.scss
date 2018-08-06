@@ -6,6 +6,10 @@
   @include material-icons('arrow_downward');
 }
 
+.fa-archive {
+  @include material-icons('archive');
+}
+
 .fa-arrows-h {
   @include material-icons('swap_horiz');
 }
