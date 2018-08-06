@@ -12,8 +12,8 @@
     right: 1px;
   }
 
-  @media (min-width: ($container-max-width + $spacer-lg * 2)) {
-    right: $spacer-lg;
+  @media (min-width: ($container-max-width + $grid-gutter-width-lg * 2)) {
+    right: $grid-gutter-width-lg;
   }
 
   &.closed {

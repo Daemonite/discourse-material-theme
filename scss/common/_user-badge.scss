@@ -144,12 +144,13 @@
     margin-right: ($card-margin-x * -1);
   }
 
-  .badge-grant-info {
-    margin-left: $spacer-lg;
-  }
-
   .grant-info-item {
     margin-bottom: $card-margin-y;
+
+    &,
+    &:first-of-type {
+      margin-right: $card-margin-x;
+    }
   }
 }
 

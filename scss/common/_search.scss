@@ -151,7 +151,7 @@
   margin-bottom: $spacer-lg;
 
   .search-container & {
-    margin-left: $spacer-lg;
+    margin-left: $grid-gutter-width-lg;
 
     .date-picker-wrapper {
       margin-top: $card-inner-spacer-y;
