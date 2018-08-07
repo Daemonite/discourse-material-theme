@@ -509,6 +509,7 @@
     }
 
     .selected-name .badge-wrapper {
+      font-size: $chip-font-size;
       margin-right: 0;
       transform: scale($chip-sm-scale);
       transform-origin: 0 50%;

@@ -3,20 +3,16 @@
   padding: 0;
 
   h3 {
-    .badge-wrapper.bullet {
-      line-height: 1;
-      vertical-align: middle;
-
-      span {
-        &.badge-category {
-          display: inline-block;
-          line-height: $chip-height;
+    .badge-wrapper {
+      &.box {
+        span {
+          display: block;
         }
+      }
 
-        &.badge-category-bg,
-        &.badge-category-parent-bg {
-          line-height: 1;
-        }
+      &.bullet {
+        line-height: $line-height-base;
+        vertical-align: middle;
       }
     }
   }

@@ -11,12 +11,6 @@ ol {
   }
 }
 
-.category-drop.combo-box.select-kit .badge-wrapper.box span {
-  &.badge-category {
-    margin-left: ($chip-width + $chip-inner-spacer-x);
-  }
-}
-
 .category-navigation {
   align-items: flex-start;
   display: flex;
@@ -37,13 +31,6 @@ ol {
 
 .list-controls {
   margin-bottom: ($spacer-lg - $spacer-sm);
-
-  a {
-    &.badge-category {
-      font-size: inherit;
-      padding: 0;
-    }
-  }
 
   .btn {
     @extend %btn-raised;

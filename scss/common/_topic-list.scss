@@ -261,10 +261,6 @@
       width: 0;
     }
 
-    &.category {
-      height: ($tbody-cell-height - ($tbody-cell-height - $tbody-cell-padding-y * 2 - $chip-height));
-    }
-
     &.num {
       text-align: right;
 

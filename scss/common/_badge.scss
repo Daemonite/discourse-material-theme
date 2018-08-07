@@ -56,6 +56,20 @@
       &.badge-category-bg {
         border-radius: ($chip-height / 2);
       }
+
+      &.badge-category-parent-bg {
+        border-radius: ($chip-height / 2);
+        width: calc(100% - #{$chip-inner-spacer-x});
+
+        + .badge-category-bg {
+          left: $chip-inner-spacer-x;
+          width: calc(100% - #{$chip-inner-spacer-x});
+
+          + .badge-category {
+            margin-left: $chip-inner-spacer-x;
+          }
+        }
+      }
     }
 
     .badge-category {
