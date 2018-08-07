@@ -14,94 +14,91 @@
 }
 
 .badge-wrapper {
-  background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-  border-radius: ($chip-height / 2);
   color: inherit;
-  padding-right: $chip-padding-x;
+  font-size: .8125em;
+  font-weight: normal;
 
-  @include focus-hover {
-    color: inherit;
-  }
-
-  &,
-  &.box,
-  &.bullet {
-    font-size: $chip-font-size;
-    font-weight: normal;
-    line-height: 1;
-    margin-right: $spacer-xs;
-  }
-
-  &[href] {
-    @include focus-hover {
-      box-shadow: $chip-box-shadow;
-    }
-
-    &:focus {
-      outline: 0;
-    }
-  }
-
-  &.box,
-  &.bullet {
+  &.bar {
     align-items: center;
+    background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+    border-radius: ($chip-height / 2);
+    font-size: $chip-font-size;
+    line-height: $line-height-base;
+    margin-right: $spacer-sm;
+    padding-right: $chip-padding-x;
+    padding-left: $chip-padding-x;
 
     span {
       &.badge-category {
-        line-height: $chip-height;
+        padding: (($chip-height - $chip-font-size * $line-height-base) / 2) 0;
       }
 
       &.badge-category-bg {
-        border-radius: 50%;
-        flex-shrink: 0;
-        height: $chip-height;
-        line-height: 1;
         margin-right: $chip-inner-spacer-x;
-        width: $chip-width;
       }
+    }
 
-      &.badge-category-parent-bg {
-        border-radius: ($chip-height / 2) 0 0 ($chip-height / 2);
-        flex-shrink: 0;
-        height: $chip-height;
-        width: ($chip-width / 2);
-
-        + .badge-category-bg {
-          border-radius: 0 ($chip-height / 2) ($chip-height / 2) 0;
-          width: ($chip-width / 2);
-        }
-      }
+    .badge-category {
+      align-items: center;
+      border-radius: ($chip-height / 2);
+      min-height: $chip-height;
     }
   }
 
   &.box {
-    display: inline-flex;
-    margin-top: 0;
-    padding: 0 $chip-padding-x 0 0;
-
-    .suggested-topics-message & {
-      vertical-align: middle;
-    }
+    border-radius: ($chip-height / 2);
+    font-size: $chip-font-size;
+    line-height: $line-height-base;
+    margin-right: $spacer-sm;
+    padding: 0;
 
     span {
-      &.badge-category {
-        color: inherit !important;
-        margin: 0;
-        padding: 0;
-      }
-
-      &.badge-category-bg + .badge-category {
-        margin-left: ($chip-width + $chip-inner-spacer-x);
-      }
-
-      &.badge-category-parent-bg + .badge-category-bg {
-        left: ($chip-width / 2);
-
-        + .badge-category {
-          margin-left: ($chip-width + $chip-inner-spacer-x);
-        }
+      &.badge-category-bg {
+        border-radius: ($chip-height / 2);
       }
     }
+
+    .badge-category {
+      align-items: center;
+      border-radius: ($chip-height / 2);
+      min-height: $chip-height;
+      padding: (($chip-height - $chip-font-size * $line-height-base) / 2) $chip-padding-x;
+    }
+  }
+
+  &.bullet {
+    align-items: center;
+    background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+    border-radius: ($chip-height / 2);
+    font-size: $chip-font-size;
+    line-height: $line-height-base;
+    margin-right: $spacer-sm;
+    padding-right: $chip-padding-x;
+    padding-left: $chip-inner-spacer-x;
+
+    span {
+      &.badge-category-bg {
+        border-radius: 50%;
+        height: $material-icon-size;
+        margin-right: 0;
+        width: $material-icon-size;
+      }
+    }
+
+    .badge-category {
+      align-items: center;
+      border-radius: ($chip-height / 2);
+      min-height: $chip-height;
+      padding: (($chip-height - $chip-font-size * $line-height-base) / 2) 0 (($chip-height - $chip-font-size * $line-height-base) / 2) ($chip-padding-x - $chip-inner-spacer-x);
+    }
+  }
+
+  &.none {
+    margin-right: $spacer-sm;
+  }
+
+  .badge-category .d-icon {
+    margin-right: $chip-inner-spacer-x;
   }
 }
 
