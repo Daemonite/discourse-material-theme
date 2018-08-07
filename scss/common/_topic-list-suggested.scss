@@ -50,5 +50,10 @@
       right: 0;
       left: 0;
     }
+
+    .alert {
+      padding-right: ($thead-cell-padding-x * 2);
+      padding-left: ($thead-cell-padding-x * 2);
+    }
   }
 }

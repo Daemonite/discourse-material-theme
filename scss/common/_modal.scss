@@ -562,6 +562,12 @@
   }
 }
 
+.modal-inner-container {
+  .inline-modal & {
+    border: 0;
+  }
+}
+
 .modal-middle-container {
   display: block;
   flex-grow: 1;
