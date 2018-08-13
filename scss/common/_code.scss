@@ -56,18 +56,25 @@ pre {
 // Styles for 'COPY TO CLIPBOARD' button for code blocks
 // https://github.com/Daemonite/discourse-clipboard
 
+.bd-clipboard {
+  body & {
+    top: $card-padding-y;
+    right: ($card-padding-x / 2);
+  }
+}
+
 .code-highlight {
   body & {
     margin-top: 0;
     margin-bottom: $spacer;
+
+    .hljs {
+      padding-right: calc(1.428572em + #{$card-padding-x});
+    }
   }
 
   pre {
     padding: 0;
-
-    > code {
-      padding: $pre-padding;
-    }
   }
 }
 
