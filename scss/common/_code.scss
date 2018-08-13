@@ -57,12 +57,16 @@ pre {
 // https://github.com/Daemonite/discourse-clipboard
 
 .code-highlight {
-  .bd-clipboard {
-    background-color: color-chooser($code-bg-dark, $code-bg-light);
-    border-radius: $code-border-radius $code-border-radius 0 0;
+  body & {
+    margin-top: 0;
+    margin-bottom: $spacer;
+  }
 
-    + pre {
-      border-radius: 0 0 $code-border-radius $code-border-radius;
+  pre {
+    padding: 0;
+
+    > code {
+      padding: $pre-padding;
     }
   }
 }
@@ -70,8 +74,4 @@ pre {
 .hljs {
   color: unquote('$primary');
   padding: $pre-padding;
-
-  pre & {
-    padding: 0;
-  }
 }
