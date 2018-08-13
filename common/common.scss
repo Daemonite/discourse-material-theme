@@ -1098,15 +1098,20 @@ pre code {
   padding: 0;
 }
 
+body .bd-clipboard {
+  top: 16px;
+  right: 8px;
+}
+
 body .code-highlight {
   margin-top: 0;
   margin-bottom: 16px;
 }
+body .code-highlight .hljs {
+  padding-right: calc(1.428572em + 16px);
+}
 .code-highlight pre {
   padding: 0;
-}
-.code-highlight pre > code {
-  padding: 16px 16px;
 }
 
 .hljs {
@@ -5810,6 +5815,12 @@ nav.post-controls .show-replies i {
   border-top: 0;
   margin: 0;
   padding: 16px 56px 16px 16px;
+}
+.post-links-container .post-links li {
+  margin: 0;
+}
+.post-links-container .post-links li:last-of-type {
+  margin-bottom: 0;
 }
 
 .post-menu-area {
