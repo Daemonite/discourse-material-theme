@@ -1098,20 +1098,20 @@ pre code {
   padding: 0;
 }
 
-.code-highlight .bd-clipboard {
-  background-color: color-chooser(#212121, #f5f5f5);
-  border-radius: 2px 2px 0 0;
+body .code-highlight {
+  margin-top: 0;
+  margin-bottom: 16px;
 }
-.code-highlight .bd-clipboard + pre {
-  border-radius: 0 0 2px 2px;
+.code-highlight pre {
+  padding: 0;
+}
+.code-highlight pre > code {
+  padding: 16px 16px;
 }
 
 .hljs {
   color: $primary;
   padding: 16px 16px;
-}
-pre .hljs {
-  padding: 0;
 }
 
 .topic-body .contents .cooked {
@@ -1158,12 +1158,8 @@ pre .hljs {
   margin-bottom: 0;
 }
 .cooked .bd-clipboard {
-  border-radius: 0;
   margin-right: -16px;
   margin-left: -16px;
-}
-.cooked .bd-clipboard + pre {
-  border-radius: 0;
 }
 
 .lazyYT-container {
