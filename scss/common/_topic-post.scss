@@ -338,6 +338,14 @@ nav {
     border-top: 0;
     margin: 0;
     padding: $card-padding-y ($btn-padding-x + $card-padding-x + $material-icon-size) $card-padding-y $card-padding-x;
+
+    li {
+      margin: 0;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
