@@ -493,7 +493,7 @@ div.poll .results .bar-back::before {
   left: 0;
 }
 
-.table, .topic-list, .category-list, .latest-topic-list, .admin-contents table:not(.pika-table) {
+.table, .topic-list, .category-list, .latest-topic-list, .directory table, .groups-table, .admin-contents table:not(.pika-table) {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
@@ -502,14 +502,16 @@ div.poll .results .bar-back::before {
   width: 100%;
 }
 
-.table tbody tr, .topic-list > tbody > tr, .topic-list > thead > tr, .category-list > tbody > tr, .category-list > thead > tr, .latest-topic-list .table-heading, .latest-topic-list-item, .user-main .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
+.table tbody tr, .topic-list > tbody > tr, .topic-list > thead > tr, .category-list > tbody > tr, .category-list > thead > tr, .latest-topic-list .table-heading, .latest-topic-list-item, .directory table tbody tr, .groups-table tbody tr, .user-main .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
   border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 
 .table tbody td,
 .table tbody th, .topic-list tbody td,
 .topic-list tbody th, .category-list tbody td,
-.category-list tbody th, .latest-topic-list-item, .user-main .user-content .user-invite-list td, .admin-contents table:not(.pika-table) td,
+.category-list tbody th, .latest-topic-list-item, .directory table tbody td,
+.directory table tbody th, .groups-table tbody td,
+.groups-table tbody th, .user-main .user-content .user-invite-list td, .admin-contents table:not(.pika-table) td,
 .admin-contents table:not(.pika-table) th, .permalinks .col:not(.heading),
 .screened-emails .col:not(.heading),
 .screened-ip-addresses .col:not(.heading),
@@ -528,7 +530,9 @@ div.poll .results .bar-back::before {
 .table thead th, .topic-list thead td,
 .topic-list thead th, .category-list thead td,
 .category-list thead th, .latest-topic-list .more-topics,
-.latest-topic-list .table-heading, .user-main .user-content .user-invite-list th, .admin-contents table:not(.pika-table) thead td,
+.latest-topic-list .table-heading, .directory table thead td,
+.directory table thead th, .groups-table thead td,
+.groups-table thead th, .user-main .user-content .user-invite-list th, .admin-contents table:not(.pika-table) thead td,
 .admin-contents table:not(.pika-table) thead th, .permalinks .col.heading,
 .screened-emails .col.heading,
 .screened-ip-addresses .col.heading,
@@ -649,7 +653,7 @@ body textarea[readonly], .controls [readonly].static, .value-list [readonly].val
 #login-form input[type='email'],
 #login-form input[type='password'],
 #login-form input[type='text'], .search-menu input[type='text'], .search-advanced .search-bar .search-query, .search-advanced-sidebar input[type='number'],
-.search-advanced-sidebar input[type='text'], #share-link input[type='text'], .display-row input[type='text'], .user-preferences input[type='text'], .user-preferences .controls .static, .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-customize.admin-embedding input[type='text'], .admin-customize .show-current-style h1 input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .screened-ip-addresses .admin-container input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value, .watched-word-form input[type='text'] {
+.search-advanced-sidebar input[type='text'], #share-link input[type='text'], .directory .filter-name, .display-row input[type='text'], .groups-header-filters .groups-header-filters-name, .user-preferences input[type='text'], .user-preferences .controls .static, .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-customize.admin-embedding input[type='text'], .admin-customize .show-current-style h1 input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .screened-ip-addresses .admin-container input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value, .watched-word-form input[type='text'] {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
@@ -1087,7 +1091,7 @@ pre {
   margin-bottom: 16px;
   padding: 16px 16px;
 }
-.admin-interface pre {
+blockquote pre, .admin-interface pre, .onebox pre {
   background-color: color-chooser(rgba(153, 153, 153, 0.4), rgba(204, 204, 204, 0.25));
 }
 pre code {
@@ -1150,17 +1154,16 @@ body .code-highlight .hljs {
   height: auto;
   max-width: 100%;
 }
-.cooked p:empty {
-  display: none;
-}
 .cooked pre {
   border-radius: 0;
   margin-right: -16px;
   margin-left: -16px;
 }
-.cooked > :last-child,
-.cooked > .code-highlight:last-child > pre:last-child {
+.cooked > :last-child {
   margin-bottom: 0;
+}
+.cooked > :last-child:empty {
+  margin-top: -16px;
 }
 .cooked .bd-clipboard {
   margin-right: -16px;
@@ -1238,9 +1241,49 @@ aside.onebox .onebox-body p {
 aside.onebox .onebox-body p:last-child {
   margin-bottom: 0;
 }
+aside.onebox .onebox-body > :last-child {
+  margin-bottom: 0;
+}
+aside.onebox .onebox-body > :last-child:empty {
+  display: block;
+  margin-top: -16px;
+}
+aside.onebox .onebox-body > .labels:last-child {
+  margin-top: -16px;
+}
+aside.onebox .onebox-body .date {
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+aside.onebox .onebox-body .date .user {
+  margin-top: 0 !important;
+}
+aside.onebox .onebox-body .onebox-avatar {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+}
+aside.quote {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 aside.quote blockquote {
   border-radius: 0;
   width: auto !important;
+}
+aside.quote blockquote:last-child {
+  margin-bottom: 0;
+}
+aside.quote .expanded-quote > :first-child {
+  margin-top: 0;
+}
+aside.quote .expanded-quote > :last-child {
+  margin-bottom: 0;
+}
+aside.quote .expanded-quote > :last-child:empty {
+  display: block;
+  margin-top: -16px;
 }
 aside.quote .quote-controls {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
@@ -5755,9 +5798,6 @@ nav.post-controls .show-replies i {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.moderator .regular > .cooked + .post-menu-area {
-  margin-top: 0;
-}
 
 .names .fa {
   color: inherit;
@@ -5824,8 +5864,8 @@ nav.post-controls .show-replies i {
 }
 
 .post-menu-area {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .posts-wrapper {
@@ -6353,6 +6393,45 @@ nav.post-controls .show-replies i {
   padding: 16px 16px;
 }
 
+.directory {
+  margin-bottom: 24px;
+}
+.directory table {
+  margin-bottom: 24px;
+}
+.directory table td .number {
+  font-size: inherit;
+}
+.directory table .user-info {
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: transparent;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+}
+.directory > .clearfix {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 24px;
+}
+.directory > .clearfix .select-kit {
+  margin-right: auto;
+}
+.directory .filter-name {
+  margin-bottom: 0;
+  margin-left: 4px;
+  width: auto;
+}
+.directory .total-rows {
+  margin-bottom: 24px;
+}
+
 .display-row {
   min-height: 48px;
   padding: 12px 16px;
@@ -6375,6 +6454,43 @@ nav.post-controls .show-replies i {
 }
 .display-row .long-value button {
   margin-left: 4px;
+}
+
+.groups-header {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.groups-header-filters {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 4px;
+  -ms-flex-order: -1;
+      order: -1;
+}
+.groups-header-filters .groups-header-filters-name {
+  margin-right: 4px;
+  width: auto;
+}
+
+.groups-table {
+  margin-bottom: 24px;
+}
+.groups-table tr td.groups-user-count, .groups-table tr td.groups-table-type {
+  font-size: 13px;
+}
+.groups-table tr td.groups-table-membership > span {
+  font-size: inherit;
+  margin-right: 4px;
 }
 
 .likes-section .user-info,
