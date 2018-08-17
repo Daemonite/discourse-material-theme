@@ -125,8 +125,17 @@ div {
         .badge-wrapper {
           display: inline-flex;
 
+          &:focus,
+          &:hover {
+            background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+          }
+
           &.box {
             color: inherit;
+          }
+
+          &.bullet {
+            padding: 0 $chip-padding-x 0 $chip-inner-spacer-x;
           }
         }
       }

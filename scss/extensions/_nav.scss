@@ -27,6 +27,7 @@
 }
 
 %nav-pills-active {
+  background-color: unquote('$quaternary');
   color: color-dynamic(unquote('$quaternary'));
   opacity: 1;
 
@@ -70,6 +71,7 @@
 }
 
 %nav-stacked-active {
+  background-color: unquote('$quaternary');
   color: color-dynamic(unquote('$quaternary'));
   opacity: 1;
 

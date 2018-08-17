@@ -445,7 +445,6 @@
       font-size: inherit;
 
       dl {
-        display: flex;
         padding: 0;
 
         dd {
@@ -463,9 +462,13 @@
           }
         }
 
+        div {
+          margin: 0 $card-inner-spacer-x 0 0;
+        }
+
         dt {
           flex-shrink: 0;
-          margin: 0 $card-inner-spacer-x 0 0;
+          margin: 0 ($card-inner-spacer-x / 2) 0 0;
           white-space: nowrap;
 
           &:last-child {
@@ -832,6 +835,25 @@
   }
 
   .control-group {
+    &.apps {
+      margin-bottom: 0;
+
+      .controls > div {
+        > span {
+          display: block;
+          margin-bottom: $spacer;
+        }
+
+        > :last-child {
+          margin-bottom: 0;
+        }
+
+        .btn {
+          margin-bottom: $spacer;
+        }
+      }
+    }
+
     &.category-notifications {
       .controls,
       .instructions {
@@ -851,15 +873,6 @@
     &.pref-mailing-list-mode {
       .control-label + .controls {
         margin-top: $spacer-sm;
-      }
-    }
-
-    &.desktop-notifications .controls {
-      display: flex;
-      flex-direction: column;
-
-      .btn {
-        margin-bottom: $spacer-sm;
       }
     }
 
@@ -927,6 +940,7 @@
   }
 
   .wrapper {
+    align-items: flex-start;
     display: flex;
     flex-grow: 1;
     min-width: 0;
@@ -983,6 +997,14 @@
         font-size: $font-size-base;
         line-height: 1;
         vertical-align: middle;
+      }
+    }
+
+    h1 {
+      input[type='text'] {
+        @extend %text-field-box;
+
+        margin-bottom: 0;
       }
     }
 

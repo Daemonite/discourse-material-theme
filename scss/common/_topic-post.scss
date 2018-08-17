@@ -271,6 +271,15 @@ nav {
 .moderator .regular > .cooked {
   padding-top: $card-padding-y;
   padding-bottom: $card-padding-y;
+
+  > :last-child {
+    margin-bottom: 0;
+
+    &:empty {
+      display: block;
+      margin-top: ($card-inner-spacer-y * -1);
+    }
+  }
 }
 
 .names .fa {

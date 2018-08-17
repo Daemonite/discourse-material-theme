@@ -33,6 +33,10 @@ tr {
   padding-left: 0;
 }
 
+.footer-message > :last-child {
+  margin-bottom: 0;
+}
+
 .nav-pills {
   @extend %nav-pills;
 }

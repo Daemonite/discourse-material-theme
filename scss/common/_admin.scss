@@ -1,3 +1,33 @@
+.add-upload-modal {
+  br {
+    display: none;
+  }
+
+  .description {
+    display: block;
+    margin-top: $text-field-margin-y;
+    margin-bottom: $text-field-margin-y;
+  }
+
+  [id='file-input'] {
+    @extend %text-field;
+    @extend %text-field-box;
+
+    margin-bottom: $text-field-margin-y;
+  }
+
+  .inputs > :last-child {
+    margin-bottom: 0;
+  }
+
+  [id='name'] {
+    @extend %text-field-box;
+
+    margin-top: $text-field-margin-y;
+    margin-bottom: 0;
+  }
+}
+
 .admin-container {
   margin-top: 0;
 
@@ -253,6 +283,16 @@
       @extend %text-field-box;
 
       margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    input[type='text'] {
+      margin-bottom: 0;
+    }
+
+    .btn-small {
+      font-size: $btn-font-size-sm;
     }
   }
 
@@ -778,8 +818,6 @@ div {
         text-overflow: ellipsis;
 
         &.active {
-          background-color: unquote('$quaternary');
-          color: color-dynamic(unquote('$quaternary'));
           font-weight: normal;
         }
 
@@ -1391,6 +1429,169 @@ div {
       &:last-child {
         margin-bottom: ($tbody-cell-padding-y * -1);
       }
+    }
+  }
+}
+
+.styleguide {
+  .styleguide-contents {
+    font-size: inherit;
+    margin-left: $grid-gutter-width-lg;
+  }
+
+  .styleguide-menu {
+    width: 20%;
+
+    ul {
+      margin-bottom: $spacer-lg;
+      margin-left: 0;
+
+      li {
+        margin-bottom: 0;
+
+        &.styleguide-heading {
+          @extend %typography-caption;
+
+          font-weight: bolder;
+          margin-bottom: $spacer-sm;
+        }
+
+        a {
+          @extend %btn-flat;
+          @extend %btn-sm;
+
+          display: block;
+          text-align: inherit;
+
+          &.active {
+            @extend %nav-pills-active;
+          }
+        }
+      }
+    }
+  }
+
+  .styleguide-section {
+    margin-bottom: $spacer-lg;
+
+    &.buttons-examples {
+      .styleguide-example .rendered {
+        padding-bottom: ($card-padding-y - $spacer-xs);
+
+        button {
+          margin-right: $spacer-xs;
+          margin-bottom: $spacer-xs;
+        }
+      }
+    }
+
+    &.icons-examples {
+      margin-right: 0;
+    }
+
+    &.modal-examples {
+      .modal-body > :last-child {
+        margin-bottom: 0;
+      }
+
+      .modal-footer {
+        padding: $modal-inner-spacer-y $modal-padding-x $modal-padding-y;
+      }
+    }
+
+    &.navigation-stacked-examples .preferences-nav {
+      margin-bottom: 0;
+    }
+
+    &.suggested-topics-examples #suggested-topics {
+      margin-bottom: 0;
+    }
+
+    &.topic-footer-buttons-examples #topic-footer-buttons {
+      margin-bottom: 0;
+
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.topic-map-examples .topic-map {
+      margin-top: ($btn-height + $card-inner-spacer-y / 2);
+    }
+
+    .section-description {
+      margin-bottom: $spacer-lg;
+
+      pre {
+        margin-top: $spacer;
+      }
+    }
+
+    .styleguide-example {
+      border: 1px solid color-chooser($white-divider, $black-divider);
+      margin-bottom: $spacer-lg;
+
+      .example-title {
+        @extend %typography-caption;
+
+        border-bottom-color: color-chooser($white-divider, $black-divider);
+        margin-bottom: 0;
+        padding: ($card-padding-y / 2) $card-padding-x;
+      }
+
+      .rendered {
+        padding: $card-padding-y $card-padding-x;
+
+        &::after {
+          clear: both;
+          content: '';
+          display: table;
+        }
+
+        > :last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .section-title {
+      @extend %typography-h1;
+
+      margin-bottom: $spacer-lg;
+    }
+  }
+}
+
+[id='theme-creator-edit-local-modal'] {
+  pre {
+    white-space: nowrap;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    @extend %btn-raised;
+
+    margin-bottom: $spacer;
+  }
+}
+
+[id='theme-creator-share-modal'] {
+  > code {
+    display: inline-block;
+    margin-bottom: $spacer;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+
+    > .btn {
+      margin-bottom: ($card-inner-spacer-y * -1);
+      margin-left: ($card-inner-spacer-x * -1);
+      padding-right: $card-inner-spacer-x;
+      padding-left: $card-inner-spacer-x;
     }
   }
 }

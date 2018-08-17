@@ -122,7 +122,7 @@ textarea {
     }
 
     .controls {
-      align-items: flex-start;
+      align-items: center;
       display: flex;
       margin-bottom: $spacer-sm;
 
@@ -140,7 +140,6 @@ textarea {
 
         label {
           flex-shrink: 0;
-          margin-top: (($text-field-height - $font-size-base * $line-height-base) / 2);
         }
       }
 

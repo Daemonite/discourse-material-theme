@@ -18,6 +18,10 @@
   font-size: .8125em;
   font-weight: normal;
 
+  &[href]:hover {
+    box-shadow: $chip-box-shadow;
+  }
+
   &.bar {
     align-items: center;
     background-color: color-chooser($chip-bg-dark, $chip-bg-light);
