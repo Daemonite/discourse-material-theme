@@ -371,6 +371,26 @@ nav {
   right: 0;
 }
 
+.signup-cta {
+  .buttons {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: ($card-inner-spacer-y / -2);
+    margin-left: ($card-inner-spacer-x * -1);
+
+    a {
+      margin-left: auto;
+    }
+
+    .btn {
+      margin-right: $card-inner-spacer-x;
+      padding-right: $card-inner-spacer-x;
+      padding-left: $card-inner-spacer-x;
+    }
+  }
+}
+
 .small-action {
   @extend %card;
   @extend %card-block;
