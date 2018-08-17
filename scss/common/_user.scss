@@ -536,6 +536,7 @@
     }
 
     > div {
+      flex: 0 0 auto;
       margin: $card-inner-spacer-y $card-inner-spacer-x 0 0;
       padding: 0;
 
@@ -543,14 +544,21 @@
         padding-left: 0;
       }
 
-      a span,
+      a {
+        margin: 0;
+
+        span {
+          border-radius: 50%;
+          margin-left: ($chip-inner-spacer-x - $chip-padding-x);
+        }
+      }
+
       span {
         align-items: center;
-        border-radius: ($chip-height / 2);
+        border-radius: 50%;
         display: inline-flex;
-        height: $chip-height;
-        margin-left: ($chip-padding-x * -1);
-        min-width: $chip-height;
+        height: $material-icon-size;
+        min-width: $material-icon-size;
         padding: $chip-padding-y $chip-padding-x;
       }
     }
