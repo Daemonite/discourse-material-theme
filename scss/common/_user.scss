@@ -119,6 +119,66 @@
   }
 }
 
+.groups-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $spacer-lg;
+}
+
+.groups-header-filters {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: $spacer-xs;
+  order: -1;
+
+  .groups-header-filters-name {
+    @extend %text-field-box;
+
+    margin-right: $spacer-xs;
+    width: auto;
+  }
+}
+
+.groups-table {
+  @extend %table;
+
+  margin-bottom: $spacer-lg;
+
+  tbody {
+    td,
+    th {
+      @extend %tbody-cell;
+    }
+
+    tr {
+      @extend %table-row;
+    }
+  }
+
+  thead {
+    td,
+    th {
+      @extend %thead-cell;
+    }
+  }
+
+  tr td {
+    &.groups-user-count,
+    &.groups-table-type {
+      font-size: $tbody-font-size;
+    }
+
+    &.groups-table-membership {
+      > span {
+        font-size: inherit;
+        margin-right: $spacer-xs;
+      }
+    }
+  }
+}
+
 .likes-section,
 .links-section {
   .user-info {
