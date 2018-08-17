@@ -39,69 +39,69 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 }
 
 .nav-pills > li > a.btn-danger, .nav-stacked li > a.btn-danger, .content-list ul li > a.btn-danger, .btn-danger.btn, div.poll .poll-buttons a.btn-danger, .select-kit.category-drop.combo-box .btn-danger.category-drop-header, .select-kit.combo-box .btn-danger.select-kit-header, .modal-footer :not(.disclaimer) a.btn-danger, .btn-danger.pika-button, .btn-danger.pika-next,
-.btn-danger.pika-prev, #reply-control .btn-danger.toggle-preview, .fps-select a.btn-danger, #share-link .reply-as-new-topic a.btn-danger, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, nav.post-controls button.btn-danger, nav.post-controls .btn-danger.show-replies, .small-action button.btn-danger, .topic-map .buttons .btn-danger.btn, .topic-map .link-summary a.btn-danger, .topic-meta-data .post-info a.btn-danger, .stats-section li.linked-stat a.btn-danger, .user-main .about .controls a.btn-danger, .badges-section.top-section > p .btn-danger.more, .nav-pills > li > a.cancel, .nav-stacked li > a.cancel, .content-list ul li > a.cancel, .cancel.btn, div.poll .poll-buttons a.cancel, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .modal-footer :not(.disclaimer) a.cancel, .cancel.pika-button, .cancel.pika-next,
-.cancel.pika-prev, #reply-control .cancel.toggle-preview, .fps-select a.cancel, #share-link .reply-as-new-topic a.cancel, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header, nav.post-controls button.cancel, nav.post-controls .cancel.show-replies, .small-action button.cancel, .topic-map .buttons .cancel.btn, .topic-map .link-summary a.cancel, .topic-meta-data .post-info a.cancel, .stats-section li.linked-stat a.cancel, .user-main .about .controls a.cancel, .badges-section.top-section > p .cancel.more {
+.btn-danger.pika-prev, #reply-control .btn-danger.toggle-preview, .fps-select a.btn-danger, #share-link .reply-as-new-topic a.btn-danger, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, nav.post-controls button.btn-danger, nav.post-controls .btn-danger.show-replies, .small-action button.btn-danger, .topic-map .buttons .btn-danger.btn, .topic-map .link-summary a.btn-danger, .topic-meta-data .post-info a.btn-danger, .stats-section li.linked-stat a.btn-danger, .user-main .about .controls a.btn-danger, .badges-section.top-section > p .btn-danger.more, .styleguide .styleguide-menu ul li a.btn-danger, .nav-pills > li > a.cancel, .nav-stacked li > a.cancel, .content-list ul li > a.cancel, .cancel.btn, div.poll .poll-buttons a.cancel, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .modal-footer :not(.disclaimer) a.cancel, .cancel.pika-button, .cancel.pika-next,
+.cancel.pika-prev, #reply-control .cancel.toggle-preview, .fps-select a.cancel, #share-link .reply-as-new-topic a.cancel, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header, nav.post-controls button.cancel, nav.post-controls .cancel.show-replies, .small-action button.cancel, .topic-map .buttons .cancel.btn, .topic-map .link-summary a.cancel, .topic-meta-data .post-info a.cancel, .stats-section li.linked-stat a.cancel, .user-main .about .controls a.cancel, .badges-section.top-section > p .cancel.more, .styleguide .styleguide-menu ul li a.cancel {
   background-color: transparent;
   color: $danger;
 }
 .nav-pills > li > a.btn-danger:focus, .nav-stacked li > a.btn-danger:focus, .content-list ul li > a.btn-danger:focus, .btn-danger.btn:focus, div.poll .poll-buttons a.btn-danger:focus, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:focus, .select-kit.combo-box .btn-danger.select-kit-header:focus, .modal-footer :not(.disclaimer) a.btn-danger:focus, .btn-danger.pika-button:focus, .btn-danger.pika-next:focus,
-.btn-danger.pika-prev:focus, #reply-control .btn-danger.toggle-preview:focus, .fps-select a.btn-danger:focus, #share-link .reply-as-new-topic a.btn-danger:focus, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:focus, nav.post-controls button.btn-danger:focus, nav.post-controls .btn-danger.show-replies:focus, .small-action button.btn-danger:focus, .topic-map .link-summary a.btn-danger:focus, .topic-meta-data .post-info a.btn-danger:focus, .stats-section li.linked-stat a.btn-danger:focus, .user-main .about .controls a.btn-danger:focus, .badges-section.top-section > p .btn-danger.more:focus, .nav-pills > li > a.btn-danger:hover, .nav-stacked li > a.btn-danger:hover, .content-list ul li > a.btn-danger:hover, .btn-danger.btn:hover, div.poll .poll-buttons a.btn-danger:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-danger:hover, .btn-danger.pika-button:hover, .btn-danger.pika-next:hover,
-.btn-danger.pika-prev:hover, #reply-control .btn-danger.toggle-preview:hover, .fps-select a.btn-danger:hover, #share-link .reply-as-new-topic a.btn-danger:hover, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:hover, nav.post-controls button.btn-danger:hover, nav.post-controls .btn-danger.show-replies:hover, .small-action button.btn-danger:hover, .topic-map .link-summary a.btn-danger:hover, .topic-meta-data .post-info a.btn-danger:hover, .stats-section li.linked-stat a.btn-danger:hover, .user-main .about .controls a.btn-danger:hover, .badges-section.top-section > p .btn-danger.more:hover, .nav-pills > li > a.cancel:focus, .nav-stacked li > a.cancel:focus, .content-list ul li > a.cancel:focus, .cancel.btn:focus, div.poll .poll-buttons a.cancel:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .modal-footer :not(.disclaimer) a.cancel:focus, .cancel.pika-button:focus, .cancel.pika-next:focus,
-.cancel.pika-prev:focus, #reply-control .cancel.toggle-preview:focus, .fps-select a.cancel:focus, #share-link .reply-as-new-topic a.cancel:focus, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:focus, nav.post-controls button.cancel:focus, nav.post-controls .cancel.show-replies:focus, .small-action button.cancel:focus, .topic-map .link-summary a.cancel:focus, .topic-meta-data .post-info a.cancel:focus, .stats-section li.linked-stat a.cancel:focus, .user-main .about .controls a.cancel:focus, .badges-section.top-section > p .cancel.more:focus, .nav-pills > li > a.cancel:hover, .nav-stacked li > a.cancel:hover, .content-list ul li > a.cancel:hover, .cancel.btn:hover, div.poll .poll-buttons a.cancel:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .modal-footer :not(.disclaimer) a.cancel:hover, .cancel.pika-button:hover, .cancel.pika-next:hover,
-.cancel.pika-prev:hover, #reply-control .cancel.toggle-preview:hover, .fps-select a.cancel:hover, #share-link .reply-as-new-topic a.cancel:hover, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:hover, nav.post-controls button.cancel:hover, nav.post-controls .cancel.show-replies:hover, .small-action button.cancel:hover, .topic-map .link-summary a.cancel:hover, .topic-meta-data .post-info a.cancel:hover, .stats-section li.linked-stat a.cancel:hover, .user-main .about .controls a.cancel:hover, .badges-section.top-section > p .cancel.more:hover {
+.btn-danger.pika-prev:focus, #reply-control .btn-danger.toggle-preview:focus, .fps-select a.btn-danger:focus, #share-link .reply-as-new-topic a.btn-danger:focus, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:focus, nav.post-controls button.btn-danger:focus, nav.post-controls .btn-danger.show-replies:focus, .small-action button.btn-danger:focus, .topic-map .link-summary a.btn-danger:focus, .topic-meta-data .post-info a.btn-danger:focus, .stats-section li.linked-stat a.btn-danger:focus, .user-main .about .controls a.btn-danger:focus, .badges-section.top-section > p .btn-danger.more:focus, .styleguide .styleguide-menu ul li a.btn-danger:focus, .nav-pills > li > a.btn-danger:hover, .nav-stacked li > a.btn-danger:hover, .content-list ul li > a.btn-danger:hover, .btn-danger.btn:hover, div.poll .poll-buttons a.btn-danger:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-danger:hover, .btn-danger.pika-button:hover, .btn-danger.pika-next:hover,
+.btn-danger.pika-prev:hover, #reply-control .btn-danger.toggle-preview:hover, .fps-select a.btn-danger:hover, #share-link .reply-as-new-topic a.btn-danger:hover, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:hover, nav.post-controls button.btn-danger:hover, nav.post-controls .btn-danger.show-replies:hover, .small-action button.btn-danger:hover, .topic-map .link-summary a.btn-danger:hover, .topic-meta-data .post-info a.btn-danger:hover, .stats-section li.linked-stat a.btn-danger:hover, .user-main .about .controls a.btn-danger:hover, .badges-section.top-section > p .btn-danger.more:hover, .styleguide .styleguide-menu ul li a.btn-danger:hover, .nav-pills > li > a.cancel:focus, .nav-stacked li > a.cancel:focus, .content-list ul li > a.cancel:focus, .cancel.btn:focus, div.poll .poll-buttons a.cancel:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .modal-footer :not(.disclaimer) a.cancel:focus, .cancel.pika-button:focus, .cancel.pika-next:focus,
+.cancel.pika-prev:focus, #reply-control .cancel.toggle-preview:focus, .fps-select a.cancel:focus, #share-link .reply-as-new-topic a.cancel:focus, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:focus, nav.post-controls button.cancel:focus, nav.post-controls .cancel.show-replies:focus, .small-action button.cancel:focus, .topic-map .link-summary a.cancel:focus, .topic-meta-data .post-info a.cancel:focus, .stats-section li.linked-stat a.cancel:focus, .user-main .about .controls a.cancel:focus, .badges-section.top-section > p .cancel.more:focus, .styleguide .styleguide-menu ul li a.cancel:focus, .nav-pills > li > a.cancel:hover, .nav-stacked li > a.cancel:hover, .content-list ul li > a.cancel:hover, .cancel.btn:hover, div.poll .poll-buttons a.cancel:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .modal-footer :not(.disclaimer) a.cancel:hover, .cancel.pika-button:hover, .cancel.pika-next:hover,
+.cancel.pika-prev:hover, #reply-control .cancel.toggle-preview:hover, .fps-select a.cancel:hover, #share-link .reply-as-new-topic a.cancel:hover, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:hover, nav.post-controls button.cancel:hover, nav.post-controls .cancel.show-replies:hover, .small-action button.cancel:hover, .topic-map .link-summary a.cancel:hover, .topic-meta-data .post-info a.cancel:hover, .stats-section li.linked-stat a.cancel:hover, .user-main .about .controls a.cancel:hover, .badges-section.top-section > p .cancel.more:hover, .styleguide .styleguide-menu ul li a.cancel:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $danger;
 }
 .nav-pills > li > a.btn-danger:active, .nav-stacked li > a.btn-danger:active, .content-list ul li > a.btn-danger:active, .btn-danger.btn:active, div.poll .poll-buttons a.btn-danger:active, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:active, .select-kit.combo-box .btn-danger.select-kit-header:active, .modal-footer :not(.disclaimer) a.btn-danger:active, .btn-danger.pika-button:active, .btn-danger.pika-next:active,
-.btn-danger.pika-prev:active, #reply-control .btn-danger.toggle-preview:active, .fps-select a.btn-danger:active, #share-link .reply-as-new-topic a.btn-danger:active, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:active, nav.post-controls button.btn-danger:active, nav.post-controls .btn-danger.show-replies:active, .small-action button.btn-danger:active, .topic-map .link-summary a.btn-danger:active, .topic-meta-data .post-info a.btn-danger:active, .stats-section li.linked-stat a.btn-danger:active, .user-main .about .controls a.btn-danger:active, .badges-section.top-section > p .btn-danger.more:active, .nav-pills > li > a.btn-danger.btn-active, .nav-stacked li > a.btn-danger.btn-active, .content-list ul li > a.btn-danger.btn-active, .btn-danger.btn-active.btn, div.poll .poll-buttons a.btn-danger.btn-active, .select-kit.category-drop.combo-box .btn-danger.btn-active.category-drop-header, .select-kit.combo-box .btn-danger.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.btn-danger.btn-active, .btn-danger.btn-active.pika-button, .btn-danger.btn-active.pika-next,
-.btn-danger.btn-active.pika-prev, #reply-control .btn-danger.btn-active.toggle-preview, .fps-select a.btn-danger.btn-active, #share-link .reply-as-new-topic a.btn-danger.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-danger.btn-active.period-chooser-header, nav.post-controls button.btn-danger.btn-active, nav.post-controls .btn-danger.btn-active.show-replies, .small-action button.btn-danger.btn-active, .topic-map .link-summary a.btn-danger.btn-active, .topic-meta-data .post-info a.btn-danger.btn-active, .stats-section li.linked-stat a.btn-danger.btn-active, .user-main .about .controls a.btn-danger.btn-active, .badges-section.top-section > p .btn-danger.btn-active.more, .nav-pills > li > a.cancel:active, .nav-stacked li > a.cancel:active, .content-list ul li > a.cancel:active, .cancel.btn:active, div.poll .poll-buttons a.cancel:active, .select-kit.category-drop.combo-box .cancel.category-drop-header:active, .select-kit.combo-box .cancel.select-kit-header:active, .modal-footer :not(.disclaimer) a.cancel:active, .cancel.pika-button:active, .cancel.pika-next:active,
-.cancel.pika-prev:active, #reply-control .cancel.toggle-preview:active, .fps-select a.cancel:active, #share-link .reply-as-new-topic a.cancel:active, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:active, nav.post-controls button.cancel:active, nav.post-controls .cancel.show-replies:active, .small-action button.cancel:active, .topic-map .link-summary a.cancel:active, .topic-meta-data .post-info a.cancel:active, .stats-section li.linked-stat a.cancel:active, .user-main .about .controls a.cancel:active, .badges-section.top-section > p .cancel.more:active, .nav-pills > li > a.cancel.btn-active, .nav-stacked li > a.cancel.btn-active, .content-list ul li > a.cancel.btn-active, .cancel.btn-active.btn, div.poll .poll-buttons a.cancel.btn-active, .select-kit.category-drop.combo-box .cancel.btn-active.category-drop-header, .select-kit.combo-box .cancel.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.cancel.btn-active, .cancel.btn-active.pika-button, .cancel.btn-active.pika-next,
-.cancel.btn-active.pika-prev, #reply-control .cancel.btn-active.toggle-preview, .fps-select a.cancel.btn-active, #share-link .reply-as-new-topic a.cancel.btn-active, .period-chooser.dropdown-select-box.select-kit .cancel.btn-active.period-chooser-header, nav.post-controls button.cancel.btn-active, nav.post-controls .cancel.btn-active.show-replies, .small-action button.cancel.btn-active, .topic-map .link-summary a.cancel.btn-active, .topic-meta-data .post-info a.cancel.btn-active, .stats-section li.linked-stat a.cancel.btn-active, .user-main .about .controls a.cancel.btn-active, .badges-section.top-section > p .cancel.btn-active.more {
+.btn-danger.pika-prev:active, #reply-control .btn-danger.toggle-preview:active, .fps-select a.btn-danger:active, #share-link .reply-as-new-topic a.btn-danger:active, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:active, nav.post-controls button.btn-danger:active, nav.post-controls .btn-danger.show-replies:active, .small-action button.btn-danger:active, .topic-map .link-summary a.btn-danger:active, .topic-meta-data .post-info a.btn-danger:active, .stats-section li.linked-stat a.btn-danger:active, .user-main .about .controls a.btn-danger:active, .badges-section.top-section > p .btn-danger.more:active, .styleguide .styleguide-menu ul li a.btn-danger:active, .nav-pills > li > a.btn-danger.btn-active, .nav-stacked li > a.btn-danger.btn-active, .content-list ul li > a.btn-danger.btn-active, .btn-danger.btn-active.btn, div.poll .poll-buttons a.btn-danger.btn-active, .select-kit.category-drop.combo-box .btn-danger.btn-active.category-drop-header, .select-kit.combo-box .btn-danger.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.btn-danger.btn-active, .btn-danger.btn-active.pika-button, .btn-danger.btn-active.pika-next,
+.btn-danger.btn-active.pika-prev, #reply-control .btn-danger.btn-active.toggle-preview, .fps-select a.btn-danger.btn-active, #share-link .reply-as-new-topic a.btn-danger.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-danger.btn-active.period-chooser-header, nav.post-controls button.btn-danger.btn-active, nav.post-controls .btn-danger.btn-active.show-replies, .small-action button.btn-danger.btn-active, .topic-map .link-summary a.btn-danger.btn-active, .topic-meta-data .post-info a.btn-danger.btn-active, .stats-section li.linked-stat a.btn-danger.btn-active, .user-main .about .controls a.btn-danger.btn-active, .badges-section.top-section > p .btn-danger.btn-active.more, .styleguide .styleguide-menu ul li a.btn-danger.btn-active, .nav-pills > li > a.cancel:active, .nav-stacked li > a.cancel:active, .content-list ul li > a.cancel:active, .cancel.btn:active, div.poll .poll-buttons a.cancel:active, .select-kit.category-drop.combo-box .cancel.category-drop-header:active, .select-kit.combo-box .cancel.select-kit-header:active, .modal-footer :not(.disclaimer) a.cancel:active, .cancel.pika-button:active, .cancel.pika-next:active,
+.cancel.pika-prev:active, #reply-control .cancel.toggle-preview:active, .fps-select a.cancel:active, #share-link .reply-as-new-topic a.cancel:active, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:active, nav.post-controls button.cancel:active, nav.post-controls .cancel.show-replies:active, .small-action button.cancel:active, .topic-map .link-summary a.cancel:active, .topic-meta-data .post-info a.cancel:active, .stats-section li.linked-stat a.cancel:active, .user-main .about .controls a.cancel:active, .badges-section.top-section > p .cancel.more:active, .styleguide .styleguide-menu ul li a.cancel:active, .nav-pills > li > a.cancel.btn-active, .nav-stacked li > a.cancel.btn-active, .content-list ul li > a.cancel.btn-active, .cancel.btn-active.btn, div.poll .poll-buttons a.cancel.btn-active, .select-kit.category-drop.combo-box .cancel.btn-active.category-drop-header, .select-kit.combo-box .cancel.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.cancel.btn-active, .cancel.btn-active.pika-button, .cancel.btn-active.pika-next,
+.cancel.btn-active.pika-prev, #reply-control .cancel.btn-active.toggle-preview, .fps-select a.cancel.btn-active, #share-link .reply-as-new-topic a.cancel.btn-active, .period-chooser.dropdown-select-box.select-kit .cancel.btn-active.period-chooser-header, nav.post-controls button.cancel.btn-active, nav.post-controls .cancel.btn-active.show-replies, .small-action button.cancel.btn-active, .topic-map .link-summary a.cancel.btn-active, .topic-meta-data .post-info a.cancel.btn-active, .stats-section li.linked-stat a.cancel.btn-active, .user-main .about .controls a.cancel.btn-active, .badges-section.top-section > p .cancel.btn-active.more, .styleguide .styleguide-menu ul li a.cancel.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
 .nav-pills > li > a.btn-primary, .nav-stacked li > a.btn-primary, .content-list ul li > a.btn-primary, .btn-primary.btn, div.poll .poll-buttons a.btn-primary, .select-kit.category-drop.combo-box .btn-primary.category-drop-header, .select-kit.combo-box .btn-primary.select-kit-header, .modal-footer :not(.disclaimer) a.btn-primary, .btn-primary.pika-button, .btn-primary.pika-next,
-.btn-primary.pika-prev, #reply-control .btn-primary.toggle-preview, .fps-select a.btn-primary, #share-link .reply-as-new-topic a.btn-primary, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, nav.post-controls button.btn-primary, nav.post-controls .btn-primary.show-replies, .small-action button.btn-primary, .topic-map .buttons .btn-primary.btn, .topic-map .link-summary a.btn-primary, .topic-meta-data .post-info a.btn-primary, .stats-section li.linked-stat a.btn-primary, .user-main .about .controls a.btn-primary, .badges-section.top-section > p .btn-primary.more {
+.btn-primary.pika-prev, #reply-control .btn-primary.toggle-preview, .fps-select a.btn-primary, #share-link .reply-as-new-topic a.btn-primary, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, nav.post-controls button.btn-primary, nav.post-controls .btn-primary.show-replies, .small-action button.btn-primary, .topic-map .buttons .btn-primary.btn, .topic-map .link-summary a.btn-primary, .topic-meta-data .post-info a.btn-primary, .stats-section li.linked-stat a.btn-primary, .user-main .about .controls a.btn-primary, .badges-section.top-section > p .btn-primary.more, .styleguide .styleguide-menu ul li a.btn-primary {
   background-color: transparent;
   color: $tertiary;
 }
 .nav-pills > li > a.btn-primary:focus, .nav-stacked li > a.btn-primary:focus, .content-list ul li > a.btn-primary:focus, .btn-primary.btn:focus, div.poll .poll-buttons a.btn-primary:focus, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:focus, .select-kit.combo-box .btn-primary.select-kit-header:focus, .modal-footer :not(.disclaimer) a.btn-primary:focus, .btn-primary.pika-button:focus, .btn-primary.pika-next:focus,
-.btn-primary.pika-prev:focus, #reply-control .btn-primary.toggle-preview:focus, .fps-select a.btn-primary:focus, #share-link .reply-as-new-topic a.btn-primary:focus, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:focus, nav.post-controls button.btn-primary:focus, nav.post-controls .btn-primary.show-replies:focus, .small-action button.btn-primary:focus, .topic-map .link-summary a.btn-primary:focus, .topic-meta-data .post-info a.btn-primary:focus, .stats-section li.linked-stat a.btn-primary:focus, .user-main .about .controls a.btn-primary:focus, .badges-section.top-section > p .btn-primary.more:focus, .nav-pills > li > a.btn-primary:hover, .nav-stacked li > a.btn-primary:hover, .content-list ul li > a.btn-primary:hover, .btn-primary.btn:hover, div.poll .poll-buttons a.btn-primary:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-primary:hover, .btn-primary.pika-button:hover, .btn-primary.pika-next:hover,
-.btn-primary.pika-prev:hover, #reply-control .btn-primary.toggle-preview:hover, .fps-select a.btn-primary:hover, #share-link .reply-as-new-topic a.btn-primary:hover, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:hover, nav.post-controls button.btn-primary:hover, nav.post-controls .btn-primary.show-replies:hover, .small-action button.btn-primary:hover, .topic-map .link-summary a.btn-primary:hover, .topic-meta-data .post-info a.btn-primary:hover, .stats-section li.linked-stat a.btn-primary:hover, .user-main .about .controls a.btn-primary:hover, .badges-section.top-section > p .btn-primary.more:hover {
+.btn-primary.pika-prev:focus, #reply-control .btn-primary.toggle-preview:focus, .fps-select a.btn-primary:focus, #share-link .reply-as-new-topic a.btn-primary:focus, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:focus, nav.post-controls button.btn-primary:focus, nav.post-controls .btn-primary.show-replies:focus, .small-action button.btn-primary:focus, .topic-map .link-summary a.btn-primary:focus, .topic-meta-data .post-info a.btn-primary:focus, .stats-section li.linked-stat a.btn-primary:focus, .user-main .about .controls a.btn-primary:focus, .badges-section.top-section > p .btn-primary.more:focus, .styleguide .styleguide-menu ul li a.btn-primary:focus, .nav-pills > li > a.btn-primary:hover, .nav-stacked li > a.btn-primary:hover, .content-list ul li > a.btn-primary:hover, .btn-primary.btn:hover, div.poll .poll-buttons a.btn-primary:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-primary:hover, .btn-primary.pika-button:hover, .btn-primary.pika-next:hover,
+.btn-primary.pika-prev:hover, #reply-control .btn-primary.toggle-preview:hover, .fps-select a.btn-primary:hover, #share-link .reply-as-new-topic a.btn-primary:hover, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:hover, nav.post-controls button.btn-primary:hover, nav.post-controls .btn-primary.show-replies:hover, .small-action button.btn-primary:hover, .topic-map .link-summary a.btn-primary:hover, .topic-meta-data .post-info a.btn-primary:hover, .stats-section li.linked-stat a.btn-primary:hover, .user-main .about .controls a.btn-primary:hover, .badges-section.top-section > p .btn-primary.more:hover, .styleguide .styleguide-menu ul li a.btn-primary:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $tertiary;
 }
 .nav-pills > li > a.btn-primary:active, .nav-stacked li > a.btn-primary:active, .content-list ul li > a.btn-primary:active, .btn-primary.btn:active, div.poll .poll-buttons a.btn-primary:active, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:active, .select-kit.combo-box .btn-primary.select-kit-header:active, .modal-footer :not(.disclaimer) a.btn-primary:active, .btn-primary.pika-button:active, .btn-primary.pika-next:active,
-.btn-primary.pika-prev:active, #reply-control .btn-primary.toggle-preview:active, .fps-select a.btn-primary:active, #share-link .reply-as-new-topic a.btn-primary:active, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:active, nav.post-controls button.btn-primary:active, nav.post-controls .btn-primary.show-replies:active, .small-action button.btn-primary:active, .topic-map .link-summary a.btn-primary:active, .topic-meta-data .post-info a.btn-primary:active, .stats-section li.linked-stat a.btn-primary:active, .user-main .about .controls a.btn-primary:active, .badges-section.top-section > p .btn-primary.more:active, .nav-pills > li > a.btn-primary.btn-active, .nav-stacked li > a.btn-primary.btn-active, .content-list ul li > a.btn-primary.btn-active, .btn-primary.btn-active.btn, div.poll .poll-buttons a.btn-primary.btn-active, .select-kit.category-drop.combo-box .btn-primary.btn-active.category-drop-header, .select-kit.combo-box .btn-primary.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.btn-primary.btn-active, .btn-primary.btn-active.pika-button, .btn-primary.btn-active.pika-next,
-.btn-primary.btn-active.pika-prev, #reply-control .btn-primary.btn-active.toggle-preview, .fps-select a.btn-primary.btn-active, #share-link .reply-as-new-topic a.btn-primary.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-primary.btn-active.period-chooser-header, nav.post-controls button.btn-primary.btn-active, nav.post-controls .btn-primary.btn-active.show-replies, .small-action button.btn-primary.btn-active, .topic-map .link-summary a.btn-primary.btn-active, .topic-meta-data .post-info a.btn-primary.btn-active, .stats-section li.linked-stat a.btn-primary.btn-active, .user-main .about .controls a.btn-primary.btn-active, .badges-section.top-section > p .btn-primary.btn-active.more {
+.btn-primary.pika-prev:active, #reply-control .btn-primary.toggle-preview:active, .fps-select a.btn-primary:active, #share-link .reply-as-new-topic a.btn-primary:active, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:active, nav.post-controls button.btn-primary:active, nav.post-controls .btn-primary.show-replies:active, .small-action button.btn-primary:active, .topic-map .link-summary a.btn-primary:active, .topic-meta-data .post-info a.btn-primary:active, .stats-section li.linked-stat a.btn-primary:active, .user-main .about .controls a.btn-primary:active, .badges-section.top-section > p .btn-primary.more:active, .styleguide .styleguide-menu ul li a.btn-primary:active, .nav-pills > li > a.btn-primary.btn-active, .nav-stacked li > a.btn-primary.btn-active, .content-list ul li > a.btn-primary.btn-active, .btn-primary.btn-active.btn, div.poll .poll-buttons a.btn-primary.btn-active, .select-kit.category-drop.combo-box .btn-primary.btn-active.category-drop-header, .select-kit.combo-box .btn-primary.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.btn-primary.btn-active, .btn-primary.btn-active.pika-button, .btn-primary.btn-active.pika-next,
+.btn-primary.btn-active.pika-prev, #reply-control .btn-primary.btn-active.toggle-preview, .fps-select a.btn-primary.btn-active, #share-link .reply-as-new-topic a.btn-primary.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-primary.btn-active.period-chooser-header, nav.post-controls button.btn-primary.btn-active, nav.post-controls .btn-primary.btn-active.show-replies, .small-action button.btn-primary.btn-active, .topic-map .link-summary a.btn-primary.btn-active, .topic-meta-data .post-info a.btn-primary.btn-active, .stats-section li.linked-stat a.btn-primary.btn-active, .user-main .about .controls a.btn-primary.btn-active, .badges-section.top-section > p .btn-primary.btn-active.more, .styleguide .styleguide-menu ul li a.btn-primary.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
 .nav-pills > li > a.btn-success, .nav-stacked li > a.btn-success, .content-list ul li > a.btn-success, .btn-success.btn, div.poll .poll-buttons a.btn-success, .select-kit.category-drop.combo-box .btn-success.category-drop-header, .select-kit.combo-box .btn-success.select-kit-header, .modal-footer :not(.disclaimer) a.btn-success, .btn-success.pika-button, .btn-success.pika-next,
-.btn-success.pika-prev, #reply-control .btn-success.toggle-preview, .fps-select a.btn-success, #share-link .reply-as-new-topic a.btn-success, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header, nav.post-controls button.btn-success, nav.post-controls .btn-success.show-replies, .small-action button.btn-success, .topic-map .buttons .btn-success.btn, .topic-map .link-summary a.btn-success, .topic-meta-data .post-info a.btn-success, .stats-section li.linked-stat a.btn-success, .user-main .about .controls a.btn-success, .badges-section.top-section > p .btn-success.more, .nav-pills > li > a.ok, .nav-stacked li > a.ok, .content-list ul li > a.ok, .ok.btn, div.poll .poll-buttons a.ok, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .modal-footer :not(.disclaimer) a.ok, .ok.pika-button, .ok.pika-next,
-.ok.pika-prev, #reply-control .ok.toggle-preview, .fps-select a.ok, #share-link .reply-as-new-topic a.ok, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header, nav.post-controls button.ok, nav.post-controls .ok.show-replies, .small-action button.ok, .topic-map .buttons .ok.btn, .topic-map .link-summary a.ok, .topic-meta-data .post-info a.ok, .stats-section li.linked-stat a.ok, .user-main .about .controls a.ok, .badges-section.top-section > p .ok.more {
+.btn-success.pika-prev, #reply-control .btn-success.toggle-preview, .fps-select a.btn-success, #share-link .reply-as-new-topic a.btn-success, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header, nav.post-controls button.btn-success, nav.post-controls .btn-success.show-replies, .small-action button.btn-success, .topic-map .buttons .btn-success.btn, .topic-map .link-summary a.btn-success, .topic-meta-data .post-info a.btn-success, .stats-section li.linked-stat a.btn-success, .user-main .about .controls a.btn-success, .badges-section.top-section > p .btn-success.more, .styleguide .styleguide-menu ul li a.btn-success, .nav-pills > li > a.ok, .nav-stacked li > a.ok, .content-list ul li > a.ok, .ok.btn, div.poll .poll-buttons a.ok, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .modal-footer :not(.disclaimer) a.ok, .ok.pika-button, .ok.pika-next,
+.ok.pika-prev, #reply-control .ok.toggle-preview, .fps-select a.ok, #share-link .reply-as-new-topic a.ok, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header, nav.post-controls button.ok, nav.post-controls .ok.show-replies, .small-action button.ok, .topic-map .buttons .ok.btn, .topic-map .link-summary a.ok, .topic-meta-data .post-info a.ok, .stats-section li.linked-stat a.ok, .user-main .about .controls a.ok, .badges-section.top-section > p .ok.more, .styleguide .styleguide-menu ul li a.ok {
   background-color: transparent;
   color: $success;
 }
 .nav-pills > li > a.btn-success:focus, .nav-stacked li > a.btn-success:focus, .content-list ul li > a.btn-success:focus, .btn-success.btn:focus, div.poll .poll-buttons a.btn-success:focus, .select-kit.category-drop.combo-box .btn-success.category-drop-header:focus, .select-kit.combo-box .btn-success.select-kit-header:focus, .modal-footer :not(.disclaimer) a.btn-success:focus, .btn-success.pika-button:focus, .btn-success.pika-next:focus,
-.btn-success.pika-prev:focus, #reply-control .btn-success.toggle-preview:focus, .fps-select a.btn-success:focus, #share-link .reply-as-new-topic a.btn-success:focus, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:focus, nav.post-controls button.btn-success:focus, nav.post-controls .btn-success.show-replies:focus, .small-action button.btn-success:focus, .topic-map .link-summary a.btn-success:focus, .topic-meta-data .post-info a.btn-success:focus, .stats-section li.linked-stat a.btn-success:focus, .user-main .about .controls a.btn-success:focus, .badges-section.top-section > p .btn-success.more:focus, .nav-pills > li > a.btn-success:hover, .nav-stacked li > a.btn-success:hover, .content-list ul li > a.btn-success:hover, .btn-success.btn:hover, div.poll .poll-buttons a.btn-success:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-success:hover, .btn-success.pika-button:hover, .btn-success.pika-next:hover,
-.btn-success.pika-prev:hover, #reply-control .btn-success.toggle-preview:hover, .fps-select a.btn-success:hover, #share-link .reply-as-new-topic a.btn-success:hover, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:hover, nav.post-controls button.btn-success:hover, nav.post-controls .btn-success.show-replies:hover, .small-action button.btn-success:hover, .topic-map .link-summary a.btn-success:hover, .topic-meta-data .post-info a.btn-success:hover, .stats-section li.linked-stat a.btn-success:hover, .user-main .about .controls a.btn-success:hover, .badges-section.top-section > p .btn-success.more:hover, .nav-pills > li > a.ok:focus, .nav-stacked li > a.ok:focus, .content-list ul li > a.ok:focus, .ok.btn:focus, div.poll .poll-buttons a.ok:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .modal-footer :not(.disclaimer) a.ok:focus, .ok.pika-button:focus, .ok.pika-next:focus,
-.ok.pika-prev:focus, #reply-control .ok.toggle-preview:focus, .fps-select a.ok:focus, #share-link .reply-as-new-topic a.ok:focus, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:focus, nav.post-controls button.ok:focus, nav.post-controls .ok.show-replies:focus, .small-action button.ok:focus, .topic-map .link-summary a.ok:focus, .topic-meta-data .post-info a.ok:focus, .stats-section li.linked-stat a.ok:focus, .user-main .about .controls a.ok:focus, .badges-section.top-section > p .ok.more:focus, .nav-pills > li > a.ok:hover, .nav-stacked li > a.ok:hover, .content-list ul li > a.ok:hover, .ok.btn:hover, div.poll .poll-buttons a.ok:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .modal-footer :not(.disclaimer) a.ok:hover, .ok.pika-button:hover, .ok.pika-next:hover,
-.ok.pika-prev:hover, #reply-control .ok.toggle-preview:hover, .fps-select a.ok:hover, #share-link .reply-as-new-topic a.ok:hover, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:hover, nav.post-controls button.ok:hover, nav.post-controls .ok.show-replies:hover, .small-action button.ok:hover, .topic-map .link-summary a.ok:hover, .topic-meta-data .post-info a.ok:hover, .stats-section li.linked-stat a.ok:hover, .user-main .about .controls a.ok:hover, .badges-section.top-section > p .ok.more:hover {
+.btn-success.pika-prev:focus, #reply-control .btn-success.toggle-preview:focus, .fps-select a.btn-success:focus, #share-link .reply-as-new-topic a.btn-success:focus, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:focus, nav.post-controls button.btn-success:focus, nav.post-controls .btn-success.show-replies:focus, .small-action button.btn-success:focus, .topic-map .link-summary a.btn-success:focus, .topic-meta-data .post-info a.btn-success:focus, .stats-section li.linked-stat a.btn-success:focus, .user-main .about .controls a.btn-success:focus, .badges-section.top-section > p .btn-success.more:focus, .styleguide .styleguide-menu ul li a.btn-success:focus, .nav-pills > li > a.btn-success:hover, .nav-stacked li > a.btn-success:hover, .content-list ul li > a.btn-success:hover, .btn-success.btn:hover, div.poll .poll-buttons a.btn-success:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .modal-footer :not(.disclaimer) a.btn-success:hover, .btn-success.pika-button:hover, .btn-success.pika-next:hover,
+.btn-success.pika-prev:hover, #reply-control .btn-success.toggle-preview:hover, .fps-select a.btn-success:hover, #share-link .reply-as-new-topic a.btn-success:hover, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:hover, nav.post-controls button.btn-success:hover, nav.post-controls .btn-success.show-replies:hover, .small-action button.btn-success:hover, .topic-map .link-summary a.btn-success:hover, .topic-meta-data .post-info a.btn-success:hover, .stats-section li.linked-stat a.btn-success:hover, .user-main .about .controls a.btn-success:hover, .badges-section.top-section > p .btn-success.more:hover, .styleguide .styleguide-menu ul li a.btn-success:hover, .nav-pills > li > a.ok:focus, .nav-stacked li > a.ok:focus, .content-list ul li > a.ok:focus, .ok.btn:focus, div.poll .poll-buttons a.ok:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .modal-footer :not(.disclaimer) a.ok:focus, .ok.pika-button:focus, .ok.pika-next:focus,
+.ok.pika-prev:focus, #reply-control .ok.toggle-preview:focus, .fps-select a.ok:focus, #share-link .reply-as-new-topic a.ok:focus, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:focus, nav.post-controls button.ok:focus, nav.post-controls .ok.show-replies:focus, .small-action button.ok:focus, .topic-map .link-summary a.ok:focus, .topic-meta-data .post-info a.ok:focus, .stats-section li.linked-stat a.ok:focus, .user-main .about .controls a.ok:focus, .badges-section.top-section > p .ok.more:focus, .styleguide .styleguide-menu ul li a.ok:focus, .nav-pills > li > a.ok:hover, .nav-stacked li > a.ok:hover, .content-list ul li > a.ok:hover, .ok.btn:hover, div.poll .poll-buttons a.ok:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .modal-footer :not(.disclaimer) a.ok:hover, .ok.pika-button:hover, .ok.pika-next:hover,
+.ok.pika-prev:hover, #reply-control .ok.toggle-preview:hover, .fps-select a.ok:hover, #share-link .reply-as-new-topic a.ok:hover, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:hover, nav.post-controls button.ok:hover, nav.post-controls .ok.show-replies:hover, .small-action button.ok:hover, .topic-map .link-summary a.ok:hover, .topic-meta-data .post-info a.ok:hover, .stats-section li.linked-stat a.ok:hover, .user-main .about .controls a.ok:hover, .badges-section.top-section > p .ok.more:hover, .styleguide .styleguide-menu ul li a.ok:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $success;
 }
 .nav-pills > li > a.btn-success:active, .nav-stacked li > a.btn-success:active, .content-list ul li > a.btn-success:active, .btn-success.btn:active, div.poll .poll-buttons a.btn-success:active, .select-kit.category-drop.combo-box .btn-success.category-drop-header:active, .select-kit.combo-box .btn-success.select-kit-header:active, .modal-footer :not(.disclaimer) a.btn-success:active, .btn-success.pika-button:active, .btn-success.pika-next:active,
-.btn-success.pika-prev:active, #reply-control .btn-success.toggle-preview:active, .fps-select a.btn-success:active, #share-link .reply-as-new-topic a.btn-success:active, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:active, nav.post-controls button.btn-success:active, nav.post-controls .btn-success.show-replies:active, .small-action button.btn-success:active, .topic-map .link-summary a.btn-success:active, .topic-meta-data .post-info a.btn-success:active, .stats-section li.linked-stat a.btn-success:active, .user-main .about .controls a.btn-success:active, .badges-section.top-section > p .btn-success.more:active, .nav-pills > li > a.btn-success.btn-active, .nav-stacked li > a.btn-success.btn-active, .content-list ul li > a.btn-success.btn-active, .btn-success.btn-active.btn, div.poll .poll-buttons a.btn-success.btn-active, .select-kit.category-drop.combo-box .btn-success.btn-active.category-drop-header, .select-kit.combo-box .btn-success.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.btn-success.btn-active, .btn-success.btn-active.pika-button, .btn-success.btn-active.pika-next,
-.btn-success.btn-active.pika-prev, #reply-control .btn-success.btn-active.toggle-preview, .fps-select a.btn-success.btn-active, #share-link .reply-as-new-topic a.btn-success.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-success.btn-active.period-chooser-header, nav.post-controls button.btn-success.btn-active, nav.post-controls .btn-success.btn-active.show-replies, .small-action button.btn-success.btn-active, .topic-map .link-summary a.btn-success.btn-active, .topic-meta-data .post-info a.btn-success.btn-active, .stats-section li.linked-stat a.btn-success.btn-active, .user-main .about .controls a.btn-success.btn-active, .badges-section.top-section > p .btn-success.btn-active.more, .nav-pills > li > a.ok:active, .nav-stacked li > a.ok:active, .content-list ul li > a.ok:active, .ok.btn:active, div.poll .poll-buttons a.ok:active, .select-kit.category-drop.combo-box .ok.category-drop-header:active, .select-kit.combo-box .ok.select-kit-header:active, .modal-footer :not(.disclaimer) a.ok:active, .ok.pika-button:active, .ok.pika-next:active,
-.ok.pika-prev:active, #reply-control .ok.toggle-preview:active, .fps-select a.ok:active, #share-link .reply-as-new-topic a.ok:active, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:active, nav.post-controls button.ok:active, nav.post-controls .ok.show-replies:active, .small-action button.ok:active, .topic-map .link-summary a.ok:active, .topic-meta-data .post-info a.ok:active, .stats-section li.linked-stat a.ok:active, .user-main .about .controls a.ok:active, .badges-section.top-section > p .ok.more:active, .nav-pills > li > a.ok.btn-active, .nav-stacked li > a.ok.btn-active, .content-list ul li > a.ok.btn-active, .ok.btn-active.btn, div.poll .poll-buttons a.ok.btn-active, .select-kit.category-drop.combo-box .ok.btn-active.category-drop-header, .select-kit.combo-box .ok.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.ok.btn-active, .ok.btn-active.pika-button, .ok.btn-active.pika-next,
-.ok.btn-active.pika-prev, #reply-control .ok.btn-active.toggle-preview, .fps-select a.ok.btn-active, #share-link .reply-as-new-topic a.ok.btn-active, .period-chooser.dropdown-select-box.select-kit .ok.btn-active.period-chooser-header, nav.post-controls button.ok.btn-active, nav.post-controls .ok.btn-active.show-replies, .small-action button.ok.btn-active, .topic-map .link-summary a.ok.btn-active, .topic-meta-data .post-info a.ok.btn-active, .stats-section li.linked-stat a.ok.btn-active, .user-main .about .controls a.ok.btn-active, .badges-section.top-section > p .ok.btn-active.more {
+.btn-success.pika-prev:active, #reply-control .btn-success.toggle-preview:active, .fps-select a.btn-success:active, #share-link .reply-as-new-topic a.btn-success:active, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:active, nav.post-controls button.btn-success:active, nav.post-controls .btn-success.show-replies:active, .small-action button.btn-success:active, .topic-map .link-summary a.btn-success:active, .topic-meta-data .post-info a.btn-success:active, .stats-section li.linked-stat a.btn-success:active, .user-main .about .controls a.btn-success:active, .badges-section.top-section > p .btn-success.more:active, .styleguide .styleguide-menu ul li a.btn-success:active, .nav-pills > li > a.btn-success.btn-active, .nav-stacked li > a.btn-success.btn-active, .content-list ul li > a.btn-success.btn-active, .btn-success.btn-active.btn, div.poll .poll-buttons a.btn-success.btn-active, .select-kit.category-drop.combo-box .btn-success.btn-active.category-drop-header, .select-kit.combo-box .btn-success.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.btn-success.btn-active, .btn-success.btn-active.pika-button, .btn-success.btn-active.pika-next,
+.btn-success.btn-active.pika-prev, #reply-control .btn-success.btn-active.toggle-preview, .fps-select a.btn-success.btn-active, #share-link .reply-as-new-topic a.btn-success.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-success.btn-active.period-chooser-header, nav.post-controls button.btn-success.btn-active, nav.post-controls .btn-success.btn-active.show-replies, .small-action button.btn-success.btn-active, .topic-map .link-summary a.btn-success.btn-active, .topic-meta-data .post-info a.btn-success.btn-active, .stats-section li.linked-stat a.btn-success.btn-active, .user-main .about .controls a.btn-success.btn-active, .badges-section.top-section > p .btn-success.btn-active.more, .styleguide .styleguide-menu ul li a.btn-success.btn-active, .nav-pills > li > a.ok:active, .nav-stacked li > a.ok:active, .content-list ul li > a.ok:active, .ok.btn:active, div.poll .poll-buttons a.ok:active, .select-kit.category-drop.combo-box .ok.category-drop-header:active, .select-kit.combo-box .ok.select-kit-header:active, .modal-footer :not(.disclaimer) a.ok:active, .ok.pika-button:active, .ok.pika-next:active,
+.ok.pika-prev:active, #reply-control .ok.toggle-preview:active, .fps-select a.ok:active, #share-link .reply-as-new-topic a.ok:active, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:active, nav.post-controls button.ok:active, nav.post-controls .ok.show-replies:active, .small-action button.ok:active, .topic-map .link-summary a.ok:active, .topic-meta-data .post-info a.ok:active, .stats-section li.linked-stat a.ok:active, .user-main .about .controls a.ok:active, .badges-section.top-section > p .ok.more:active, .styleguide .styleguide-menu ul li a.ok:active, .nav-pills > li > a.ok.btn-active, .nav-stacked li > a.ok.btn-active, .content-list ul li > a.ok.btn-active, .ok.btn-active.btn, div.poll .poll-buttons a.ok.btn-active, .select-kit.category-drop.combo-box .ok.btn-active.category-drop-header, .select-kit.combo-box .ok.btn-active.select-kit-header, .modal-footer :not(.disclaimer) a.ok.btn-active, .ok.btn-active.pika-button, .ok.btn-active.pika-next,
+.ok.btn-active.pika-prev, #reply-control .ok.btn-active.toggle-preview, .fps-select a.ok.btn-active, #share-link .reply-as-new-topic a.ok.btn-active, .period-chooser.dropdown-select-box.select-kit .ok.btn-active.period-chooser-header, nav.post-controls button.ok.btn-active, nav.post-controls .ok.btn-active.show-replies, .small-action button.ok.btn-active, .topic-map .link-summary a.ok.btn-active, .topic-meta-data .post-info a.ok.btn-active, .stats-section li.linked-stat a.ok.btn-active, .user-main .about .controls a.ok.btn-active, .badges-section.top-section > p .ok.btn-active.more, .styleguide .styleguide-menu ul li a.ok.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
 
 .nav-pills > li > a, .nav-stacked li > a, .content-list ul li > a, .btn, div.poll .poll-buttons a, .select-kit.category-drop.combo-box .category-drop-header, .select-kit.combo-box .select-kit-header, .modal-footer :not(.disclaimer) a, .pika-button, .pika-next,
-.pika-prev, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .stats-section li.linked-stat a, .user-main .about .controls a, .badges-section.top-section > p .more, .d-modal-cancel, #reply-control .submit-panel .cancel, .display-row .controls a[data-ember-action]:not(.close), .screened-ip-addresses .actions.col a {
+.pika-prev, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, nav.post-controls button, nav.post-controls .show-replies, .small-action button, .topic-map .buttons .btn, .topic-map .link-summary a, .topic-meta-data .post-info a, .stats-section li.linked-stat a, .user-main .about .controls a, .badges-section.top-section > p .more, .styleguide .styleguide-menu ul li a, .d-modal-cancel, #reply-control .submit-panel .cancel, .display-row .controls a[data-ember-action]:not(.close), .screened-ip-addresses .actions.col a {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -126,23 +126,23 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   white-space: nowrap;
 }
 .nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit.category-drop.combo-box .category-drop-header:focus, .select-kit.combo-box .select-kit-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .screened-ip-addresses .actions.col a:focus, .nav-pills > li > a:hover, .nav-stacked li > a:hover, .content-list ul li > a:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .modal-footer :not(.disclaimer) a:hover, .pika-button:hover, .pika-next:hover,
-.pika-prev:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, nav.post-controls button:hover, nav.post-controls .show-replies:hover, .small-action button:hover, .topic-map .buttons .btn:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, .badges-section.top-section > p .more:hover, .d-modal-cancel:hover, #reply-control .submit-panel .cancel:hover, .display-row .controls a[data-ember-action]:hover:not(.close), .screened-ip-addresses .actions.col a:hover {
+.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .styleguide .styleguide-menu ul li a:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .screened-ip-addresses .actions.col a:focus, .nav-pills > li > a:hover, .nav-stacked li > a:hover, .content-list ul li > a:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .modal-footer :not(.disclaimer) a:hover, .pika-button:hover, .pika-next:hover,
+.pika-prev:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, nav.post-controls button:hover, nav.post-controls .show-replies:hover, .small-action button:hover, .topic-map .buttons .btn:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, .badges-section.top-section > p .more:hover, .styleguide .styleguide-menu ul li a:hover, .d-modal-cancel:hover, #reply-control .submit-panel .cancel:hover, .display-row .controls a[data-ember-action]:hover:not(.close), .screened-ip-addresses .actions.col a:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: color-chooser($primary, $primary);
 }
 .nav-pills > li > a:active, .nav-stacked li > a:active, .content-list ul li > a:active, .btn:active, div.poll .poll-buttons a:active, .select-kit.category-drop.combo-box .category-drop-header:active, .select-kit.combo-box .select-kit-header:active, .modal-footer :not(.disclaimer) a:active, .pika-button:active, .pika-next:active,
-.pika-prev:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, nav.post-controls button:active, nav.post-controls .show-replies:active, .small-action button:active, .topic-map .buttons .btn:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .badges-section.top-section > p .more:active, .d-modal-cancel:active, #reply-control .submit-panel .cancel:active, .display-row .controls a[data-ember-action]:active:not(.close), .screened-ip-addresses .actions.col a:active {
+.pika-prev:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, nav.post-controls button:active, nav.post-controls .show-replies:active, .small-action button:active, .topic-map .buttons .btn:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .badges-section.top-section > p .more:active, .styleguide .styleguide-menu ul li a:active, .d-modal-cancel:active, #reply-control .submit-panel .cancel:active, .display-row .controls a[data-ember-action]:active:not(.close), .screened-ip-addresses .actions.col a:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   background-image: none;
 }
 .nav-pills > li > a:focus, .nav-stacked li > a:focus, .content-list ul li > a:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit.category-drop.combo-box .category-drop-header:focus, .select-kit.combo-box .select-kit-header:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .screened-ip-addresses .actions.col a:focus {
+.pika-prev:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, nav.post-controls button:focus, nav.post-controls .show-replies:focus, .small-action button:focus, .topic-map .buttons .btn:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .badges-section.top-section > p .more:focus, .styleguide .styleguide-menu ul li a:focus, .d-modal-cancel:focus, #reply-control .submit-panel .cancel:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .screened-ip-addresses .actions.col a:focus {
   outline: 0;
 }
 .nav-pills > li > a[disabled], .nav-stacked li > a[disabled], .content-list ul li > a[disabled], [disabled].btn, div.poll .poll-buttons a[disabled], .select-kit.category-drop.combo-box [disabled].category-drop-header, .select-kit.combo-box [disabled].select-kit-header, .modal-footer :not(.disclaimer) a[disabled], [disabled].pika-button, [disabled].pika-next,
-[disabled].pika-prev, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, nav.post-controls button[disabled], nav.post-controls [disabled].show-replies, .small-action button[disabled], .topic-map .buttons [disabled].btn, .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .badges-section.top-section > p [disabled].more, [disabled].d-modal-cancel, #reply-control .submit-panel [disabled].cancel, .display-row .controls a[disabled][data-ember-action]:not(.close), .screened-ip-addresses .actions.col a[disabled], .nav-pills > li > a.disabled, .nav-stacked li > a.disabled, .content-list ul li > a.disabled, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .modal-footer :not(.disclaimer) a.disabled, .disabled.pika-button, .disabled.pika-next,
-.disabled.pika-prev, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, nav.post-controls button.disabled, nav.post-controls .disabled.show-replies, .small-action button.disabled, .topic-map .buttons .disabled.btn, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .badges-section.top-section > p .disabled.more, .disabled.d-modal-cancel, #reply-control .submit-panel .disabled.cancel, .display-row .controls a.disabled[data-ember-action]:not(.close), .screened-ip-addresses .actions.col a.disabled {
+[disabled].pika-prev, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, nav.post-controls button[disabled], nav.post-controls [disabled].show-replies, .small-action button[disabled], .topic-map .buttons [disabled].btn, .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .badges-section.top-section > p [disabled].more, .styleguide .styleguide-menu ul li a[disabled], [disabled].d-modal-cancel, #reply-control .submit-panel [disabled].cancel, .display-row .controls a[disabled][data-ember-action]:not(.close), .screened-ip-addresses .actions.col a[disabled], .nav-pills > li > a.disabled, .nav-stacked li > a.disabled, .content-list ul li > a.disabled, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .modal-footer :not(.disclaimer) a.disabled, .disabled.pika-button, .disabled.pika-next,
+.disabled.pika-prev, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, nav.post-controls button.disabled, nav.post-controls .disabled.show-replies, .small-action button.disabled, .topic-map .buttons .disabled.btn, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .badges-section.top-section > p .disabled.more, .styleguide .styleguide-menu ul li a.disabled, .disabled.d-modal-cancel, #reply-control .submit-panel .disabled.cancel, .display-row .controls a.disabled[data-ember-action]:not(.close), .screened-ip-addresses .actions.col a.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
 }
@@ -151,7 +151,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn, #reply-control .submit-panel .btn, .fps-select a, .search-advanced .search-title .btn, .search-advanced-sidebar .search-cta, .timeline-container .topic-timeline div > button.btn,
 .timeline-container .topic-timeline span > button.btn, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .top-title-buttons button, #topic-footer-buttons div > button.btn,
 #topic-footer-buttons span > button.btn,
-#topic-footer-buttons > button.btn, .topic-map .information.toggle-summary .btn, .display-row .controls a[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn, .user-navigation .new-private-message, .user-preferences .btn, .user-theme-creator .theme-details .btn, .user-theme-creator .theme-list .btn, .badges-section.top-section > p .more, .admin-contents .btn, .screened-ip-addresses .actions.col a {
+#topic-footer-buttons > button.btn, .topic-map .information.toggle-summary .btn, .display-row .controls a[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn, .user-navigation .new-private-message, .user-preferences .btn, .user-theme-creator .theme-details .btn, .user-theme-creator .theme-list .btn, .badges-section.top-section > p .more, .admin-contents .btn, .screened-ip-addresses .actions.col a, [id='theme-creator-edit-local-modal'] .btn {
   background-color: color-chooser($tertiary, #ffffff);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
@@ -159,11 +159,11 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn:focus, #reply-control .submit-panel .btn:focus, .fps-select a:focus, .search-advanced .search-title .btn:focus, .search-advanced-sidebar .search-cta:focus, .timeline-container .topic-timeline div > button.btn:focus,
 .timeline-container .topic-timeline span > button.btn:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .top-title-buttons button:focus, #topic-footer-buttons div > button.btn:focus,
 #topic-footer-buttons span > button.btn:focus,
-#topic-footer-buttons > button.btn:focus, .topic-map .information.toggle-summary .btn:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn:focus, .user-navigation .new-private-message:focus, .user-preferences .btn:focus, .user-theme-creator .theme-details .btn:focus, .user-theme-creator .theme-list .btn:focus, .badges-section.top-section > p .more:focus, .admin-contents .btn:focus, .screened-ip-addresses .actions.col a:focus, .image-upload-controls .btn:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .list-controls .btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
+#topic-footer-buttons > button.btn:focus, .topic-map .information.toggle-summary .btn:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn:focus, .user-navigation .new-private-message:focus, .user-preferences .btn:focus, .user-theme-creator .theme-details .btn:focus, .user-theme-creator .theme-list .btn:focus, .badges-section.top-section > p .more:focus, .admin-contents .btn:focus, .screened-ip-addresses .actions.col a:focus, [id='theme-creator-edit-local-modal'] .btn:focus, .image-upload-controls .btn:hover, .select-kit.category-drop.combo-box .category-drop-header:hover, .select-kit.combo-box .select-kit-header:hover, .list-controls .btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn:hover, #reply-control .submit-panel .btn:hover, .fps-select a:hover, .search-advanced .search-title .btn:hover, .search-advanced-sidebar .search-cta:hover, .timeline-container .topic-timeline div > button.btn:hover,
 .timeline-container .topic-timeline span > button.btn:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .top-title-buttons button:hover, #topic-footer-buttons div > button.btn:hover,
 #topic-footer-buttons span > button.btn:hover,
-#topic-footer-buttons > button.btn:hover, .topic-map .information.toggle-summary .btn:hover, .display-row .controls a[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn:hover, .user-navigation .new-private-message:hover, .user-preferences .btn:hover, .user-theme-creator .theme-details .btn:hover, .user-theme-creator .theme-list .btn:hover, .badges-section.top-section > p .more:hover, .admin-contents .btn:hover, .screened-ip-addresses .actions.col a:hover {
+#topic-footer-buttons > button.btn:hover, .topic-map .information.toggle-summary .btn:hover, .display-row .controls a[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn:hover, .user-navigation .new-private-message:hover, .user-preferences .btn:hover, .user-theme-creator .theme-details .btn:hover, .user-theme-creator .theme-list .btn:hover, .badges-section.top-section > p .more:hover, .admin-contents .btn:hover, .screened-ip-addresses .actions.col a:hover, [id='theme-creator-edit-local-modal'] .btn:hover {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
@@ -171,7 +171,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn:active, #reply-control .submit-panel .btn:active, .fps-select a:active, .search-advanced .search-title .btn:active, .search-advanced-sidebar .search-cta:active, .timeline-container .topic-timeline div > button.btn:active,
 .timeline-container .topic-timeline span > button.btn:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .top-title-buttons button:active, #topic-footer-buttons div > button.btn:active,
 #topic-footer-buttons span > button.btn:active,
-#topic-footer-buttons > button.btn:active, .topic-map .information.toggle-summary .btn:active, .display-row .controls a[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn:active, .user-navigation .new-private-message:active, .user-preferences .btn:active, .user-theme-creator .theme-details .btn:active, .user-theme-creator .theme-list .btn:active, .badges-section.top-section > p .more:active, .admin-contents .btn:active, .screened-ip-addresses .actions.col a:active {
+#topic-footer-buttons > button.btn:active, .topic-map .information.toggle-summary .btn:active, .display-row .controls a[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn:active, .user-navigation .new-private-message:active, .user-preferences .btn:active, .user-theme-creator .theme-details .btn:active, .user-theme-creator .theme-list .btn:active, .badges-section.top-section > p .more:active, .admin-contents .btn:active, .screened-ip-addresses .actions.col a:active, [id='theme-creator-edit-local-modal'] .btn:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
@@ -179,11 +179,11 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > [disabled].btn, #reply-control .submit-panel [disabled].btn, .fps-select a[disabled], .search-advanced .search-title [disabled].btn, .search-advanced-sidebar [disabled].search-cta, .timeline-container .topic-timeline div > button[disabled].btn,
 .timeline-container .topic-timeline span > button[disabled].btn, .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .top-title-buttons button[disabled], #topic-footer-buttons div > button[disabled].btn,
 #topic-footer-buttons span > button[disabled].btn,
-#topic-footer-buttons > button[disabled].btn, .topic-map .information.toggle-summary [disabled].btn, .display-row .controls a[disabled][data-ember-action]:not(.close), .user-main .user-right .list-actions [disabled].btn, .user-navigation [disabled].new-private-message, .user-preferences [disabled].btn, .user-theme-creator .theme-details [disabled].btn, .user-theme-creator .theme-list [disabled].btn, .badges-section.top-section > p [disabled].more, .admin-contents [disabled].btn, .screened-ip-addresses .actions.col a[disabled], .image-upload-controls .disabled.btn, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .list-controls .disabled.btn, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
+#topic-footer-buttons > button[disabled].btn, .topic-map .information.toggle-summary [disabled].btn, .display-row .controls a[disabled][data-ember-action]:not(.close), .user-main .user-right .list-actions [disabled].btn, .user-navigation [disabled].new-private-message, .user-preferences [disabled].btn, .user-theme-creator .theme-details [disabled].btn, .user-theme-creator .theme-list [disabled].btn, .badges-section.top-section > p [disabled].more, .admin-contents [disabled].btn, .screened-ip-addresses .actions.col a[disabled], [id='theme-creator-edit-local-modal'] [disabled].btn, .image-upload-controls .disabled.btn, .select-kit.category-drop.combo-box .disabled.category-drop-header, .select-kit.combo-box .disabled.select-kit-header, .list-controls .disabled.btn, .edit-category-modal .edit-category-tab-general section.field > .disabled.btn,
 .edit-category-modal .edit-category-tab-security section.field > .disabled.btn, #reply-control .submit-panel .disabled.btn, .fps-select a.disabled, .search-advanced .search-title .disabled.btn, .search-advanced-sidebar .disabled.search-cta, .timeline-container .topic-timeline div > button.disabled.btn,
 .timeline-container .topic-timeline span > button.disabled.btn, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .top-title-buttons button.disabled, #topic-footer-buttons div > button.disabled.btn,
 #topic-footer-buttons span > button.disabled.btn,
-#topic-footer-buttons > button.disabled.btn, .topic-map .information.toggle-summary .disabled.btn, .display-row .controls a.disabled[data-ember-action]:not(.close), .user-main .user-right .list-actions .disabled.btn, .user-navigation .disabled.new-private-message, .user-preferences .disabled.btn, .user-theme-creator .theme-details .disabled.btn, .user-theme-creator .theme-list .disabled.btn, .badges-section.top-section > p .disabled.more, .admin-contents .disabled.btn, .screened-ip-addresses .actions.col a.disabled {
+#topic-footer-buttons > button.disabled.btn, .topic-map .information.toggle-summary .disabled.btn, .display-row .controls a.disabled[data-ember-action]:not(.close), .user-main .user-right .list-actions .disabled.btn, .user-navigation .disabled.new-private-message, .user-preferences .disabled.btn, .user-theme-creator .theme-details .disabled.btn, .user-theme-creator .theme-list .disabled.btn, .badges-section.top-section > p .disabled.more, .admin-contents .disabled.btn, .screened-ip-addresses .actions.col a.disabled, [id='theme-creator-edit-local-modal'] .disabled.btn {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
   background-image: none;
   box-shadow: none !important;
@@ -192,11 +192,11 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn, #reply-control .submit-panel .btn-danger.btn, .fps-select a.btn-danger, .search-advanced .search-title .btn-danger.btn, .search-advanced-sidebar .btn-danger.search-cta, .timeline-container .topic-timeline div > button.btn-danger.btn,
 .timeline-container .topic-timeline span > button.btn-danger.btn, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, .top-title-buttons button.btn-danger, #topic-footer-buttons div > button.btn-danger.btn,
 #topic-footer-buttons span > button.btn-danger.btn,
-#topic-footer-buttons > button.btn-danger.btn, .topic-map .information.toggle-summary .btn-danger.btn, .display-row .controls a.btn-danger[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-danger.btn, .user-navigation .btn-danger.new-private-message, .user-preferences .btn-danger.btn, .user-theme-creator .theme-details .btn-danger.btn, .user-theme-creator .theme-list .btn-danger.btn, .badges-section.top-section > p .btn-danger.more, .admin-contents .btn-danger.btn, .screened-ip-addresses .actions.col a.btn-danger, .image-upload-controls .cancel.btn, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .list-controls .cancel.btn, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
+#topic-footer-buttons > button.btn-danger.btn, .topic-map .information.toggle-summary .btn-danger.btn, .display-row .controls a.btn-danger[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-danger.btn, .user-navigation .btn-danger.new-private-message, .user-preferences .btn-danger.btn, .user-theme-creator .theme-details .btn-danger.btn, .user-theme-creator .theme-list .btn-danger.btn, .badges-section.top-section > p .btn-danger.more, .admin-contents .btn-danger.btn, .screened-ip-addresses .actions.col a.btn-danger, [id='theme-creator-edit-local-modal'] .btn-danger.btn, .image-upload-controls .cancel.btn, .select-kit.category-drop.combo-box .cancel.category-drop-header, .select-kit.combo-box .cancel.select-kit-header, .list-controls .cancel.btn, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn, #reply-control .submit-panel .cancel.btn, .fps-select a.cancel, .search-advanced .search-title .cancel.btn, .search-advanced-sidebar .cancel.search-cta, .timeline-container .topic-timeline div > button.cancel.btn,
 .timeline-container .topic-timeline span > button.cancel.btn, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header, .top-title-buttons button.cancel, #topic-footer-buttons div > button.cancel.btn,
 #topic-footer-buttons span > button.cancel.btn,
-#topic-footer-buttons > button.cancel.btn, .topic-map .information.toggle-summary .cancel.btn, .display-row .controls a.cancel[data-ember-action]:not(.close), .user-main .user-right .list-actions .cancel.btn, .user-navigation .cancel.new-private-message, .user-preferences .cancel.btn, .user-theme-creator .theme-details .cancel.btn, .user-theme-creator .theme-list .cancel.btn, .badges-section.top-section > p .cancel.more, .admin-contents .cancel.btn, .screened-ip-addresses .actions.col a.cancel {
+#topic-footer-buttons > button.cancel.btn, .topic-map .information.toggle-summary .cancel.btn, .display-row .controls a.cancel[data-ember-action]:not(.close), .user-main .user-right .list-actions .cancel.btn, .user-navigation .cancel.new-private-message, .user-preferences .cancel.btn, .user-theme-creator .theme-details .cancel.btn, .user-theme-creator .theme-list .cancel.btn, .badges-section.top-section > p .cancel.more, .admin-contents .cancel.btn, .screened-ip-addresses .actions.col a.cancel, [id='theme-creator-edit-local-modal'] .cancel.btn {
   background-color: $danger;
   color: color-dynamic($danger);
 }
@@ -204,19 +204,19 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:focus, #reply-control .submit-panel .btn-danger.btn:focus, .fps-select a.btn-danger:focus, .search-advanced .search-title .btn-danger.btn:focus, .search-advanced-sidebar .btn-danger.search-cta:focus, .timeline-container .topic-timeline div > button.btn-danger.btn:focus,
 .timeline-container .topic-timeline span > button.btn-danger.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:focus, .top-title-buttons button.btn-danger:focus, #topic-footer-buttons div > button.btn-danger.btn:focus,
 #topic-footer-buttons span > button.btn-danger.btn:focus,
-#topic-footer-buttons > button.btn-danger.btn:focus, .topic-map .information.toggle-summary .btn-danger.btn:focus, .display-row .controls a.btn-danger[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn-danger.btn:focus, .user-navigation .btn-danger.new-private-message:focus, .user-preferences .btn-danger.btn:focus, .user-theme-creator .theme-details .btn-danger.btn:focus, .user-theme-creator .theme-list .btn-danger.btn:focus, .badges-section.top-section > p .btn-danger.more:focus, .admin-contents .btn-danger.btn:focus, .screened-ip-addresses .actions.col a.btn-danger:focus, .image-upload-controls .btn-danger.btn:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .list-controls .btn-danger.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
+#topic-footer-buttons > button.btn-danger.btn:focus, .topic-map .information.toggle-summary .btn-danger.btn:focus, .display-row .controls a.btn-danger[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn-danger.btn:focus, .user-navigation .btn-danger.new-private-message:focus, .user-preferences .btn-danger.btn:focus, .user-theme-creator .theme-details .btn-danger.btn:focus, .user-theme-creator .theme-list .btn-danger.btn:focus, .badges-section.top-section > p .btn-danger.more:focus, .admin-contents .btn-danger.btn:focus, .screened-ip-addresses .actions.col a.btn-danger:focus, [id='theme-creator-edit-local-modal'] .btn-danger.btn:focus, .image-upload-controls .btn-danger.btn:hover, .select-kit.category-drop.combo-box .btn-danger.category-drop-header:hover, .select-kit.combo-box .btn-danger.select-kit-header:hover, .list-controls .btn-danger.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:hover, #reply-control .submit-panel .btn-danger.btn:hover, .fps-select a.btn-danger:hover, .search-advanced .search-title .btn-danger.btn:hover, .search-advanced-sidebar .btn-danger.search-cta:hover, .timeline-container .topic-timeline div > button.btn-danger.btn:hover,
 .timeline-container .topic-timeline span > button.btn-danger.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:hover, .top-title-buttons button.btn-danger:hover, #topic-footer-buttons div > button.btn-danger.btn:hover,
 #topic-footer-buttons span > button.btn-danger.btn:hover,
-#topic-footer-buttons > button.btn-danger.btn:hover, .topic-map .information.toggle-summary .btn-danger.btn:hover, .display-row .controls a.btn-danger[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn-danger.btn:hover, .user-navigation .btn-danger.new-private-message:hover, .user-preferences .btn-danger.btn:hover, .user-theme-creator .theme-details .btn-danger.btn:hover, .user-theme-creator .theme-list .btn-danger.btn:hover, .badges-section.top-section > p .btn-danger.more:hover, .admin-contents .btn-danger.btn:hover, .screened-ip-addresses .actions.col a.btn-danger:hover, .image-upload-controls .cancel.btn:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .list-controls .cancel.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
+#topic-footer-buttons > button.btn-danger.btn:hover, .topic-map .information.toggle-summary .btn-danger.btn:hover, .display-row .controls a.btn-danger[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn-danger.btn:hover, .user-navigation .btn-danger.new-private-message:hover, .user-preferences .btn-danger.btn:hover, .user-theme-creator .theme-details .btn-danger.btn:hover, .user-theme-creator .theme-list .btn-danger.btn:hover, .badges-section.top-section > p .btn-danger.more:hover, .admin-contents .btn-danger.btn:hover, .screened-ip-addresses .actions.col a.btn-danger:hover, [id='theme-creator-edit-local-modal'] .btn-danger.btn:hover, .image-upload-controls .cancel.btn:focus, .select-kit.category-drop.combo-box .cancel.category-drop-header:focus, .select-kit.combo-box .cancel.select-kit-header:focus, .list-controls .cancel.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:focus,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn:focus, #reply-control .submit-panel .cancel.btn:focus, .fps-select a.cancel:focus, .search-advanced .search-title .cancel.btn:focus, .search-advanced-sidebar .cancel.search-cta:focus, .timeline-container .topic-timeline div > button.cancel.btn:focus,
 .timeline-container .topic-timeline span > button.cancel.btn:focus, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:focus, .top-title-buttons button.cancel:focus, #topic-footer-buttons div > button.cancel.btn:focus,
 #topic-footer-buttons span > button.cancel.btn:focus,
-#topic-footer-buttons > button.cancel.btn:focus, .topic-map .information.toggle-summary .cancel.btn:focus, .display-row .controls a.cancel[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .cancel.btn:focus, .user-navigation .cancel.new-private-message:focus, .user-preferences .cancel.btn:focus, .user-theme-creator .theme-details .cancel.btn:focus, .user-theme-creator .theme-list .cancel.btn:focus, .badges-section.top-section > p .cancel.more:focus, .admin-contents .cancel.btn:focus, .screened-ip-addresses .actions.col a.cancel:focus, .image-upload-controls .cancel.btn:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .list-controls .cancel.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
+#topic-footer-buttons > button.cancel.btn:focus, .topic-map .information.toggle-summary .cancel.btn:focus, .display-row .controls a.cancel[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .cancel.btn:focus, .user-navigation .cancel.new-private-message:focus, .user-preferences .cancel.btn:focus, .user-theme-creator .theme-details .cancel.btn:focus, .user-theme-creator .theme-list .cancel.btn:focus, .badges-section.top-section > p .cancel.more:focus, .admin-contents .cancel.btn:focus, .screened-ip-addresses .actions.col a.cancel:focus, [id='theme-creator-edit-local-modal'] .cancel.btn:focus, .image-upload-controls .cancel.btn:hover, .select-kit.category-drop.combo-box .cancel.category-drop-header:hover, .select-kit.combo-box .cancel.select-kit-header:hover, .list-controls .cancel.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn:hover, #reply-control .submit-panel .cancel.btn:hover, .fps-select a.cancel:hover, .search-advanced .search-title .cancel.btn:hover, .search-advanced-sidebar .cancel.search-cta:hover, .timeline-container .topic-timeline div > button.cancel.btn:hover,
 .timeline-container .topic-timeline span > button.cancel.btn:hover, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:hover, .top-title-buttons button.cancel:hover, #topic-footer-buttons div > button.cancel.btn:hover,
 #topic-footer-buttons span > button.cancel.btn:hover,
-#topic-footer-buttons > button.cancel.btn:hover, .topic-map .information.toggle-summary .cancel.btn:hover, .display-row .controls a.cancel[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .cancel.btn:hover, .user-navigation .cancel.new-private-message:hover, .user-preferences .cancel.btn:hover, .user-theme-creator .theme-details .cancel.btn:hover, .user-theme-creator .theme-list .cancel.btn:hover, .badges-section.top-section > p .cancel.more:hover, .admin-contents .cancel.btn:hover, .screened-ip-addresses .actions.col a.cancel:hover {
+#topic-footer-buttons > button.cancel.btn:hover, .topic-map .information.toggle-summary .cancel.btn:hover, .display-row .controls a.cancel[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .cancel.btn:hover, .user-navigation .cancel.new-private-message:hover, .user-preferences .cancel.btn:hover, .user-theme-creator .theme-details .cancel.btn:hover, .user-theme-creator .theme-list .cancel.btn:hover, .badges-section.top-section > p .cancel.more:hover, .admin-contents .cancel.btn:hover, .screened-ip-addresses .actions.col a.cancel:hover, [id='theme-creator-edit-local-modal'] .cancel.btn:hover {
   background-color: $danger;
   color: color-dynamic($danger);
 }
@@ -224,26 +224,26 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn:active, #reply-control .submit-panel .btn-danger.btn:active, .fps-select a.btn-danger:active, .search-advanced .search-title .btn-danger.btn:active, .search-advanced-sidebar .btn-danger.search-cta:active, .timeline-container .topic-timeline div > button.btn-danger.btn:active,
 .timeline-container .topic-timeline span > button.btn-danger.btn:active, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:active, .top-title-buttons button.btn-danger:active, #topic-footer-buttons div > button.btn-danger.btn:active,
 #topic-footer-buttons span > button.btn-danger.btn:active,
-#topic-footer-buttons > button.btn-danger.btn:active, .topic-map .information.toggle-summary .btn-danger.btn:active, .display-row .controls a.btn-danger[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn-danger.btn:active, .user-navigation .btn-danger.new-private-message:active, .user-preferences .btn-danger.btn:active, .user-theme-creator .theme-details .btn-danger.btn:active, .user-theme-creator .theme-list .btn-danger.btn:active, .badges-section.top-section > p .btn-danger.more:active, .admin-contents .btn-danger.btn:active, .screened-ip-addresses .actions.col a.btn-danger:active, .image-upload-controls .btn-danger.btn-active.btn, .select-kit.category-drop.combo-box .btn-danger.btn-active.category-drop-header, .select-kit.combo-box .btn-danger.btn-active.select-kit-header, .list-controls .btn-danger.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn-active.btn,
+#topic-footer-buttons > button.btn-danger.btn:active, .topic-map .information.toggle-summary .btn-danger.btn:active, .display-row .controls a.btn-danger[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn-danger.btn:active, .user-navigation .btn-danger.new-private-message:active, .user-preferences .btn-danger.btn:active, .user-theme-creator .theme-details .btn-danger.btn:active, .user-theme-creator .theme-list .btn-danger.btn:active, .badges-section.top-section > p .btn-danger.more:active, .admin-contents .btn-danger.btn:active, .screened-ip-addresses .actions.col a.btn-danger:active, [id='theme-creator-edit-local-modal'] .btn-danger.btn:active, .image-upload-controls .btn-danger.btn-active.btn, .select-kit.category-drop.combo-box .btn-danger.btn-active.category-drop-header, .select-kit.combo-box .btn-danger.btn-active.select-kit-header, .list-controls .btn-danger.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-danger.btn-active.btn,
 .edit-category-modal .edit-category-tab-security section.field > .btn-danger.btn-active.btn, #reply-control .submit-panel .btn-danger.btn-active.btn, .fps-select a.btn-danger.btn-active, .search-advanced .search-title .btn-danger.btn-active.btn, .search-advanced-sidebar .btn-danger.btn-active.search-cta, .timeline-container .topic-timeline div > button.btn-danger.btn-active.btn,
 .timeline-container .topic-timeline span > button.btn-danger.btn-active.btn, .period-chooser.dropdown-select-box.select-kit .btn-danger.btn-active.period-chooser-header, .top-title-buttons button.btn-danger.btn-active, #topic-footer-buttons div > button.btn-danger.btn-active.btn,
 #topic-footer-buttons span > button.btn-danger.btn-active.btn,
-#topic-footer-buttons > button.btn-danger.btn-active.btn, .topic-map .information.toggle-summary .btn-danger.btn-active.btn, .display-row .controls a.btn-danger.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-danger.btn-active.btn, .user-navigation .btn-danger.btn-active.new-private-message, .user-preferences .btn-danger.btn-active.btn, .user-theme-creator .theme-details .btn-danger.btn-active.btn, .user-theme-creator .theme-list .btn-danger.btn-active.btn, .badges-section.top-section > p .btn-danger.btn-active.more, .admin-contents .btn-danger.btn-active.btn, .screened-ip-addresses .actions.col a.btn-danger.btn-active, .image-upload-controls .cancel.btn:active, .select-kit.category-drop.combo-box .cancel.category-drop-header:active, .select-kit.combo-box .cancel.select-kit-header:active, .list-controls .cancel.btn:active, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:active,
+#topic-footer-buttons > button.btn-danger.btn-active.btn, .topic-map .information.toggle-summary .btn-danger.btn-active.btn, .display-row .controls a.btn-danger.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-danger.btn-active.btn, .user-navigation .btn-danger.btn-active.new-private-message, .user-preferences .btn-danger.btn-active.btn, .user-theme-creator .theme-details .btn-danger.btn-active.btn, .user-theme-creator .theme-list .btn-danger.btn-active.btn, .badges-section.top-section > p .btn-danger.btn-active.more, .admin-contents .btn-danger.btn-active.btn, .screened-ip-addresses .actions.col a.btn-danger.btn-active, [id='theme-creator-edit-local-modal'] .btn-danger.btn-active.btn, .image-upload-controls .cancel.btn:active, .select-kit.category-drop.combo-box .cancel.category-drop-header:active, .select-kit.combo-box .cancel.select-kit-header:active, .list-controls .cancel.btn:active, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn:active,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn:active, #reply-control .submit-panel .cancel.btn:active, .fps-select a.cancel:active, .search-advanced .search-title .cancel.btn:active, .search-advanced-sidebar .cancel.search-cta:active, .timeline-container .topic-timeline div > button.cancel.btn:active,
 .timeline-container .topic-timeline span > button.cancel.btn:active, .period-chooser.dropdown-select-box.select-kit .cancel.period-chooser-header:active, .top-title-buttons button.cancel:active, #topic-footer-buttons div > button.cancel.btn:active,
 #topic-footer-buttons span > button.cancel.btn:active,
-#topic-footer-buttons > button.cancel.btn:active, .topic-map .information.toggle-summary .cancel.btn:active, .display-row .controls a.cancel[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .cancel.btn:active, .user-navigation .cancel.new-private-message:active, .user-preferences .cancel.btn:active, .user-theme-creator .theme-details .cancel.btn:active, .user-theme-creator .theme-list .cancel.btn:active, .badges-section.top-section > p .cancel.more:active, .admin-contents .cancel.btn:active, .screened-ip-addresses .actions.col a.cancel:active, .image-upload-controls .cancel.btn-active.btn, .select-kit.category-drop.combo-box .cancel.btn-active.category-drop-header, .select-kit.combo-box .cancel.btn-active.select-kit-header, .list-controls .cancel.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn-active.btn,
+#topic-footer-buttons > button.cancel.btn:active, .topic-map .information.toggle-summary .cancel.btn:active, .display-row .controls a.cancel[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .cancel.btn:active, .user-navigation .cancel.new-private-message:active, .user-preferences .cancel.btn:active, .user-theme-creator .theme-details .cancel.btn:active, .user-theme-creator .theme-list .cancel.btn:active, .badges-section.top-section > p .cancel.more:active, .admin-contents .cancel.btn:active, .screened-ip-addresses .actions.col a.cancel:active, [id='theme-creator-edit-local-modal'] .cancel.btn:active, .image-upload-controls .cancel.btn-active.btn, .select-kit.category-drop.combo-box .cancel.btn-active.category-drop-header, .select-kit.combo-box .cancel.btn-active.select-kit-header, .list-controls .cancel.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .cancel.btn-active.btn,
 .edit-category-modal .edit-category-tab-security section.field > .cancel.btn-active.btn, #reply-control .submit-panel .cancel.btn-active.btn, .fps-select a.cancel.btn-active, .search-advanced .search-title .cancel.btn-active.btn, .search-advanced-sidebar .cancel.btn-active.search-cta, .timeline-container .topic-timeline div > button.cancel.btn-active.btn,
 .timeline-container .topic-timeline span > button.cancel.btn-active.btn, .period-chooser.dropdown-select-box.select-kit .cancel.btn-active.period-chooser-header, .top-title-buttons button.cancel.btn-active, #topic-footer-buttons div > button.cancel.btn-active.btn,
 #topic-footer-buttons span > button.cancel.btn-active.btn,
-#topic-footer-buttons > button.cancel.btn-active.btn, .topic-map .information.toggle-summary .cancel.btn-active.btn, .display-row .controls a.cancel.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .cancel.btn-active.btn, .user-navigation .cancel.btn-active.new-private-message, .user-preferences .cancel.btn-active.btn, .user-theme-creator .theme-details .cancel.btn-active.btn, .user-theme-creator .theme-list .cancel.btn-active.btn, .badges-section.top-section > p .cancel.btn-active.more, .admin-contents .cancel.btn-active.btn, .screened-ip-addresses .actions.col a.cancel.btn-active {
+#topic-footer-buttons > button.cancel.btn-active.btn, .topic-map .information.toggle-summary .cancel.btn-active.btn, .display-row .controls a.cancel.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .cancel.btn-active.btn, .user-navigation .cancel.btn-active.new-private-message, .user-preferences .cancel.btn-active.btn, .user-theme-creator .theme-details .cancel.btn-active.btn, .user-theme-creator .theme-list .cancel.btn-active.btn, .badges-section.top-section > p .cancel.btn-active.more, .admin-contents .cancel.btn-active.btn, .screened-ip-addresses .actions.col a.cancel.btn-active, [id='theme-creator-edit-local-modal'] .cancel.btn-active.btn {
   background-color: $danger;
 }
 .image-upload-controls .btn-primary.btn, .select-kit.category-drop.combo-box .btn-primary.category-drop-header, .select-kit.combo-box .btn-primary.select-kit-header, .list-controls .btn-primary.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn,
 .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn, #reply-control .submit-panel .btn-primary.btn, .fps-select a.btn-primary, .search-advanced .search-title .btn-primary.btn, .search-advanced-sidebar .btn-primary.search-cta, .timeline-container .topic-timeline div > button.btn-primary.btn,
 .timeline-container .topic-timeline span > button.btn-primary.btn, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, .top-title-buttons button.btn-primary, #topic-footer-buttons div > button.btn-primary.btn,
 #topic-footer-buttons span > button.btn-primary.btn,
-#topic-footer-buttons > button.btn-primary.btn, .topic-map .information.toggle-summary .btn-primary.btn, .display-row .controls a.btn-primary[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-primary.btn, .user-navigation .btn-primary.new-private-message, .user-preferences .btn-primary.btn, .user-theme-creator .theme-details .btn-primary.btn, .user-theme-creator .theme-list .btn-primary.btn, .badges-section.top-section > p .btn-primary.more, .admin-contents .btn-primary.btn, .screened-ip-addresses .actions.col a.btn-primary {
+#topic-footer-buttons > button.btn-primary.btn, .topic-map .information.toggle-summary .btn-primary.btn, .display-row .controls a.btn-primary[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-primary.btn, .user-navigation .btn-primary.new-private-message, .user-preferences .btn-primary.btn, .user-theme-creator .theme-details .btn-primary.btn, .user-theme-creator .theme-list .btn-primary.btn, .badges-section.top-section > p .btn-primary.more, .admin-contents .btn-primary.btn, .screened-ip-addresses .actions.col a.btn-primary, [id='theme-creator-edit-local-modal'] .btn-primary.btn {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
@@ -251,11 +251,11 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:focus, #reply-control .submit-panel .btn-primary.btn:focus, .fps-select a.btn-primary:focus, .search-advanced .search-title .btn-primary.btn:focus, .search-advanced-sidebar .btn-primary.search-cta:focus, .timeline-container .topic-timeline div > button.btn-primary.btn:focus,
 .timeline-container .topic-timeline span > button.btn-primary.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:focus, .top-title-buttons button.btn-primary:focus, #topic-footer-buttons div > button.btn-primary.btn:focus,
 #topic-footer-buttons span > button.btn-primary.btn:focus,
-#topic-footer-buttons > button.btn-primary.btn:focus, .topic-map .information.toggle-summary .btn-primary.btn:focus, .display-row .controls a.btn-primary[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn-primary.btn:focus, .user-navigation .btn-primary.new-private-message:focus, .user-preferences .btn-primary.btn:focus, .user-theme-creator .theme-details .btn-primary.btn:focus, .user-theme-creator .theme-list .btn-primary.btn:focus, .badges-section.top-section > p .btn-primary.more:focus, .admin-contents .btn-primary.btn:focus, .screened-ip-addresses .actions.col a.btn-primary:focus, .image-upload-controls .btn-primary.btn:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .list-controls .btn-primary.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
+#topic-footer-buttons > button.btn-primary.btn:focus, .topic-map .information.toggle-summary .btn-primary.btn:focus, .display-row .controls a.btn-primary[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn-primary.btn:focus, .user-navigation .btn-primary.new-private-message:focus, .user-preferences .btn-primary.btn:focus, .user-theme-creator .theme-details .btn-primary.btn:focus, .user-theme-creator .theme-list .btn-primary.btn:focus, .badges-section.top-section > p .btn-primary.more:focus, .admin-contents .btn-primary.btn:focus, .screened-ip-addresses .actions.col a.btn-primary:focus, [id='theme-creator-edit-local-modal'] .btn-primary.btn:focus, .image-upload-controls .btn-primary.btn:hover, .select-kit.category-drop.combo-box .btn-primary.category-drop-header:hover, .select-kit.combo-box .btn-primary.select-kit-header:hover, .list-controls .btn-primary.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:hover, #reply-control .submit-panel .btn-primary.btn:hover, .fps-select a.btn-primary:hover, .search-advanced .search-title .btn-primary.btn:hover, .search-advanced-sidebar .btn-primary.search-cta:hover, .timeline-container .topic-timeline div > button.btn-primary.btn:hover,
 .timeline-container .topic-timeline span > button.btn-primary.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:hover, .top-title-buttons button.btn-primary:hover, #topic-footer-buttons div > button.btn-primary.btn:hover,
 #topic-footer-buttons span > button.btn-primary.btn:hover,
-#topic-footer-buttons > button.btn-primary.btn:hover, .topic-map .information.toggle-summary .btn-primary.btn:hover, .display-row .controls a.btn-primary[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn-primary.btn:hover, .user-navigation .btn-primary.new-private-message:hover, .user-preferences .btn-primary.btn:hover, .user-theme-creator .theme-details .btn-primary.btn:hover, .user-theme-creator .theme-list .btn-primary.btn:hover, .badges-section.top-section > p .btn-primary.more:hover, .admin-contents .btn-primary.btn:hover, .screened-ip-addresses .actions.col a.btn-primary:hover {
+#topic-footer-buttons > button.btn-primary.btn:hover, .topic-map .information.toggle-summary .btn-primary.btn:hover, .display-row .controls a.btn-primary[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn-primary.btn:hover, .user-navigation .btn-primary.new-private-message:hover, .user-preferences .btn-primary.btn:hover, .user-theme-creator .theme-details .btn-primary.btn:hover, .user-theme-creator .theme-list .btn-primary.btn:hover, .badges-section.top-section > p .btn-primary.more:hover, .admin-contents .btn-primary.btn:hover, .screened-ip-addresses .actions.col a.btn-primary:hover, [id='theme-creator-edit-local-modal'] .btn-primary.btn:hover {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
@@ -263,22 +263,22 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn:active, #reply-control .submit-panel .btn-primary.btn:active, .fps-select a.btn-primary:active, .search-advanced .search-title .btn-primary.btn:active, .search-advanced-sidebar .btn-primary.search-cta:active, .timeline-container .topic-timeline div > button.btn-primary.btn:active,
 .timeline-container .topic-timeline span > button.btn-primary.btn:active, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:active, .top-title-buttons button.btn-primary:active, #topic-footer-buttons div > button.btn-primary.btn:active,
 #topic-footer-buttons span > button.btn-primary.btn:active,
-#topic-footer-buttons > button.btn-primary.btn:active, .topic-map .information.toggle-summary .btn-primary.btn:active, .display-row .controls a.btn-primary[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn-primary.btn:active, .user-navigation .btn-primary.new-private-message:active, .user-preferences .btn-primary.btn:active, .user-theme-creator .theme-details .btn-primary.btn:active, .user-theme-creator .theme-list .btn-primary.btn:active, .badges-section.top-section > p .btn-primary.more:active, .admin-contents .btn-primary.btn:active, .screened-ip-addresses .actions.col a.btn-primary:active, .image-upload-controls .btn-primary.btn-active.btn, .select-kit.category-drop.combo-box .btn-primary.btn-active.category-drop-header, .select-kit.combo-box .btn-primary.btn-active.select-kit-header, .list-controls .btn-primary.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn-active.btn,
+#topic-footer-buttons > button.btn-primary.btn:active, .topic-map .information.toggle-summary .btn-primary.btn:active, .display-row .controls a.btn-primary[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn-primary.btn:active, .user-navigation .btn-primary.new-private-message:active, .user-preferences .btn-primary.btn:active, .user-theme-creator .theme-details .btn-primary.btn:active, .user-theme-creator .theme-list .btn-primary.btn:active, .badges-section.top-section > p .btn-primary.more:active, .admin-contents .btn-primary.btn:active, .screened-ip-addresses .actions.col a.btn-primary:active, [id='theme-creator-edit-local-modal'] .btn-primary.btn:active, .image-upload-controls .btn-primary.btn-active.btn, .select-kit.category-drop.combo-box .btn-primary.btn-active.category-drop-header, .select-kit.combo-box .btn-primary.btn-active.select-kit-header, .list-controls .btn-primary.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-primary.btn-active.btn,
 .edit-category-modal .edit-category-tab-security section.field > .btn-primary.btn-active.btn, #reply-control .submit-panel .btn-primary.btn-active.btn, .fps-select a.btn-primary.btn-active, .search-advanced .search-title .btn-primary.btn-active.btn, .search-advanced-sidebar .btn-primary.btn-active.search-cta, .timeline-container .topic-timeline div > button.btn-primary.btn-active.btn,
 .timeline-container .topic-timeline span > button.btn-primary.btn-active.btn, .period-chooser.dropdown-select-box.select-kit .btn-primary.btn-active.period-chooser-header, .top-title-buttons button.btn-primary.btn-active, #topic-footer-buttons div > button.btn-primary.btn-active.btn,
 #topic-footer-buttons span > button.btn-primary.btn-active.btn,
-#topic-footer-buttons > button.btn-primary.btn-active.btn, .topic-map .information.toggle-summary .btn-primary.btn-active.btn, .display-row .controls a.btn-primary.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-primary.btn-active.btn, .user-navigation .btn-primary.btn-active.new-private-message, .user-preferences .btn-primary.btn-active.btn, .user-theme-creator .theme-details .btn-primary.btn-active.btn, .user-theme-creator .theme-list .btn-primary.btn-active.btn, .badges-section.top-section > p .btn-primary.btn-active.more, .admin-contents .btn-primary.btn-active.btn, .screened-ip-addresses .actions.col a.btn-primary.btn-active {
+#topic-footer-buttons > button.btn-primary.btn-active.btn, .topic-map .information.toggle-summary .btn-primary.btn-active.btn, .display-row .controls a.btn-primary.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-primary.btn-active.btn, .user-navigation .btn-primary.btn-active.new-private-message, .user-preferences .btn-primary.btn-active.btn, .user-theme-creator .theme-details .btn-primary.btn-active.btn, .user-theme-creator .theme-list .btn-primary.btn-active.btn, .badges-section.top-section > p .btn-primary.btn-active.more, .admin-contents .btn-primary.btn-active.btn, .screened-ip-addresses .actions.col a.btn-primary.btn-active, [id='theme-creator-edit-local-modal'] .btn-primary.btn-active.btn {
   background-color: $tertiary;
 }
 .image-upload-controls .btn-success.btn, .select-kit.category-drop.combo-box .btn-success.category-drop-header, .select-kit.combo-box .btn-success.select-kit-header, .list-controls .btn-success.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn,
 .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn, #reply-control .submit-panel .btn-success.btn, .fps-select a.btn-success, .search-advanced .search-title .btn-success.btn, .search-advanced-sidebar .btn-success.search-cta, .timeline-container .topic-timeline div > button.btn-success.btn,
 .timeline-container .topic-timeline span > button.btn-success.btn, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header, .top-title-buttons button.btn-success, #topic-footer-buttons div > button.btn-success.btn,
 #topic-footer-buttons span > button.btn-success.btn,
-#topic-footer-buttons > button.btn-success.btn, .topic-map .information.toggle-summary .btn-success.btn, .display-row .controls a.btn-success[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-success.btn, .user-navigation .btn-success.new-private-message, .user-preferences .btn-success.btn, .user-theme-creator .theme-details .btn-success.btn, .user-theme-creator .theme-list .btn-success.btn, .badges-section.top-section > p .btn-success.more, .admin-contents .btn-success.btn, .screened-ip-addresses .actions.col a.btn-success, .image-upload-controls .ok.btn, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .list-controls .ok.btn, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
+#topic-footer-buttons > button.btn-success.btn, .topic-map .information.toggle-summary .btn-success.btn, .display-row .controls a.btn-success[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-success.btn, .user-navigation .btn-success.new-private-message, .user-preferences .btn-success.btn, .user-theme-creator .theme-details .btn-success.btn, .user-theme-creator .theme-list .btn-success.btn, .badges-section.top-section > p .btn-success.more, .admin-contents .btn-success.btn, .screened-ip-addresses .actions.col a.btn-success, [id='theme-creator-edit-local-modal'] .btn-success.btn, .image-upload-controls .ok.btn, .select-kit.category-drop.combo-box .ok.category-drop-header, .select-kit.combo-box .ok.select-kit-header, .list-controls .ok.btn, .edit-category-modal .edit-category-tab-general section.field > .ok.btn,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn, #reply-control .submit-panel .ok.btn, .fps-select a.ok, .search-advanced .search-title .ok.btn, .search-advanced-sidebar .ok.search-cta, .timeline-container .topic-timeline div > button.ok.btn,
 .timeline-container .topic-timeline span > button.ok.btn, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header, .top-title-buttons button.ok, #topic-footer-buttons div > button.ok.btn,
 #topic-footer-buttons span > button.ok.btn,
-#topic-footer-buttons > button.ok.btn, .topic-map .information.toggle-summary .ok.btn, .display-row .controls a.ok[data-ember-action]:not(.close), .user-main .user-right .list-actions .ok.btn, .user-navigation .ok.new-private-message, .user-preferences .ok.btn, .user-theme-creator .theme-details .ok.btn, .user-theme-creator .theme-list .ok.btn, .badges-section.top-section > p .ok.more, .admin-contents .ok.btn, .screened-ip-addresses .actions.col a.ok {
+#topic-footer-buttons > button.ok.btn, .topic-map .information.toggle-summary .ok.btn, .display-row .controls a.ok[data-ember-action]:not(.close), .user-main .user-right .list-actions .ok.btn, .user-navigation .ok.new-private-message, .user-preferences .ok.btn, .user-theme-creator .theme-details .ok.btn, .user-theme-creator .theme-list .ok.btn, .badges-section.top-section > p .ok.more, .admin-contents .ok.btn, .screened-ip-addresses .actions.col a.ok, [id='theme-creator-edit-local-modal'] .ok.btn {
   background-color: $success;
   color: color-dynamic($success);
 }
@@ -286,19 +286,19 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:focus, #reply-control .submit-panel .btn-success.btn:focus, .fps-select a.btn-success:focus, .search-advanced .search-title .btn-success.btn:focus, .search-advanced-sidebar .btn-success.search-cta:focus, .timeline-container .topic-timeline div > button.btn-success.btn:focus,
 .timeline-container .topic-timeline span > button.btn-success.btn:focus, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:focus, .top-title-buttons button.btn-success:focus, #topic-footer-buttons div > button.btn-success.btn:focus,
 #topic-footer-buttons span > button.btn-success.btn:focus,
-#topic-footer-buttons > button.btn-success.btn:focus, .topic-map .information.toggle-summary .btn-success.btn:focus, .display-row .controls a.btn-success[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn-success.btn:focus, .user-navigation .btn-success.new-private-message:focus, .user-preferences .btn-success.btn:focus, .user-theme-creator .theme-details .btn-success.btn:focus, .user-theme-creator .theme-list .btn-success.btn:focus, .badges-section.top-section > p .btn-success.more:focus, .admin-contents .btn-success.btn:focus, .screened-ip-addresses .actions.col a.btn-success:focus, .image-upload-controls .btn-success.btn:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .list-controls .btn-success.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:hover,
+#topic-footer-buttons > button.btn-success.btn:focus, .topic-map .information.toggle-summary .btn-success.btn:focus, .display-row .controls a.btn-success[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .btn-success.btn:focus, .user-navigation .btn-success.new-private-message:focus, .user-preferences .btn-success.btn:focus, .user-theme-creator .theme-details .btn-success.btn:focus, .user-theme-creator .theme-list .btn-success.btn:focus, .badges-section.top-section > p .btn-success.more:focus, .admin-contents .btn-success.btn:focus, .screened-ip-addresses .actions.col a.btn-success:focus, [id='theme-creator-edit-local-modal'] .btn-success.btn:focus, .image-upload-controls .btn-success.btn:hover, .select-kit.category-drop.combo-box .btn-success.category-drop-header:hover, .select-kit.combo-box .btn-success.select-kit-header:hover, .list-controls .btn-success.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:hover, #reply-control .submit-panel .btn-success.btn:hover, .fps-select a.btn-success:hover, .search-advanced .search-title .btn-success.btn:hover, .search-advanced-sidebar .btn-success.search-cta:hover, .timeline-container .topic-timeline div > button.btn-success.btn:hover,
 .timeline-container .topic-timeline span > button.btn-success.btn:hover, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:hover, .top-title-buttons button.btn-success:hover, #topic-footer-buttons div > button.btn-success.btn:hover,
 #topic-footer-buttons span > button.btn-success.btn:hover,
-#topic-footer-buttons > button.btn-success.btn:hover, .topic-map .information.toggle-summary .btn-success.btn:hover, .display-row .controls a.btn-success[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn-success.btn:hover, .user-navigation .btn-success.new-private-message:hover, .user-preferences .btn-success.btn:hover, .user-theme-creator .theme-details .btn-success.btn:hover, .user-theme-creator .theme-list .btn-success.btn:hover, .badges-section.top-section > p .btn-success.more:hover, .admin-contents .btn-success.btn:hover, .screened-ip-addresses .actions.col a.btn-success:hover, .image-upload-controls .ok.btn:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .list-controls .ok.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
+#topic-footer-buttons > button.btn-success.btn:hover, .topic-map .information.toggle-summary .btn-success.btn:hover, .display-row .controls a.btn-success[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .btn-success.btn:hover, .user-navigation .btn-success.new-private-message:hover, .user-preferences .btn-success.btn:hover, .user-theme-creator .theme-details .btn-success.btn:hover, .user-theme-creator .theme-list .btn-success.btn:hover, .badges-section.top-section > p .btn-success.more:hover, .admin-contents .btn-success.btn:hover, .screened-ip-addresses .actions.col a.btn-success:hover, [id='theme-creator-edit-local-modal'] .btn-success.btn:hover, .image-upload-controls .ok.btn:focus, .select-kit.category-drop.combo-box .ok.category-drop-header:focus, .select-kit.combo-box .ok.select-kit-header:focus, .list-controls .ok.btn:focus, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:focus,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn:focus, #reply-control .submit-panel .ok.btn:focus, .fps-select a.ok:focus, .search-advanced .search-title .ok.btn:focus, .search-advanced-sidebar .ok.search-cta:focus, .timeline-container .topic-timeline div > button.ok.btn:focus,
 .timeline-container .topic-timeline span > button.ok.btn:focus, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:focus, .top-title-buttons button.ok:focus, #topic-footer-buttons div > button.ok.btn:focus,
 #topic-footer-buttons span > button.ok.btn:focus,
-#topic-footer-buttons > button.ok.btn:focus, .topic-map .information.toggle-summary .ok.btn:focus, .display-row .controls a.ok[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .ok.btn:focus, .user-navigation .ok.new-private-message:focus, .user-preferences .ok.btn:focus, .user-theme-creator .theme-details .ok.btn:focus, .user-theme-creator .theme-list .ok.btn:focus, .badges-section.top-section > p .ok.more:focus, .admin-contents .ok.btn:focus, .screened-ip-addresses .actions.col a.ok:focus, .image-upload-controls .ok.btn:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .list-controls .ok.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
+#topic-footer-buttons > button.ok.btn:focus, .topic-map .information.toggle-summary .ok.btn:focus, .display-row .controls a.ok[data-ember-action]:focus:not(.close), .user-main .user-right .list-actions .ok.btn:focus, .user-navigation .ok.new-private-message:focus, .user-preferences .ok.btn:focus, .user-theme-creator .theme-details .ok.btn:focus, .user-theme-creator .theme-list .ok.btn:focus, .badges-section.top-section > p .ok.more:focus, .admin-contents .ok.btn:focus, .screened-ip-addresses .actions.col a.ok:focus, [id='theme-creator-edit-local-modal'] .ok.btn:focus, .image-upload-controls .ok.btn:hover, .select-kit.category-drop.combo-box .ok.category-drop-header:hover, .select-kit.combo-box .ok.select-kit-header:hover, .list-controls .ok.btn:hover, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:hover,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn:hover, #reply-control .submit-panel .ok.btn:hover, .fps-select a.ok:hover, .search-advanced .search-title .ok.btn:hover, .search-advanced-sidebar .ok.search-cta:hover, .timeline-container .topic-timeline div > button.ok.btn:hover,
 .timeline-container .topic-timeline span > button.ok.btn:hover, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:hover, .top-title-buttons button.ok:hover, #topic-footer-buttons div > button.ok.btn:hover,
 #topic-footer-buttons span > button.ok.btn:hover,
-#topic-footer-buttons > button.ok.btn:hover, .topic-map .information.toggle-summary .ok.btn:hover, .display-row .controls a.ok[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .ok.btn:hover, .user-navigation .ok.new-private-message:hover, .user-preferences .ok.btn:hover, .user-theme-creator .theme-details .ok.btn:hover, .user-theme-creator .theme-list .ok.btn:hover, .badges-section.top-section > p .ok.more:hover, .admin-contents .ok.btn:hover, .screened-ip-addresses .actions.col a.ok:hover {
+#topic-footer-buttons > button.ok.btn:hover, .topic-map .information.toggle-summary .ok.btn:hover, .display-row .controls a.ok[data-ember-action]:hover:not(.close), .user-main .user-right .list-actions .ok.btn:hover, .user-navigation .ok.new-private-message:hover, .user-preferences .ok.btn:hover, .user-theme-creator .theme-details .ok.btn:hover, .user-theme-creator .theme-list .ok.btn:hover, .badges-section.top-section > p .ok.more:hover, .admin-contents .ok.btn:hover, .screened-ip-addresses .actions.col a.ok:hover, [id='theme-creator-edit-local-modal'] .ok.btn:hover {
   background-color: $success;
   color: color-dynamic($success);
 }
@@ -306,19 +306,19 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn:active, #reply-control .submit-panel .btn-success.btn:active, .fps-select a.btn-success:active, .search-advanced .search-title .btn-success.btn:active, .search-advanced-sidebar .btn-success.search-cta:active, .timeline-container .topic-timeline div > button.btn-success.btn:active,
 .timeline-container .topic-timeline span > button.btn-success.btn:active, .period-chooser.dropdown-select-box.select-kit .btn-success.period-chooser-header:active, .top-title-buttons button.btn-success:active, #topic-footer-buttons div > button.btn-success.btn:active,
 #topic-footer-buttons span > button.btn-success.btn:active,
-#topic-footer-buttons > button.btn-success.btn:active, .topic-map .information.toggle-summary .btn-success.btn:active, .display-row .controls a.btn-success[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn-success.btn:active, .user-navigation .btn-success.new-private-message:active, .user-preferences .btn-success.btn:active, .user-theme-creator .theme-details .btn-success.btn:active, .user-theme-creator .theme-list .btn-success.btn:active, .badges-section.top-section > p .btn-success.more:active, .admin-contents .btn-success.btn:active, .screened-ip-addresses .actions.col a.btn-success:active, .image-upload-controls .btn-success.btn-active.btn, .select-kit.category-drop.combo-box .btn-success.btn-active.category-drop-header, .select-kit.combo-box .btn-success.btn-active.select-kit-header, .list-controls .btn-success.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn-active.btn,
+#topic-footer-buttons > button.btn-success.btn:active, .topic-map .information.toggle-summary .btn-success.btn:active, .display-row .controls a.btn-success[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .btn-success.btn:active, .user-navigation .btn-success.new-private-message:active, .user-preferences .btn-success.btn:active, .user-theme-creator .theme-details .btn-success.btn:active, .user-theme-creator .theme-list .btn-success.btn:active, .badges-section.top-section > p .btn-success.more:active, .admin-contents .btn-success.btn:active, .screened-ip-addresses .actions.col a.btn-success:active, [id='theme-creator-edit-local-modal'] .btn-success.btn:active, .image-upload-controls .btn-success.btn-active.btn, .select-kit.category-drop.combo-box .btn-success.btn-active.category-drop-header, .select-kit.combo-box .btn-success.btn-active.select-kit-header, .list-controls .btn-success.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .btn-success.btn-active.btn,
 .edit-category-modal .edit-category-tab-security section.field > .btn-success.btn-active.btn, #reply-control .submit-panel .btn-success.btn-active.btn, .fps-select a.btn-success.btn-active, .search-advanced .search-title .btn-success.btn-active.btn, .search-advanced-sidebar .btn-success.btn-active.search-cta, .timeline-container .topic-timeline div > button.btn-success.btn-active.btn,
 .timeline-container .topic-timeline span > button.btn-success.btn-active.btn, .period-chooser.dropdown-select-box.select-kit .btn-success.btn-active.period-chooser-header, .top-title-buttons button.btn-success.btn-active, #topic-footer-buttons div > button.btn-success.btn-active.btn,
 #topic-footer-buttons span > button.btn-success.btn-active.btn,
-#topic-footer-buttons > button.btn-success.btn-active.btn, .topic-map .information.toggle-summary .btn-success.btn-active.btn, .display-row .controls a.btn-success.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-success.btn-active.btn, .user-navigation .btn-success.btn-active.new-private-message, .user-preferences .btn-success.btn-active.btn, .user-theme-creator .theme-details .btn-success.btn-active.btn, .user-theme-creator .theme-list .btn-success.btn-active.btn, .badges-section.top-section > p .btn-success.btn-active.more, .admin-contents .btn-success.btn-active.btn, .screened-ip-addresses .actions.col a.btn-success.btn-active, .image-upload-controls .ok.btn:active, .select-kit.category-drop.combo-box .ok.category-drop-header:active, .select-kit.combo-box .ok.select-kit-header:active, .list-controls .ok.btn:active, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:active,
+#topic-footer-buttons > button.btn-success.btn-active.btn, .topic-map .information.toggle-summary .btn-success.btn-active.btn, .display-row .controls a.btn-success.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .btn-success.btn-active.btn, .user-navigation .btn-success.btn-active.new-private-message, .user-preferences .btn-success.btn-active.btn, .user-theme-creator .theme-details .btn-success.btn-active.btn, .user-theme-creator .theme-list .btn-success.btn-active.btn, .badges-section.top-section > p .btn-success.btn-active.more, .admin-contents .btn-success.btn-active.btn, .screened-ip-addresses .actions.col a.btn-success.btn-active, [id='theme-creator-edit-local-modal'] .btn-success.btn-active.btn, .image-upload-controls .ok.btn:active, .select-kit.category-drop.combo-box .ok.category-drop-header:active, .select-kit.combo-box .ok.select-kit-header:active, .list-controls .ok.btn:active, .edit-category-modal .edit-category-tab-general section.field > .ok.btn:active,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn:active, #reply-control .submit-panel .ok.btn:active, .fps-select a.ok:active, .search-advanced .search-title .ok.btn:active, .search-advanced-sidebar .ok.search-cta:active, .timeline-container .topic-timeline div > button.ok.btn:active,
 .timeline-container .topic-timeline span > button.ok.btn:active, .period-chooser.dropdown-select-box.select-kit .ok.period-chooser-header:active, .top-title-buttons button.ok:active, #topic-footer-buttons div > button.ok.btn:active,
 #topic-footer-buttons span > button.ok.btn:active,
-#topic-footer-buttons > button.ok.btn:active, .topic-map .information.toggle-summary .ok.btn:active, .display-row .controls a.ok[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .ok.btn:active, .user-navigation .ok.new-private-message:active, .user-preferences .ok.btn:active, .user-theme-creator .theme-details .ok.btn:active, .user-theme-creator .theme-list .ok.btn:active, .badges-section.top-section > p .ok.more:active, .admin-contents .ok.btn:active, .screened-ip-addresses .actions.col a.ok:active, .image-upload-controls .ok.btn-active.btn, .select-kit.category-drop.combo-box .ok.btn-active.category-drop-header, .select-kit.combo-box .ok.btn-active.select-kit-header, .list-controls .ok.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .ok.btn-active.btn,
+#topic-footer-buttons > button.ok.btn:active, .topic-map .information.toggle-summary .ok.btn:active, .display-row .controls a.ok[data-ember-action]:active:not(.close), .user-main .user-right .list-actions .ok.btn:active, .user-navigation .ok.new-private-message:active, .user-preferences .ok.btn:active, .user-theme-creator .theme-details .ok.btn:active, .user-theme-creator .theme-list .ok.btn:active, .badges-section.top-section > p .ok.more:active, .admin-contents .ok.btn:active, .screened-ip-addresses .actions.col a.ok:active, [id='theme-creator-edit-local-modal'] .ok.btn:active, .image-upload-controls .ok.btn-active.btn, .select-kit.category-drop.combo-box .ok.btn-active.category-drop-header, .select-kit.combo-box .ok.btn-active.select-kit-header, .list-controls .ok.btn-active.btn, .edit-category-modal .edit-category-tab-general section.field > .ok.btn-active.btn,
 .edit-category-modal .edit-category-tab-security section.field > .ok.btn-active.btn, #reply-control .submit-panel .ok.btn-active.btn, .fps-select a.ok.btn-active, .search-advanced .search-title .ok.btn-active.btn, .search-advanced-sidebar .ok.btn-active.search-cta, .timeline-container .topic-timeline div > button.ok.btn-active.btn,
 .timeline-container .topic-timeline span > button.ok.btn-active.btn, .period-chooser.dropdown-select-box.select-kit .ok.btn-active.period-chooser-header, .top-title-buttons button.ok.btn-active, #topic-footer-buttons div > button.ok.btn-active.btn,
 #topic-footer-buttons span > button.ok.btn-active.btn,
-#topic-footer-buttons > button.ok.btn-active.btn, .topic-map .information.toggle-summary .ok.btn-active.btn, .display-row .controls a.ok.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .ok.btn-active.btn, .user-navigation .ok.btn-active.new-private-message, .user-preferences .ok.btn-active.btn, .user-theme-creator .theme-details .ok.btn-active.btn, .user-theme-creator .theme-list .ok.btn-active.btn, .badges-section.top-section > p .ok.btn-active.more, .admin-contents .ok.btn-active.btn, .screened-ip-addresses .actions.col a.ok.btn-active {
+#topic-footer-buttons > button.ok.btn-active.btn, .topic-map .information.toggle-summary .ok.btn-active.btn, .display-row .controls a.ok.btn-active[data-ember-action]:not(.close), .user-main .user-right .list-actions .ok.btn-active.btn, .user-navigation .ok.btn-active.new-private-message, .user-preferences .ok.btn-active.btn, .user-theme-creator .theme-details .ok.btn-active.btn, .user-theme-creator .theme-list .ok.btn-active.btn, .badges-section.top-section > p .ok.btn-active.more, .admin-contents .ok.btn-active.btn, .screened-ip-addresses .actions.col a.ok.btn-active, [id='theme-creator-edit-local-modal'] .ok.btn-active.btn {
   background-color: $success;
 }
 
@@ -333,7 +333,7 @@ div.poll .poll-buttons .btn:first-child, .modal.history-modal #revision .btn:fir
   margin-left: 0;
 }
 
-.btn-small, .image-upload-controls .btn, .d-editor-button-bar .btn, .timeline-container .topic-timeline .back-button, .admin-logs-table .btn {
+.btn-small, .image-upload-controls .btn, .d-editor-button-bar .btn, .timeline-container .topic-timeline .back-button, .admin-logs-table .btn, .styleguide .styleguide-menu ul li a {
   font-size: 13px;
   padding: 9.5px 16px;
 }
@@ -430,11 +430,12 @@ body .nav-pills > li > a:focus, body .nav-pills > li > a:hover {
   opacity: 1;
 }
 
-.nav-pills > li.active > a, .nav-pills > li > a.active {
+.nav-pills > li.active > a, .nav-pills > li > a.active, .styleguide .styleguide-menu ul li a.active {
+  background-color: $quaternary;
   color: color-dynamic($quaternary);
   opacity: 1;
 }
-body .nav-pills > li.active > a:focus, body .nav-pills > li > a.active:focus, body .nav-pills > li.active > a:hover, body .nav-pills > li > a.active:hover {
+body .nav-pills > li.active > a:focus, body .nav-pills > li > a.active:focus, body .styleguide .styleguide-menu ul li a.active:focus, .styleguide .styleguide-menu ul li body a.active:focus, body .nav-pills > li.active > a:hover, body .nav-pills > li > a.active:hover, body .styleguide .styleguide-menu ul li a.active:hover, .styleguide .styleguide-menu ul li body a.active:hover {
   background-color: $quaternary;
   color: color-dynamic($quaternary);
 }
@@ -456,6 +457,7 @@ body .nav-stacked li > a:focus, body .content-list ul li > a:focus, .content-lis
 }
 
 .nav-stacked li.active > a, .content-list ul li.active > a, .nav-stacked li > a.active, .content-list ul li > a.active {
+  background-color: $quaternary;
   color: color-dynamic($quaternary);
   opacity: 1;
 }
@@ -561,7 +563,7 @@ body input[type='text'],
 body input[type='time'],
 body input[type='url'],
 body input[type='week'],
-body textarea, .controls .static, .value-list .value {
+body textarea, .controls .static, .add-upload-modal [id='file-input'], .value-list .value {
   background-clip: padding-box;
   background-color: transparent;
   background-image: none;
@@ -591,7 +593,7 @@ body input[type='text']:hover,
 body input[type='time']:hover,
 body input[type='url']:hover,
 body input[type='week']:hover,
-body textarea:hover, .controls .static:hover, .value-list .value:hover {
+body textarea:hover, .controls .static:hover, .add-upload-modal [id='file-input']:hover, .value-list .value:hover {
   border-color: color-chooser(white, rgba(0, 0, 0, 0.87));
   box-shadow: inset 0 -2px 0 -1px color-chooser(white, rgba(0, 0, 0, 0.87));
 }
@@ -609,7 +611,7 @@ body input[type='text']:focus,
 body input[type='time']:focus,
 body input[type='url']:focus,
 body input[type='week']:focus,
-body textarea:focus, .controls .static:focus, .value-list .value:focus {
+body textarea:focus, .controls .static:focus, .add-upload-modal [id='file-input']:focus, .value-list .value:focus {
   border-color: $tertiary;
   box-shadow: inset 0 -2px 0 -1px $tertiary;
   outline: 0;
@@ -628,7 +630,7 @@ body input[disabled][type='text'],
 body input[disabled][type='time'],
 body input[disabled][type='url'],
 body input[disabled][type='week'],
-body textarea[disabled], .controls [disabled].static, .value-list [disabled].value, body input[readonly][type='color'],
+body textarea[disabled], .controls [disabled].static, .add-upload-modal [disabled][id='file-input'], .value-list [disabled].value, body input[readonly][type='color'],
 body input[readonly][type='date'],
 body input[readonly][type='datetime'],
 body input[readonly][type='datetime-local'],
@@ -642,7 +644,7 @@ body input[readonly][type='text'],
 body input[readonly][type='time'],
 body input[readonly][type='url'],
 body input[readonly][type='week'],
-body textarea[readonly], .controls [readonly].static, .value-list [readonly].value {
+body textarea[readonly], .controls [readonly].static, .add-upload-modal [readonly][id='file-input'], .value-list [readonly].value {
   border-color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.26));
   border-style: dotted;
   color: color-chooser(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.26));
@@ -653,7 +655,7 @@ body textarea[readonly], .controls [readonly].static, .value-list [readonly].val
 #login-form input[type='email'],
 #login-form input[type='password'],
 #login-form input[type='text'], .search-menu input[type='text'], .search-advanced .search-bar .search-query, .search-advanced-sidebar input[type='number'],
-.search-advanced-sidebar input[type='text'], #share-link input[type='text'], .directory .filter-name, .display-row input[type='text'], .groups-header-filters .groups-header-filters-name, .user-preferences input[type='text'], .user-preferences .controls .static, .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-customize.admin-embedding input[type='text'], .admin-customize .show-current-style h1 input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .screened-ip-addresses .admin-container input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value, .watched-word-form input[type='text'] {
+.search-advanced-sidebar input[type='text'], #share-link input[type='text'], .directory .filter-name, .display-row input[type='text'], .groups-header-filters .groups-header-filters-name, .user-preferences input[type='text'], .user-preferences .controls .static, .user-theme-creator .theme-details h1 input[type='text'], .add-upload-modal [id='file-input'], .add-upload-modal [id='name'], .admin-container .controls.username input[type='text'], .admin-controls input[type='text'], .admin-customize.admin-embedding input[type='text'], .admin-customize .show-current-style h1 input[type='text'], div.badges .form-horizontal input[type='text'], div.groups .form-horizontal input[type='text'], div.web-hook-container .form-horizontal input[type='text'], .admin-container div.emoji input[type='text'], .content-editor .email-template input[type='text'], .email-preview-digest .controls input[type='text'], .permalink-title ~ div input[type='text'], .screened-ip-addresses .admin-container input[type='text'], .settings .setting .input-setting-string, .site-texts .search-area .site-text-search, .value-list input[type='text'], .value-list .value, .watched-word-form input[type='text'] {
   background-color: color-chooser(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.06));
   border-radius: 4px;
   height: 56px;
@@ -661,7 +663,7 @@ body textarea[readonly], .controls [readonly].static, .value-list [readonly].val
   padding: 20px 16px 19px;
 }
 
-h1, #topic-title h1, .body-page h1 {
+h1, #topic-title h1, .body-page h1, .styleguide .styleguide-section .section-title {
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 0;
@@ -714,7 +716,7 @@ h6, div.poll .poll-info .info-text, .select-kit.dropdown-select-box .select-kit-
 }
 
 body .form-vertical .control-label, .autocomplete ul li a span.name, .select-kit.dropdown-select-box .select-kit-row .texts .desc, .select-kit .category-row .category-desc, .menu-panel b.topics-count, .search-menu .search-link .blurb, .period-chooser.dropdown-select-box.select-kit .period-chooser-header h2.selected-name .top-date-string, .period-chooser.dropdown-select-box.select-kit .period-chooser-row .top-date-string, .gap, .topic-map h4, .topic-map .avatars .post-count, .links-section .domain, .user-main .user-stream .time, .user-preferences .instructions, .admin-customize .status-message, .admin-contents div.badges .current-badge p.help, .content-list h3, .content-list ul li a span.count, .ip-lookup .location-box .powered-by, .settings .setting .desc,
-.settings .setting .validation-error {
+.settings .setting .validation-error, .styleguide .styleguide-menu ul li.styleguide-heading, .styleguide .styleguide-section .styleguide-example .example-title {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
@@ -898,6 +900,10 @@ tr {
   padding-left: 0;
 }
 
+.footer-message > :last-child {
+  margin-bottom: 0;
+}
+
 .nav-stacked .count {
   font-size: inherit;
   line-height: inherit;
@@ -926,6 +932,9 @@ tr {
   color: inherit;
   font-size: .8125em;
   font-weight: normal;
+}
+.badge-wrapper[href]:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
 .badge-wrapper.bar {
   -ms-flex-align: center;
@@ -1559,8 +1568,8 @@ body .form-vertical .control-group {
   margin-bottom: 24px;
 }
 body .form-vertical .controls {
-  -ms-flex-align: start;
-      align-items: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 8px;
@@ -1577,7 +1586,6 @@ body .form-vertical .controls.category-controls:first-child, body .form-vertical
 body .form-vertical .controls.category-controls label, body .form-vertical .controls.controls-dropdown label {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-top: 8.000003px;
 }
 body .form-vertical .controls > :first-child {
   margin-right: 8px;
@@ -2342,52 +2350,6 @@ div.ac-wrap input[type='text'] {
   display: flex;
   margin-top: 0;
 }
-.d-header .icons {
-  -ms-flex-align: center;
-      align-items: center;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-}
-.d-header .icons .badge-notification,
-.d-header .icons .ring {
-  top: -4px;
-}
-.d-header .icons .fa {
-  height: auto;
-  width: auto;
-}
-.d-header .icons .icon {
-  -ms-flex-align: center;
-      align-items: center;
-  border: 0;
-  border-radius: 50%;
-  color: inherit;
-  display: -ms-flexbox;
-  display: flex;
-  height: 40px;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-left: 8px;
-  padding: 0;
-  width: 40px;
-}
-.d-header .icons .icon:focus, .d-header .icons .icon:hover {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  border: 0;
-  color: inherit;
-}
-.d-header .icons .icon:focus {
-  outline: 0;
-}
-.drop-down-mode .d-header .icons .active .icon, .drop-down-visible .d-header .icons .active .icon {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
-  border: 0;
-  color: inherit;
-}
-.drop-down-mode .d-header .icons .active .icon::after, .drop-down-visible .d-header .icons .active .icon::after {
-  display: none;
-}
 .d-header .panel {
   margin-left: auto;
   -ms-flex-order: 1;
@@ -2414,6 +2376,58 @@ div.ac-wrap input[type='text'] {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: auto;
+}
+
+.d-header-icons {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+.d-header-icons .badge-notification {
+  min-width: 19.999994px;
+  top: -4px;
+}
+.d-header-icons .d-icon {
+  height: auto;
+  opacity: 1;
+  width: auto;
+}
+.d-header-icons .icon {
+  -ms-flex-align: center;
+      align-items: center;
+  border: 0;
+  border-radius: 50%;
+  color: inherit;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: 8px;
+  padding: 0;
+  width: 40px;
+}
+.d-header-icons .icon:focus, .d-header-icons .icon:hover {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border: 0;
+  color: inherit;
+}
+.d-header-icons .icon:focus {
+  outline: 0;
+}
+.drop-down-mode .d-header-icons .active .icon, .drop-down-visible .d-header-icons .active .icon {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border: 0;
+  color: inherit;
+}
+.drop-down-mode .d-header-icons .active .icon::after, .drop-down-visible .d-header-icons .active .icon::after {
+  display: none;
+}
+.d-header-icons .ring {
+  margin-right: 1px;
+  top: -4px !important;
 }
 
 #main-outlet {
@@ -3599,8 +3613,14 @@ div.menu-links-header .menu-links-row {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+.menu-panel ul li.category-link .badge-wrapper:focus, .menu-panel ul li.category-link .badge-wrapper:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
 .menu-panel ul li.category-link .badge-wrapper.box {
   color: inherit;
+}
+.menu-panel ul li.category-link .badge-wrapper.bullet {
+  padding: 0 12px 0 4px;
 }
 .menu-panel ul li.heading a {
   padding: 8px 8px;
@@ -5798,6 +5818,13 @@ nav.post-controls .show-replies i {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.moderator .regular > .cooked > :last-child {
+  margin-bottom: 0;
+}
+.moderator .regular > .cooked > :last-child:empty {
+  display: block;
+  margin-top: -16px;
+}
 
 .names .fa {
   color: inherit;
@@ -5878,6 +5905,25 @@ nav.post-controls .show-replies i {
   line-height: 24px;
   top: 0;
   right: 0;
+}
+
+.signup-cta .buttons {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -8px;
+  margin-left: -8px;
+}
+.signup-cta .buttons a {
+  margin-left: auto;
+}
+.signup-cta .buttons .btn {
+  margin-right: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 .small-action {
@@ -6689,8 +6735,6 @@ nav.post-controls .show-replies i {
   font-size: inherit;
 }
 .user-main .about .secondary dl {
-  display: -ms-flexbox;
-  display: flex;
   padding: 0;
 }
 .user-main .about .secondary dl dd {
@@ -6707,10 +6751,13 @@ nav.post-controls .show-replies i {
       flex-shrink: 1;
   white-space: normal;
 }
+.user-main .about .secondary dl div {
+  margin: 0 8px 0 0;
+}
 .user-main .about .secondary dl dt {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin: 0 8px 0 0;
+  margin: 0 4px 0 0;
   white-space: nowrap;
 }
 .user-main .about .secondary dl dt:last-child {
@@ -6765,22 +6812,29 @@ nav.post-controls .show-replies i {
   outline: 0;
 }
 .user-main .staff-counters > div {
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
   margin: 16px 8px 0 0;
   padding: 0;
 }
 .user-main .staff-counters > div:first-of-type {
   padding-left: 0;
 }
-.user-main .staff-counters > div a span,
+.user-main .staff-counters > div a {
+  margin: 0;
+}
+.user-main .staff-counters > div a span {
+  border-radius: 50%;
+  margin-left: -8px;
+}
 .user-main .staff-counters > div span {
   -ms-flex-align: center;
       align-items: center;
-  border-radius: 16px;
+  border-radius: 50%;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 32px;
-  margin-left: -12px;
-  min-width: 32px;
+  height: 24px;
+  min-width: 24px;
   padding: 8px 12px;
 }
 .user-main .staff-counters .active {
@@ -6985,21 +7039,25 @@ nav.post-controls .show-replies i {
   border: 0;
   padding: 0;
 }
+.user-preferences .control-group.apps {
+  margin-bottom: 0;
+}
+.user-preferences .control-group.apps .controls > div > span {
+  display: block;
+  margin-bottom: 16px;
+}
+.user-preferences .control-group.apps .controls > div > :last-child {
+  margin-bottom: 0;
+}
+.user-preferences .control-group.apps .controls > div .btn {
+  margin-bottom: 16px;
+}
 .user-preferences .control-group.category-notifications .controls + .category-controls,
 .user-preferences .control-group.category-notifications .instructions + .category-controls {
   margin-top: 24px;
 }
 .user-preferences .control-group.desktop-notifications .control-label + .controls, .user-preferences .control-group.muting .control-label + .controls, .user-preferences .control-group.other .control-label + .controls, .user-preferences .control-group.pref-activity-summary .control-label + .controls, .user-preferences .control-group.pref-avatar .control-label + .controls, .user-preferences .control-group.pref-card-badge .control-label + .controls, .user-preferences .control-group.pref-email-settings .control-label + .controls, .user-preferences .control-group.pref-mailing-list-mode .control-label + .controls {
   margin-top: 8px;
-}
-.user-preferences .control-group.desktop-notifications .controls {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-.user-preferences .control-group.desktop-notifications .controls .btn {
-  margin-bottom: 8px;
 }
 .user-preferences .control-group.pref-avatar .avatar {
   max-height: 36px;
@@ -7049,6 +7107,8 @@ nav.post-controls .show-replies i {
   margin-bottom: 0;
 }
 .user-table .wrapper {
+  -ms-flex-align: start;
+      align-items: flex-start;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-positive: 1;
@@ -7102,6 +7162,9 @@ nav.post-controls .show-replies i {
   font-size: 14px;
   line-height: 1;
   vertical-align: middle;
+}
+.user-theme-creator .theme-details h1 input[type='text'] {
+  margin-bottom: 0;
 }
 .user-theme-creator .theme-details h3 {
   margin-top: 0;
@@ -7569,6 +7632,25 @@ section.about table th {
   margin-bottom: 16px;
 }
 
+.add-upload-modal br {
+  display: none;
+}
+.add-upload-modal .description {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.add-upload-modal [id='file-input'] {
+  margin-bottom: 8px;
+}
+.add-upload-modal .inputs > :last-child {
+  margin-bottom: 0;
+}
+.add-upload-modal [id='name'] {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
 .admin-container {
   margin-top: 0;
 }
@@ -7771,6 +7853,12 @@ section.about table th {
 }
 .admin-customize.admin-embedding input[type='text'] {
   margin-bottom: 0;
+}
+.admin-customize h1 input[type='text'] {
+  margin-bottom: 0;
+}
+.admin-customize h1 .btn-small {
+  font-size: 13px;
 }
 .admin-customize .admin-container {
   padding-right: 0;
@@ -8162,8 +8250,6 @@ div.badges .buttons {
   text-overflow: ellipsis;
 }
 .content-list ul li a.active {
-  background-color: $quaternary;
-  color: color-dynamic($quaternary);
   font-weight: normal;
 }
 .content-list ul li a span.count {
@@ -8640,6 +8726,116 @@ div.badges .buttons {
 }
 .staff-actions.table .loading-container .admin-list-item:last-child {
   margin-bottom: -12px;
+}
+
+.styleguide .styleguide-contents {
+  font-size: inherit;
+  margin-left: 24px;
+}
+.styleguide .styleguide-menu {
+  width: 20%;
+}
+.styleguide .styleguide-menu ul {
+  margin-bottom: 24px;
+  margin-left: 0;
+}
+.styleguide .styleguide-menu ul li {
+  margin-bottom: 0;
+}
+.styleguide .styleguide-menu ul li.styleguide-heading {
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+.styleguide .styleguide-menu ul li a {
+  display: block;
+  text-align: inherit;
+}
+.styleguide .styleguide-section {
+  margin-bottom: 24px;
+}
+.styleguide .styleguide-section.buttons-examples .styleguide-example .rendered {
+  padding-bottom: 12px;
+}
+.styleguide .styleguide-section.buttons-examples .styleguide-example .rendered button {
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.styleguide .styleguide-section.icons-examples {
+  margin-right: 0;
+}
+.styleguide .styleguide-section.modal-examples .modal-body > :last-child {
+  margin-bottom: 0;
+}
+.styleguide .styleguide-section.modal-examples .modal-footer {
+  padding: 20px 24px 24px;
+}
+.styleguide .styleguide-section.navigation-stacked-examples .preferences-nav {
+  margin-bottom: 0;
+}
+.styleguide .styleguide-section.suggested-topics-examples #suggested-topics {
+  margin-bottom: 0;
+}
+.styleguide .styleguide-section.topic-footer-buttons-examples #topic-footer-buttons {
+  margin-bottom: 0;
+}
+.styleguide .styleguide-section.topic-footer-buttons-examples #topic-footer-buttons > :last-child {
+  margin-bottom: 0;
+}
+.styleguide .styleguide-section.topic-map-examples .topic-map {
+  margin-top: 44px;
+}
+.styleguide .styleguide-section .section-description {
+  margin-bottom: 24px;
+}
+.styleguide .styleguide-section .section-description pre {
+  margin-top: 16px;
+}
+.styleguide .styleguide-section .styleguide-example {
+  border: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  margin-bottom: 24px;
+}
+.styleguide .styleguide-section .styleguide-example .example-title {
+  border-bottom-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  margin-bottom: 0;
+  padding: 8px 16px;
+}
+.styleguide .styleguide-section .styleguide-example .rendered {
+  padding: 16px 16px;
+}
+.styleguide .styleguide-section .styleguide-example .rendered::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.styleguide .styleguide-section .styleguide-example .rendered > :last-child {
+  margin-bottom: 0;
+}
+.styleguide .styleguide-section .section-title {
+  margin-bottom: 24px;
+}
+
+[id='theme-creator-edit-local-modal'] pre {
+  white-space: nowrap;
+}
+[id='theme-creator-edit-local-modal'] > :last-child {
+  margin-bottom: 0;
+}
+[id='theme-creator-edit-local-modal'] .btn {
+  margin-bottom: 16px;
+}
+
+[id='theme-creator-share-modal'] > code {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+[id='theme-creator-share-modal'] > :last-child {
+  margin-bottom: 0;
+}
+[id='theme-creator-share-modal'] > :last-child > .btn {
+  margin-bottom: -16px;
+  margin-left: -8px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 .user-metrics {
