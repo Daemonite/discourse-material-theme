@@ -12,6 +12,72 @@
   }
 }
 
+.directory {
+  margin-bottom: $spacer-lg;
+
+  table {
+    @extend %table;
+
+    margin-bottom: $spacer-lg;
+
+    tbody {
+      td,
+      th {
+        @extend %tbody-cell;
+      }
+
+      tr {
+        @extend %table-row;
+      }
+    }
+
+    td {
+      .number {
+        font-size: inherit;
+      }
+    }
+
+    thead {
+      td,
+      th {
+        @extend %thead-cell;
+      }
+    }
+
+    .user-info {
+      align-items: center;
+      background-color: transparent;
+      box-shadow: none;
+      margin-bottom: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  > .clearfix {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacer-lg;
+
+    .select-kit {
+      margin-right: auto;
+    }
+  }
+
+  .filter-name {
+    @extend %text-field-box;
+
+    margin-bottom: 0;
+    margin-left: $spacer-xs;
+    width: auto;
+  }
+
+  .total-rows {
+    margin-bottom: $spacer-lg;
+  }
+}
+
 .display-row {
   min-height: $tbody-cell-height;
   padding: $tbody-cell-padding-y $card-padding-x;
