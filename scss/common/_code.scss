@@ -38,7 +38,9 @@ pre {
   margin-bottom: $spacer;
   padding: $pre-padding;
 
-  .admin-interface & {
+  blockquote &,
+  .admin-interface &,
+  .onebox & {
     background-color: color-chooser($light-active, $dark-active);
   }
 

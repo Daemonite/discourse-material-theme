@@ -35,19 +35,18 @@
     max-width: 100%;
   }
 
-  p:empty {
-    display: none;
-  }
-
   pre {
     border-radius: 0;
     margin-right: ($card-padding-x * -1);
     margin-left: ($card-padding-x * -1);
   }
 
-  > :last-child,
-  > .code-highlight:last-child > pre:last-child {
+  > :last-child {
     margin-bottom: 0;
+
+    &:empty {
+      margin-top: ($card-inner-spacer-y * -1);
+    }
   }
 
   .bd-clipboard {

@@ -271,10 +271,6 @@ nav {
 .moderator .regular > .cooked {
   padding-top: $card-padding-y;
   padding-bottom: $card-padding-y;
-
-  + .post-menu-area {
-    margin-top: 0;
-  }
 }
 
 .names .fa {
@@ -350,8 +346,8 @@ nav {
 }
 
 .post-menu-area {
-  margin-top: $card-inner-spacer-y;
-  margin-bottom: $card-inner-spacer-y;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .posts-wrapper {

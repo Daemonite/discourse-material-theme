@@ -43,13 +43,64 @@ aside {
           margin-bottom: 0;
         }
       }
+
+      > :last-child {
+        margin-bottom: 0;
+
+        &:empty {
+          display: block;
+          margin-top: ($card-inner-spacer-y * -1);
+        }
+      }
+
+      > .labels:last-child {
+        margin-top: ($card-inner-spacer-y * -1);
+      }
+
+      .date {
+        margin-top: 0 !important;
+        margin-bottom: $card-inner-spacer-y;
+        overflow: hidden;
+
+        .user {
+          margin-top: 0 !important;
+        }
+      }
+
+      .onebox-avatar {
+        border-radius: 50%;
+        height: $card-avatar-size;
+        width: $card-avatar-size;
+      }
     }
   }
 
   &.quote {
+    margin-top: 0;
+    margin-bottom: $card-inner-spacer-y;
+
     blockquote {
       border-radius: 0;
       width: auto !important;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .expanded-quote {
+      > :first-child {
+        margin-top: 0;
+      }
+
+      > :last-child {
+        margin-bottom: 0;
+
+        &:empty {
+          display: block;
+          margin-top: ($card-inner-spacer-y * -1);
+        }
+      }
     }
 
     .quote-controls {
