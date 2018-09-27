@@ -1,9 +1,10 @@
 div {
   &.menu-links-header {
-    display: flex;
-    margin-bottom: $menu-panel-inner-spacer-y;
+    display: block;
+    margin-bottom: 0;
 
     a {
+      border-radius: $menu-panel-border-radius;
       color: inherit;
       font-size: inherit;
       padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
@@ -20,6 +21,13 @@ div {
         align-items: center;
         display: flex;
         margin: 0;
+
+        .d-label {
+          min-width: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
       }
     }
 
@@ -36,8 +44,13 @@ div {
     }
 
     .menu-links-row {
-      display: flex;
-      flex-grow: 1;
+      align-items: center;
+
+      li {
+        &.user {
+          max-width: 45%;
+        }
+      }
     }
   }
 }
@@ -85,6 +98,7 @@ div {
       li {
         a {
           align-items: center;
+          border-radius: $menu-panel-border-radius;
           display: flex;
           padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
           white-space: nowrap;
@@ -119,7 +133,7 @@ div {
         align-items: center;
         display: flex;
         margin: 0;
-        padding: ($menu-panel-inner-spacer-y / 2) $menu-panel-inner-spacer-x;
+        padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
         width: 50%;
 
         .badge-wrapper {
@@ -128,6 +142,10 @@ div {
           &:focus,
           &:hover {
             background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+          }
+
+          &:last-child {
+            margin-right: 0;
           }
 
           &.box {
@@ -142,6 +160,7 @@ div {
 
       &.heading {
         a {
+          border-radius: $menu-panel-border-radius;
           padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
           @include focus-hover {
@@ -157,7 +176,8 @@ div {
   }
 
   .panel-body {
-    max-height: calc(100vh - #{$header-height + $spacer});
+    height: auto !important;
+    max-height: calc(100vh - #{$header-height});
     padding: $menu-panel-padding-y $menu-panel-padding-x;
   }
 }
@@ -194,24 +214,33 @@ div {
       .topic {
         align-items: center;
         display: flex;
-        margin-bottom: ($menu-panel-inner-spacer-y / 2);
+
+        .badge-wrapper {
+          transform: scale($chip-sm-scale);
+          transform-origin: 0 50%;
+          vertical-align: middle;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
       }
     }
   }
 
-  .menu-panel {
-    min-height: 123px;
-  }
-
   .no-results {
-    @extend %dropdown-header;
-    @extend %dropdown-header-sm;
-
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
 
     &:empty {
       display: none;
+    }
+
+    .widget-link {
+      @extend %btn-base;
+      @extend %btn-raised;
+      @extend %btn-sm;
+
+      margin-top: $menu-panel-inner-spacer-y;
     }
   }
 
@@ -261,7 +290,10 @@ div {
 
 .user-menu {
   .notifications {
+    display: block;
+
     li {
+      border-radius: $menu-panel-border-radius;
       padding: 0;
 
       @include hover {
@@ -278,6 +310,7 @@ div {
       }
 
       a {
+        border-radius: $menu-panel-border-radius;
         display: block;
         padding: $menu-panel-inner-spacer-y $menu-panel-inner-spacer-x;
 
@@ -289,13 +322,8 @@ div {
           outline: 0;
         }
 
-        div {
-          align-items: flex-start;
-          display: flex;
-
-          > span {
-            margin-right: $menu-panel-inner-spacer-x;
-          }
+        div > span {
+          display: block;
         }
       }
 
@@ -315,7 +343,12 @@ div {
     }
 
     .show-all .btn {
-      padding: $btn-padding-y-sm 0;
+      background-color: transparent;
+      box-shadow: none;
+      color: inherit;
+      margin-right: auto;
+      margin-left: auto;
+      padding: $btn-padding-y-sm $btn-padding-x-sm;
     }
   }
 }

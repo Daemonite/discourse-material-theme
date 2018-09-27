@@ -1,45 +1,13 @@
 .d-header {
   box-shadow: $header-box-shadow;
-  color: unquote('$header-primary');
   height: auto;
   margin: 0;
   min-height: $header-height;
   padding: $header-padding-y $header-padding-x;
 
-  button {
-    &.login-button,
-    &.sign-up-button {
-      align-items: center;
-      background-color: transparent;
-      background-image: none;
-      border-radius: 50%;
-      color: transparent;
-      display: flex;
-      font-size: inherit;
-      height: ($header-height - $header-padding-y * 2);
-      justify-content: center;
-      line-height: inherit;
-      margin-top: 0;
-      margin-left: $header-inner-spacer-x;
-      overflow: hidden;
-      padding: 0;
-      position: relative;
-      text-indent: 300%;
-      white-space: nowrap;
-      width: ($header-height - $header-padding-y * 2);
-
-      @include focus-hover {
-        background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
-      }
-
-      &:focus {
-        outline: 0;
-      }
-    }
-
+  .btn {
     &.login-button {
       .fa-user {
-        color: unquote('$header-primary');
         margin-right: 100%;
         position: absolute;
         top: 50%;
@@ -53,7 +21,6 @@
       @include material-icons('person_add');
 
       &::before {
-        color: unquote('$header-primary');
         margin-right: 100%;
         position: absolute;
         top: 50%;
@@ -104,6 +71,42 @@
     align-items: center;
     display: flex;
     margin-top: 0;
+
+    .btn {
+      align-items: center;
+      background-color: transparent;
+      background-image: none;
+      border-radius: 50%;
+      box-shadow: none;
+      color: unquote('$header-primary');
+      display: flex;
+      font-size: inherit;
+      height: ($header-height - $header-padding-y * 2);
+      justify-content: center;
+      line-height: inherit;
+      margin-left: $header-inner-spacer-x;
+      overflow: hidden;
+      padding: 0;
+      width: ($header-height - $header-padding-y * 2);
+
+      @include focus-hover {
+        background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      .d-button-label {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+    }
   }
 
   .panel {
@@ -116,6 +119,7 @@
   }
 
   .title {
+    margin-right: $header-inner-spacer-x;
     margin-left: $header-inner-spacer-x;
 
     a {
@@ -145,20 +149,11 @@
     top: ($chip-padding-y / -2);
   }
 
-  .d-icon {
-    height: auto;
-    opacity: 1;
-    width: auto;
-  }
-
   .icon {
-    align-items: center;
     border: 0;
     border-radius: 50%;
     color: inherit;
-    display: flex;
     height: ($header-height - $header-padding-y * 2);
-    justify-content: center;
     margin-left: $header-inner-spacer-x;
     padding: 0;
     width: ($header-height - $header-padding-y * 2);
@@ -166,11 +161,17 @@
     @include focus-hover {
       background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
       border: 0;
-      color: inherit;
     }
 
-    &:focus {
-      outline: 0;
+    &:active {
+      background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
+    }
+
+    img {
+      &.avatar {
+        height: ($header-height - $header-padding-y * 3);
+        width: ($header-height - $header-padding-y * 3);
+      }
     }
   }
 

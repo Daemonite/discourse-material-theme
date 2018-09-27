@@ -16,6 +16,10 @@
     font-size: inherit;
     line-height: inherit;
     max-width: 100%;
+
+    span {
+      word-break: break-all;
+    }
   }
 
   .search-category {
