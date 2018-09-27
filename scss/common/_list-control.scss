@@ -2,11 +2,8 @@ ol {
   &.category-breadcrumb {
     margin: 0 0 $spacer-sm;
 
-    > li {
-      display: flex;
+    li {
       margin-right: $spacer-sm;
-      max-width: ($container-max-width / 5);
-      position: relative;
     }
   }
 }
@@ -33,8 +30,6 @@ ol {
   margin-bottom: ($spacer-lg - $spacer-sm);
 
   .btn {
-    @extend %btn-raised;
-
     font-size: $btn-font-size;
     font-weight: $btn-font-weight;
     margin: 0 0 $spacer-sm $spacer-sm;

@@ -36,7 +36,7 @@
 .period-chooser {
   &.dropdown-select-box.select-kit {
     .period-chooser-header {
-      @extend %btn-flat;
+      @extend %btn-base;
       @extend %btn-raised;
 
       h2 {
@@ -86,12 +86,8 @@
 }
 
 .top-title-buttons {
-  button {
-    @extend %btn-raised;
-
-    margin-right: 0;
-    margin-left: $spacer-xs;
-  }
+  margin-right: 0;
+  margin-left: $spacer-xs;
 }
 
 .topic-bulk-actions-modal {

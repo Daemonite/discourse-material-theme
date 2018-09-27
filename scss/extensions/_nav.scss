@@ -1,3 +1,30 @@
+%nav-link {
+  color: color-chooser($btn-color-dark, $btn-color-light);
+  display: block;
+  font-size: $btn-font-size;
+  line-height: 1;
+  opacity: $nav-link-opacity;
+  padding: $btn-padding-y $btn-padding-x;
+  position: relative;
+
+  @include focus-hover {
+    background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+    color: color-chooser($btn-color-dark, $btn-color-light);
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.active {
+    background-color: unquote('$quaternary');
+    color: color-dynamic(unquote('$quaternary'));
+    opacity: 1;
+  }
+}
+
 %nav-pills {
   > li {
     margin-right: 1px;
@@ -7,7 +34,7 @@
     }
 
     > a {
-      @extend %btn-flat;
+      @extend %btn-base;
 
       &.active {
         @extend %nav-pills-active;
@@ -50,7 +77,7 @@
     }
 
     > a {
-      @extend %btn-flat;
+      @extend %btn-base;
 
       &.active {
         @extend %nav-stacked-active;
@@ -80,9 +107,5 @@
       background-color: unquote('$quaternary;');
       color: color-dynamic(unquote('$quaternary'));
     }
-  }
-
-  &::after {
-    display: none;
   }
 }

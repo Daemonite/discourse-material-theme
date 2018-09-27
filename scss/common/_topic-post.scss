@@ -8,7 +8,6 @@ nav {
     }
 
     button {
-      @extend %btn-flat;
       @extend %btn-footer;
 
       color: color-chooser($white-secondary, $black-secondary);
@@ -110,13 +109,16 @@ nav {
         @extend %dropdown-link-sm;
 
         margin: 0;
-        text-transform: none;
         width: 100%;
+
+        .d-icon {
+          margin-right: $dropdown-inner-spacer-x;
+          width: auto;
+        }
       }
     }
 
     .show-replies {
-      @extend %btn-flat;
       @extend %btn-footer;
 
       margin-top: ($card-padding-y / 2);
@@ -384,6 +386,8 @@ nav {
     }
 
     .btn {
+      @extend %btn-raised-reverse;
+
       margin-right: $card-inner-spacer-x;
       padding-right: $card-inner-spacer-x;
       padding-left: $card-inner-spacer-x;
@@ -407,6 +411,7 @@ nav {
   }
 
   button {
+    @extend %btn-base;
     @extend %btn-flat;
 
     color: color-chooser($white-secondary, $black-secondary);
@@ -545,7 +550,6 @@ nav {
   span > button,
   > button {
     &.btn {
-      @extend %btn-raised;
       margin: 0 $card-margin-x $card-margin-y 0;
       max-width: ($topic-body-width / 3);
     }
@@ -678,8 +682,7 @@ nav {
     z-index: 2;
 
     .btn {
-      @extend %btn-flat;
-      @extend %btn-footer;
+      @extend %btn-raised-reverse;
     }
   }
 
@@ -690,8 +693,6 @@ nav {
 
     &.toggle-summary {
       .btn {
-        @extend %btn-raised;
-
         margin-left: 0;
       }
     }
@@ -723,6 +724,7 @@ nav {
     margin-left: ($card-inner-spacer-x / -2);
 
     a {
+      @extend %btn-base;
       @extend %btn-flat;
       @extend %btn-footer;
     }
@@ -882,6 +884,7 @@ nav {
     }
 
     a {
+      @extend %btn-base;
       @extend %btn-flat;
 
       color: color-chooser($white-secondary, $black-secondary);

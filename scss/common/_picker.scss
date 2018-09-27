@@ -13,6 +13,7 @@
 }
 
 .pika-button {
+  @extend %btn-base;
   @extend %btn-flat;
 
   border-radius: 50%;
@@ -60,6 +61,7 @@
 
 .pika-next,
 .pika-prev {
+  @extend %btn-base;
   @extend %btn-flat;
 
   background-image: none;

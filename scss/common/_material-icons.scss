@@ -30,6 +30,10 @@
   @include material-icons('settings_backup_restore');
 }
 
+.fa-ban {
+  @include material-icons('not_interested');
+}
+
 .fa-bar-chart-o {
   @include material-icons('insert_chart');
 }

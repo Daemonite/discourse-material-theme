@@ -1,10 +1,29 @@
 // Flat button
 
-.btn {
+.btn-flat {
+  @extend %btn-base;
   @extend %btn-flat;
 }
 
-.btn-small {
+
+
+// Raised button
+
+.btn {
+  @extend %btn-base;
+  @extend %btn-raised;
+}
+
+
+
+// Size
+
+.btn-large {
+  @extend %btn-lg;
+}
+
+.btn-small,
+.btn-xsmall {
   @extend %btn-sm;
 }
 

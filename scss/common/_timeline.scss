@@ -19,8 +19,6 @@
     div > button,
     span > button {
       &.btn {
-        @extend %btn-raised;
-
         margin-right: $spacer-sm;
       }
     }

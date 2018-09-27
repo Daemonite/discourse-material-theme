@@ -181,6 +181,7 @@ div {
       padding: ($card-padding-y / 2) ($card-padding-x - $card-inner-spacer-x);
 
       a {
+        @extend %btn-base;
         @extend %btn-flat;
       }
 
@@ -189,8 +190,8 @@ div {
         @extend %btn-footer;
       }
 
-      .fa {
-        margin-right: $card-inner-spacer-x;
+      .btn {
+        @extend %btn-raised-reverse;
       }
 
       .fa-check-square-o,
@@ -205,14 +206,12 @@ div {
 
     .poll-info {
       border-left-color: color-chooser($table-border-color-dark, $table-border-color-light);
-      color: color-chooser($card-color-dark, $card-color-light);
       padding: $card-padding-y $card-padding-x;
 
       p {
         margin: $card-inner-spacer-y 0;
 
         &:first-child {
-          line-height: 1;
           margin-top: 0;
         }
 
@@ -221,12 +220,12 @@ div {
         }
       }
 
-      .info-number {
-        @extend %typography-h3;
+      .info-label {
+        @extend %typography-h6;
       }
 
-      .info-text {
-        @extend %typography-h6;
+      .info-number {
+        @extend %typography-h3;
       }
     }
 

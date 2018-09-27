@@ -155,23 +155,13 @@
     flex-shrink: 0;
     height: auto;
 
-    button,
     .btn {
-      color: color-chooser($white-secondary, $black-secondary);
-      padding: $btn-padding-y-sm ($btn-padding-x-sm / 2);
+      color: inherit;
+      padding: $btn-padding-y $card-inner-spacer-x;
 
       @include focus-hover {
         color: color-chooser($white-secondary, $black-secondary);
       }
-    }
-
-    .btn.heading {
-      font-family: inherit;
-      font-weight: $btn-font-weight;
-    }
-
-    .toolbar-popup-menu-options .btn.select-kit-header {
-      padding: $btn-padding-y-sm ($btn-padding-x-sm / 2);
     }
   }
 
@@ -340,13 +330,12 @@
     padding: $card-padding-y $card-padding-x;
 
     .btn {
-      @extend %btn-raised;
-
       margin-right: 0;
     }
 
     .cancel {
-      @extend %btn-flat-simple;
+      @extend %btn-base;
+      @extend %btn-flat;
 
       margin-left: $card-inner-spacer-x;
     }
@@ -364,6 +353,7 @@
   }
 
   .toggle-preview {
+    @extend %btn-base;
     @extend %btn-flat;
 
     text-indent: 100%;

@@ -139,10 +139,6 @@
       }
     }
   }
-
-  .btn {
-    @extend %btn-raised;
-  }
 }
 
 .admin-controls {
@@ -315,6 +311,12 @@
 
   .color-scheme .controls button {
     margin-right: $card-inner-spacer-x;
+  }
+
+  .color-schemes li .fa {
+    color: inherit;
+    margin-right: $spacer-xs;
+    margin-left: 0;
   }
 
   .colors {
@@ -533,6 +535,10 @@
 
 .admin-logs-table .btn {
   @extend %btn-sm;
+
+  &.no-text .fa {
+    margin-right: 0;
+  }
 }
 
 .admin-nav {
@@ -800,8 +806,6 @@ div {
   }
 
   ul {
-    @extend %nav-stacked;
-
     .badges &,
     .customize &,
     .groups & {
@@ -809,33 +813,33 @@ div {
     }
 
     li {
+      border-bottom: 0;
+
       &:first-of-type {
         border-top: 0;
       }
 
       a {
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @extend %nav-link;
 
-        &.active {
-          font-weight: normal;
-        }
+        align-items: center;
+        display: flex;
 
-        span {
-          &.count {
-            @extend %typography-caption;
+        // span {
+        //   &.count {
+        //     @extend %typography-caption;
 
-            background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-            border-radius: $btn-border-radius;
-            color: inherit;
-            line-height: 1;
-            margin-right: 0;
-            padding: ($btn-font-size - $font-size-caption) / 2 $spacer-xs;
-          }
-        }
+        //     background-color: color-chooser($chip-bg-dark, $chip-bg-light);
+        //     border-radius: $btn-border-radius;
+        //     color: inherit;
+        //     line-height: 1;
+        //     margin-right: 0;
+        //     padding: ($btn-font-size - $font-size-caption) / 2 $spacer-xs;
+        //   }
+        // }
 
-        .user-badge {
-          color: inherit;
+        .d-icon {
+          margin-left: $spacer-xs;
         }
       }
     }
@@ -1226,12 +1230,9 @@ div {
 .screened-ip-addresses {
   .actions.col {
     a {
-      @extend %btn-flat-simple;
-      @extend %btn-raised;
-      @extned %btn-sm;
+      @extend %btn-base;
+      @extend %btn-sm;
 
-      font-size: $btn-font-size-sm;
-      padding: $btn-padding-y-sm $btn-padding-x-sm;
       text-decoration: none;
     }
   }
@@ -1241,6 +1242,7 @@ div {
       @extend %text-field-box;
 
       display: inline-block;
+      margin-bottom: 0;
       width: auto;
     }
   }
@@ -1457,7 +1459,7 @@ div {
         }
 
         a {
-          @extend %btn-flat;
+          @extend %btn-base;
           @extend %btn-sm;
 
           display: block;
@@ -1572,8 +1574,6 @@ div {
   }
 
   .btn {
-    @extend %btn-raised;
-
     margin-bottom: $spacer;
   }
 }

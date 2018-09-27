@@ -51,7 +51,7 @@
   display: flex;
 
   a {
-    @extend %btn-flat;
+    @extend %btn-base;
     @extend %btn-raised;
 
     margin-left: $card-inner-spacer-x;
@@ -137,10 +137,6 @@
         }
       }
     }
-
-    .btn {
-      @extend %btn-raised;
-    }
   }
 }
 
@@ -200,10 +196,6 @@
 
   .ac-wrap {
     max-width: 100%;
-  }
-
-  .search-cta {
-    @extend %btn-raised;
   }
 }
 

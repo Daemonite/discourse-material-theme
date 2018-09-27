@@ -65,24 +65,17 @@
   }
 
   .btn {
+    @extend %btn-raised-reverse;
     @extend %dropdown-link;
 
-    background-color: transparent;
     border-radius: 0;
+    text-transform: none;
     white-space: nowrap;
     width: 100%;
 
     @include focus-hover {
       background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
       color: inherit;
-    }
-
-    &::before {
-      display: none;
-    }
-
-    &:focus {
-      outline: 0;
     }
 
     .fa {

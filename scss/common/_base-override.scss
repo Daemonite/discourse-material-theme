@@ -17,15 +17,20 @@ tr {
     line-height: inherit;
   }
 
-  i {
-    &.fa {
-      opacity: 1;
-    }
+  .d-icon {
+    line-height: inherit;
+    opacity: 1;
   }
 
   .fa {
     margin-right: $spacer-xs;
     vertical-align: top;
+  }
+}
+
+.btn-flat {
+  .d-icon {
+    opacity: 1;
   }
 }
 
@@ -42,7 +47,19 @@ tr {
 }
 
 .nav-stacked {
-  @extend %nav-stacked;
+  background-color: transparent;
+
+  li {
+    border-bottom: 0;
+  }
+
+  a {
+    @extend %nav-link;
+
+    &.active::after {
+      display: none;
+    }
+  }
 
   .count {
     font-size: inherit;

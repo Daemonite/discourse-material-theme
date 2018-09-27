@@ -28,7 +28,8 @@
 }
 
 .d-modal-cancel {
-  @extend %btn-flat-simple;
+  @extend %btn-base;
+  @extend %btn-flat;
 
   margin: 0 0 0 $card-inner-spacer-x;
   padding-right: $card-inner-spacer-x;
@@ -40,15 +41,6 @@
 }
 
 .edit-category-modal {
-  .edit-category-tab-general,
-  .edit-category-tab-security {
-    section {
-      &.field > .btn {
-        @extend %btn-raised;
-      }
-    }
-  }
-
   .edit-category-tab-security section {
     &.field > .btn {
       margin-top: $modal-inner-spacer-y;
@@ -517,6 +509,7 @@
   }
 
   :not(.disclaimer) a {
+    @extend %btn-base;
     @extend %btn-flat;
 
     margin-left: $card-inner-spacer-x;

@@ -95,7 +95,7 @@
 
   .controls {
     a[data-ember-action]:not(.close) {
-      @extend %btn-flat-simple;
+      @extend %btn-base;
       @extend %btn-raised;
     }
 
@@ -206,6 +206,7 @@
     padding: 0;
 
     &.linked-stat a {
+      @extend %btn-base;
       @extend %btn-flat;
     }
   }
@@ -372,6 +373,7 @@
       width: auto;
 
       a {
+        @extend %btn-base;
         @extend %btn-flat;
 
         display: flex;
@@ -630,10 +632,6 @@
 
     .list-actions {
       margin-bottom: $spacer-lg;
-
-      .btn {
-        @extend %btn-raised;
-      }
     }
   }
 
@@ -813,6 +811,7 @@
   }
 
   .new-private-message {
+    @extend %btn-base;
     @extend %btn-raised;
 
     display: block;
@@ -836,10 +835,6 @@
   .bio-composer {
     border: 0;
     padding: 0;
-  }
-
-  .btn {
-    @extend %btn-raised;
   }
 
   .control-group {
@@ -1020,10 +1015,6 @@
       margin-top: 0;
       margin-bottom: $spacer-sm;
     }
-
-    .btn {
-      @extend %btn-raised;
-    }
   }
 
   .theme-list {
@@ -1038,8 +1029,6 @@
     }
 
     .btn {
-      @extend %btn-raised;
-
       display: block;
       width: 100%;
     }

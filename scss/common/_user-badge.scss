@@ -119,7 +119,7 @@
       }
 
       .more {
-        @extend %btn-flat;
+        @extend %btn-base;
         @extend %btn-raised;
       }
     }
