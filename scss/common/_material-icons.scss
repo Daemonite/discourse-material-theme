@@ -286,6 +286,10 @@
   @include material-icons('lock_outline');
 }
 
+.fa-magic {
+  @include material-icons('brush');
+}
+
 .fa-mail-forward {
   @include material-icons('forward');
 }
