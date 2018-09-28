@@ -23,9 +23,9 @@
   }
 
   .search-category {
-    margin-top: ($card-inner-spacer-y / 2);
+    display: inline;
+    margin-left: $card-inner-spacer-x;
     padding-top: 0;
-    width: 100%;
   }
 
   .search-link .topic-statuses {
@@ -34,12 +34,11 @@
 
   .search-link .topic-title {
     @extend %typography-h4;
+
+    vertical-align: middle;
   }
 
   .topic {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: ($card-inner-spacer-y / 2);
     max-width: 100%;
     padding-bottom: 0;
@@ -63,8 +62,6 @@
 }
 
 .search-advanced {
-  margin-bottom: $spacer-lg;
-
   .search-advanced-btn {
     border-radius: $card-border-radius;
     display: block;
@@ -97,29 +94,36 @@
     @extend %card-block;
 
     .search-container & {
-      margin-bottom: $spacer-lg;
+      margin-bottom: $spacer;
     }
 
     .search-cta {
-      padding: $btn-padding-y $card-inner-spacer-x;
+      padding-top: $btn-padding-y;
+      padding-bottom: $btn-padding-y;
     }
 
     .search-query {
       @extend %text-field-box;
 
-      margin-right: $card-padding-x;
+      margin-right: $card-inner-spacer-x;
     }
   }
 
   .search-info {
     .search-container & {
       border-bottom: 0;
-      margin-bottom: $spacer-lg;
+      margin-bottom: $spacer;
       padding-bottom: 0;
     }
   }
 
   .search-notice {
+    .search-container & {
+      margin-bottom: $spacer;
+    }
+  }
+
+  .search-results {
     .search-container & {
       margin-bottom: $spacer-lg;
     }
@@ -127,13 +131,14 @@
 
   .search-title {
     .search-container & {
-      margin-bottom: $spacer-lg;
+      margin-bottom: $spacer;
 
       .bulk-select {
         margin-left: $card-inner-spacer-x;
       }
 
       .fps-select a {
+        font-size: $btn-font-size;
         margin-left: $card-inner-spacer-x;
 
         &:hover {
@@ -149,6 +154,16 @@
   @extend %card-block;
 
   margin-bottom: $spacer-lg;
+
+  .search-advanced-filters {
+    section {
+      &.field {
+        .search-container & {
+          margin-top: $text-field-margin-y;
+        }
+      }
+    }
+  }
 
   .search-container & {
     margin-left: $grid-gutter-width-lg;
@@ -183,6 +198,7 @@
       @extend %typography-h4;
 
       background-color: transparent;
+      margin-bottom: $card-inner-spacer-y;
       padding: 0;
     }
   }
@@ -190,12 +206,6 @@
   input[type='number'],
   input[type='text'] {
     @extend %text-field-box;
-  }
-
-  section {
-    &.field {
-      margin-top: 0;
-    }
   }
 
   .ac-wrap {
