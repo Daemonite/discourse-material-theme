@@ -4584,6 +4584,10 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 #reply-control .reply-to button i {
   color: inherit;
 }
+#reply-control .reply-to .action-title {
+  line-height: 24px;
+  min-width: 0;
+}
 #reply-control .reply-to .avatar {
   margin-right: 4px;
   margin-left: 4px;
@@ -4592,6 +4596,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   background-color: transparent !important;
   box-shadow: none;
   height: 24px;
+  min-height: 0;
 }
 #reply-control .reply-to .btn:focus, #reply-control .reply-to .btn:hover {
   color: color-chooser(rgba(0, 0, 0, 0.87), white);
@@ -4630,6 +4635,10 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control .reply-to .reply-details .select-kit-body {
   border-radius: 4px;
+}
+#reply-control .save-or-cancel {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
 }
 #reply-control .save-or-cancel #draft-status {
   color: $tertiary;

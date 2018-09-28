@@ -270,6 +270,11 @@
       color: inherit;
     }
 
+    .action-title {
+      line-height: $material-icon-size;
+      min-width: 0;
+    }
+
     .avatar {
       margin-right: $spacer-xs;
       margin-left: $spacer-xs;
@@ -279,6 +284,7 @@
       background-color: transparent !important;
       box-shadow: none;
       height: $material-icon-size;
+      min-height: 0;
 
       @include focus-hover {
         color: color-chooser($black-primary, $white-primary);
@@ -336,6 +342,8 @@
   }
 
   .save-or-cancel {
+    flex-grow: 1;
+
     #draft-status {
       color: unquote('$tertiary');
       margin-left: $card-inner-spacer-x;
