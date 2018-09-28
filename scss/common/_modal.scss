@@ -491,8 +491,7 @@
 }
 
 .modal-close {
-  margin: ($font-size-h4 * $line-height-h4 - $material-icon-size) 0 0 auto;
-  order: 1;
+  margin-top: ($font-size-h4 * $line-height-h4 - $material-icon-size);
 }
 
 .modal-footer {
@@ -528,36 +527,65 @@
   }
 
   .btn {
+    background-color: transparent;
+    box-shadow: none;
     margin: 0 0 0 $card-inner-spacer-x;
     padding-right: $card-inner-spacer-x;
     padding-left: $card-inner-spacer-x;
 
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+    }
+
+    &.btn-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+    }
+
+    &:active,
+    &.btn-active {
+      background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+    }
+
     &:last-child {
       margin-left: 0;
+    }
+
+    &[disabled],
+    &.disabled {
+      background-color: transparent !important;
+      color: color-chooser($btn-color-disabled-dark, $btn-color-disabled-light) !important;
+    }
+
+    &.btn-danger {
+      color: unquote('$danger');
+    }
+
+    &.btn-primary {
+      color: unquote('$tertiary');
     }
   }
 }
 
 .modal-header {
   border-bottom: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
-  display: flex;
-  padding: $modal-padding-y $modal-padding-x $modal-inner-spacer-y;
+  padding: $modal-padding-y $modal-padding-x;
 
-  &:last-child {
-    padding-bottom: $modal-padding-y;
-  }
+  .title {
+    margin-right: $modal-inner-spacer-x;
 
-  h3 {
-    @extend %typography-h4;
-
-    margin: 0 $modal-inner-spacer-x 0 0;
-    padding: 0;
+    h3 {
+      @extend %typography-h4;
+    }
   }
 }
 
 .modal-inner-container {
   .inline-modal & {
     border: 0;
+  }
+
+  > form:last-child {
+    margin-bottom: 0;
   }
 }
 

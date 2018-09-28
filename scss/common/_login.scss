@@ -1,3 +1,21 @@
+.btn {
+  &#login-link,
+  &#new-account-link {
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+    }
+
+    &.btn-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+    }
+
+    &:active,
+    &.btn-active {
+      background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+    }
+  }
+}
+
 .caps-lock-warning.invisible {
   display: none;
 }
@@ -25,18 +43,18 @@
     tr {
       &.input {
         input {
-          margin-bottom: $spacer-sm;
+          margin-bottom: ($modal-inner-spacer-y / 2);
         }
 
         label {
-          margin-top: $modal-inner-spacer-y;
-          margin-bottom: $spacer-sm;
+          margin-top: ($modal-inner-spacer-y / 2);
+          margin-bottom: ($modal-inner-spacer-y / 2);
         }
       }
     }
 
     .login-form {
-      padding: 0 $modal-padding-x $modal-inner-spacer-y;
+      padding: ($modal-padding-y - $modal-inner-spacer-y / 2) $modal-padding-x $modal-padding-y;
 
       tr {
         margin-top: 0;
@@ -82,7 +100,7 @@
     padding: $modal-inner-spacer-y $modal-padding-x;
 
     button {
-      margin: 0 0 $spacer-sm;
+      margin: 0 0 ($modal-inner-spacer-y / 2);
       width: 100%;
 
       &:last-child {
@@ -102,9 +120,11 @@
   }
 }
 
-#login-form {
-  table {
-    width: 100%;
+.forgot-password-modal {
+  input[type='text'] {
+    @extend %text-field-box;
+
+    margin-bottom: 0;
   }
 }
 
@@ -121,25 +141,16 @@
   }
 
   td label {
-    margin-bottom: $spacer-sm;
-  }
-
-  .alert {
-    border-radius: 0;
-    box-shadow: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-right: $modal-padding-x;
-    padding-left: $modal-padding-x;
+    margin-bottom: ($modal-inner-spacer-y / 2);
   }
 
   #login-buttons:not(.hidden) {
-    border-left-color: color-chooser($white-divider, $black-divider);
+    border-left-color: color-chooser($modal-border-color-dark, $modal-border-color-light);
     min-height: 0;
-    padding: $modal-inner-spacer-y $modal-padding-x;
+    padding: $modal-padding-y $modal-padding-x;
 
     button {
-      margin: 0 0 $spacer-sm;
+      margin: 0 0 ($modal-inner-spacer-y / 2);
       width: 100%;
 
       &:last-child {
@@ -150,10 +161,16 @@
 
   #login-form {
     margin: 0;
-    padding: $modal-inner-spacer-y $modal-padding-x;
+    padding: $modal-padding-y $modal-padding-x;
   }
 
   .modal-footer {
     align-items: center;
+
+    .btn-large {
+      font-size: $btn-font-size;
+      padding-top: $btn-padding-y;
+      padding-bottom: $btn-padding-y;
+    }
   }
 }

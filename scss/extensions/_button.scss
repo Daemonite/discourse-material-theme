@@ -143,6 +143,7 @@
   &:active,
   &.btn-active {
     background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+    background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
     box-shadow: $btn-box-shadow-active;
   }
 
