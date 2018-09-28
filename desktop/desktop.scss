@@ -18,3 +18,25 @@
   }
 }
 
+.btn-flat.cancel {
+  background-color: transparent;
+  color: $danger;
+}
+.discourse-no-touch .btn-flat.cancel:focus, .discourse-no-touch .btn-flat.cancel:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $danger;
+}
+.discourse-no-touch .btn-flat.cancel:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.btn-flat.ok {
+  background-color: transparent;
+  color: $success;
+}
+.discourse-no-touch .btn-flat.ok:focus, .discourse-no-touch .btn-flat.ok:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $success;
+}
+.discourse-no-touch .btn-flat.ok:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}

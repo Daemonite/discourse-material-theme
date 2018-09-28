@@ -18,17 +18,18 @@
   }
 }
 
-.mobile-view .mobile-nav > li > a.btn-danger, .mobile-view .mobile-nav > li > a.cancel {
+.mobile-view .mobile-nav > li > a.btn-danger {
   background-color: transparent;
   color: $danger;
 }
-.mobile-view .mobile-nav > li > a.btn-danger:focus, .mobile-view .mobile-nav > li > a.btn-danger:hover, .mobile-view .mobile-nav > li > a.cancel:focus, .mobile-view .mobile-nav > li > a.cancel:hover {
+.mobile-view .mobile-nav > li > a.btn-danger:focus, .mobile-view .mobile-nav > li > a.btn-danger:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $danger;
 }
-.mobile-view .mobile-nav > li > a.btn-danger:active, .mobile-view .mobile-nav > li > a.btn-danger.btn-active, .mobile-view .mobile-nav > li > a.cancel:active, .mobile-view .mobile-nav > li > a.cancel.btn-active {
+.mobile-view .mobile-nav > li > a.btn-danger.btn-hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+.mobile-view .mobile-nav > li > a.btn-danger:active, .mobile-view .mobile-nav > li > a.btn-danger.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-  background-image: none;
 }
 .mobile-view .mobile-nav > li > a.btn-primary {
   background-color: transparent;
@@ -36,63 +37,35 @@
 }
 .mobile-view .mobile-nav > li > a.btn-primary:focus, .mobile-view .mobile-nav > li > a.btn-primary:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $tertiary;
+}
+.mobile-view .mobile-nav > li > a.btn-primary.btn-hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .mobile-view .mobile-nav > li > a.btn-primary:active, .mobile-view .mobile-nav > li > a.btn-primary.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-  background-image: none;
-}
-.mobile-view .mobile-nav > li > a.btn-success, .mobile-view .mobile-nav > li > a.ok {
-  background-color: transparent;
-  color: $success;
-}
-.mobile-view .mobile-nav > li > a.btn-success:focus, .mobile-view .mobile-nav > li > a.btn-success:hover, .mobile-view .mobile-nav > li > a.ok:focus, .mobile-view .mobile-nav > li > a.ok:hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $success;
-}
-.mobile-view .mobile-nav > li > a.btn-success:active, .mobile-view .mobile-nav > li > a.btn-success.btn-active, .mobile-view .mobile-nav > li > a.ok:active, .mobile-view .mobile-nav > li > a.ok.btn-active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-  background-image: none;
 }
 
-.mobile-view .mobile-nav > li > a {
+.btn-flat.cancel {
   background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-radius: 2px;
-  box-shadow: none;
-  color: color-chooser($primary, $primary);
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  margin: 0;
-  max-width: 100%;
-  padding: 11px 16px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+  color: $danger;
 }
-.mobile-view .mobile-nav > li > a:focus, .mobile-view .mobile-nav > li > a:hover {
+.discourse-no-touch .btn-flat.cancel:focus, .discourse-no-touch .btn-flat.cancel:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: color-chooser($primary, $primary);
+  color: $danger;
 }
-.mobile-view .mobile-nav > li > a:active {
+.discourse-no-touch .btn-flat.cancel:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-  background-image: none;
 }
-.mobile-view .mobile-nav > li > a:focus {
-  outline: 0;
+.btn-flat.ok {
+  background-color: transparent;
+  color: $success;
 }
-.mobile-view .mobile-nav > li > a[disabled], .mobile-view .mobile-nav > li > a.disabled {
-  background-color: transparent !important;
-  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
+.discourse-no-touch .btn-flat.ok:focus, .discourse-no-touch .btn-flat.ok:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: $success;
+}
+.discourse-no-touch .btn-flat.ok:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 
 .mobile-view .mobile-nav > li > a, .list-controls .nav > li > a, .show-topic-admin, .user-navigation > .btn,
@@ -106,9 +79,16 @@
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
+.mobile-view .mobile-nav > li > a.btn-hover, .list-controls .nav > li > a.btn-hover, .btn-hover.show-topic-admin, .user-navigation > .btn-hover.btn,
+.user-navigation .user-archive .btn-hover.btn {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+}
 .mobile-view .mobile-nav > li > a:active, .list-controls .nav > li > a:active, .show-topic-admin:active, .user-navigation > .btn:active,
-.user-navigation .user-archive .btn:active {
+.user-navigation .user-archive .btn:active, .mobile-view .mobile-nav > li > a.btn-active, .list-controls .nav > li > a.btn-active, .btn-active.show-topic-admin, .user-navigation > .btn-active.btn,
+.user-navigation .user-archive .btn-active.btn {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
 .mobile-view .mobile-nav > li > a[disabled], .list-controls .nav > li > a[disabled], [disabled].show-topic-admin, .user-navigation > [disabled].btn,
@@ -116,65 +96,17 @@
 .user-navigation .user-archive .disabled.btn {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
   background-image: none;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 .mobile-view .mobile-nav > li > a.btn-danger, .list-controls .nav > li > a.btn-danger, .btn-danger.show-topic-admin, .user-navigation > .btn-danger.btn,
-.user-navigation .user-archive .btn-danger.btn, .mobile-view .mobile-nav > li > a.cancel, .list-controls .nav > li > a.cancel, .cancel.show-topic-admin, .user-navigation > .cancel.btn,
-.user-navigation .user-archive .cancel.btn {
+.user-navigation .user-archive .btn-danger.btn {
   background-color: $danger;
   color: color-dynamic($danger);
-}
-.mobile-view .mobile-nav > li > a.btn-danger:focus, .list-controls .nav > li > a.btn-danger:focus, .btn-danger.show-topic-admin:focus, .user-navigation > .btn-danger.btn:focus,
-.user-navigation .user-archive .btn-danger.btn:focus, .mobile-view .mobile-nav > li > a.btn-danger:hover, .list-controls .nav > li > a.btn-danger:hover, .btn-danger.show-topic-admin:hover, .user-navigation > .btn-danger.btn:hover,
-.user-navigation .user-archive .btn-danger.btn:hover, .mobile-view .mobile-nav > li > a.cancel:focus, .list-controls .nav > li > a.cancel:focus, .cancel.show-topic-admin:focus, .user-navigation > .cancel.btn:focus,
-.user-navigation .user-archive .cancel.btn:focus, .mobile-view .mobile-nav > li > a.cancel:hover, .list-controls .nav > li > a.cancel:hover, .cancel.show-topic-admin:hover, .user-navigation > .cancel.btn:hover,
-.user-navigation .user-archive .cancel.btn:hover {
-  background-color: $danger;
-  color: color-dynamic($danger);
-}
-.mobile-view .mobile-nav > li > a.btn-danger:active, .list-controls .nav > li > a.btn-danger:active, .btn-danger.show-topic-admin:active, .user-navigation > .btn-danger.btn:active,
-.user-navigation .user-archive .btn-danger.btn:active, .mobile-view .mobile-nav > li > a.btn-danger.btn-active, .list-controls .nav > li > a.btn-danger.btn-active, .btn-danger.btn-active.show-topic-admin, .user-navigation > .btn-danger.btn-active.btn,
-.user-navigation .user-archive .btn-danger.btn-active.btn, .mobile-view .mobile-nav > li > a.cancel:active, .list-controls .nav > li > a.cancel:active, .cancel.show-topic-admin:active, .user-navigation > .cancel.btn:active,
-.user-navigation .user-archive .cancel.btn:active, .mobile-view .mobile-nav > li > a.cancel.btn-active, .list-controls .nav > li > a.cancel.btn-active, .cancel.btn-active.show-topic-admin, .user-navigation > .cancel.btn-active.btn,
-.user-navigation .user-archive .cancel.btn-active.btn {
-  background-color: $danger;
 }
 .mobile-view .mobile-nav > li > a.btn-primary, .list-controls .nav > li > a.btn-primary, .btn-primary.show-topic-admin, .user-navigation > .btn-primary.btn,
 .user-navigation .user-archive .btn-primary.btn {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
-}
-.mobile-view .mobile-nav > li > a.btn-primary:focus, .list-controls .nav > li > a.btn-primary:focus, .btn-primary.show-topic-admin:focus, .user-navigation > .btn-primary.btn:focus,
-.user-navigation .user-archive .btn-primary.btn:focus, .mobile-view .mobile-nav > li > a.btn-primary:hover, .list-controls .nav > li > a.btn-primary:hover, .btn-primary.show-topic-admin:hover, .user-navigation > .btn-primary.btn:hover,
-.user-navigation .user-archive .btn-primary.btn:hover {
-  background-color: $tertiary;
-  color: color-dynamic($tertiary);
-}
-.mobile-view .mobile-nav > li > a.btn-primary:active, .list-controls .nav > li > a.btn-primary:active, .btn-primary.show-topic-admin:active, .user-navigation > .btn-primary.btn:active,
-.user-navigation .user-archive .btn-primary.btn:active, .mobile-view .mobile-nav > li > a.btn-primary.btn-active, .list-controls .nav > li > a.btn-primary.btn-active, .btn-primary.btn-active.show-topic-admin, .user-navigation > .btn-primary.btn-active.btn,
-.user-navigation .user-archive .btn-primary.btn-active.btn {
-  background-color: $tertiary;
-}
-.mobile-view .mobile-nav > li > a.btn-success, .list-controls .nav > li > a.btn-success, .btn-success.show-topic-admin, .user-navigation > .btn-success.btn,
-.user-navigation .user-archive .btn-success.btn, .mobile-view .mobile-nav > li > a.ok, .list-controls .nav > li > a.ok, .ok.show-topic-admin, .user-navigation > .ok.btn,
-.user-navigation .user-archive .ok.btn {
-  background-color: $success;
-  color: color-dynamic($success);
-}
-.mobile-view .mobile-nav > li > a.btn-success:focus, .list-controls .nav > li > a.btn-success:focus, .btn-success.show-topic-admin:focus, .user-navigation > .btn-success.btn:focus,
-.user-navigation .user-archive .btn-success.btn:focus, .mobile-view .mobile-nav > li > a.btn-success:hover, .list-controls .nav > li > a.btn-success:hover, .btn-success.show-topic-admin:hover, .user-navigation > .btn-success.btn:hover,
-.user-navigation .user-archive .btn-success.btn:hover, .mobile-view .mobile-nav > li > a.ok:focus, .list-controls .nav > li > a.ok:focus, .ok.show-topic-admin:focus, .user-navigation > .ok.btn:focus,
-.user-navigation .user-archive .ok.btn:focus, .mobile-view .mobile-nav > li > a.ok:hover, .list-controls .nav > li > a.ok:hover, .ok.show-topic-admin:hover, .user-navigation > .ok.btn:hover,
-.user-navigation .user-archive .ok.btn:hover {
-  background-color: $success;
-  color: color-dynamic($success);
-}
-.mobile-view .mobile-nav > li > a.btn-success:active, .list-controls .nav > li > a.btn-success:active, .btn-success.show-topic-admin:active, .user-navigation > .btn-success.btn:active,
-.user-navigation .user-archive .btn-success.btn:active, .mobile-view .mobile-nav > li > a.btn-success.btn-active, .list-controls .nav > li > a.btn-success.btn-active, .btn-success.btn-active.show-topic-admin, .user-navigation > .btn-success.btn-active.btn,
-.user-navigation .user-archive .btn-success.btn-active.btn, .mobile-view .mobile-nav > li > a.ok:active, .list-controls .nav > li > a.ok:active, .ok.show-topic-admin:active, .user-navigation > .ok.btn:active,
-.user-navigation .user-archive .ok.btn:active, .mobile-view .mobile-nav > li > a.ok.btn-active, .list-controls .nav > li > a.ok.btn-active, .ok.btn-active.show-topic-admin, .user-navigation > .ok.btn-active.btn,
-.user-navigation .user-archive .ok.btn-active.btn {
-  background-color: $success;
 }
 
 #reply-control .contents .submit-panel .btn, .user-main .about .controls a {
@@ -207,7 +139,7 @@
   background-clip: padding-box;
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
   font-size: 16px;
   line-height: 1.5;
@@ -322,7 +254,7 @@ body .boxed .contents {
 #login-buttons button {
   display: block;
   margin-right: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   width: 100%;
 }
 #login-buttons button:last-child {
