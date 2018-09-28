@@ -181,6 +181,7 @@
 
   &:active,
   &.btn-active {
+    background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
     box-shadow: none;
   }
 

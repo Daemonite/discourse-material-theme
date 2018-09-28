@@ -61,6 +61,20 @@
       }
     }
 
+    &.mini-tag-chooser {
+      &.is-expanded {
+        .select-kit-header {
+          border: 0;
+        }
+      }
+
+      &.no-tags {
+        .select-kit-header .selected-name {
+          color: inherit;
+        }
+      }
+    }
+
     &.tag-drop {
       .select-kit-row {
         font-weight: normal;
@@ -89,6 +103,53 @@
   }
 
   &.dropdown-select-box {
+    &.toolbar-popup-menu-options {
+      .collection-header {
+        padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+
+        h3 {
+          font-size: $dropdown-font-size-sm;
+          font-weight: bolder;
+          line-height: $dropdown-line-height-sm;
+          margin-bottom: 0;
+        }
+      }
+
+      .select-kit-body {
+        box-shadow: $dropdown-box-shadow;
+        padding: 0;
+      }
+
+      .select-kit-row {
+        background-color: transparent;
+        border-radius: 0;
+        margin-bottom: 0;
+        padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+
+        @include focus-hover {
+          background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
+        }
+
+        &.is-highlighted {
+          background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
+
+          &.is-selected {
+            background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
+            background-image: linear-gradient(0deg, color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light), color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light));
+          }
+
+          .d-icon,
+          .name {
+            color: unquote('$primary');
+          }
+        }
+
+        &.is-selected {
+          background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
+        }
+      }
+    }
+
     .dropdown-select-box-header {
       &:hover {
         .d-icon {
@@ -294,6 +355,10 @@
     opacity: 1;
   }
 
+  .select-kit-body {
+    background-color: color-chooser($dropdown-bg-dark, $dropdown-bg-light);
+  }
+
   .select-kit-header {
     .badge-wrapper {
       transform: scale($chip-sm-scale);
@@ -314,456 +379,4 @@
       margin-right: $dropdown-inner-spacer-x;
     }
   }
-
-  // &.box.category-drop.combo-box.has-selection .category-drop-header {
-  //   padding: $btn-padding-y $btn-padding-x;
-
-  //   &::before {
-  //     background-color: $black-divider;
-  //     content: '';
-  //     display: block;
-  //     height: 100%;
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //   }
-
-  //   .fa,
-  //   .selected-name {
-  //     position: relative;
-  //   }
-  // }
-
-  // &.category-chooser.combo-box .combo-box-header {
-  //   padding: $btn-padding-y $btn-padding-x;
-  // }
-
-  // &.category-drop.combo-box,
-  // &.combo-box,
-  // &.dropdown-select-box {
-  //   .select-kit-row {
-  //     @extend %dropdown-link-sm;
-
-  //     &:not(.no-content) {
-  //       padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
-  //     }
-  //   }
-  // }
-
-  // &.category-drop.combo-box .category-drop-header,
-  // &.combo-box .select-kit-header {
-
-  //   .fa {
-  //     background-color: transparent !important;
-  //   }
-  // }
-
-  // &.category-drop.combo-box .select-kit-collection .collection-header .category-filter {
-  //   @extend %dropdown-header-sm;
-
-  //   @include focus-hover {
-  //     background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
-  //     text-decoration: none;
-  //   }
-  // }
-
-  // &.category-drop.combo-box.is-expanded .category-drop-header,
-  // &.combo-box .select-kit-header.is-focused {
-  //   background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-  //   border: 0;
-  //   box-shadow: $btn-box-shadow-active;
-  // }
-
-  // &.combo-box {
-  //   &.is-expanded {
-  //     &.is-above {
-  //       .select-kit-body {
-  //         border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
-  //       }
-
-  //       .select-kit-header {
-  //         border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
-  //       }
-  //     }
-
-  //     .select-kit-body {
-  //       border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
-  //     }
-
-  //     .select-kit-header {
-  //       border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
-  //     }
-
-  //     .select-kit-wrapper {
-  //       border: 0;
-  //       box-shadow: none;
-  //     }
-  //   }
-
-  //   &.mini-tag-chooser {
-  //     &.is-expanded {
-  //       border: 0;
-
-  //       .select-kit-header {
-  //         border: 0;
-  //       }
-  //     }
-
-  //     .select-kit-body {
-  //       border: 0;
-  //       box-shadow: $dropdown-box-shadow;
-  //     }
-
-  //     .select-kit-collection .collection-header {
-  //       margin-top: ($dropdown-padding-y-sm * -1);
-  //       margin-bottom: ($dropdown-padding-y-sm / 2);
-
-  //       .selected-tag {
-  //         border-radius: $code-border-radius;
-  //         font-size: $code-font-size;
-  //         line-height: 1;
-  //         margin: 0 $spacer-xs $spacer-xs 0;
-  //         padding: $code-padding;
-
-  //         &::after {
-  //           @extend %material-icons;
-
-  //           content: 'close';
-  //           font-size: inherit;
-  //           line-height: 1;
-  //           vertical-align: top;
-  //         }
-  //       }
-
-  //       .selected-tags {
-  //         padding: $dropdown-link-padding-y-sm ($dropdown-link-padding-x-sm - $spacer-xs) ($dropdown-link-padding-y-sm - $spacer-xs) $dropdown-link-padding-x-sm;
-  //       }
-  //     }
-
-  //     .select-kit-header {
-  //       .selected-name {
-  //         height: auto;
-  //       }
-  //     }
-
-  //     .select-kit-row .discourse-tag-count {
-  //       margin-left: $spacer-xs;
-  //     }
-  //   }
-
-  //   &.tag-drop {
-  //     &.is-expanded {
-  //       .tag-drop-header {
-  //         border: 0;
-  //         box-shadow: $btn-box-shadow-active;
-  //       }
-  //     }
-
-  //     .select-kit-body {
-  //       box-shadow: $dropdown-box-shadow;
-  //     }
-
-  //     .select-kit-collection .collection-header .tag-filter {
-  //       font-size: $dropdown-font-size-sm;
-  //       line-height: $dropdown-line-height-sm;
-  //       padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
-
-  //       @include focus-hover {
-  //         background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
-  //         text-decoration: none;
-  //       }
-  //     }
-
-  //     .select-kit-row {
-  //       font-size: $dropdown-font-size-sm;
-  //       font-weight: normal;
-  //       line-height: $dropdown-line-height-sm;
-  //     }
-
-  //     .tag-drop-header {
-  //       border: 0;
-  //       font-size: $btn-font-size;
-  //       padding: $btn-padding-y $btn-padding-x;
-  //     }
-  //   }
-
-  //   .select-kit-collection {
-  //     max-width: none;
-  //     padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
-  //   }
-
-  //   .select-kit-filter {
-  //     border-top: 0;
-  //     line-height: inherit;
-  //     padding: ($dropdown-link-padding-y-sm * 2) $dropdown-link-padding-x-sm;
-
-  //     .filter-input {
-  //       font-size: $dropdown-font-size-sm;
-  //       width: 100%;
-  //     }
-
-  //     .spinner {
-  //       height: ($text-field-height - $text-field-padding-y * 2);
-  //       width: ($text-field-height - $text-field-padding-y * 2);
-  //     }
-  //   }
-
-  //   .select-kit-row {
-  //     margin: 0;
-  //   }
-  // }
-
-  // &.composer-actions.dropdown-select-box .select-kit-header {
-  //   margin-right: $spacer-xs;
-  //   opacity: $nav-link-opacity;
-
-  //   &:focus,
-  //   &:hover {
-  //     background-color: transparent;
-  //     opacity: 1;
-  //   }
-
-  //   &.is-focused {
-  //     opacity: 1;
-  //   }
-
-  //   .d-icon {
-  //     border: 0;
-  //     padding: 0;
-  //   }
-  // }
-
-  // &.dropdown-select-box {
-  //   &.is-expanded {
-  //     .select-kit-body,
-  //     .select-kit-collection {
-  //       border-radius: $dropdown-border-radius;
-  //     }
-  //   }
-
-  //   &.toolbar-popup-menu-options {
-  //     .collection-header {
-  //       h3 {
-  //         @extend %dropdown-header;
-  //         @extend %dropdown-header-sm;
-  //       }
-  //     }
-
-  //     .select-kit-row {
-  //       background-color: transparent;
-  //       border-radius: 0;
-  //       margin: 0;
-  //       transition: none;
-
-  //       &,
-  //       &.is-highlighted {
-  //         color: color-chooser($white-primary, $black-primary);
-
-  //         .d-icon,
-  //         .texts .desc,
-  //         .texts .name {
-  //           color: inherit;
-  //         }
-  //       }
-
-  //       &:focus,
-  //       &:hover,
-  //       &.is-highlighted,
-  //       &.is-highlighted.is-selected,
-  //       &.is-selected {
-  //         background-color: color-chooser($dropdown-link-bg-hover-dark, $dropdown-link-bg-hover-light);
-  //         color: color-chooser($white-primary, $black-primary);
-  //       }
-  //     }
-  //   }
-
-  //   .dropdown-select-box-header {
-  //     &:focus,
-  //     &:hover {
-  //       .d-icon {
-  //         color: inherit;
-  //       }
-  //     }
-
-  //     &.is-focused {
-  //       background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-  //       outline: 0;
-  //     }
-  //   }
-
-  //   .select-kit-row {
-  //     .icons {
-  //       margin-top: 0;
-  //       margin-right: ($dropdown-inner-spacer-x / 2);
-  //       width: auto;
-  //     }
-
-  //     .texts {
-  //       line-height: 1;
-
-  //       .desc {
-  //         @extend %typography-caption;
-  //       }
-
-  //       .name {
-  //         @extend %typography-h6;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // &.multi-select {
-  //   background-color: transparent;
-
-  //   &.is-expanded {
-  //     .multi-select-header {
-  //       border-radius: $text-field-box-border-radius $text-field-box-border-radius 0 0;
-  //       box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) unquote('$tertiary'), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) unquote('$tertiary');
-  //     }
-
-  //     .select-kit-wrapper {
-  //       border: 0;
-  //       box-shadow: none;
-  //     }
-  //   }
-
-  //   .choices {
-  //     align-items: center;
-  //     min-height: ($text-field-box-height - $text-field-border-width * 2);
-  //     padding: (($text-field-box-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2) $text-field-box-padding-x;
-  //     padding-right: ($text-field-box-padding-x - $spacer-xs);
-
-  //     .choice {
-  //       border: 0;
-  //       margin: ($spacer-xs / 2) $spacer-xs ($spacer-xs / 2) 0;
-  //       padding: 0;
-  //     }
-
-  //     .filter .filter-input {
-  //       &,
-  //       &:focus {
-  //         height: auto;
-  //       }
-  //     }
-
-  //     .selected-category .badge-wrapper {
-  //       background-color: transparent;
-  //       line-height: 1;
-  //       margin: 0 0 0 ($chip-padding-x * -1);
-  //       padding: 0;
-  //       transform: none;
-
-  //       &::after {
-  //         @extend %material-icons;
-
-  //         content: 'close';
-  //       }
-  //     }
-
-  //     .selected-color .color-preview {
-  //       border-radius: 4px;
-  //       height: 4px;
-  //       margin: 0;
-  //     }
-
-  //     .selected-name {
-  //       background-clip: border-box;
-  //       background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-  //       border-radius: ($chip-height / 2);
-  //       font-size: $chip-font-size;
-  //       font-weight: normal;
-  //       height: $chip-height;
-  //       line-height: 1;
-  //       padding: 0 $chip-padding-x;
-
-  //       &.is-highlighted {
-  //         box-shadow: 2px 0 0 -1px unquote('$danger'), 0 2px 0 -1px unquote('$danger'), -2px 0 0 -1px unquote('$danger'), 0 -2px 0 -1px unquote('$danger');
-  //       }
-
-  //       .name {
-  //         line-height: inherit;
-  //         padding: 0;
-
-  //         &::after {
-  //           @extend %material-icons;
-
-  //           content: 'cancel';
-  //           font-size: $material-icon-size;
-  //           margin-right: ($chip-inner-spacer-x - $chip-padding-x);
-  //           margin-left: $chip-inner-spacer-x;
-  //         }
-  //       }
-  //     }
-  //   }
-
-  //   .multi-select-header {
-  //     background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
-  //     border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
-  //     border-radius: $text-field-box-border-radius;
-
-  //     &:hover {
-  //       border-color: color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
-  //       box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
-  //     }
-
-  //     &.is-focused {
-  //       border-color: unquote('$tertiary');
-  //       border-radius: $text-field-box-border-radius $text-field-box-border-radius 0 0;
-  //       box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) unquote('$tertiary'), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) unquote('$tertiary');
-  //     }
-  //   }
-
-  //   .select-kit-row {
-  //     margin: 0;
-  //     padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
-  //   }
-  // }
-
-  // .settings .setting .setting-value & {
-  //   margin-bottom: $text-field-margin-y;
-  // }
-
-  // .category-row .category-desc {
-  //   @extend %typography-caption;
-  // }
-
-  // .d-icon {
-  //   opacity: $nav-link-opacity;
-
-  //   @include focus-hover {
-  //     opacity: 1;
-  //   }
-  // }
-
-  // .select-kit-collection {
-  //   background-color: transparent;
-  // }
-
-  // .select-kit-filter .filter-input {
-  //   height: auto;
-  // }
-
-  // .select-kit-header {
-  //   .btn-clear {
-  //     margin-left: $spacer-xs;
-  //     padding: 0;
-  //   }
-
-  //   .caret-icon {
-  //     margin-right: ($spacer-xs / -2);
-  //     margin-left: $spacer-xs;
-  //   }
-
-  //   .selected-name .badge-wrapper {
-  //     font-size: $chip-font-size;
-  //     margin-right: 0;
-  //     transform: scale($chip-sm-scale);
-  //     transform-origin: 0 50%;
-  //   }
-  // }
-
-  // .select-kit-row {
-  //   line-height: $line-height-base;
-  // }
 }

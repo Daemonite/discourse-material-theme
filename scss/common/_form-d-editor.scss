@@ -1,5 +1,46 @@
 .d-editor {
   border: 0;
+
+  .d-editor-modal {
+    background-color: color-chooser($modal-bg-dark, $modal-bg-light);
+    border: 0;
+    border-radius: $modal-border-radius;
+    box-shadow: $modal-box-shadow;
+    outline: 0;
+    padding: $modal-padding-y $modal-padding-x;
+    position: fixed;
+    top: 50%;
+    left: 50% !important;
+    transform: translate3d(-50%, -50%, 0);
+
+    h3 {
+      @extend %typography-h4;
+
+      margin-bottom: $modal-inner-spacer-y;
+    }
+
+    input {
+      margin-bottom: $modal-inner-spacer-y;
+      width: 100%;
+    }
+
+    .controls {
+      align-items: center;
+      display: flex;
+      flex-direction: row-reverse;
+      margin-right: ($card-inner-spacer-x * -1);
+      margin-left: ($card-inner-spacer-x * -1);
+
+      &:last-child {
+        margin-bottom: ($card-inner-spacer-y / -2);
+      }
+
+      .btn {
+        @extend %btn-footer;
+        @extend %btn-raised-reverse;
+      }
+    }
+  }
 }
 
 .d-editor-button-bar {
@@ -13,6 +54,8 @@
 
   .btn {
     @extend %btn-raised-reverse;
+
+    color: inherit;
   }
 }
 
@@ -30,6 +73,18 @@
       padding-top: ($card-inner-spacer-y / 2);
     }
   }
+}
+
+.d-editor-overlay {
+  background-color: color-chooser($modal-backdrop-bg-dark, $modal-backdrop-bg-light);
+  height: auto !important;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto !important;
 }
 
 .d-editor-preview {
