@@ -233,11 +233,41 @@ textarea {
   margin-top: $spacer-sm;
 }
 
-.upload-selector .radios .inputs {
-  input {
-    @extend %text-field-box;
+.upload-selector {  label {
+    padding-left: ($modal-inner-spacer-x / 2);
+  }
 
-    margin-bottom: $text-field-margin-y;
-    width: 100%;
+  .radios {
+    flex-wrap: wrap;
+    margin-bottom: $modal-inner-spacer-y;
+
+    &,
+    &:last-child:not(:nth-child(2)) {
+      min-height: auto;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      margin-right: ($modal-inner-spacer-x / 2);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .inputs {
+      input {
+        margin-bottom: $text-field-margin-y;
+        width: 100%;
+      }
+
+      .hint {
+        margin: 0;
+        text-align: right;
+      }
+    }
   }
 }

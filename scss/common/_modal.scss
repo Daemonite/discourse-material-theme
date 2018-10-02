@@ -25,6 +25,14 @@
 .close {
   color: color-chooser($white-secondary, $black-secondary);
   font-size: $font-size-base;
+
+  @include active-focus-hover {
+    color: color-chooser($white-primary, $black-primary);
+  }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .d-modal-cancel {
@@ -645,6 +653,17 @@
   .permission {
     margin-right: $modal-inner-spacer-x;
     margin-left: $modal-inner-spacer-x;
+  }
+}
+
+.upload-selector {
+  ~ .modal-footer {
+    a {
+      &.pull-right {
+        @extend %btn-base;
+        @extend %btn-footer;
+      }
+    }
   }
 }
 
