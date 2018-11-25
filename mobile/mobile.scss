@@ -317,6 +317,13 @@ body .boxed .contents {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+#reply-control .reply-to .composer-controls button {
+  padding: initial;
+
+  &.toggle-toolbar {
+    margin-right: 10px;
+  }
+}
 #reply-control .grippie::before {
   display: none;
 }
