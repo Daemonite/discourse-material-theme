@@ -4428,8 +4428,6 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 @media (min-width: 1112px) {
   #reply-control {
     border-radius: 8px 8px 0 0;
-    margin-right: 0;
-    right: 1px;
   }
 }
 @media (min-width: 1158px) {
@@ -4479,9 +4477,6 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control.edit-title .contents input#reply-title:focus, #reply-control.edit-title .contents input#reply-title:hover {
   padding-bottom: 16px;
-}
-#reply-control.hide-preview {
-  max-width: 1110px;
 }
 #reply-control.hide-preview .toggle-preview::before {
   content: 'keyboard_arrow_left';
