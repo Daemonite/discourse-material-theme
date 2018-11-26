@@ -30,6 +30,7 @@
     }
 
     .draft-text {
+      color: inherit;
       line-height: $material-icon-size;
       margin-right: $card-inner-spacer-x;
       margin-left: $card-padding-x;
@@ -48,14 +49,6 @@
       display: block;
       float: none;
       width: auto;
-    }
-
-    .toggler {
-      &::before {
-        @extend %material-icons;
-
-        content: 'close';
-      }
     }
   }
 
@@ -152,6 +145,26 @@
   .composer-bottom-right {
     flex-basis: auto;
     flex-shrink: 0;
+  }
+
+  .composer-controls .btn-flat,
+  .toggle-toolbar,
+  .toggler {
+    background-color: transparent !important;
+    color: color-chooser($black-secondary, $white-secondary);
+    font-size: inherit;
+    height: $material-icon-size;
+    margin-left: $card-inner-spacer-x;
+    padding: 0 !important;
+    width: $material-icon-size;
+
+    @include focus-hover {
+      color: color-chooser($black-primary, $white-primary);
+    }
+
+    &:active {
+      color: color-chooser($black-primary, $white-primary);
+    }
   }
 
   .composer-fields {
@@ -360,21 +373,6 @@
       position: absolute;
       top: ($spacer / 2);
       right: $card-padding-x;
-
-      .btn-flat {
-        margin-left: $card-inner-spacer-x;
-        padding: 0;
-
-        @include focus-hover {
-          background-color: transparent;
-          color: color-chooser($black-primary, $white-primary);
-        }
-
-        &:active {
-          background-color: transparent;
-          color: color-chooser($black-primary, $white-primary);
-        }
-      }
     }
 
     .d-icon {
@@ -458,38 +456,8 @@
     }
   }
 
-  .toggle-toolbar,
-  .toggler {
-    background-color: transparent !important;
-    color: color-chooser($black-secondary, $white-secondary);
-    font-size: inherit;
-    height: $material-icon-size;
-    padding: 0;
-    width: $material-icon-size;
-
-    @include focus-hover {
-      color: color-chooser($black-primary, $white-primary);
-    }
-
-    &:active {
-      color: color-chooser($black-primary, $white-primary);
-    }
-
-    .fa {
-      display: none;
-    }
-  }
-
   .toggle-toolbar {
     @include material-icons('menu');
-  }
-
-  .toggler {
-    &::before {
-      @extend %material-icons;
-
-      content: 'close';
-    }
   }
 
   .user-selector {
