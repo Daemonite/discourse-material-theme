@@ -942,11 +942,11 @@ nav {
     background-color: unquote('$secondary');
     top: auto;
     right: auto;
+    left: -60px;
+    width: initial;
 
     .toggle-admin-menu.widget-button {
       border-right: 0;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
       height: auto;
 
       .fa {
@@ -956,15 +956,6 @@ nav {
 
     .widget-button {
       border-right: 0;
-    }
-  }
-
-  .topic-admin-popup-menu {
-    &.left-side,
-    &.right-side {
-      position: absolute;
-      right: 0;
-      bottom: 0;
     }
   }
 }
