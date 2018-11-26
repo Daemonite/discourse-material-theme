@@ -1,3 +1,7 @@
+.fa-anchor {
+  @include material-icons('av_timer');
+}
+
 .fa-angle-double-down {
   @include material-icons('arrow_drop_down');
 }
