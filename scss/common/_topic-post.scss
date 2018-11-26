@@ -904,6 +904,7 @@ nav {
   height: $btn-height;
 
   .bg {
+    border-top-right-radius: $btn-border-radius;
     max-width: 100%;
   }
 }
@@ -917,8 +918,23 @@ nav {
   width: auto;
 
   &.docked {
-    margin-bottom: $spacer;
-    right: 0;
+    border-bottom-right-radius: $btn-border-radius;
+
+    .topic-admin-menu-button-container .toggle-admin-menu.widget-button {
+      border-bottom-left-radius: $btn-border-radius;
+    }
+
+    .topic-admin-popup-menu {
+      border-bottom-left-radius: $dropdown-border-radius;
+      border-bottom-right-radius: $dropdown-border-radius;
+    }
+
+    #topic-progress {
+      &,
+      .bg {
+        border-bottom-right-radius: $btn-border-radius;
+      }
+    }
   }
 
   .popup-menu {
