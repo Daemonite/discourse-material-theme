@@ -76,12 +76,8 @@
     }
   }
 
-  &.hide-preview {
-    max-width: $container-max-width;
-
-    .toggle-preview::before {
-      content: 'keyboard_arrow_left';
-    }
+  &.hide-preview .toggle-preview::before {
+    content: 'keyboard_arrow_left';
   }
 
   &.open .grippie {

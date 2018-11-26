@@ -4428,6 +4428,8 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 @media (min-width: 1112px) {
   #reply-control {
     border-radius: 8px 8px 0 0;
+    margin-right: 0;
+    right: 1px;
   }
 }
 @media (min-width: 1158px) {
