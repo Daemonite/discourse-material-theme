@@ -6303,11 +6303,11 @@ nav.post-controls .show-replies i {
   background-color: $secondary;
   top: auto;
   right: auto;
+  left: -60px;
+  width: initial;
 }
 #topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu.widget-button {
   border-right: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   height: auto;
 }
 #topic-progress-wrapper .topic-admin-menu-button-container .toggle-admin-menu.widget-button .fa {
@@ -6315,11 +6315,6 @@ nav.post-controls .show-replies i {
 }
 #topic-progress-wrapper .topic-admin-menu-button-container .widget-button {
   border-right: 0;
-}
-#topic-progress-wrapper .topic-admin-popup-menu.left-side, #topic-progress-wrapper .topic-admin-popup-menu.right-side {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .topic-status-info {

@@ -899,6 +899,7 @@ nav {
 }
 
 #topic-progress {
+  border-top-right-radius: $btn-border-radius;
   flex-shrink: 0;
   height: $btn-height;
 
@@ -908,6 +909,7 @@ nav {
 }
 
 #topic-progress-wrapper {
+  border-top-right-radius: $btn-border-radius;
   box-shadow: $card-box-shadow;
   display: flex;
   margin-right: auto;
@@ -917,13 +919,6 @@ nav {
   &.docked {
     margin-bottom: $spacer;
     right: 0;
-
-    .topic-admin-popup-menu {
-      &.left-side,
-      &.right-side {
-        right: 0;
-      }
-    }
   }
 
   .popup-menu {
@@ -939,13 +934,14 @@ nav {
   }
 
   .topic-admin-menu-button-container {
-    background-color: unquote('$secondary');
     top: auto;
-    right: auto;
+    left: ($btn-padding-x * -2 - $material-icon-size);
+    width: auto;
 
     .toggle-admin-menu.widget-button {
       border-right: 0;
       border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       height: auto;
 
@@ -960,12 +956,8 @@ nav {
   }
 
   .topic-admin-popup-menu {
-    &.left-side,
-    &.right-side {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
