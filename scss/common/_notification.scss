@@ -5,6 +5,12 @@
   @extend %card-block;
 
   margin-bottom: $card-margin-y;
+
+  .close {
+    font-size: inherit;
+    top: .125em;
+    right: 0;
+  }
 }
 
 .alert-bootstrap-mode {
