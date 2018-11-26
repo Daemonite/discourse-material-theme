@@ -61,6 +61,11 @@
   .reply-to .composer-controls {
     align-items: center;
     display: flex;
+
+    button {
+      margin-left: $card-inner-spacer-x;
+      padding: 0;
+    }
   }
 
   .title-and-category {
