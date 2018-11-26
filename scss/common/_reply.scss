@@ -278,8 +278,10 @@
 
     .btn {
       background-color: transparent !important;
+      border: 0;
       box-shadow: none;
       height: $material-icon-size;
+      margin-right: $spacer-xs;
       min-height: 0;
 
       @include focus-hover {
@@ -307,6 +309,18 @@
       .user-link {
         margin-right: 0;
       }
+
+      .topic-link {
+        margin-right: 0;
+
+        @include focus-hover {
+          color: color-chooser($black-primary, $white-primary);
+        }
+
+        &:focus {
+          outline: 0;
+        }
+      }
     }
 
     .composer-controls {
@@ -315,8 +329,18 @@
       top: ($spacer / 2);
       right: $card-padding-x;
 
-      .toggler {
+      .btn-flat {
         padding: 0;
+
+        @include focus-hover {
+          background-color: transparent;
+          color: color-chooser($black-primary, $white-primary);
+        }
+
+        &:active {
+          background-color: transparent;
+          color: color-chooser($black-primary, $white-primary);
+        }
       }
     }
 
