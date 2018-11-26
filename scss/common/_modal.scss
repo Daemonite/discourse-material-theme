@@ -3,7 +3,6 @@
   background-color: color-chooser($modal-bg-dark, $modal-bg-light);
   border-radius: $modal-border-radius;
   box-shadow: $modal-box-shadow;
-  max-width: $modal-width;
   outline: 0;
   width: calc(100% - #{$spacer * 2});
 }
@@ -45,6 +44,45 @@
 
   &:last-child {
     margin-left: 0;
+  }
+}
+
+.discourse-local-dates-create-modal-footer {
+  .cancel-action {
+    @extend %btn-base;
+    @extend %btn-footer;
+  }
+}
+
+.discourse-local-dates-create-modal {
+  .control-group {
+    margin-bottom: $modal-inner-spacer-y;
+
+    &.recurrence {
+      margin-top: 0;
+    }
+  }
+
+  .form .date-time-configuration {
+    .date .date-input,
+    .time .time-input {
+      margin-right: 0;
+      padding: padding: $text-field-padding-y $text-field-padding-x ($text-field-padding-y - $text-field-border-width);
+    }
+
+    .range {
+      .from,
+      .to {
+        .control-group {
+          margin-right: $modal-inner-spacer-x;
+        }
+      }
+
+      .to-indicator {
+        margin: 0 0 $modal-inner-spacer-y;
+        text-align: inherit;
+      }
+    }
   }
 }
 
