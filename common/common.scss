@@ -38,7 +38,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   word-wrap: normal;
 }
 
-.nav-pills > li > a, .btn-flat, .btn, div.poll .poll-buttons a, .select-kit:not(.multi-select) .select-kit-header, .search-menu .no-results .widget-link, .d-modal-cancel, .modal-footer :not(.disclaimer) a, .pika-button, .pika-next,
+.nav-pills > li > a, .btn-flat, .btn, div.poll .poll-buttons a, .select-kit:not(.multi-select) .select-kit-header, .search-menu .no-results .widget-link, .d-modal-cancel, .discourse-local-dates-create-modal-footer .cancel-action, .modal-footer :not(.disclaimer) a, .upload-selector ~ .modal-footer a.pull-right, .pika-button, .pika-next,
 .pika-prev, #reply-control .submit-panel .cancel, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .small-action button, .topic-map .link-summary a, .topic-meta-data .post-info a, .display-row .controls a[data-ember-action]:not(.close), .stats-section li.linked-stat a, .user-main .about .controls a, .user-navigation .new-private-message, .badges-section.top-section > p .more, .screened-ip-addresses .actions.col a, .styleguide .styleguide-menu ul li a {
   background-color: transparent;
   background-image: none;
@@ -63,29 +63,29 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   vertical-align: middle;
   white-space: nowrap;
 }
-.nav-pills > li > a:focus, .btn-flat:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit:not(.multi-select) .select-kit-header:focus, .search-menu .no-results .widget-link:focus, .d-modal-cancel:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .submit-panel .cancel:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .small-action button:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .screened-ip-addresses .actions.col a:focus, .styleguide .styleguide-menu ul li a:focus, .nav-pills > li > a:hover, .btn-flat:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit:not(.multi-select) .select-kit-header:hover, .search-menu .no-results .widget-link:hover, .d-modal-cancel:hover, .modal-footer :not(.disclaimer) a:hover, .pika-button:hover, .pika-next:hover,
+.nav-pills > li > a:focus, .btn-flat:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit:not(.multi-select) .select-kit-header:focus, .search-menu .no-results .widget-link:focus, .d-modal-cancel:focus, .discourse-local-dates-create-modal-footer .cancel-action:focus, .modal-footer :not(.disclaimer) a:focus, .upload-selector ~ .modal-footer a.pull-right:focus, .pika-button:focus, .pika-next:focus,
+.pika-prev:focus, #reply-control .submit-panel .cancel:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .small-action button:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .screened-ip-addresses .actions.col a:focus, .styleguide .styleguide-menu ul li a:focus, .nav-pills > li > a:hover, .btn-flat:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit:not(.multi-select) .select-kit-header:hover, .search-menu .no-results .widget-link:hover, .d-modal-cancel:hover, .discourse-local-dates-create-modal-footer .cancel-action:hover, .modal-footer :not(.disclaimer) a:hover, .upload-selector ~ .modal-footer a.pull-right:hover, .pika-button:hover, .pika-next:hover,
 .pika-prev:hover, #reply-control .submit-panel .cancel:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .small-action button:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .display-row .controls a[data-ember-action]:hover:not(.close), .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, .user-navigation .new-private-message:hover, .badges-section.top-section > p .more:hover, .screened-ip-addresses .actions.col a:hover, .styleguide .styleguide-menu ul li a:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: color-chooser($primary, $primary);
 }
-.nav-pills > li > a.btn-hover, .btn-hover.btn-flat, .btn-hover.btn, div.poll .poll-buttons a.btn-hover, .select-kit:not(.multi-select) .btn-hover.select-kit-header, .search-menu .no-results .btn-hover.widget-link, .btn-hover.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-hover, .btn-hover.pika-button, .btn-hover.pika-next,
+.nav-pills > li > a.btn-hover, .btn-hover.btn-flat, .btn-hover.btn, div.poll .poll-buttons a.btn-hover, .select-kit:not(.multi-select) .btn-hover.select-kit-header, .search-menu .no-results .btn-hover.widget-link, .btn-hover.d-modal-cancel, .discourse-local-dates-create-modal-footer .btn-hover.cancel-action, .modal-footer :not(.disclaimer) a.btn-hover, .upload-selector ~ .modal-footer a.btn-hover.pull-right, .btn-hover.pika-button, .btn-hover.pika-next,
 .btn-hover.pika-prev, #reply-control .submit-panel .btn-hover.cancel, #reply-control .btn-hover.toggle-preview, .fps-select a.btn-hover, #share-link .reply-as-new-topic a.btn-hover, .period-chooser.dropdown-select-box.select-kit .btn-hover.period-chooser-header, .small-action button.btn-hover, .topic-map .link-summary a.btn-hover, .topic-meta-data .post-info a.btn-hover, .display-row .controls a.btn-hover[data-ember-action]:not(.close), .stats-section li.linked-stat a.btn-hover, .user-main .about .controls a.btn-hover, .user-navigation .btn-hover.new-private-message, .badges-section.top-section > p .btn-hover.more, .screened-ip-addresses .actions.col a.btn-hover, .styleguide .styleguide-menu ul li a.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: color-chooser($primary, $primary);
 }
-.nav-pills > li > a:active, .btn-flat:active, .btn:active, div.poll .poll-buttons a:active, .select-kit:not(.multi-select) .select-kit-header:active, .search-menu .no-results .widget-link:active, .d-modal-cancel:active, .modal-footer :not(.disclaimer) a:active, .pika-button:active, .pika-next:active,
-.pika-prev:active, #reply-control .submit-panel .cancel:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .small-action button:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .display-row .controls a[data-ember-action]:active:not(.close), .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .screened-ip-addresses .actions.col a:active, .styleguide .styleguide-menu ul li a:active, .nav-pills > li > a.btn-active, .btn-active.btn-flat, .btn-active.btn, div.poll .poll-buttons a.btn-active, .select-kit:not(.multi-select) .btn-active.select-kit-header, .search-menu .no-results .btn-active.widget-link, .btn-active.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-active, .btn-active.pika-button, .btn-active.pika-next,
+.nav-pills > li > a:active, .btn-flat:active, .btn:active, div.poll .poll-buttons a:active, .select-kit:not(.multi-select) .select-kit-header:active, .search-menu .no-results .widget-link:active, .d-modal-cancel:active, .discourse-local-dates-create-modal-footer .cancel-action:active, .modal-footer :not(.disclaimer) a:active, .upload-selector ~ .modal-footer a.pull-right:active, .pika-button:active, .pika-next:active,
+.pika-prev:active, #reply-control .submit-panel .cancel:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .small-action button:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .display-row .controls a[data-ember-action]:active:not(.close), .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .screened-ip-addresses .actions.col a:active, .styleguide .styleguide-menu ul li a:active, .nav-pills > li > a.btn-active, .btn-active.btn-flat, .btn-active.btn, div.poll .poll-buttons a.btn-active, .select-kit:not(.multi-select) .btn-active.select-kit-header, .search-menu .no-results .btn-active.widget-link, .btn-active.d-modal-cancel, .discourse-local-dates-create-modal-footer .btn-active.cancel-action, .modal-footer :not(.disclaimer) a.btn-active, .upload-selector ~ .modal-footer a.btn-active.pull-right, .btn-active.pika-button, .btn-active.pika-next,
 .btn-active.pika-prev, #reply-control .submit-panel .btn-active.cancel, #reply-control .btn-active.toggle-preview, .fps-select a.btn-active, #share-link .reply-as-new-topic a.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-active.period-chooser-header, .small-action button.btn-active, .topic-map .link-summary a.btn-active, .topic-meta-data .post-info a.btn-active, .display-row .controls a.btn-active[data-ember-action]:not(.close), .stats-section li.linked-stat a.btn-active, .user-main .about .controls a.btn-active, .user-navigation .btn-active.new-private-message, .badges-section.top-section > p .btn-active.more, .screened-ip-addresses .actions.col a.btn-active, .styleguide .styleguide-menu ul li a.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   color: color-chooser($primary, $primary);
 }
-.nav-pills > li > a:focus, .btn-flat:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit:not(.multi-select) .select-kit-header:focus, .search-menu .no-results .widget-link:focus, .d-modal-cancel:focus, .modal-footer :not(.disclaimer) a:focus, .pika-button:focus, .pika-next:focus,
+.nav-pills > li > a:focus, .btn-flat:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit:not(.multi-select) .select-kit-header:focus, .search-menu .no-results .widget-link:focus, .d-modal-cancel:focus, .discourse-local-dates-create-modal-footer .cancel-action:focus, .modal-footer :not(.disclaimer) a:focus, .upload-selector ~ .modal-footer a.pull-right:focus, .pika-button:focus, .pika-next:focus,
 .pika-prev:focus, #reply-control .submit-panel .cancel:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .small-action button:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .screened-ip-addresses .actions.col a:focus, .styleguide .styleguide-menu ul li a:focus {
   outline: 0;
 }
-.nav-pills > li > a[disabled], [disabled].btn-flat, [disabled].btn, div.poll .poll-buttons a[disabled], .select-kit:not(.multi-select) [disabled].select-kit-header, .search-menu .no-results [disabled].widget-link, [disabled].d-modal-cancel, .modal-footer :not(.disclaimer) a[disabled], [disabled].pika-button, [disabled].pika-next,
-[disabled].pika-prev, #reply-control .submit-panel [disabled].cancel, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .small-action button[disabled], .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .display-row .controls a[disabled][data-ember-action]:not(.close), .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .screened-ip-addresses .actions.col a[disabled], .styleguide .styleguide-menu ul li a[disabled], .nav-pills > li > a.disabled, .disabled.btn-flat, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit:not(.multi-select) .disabled.select-kit-header, .search-menu .no-results .disabled.widget-link, .disabled.d-modal-cancel, .modal-footer :not(.disclaimer) a.disabled, .disabled.pika-button, .disabled.pika-next,
+.nav-pills > li > a[disabled], [disabled].btn-flat, [disabled].btn, div.poll .poll-buttons a[disabled], .select-kit:not(.multi-select) [disabled].select-kit-header, .search-menu .no-results [disabled].widget-link, [disabled].d-modal-cancel, .discourse-local-dates-create-modal-footer [disabled].cancel-action, .modal-footer :not(.disclaimer) a[disabled], .upload-selector ~ .modal-footer a[disabled].pull-right, [disabled].pika-button, [disabled].pika-next,
+[disabled].pika-prev, #reply-control .submit-panel [disabled].cancel, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .small-action button[disabled], .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .display-row .controls a[disabled][data-ember-action]:not(.close), .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .screened-ip-addresses .actions.col a[disabled], .styleguide .styleguide-menu ul li a[disabled], .nav-pills > li > a.disabled, .disabled.btn-flat, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit:not(.multi-select) .disabled.select-kit-header, .search-menu .no-results .disabled.widget-link, .disabled.d-modal-cancel, .discourse-local-dates-create-modal-footer .disabled.cancel-action, .modal-footer :not(.disclaimer) a.disabled, .upload-selector ~ .modal-footer a.disabled.pull-right, .disabled.pika-button, .disabled.pika-next,
 .disabled.pika-prev, #reply-control .submit-panel .disabled.cancel, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .small-action button.disabled, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .display-row .controls a.disabled[data-ember-action]:not(.close), .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .user-navigation .disabled.new-private-message, .badges-section.top-section > p .disabled.more, .screened-ip-addresses .actions.col a.disabled, .styleguide .styleguide-menu ul li a.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
@@ -231,13 +231,13 @@ div.poll .poll-buttons .btn-primary.btn:active, .popup-menu .btn-primary.btn:act
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, .d-editor .d-editor-modal .controls .btn, .modal.history-modal #revision .btn, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn {
+div.poll .poll-buttons .btn, .d-editor .d-editor-modal .controls .btn, .discourse-local-dates-create-modal-footer .cancel-action, .modal.history-modal #revision .btn, .upload-selector ~ .modal-footer a.pull-right, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn {
   margin-left: 8px;
   padding-right: 8px;
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, .d-editor .d-editor-modal .controls .btn:first-child, .modal.history-modal #revision .btn:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child {
+div.poll .poll-buttons .btn:first-child, .d-editor .d-editor-modal .controls .btn:first-child, .discourse-local-dates-create-modal-footer .cancel-action:first-child, .modal.history-modal #revision .btn:first-child, .upload-selector ~ .modal-footer a.pull-right:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child {
   margin-left: 0;
 }
 
@@ -560,7 +560,7 @@ body textarea[readonly], .controls [readonly].static, .select-kit.multi-select [
   pointer-events: none;
 }
 
-.upload-selector .radios .inputs input, .select-kit.multi-select .select-kit-header, .create-account input[type='email'], .create-account input[type='password'], .create-account input[type='text'],
+.select-kit.multi-select .select-kit-header, .create-account input[type='email'], .create-account input[type='password'], .create-account input[type='text'],
 #login-form input[type='email'],
 #login-form input[type='password'],
 #login-form input[type='text'], .forgot-password-modal input[type='text'], .search-menu input[type='text'], .search-advanced .search-bar .search-query, .search-advanced-sidebar input[type='number'],
@@ -1576,9 +1576,33 @@ body .input-prepend .add-on + input {
   margin-top: 8px;
 }
 
+.upload-selector label {
+  padding-left: 8px;
+}
+.upload-selector .radios {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.upload-selector .radios, .upload-selector .radios:last-child:not(:nth-child(2)) {
+  min-height: auto;
+}
+.upload-selector .radios:last-child {
+  margin-bottom: 0;
+}
+.upload-selector .radios label {
+  margin-right: 8px;
+}
+.upload-selector .radios label:last-child {
+  margin-bottom: 0;
+}
 .upload-selector .radios .inputs input {
   margin-bottom: 8px;
   width: 100%;
+}
+.upload-selector .radios .inputs .hint {
+  margin: 0;
+  text-align: right;
 }
 
 div.ac-wrap {
@@ -3640,7 +3664,6 @@ div.menu-links-header .menu-links-row li.user {
   background-color: color-chooser(#424242, #ffffff);
   border-radius: 4px;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
-  max-width: 560px;
   outline: 0;
   width: calc(100% - 32px);
 }
@@ -3659,6 +3682,12 @@ div.menu-links-header .menu-links-row li.user {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
   font-size: 14px;
 }
+.close:active, .close:focus, .close:hover {
+  color: color-chooser(white, rgba(0, 0, 0, 0.87));
+}
+.close:focus {
+  outline: 0;
+}
 
 .d-modal-cancel {
   margin: 0 0 0 8px;
@@ -3667,6 +3696,26 @@ div.menu-links-header .menu-links-row li.user {
 }
 .d-modal-cancel:last-child {
   margin-left: 0;
+}
+
+.discourse-local-dates-create-modal .control-group {
+  margin-bottom: 16px;
+}
+.discourse-local-dates-create-modal .control-group.recurrence {
+  margin-top: 0;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .date .date-input,
+.discourse-local-dates-create-modal .form .date-time-configuration .time .time-input {
+  margin-right: 0;
+  padding: 8px 0 7px;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .range .from .control-group,
+.discourse-local-dates-create-modal .form .date-time-configuration .range .to .control-group {
+  margin-right: 16px;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .range .to-indicator {
+  margin: 0 0 16px;
+  text-align: inherit;
 }
 
 .edit-category-modal .edit-category-tab-security section.field > .btn {

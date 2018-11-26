@@ -317,13 +317,6 @@ body .boxed .contents {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#reply-control .reply-to .composer-controls button {
-  padding: initial;
-
-  &.toggle-toolbar {
-    margin-right: 10px;
-  }
-}
 #reply-control .grippie::before {
   display: none;
 }
@@ -332,6 +325,10 @@ body .boxed .contents {
       align-items: center;
   display: -ms-flexbox;
   display: flex;
+}
+#reply-control .reply-to .composer-controls button {
+  margin-left: 8px;
+  padding: 0;
 }
 #reply-control .title-and-category {
   -ms-flex-direction: column;
