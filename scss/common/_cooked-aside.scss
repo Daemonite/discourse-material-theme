@@ -80,12 +80,15 @@ aside {
     margin-bottom: $card-inner-spacer-y;
 
     blockquote {
-      border-radius: 0;
       width: auto !important;
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    .badge-wrapper {
+      margin-left: $card-inner-spacer-x;
     }
 
     .expanded-quote {
@@ -103,14 +106,12 @@ aside {
       }
     }
 
-    .quote-controls {
-      color: color-chooser($white-secondary, $black-secondary);
-    }
-
     .title {
+      align-items: center;
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       border-left: 0;
       color: color-chooser($white-secondary, $black-secondary);
+      display: flex;
       padding: $card-padding-y $card-padding-x 0;
 
       .cooked & {
@@ -119,6 +120,7 @@ aside {
       }
 
       .avatar {
+        flex-shrink: 0;
         margin-top: 0;
         margin-right: $card-inner-spacer-x;
       }
@@ -275,5 +277,16 @@ div {
         padding-bottom: 0;
       }
     }
+  }
+}
+
+.quote-controls {
+  color: color-chooser($white-secondary, $black-secondary);
+  flex-shrink: 0;
+  margin-left: auto;
+  order: 1;
+
+  .d-icon {
+    margin-left: 0;
   }
 }
