@@ -456,10 +456,6 @@
     }
   }
 
-  .toggle-toolbar {
-    @include material-icons('menu');
-  }
-
   .user-selector {
     margin-top: ($card-inner-spacer-y / 2);
     margin-bottom: ($card-inner-spacer-y / 2);
