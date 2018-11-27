@@ -1,9 +1,10 @@
 .cooked {
-  .topic-body .contents & {
+  line-height: $line-height-base;
+
+  .topic-body & {
     margin-right: ($card-padding-x * -1);
     margin-left: ($card-padding-x * -1);
-    padding-right: $card-padding-x;
-    padding-left: $card-padding-x;
+    padding: 0 $card-padding-x;
   }
 
   blockquote {
@@ -41,17 +42,24 @@
     margin-left: ($card-padding-x * -1);
   }
 
+  ul {
+    margin-bottom: $spacer;
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
+  > :empty:first-child {
+    display: none;
+  }
+
   > :last-child {
     margin-bottom: 0;
 
     &:empty {
       margin-top: ($card-inner-spacer-y * -1);
     }
-  }
-
-  .bd-clipboard {
-    margin-right: ($card-padding-x * -1);
-    margin-left: ($card-padding-x * -1);
   }
 }
 

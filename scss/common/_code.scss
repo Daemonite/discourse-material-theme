@@ -59,28 +59,24 @@ pre {
 // https://github.com/Daemonite/discourse-clipboard
 
 .bd-clipboard {
-  body & {
-    top: $card-padding-y;
-    right: ($card-padding-x / 2);
-  }
-}
-
-.code-highlight {
-  body & {
-    margin-top: 0;
-    margin-bottom: $spacer;
-
-    .hljs {
-      padding-right: calc(1.428572em + #{$card-padding-x});
-    }
-  }
-
-  pre {
-    padding: 0;
+  .code-highlight & {
+    margin-right: .25em;
+    right: ($card-padding-x * -1);
   }
 }
 
 .hljs {
   color: unquote('$primary');
   padding: $pre-padding;
+
+  pre & {
+    padding: 0;
+  }
+
+  .code-highlight & {
+    margin: ($card-padding-y * -1) ($card-padding-x * -1);
+    padding-top: $card-padding-y;
+    padding-bottom: $card-padding-y;
+    padding-left: $card-padding-x;
+  }
 }
