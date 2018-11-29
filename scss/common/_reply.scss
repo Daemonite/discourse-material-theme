@@ -1,14 +1,46 @@
+.composer-popup {
+  border-radius: $modal-border-radius;
+  box-shadow: $modal-box-shadow;
+  padding: $modal-padding-y $modal-padding-x;
+  top: ($material-icon-size + $spacer * 2);
+  bottom: ($btn-height + $card-padding-y + $spacer);
+
+  a {
+    &.close {
+      color: color-chooser($white-secondary, $black-secondary);
+      float: right;
+      font-size: $font-size-base;
+      opacity: 1;
+      position: relative;
+      top: (($font-size-h3 * $line-height-h3 - $font-size-h3) / 2);
+      right: 0;
+
+      @include active-focus-hover {
+        color: color-chooser($white-primary, $black-primary);
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
 #reply-control {
-  background-color: color-chooser($dropdown-bg-dark, $dropdown-bg-light);
-  border-radius: ($dropdown-border-radius * 2) ($dropdown-border-radius * 2) 0 0;
-  box-shadow: $dropdown-box-shadow;
+  background-color: color-chooser($modal-bg-dark, $modal-bg-light);
+  border-radius: ($modal-border-radius * 2) ($modal-border-radius * 2) 0 0;
+  box-shadow: $modal-box-shadow;
 
   &.closed {
     display: none;
   }
 
   &.draft {
-    background-color: color-chooser($dropdown-bg-light, $dropdown-bg-dark);
+    background-color: color-chooser($modal-bg-light, $modal-bg-dark);
     color: color-chooser($black-secondary, $white-secondary);
     height: ($material-icon-size + $spacer) !important;
     left: auto;
@@ -186,7 +218,7 @@
     }
 
     .select-kit-body {
-      border-radius: $dropdown-border-radius;
+      border-radius: $modal-border-radius;
     }
 
     .select-kit-header {
@@ -241,7 +273,7 @@
 
   .grippie {
     align-items: center;
-    background-color: color-chooser($dropdown-bg-light, $dropdown-bg-dark);
+    background-color: color-chooser($modal-bg-light, $modal-bg-dark);
     color: color-chooser($black-secondary, $white-secondary);
     flex-shrink: 0;
     height: ($material-icon-size + $spacer);
@@ -249,7 +281,7 @@
     padding: 0;
 
     @media (min-width: ($container-max-width + 1)) {
-      border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+      border-radius: $modal-border-radius $modal-border-radius 0 0;
     }
 
     &::before {
