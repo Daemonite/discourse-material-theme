@@ -46,6 +46,16 @@
 .select-kit {
   &.combo-box {
     &.category-drop {
+      .badge-wrapper {
+        font-size: $chip-font-size;
+      }
+
+      .caret-icon {
+        background-color: transparent !important;
+        border: 0;
+        color: inherit !important;
+      }
+
       .category-drop-header {
         padding: $btn-padding-y $btn-padding-x;
       }
@@ -191,7 +201,7 @@
     &.is-expanded {
       &.is-above {
         .select-kit-body {
-          border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+          border-radius: $dropdown-border-radius;
           top: auto !important;
           bottom: 100% !important;
         }
@@ -203,7 +213,7 @@
       }
 
       .select-kit-body {
-        border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+        border-radius: $dropdown-border-radius;
         top: 100% !important;
         bottom: auto !important;
       }
@@ -242,12 +252,14 @@
       }
 
       .filter-input {
+        height: auto;
+        max-width: none;
+        padding: $dropdown-padding-y-sm ($dropdown-link-padding-x-sm / 2) $dropdown-padding-y-sm $dropdown-link-padding-x-sm;
+
         &,
         &:focus {
-          height: auto;
-          max-width: none;
-          padding: $dropdown-padding-y-sm ($dropdown-link-padding-x-sm / 2) $dropdown-padding-y-sm $dropdown-link-padding-x-sm;
-          width: 100%;
+          flex-grow: 1;
+          width: auto;
         }
       }
     }
@@ -288,7 +300,7 @@
       }
 
       .selected-color .color-preview {
-        border-radius: 4px;
+        border-radius: $dropdown-border-radius;
         height: 4px;
         margin: 0;
       }
@@ -336,17 +348,23 @@
 
   &:not(.multi-select) {
     .select-kit-header {
-      // @extend %btn-base;
-      // @extend %btn-raised;
 
       align-items: center;
       display: flex;
       height: $btn-height;
 
+      &:not(.btn) {
+        @extend %btn-base;
+        @extend %btn-raised;
+      }
+
       &.is-focused {
-        // background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
         border: 0;
         box-shadow: $btn-box-shadow-active;
+
+        &:not(.btn) {
+          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+        }
       }
     }
   }
@@ -361,8 +379,22 @@
 
   .select-kit-header {
     .badge-wrapper {
-      transform: scale($chip-sm-scale);
-      transform-origin: 0 50%;
+      border-radius: 0;
+      display: inline;
+      font-size: inherit;
+      line-height: inherit;
+      margin: 0;
+      padding: 0;
+
+      .badge-category {
+        border-radius: 0;
+        min-height: 0;
+        padding: 0;
+      }
+
+      .badge-category-bg {
+        display: none;
+      }
     }
 
     .caret-icon {
@@ -375,6 +407,10 @@
   }
 
   .select-kit-row {
+    .badge-wrapper .badge-category .d-icon {
+      margin-right: $chip-inner-spacer-x;
+    }
+
     .d-icon {
       margin-right: $dropdown-inner-spacer-x;
     }

@@ -64,4 +64,18 @@ ol {
       }
     }
   }
+
+  .select-kit {
+    &.is-below.is-left-aligned {
+      .select-kit-body {
+        border-top-left-radius: 0;
+      }
+    }
+
+    &.is-below.is-right-aligned {
+      .select-kit-body {
+        border-top-right-radius: 0;
+      }
+    }
+  }
 }
