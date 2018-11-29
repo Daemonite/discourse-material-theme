@@ -3,10 +3,6 @@ nav {
     float: left;
     position: relative;
 
-    #post_1 & {
-      max-width: calc(100% - #{$card-inner-spacer-x * 3 + $material-icon-size});
-    }
-
     button {
       @extend %btn-footer;
 
@@ -668,7 +664,6 @@ section {
   h3 {
     @extend %typography-h6;
 
-    color: color-chooser($card-color-dark, $card-color-light);
     margin-bottom: ($card-inner-spacer-y / 2);
   }
 
@@ -680,13 +675,7 @@ section {
   }
 
   section {
-    border-top: 0;
-
-    &.avatars,
-    &.links,
-    &.map {
-      border-top: 1px solid color-chooser($white-divider, $black-divider);
-    }
+    border-top: 1px solid color-chooser($white-divider, $black-divider);
   }
 
   .avatar {
@@ -716,13 +705,14 @@ section {
   }
 
   .buttons {
-    position: absolute;
-    top: (($btn-height + $card-inner-spacer-y / 2) * -1);
-    right: ($card-inner-spacer-x);
-    z-index: 2;
+    margin-right: ($card-inner-spacer-x * -1);
 
     .btn {
       @extend %btn-raised-reverse;
+
+      border-radius: 0 0 $card-border-radius;
+      padding-right: $btn-padding-x;
+      padding-left: $btn-padding-x;
     }
   }
 
@@ -756,17 +746,31 @@ section {
   }
 
   .links {
-    padding: $card-padding-y $card-padding-x ($card-padding-y / 2);
+    padding: $card-padding-y $card-padding-x;
   }
 
   .link-summary {
-    margin-right: ($card-inner-spacer-x / -2);
-    margin-left: ($card-inner-spacer-x / -2);
+    margin-top: ($card-inner-spacer-y / 2);
 
-    a {
-      @extend %btn-base;
-      @extend %btn-flat;
-      @extend %btn-footer;
+    .btn {
+      background-color: transparent;
+      color: color-chooser($btn-color-dark, $btn-color-light);
+
+      @include focus-hover {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      }
+
+      &:active {
+        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+      }
+
+      &.d-hover {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+
+        &:active {
+          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+        }
+      }
     }
   }
 
@@ -875,9 +879,17 @@ section {
       padding: 0 0 ($card-inner-spacer-y / 2);
     }
 
+    tr:last-child td {
+      padding-bottom: 0;
+    }
+
     .topic-link {
       margin-right: $card-inner-spacer-x;
     }
+  }
+
+  .topic-map-expanded {
+    border-top: 0;
   }
 }
 
@@ -1065,7 +1077,6 @@ section {
   margin-top: 0;
   margin-bottom: ($card-inner-spacer-y / 2);
   text-align: inherit;
-  width: calc(100% - #{$card-inner-spacer-x * 3 + $material-icon-size});
 
   a {
     margin-top: (($btn-height - $material-icon-size) / 2);
