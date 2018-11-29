@@ -1,17 +1,7 @@
 #reply-control {
   background-color: color-chooser($dropdown-bg-dark, $dropdown-bg-light);
+  border-radius: ($dropdown-border-radius * 2) ($dropdown-border-radius * 2) 0 0;
   box-shadow: $dropdown-box-shadow;
-  max-width: $container-max-width;
-
-  @media (min-width: ($container-max-width + 2)) {
-    border-radius: ($dropdown-border-radius * 2) ($dropdown-border-radius * 2) 0 0;
-    margin-right: 0;
-    right: 1px;
-  }
-
-  @media (min-width: ($container-max-width + $grid-gutter-width-lg * 2)) {
-    right: $grid-gutter-width-lg;
-  }
 
   &.closed {
     display: none;
