@@ -9,12 +9,6 @@ aside {
 
     header {
       margin-bottom: ($card-inner-spacer-y / 2);
-
-      &.source {
-        .ember-view & {
-          background-position: 0 50%;
-        }
-      }
     }
 
     + .onebox {
@@ -31,11 +25,6 @@ aside {
         overflow: hidden;
       }
 
-      img {
-        margin-right: ($card-inner-spacer-x * 2);
-        width: ($card-padding-x * 6);
-      }
-
       p {
         overflow: hidden;
 
@@ -44,32 +33,21 @@ aside {
         }
       }
 
-      > :last-child {
-        margin-bottom: 0;
-
-        &:empty {
-          display: block;
-          margin-top: ($card-inner-spacer-y * -1);
-        }
-      }
-
       > .labels:last-child {
         margin-top: ($card-inner-spacer-y * -1);
       }
 
-      .date {
-        margin-top: 0 !important;
-        margin-bottom: $card-inner-spacer-y;
-        overflow: hidden;
-
-        .user {
-          margin-top: 0 !important;
-        }
+      .aspect-image {
+        margin-top: (($font-size-h5 * $line-height-h5 - $font-size-h5) / 2);
+        margin-right: ($card-inner-spacer-x * 2);
+        margin-bottom: ($card-inner-spacer-y / 2);
+        width: ($card-padding-x * 6);
       }
 
       .onebox-avatar {
         border-radius: 50%;
         height: $card-avatar-size;
+        margin-right: ($card-inner-spacer-x * 2);
         width: $card-avatar-size;
       }
     }
@@ -276,6 +254,16 @@ div {
         margin-bottom: ($card-inner-spacer-y / 4);
         padding-bottom: 0;
       }
+    }
+  }
+}
+
+.onebox {
+  &.gfycat,
+  &.whitelistedgeneric {
+    .site-icon {
+      margin-right: ($card-inner-spacer-x / 2);
+      vertical-align: text-top;
     }
   }
 }
