@@ -246,6 +246,16 @@ div {
 
   .results {
     margin-top: $menu-panel-inner-spacer-y;
+
+    .show-more {
+      padding: 0;
+      text-align: center;
+
+      .widget-link {
+        @extend %btn-base;
+        @extend %btn-flat;
+      }
+    }
   }
 
   .search-context {
