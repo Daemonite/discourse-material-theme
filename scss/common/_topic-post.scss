@@ -11,13 +11,29 @@ nav {
       @extend %btn-footer;
 
       color: color-chooser($white-secondary, $black-secondary);
+      font-size: $btn-font-size;
+      margin-right: 0;
+      padding: $btn-padding-y $card-inner-spacer-x;
+
+      @include focus-hover {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      }
 
       &:active {
+        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
         box-shadow: none;
       }
 
       &.bookmark {
         padding: $btn-padding-y $card-inner-spacer-x;
+      }
+
+      &.d-hover {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+
+        &:active {
+          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+        }
       }
 
       &.delete {
@@ -40,20 +56,15 @@ nav {
         }
       }
 
-      &.has-like {
-        color: unquote('$love');
-      }
-
       &.like {
         @include focus-hover {
           color: unquote('$love');
         }
-      }
 
-      .read-icon::before {
-        @extend %material-icons;
-
-        content: 'bookmark';
+        &:active,
+        &.d-hover {
+          color: unquote('$love');
+        }
       }
     }
 
@@ -75,19 +86,42 @@ nav {
 
     .like-button {
       border-radius: $btn-border-radius;
+      color: color-chooser($white-secondary, $black-secondary);
+
+      @include focus-hover {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+        color: color-chooser($btn-color-dark, $btn-color-light);
+      }
 
       &:active {
         background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
         box-shadow: none;
+        color: color-chooser($btn-color-dark, $btn-color-light);
       }
 
       .like-count {
+        color: inherit !important;
         font-size: $btn-font-size;
+
+        &:not(:last-child) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        &.regular-likes {
+          margin-right: 0;
+          padding-right: 0;
+        }
       }
 
       .toggle-like {
         margin-left: 0;
         padding: $btn-padding-y $card-inner-spacer-x;
+
+        &:not(:first-child) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
       }
     }
 
@@ -133,6 +167,12 @@ nav {
         margin-left: $spacer-xs;
       }
     }
+  }
+}
+
+section {
+  &.post-menu-area {
+    padding-left: 0;
   }
 }
 
