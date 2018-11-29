@@ -1,3 +1,13 @@
+.algolia-enabled {
+  .d-header-icons .algolia-holder {
+    padding: 0;
+
+    form {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .d-header {
   box-shadow: $header-box-shadow;
   height: auto;
@@ -53,6 +63,7 @@
 
   .extra-info-wrapper {
     margin-left: $header-inner-spacer-x;
+    max-width: 100% !important;
 
     .badge-wrapper {
       margin-right: 0;
