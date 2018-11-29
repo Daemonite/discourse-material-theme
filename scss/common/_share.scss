@@ -21,11 +21,19 @@
     font-size: inherit;
     margin: 0;
     position: absolute;
-    top: ($card-inner-spacer-y + ($font-size-h4 * $line-height-h4 - $material-icon-size));
-    right: $card-inner-spacer-x;
+    top: ($card-padding-y + ($font-size-h4 * $line-height-h4 - $material-icon-size));
+    right: $card-padding-x;
 
     a {
       color: color-chooser($white-secondary, $black-secondary);
+
+      @include active-focus-hover {
+        color: color-chooser($white-primary, $black-primary);
+      }
+
+      &:focus {
+        outline: 0;
+      }
     }
   }
 
