@@ -175,20 +175,18 @@ section {
 .embedded-posts {
   border: 0;
   border-radius: 0;
-  margin-right: ($card-padding-x * -1);
-  margin-left: ($card-padding-x * -1);
   position: relative;
 
   &.bottom {
-    border-bottom-left-radius: $card-border-radius;
-    border-bottom-right-radius: $card-border-radius;
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
 
     .collapse-up {
       transform: none;
     }
 
     .row {
-      padding-bottom: ($card-inner-spacer-y / 2);
+      padding-bottom: 0;
 
       .topic-avatar,
       .topic-body {
@@ -197,23 +195,38 @@ section {
     }
   }
 
+  &.top {
+    margin-bottom: 0;
+    margin-left: 0;
+    width: $topic-body-width;
+
+    .collapse-down {
+      transform: none;
+    }
+
+    .row {
+      position: relative;
+
+      .topic-avatar,
+      .topic-body {
+        border-top: 0;
+      }
+    }
+
+    .topic-body {
+      border-radius: 0;
+    }
+  }
+
+  .collapse-down,
   .collapse-up {
-    background-color: transparent;
+    @extend %btn-raised-reverse;
+
     border: 0;
-    color: color-chooser($btn-color-dark, $btn-color-light);
-    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2);
+    color: color-chooser($white-secondary, $black-secondary);
+    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
     padding: $btn-padding-y-sm $card-inner-spacer-x;
     position: static;
-
-    @include focus-hover {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-      color: color-chooser($btn-color-dark, $btn-color-light);
-    }
-
-    &:active {
-      background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-      background-image: none;
-    }
   }
 
   .cooked {
@@ -227,17 +240,18 @@ section {
   .topic-body {
     @extend %card-block;
 
-    background-color: color-chooser($dark-3, $light-3);
+    background-color: color-chooser($dark-2, $light-2);
+    border-radius: 0;
     box-shadow: none;
     margin-bottom: 0;
     width: auto;
-  }
 
-  .topic-meta-data {
-    min-height: $card-avatar-size;
-    padding-top: 0;
-    padding-right: 0;
-    padding-left: ($card-avatar-size + $card-inner-spacer-y);
+    .topic-meta-data {
+      min-height: $card-avatar-size;
+      padding-top: 0;
+      padding-right: 0;
+      padding-left: ($card-avatar-size + $card-inner-spacer-y);
+    }
   }
 }
 
@@ -409,6 +423,13 @@ section {
   top: 0;
 }
 
+.reply-to-tab {
+  img {
+    margin-right: ($card-inner-spacer-x / 2);
+    margin-left: ($card-inner-spacer-x / 2);
+  }
+}
+
 .signup-cta {
   .buttons {
     align-items: center;
@@ -564,6 +585,7 @@ section {
   }
 
   .reply-to-tab {
+    color: color-chooser($white-secondary, $black-secondary);
     margin: 0 $card-inner-spacer-x 0 0;
 
     .avatar {
@@ -686,10 +708,6 @@ section {
 
   .avatars {
     padding: $card-padding-y $card-padding-x;
-
-    > div {
-      margin: 0;
-    }
 
     .post-count {
       @extend %typography-caption;
@@ -894,8 +912,6 @@ section {
 }
 
 .topic-meta-data {
-  // @extend %card-block;
-
   .topic-post & {
     align-items: center;
     display: flex;
@@ -923,6 +939,15 @@ section {
 
 .topic-post {
   border-left: 0;
+
+  .boxed > .row {
+    position: relative;
+
+    + .row .topic-body {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
 }
 
 #topic-progress {
@@ -1067,6 +1092,12 @@ section {
       display: none;
     }
   }
+}
+
+.whisper .post-info.whisper {
+  color: color-chooser($white-secondary, $black-secondary);
+  margin-right: $card-inner-spacer-x;
+  margin-left: 0;
 }
 
 .who-liked {
