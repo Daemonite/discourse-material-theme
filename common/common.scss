@@ -20,7 +20,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono|Roboto+Slab");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, #reply-control .toggle-toolbar::before, nav.post-controls button .read-icon::before, .meta .expand::before, .meta .filename::before {
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, nav.post-controls button .read-icon::before, .meta .expand::before, .meta .filename::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -256,7 +256,7 @@ div.poll .poll-buttons .btn:first-child, .d-editor .d-editor-modal .controls .bt
 .category-boxes-with-topics .category-box-inner, .small-action, .topic-body, .admin-user .details, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about, .user-main .user-content .user-invite-controls, .user-main .user-stream, .user-nav, .user-preferences, .user-theme-creator .theme-details, .badge-card, .user-info, #user-card, section.about, .static-faq .body-page [itemprop='mainContentOfPage'], .static-privacy .body-page [itemprop='mainContentOfPage'], .static-tos .body-page [itemprop='mainContentOfPage'], .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .dashboard-inline-table, .dashboard-next .dashboard-stats, .dashboard-next .misc, .dashboard-next .section .section-body, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings, .site-texts {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   color: color-chooser($primary, $primary);
   padding: 0;
@@ -275,7 +275,7 @@ div.poll .poll-buttons .btn:first-child, .d-editor .d-editor-modal .controls .bt
   outline: 0;
 }
 
-.alert, .fps-result, .search-advanced .search-advanced-options, .search-advanced .search-bar, .search-advanced-sidebar, #share-link, .top-lists, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .topic-meta-data, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .user-theme-creator .theme-details, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, section.about, .static-faq .body-page [itemprop='mainContentOfPage'], .static-privacy .body-page [itemprop='mainContentOfPage'], .static-tos .body-page [itemprop='mainContentOfPage'], .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .dashboard-inline-table, .dashboard-next .dashboard-stats, .dashboard-next .misc, .dashboard-next .section .section-body, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings .setting, .site-texts {
+.alert, .fps-result, .search-advanced .search-advanced-options, .search-advanced .search-bar, .search-advanced-sidebar, #share-link, .top-lists, .category-boxes-with-topics .category-box-heading, .category-boxes-with-topics .featured-topics, .embedded-posts .topic-body, .small-action, .topic-body .regular, .topic-map .information, .stats-section, .top-sub-section.likes-section, .top-sub-section.links-section, .top-sub-section.replies-section, .top-sub-section.summary-user-list, .top-sub-section.topics-section, .user-main .about .details, .user-main .about .secondary, .user-main .user-stream .no-content, .user-nav, .user-preferences, .user-theme-creator .theme-details, .badge-card .badge-contents .badge-icon, .badge-card .badge-contents .badge-info, .user-info, #user-card .card-content, section.about, .static-faq .body-page [itemprop='mainContentOfPage'], .static-privacy .body-page [itemprop='mainContentOfPage'], .static-tos .body-page [itemprop='mainContentOfPage'], .admin-controls, .admin-customize .admin-container > .about, .admin-customize .show-current-style, .admin-contents div.groups > .span13, .admin-container div.user-fields .user-field, .content-body, .content-editor, .dashboard-inline-table, .dashboard-next .dashboard-stats, .dashboard-next .misc, .dashboard-next .section .section-body, .email-preview-digest .controls, .embedding-secondary, .admin-contents .groups-bulk, .settings .setting, .site-texts {
   padding: 16px 16px;
 }
 
@@ -688,7 +688,7 @@ strong {
 blockquote {
   background-color: color-chooser(#212121, #f5f5f5);
   border-left: 0;
-  border-radius: 2px;
+  border-radius: 4px;
   margin: 0 0 16px;
   padding: 24px 48px;
   position: relative;
@@ -1034,34 +1034,35 @@ pre code {
   padding: 0;
 }
 
-body .bd-clipboard {
-  top: 16px;
-  right: 8px;
-}
-
-body .code-highlight {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-body .code-highlight .hljs {
-  padding-right: calc(1.428572em + 16px);
-}
-.code-highlight pre {
-  padding: 0;
+.code-highlight .bd-clipboard {
+  margin-right: .25em;
+  right: -16px;
 }
 
 .hljs {
   color: $primary;
   padding: 16px 16px;
 }
-
-.topic-body .contents .cooked {
-  margin-right: -16px;
-  margin-left: -16px;
-  padding-right: 16px;
+pre .hljs {
+  padding: 0;
+}
+.code-highlight .hljs {
+  margin: -16px -16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 16px;
 }
+
+.cooked {
+  line-height: 1.428571;
+}
+.topic-body .cooked {
+  margin-right: -16px;
+  margin-left: -16px;
+  padding: 0 16px;
+}
 .cooked blockquote {
+  border-radius: 0;
   margin-right: -16px;
   margin-left: -16px;
 }
@@ -1091,15 +1092,20 @@ body .code-highlight .hljs {
   margin-right: -16px;
   margin-left: -16px;
 }
+.cooked ul {
+  margin-bottom: 16px;
+}
+.cooked ul ul {
+  margin-bottom: 0;
+}
+.cooked > :empty:first-child {
+  display: none;
+}
 .cooked > :last-child {
   margin-bottom: 0;
 }
 .cooked > :last-child:empty {
   margin-top: -16px;
-}
-.cooked .bd-clipboard {
-  margin-right: -16px;
-  margin-left: -16px;
 }
 
 .lazyYT-container {
@@ -1201,11 +1207,13 @@ aside.quote {
   margin-bottom: 16px;
 }
 aside.quote blockquote {
-  border-radius: 0;
   width: auto !important;
 }
 aside.quote blockquote:last-child {
   margin-bottom: 0;
+}
+aside.quote .badge-wrapper {
+  margin-left: 8px;
 }
 aside.quote .expanded-quote > :first-child {
   margin-top: 0;
@@ -1217,13 +1225,14 @@ aside.quote .expanded-quote > :last-child:empty {
   display: block;
   margin-top: -16px;
 }
-aside.quote .quote-controls {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
-}
 aside.quote .title {
+  -ms-flex-align: center;
+      align-items: center;
   background-color: color-chooser(#212121, #f5f5f5);
   border-left: 0;
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  display: -ms-flexbox;
+  display: flex;
   padding: 16px 16px 0;
 }
 .cooked aside.quote .title {
@@ -1231,6 +1240,8 @@ aside.quote .title {
   margin-left: -16px;
 }
 aside.quote .title .avatar {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-top: 0;
   margin-right: 8px;
 }
@@ -1325,6 +1336,18 @@ div.poll .results .percentage {
 div.poll .results .option {
   margin-bottom: 4px;
   padding-bottom: 0;
+}
+
+.quote-controls {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: auto;
+  -ms-flex-order: 1;
+      order: 1;
+}
+.quote-controls .d-icon {
+  margin-left: 0;
 }
 
 .dropdown-menu a {
@@ -4339,7 +4362,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 
 .pika-lendar {
-  border-radius: 2px;
+  border-radius: 4px;
   margin: 0;
   padding: 8px 8px;
   width: 296px;
@@ -4805,13 +4828,6 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   left: 0;
   text-indent: 0;
 }
-#reply-control .toggle-toolbar {
-  font-size: inherit !important;
-  line-height: inherit !important;
-}
-#reply-control .toggle-toolbar::before {
-  content: "menu";
-}
 #reply-control .user-selector {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -4890,7 +4906,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 
 .search-advanced .search-advanced-btn {
-  border-radius: 2px;
+  border-radius: 4px;
   display: block;
   padding: 16px 16px;
 }
@@ -5431,7 +5447,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 .category-boxes .category-box,
 .category-boxes-with-topics .category-box {
-  border-radius: 2px 0 0 2px;
+  border-radius: 4px 0 0 4px;
   border-left-width: 2px;
   margin: 0 4px 8px;
   width: calc(33.333333% - 8px);
@@ -5715,8 +5731,8 @@ nav.post-controls .show-replies i {
   position: relative;
 }
 .embedded-posts.bottom {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .embedded-posts.bottom .collapse-up {
   -webkit-transform: none;
@@ -5775,7 +5791,7 @@ nav.post-controls .show-replies i {
 }
 
 .has-pending-posts {
-  border-radius: 2px;
+  border-radius: 4px;
   margin-top: 0;
   margin-bottom: 24px;
   max-width: 690px;
@@ -5806,7 +5822,6 @@ nav.post-controls .show-replies i {
 }
 .meta .filename {
   margin: 0 8px 8px 16px;
-  max-width: none;
 }
 .meta .filename::before {
   content: 'photo';
@@ -5872,6 +5887,9 @@ nav.post-controls .show-replies i {
   margin-left: 8px;
 }
 
+.post-links-container {
+  margin-left: 0;
+}
 .post-links-container ul li {
   margin: 0.000003px 0;
   overflow: hidden;
@@ -5911,7 +5929,6 @@ nav.post-controls .show-replies i {
   height: 24px;
   line-height: 24px;
   top: 0;
-  right: 0;
 }
 
 .signup-cta .buttons {
@@ -6265,44 +6282,16 @@ nav.post-controls .show-replies i {
   margin-right: 8px;
 }
 
-.topic-meta-data {
+.topic-post .topic-meta-data {
   -ms-flex-align: center;
       align-items: center;
   display: -ms-flexbox;
   display: flex;
   min-height: 52px;
-  padding-right: 8px;
-  padding-bottom: 0;
-  padding-left: 68px;
-}
-.topic-meta-data .names {
-  float: none;
-  margin-right: auto;
-}
-.topic-meta-data .names span {
-  display: block;
-  font-size: inherit;
-  max-width: none;
-  padding-right: 8px;
-}
-.topic-meta-data .names span a {
-  color: $primary;
-}
-.topic-meta-data .names span a:focus, .topic-meta-data .names span a:hover {
-  color: $primary;
+  padding: 16px 8px 0 68px;
 }
 .topic-meta-data .post-info {
-  display: block;
-  float: none;
-  font-size: inherit;
-  margin-top: 0;
-  -ms-flex-order: 1;
-      order: 1;
-}
-.topic-meta-data .post-info.edits {
   margin-right: 0;
-  -ms-flex-order: 0;
-      order: 0;
 }
 .topic-meta-data .post-info a {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
@@ -6312,6 +6301,10 @@ nav.post-controls .show-replies i {
 
 .topic-notifications-button .reason {
   margin-bottom: 0;
+}
+
+.topic-post {
+  border-left: 0;
 }
 
 #topic-progress {
@@ -6667,7 +6660,7 @@ nav.post-controls .show-replies i {
   margin-bottom: 0;
 }
 .user-main .about {
-  border-radius: 2px 2px 0 0;
+  border-radius: 4px 4px 0 0;
   margin-bottom: 0;
 }
 .user-main .about.collapsed-info.has-background .details {
@@ -7013,7 +7006,7 @@ nav.post-controls .show-replies i {
 }
 
 .user-nav {
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 4px 4px;
   margin: 0 0 24px;
 }
 .user-nav .fa, .user-nav .fa.fa-comment {
@@ -7099,7 +7092,7 @@ nav.post-controls .show-replies i {
   margin-bottom: 0;
 }
 .user-preferences .warning {
-  border-radius: 2px;
+  border-radius: 4px;
   margin-bottom: 16px;
   padding: 16px 16px;
   width: auto;
@@ -8245,7 +8238,7 @@ div.badges .buttons {
 @media (max-width: 700px) {
   .content-list {
     background-color: color-chooser(#424242, #ffffff);
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
     float: none;
     margin-right: 0;
