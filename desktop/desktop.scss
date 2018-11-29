@@ -22,21 +22,21 @@
   background-color: transparent;
   color: $danger;
 }
-.discourse-no-touch .btn-flat.cancel:focus, .discourse-no-touch .btn-flat.cancel:hover {
+.discourse-no-touch .btn-flat.cancel:hover, .discourse-no-touch .btn-flat.cancel.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $danger;
 }
-.discourse-no-touch .btn-flat.cancel:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+.btn-flat.cancel:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .btn-flat.ok {
   background-color: transparent;
   color: $success;
 }
-.discourse-no-touch .btn-flat.ok:focus, .discourse-no-touch .btn-flat.ok:hover {
+.discourse-no-touch .btn-flat.ok:hover, .discourse-no-touch .btn-flat.ok.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $success;
 }
-.discourse-no-touch .btn-flat.ok:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+.btn-flat.ok:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }

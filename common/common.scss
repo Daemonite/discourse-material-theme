@@ -20,7 +20,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono|Roboto+Slab");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, nav.post-controls button .read-icon::before, .meta .expand::before, .meta .filename::before {
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, .meta .expand::before, .meta .filename::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -38,8 +38,8 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   word-wrap: normal;
 }
 
-.nav-pills > li > a, .btn-flat, .btn, div.poll .poll-buttons a, .select-kit:not(.multi-select) .select-kit-header, .search-menu .no-results .widget-link, .d-modal-cancel, .discourse-local-dates-create-modal-footer .cancel-action, .modal-footer :not(.disclaimer) a, .upload-selector ~ .modal-footer a.pull-right, .pika-button, .pika-next,
-.pika-prev, #reply-control .submit-panel .cancel, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .small-action button, .topic-map .link-summary a, .topic-meta-data .post-info a, .display-row .controls a[data-ember-action]:not(.close), .stats-section li.linked-stat a, .user-main .about .controls a, .user-navigation .new-private-message, .badges-section.top-section > p .more, .screened-ip-addresses .actions.col a, .styleguide .styleguide-menu ul li a {
+.nav-pills > li > a, .btn-flat, .btn, div.poll .poll-buttons a, .search-menu .no-results .widget-link, .d-modal-cancel, .discourse-local-dates-create-modal-footer .cancel-action, .modal-footer :not(.disclaimer) a, .upload-selector ~ .modal-footer a.pull-right, .pika-button, .pika-next,
+.pika-prev, #reply-control .submit-panel .cancel, #reply-control .toggle-preview, .fps-select a, #share-link .reply-as-new-topic a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .small-action button, .topic-meta-data .post-info a, .display-row .controls a[data-ember-action]:not(.close), .stats-section li.linked-stat a, .user-main .about .controls a, .user-navigation .new-private-message, .badges-section.top-section > p .more, .screened-ip-addresses .actions.col a, .styleguide .styleguide-menu ul li a {
   background-color: transparent;
   background-image: none;
   border: 0;
@@ -63,70 +63,67 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   vertical-align: middle;
   white-space: nowrap;
 }
-.nav-pills > li > a:focus, .btn-flat:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit:not(.multi-select) .select-kit-header:focus, .search-menu .no-results .widget-link:focus, .d-modal-cancel:focus, .discourse-local-dates-create-modal-footer .cancel-action:focus, .modal-footer :not(.disclaimer) a:focus, .upload-selector ~ .modal-footer a.pull-right:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .submit-panel .cancel:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .small-action button:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .screened-ip-addresses .actions.col a:focus, .styleguide .styleguide-menu ul li a:focus, .nav-pills > li > a:hover, .btn-flat:hover, .btn:hover, div.poll .poll-buttons a:hover, .select-kit:not(.multi-select) .select-kit-header:hover, .search-menu .no-results .widget-link:hover, .d-modal-cancel:hover, .discourse-local-dates-create-modal-footer .cancel-action:hover, .modal-footer :not(.disclaimer) a:hover, .upload-selector ~ .modal-footer a.pull-right:hover, .pika-button:hover, .pika-next:hover,
-.pika-prev:hover, #reply-control .submit-panel .cancel:hover, #reply-control .toggle-preview:hover, .fps-select a:hover, #share-link .reply-as-new-topic a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .small-action button:hover, .topic-map .link-summary a:hover, .topic-meta-data .post-info a:hover, .display-row .controls a[data-ember-action]:hover:not(.close), .stats-section li.linked-stat a:hover, .user-main .about .controls a:hover, .user-navigation .new-private-message:hover, .badges-section.top-section > p .more:hover, .screened-ip-addresses .actions.col a:hover, .styleguide .styleguide-menu ul li a:hover {
+.discourse-no-touch .nav-pills > li > a:hover, .discourse-no-touch .btn-flat:hover, .discourse-no-touch .btn:hover, .discourse-no-touch div.poll .poll-buttons a:hover, div.poll .poll-buttons .discourse-no-touch a:hover, .discourse-no-touch .search-menu .no-results .widget-link:hover, .search-menu .no-results .discourse-no-touch .widget-link:hover, .discourse-no-touch .d-modal-cancel:hover, .discourse-no-touch .discourse-local-dates-create-modal-footer .cancel-action:hover, .discourse-local-dates-create-modal-footer .discourse-no-touch .cancel-action:hover, .discourse-no-touch .modal-footer :not(.disclaimer) a:hover, .modal-footer :not(.disclaimer) .discourse-no-touch a:hover, .discourse-no-touch .upload-selector ~ .modal-footer a.pull-right:hover, .upload-selector ~ .modal-footer .discourse-no-touch a.pull-right:hover, .discourse-no-touch .pika-button:hover, .discourse-no-touch .pika-next:hover,
+.discourse-no-touch .pika-prev:hover, .discourse-no-touch #reply-control .submit-panel .cancel:hover, #reply-control .submit-panel .discourse-no-touch .cancel:hover, .discourse-no-touch #reply-control .toggle-preview:hover, #reply-control .discourse-no-touch .toggle-preview:hover, .discourse-no-touch .fps-select a:hover, .fps-select .discourse-no-touch a:hover, .discourse-no-touch #share-link .reply-as-new-topic a:hover, #share-link .reply-as-new-topic .discourse-no-touch a:hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .period-chooser-header:hover, .discourse-no-touch .small-action button:hover, .small-action .discourse-no-touch button:hover, .discourse-no-touch .topic-meta-data .post-info a:hover, .topic-meta-data .post-info .discourse-no-touch a:hover, .discourse-no-touch .display-row .controls a[data-ember-action]:hover:not(.close), .display-row .controls .discourse-no-touch a[data-ember-action]:hover:not(.close), .discourse-no-touch .stats-section li.linked-stat a:hover, .stats-section li.linked-stat .discourse-no-touch a:hover, .discourse-no-touch .user-main .about .controls a:hover, .user-main .about .controls .discourse-no-touch a:hover, .discourse-no-touch .user-navigation .new-private-message:hover, .user-navigation .discourse-no-touch .new-private-message:hover, .discourse-no-touch .badges-section.top-section > p .more:hover, .badges-section.top-section > p .discourse-no-touch .more:hover, .discourse-no-touch .screened-ip-addresses .actions.col a:hover, .screened-ip-addresses .actions.col .discourse-no-touch a:hover, .discourse-no-touch .styleguide .styleguide-menu ul li a:hover, .styleguide .styleguide-menu ul li .discourse-no-touch a:hover, .discourse-no-touch .nav-pills > li > a.btn-hover, .discourse-no-touch .btn-hover.btn-flat, .discourse-no-touch .btn-hover.btn, .discourse-no-touch div.poll .poll-buttons a.btn-hover, div.poll .poll-buttons .discourse-no-touch a.btn-hover, .discourse-no-touch .search-menu .no-results .btn-hover.widget-link, .search-menu .no-results .discourse-no-touch .btn-hover.widget-link, .discourse-no-touch .btn-hover.d-modal-cancel, .discourse-no-touch .discourse-local-dates-create-modal-footer .btn-hover.cancel-action, .discourse-local-dates-create-modal-footer .discourse-no-touch .btn-hover.cancel-action, .discourse-no-touch .modal-footer :not(.disclaimer) a.btn-hover, .modal-footer :not(.disclaimer) .discourse-no-touch a.btn-hover, .discourse-no-touch .upload-selector ~ .modal-footer a.btn-hover.pull-right, .upload-selector ~ .modal-footer .discourse-no-touch a.btn-hover.pull-right, .discourse-no-touch .btn-hover.pika-button, .discourse-no-touch .btn-hover.pika-next,
+.discourse-no-touch .btn-hover.pika-prev, .discourse-no-touch #reply-control .submit-panel .btn-hover.cancel, #reply-control .submit-panel .discourse-no-touch .btn-hover.cancel, .discourse-no-touch #reply-control .btn-hover.toggle-preview, #reply-control .discourse-no-touch .btn-hover.toggle-preview, .discourse-no-touch .fps-select a.btn-hover, .fps-select .discourse-no-touch a.btn-hover, .discourse-no-touch #share-link .reply-as-new-topic a.btn-hover, #share-link .reply-as-new-topic .discourse-no-touch a.btn-hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .btn-hover.period-chooser-header, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .btn-hover.period-chooser-header, .discourse-no-touch .small-action button.btn-hover, .small-action .discourse-no-touch button.btn-hover, .discourse-no-touch .topic-meta-data .post-info a.btn-hover, .topic-meta-data .post-info .discourse-no-touch a.btn-hover, .discourse-no-touch .display-row .controls a.btn-hover[data-ember-action]:not(.close), .display-row .controls .discourse-no-touch a.btn-hover[data-ember-action]:not(.close), .discourse-no-touch .stats-section li.linked-stat a.btn-hover, .stats-section li.linked-stat .discourse-no-touch a.btn-hover, .discourse-no-touch .user-main .about .controls a.btn-hover, .user-main .about .controls .discourse-no-touch a.btn-hover, .discourse-no-touch .user-navigation .btn-hover.new-private-message, .user-navigation .discourse-no-touch .btn-hover.new-private-message, .discourse-no-touch .badges-section.top-section > p .btn-hover.more, .badges-section.top-section > p .discourse-no-touch .btn-hover.more, .discourse-no-touch .screened-ip-addresses .actions.col a.btn-hover, .screened-ip-addresses .actions.col .discourse-no-touch a.btn-hover, .discourse-no-touch .styleguide .styleguide-menu ul li a.btn-hover, .styleguide .styleguide-menu ul li .discourse-no-touch a.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: color-chooser($primary, $primary);
 }
-.nav-pills > li > a.btn-hover, .btn-hover.btn-flat, .btn-hover.btn, div.poll .poll-buttons a.btn-hover, .select-kit:not(.multi-select) .btn-hover.select-kit-header, .search-menu .no-results .btn-hover.widget-link, .btn-hover.d-modal-cancel, .discourse-local-dates-create-modal-footer .btn-hover.cancel-action, .modal-footer :not(.disclaimer) a.btn-hover, .upload-selector ~ .modal-footer a.btn-hover.pull-right, .btn-hover.pika-button, .btn-hover.pika-next,
-.btn-hover.pika-prev, #reply-control .submit-panel .btn-hover.cancel, #reply-control .btn-hover.toggle-preview, .fps-select a.btn-hover, #share-link .reply-as-new-topic a.btn-hover, .period-chooser.dropdown-select-box.select-kit .btn-hover.period-chooser-header, .small-action button.btn-hover, .topic-map .link-summary a.btn-hover, .topic-meta-data .post-info a.btn-hover, .display-row .controls a.btn-hover[data-ember-action]:not(.close), .stats-section li.linked-stat a.btn-hover, .user-main .about .controls a.btn-hover, .user-navigation .btn-hover.new-private-message, .badges-section.top-section > p .btn-hover.more, .screened-ip-addresses .actions.col a.btn-hover, .styleguide .styleguide-menu ul li a.btn-hover {
+.nav-pills > li > a:focus, .btn-flat:focus, .btn:focus, div.poll .poll-buttons a:focus, .search-menu .no-results .widget-link:focus, .d-modal-cancel:focus, .discourse-local-dates-create-modal-footer .cancel-action:focus, .modal-footer :not(.disclaimer) a:focus, .upload-selector ~ .modal-footer a.pull-right:focus, .pika-button:focus, .pika-next:focus,
+.pika-prev:focus, #reply-control .submit-panel .cancel:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .small-action button:focus, .topic-meta-data .post-info a:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .screened-ip-addresses .actions.col a:focus, .styleguide .styleguide-menu ul li a:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: color-chooser($primary, $primary);
+  outline: 0;
 }
-.nav-pills > li > a:active, .btn-flat:active, .btn:active, div.poll .poll-buttons a:active, .select-kit:not(.multi-select) .select-kit-header:active, .search-menu .no-results .widget-link:active, .d-modal-cancel:active, .discourse-local-dates-create-modal-footer .cancel-action:active, .modal-footer :not(.disclaimer) a:active, .upload-selector ~ .modal-footer a.pull-right:active, .pika-button:active, .pika-next:active,
-.pika-prev:active, #reply-control .submit-panel .cancel:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .small-action button:active, .topic-map .link-summary a:active, .topic-meta-data .post-info a:active, .display-row .controls a[data-ember-action]:active:not(.close), .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .screened-ip-addresses .actions.col a:active, .styleguide .styleguide-menu ul li a:active, .nav-pills > li > a.btn-active, .btn-active.btn-flat, .btn-active.btn, div.poll .poll-buttons a.btn-active, .select-kit:not(.multi-select) .btn-active.select-kit-header, .search-menu .no-results .btn-active.widget-link, .btn-active.d-modal-cancel, .discourse-local-dates-create-modal-footer .btn-active.cancel-action, .modal-footer :not(.disclaimer) a.btn-active, .upload-selector ~ .modal-footer a.btn-active.pull-right, .btn-active.pika-button, .btn-active.pika-next,
-.btn-active.pika-prev, #reply-control .submit-panel .btn-active.cancel, #reply-control .btn-active.toggle-preview, .fps-select a.btn-active, #share-link .reply-as-new-topic a.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-active.period-chooser-header, .small-action button.btn-active, .topic-map .link-summary a.btn-active, .topic-meta-data .post-info a.btn-active, .display-row .controls a.btn-active[data-ember-action]:not(.close), .stats-section li.linked-stat a.btn-active, .user-main .about .controls a.btn-active, .user-navigation .btn-active.new-private-message, .badges-section.top-section > p .btn-active.more, .screened-ip-addresses .actions.col a.btn-active, .styleguide .styleguide-menu ul li a.btn-active {
+.nav-pills > li > a:active, .btn-flat:active, .btn:active, div.poll .poll-buttons a:active, .search-menu .no-results .widget-link:active, .d-modal-cancel:active, .discourse-local-dates-create-modal-footer .cancel-action:active, .modal-footer :not(.disclaimer) a:active, .upload-selector ~ .modal-footer a.pull-right:active, .pika-button:active, .pika-next:active,
+.pika-prev:active, #reply-control .submit-panel .cancel:active, #reply-control .toggle-preview:active, .fps-select a:active, #share-link .reply-as-new-topic a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .small-action button:active, .topic-meta-data .post-info a:active, .display-row .controls a[data-ember-action]:active:not(.close), .stats-section li.linked-stat a:active, .user-main .about .controls a:active, .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .screened-ip-addresses .actions.col a:active, .styleguide .styleguide-menu ul li a:active, .nav-pills > li > a.btn-active, .btn-active.btn-flat, .btn-active.btn, div.poll .poll-buttons a.btn-active, .search-menu .no-results .btn-active.widget-link, .btn-active.d-modal-cancel, .discourse-local-dates-create-modal-footer .btn-active.cancel-action, .modal-footer :not(.disclaimer) a.btn-active, .upload-selector ~ .modal-footer a.btn-active.pull-right, .btn-active.pika-button, .btn-active.pika-next,
+.btn-active.pika-prev, #reply-control .submit-panel .btn-active.cancel, #reply-control .btn-active.toggle-preview, .fps-select a.btn-active, #share-link .reply-as-new-topic a.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-active.period-chooser-header, .small-action button.btn-active, .topic-meta-data .post-info a.btn-active, .display-row .controls a.btn-active[data-ember-action]:not(.close), .stats-section li.linked-stat a.btn-active, .user-main .about .controls a.btn-active, .user-navigation .btn-active.new-private-message, .badges-section.top-section > p .btn-active.more, .screened-ip-addresses .actions.col a.btn-active, .styleguide .styleguide-menu ul li a.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   color: color-chooser($primary, $primary);
 }
-.nav-pills > li > a:focus, .btn-flat:focus, .btn:focus, div.poll .poll-buttons a:focus, .select-kit:not(.multi-select) .select-kit-header:focus, .search-menu .no-results .widget-link:focus, .d-modal-cancel:focus, .discourse-local-dates-create-modal-footer .cancel-action:focus, .modal-footer :not(.disclaimer) a:focus, .upload-selector ~ .modal-footer a.pull-right:focus, .pika-button:focus, .pika-next:focus,
-.pika-prev:focus, #reply-control .submit-panel .cancel:focus, #reply-control .toggle-preview:focus, .fps-select a:focus, #share-link .reply-as-new-topic a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .small-action button:focus, .topic-map .link-summary a:focus, .topic-meta-data .post-info a:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .stats-section li.linked-stat a:focus, .user-main .about .controls a:focus, .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .screened-ip-addresses .actions.col a:focus, .styleguide .styleguide-menu ul li a:focus {
-  outline: 0;
-}
-.nav-pills > li > a[disabled], [disabled].btn-flat, [disabled].btn, div.poll .poll-buttons a[disabled], .select-kit:not(.multi-select) [disabled].select-kit-header, .search-menu .no-results [disabled].widget-link, [disabled].d-modal-cancel, .discourse-local-dates-create-modal-footer [disabled].cancel-action, .modal-footer :not(.disclaimer) a[disabled], .upload-selector ~ .modal-footer a[disabled].pull-right, [disabled].pika-button, [disabled].pika-next,
-[disabled].pika-prev, #reply-control .submit-panel [disabled].cancel, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .small-action button[disabled], .topic-map .link-summary a[disabled], .topic-meta-data .post-info a[disabled], .display-row .controls a[disabled][data-ember-action]:not(.close), .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .screened-ip-addresses .actions.col a[disabled], .styleguide .styleguide-menu ul li a[disabled], .nav-pills > li > a.disabled, .disabled.btn-flat, .disabled.btn, div.poll .poll-buttons a.disabled, .select-kit:not(.multi-select) .disabled.select-kit-header, .search-menu .no-results .disabled.widget-link, .disabled.d-modal-cancel, .discourse-local-dates-create-modal-footer .disabled.cancel-action, .modal-footer :not(.disclaimer) a.disabled, .upload-selector ~ .modal-footer a.disabled.pull-right, .disabled.pika-button, .disabled.pika-next,
-.disabled.pika-prev, #reply-control .submit-panel .disabled.cancel, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .small-action button.disabled, .topic-map .link-summary a.disabled, .topic-meta-data .post-info a.disabled, .display-row .controls a.disabled[data-ember-action]:not(.close), .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .user-navigation .disabled.new-private-message, .badges-section.top-section > p .disabled.more, .screened-ip-addresses .actions.col a.disabled, .styleguide .styleguide-menu ul li a.disabled {
+.nav-pills > li > a[disabled], [disabled].btn-flat, [disabled].btn, div.poll .poll-buttons a[disabled], .search-menu .no-results [disabled].widget-link, [disabled].d-modal-cancel, .discourse-local-dates-create-modal-footer [disabled].cancel-action, .modal-footer :not(.disclaimer) a[disabled], .upload-selector ~ .modal-footer a[disabled].pull-right, [disabled].pika-button, [disabled].pika-next,
+[disabled].pika-prev, #reply-control .submit-panel [disabled].cancel, #reply-control [disabled].toggle-preview, .fps-select a[disabled], #share-link .reply-as-new-topic a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .small-action button[disabled], .topic-meta-data .post-info a[disabled], .display-row .controls a[disabled][data-ember-action]:not(.close), .stats-section li.linked-stat a[disabled], .user-main .about .controls a[disabled], .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .screened-ip-addresses .actions.col a[disabled], .styleguide .styleguide-menu ul li a[disabled], .nav-pills > li > a.disabled, .disabled.btn-flat, .disabled.btn, div.poll .poll-buttons a.disabled, .search-menu .no-results .disabled.widget-link, .disabled.d-modal-cancel, .discourse-local-dates-create-modal-footer .disabled.cancel-action, .modal-footer :not(.disclaimer) a.disabled, .upload-selector ~ .modal-footer a.disabled.pull-right, .disabled.pika-button, .disabled.pika-next,
+.disabled.pika-prev, #reply-control .submit-panel .disabled.cancel, #reply-control .disabled.toggle-preview, .fps-select a.disabled, #share-link .reply-as-new-topic a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .small-action button.disabled, .topic-meta-data .post-info a.disabled, .display-row .controls a.disabled[data-ember-action]:not(.close), .stats-section li.linked-stat a.disabled, .user-main .about .controls a.disabled, .user-navigation .disabled.new-private-message, .badges-section.top-section > p .disabled.more, .screened-ip-addresses .actions.col a.disabled, .styleguide .styleguide-menu ul li a.disabled {
   background-color: transparent !important;
   color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
 }
 
 .btn-danger.btn-flat, div.poll .poll-buttons a.btn-danger, .btn-danger.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-danger, .btn-danger.pika-button, .btn-danger.pika-next,
-.btn-danger.pika-prev, #reply-control .submit-panel .btn-danger.cancel, #reply-control .btn-danger.toggle-preview, #share-link .reply-as-new-topic a.btn-danger, .small-action button.btn-danger, .topic-map .link-summary a.btn-danger, .topic-meta-data .post-info a.btn-danger, .stats-section li.linked-stat a.btn-danger, .user-main .about .controls a.btn-danger {
+.btn-danger.pika-prev, #reply-control .submit-panel .btn-danger.cancel, #reply-control .btn-danger.toggle-preview, #share-link .reply-as-new-topic a.btn-danger, .small-action button.btn-danger, .topic-meta-data .post-info a.btn-danger, .stats-section li.linked-stat a.btn-danger, .user-main .about .controls a.btn-danger {
   background-color: transparent;
   color: $danger;
 }
-.btn-danger.btn-flat:focus, div.poll .poll-buttons a.btn-danger:focus, .btn-danger.d-modal-cancel:focus, .modal-footer :not(.disclaimer) a.btn-danger:focus, .btn-danger.pika-button:focus, .btn-danger.pika-next:focus,
-.btn-danger.pika-prev:focus, #reply-control .submit-panel .btn-danger.cancel:focus, #reply-control .btn-danger.toggle-preview:focus, #share-link .reply-as-new-topic a.btn-danger:focus, .small-action button.btn-danger:focus, .topic-map .link-summary a.btn-danger:focus, .topic-meta-data .post-info a.btn-danger:focus, .stats-section li.linked-stat a.btn-danger:focus, .user-main .about .controls a.btn-danger:focus, .btn-danger.btn-flat:hover, div.poll .poll-buttons a.btn-danger:hover, .btn-danger.d-modal-cancel:hover, .modal-footer :not(.disclaimer) a.btn-danger:hover, .btn-danger.pika-button:hover, .btn-danger.pika-next:hover,
-.btn-danger.pika-prev:hover, #reply-control .submit-panel .btn-danger.cancel:hover, #reply-control .btn-danger.toggle-preview:hover, #share-link .reply-as-new-topic a.btn-danger:hover, .small-action button.btn-danger:hover, .topic-map .link-summary a.btn-danger:hover, .topic-meta-data .post-info a.btn-danger:hover, .stats-section li.linked-stat a.btn-danger:hover, .user-main .about .controls a.btn-danger:hover {
+.discourse-no-touch .btn-danger.btn-flat:hover, .discourse-no-touch div.poll .poll-buttons a.btn-danger:hover, div.poll .poll-buttons .discourse-no-touch a.btn-danger:hover, .discourse-no-touch .btn-danger.d-modal-cancel:hover, .discourse-no-touch .modal-footer :not(.disclaimer) a.btn-danger:hover, .modal-footer :not(.disclaimer) .discourse-no-touch a.btn-danger:hover, .discourse-no-touch .btn-danger.pika-button:hover, .discourse-no-touch .btn-danger.pika-next:hover,
+.discourse-no-touch .btn-danger.pika-prev:hover, .discourse-no-touch #reply-control .submit-panel .btn-danger.cancel:hover, #reply-control .submit-panel .discourse-no-touch .btn-danger.cancel:hover, .discourse-no-touch #reply-control .btn-danger.toggle-preview:hover, #reply-control .discourse-no-touch .btn-danger.toggle-preview:hover, .discourse-no-touch #share-link .reply-as-new-topic a.btn-danger:hover, #share-link .reply-as-new-topic .discourse-no-touch a.btn-danger:hover, .discourse-no-touch .small-action button.btn-danger:hover, .small-action .discourse-no-touch button.btn-danger:hover, .discourse-no-touch .topic-meta-data .post-info a.btn-danger:hover, .topic-meta-data .post-info .discourse-no-touch a.btn-danger:hover, .discourse-no-touch .stats-section li.linked-stat a.btn-danger:hover, .stats-section li.linked-stat .discourse-no-touch a.btn-danger:hover, .discourse-no-touch .user-main .about .controls a.btn-danger:hover, .user-main .about .controls .discourse-no-touch a.btn-danger:hover, .discourse-no-touch .btn-danger.btn-hover.btn-flat, .discourse-no-touch div.poll .poll-buttons a.btn-danger.btn-hover, div.poll .poll-buttons .discourse-no-touch a.btn-danger.btn-hover, .discourse-no-touch .btn-danger.btn-hover.d-modal-cancel, .discourse-no-touch .modal-footer :not(.disclaimer) a.btn-danger.btn-hover, .modal-footer :not(.disclaimer) .discourse-no-touch a.btn-danger.btn-hover, .discourse-no-touch .btn-danger.btn-hover.pika-button, .discourse-no-touch .btn-danger.btn-hover.pika-next,
+.discourse-no-touch .btn-danger.btn-hover.pika-prev, .discourse-no-touch #reply-control .submit-panel .btn-danger.btn-hover.cancel, #reply-control .submit-panel .discourse-no-touch .btn-danger.btn-hover.cancel, .discourse-no-touch #reply-control .btn-danger.btn-hover.toggle-preview, #reply-control .discourse-no-touch .btn-danger.btn-hover.toggle-preview, .discourse-no-touch #share-link .reply-as-new-topic a.btn-danger.btn-hover, #share-link .reply-as-new-topic .discourse-no-touch a.btn-danger.btn-hover, .discourse-no-touch .small-action button.btn-danger.btn-hover, .small-action .discourse-no-touch button.btn-danger.btn-hover, .discourse-no-touch .topic-meta-data .post-info a.btn-danger.btn-hover, .topic-meta-data .post-info .discourse-no-touch a.btn-danger.btn-hover, .discourse-no-touch .stats-section li.linked-stat a.btn-danger.btn-hover, .stats-section li.linked-stat .discourse-no-touch a.btn-danger.btn-hover, .discourse-no-touch .user-main .about .controls a.btn-danger.btn-hover, .user-main .about .controls .discourse-no-touch a.btn-danger.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-.btn-danger.btn-hover.btn-flat, div.poll .poll-buttons a.btn-danger.btn-hover, .btn-danger.btn-hover.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-danger.btn-hover, .btn-danger.btn-hover.pika-button, .btn-danger.btn-hover.pika-next,
-.btn-danger.btn-hover.pika-prev, #reply-control .submit-panel .btn-danger.btn-hover.cancel, #reply-control .btn-danger.btn-hover.toggle-preview, #share-link .reply-as-new-topic a.btn-danger.btn-hover, .small-action button.btn-danger.btn-hover, .topic-map .link-summary a.btn-danger.btn-hover, .topic-meta-data .post-info a.btn-danger.btn-hover, .stats-section li.linked-stat a.btn-danger.btn-hover, .user-main .about .controls a.btn-danger.btn-hover {
+.btn-danger.btn-flat:focus, div.poll .poll-buttons a.btn-danger:focus, .btn-danger.d-modal-cancel:focus, .modal-footer :not(.disclaimer) a.btn-danger:focus, .btn-danger.pika-button:focus, .btn-danger.pika-next:focus,
+.btn-danger.pika-prev:focus, #reply-control .submit-panel .btn-danger.cancel:focus, #reply-control .btn-danger.toggle-preview:focus, #share-link .reply-as-new-topic a.btn-danger:focus, .small-action button.btn-danger:focus, .topic-meta-data .post-info a.btn-danger:focus, .stats-section li.linked-stat a.btn-danger:focus, .user-main .about .controls a.btn-danger:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .btn-danger.btn-flat:active, div.poll .poll-buttons a.btn-danger:active, .btn-danger.d-modal-cancel:active, .modal-footer :not(.disclaimer) a.btn-danger:active, .btn-danger.pika-button:active, .btn-danger.pika-next:active,
-.btn-danger.pika-prev:active, #reply-control .submit-panel .btn-danger.cancel:active, #reply-control .btn-danger.toggle-preview:active, #share-link .reply-as-new-topic a.btn-danger:active, .small-action button.btn-danger:active, .topic-map .link-summary a.btn-danger:active, .topic-meta-data .post-info a.btn-danger:active, .stats-section li.linked-stat a.btn-danger:active, .user-main .about .controls a.btn-danger:active, .btn-danger.btn-active.btn-flat, div.poll .poll-buttons a.btn-danger.btn-active, .btn-danger.btn-active.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-danger.btn-active, .btn-danger.btn-active.pika-button, .btn-danger.btn-active.pika-next,
-.btn-danger.btn-active.pika-prev, #reply-control .submit-panel .btn-danger.btn-active.cancel, #reply-control .btn-danger.btn-active.toggle-preview, #share-link .reply-as-new-topic a.btn-danger.btn-active, .small-action button.btn-danger.btn-active, .topic-map .link-summary a.btn-danger.btn-active, .topic-meta-data .post-info a.btn-danger.btn-active, .stats-section li.linked-stat a.btn-danger.btn-active, .user-main .about .controls a.btn-danger.btn-active {
+.btn-danger.pika-prev:active, #reply-control .submit-panel .btn-danger.cancel:active, #reply-control .btn-danger.toggle-preview:active, #share-link .reply-as-new-topic a.btn-danger:active, .small-action button.btn-danger:active, .topic-meta-data .post-info a.btn-danger:active, .stats-section li.linked-stat a.btn-danger:active, .user-main .about .controls a.btn-danger:active, .btn-danger.btn-active.btn-flat, div.poll .poll-buttons a.btn-danger.btn-active, .btn-danger.btn-active.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-danger.btn-active, .btn-danger.btn-active.pika-button, .btn-danger.btn-active.pika-next,
+.btn-danger.btn-active.pika-prev, #reply-control .submit-panel .btn-danger.btn-active.cancel, #reply-control .btn-danger.btn-active.toggle-preview, #share-link .reply-as-new-topic a.btn-danger.btn-active, .small-action button.btn-danger.btn-active, .topic-meta-data .post-info a.btn-danger.btn-active, .stats-section li.linked-stat a.btn-danger.btn-active, .user-main .about .controls a.btn-danger.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 .btn-primary.btn-flat, div.poll .poll-buttons a.btn-primary, .btn-primary.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-primary, .btn-primary.pika-button, .btn-primary.pika-next,
-.btn-primary.pika-prev, #reply-control .submit-panel .btn-primary.cancel, #reply-control .btn-primary.toggle-preview, #share-link .reply-as-new-topic a.btn-primary, .small-action button.btn-primary, .topic-map .link-summary a.btn-primary, .topic-meta-data .post-info a.btn-primary, .stats-section li.linked-stat a.btn-primary, .user-main .about .controls a.btn-primary {
+.btn-primary.pika-prev, #reply-control .submit-panel .btn-primary.cancel, #reply-control .btn-primary.toggle-preview, #share-link .reply-as-new-topic a.btn-primary, .small-action button.btn-primary, .topic-meta-data .post-info a.btn-primary, .stats-section li.linked-stat a.btn-primary, .user-main .about .controls a.btn-primary {
   background-color: transparent;
   color: $tertiary;
 }
-.btn-primary.btn-flat:focus, div.poll .poll-buttons a.btn-primary:focus, .btn-primary.d-modal-cancel:focus, .modal-footer :not(.disclaimer) a.btn-primary:focus, .btn-primary.pika-button:focus, .btn-primary.pika-next:focus,
-.btn-primary.pika-prev:focus, #reply-control .submit-panel .btn-primary.cancel:focus, #reply-control .btn-primary.toggle-preview:focus, #share-link .reply-as-new-topic a.btn-primary:focus, .small-action button.btn-primary:focus, .topic-map .link-summary a.btn-primary:focus, .topic-meta-data .post-info a.btn-primary:focus, .stats-section li.linked-stat a.btn-primary:focus, .user-main .about .controls a.btn-primary:focus, .btn-primary.btn-flat:hover, div.poll .poll-buttons a.btn-primary:hover, .btn-primary.d-modal-cancel:hover, .modal-footer :not(.disclaimer) a.btn-primary:hover, .btn-primary.pika-button:hover, .btn-primary.pika-next:hover,
-.btn-primary.pika-prev:hover, #reply-control .submit-panel .btn-primary.cancel:hover, #reply-control .btn-primary.toggle-preview:hover, #share-link .reply-as-new-topic a.btn-primary:hover, .small-action button.btn-primary:hover, .topic-map .link-summary a.btn-primary:hover, .topic-meta-data .post-info a.btn-primary:hover, .stats-section li.linked-stat a.btn-primary:hover, .user-main .about .controls a.btn-primary:hover {
+.discourse-no-touch .btn-primary.btn-flat:hover, .discourse-no-touch div.poll .poll-buttons a.btn-primary:hover, div.poll .poll-buttons .discourse-no-touch a.btn-primary:hover, .discourse-no-touch .btn-primary.d-modal-cancel:hover, .discourse-no-touch .modal-footer :not(.disclaimer) a.btn-primary:hover, .modal-footer :not(.disclaimer) .discourse-no-touch a.btn-primary:hover, .discourse-no-touch .btn-primary.pika-button:hover, .discourse-no-touch .btn-primary.pika-next:hover,
+.discourse-no-touch .btn-primary.pika-prev:hover, .discourse-no-touch #reply-control .submit-panel .btn-primary.cancel:hover, #reply-control .submit-panel .discourse-no-touch .btn-primary.cancel:hover, .discourse-no-touch #reply-control .btn-primary.toggle-preview:hover, #reply-control .discourse-no-touch .btn-primary.toggle-preview:hover, .discourse-no-touch #share-link .reply-as-new-topic a.btn-primary:hover, #share-link .reply-as-new-topic .discourse-no-touch a.btn-primary:hover, .discourse-no-touch .small-action button.btn-primary:hover, .small-action .discourse-no-touch button.btn-primary:hover, .discourse-no-touch .topic-meta-data .post-info a.btn-primary:hover, .topic-meta-data .post-info .discourse-no-touch a.btn-primary:hover, .discourse-no-touch .stats-section li.linked-stat a.btn-primary:hover, .stats-section li.linked-stat .discourse-no-touch a.btn-primary:hover, .discourse-no-touch .user-main .about .controls a.btn-primary:hover, .user-main .about .controls .discourse-no-touch a.btn-primary:hover, .discourse-no-touch .btn-primary.btn-hover.btn-flat, .discourse-no-touch div.poll .poll-buttons a.btn-primary.btn-hover, div.poll .poll-buttons .discourse-no-touch a.btn-primary.btn-hover, .discourse-no-touch .btn-primary.btn-hover.d-modal-cancel, .discourse-no-touch .modal-footer :not(.disclaimer) a.btn-primary.btn-hover, .modal-footer :not(.disclaimer) .discourse-no-touch a.btn-primary.btn-hover, .discourse-no-touch .btn-primary.btn-hover.pika-button, .discourse-no-touch .btn-primary.btn-hover.pika-next,
+.discourse-no-touch .btn-primary.btn-hover.pika-prev, .discourse-no-touch #reply-control .submit-panel .btn-primary.btn-hover.cancel, #reply-control .submit-panel .discourse-no-touch .btn-primary.btn-hover.cancel, .discourse-no-touch #reply-control .btn-primary.btn-hover.toggle-preview, #reply-control .discourse-no-touch .btn-primary.btn-hover.toggle-preview, .discourse-no-touch #share-link .reply-as-new-topic a.btn-primary.btn-hover, #share-link .reply-as-new-topic .discourse-no-touch a.btn-primary.btn-hover, .discourse-no-touch .small-action button.btn-primary.btn-hover, .small-action .discourse-no-touch button.btn-primary.btn-hover, .discourse-no-touch .topic-meta-data .post-info a.btn-primary.btn-hover, .topic-meta-data .post-info .discourse-no-touch a.btn-primary.btn-hover, .discourse-no-touch .stats-section li.linked-stat a.btn-primary.btn-hover, .stats-section li.linked-stat .discourse-no-touch a.btn-primary.btn-hover, .discourse-no-touch .user-main .about .controls a.btn-primary.btn-hover, .user-main .about .controls .discourse-no-touch a.btn-primary.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-.btn-primary.btn-hover.btn-flat, div.poll .poll-buttons a.btn-primary.btn-hover, .btn-primary.btn-hover.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-primary.btn-hover, .btn-primary.btn-hover.pika-button, .btn-primary.btn-hover.pika-next,
-.btn-primary.btn-hover.pika-prev, #reply-control .submit-panel .btn-primary.btn-hover.cancel, #reply-control .btn-primary.btn-hover.toggle-preview, #share-link .reply-as-new-topic a.btn-primary.btn-hover, .small-action button.btn-primary.btn-hover, .topic-map .link-summary a.btn-primary.btn-hover, .topic-meta-data .post-info a.btn-primary.btn-hover, .stats-section li.linked-stat a.btn-primary.btn-hover, .user-main .about .controls a.btn-primary.btn-hover {
+.btn-primary.btn-flat:focus, div.poll .poll-buttons a.btn-primary:focus, .btn-primary.d-modal-cancel:focus, .modal-footer :not(.disclaimer) a.btn-primary:focus, .btn-primary.pika-button:focus, .btn-primary.pika-next:focus,
+.btn-primary.pika-prev:focus, #reply-control .submit-panel .btn-primary.cancel:focus, #reply-control .btn-primary.toggle-preview:focus, #share-link .reply-as-new-topic a.btn-primary:focus, .small-action button.btn-primary:focus, .topic-meta-data .post-info a.btn-primary:focus, .stats-section li.linked-stat a.btn-primary:focus, .user-main .about .controls a.btn-primary:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .btn-primary.btn-flat:active, div.poll .poll-buttons a.btn-primary:active, .btn-primary.d-modal-cancel:active, .modal-footer :not(.disclaimer) a.btn-primary:active, .btn-primary.pika-button:active, .btn-primary.pika-next:active,
-.btn-primary.pika-prev:active, #reply-control .submit-panel .btn-primary.cancel:active, #reply-control .btn-primary.toggle-preview:active, #share-link .reply-as-new-topic a.btn-primary:active, .small-action button.btn-primary:active, .topic-map .link-summary a.btn-primary:active, .topic-meta-data .post-info a.btn-primary:active, .stats-section li.linked-stat a.btn-primary:active, .user-main .about .controls a.btn-primary:active, .btn-primary.btn-active.btn-flat, div.poll .poll-buttons a.btn-primary.btn-active, .btn-primary.btn-active.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-primary.btn-active, .btn-primary.btn-active.pika-button, .btn-primary.btn-active.pika-next,
-.btn-primary.btn-active.pika-prev, #reply-control .submit-panel .btn-primary.btn-active.cancel, #reply-control .btn-primary.btn-active.toggle-preview, #share-link .reply-as-new-topic a.btn-primary.btn-active, .small-action button.btn-primary.btn-active, .topic-map .link-summary a.btn-primary.btn-active, .topic-meta-data .post-info a.btn-primary.btn-active, .stats-section li.linked-stat a.btn-primary.btn-active, .user-main .about .controls a.btn-primary.btn-active {
+.btn-primary.pika-prev:active, #reply-control .submit-panel .btn-primary.cancel:active, #reply-control .btn-primary.toggle-preview:active, #share-link .reply-as-new-topic a.btn-primary:active, .small-action button.btn-primary:active, .topic-meta-data .post-info a.btn-primary:active, .stats-section li.linked-stat a.btn-primary:active, .user-main .about .controls a.btn-primary:active, .btn-primary.btn-active.btn-flat, div.poll .poll-buttons a.btn-primary.btn-active, .btn-primary.btn-active.d-modal-cancel, .modal-footer :not(.disclaimer) a.btn-primary.btn-active, .btn-primary.btn-active.pika-button, .btn-primary.btn-active.pika-next,
+.btn-primary.btn-active.pika-prev, #reply-control .submit-panel .btn-primary.btn-active.cancel, #reply-control .btn-primary.btn-active.toggle-preview, #share-link .reply-as-new-topic a.btn-primary.btn-active, .small-action button.btn-primary.btn-active, .topic-meta-data .post-info a.btn-primary.btn-active, .stats-section li.linked-stat a.btn-primary.btn-active, .user-main .about .controls a.btn-primary.btn-active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 
@@ -134,110 +131,156 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   background-color: transparent;
   color: $danger;
 }
-.discourse-no-touch .btn-flat.cancel:focus, .discourse-no-touch .btn-flat.cancel:hover {
+.discourse-no-touch .btn-flat.cancel:hover, .discourse-no-touch .btn-flat.cancel.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $danger;
 }
-.discourse-no-touch .btn-flat.cancel:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+.btn-flat.cancel:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .btn-flat.ok {
   background-color: transparent;
   color: $success;
 }
-.discourse-no-touch .btn-flat.ok:focus, .discourse-no-touch .btn-flat.ok:hover {
+.discourse-no-touch .btn-flat.ok:hover, .discourse-no-touch .btn-flat.ok.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $success;
 }
-.discourse-no-touch .btn-flat.ok:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+.btn-flat.ok:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 
-.btn, .select-kit:not(.multi-select) .select-kit-header, .search-menu .no-results .widget-link, .fps-select a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .display-row .controls a[data-ember-action]:not(.close), .user-navigation .new-private-message, .badges-section.top-section > p .more {
+.btn, .search-menu .no-results .widget-link, .fps-select a, .period-chooser.dropdown-select-box.select-kit .period-chooser-header, .display-row .controls a[data-ember-action]:not(.close), .user-navigation .new-private-message, .badges-section.top-section > p .more {
   background-color: color-chooser($tertiary, #ffffff);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
-.btn:focus, .select-kit:not(.multi-select) .select-kit-header:focus, .search-menu .no-results .widget-link:focus, .fps-select a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus, .btn:hover, .select-kit:not(.multi-select) .select-kit-header:hover, .search-menu .no-results .widget-link:hover, .fps-select a:hover, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .display-row .controls a[data-ember-action]:hover:not(.close), .user-navigation .new-private-message:hover, .badges-section.top-section > p .more:hover {
+.discourse-no-touch .btn:hover, .discourse-no-touch .search-menu .no-results .widget-link:hover, .search-menu .no-results .discourse-no-touch .widget-link:hover, .discourse-no-touch .fps-select a:hover, .fps-select .discourse-no-touch a:hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .period-chooser-header:hover, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .period-chooser-header:hover, .discourse-no-touch .display-row .controls a[data-ember-action]:hover:not(.close), .display-row .controls .discourse-no-touch a[data-ember-action]:hover:not(.close), .discourse-no-touch .user-navigation .new-private-message:hover, .user-navigation .discourse-no-touch .new-private-message:hover, .discourse-no-touch .badges-section.top-section > p .more:hover, .badges-section.top-section > p .discourse-no-touch .more:hover, .discourse-no-touch .btn-hover.btn, .discourse-no-touch .search-menu .no-results .btn-hover.widget-link, .search-menu .no-results .discourse-no-touch .btn-hover.widget-link, .discourse-no-touch .fps-select a.btn-hover, .fps-select .discourse-no-touch a.btn-hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .btn-hover.period-chooser-header, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .btn-hover.period-chooser-header, .discourse-no-touch .display-row .controls a.btn-hover[data-ember-action]:not(.close), .display-row .controls .discourse-no-touch a.btn-hover[data-ember-action]:not(.close), .discourse-no-touch .user-navigation .btn-hover.new-private-message, .user-navigation .discourse-no-touch .btn-hover.new-private-message, .discourse-no-touch .badges-section.top-section > p .btn-hover.more, .badges-section.top-section > p .discourse-no-touch .btn-hover.more {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
-.btn-hover.btn, .select-kit:not(.multi-select) .btn-hover.select-kit-header, .search-menu .no-results .btn-hover.widget-link, .fps-select a.btn-hover, .period-chooser.dropdown-select-box.select-kit .btn-hover.period-chooser-header, .display-row .controls a.btn-hover[data-ember-action]:not(.close), .user-navigation .btn-hover.new-private-message, .badges-section.top-section > p .btn-hover.more {
+.btn:focus, .search-menu .no-results .widget-link:focus, .fps-select a:focus, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:focus, .display-row .controls a[data-ember-action]:focus:not(.close), .user-navigation .new-private-message:focus, .badges-section.top-section > p .more:focus {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
-.btn:active, .select-kit:not(.multi-select) .select-kit-header:active, .search-menu .no-results .widget-link:active, .fps-select a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .display-row .controls a[data-ember-action]:active:not(.close), .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .btn-active.btn, .select-kit:not(.multi-select) .btn-active.select-kit-header, .search-menu .no-results .btn-active.widget-link, .fps-select a.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-active.period-chooser-header, .display-row .controls a.btn-active[data-ember-action]:not(.close), .user-navigation .btn-active.new-private-message, .badges-section.top-section > p .btn-active.more {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+.btn:active, .search-menu .no-results .widget-link:active, .fps-select a:active, .period-chooser.dropdown-select-box.select-kit .period-chooser-header:active, .display-row .controls a[data-ember-action]:active:not(.close), .user-navigation .new-private-message:active, .badges-section.top-section > p .more:active, .btn-active.btn, .search-menu .no-results .btn-active.widget-link, .fps-select a.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-active.period-chooser-header, .display-row .controls a.btn-active[data-ember-action]:not(.close), .user-navigation .btn-active.new-private-message, .badges-section.top-section > p .btn-active.more {
+  background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
-[disabled].btn, .select-kit:not(.multi-select) [disabled].select-kit-header, .search-menu .no-results [disabled].widget-link, .fps-select a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .display-row .controls a[disabled][data-ember-action]:not(.close), .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .disabled.btn, .select-kit:not(.multi-select) .disabled.select-kit-header, .search-menu .no-results .disabled.widget-link, .fps-select a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .display-row .controls a.disabled[data-ember-action]:not(.close), .user-navigation .disabled.new-private-message, .badges-section.top-section > p .disabled.more {
+[disabled].btn, .search-menu .no-results [disabled].widget-link, .fps-select a[disabled], .period-chooser.dropdown-select-box.select-kit [disabled].period-chooser-header, .display-row .controls a[disabled][data-ember-action]:not(.close), .user-navigation [disabled].new-private-message, .badges-section.top-section > p [disabled].more, .disabled.btn, .search-menu .no-results .disabled.widget-link, .fps-select a.disabled, .period-chooser.dropdown-select-box.select-kit .disabled.period-chooser-header, .display-row .controls a.disabled[data-ember-action]:not(.close), .user-navigation .disabled.new-private-message, .badges-section.top-section > p .disabled.more {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
   background-image: none;
   box-shadow: none;
 }
-.btn-danger.btn, .select-kit:not(.multi-select) .btn-danger.select-kit-header, .search-menu .no-results .btn-danger.widget-link, .fps-select a.btn-danger, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, .display-row .controls a.btn-danger[data-ember-action]:not(.close), .user-navigation .btn-danger.new-private-message, .badges-section.top-section > p .btn-danger.more {
+.btn-danger.btn, .search-menu .no-results .btn-danger.widget-link, .fps-select a.btn-danger, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header, .display-row .controls a.btn-danger[data-ember-action]:not(.close), .user-navigation .btn-danger.new-private-message, .badges-section.top-section > p .btn-danger.more {
   background-color: $danger;
   color: color-dynamic($danger);
 }
-.btn-primary.btn, .select-kit:not(.multi-select) .btn-primary.select-kit-header, .search-menu .no-results .btn-primary.widget-link, .fps-select a.btn-primary, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, .display-row .controls a.btn-primary[data-ember-action]:not(.close), .user-navigation .btn-primary.new-private-message, .badges-section.top-section > p .btn-primary.more {
+.discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .search-menu .no-results .btn-danger.widget-link:hover, .search-menu .no-results .discourse-no-touch .btn-danger.widget-link:hover, .discourse-no-touch .fps-select a.btn-danger:hover, .fps-select .discourse-no-touch a.btn-danger:hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:hover, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .btn-danger.period-chooser-header:hover, .discourse-no-touch .display-row .controls a.btn-danger[data-ember-action]:hover:not(.close), .display-row .controls .discourse-no-touch a.btn-danger[data-ember-action]:hover:not(.close), .discourse-no-touch .user-navigation .btn-danger.new-private-message:hover, .user-navigation .discourse-no-touch .btn-danger.new-private-message:hover, .discourse-no-touch .badges-section.top-section > p .btn-danger.more:hover, .badges-section.top-section > p .discourse-no-touch .btn-danger.more:hover, .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .search-menu .no-results .btn-danger.btn-hover.widget-link, .search-menu .no-results .discourse-no-touch .btn-danger.btn-hover.widget-link, .discourse-no-touch .fps-select a.btn-danger.btn-hover, .fps-select .discourse-no-touch a.btn-danger.btn-hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .btn-danger.btn-hover.period-chooser-header, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .btn-danger.btn-hover.period-chooser-header, .discourse-no-touch .display-row .controls a.btn-danger.btn-hover[data-ember-action]:not(.close), .display-row .controls .discourse-no-touch a.btn-danger.btn-hover[data-ember-action]:not(.close), .discourse-no-touch .user-navigation .btn-danger.btn-hover.new-private-message, .user-navigation .discourse-no-touch .btn-danger.btn-hover.new-private-message, .discourse-no-touch .badges-section.top-section > p .btn-danger.btn-hover.more, .badges-section.top-section > p .discourse-no-touch .btn-danger.btn-hover.more {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+.btn-danger.btn:focus, .search-menu .no-results .btn-danger.widget-link:focus, .fps-select a.btn-danger:focus, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:focus, .display-row .controls a.btn-danger[data-ember-action]:focus:not(.close), .user-navigation .btn-danger.new-private-message:focus, .badges-section.top-section > p .btn-danger.more:focus {
+  background-color: $danger;
+}
+.btn-danger.btn:active, .search-menu .no-results .btn-danger.widget-link:active, .fps-select a.btn-danger:active, .period-chooser.dropdown-select-box.select-kit .btn-danger.period-chooser-header:active, .display-row .controls a.btn-danger[data-ember-action]:active:not(.close), .user-navigation .btn-danger.new-private-message:active, .badges-section.top-section > p .btn-danger.more:active, .btn-danger.btn-active.btn, .search-menu .no-results .btn-danger.btn-active.widget-link, .fps-select a.btn-danger.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-danger.btn-active.period-chooser-header, .display-row .controls a.btn-danger.btn-active[data-ember-action]:not(.close), .user-navigation .btn-danger.btn-active.new-private-message, .badges-section.top-section > p .btn-danger.btn-active.more {
+  background-color: $danger;
+}
+.btn-primary.btn, .search-menu .no-results .btn-primary.widget-link, .fps-select a.btn-primary, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header, .display-row .controls a.btn-primary[data-ember-action]:not(.close), .user-navigation .btn-primary.new-private-message, .badges-section.top-section > p .btn-primary.more {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
 }
+.discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .search-menu .no-results .btn-primary.widget-link:hover, .search-menu .no-results .discourse-no-touch .btn-primary.widget-link:hover, .discourse-no-touch .fps-select a.btn-primary:hover, .fps-select .discourse-no-touch a.btn-primary:hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:hover, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .btn-primary.period-chooser-header:hover, .discourse-no-touch .display-row .controls a.btn-primary[data-ember-action]:hover:not(.close), .display-row .controls .discourse-no-touch a.btn-primary[data-ember-action]:hover:not(.close), .discourse-no-touch .user-navigation .btn-primary.new-private-message:hover, .user-navigation .discourse-no-touch .btn-primary.new-private-message:hover, .discourse-no-touch .badges-section.top-section > p .btn-primary.more:hover, .badges-section.top-section > p .discourse-no-touch .btn-primary.more:hover, .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .search-menu .no-results .btn-primary.btn-hover.widget-link, .search-menu .no-results .discourse-no-touch .btn-primary.btn-hover.widget-link, .discourse-no-touch .fps-select a.btn-primary.btn-hover, .fps-select .discourse-no-touch a.btn-primary.btn-hover, .discourse-no-touch .period-chooser.dropdown-select-box.select-kit .btn-primary.btn-hover.period-chooser-header, .period-chooser.dropdown-select-box.select-kit .discourse-no-touch .btn-primary.btn-hover.period-chooser-header, .discourse-no-touch .display-row .controls a.btn-primary.btn-hover[data-ember-action]:not(.close), .display-row .controls .discourse-no-touch a.btn-primary.btn-hover[data-ember-action]:not(.close), .discourse-no-touch .user-navigation .btn-primary.btn-hover.new-private-message, .user-navigation .discourse-no-touch .btn-primary.btn-hover.new-private-message, .discourse-no-touch .badges-section.top-section > p .btn-primary.btn-hover.more, .badges-section.top-section > p .discourse-no-touch .btn-primary.btn-hover.more {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+.btn-primary.btn:focus, .search-menu .no-results .btn-primary.widget-link:focus, .fps-select a.btn-primary:focus, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:focus, .display-row .controls a.btn-primary[data-ember-action]:focus:not(.close), .user-navigation .btn-primary.new-private-message:focus, .badges-section.top-section > p .btn-primary.more:focus {
+  background-color: $tertiary;
+}
+.btn-primary.btn:active, .search-menu .no-results .btn-primary.widget-link:active, .fps-select a.btn-primary:active, .period-chooser.dropdown-select-box.select-kit .btn-primary.period-chooser-header:active, .display-row .controls a.btn-primary[data-ember-action]:active:not(.close), .user-navigation .btn-primary.new-private-message:active, .badges-section.top-section > p .btn-primary.more:active, .btn-primary.btn-active.btn, .search-menu .no-results .btn-primary.btn-active.widget-link, .fps-select a.btn-primary.btn-active, .period-chooser.dropdown-select-box.select-kit .btn-primary.btn-active.period-chooser-header, .display-row .controls a.btn-primary.btn-active[data-ember-action]:not(.close), .user-navigation .btn-primary.btn-active.new-private-message, .badges-section.top-section > p .btn-primary.btn-active.more {
+  background-color: $tertiary;
+}
 
-div.poll .poll-buttons .btn, .popup-menu .btn, .d-editor .d-editor-modal .controls .btn, .d-editor-button-bar .btn, .signup-cta .buttons .btn, .topic-map .buttons .btn {
+div.poll .poll-buttons .btn, .popup-menu .btn, .d-editor .d-editor-modal .controls .btn, .d-editor-button-bar .btn, .embedded-posts .collapse-down,
+.embedded-posts .collapse-up, .signup-cta .buttons .btn, .topic-map .buttons .btn {
   background-color: transparent;
   box-shadow: none;
 }
-div.poll .poll-buttons .btn:focus, .popup-menu .btn:focus, .d-editor .d-editor-modal .controls .btn:focus, .d-editor-button-bar .btn:focus, .signup-cta .buttons .btn:focus, .topic-map .buttons .btn:focus, div.poll .poll-buttons .btn:hover, .popup-menu .btn:hover, .d-editor .d-editor-modal .controls .btn:hover, .d-editor-button-bar .btn:hover, .signup-cta .buttons .btn:hover, .topic-map .buttons .btn:hover {
+.discourse-no-touch div.poll .poll-buttons .btn:hover, div.poll .poll-buttons .discourse-no-touch .btn:hover, .discourse-no-touch .popup-menu .btn:hover, .popup-menu .discourse-no-touch .btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn:hover, .discourse-no-touch .d-editor-button-bar .btn:hover, .d-editor-button-bar .discourse-no-touch .btn:hover, .discourse-no-touch .embedded-posts .collapse-down:hover, .embedded-posts .discourse-no-touch .collapse-down:hover,
+.discourse-no-touch .embedded-posts .collapse-up:hover,
+.embedded-posts .discourse-no-touch .collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn:hover, .signup-cta .buttons .discourse-no-touch .btn:hover, .discourse-no-touch .topic-map .buttons .btn:hover, .topic-map .buttons .discourse-no-touch .btn:hover, .discourse-no-touch div.poll .poll-buttons .btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-hover.btn, .discourse-no-touch .popup-menu .btn-hover.btn, .popup-menu .discourse-no-touch .btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-hover.btn, .discourse-no-touch .embedded-posts .btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-hover.collapse-down,
+.discourse-no-touch .embedded-posts .btn-hover.collapse-up,
+.embedded-posts .discourse-no-touch .btn-hover.collapse-up, .discourse-no-touch .signup-cta .buttons .btn-hover.btn, .signup-cta .buttons .discourse-no-touch .btn-hover.btn, .discourse-no-touch .topic-map .buttons .btn-hover.btn, .topic-map .buttons .discourse-no-touch .btn-hover.btn {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   background-image: none;
 }
-div.poll .poll-buttons .btn-hover.btn, .popup-menu .btn-hover.btn, .d-editor .d-editor-modal .controls .btn-hover.btn, .d-editor-button-bar .btn-hover.btn, .signup-cta .buttons .btn-hover.btn, .topic-map .buttons .btn-hover.btn {
+div.poll .poll-buttons .btn:focus, .popup-menu .btn:focus, .d-editor .d-editor-modal .controls .btn:focus, .d-editor-button-bar .btn:focus, .embedded-posts .collapse-down:focus,
+.embedded-posts .collapse-up:focus, .signup-cta .buttons .btn:focus, .topic-map .buttons .btn:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   background-image: none;
 }
-div.poll .poll-buttons .btn:active, .popup-menu .btn:active, .d-editor .d-editor-modal .controls .btn:active, .d-editor-button-bar .btn:active, .signup-cta .buttons .btn:active, .topic-map .buttons .btn:active, div.poll .poll-buttons .btn-active.btn, .popup-menu .btn-active.btn, .d-editor .d-editor-modal .controls .btn-active.btn, .d-editor-button-bar .btn-active.btn, .signup-cta .buttons .btn-active.btn, .topic-map .buttons .btn-active.btn {
+div.poll .poll-buttons .btn:active, .popup-menu .btn:active, .d-editor .d-editor-modal .controls .btn:active, .d-editor-button-bar .btn:active, .embedded-posts .collapse-down:active,
+.embedded-posts .collapse-up:active, .signup-cta .buttons .btn:active, .topic-map .buttons .btn:active, div.poll .poll-buttons .btn-active.btn, .popup-menu .btn-active.btn, .d-editor .d-editor-modal .controls .btn-active.btn, .d-editor-button-bar .btn-active.btn, .embedded-posts .btn-active.collapse-down,
+.embedded-posts .btn-active.collapse-up, .signup-cta .buttons .btn-active.btn, .topic-map .buttons .btn-active.btn {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   box-shadow: none;
 }
-div.poll .poll-buttons [disabled].btn, .popup-menu [disabled].btn, .d-editor .d-editor-modal .controls [disabled].btn, .d-editor-button-bar [disabled].btn, .signup-cta .buttons [disabled].btn, .topic-map .buttons [disabled].btn, div.poll .poll-buttons .disabled.btn, .popup-menu .disabled.btn, .d-editor .d-editor-modal .controls .disabled.btn, .d-editor-button-bar .disabled.btn, .signup-cta .buttons .disabled.btn, .topic-map .buttons .disabled.btn {
+div.poll .poll-buttons [disabled].btn, .popup-menu [disabled].btn, .d-editor .d-editor-modal .controls [disabled].btn, .d-editor-button-bar [disabled].btn, .embedded-posts [disabled].collapse-down,
+.embedded-posts [disabled].collapse-up, .signup-cta .buttons [disabled].btn, .topic-map .buttons [disabled].btn, div.poll .poll-buttons .disabled.btn, .popup-menu .disabled.btn, .d-editor .d-editor-modal .controls .disabled.btn, .d-editor-button-bar .disabled.btn, .embedded-posts .disabled.collapse-down,
+.embedded-posts .disabled.collapse-up, .signup-cta .buttons .disabled.btn, .topic-map .buttons .disabled.btn {
   background-color: transparent !important;
 }
-div.poll .poll-buttons .btn-danger.btn, .popup-menu .btn-danger.btn, .d-editor .d-editor-modal .controls .btn-danger.btn, .d-editor-button-bar .btn-danger.btn, .signup-cta .buttons .btn-danger.btn, .topic-map .buttons .btn-danger.btn {
+div.poll .poll-buttons .btn-danger.btn, .popup-menu .btn-danger.btn, .d-editor .d-editor-modal .controls .btn-danger.btn, .d-editor-button-bar .btn-danger.btn, .embedded-posts .btn-danger.collapse-down,
+.embedded-posts .btn-danger.collapse-up, .signup-cta .buttons .btn-danger.btn, .topic-map .buttons .btn-danger.btn {
   background-color: transparent;
   color: $danger;
 }
-div.poll .poll-buttons .btn-danger.btn:focus, .popup-menu .btn-danger.btn:focus, .d-editor .d-editor-modal .controls .btn-danger.btn:focus, .d-editor-button-bar .btn-danger.btn:focus, .signup-cta .buttons .btn-danger.btn:focus, .topic-map .buttons .btn-danger.btn:focus, div.poll .poll-buttons .btn-danger.btn:hover, .popup-menu .btn-danger.btn:hover, .d-editor .d-editor-modal .controls .btn-danger.btn:hover, .d-editor-button-bar .btn-danger.btn:hover, .signup-cta .buttons .btn-danger.btn:hover, .topic-map .buttons .btn-danger.btn:hover {
+.discourse-no-touch div.poll .poll-buttons .btn-danger.btn:hover, div.poll .poll-buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .popup-menu .btn-danger.btn:hover, .popup-menu .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-danger.btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .d-editor-button-bar .btn-danger.btn:hover, .d-editor-button-bar .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .embedded-posts .btn-danger.collapse-down:hover, .embedded-posts .discourse-no-touch .btn-danger.collapse-down:hover,
+.discourse-no-touch .embedded-posts .btn-danger.collapse-up:hover,
+.embedded-posts .discourse-no-touch .btn-danger.collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn-danger.btn:hover, .signup-cta .buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .topic-map .buttons .btn-danger.btn:hover, .topic-map .buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch div.poll .poll-buttons .btn-danger.btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .popup-menu .btn-danger.btn-hover.btn, .popup-menu .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-danger.btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-danger.btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .embedded-posts .btn-danger.btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-danger.btn-hover.collapse-down,
+.discourse-no-touch .embedded-posts .btn-danger.btn-hover.collapse-up,
+.embedded-posts .discourse-no-touch .btn-danger.btn-hover.collapse-up, .discourse-no-touch .signup-cta .buttons .btn-danger.btn-hover.btn, .signup-cta .buttons .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .topic-map .buttons .btn-danger.btn-hover.btn, .topic-map .buttons .discourse-no-touch .btn-danger.btn-hover.btn {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-danger.btn-hover.btn, .popup-menu .btn-danger.btn-hover.btn, .d-editor .d-editor-modal .controls .btn-danger.btn-hover.btn, .d-editor-button-bar .btn-danger.btn-hover.btn, .signup-cta .buttons .btn-danger.btn-hover.btn, .topic-map .buttons .btn-danger.btn-hover.btn {
+div.poll .poll-buttons .btn-danger.btn:focus, .popup-menu .btn-danger.btn:focus, .d-editor .d-editor-modal .controls .btn-danger.btn:focus, .d-editor-button-bar .btn-danger.btn:focus, .embedded-posts .btn-danger.collapse-down:focus,
+.embedded-posts .btn-danger.collapse-up:focus, .signup-cta .buttons .btn-danger.btn:focus, .topic-map .buttons .btn-danger.btn:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-danger.btn:active, .popup-menu .btn-danger.btn:active, .d-editor .d-editor-modal .controls .btn-danger.btn:active, .d-editor-button-bar .btn-danger.btn:active, .signup-cta .buttons .btn-danger.btn:active, .topic-map .buttons .btn-danger.btn:active, div.poll .poll-buttons .btn-danger.btn-active.btn, .popup-menu .btn-danger.btn-active.btn, .d-editor .d-editor-modal .controls .btn-danger.btn-active.btn, .d-editor-button-bar .btn-danger.btn-active.btn, .signup-cta .buttons .btn-danger.btn-active.btn, .topic-map .buttons .btn-danger.btn-active.btn {
+div.poll .poll-buttons .btn-danger.btn:active, .popup-menu .btn-danger.btn:active, .d-editor .d-editor-modal .controls .btn-danger.btn:active, .d-editor-button-bar .btn-danger.btn:active, .embedded-posts .btn-danger.collapse-down:active,
+.embedded-posts .btn-danger.collapse-up:active, .signup-cta .buttons .btn-danger.btn:active, .topic-map .buttons .btn-danger.btn:active, div.poll .poll-buttons .btn-danger.btn-active.btn, .popup-menu .btn-danger.btn-active.btn, .d-editor .d-editor-modal .controls .btn-danger.btn-active.btn, .d-editor-button-bar .btn-danger.btn-active.btn, .embedded-posts .btn-danger.btn-active.collapse-down,
+.embedded-posts .btn-danger.btn-active.collapse-up, .signup-cta .buttons .btn-danger.btn-active.btn, .topic-map .buttons .btn-danger.btn-active.btn {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
-div.poll .poll-buttons .btn-primary.btn, .popup-menu .btn-primary.btn, .d-editor .d-editor-modal .controls .btn-primary.btn, .d-editor-button-bar .btn-primary.btn, .signup-cta .buttons .btn-primary.btn, .topic-map .buttons .btn-primary.btn {
+div.poll .poll-buttons .btn-primary.btn, .popup-menu .btn-primary.btn, .d-editor .d-editor-modal .controls .btn-primary.btn, .d-editor-button-bar .btn-primary.btn, .embedded-posts .btn-primary.collapse-down,
+.embedded-posts .btn-primary.collapse-up, .signup-cta .buttons .btn-primary.btn, .topic-map .buttons .btn-primary.btn {
   background-color: transparent;
   color: $tertiary;
 }
-div.poll .poll-buttons .btn-primary.btn:focus, .popup-menu .btn-primary.btn:focus, .d-editor .d-editor-modal .controls .btn-primary.btn:focus, .d-editor-button-bar .btn-primary.btn:focus, .signup-cta .buttons .btn-primary.btn:focus, .topic-map .buttons .btn-primary.btn:focus, div.poll .poll-buttons .btn-primary.btn:hover, .popup-menu .btn-primary.btn:hover, .d-editor .d-editor-modal .controls .btn-primary.btn:hover, .d-editor-button-bar .btn-primary.btn:hover, .signup-cta .buttons .btn-primary.btn:hover, .topic-map .buttons .btn-primary.btn:hover {
+.discourse-no-touch div.poll .poll-buttons .btn-primary.btn:hover, div.poll .poll-buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .popup-menu .btn-primary.btn:hover, .popup-menu .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-primary.btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .d-editor-button-bar .btn-primary.btn:hover, .d-editor-button-bar .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .embedded-posts .btn-primary.collapse-down:hover, .embedded-posts .discourse-no-touch .btn-primary.collapse-down:hover,
+.discourse-no-touch .embedded-posts .btn-primary.collapse-up:hover,
+.embedded-posts .discourse-no-touch .btn-primary.collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn-primary.btn:hover, .signup-cta .buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .topic-map .buttons .btn-primary.btn:hover, .topic-map .buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch div.poll .poll-buttons .btn-primary.btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .popup-menu .btn-primary.btn-hover.btn, .popup-menu .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-primary.btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-primary.btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .embedded-posts .btn-primary.btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-primary.btn-hover.collapse-down,
+.discourse-no-touch .embedded-posts .btn-primary.btn-hover.collapse-up,
+.embedded-posts .discourse-no-touch .btn-primary.btn-hover.collapse-up, .discourse-no-touch .signup-cta .buttons .btn-primary.btn-hover.btn, .signup-cta .buttons .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .topic-map .buttons .btn-primary.btn-hover.btn, .topic-map .buttons .discourse-no-touch .btn-primary.btn-hover.btn {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-primary.btn-hover.btn, .popup-menu .btn-primary.btn-hover.btn, .d-editor .d-editor-modal .controls .btn-primary.btn-hover.btn, .d-editor-button-bar .btn-primary.btn-hover.btn, .signup-cta .buttons .btn-primary.btn-hover.btn, .topic-map .buttons .btn-primary.btn-hover.btn {
+div.poll .poll-buttons .btn-primary.btn:focus, .popup-menu .btn-primary.btn:focus, .d-editor .d-editor-modal .controls .btn-primary.btn:focus, .d-editor-button-bar .btn-primary.btn:focus, .embedded-posts .btn-primary.collapse-down:focus,
+.embedded-posts .btn-primary.collapse-up:focus, .signup-cta .buttons .btn-primary.btn:focus, .topic-map .buttons .btn-primary.btn:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-primary.btn:active, .popup-menu .btn-primary.btn:active, .d-editor .d-editor-modal .controls .btn-primary.btn:active, .d-editor-button-bar .btn-primary.btn:active, .signup-cta .buttons .btn-primary.btn:active, .topic-map .buttons .btn-primary.btn:active, div.poll .poll-buttons .btn-primary.btn-active.btn, .popup-menu .btn-primary.btn-active.btn, .d-editor .d-editor-modal .controls .btn-primary.btn-active.btn, .d-editor-button-bar .btn-primary.btn-active.btn, .signup-cta .buttons .btn-primary.btn-active.btn, .topic-map .buttons .btn-primary.btn-active.btn {
+div.poll .poll-buttons .btn-primary.btn:active, .popup-menu .btn-primary.btn:active, .d-editor .d-editor-modal .controls .btn-primary.btn:active, .d-editor-button-bar .btn-primary.btn:active, .embedded-posts .btn-primary.collapse-down:active,
+.embedded-posts .btn-primary.collapse-up:active, .signup-cta .buttons .btn-primary.btn:active, .topic-map .buttons .btn-primary.btn:active, div.poll .poll-buttons .btn-primary.btn-active.btn, .popup-menu .btn-primary.btn-active.btn, .d-editor .d-editor-modal .controls .btn-primary.btn-active.btn, .d-editor-button-bar .btn-primary.btn-active.btn, .embedded-posts .btn-primary.btn-active.collapse-down,
+.embedded-posts .btn-primary.btn-active.collapse-up, .signup-cta .buttons .btn-primary.btn-active.btn, .topic-map .buttons .btn-primary.btn-active.btn {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 
 div.poll .poll-buttons a,
-div.poll .poll-buttons .btn, .d-editor .d-editor-modal .controls .btn, .discourse-local-dates-create-modal-footer .cancel-action, .modal.history-modal #revision .btn, .upload-selector ~ .modal-footer a.pull-right, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .information .btn, .topic-map .link-summary a, .user-main .user-content .user-invite-controls .btn {
+div.poll .poll-buttons .btn, .d-editor .d-editor-modal .controls .btn, .discourse-local-dates-create-modal-footer .cancel-action, .modal.history-modal #revision .btn, .upload-selector ~ .modal-footer a.pull-right, #share-link .reply-as-new-topic a, .categories-and-latest .topic-list .more-topics .btn, .latest-topic-list .more-topics .btn, nav.post-controls button, nav.post-controls .show-replies, .topic-map .information .btn, .user-main .user-content .user-invite-controls .btn {
   margin-left: 8px;
   padding-right: 8px;
   padding-left: 8px;
 }
 div.poll .poll-buttons a:first-child,
-div.poll .poll-buttons .btn:first-child, .d-editor .d-editor-modal .controls .btn:first-child, .discourse-local-dates-create-modal-footer .cancel-action:first-child, .modal.history-modal #revision .btn:first-child, .upload-selector ~ .modal-footer a.pull-right:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .information .btn:first-child, .topic-map .link-summary a:first-child, .user-main .user-content .user-invite-controls .btn:first-child {
+div.poll .poll-buttons .btn:first-child, .d-editor .d-editor-modal .controls .btn:first-child, .discourse-local-dates-create-modal-footer .cancel-action:first-child, .modal.history-modal #revision .btn:first-child, .upload-selector ~ .modal-footer a.pull-right:first-child, #share-link .reply-as-new-topic a:first-child, .categories-and-latest .topic-list .more-topics .btn:first-child, .latest-topic-list .more-topics .btn:first-child, nav.post-controls button:first-child, nav.post-controls .show-replies:first-child, .topic-map .information .btn:first-child, .user-main .user-content .user-invite-controls .btn:first-child {
   margin-left: 0;
 }
 
@@ -1157,9 +1200,6 @@ aside.onebox {
 aside.onebox header {
   margin-bottom: 8px;
 }
-.ember-view aside.onebox header.source {
-  background-position: 0 50%;
-}
 aside.onebox + .onebox {
   border-top: 1px solid color-chooser(#424242, #ffffff);
   margin-top: -16px;
@@ -1169,37 +1209,25 @@ aside.onebox .onebox-body h4 {
   margin-bottom: 8px;
   overflow: hidden;
 }
-aside.onebox .onebox-body img {
-  margin-right: 16px;
-  width: 96px;
-}
 aside.onebox .onebox-body p {
   overflow: hidden;
 }
 aside.onebox .onebox-body p:last-child {
   margin-bottom: 0;
 }
-aside.onebox .onebox-body > :last-child {
-  margin-bottom: 0;
-}
-aside.onebox .onebox-body > :last-child:empty {
-  display: block;
-  margin-top: -16px;
-}
 aside.onebox .onebox-body > .labels:last-child {
   margin-top: -16px;
 }
-aside.onebox .onebox-body .date {
-  margin-top: 0 !important;
-  margin-bottom: 16px;
-  overflow: hidden;
-}
-aside.onebox .onebox-body .date .user {
-  margin-top: 0 !important;
+aside.onebox .onebox-body .aspect-image {
+  margin-top: 4px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  width: 96px;
 }
 aside.onebox .onebox-body .onebox-avatar {
   border-radius: 50%;
   height: 36px;
+  margin-right: 16px;
   width: 36px;
 }
 aside.quote {
@@ -1336,6 +1364,11 @@ div.poll .results .percentage {
 div.poll .results .option {
   margin-bottom: 4px;
   padding-bottom: 0;
+}
+
+.onebox.gfycat .site-icon, .onebox.whitelistedgeneric .site-icon {
+  margin-right: 4px;
+  vertical-align: text-top;
 }
 
 .quote-controls {
@@ -1992,7 +2025,7 @@ div.ac-wrap input[type='text'] {
 .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-selected {
   background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
-.select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
+.select-kit.dropdown-select-box .dropdown-select-box-header:focus .d-icon, .select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
   color: inherit;
 }
 .select-kit.dropdown-select-box .dropdown-select-box-header.is-focused {
@@ -2121,7 +2154,6 @@ div.ac-wrap input[type='text'] {
   height: 36px;
 }
 .select-kit:not(.multi-select) .select-kit-header.is-focused {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   border: 0;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
@@ -2191,6 +2223,7 @@ div.ac-wrap input[type='text'] {
 .d-header .extra-info h1, .d-header .extra-info.two-rows h1 {
   margin: 0;
   min-width: 0;
+  width: auto;
 }
 .d-header .extra-info-wrapper {
   margin-left: 8px;
@@ -4457,22 +4490,36 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   display: flex;
 }
 
+.composer-popup {
+  border-radius: 4px;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
+  padding: 16px 16px;
+  top: 56px;
+  bottom: 68px;
+}
+.composer-popup a.close {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  float: right;
+  font-size: 14px;
+  opacity: 1;
+  position: relative;
+  top: 3.999996px;
+  right: 0;
+}
+.composer-popup a.close:active, .composer-popup a.close:focus, .composer-popup a.close:hover {
+  color: color-chooser(white, rgba(0, 0, 0, 0.87));
+}
+.composer-popup a.close::before {
+  display: none;
+}
+.composer-popup > :last-child {
+  margin-bottom: 0;
+}
+
 #reply-control {
   background-color: color-chooser(#424242, #ffffff);
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  max-width: 1110px;
-}
-@media (min-width: 1112px) {
-  #reply-control {
-    border-radius: 8px 8px 0 0;
-    margin-right: 0;
-    right: 1px;
-  }
-}
-@media (min-width: 1158px) {
-  #reply-control {
-    right: 24px;
-  }
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
 }
 #reply-control.closed {
   display: none;
@@ -5022,10 +5069,16 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   margin: 0;
   position: absolute;
   top: 20px;
-  right: 8px;
+  right: 16px;
 }
 #share-link .link a {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+}
+#share-link .link a:active, #share-link .link a:focus, #share-link .link a:hover {
+  color: color-chooser(white, rgba(0, 0, 0, 0.87));
+}
+#share-link .link a:focus {
+  outline: 0;
 }
 #share-link .reply-as-new-topic {
   float: right;
@@ -5634,17 +5687,27 @@ nav.post-controls {
   float: left;
   position: relative;
 }
-#post_1 nav.post-controls {
-  max-width: calc(100% - 48px);
-}
 nav.post-controls button {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  font-size: 14px;
+  margin-right: 0;
+  padding: 11px 8px;
+}
+nav.post-controls button:focus, nav.post-controls button:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 nav.post-controls button:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   box-shadow: none;
 }
 nav.post-controls button.bookmark {
   padding: 11px 8px;
+}
+nav.post-controls button.d-hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+nav.post-controls button.d-hover:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 nav.post-controls button.delete:focus, nav.post-controls button.delete:hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
@@ -5660,14 +5723,11 @@ nav.post-controls button.delete.d-hover {
 nav.post-controls button.delete.d-hover:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
-nav.post-controls button.has-like {
-  color: $love;
-}
 nav.post-controls button.like:focus, nav.post-controls button.like:hover {
   color: $love;
 }
-nav.post-controls button .read-icon::before {
-  content: 'bookmark';
+nav.post-controls button.like:active, nav.post-controls button.like.d-hover {
+  color: $love;
 }
 nav.post-controls .actions {
   -ms-flex-align: center;
@@ -5688,17 +5748,36 @@ nav.post-controls .highlight-action {
 }
 nav.post-controls .like-button {
   border-radius: 4px;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+}
+nav.post-controls .like-button:focus, nav.post-controls .like-button:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: color-chooser($primary, $primary);
 }
 nav.post-controls .like-button:active {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   box-shadow: none;
+  color: color-chooser($primary, $primary);
 }
 nav.post-controls .like-button .like-count {
+  color: inherit !important;
   font-size: 14px;
+}
+nav.post-controls .like-button .like-count:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+nav.post-controls .like-button .like-count.regular-likes {
+  margin-right: 0;
+  padding-right: 0;
 }
 nav.post-controls .like-button .toggle-like {
   margin-left: 0;
   padding: 11px 8px;
+}
+nav.post-controls .like-button .toggle-like:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 nav.post-controls .like-count {
   margin-right: 0;
@@ -5723,43 +5802,56 @@ nav.post-controls .show-replies i {
   margin-left: 4px;
 }
 
+section.post-menu-area {
+  padding-left: 0;
+}
+
 .embedded-posts {
   border: 0;
   border-radius: 0;
-  margin-right: -16px;
-  margin-left: -16px;
   position: relative;
 }
 .embedded-posts.bottom {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 .embedded-posts.bottom .collapse-up {
   -webkit-transform: none;
           transform: none;
 }
 .embedded-posts.bottom .row {
-  padding-bottom: 8px;
+  padding-bottom: 0;
 }
 .embedded-posts.bottom .row .topic-avatar,
 .embedded-posts.bottom .row .topic-body {
   border-top: 0;
 }
+.embedded-posts.top {
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 712px;
+}
+.embedded-posts.top .collapse-down {
+  -webkit-transform: none;
+          transform: none;
+}
+.embedded-posts.top .row {
+  position: relative;
+}
+.embedded-posts.top .row .topic-avatar,
+.embedded-posts.top .row .topic-body {
+  border-top: 0;
+}
+.embedded-posts.top .topic-body {
+  border-radius: 0;
+}
+.embedded-posts .collapse-down,
 .embedded-posts .collapse-up {
-  background-color: transparent;
   border: 0;
-  color: color-chooser($primary, $primary);
-  margin: 0 8px 8px;
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  margin: 8px 8px;
   padding: 9.5px 8px;
   position: static;
-}
-.embedded-posts .collapse-up:focus, .embedded-posts .collapse-up:hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: color-chooser($primary, $primary);
-}
-.embedded-posts .collapse-up:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-  background-image: none;
 }
 .embedded-posts .cooked {
   margin-top: 16px;
@@ -5768,12 +5860,13 @@ nav.post-controls .show-replies i {
   padding: 0;
 }
 .embedded-posts .topic-body {
-  background-color: color-chooser(#303030, #fafafa);
+  background-color: color-chooser(#212121, #f5f5f5);
+  border-radius: 0;
   box-shadow: none;
   margin-bottom: 0;
   width: auto;
 }
-.embedded-posts .topic-meta-data {
+.embedded-posts .topic-body .topic-meta-data {
   min-height: 36px;
   padding-top: 0;
   padding-right: 0;
@@ -5787,7 +5880,7 @@ nav.post-controls .show-replies i {
   max-width: 100%;
   padding: 8px 16px;
   text-transform: none;
-  width: 690px;
+  width: 712px;
 }
 
 .has-pending-posts {
@@ -5931,6 +6024,11 @@ nav.post-controls .show-replies i {
   top: 0;
 }
 
+.reply-to-tab img {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
 .signup-cta .buttons {
   -ms-flex-align: center;
       align-items: center;
@@ -5953,7 +6051,7 @@ nav.post-controls .show-replies i {
 .small-action {
   border-top: 0;
   margin-bottom: 8px;
-  max-width: 690px;
+  max-width: 712px;
   position: relative;
 }
 .small-action.time-gap {
@@ -6053,6 +6151,7 @@ nav.post-controls .show-replies i {
   margin-bottom: 0;
 }
 .topic-body .reply-to-tab {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
   margin: 0 8px 0 0;
 }
 .topic-body .reply-to-tab .avatar {
@@ -6068,7 +6167,7 @@ nav.post-controls .show-replies i {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 16px;
-  max-width: 698px;
+  max-width: 720px;
   padding: 0;
   width: 100%;
 }
@@ -6076,7 +6175,7 @@ nav.post-controls .show-replies i {
 #topic-footer-buttons span > button.btn,
 #topic-footer-buttons > button.btn {
   margin: 0 8px 8px 0;
-  max-width: 230px;
+  max-width: 237.333333px;
 }
 #topic-footer-buttons p {
   margin-bottom: 8px;
@@ -6127,7 +6226,6 @@ nav.post-controls .show-replies i {
   position: relative;
 }
 .topic-map h3 {
-  color: color-chooser($primary, $primary);
   margin-bottom: 8px;
 }
 .topic-map h4 {
@@ -6135,9 +6233,6 @@ nav.post-controls .show-replies i {
   margin: 0 0 4px;
 }
 .topic-map section {
-  border-top: 0;
-}
-.topic-map section.avatars, .topic-map section.links, .topic-map section.map {
   border-top: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 .topic-map .avatar {
@@ -6147,9 +6242,6 @@ nav.post-controls .show-replies i {
 }
 .topic-map .avatars {
   padding: 16px 16px;
-}
-.topic-map .avatars > div {
-  margin: 0;
 }
 .topic-map .avatars .post-count {
   -ms-flex-align: center;
@@ -6163,10 +6255,12 @@ nav.post-controls .show-replies i {
   right: 4px;
 }
 .topic-map .buttons {
-  position: absolute;
-  top: -44px;
-  right: 8px;
-  z-index: 2;
+  margin-right: -8px;
+}
+.topic-map .buttons .btn {
+  border-radius: 0 0 4px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 .topic-map .information {
   background-color: color-chooser(#212121, #f5f5f5);
@@ -6185,11 +6279,26 @@ nav.post-controls .show-replies i {
   margin-bottom: -8px;
 }
 .topic-map .links {
-  padding: 16px 16px 8px;
+  padding: 16px 16px;
 }
 .topic-map .link-summary {
-  margin-right: -4px;
-  margin-left: -4px;
+  margin-top: 8px;
+}
+.topic-map .link-summary .btn {
+  background-color: transparent;
+  color: color-chooser($primary, $primary);
+}
+.topic-map .link-summary .btn:focus, .topic-map .link-summary .btn:hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+.topic-map .link-summary .btn:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+}
+.topic-map .link-summary .btn.d-hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+}
+.topic-map .link-summary .btn.d-hover:active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
 .topic-map .map {
   padding: 0 8px;
@@ -6278,8 +6387,14 @@ nav.post-controls .show-replies i {
 .topic-map .topic-links td {
   padding: 0 0 8px;
 }
+.topic-map .topic-links tr:last-child td {
+  padding-bottom: 0;
+}
 .topic-map .topic-links .topic-link {
   margin-right: 8px;
+}
+.topic-map .topic-map-expanded {
+  border-top: 0;
 }
 
 .topic-post .topic-meta-data {
@@ -6305,6 +6420,13 @@ nav.post-controls .show-replies i {
 
 .topic-post {
   border-left: 0;
+}
+.topic-post .boxed > .row {
+  position: relative;
+}
+.topic-post .boxed > .row + .row .topic-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 #topic-progress {
@@ -6417,6 +6539,12 @@ nav.post-controls .show-replies i {
   display: none;
 }
 
+.whisper .post-info.whisper {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  margin-right: 8px;
+  margin-left: 0;
+}
+
 .who-liked {
   -ms-flex-align: center;
       align-items: center;
@@ -6428,7 +6556,6 @@ nav.post-controls .show-replies i {
   margin-top: 0;
   margin-bottom: 8px;
   text-align: inherit;
-  width: calc(100% - 48px);
 }
 .who-liked a {
   margin-top: 6px;
@@ -7595,7 +7722,7 @@ section.about table th {
 }
 
 .body-page {
-  max-width: 690px;
+  max-width: 712px;
   padding-left: 0;
   width: auto;
 }

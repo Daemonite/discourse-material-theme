@@ -22,10 +22,10 @@
   background-color: transparent;
   color: $danger;
 }
-.mobile-view .mobile-nav > li > a.btn-danger:focus, .mobile-view .mobile-nav > li > a.btn-danger:hover {
+.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-.mobile-view .mobile-nav > li > a.btn-danger.btn-hover {
+.mobile-view .mobile-nav > li > a.btn-danger:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .mobile-view .mobile-nav > li > a.btn-danger:active, .mobile-view .mobile-nav > li > a.btn-danger.btn-active {
@@ -35,10 +35,10 @@
   background-color: transparent;
   color: $tertiary;
 }
-.mobile-view .mobile-nav > li > a.btn-primary:focus, .mobile-view .mobile-nav > li > a.btn-primary:hover {
+.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-.mobile-view .mobile-nav > li > a.btn-primary.btn-hover {
+.mobile-view .mobile-nav > li > a.btn-primary:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .mobile-view .mobile-nav > li > a.btn-primary:active, .mobile-view .mobile-nav > li > a.btn-primary.btn-active {
@@ -49,23 +49,23 @@
   background-color: transparent;
   color: $danger;
 }
-.discourse-no-touch .btn-flat.cancel:focus, .discourse-no-touch .btn-flat.cancel:hover {
+.discourse-no-touch .btn-flat.cancel:hover, .discourse-no-touch .btn-flat.cancel.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $danger;
 }
-.discourse-no-touch .btn-flat.cancel:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+.btn-flat.cancel:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 .btn-flat.ok {
   background-color: transparent;
   color: $success;
 }
-.discourse-no-touch .btn-flat.ok:focus, .discourse-no-touch .btn-flat.ok:hover {
+.discourse-no-touch .btn-flat.ok:hover, .discourse-no-touch .btn-flat.ok.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   color: $success;
 }
-.discourse-no-touch .btn-flat.ok:active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+.btn-flat.ok:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
 
 .mobile-view .mobile-nav > li > a, .list-controls .nav > li > a, .show-topic-admin, .user-navigation > .btn,
@@ -73,21 +73,23 @@
   background-color: color-chooser($tertiary, #ffffff);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
-.mobile-view .mobile-nav > li > a:focus, .list-controls .nav > li > a:focus, .show-topic-admin:focus, .user-navigation > .btn:focus,
-.user-navigation .user-archive .btn:focus, .mobile-view .mobile-nav > li > a:hover, .list-controls .nav > li > a:hover, .show-topic-admin:hover, .user-navigation > .btn:hover,
-.user-navigation .user-archive .btn:hover {
+.discourse-no-touch .mobile-view .mobile-nav > li > a:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a:hover, .discourse-no-touch .list-controls .nav > li > a:hover, .list-controls .discourse-no-touch .nav > li > a:hover, .discourse-no-touch .show-topic-admin:hover, .discourse-no-touch .user-navigation > .btn:hover,
+.discourse-no-touch .user-navigation .user-archive .btn:hover,
+.user-navigation .user-archive .discourse-no-touch .btn:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-hover, .discourse-no-touch .list-controls .nav > li > a.btn-hover, .list-controls .discourse-no-touch .nav > li > a.btn-hover, .discourse-no-touch .btn-hover.show-topic-admin, .discourse-no-touch .user-navigation > .btn-hover.btn,
+.discourse-no-touch .user-navigation .user-archive .btn-hover.btn,
+.user-navigation .user-archive .discourse-no-touch .btn-hover.btn {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
-.mobile-view .mobile-nav > li > a.btn-hover, .list-controls .nav > li > a.btn-hover, .btn-hover.show-topic-admin, .user-navigation > .btn-hover.btn,
-.user-navigation .user-archive .btn-hover.btn {
+.mobile-view .mobile-nav > li > a:focus, .list-controls .nav > li > a:focus, .show-topic-admin:focus, .user-navigation > .btn:focus,
+.user-navigation .user-archive .btn:focus {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
 }
 .mobile-view .mobile-nav > li > a:active, .list-controls .nav > li > a:active, .show-topic-admin:active, .user-navigation > .btn:active,
 .user-navigation .user-archive .btn:active, .mobile-view .mobile-nav > li > a.btn-active, .list-controls .nav > li > a.btn-active, .btn-active.show-topic-admin, .user-navigation > .btn-active.btn,
 .user-navigation .user-archive .btn-active.btn {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
@@ -103,10 +105,44 @@
   background-color: $danger;
   color: color-dynamic($danger);
 }
+.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger:hover, .discourse-no-touch .list-controls .nav > li > a.btn-danger:hover, .list-controls .discourse-no-touch .nav > li > a.btn-danger:hover, .discourse-no-touch .btn-danger.show-topic-admin:hover, .discourse-no-touch .user-navigation > .btn-danger.btn:hover,
+.discourse-no-touch .user-navigation .user-archive .btn-danger.btn:hover,
+.user-navigation .user-archive .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger.btn-hover, .discourse-no-touch .list-controls .nav > li > a.btn-danger.btn-hover, .list-controls .discourse-no-touch .nav > li > a.btn-danger.btn-hover, .discourse-no-touch .btn-danger.btn-hover.show-topic-admin, .discourse-no-touch .user-navigation > .btn-danger.btn-hover.btn,
+.discourse-no-touch .user-navigation .user-archive .btn-danger.btn-hover.btn,
+.user-navigation .user-archive .discourse-no-touch .btn-danger.btn-hover.btn {
+  background-color: $danger;
+  color: color-dynamic($danger);
+}
+.mobile-view .mobile-nav > li > a.btn-danger:focus, .list-controls .nav > li > a.btn-danger:focus, .btn-danger.show-topic-admin:focus, .user-navigation > .btn-danger.btn:focus,
+.user-navigation .user-archive .btn-danger.btn:focus {
+  background-color: $danger;
+}
+.mobile-view .mobile-nav > li > a.btn-danger:active, .list-controls .nav > li > a.btn-danger:active, .btn-danger.show-topic-admin:active, .user-navigation > .btn-danger.btn:active,
+.user-navigation .user-archive .btn-danger.btn:active, .mobile-view .mobile-nav > li > a.btn-danger.btn-active, .list-controls .nav > li > a.btn-danger.btn-active, .btn-danger.btn-active.show-topic-admin, .user-navigation > .btn-danger.btn-active.btn,
+.user-navigation .user-archive .btn-danger.btn-active.btn {
+  background-color: $danger;
+}
 .mobile-view .mobile-nav > li > a.btn-primary, .list-controls .nav > li > a.btn-primary, .btn-primary.show-topic-admin, .user-navigation > .btn-primary.btn,
 .user-navigation .user-archive .btn-primary.btn {
   background-color: $tertiary;
   color: color-dynamic($tertiary);
+}
+.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary:hover, .discourse-no-touch .list-controls .nav > li > a.btn-primary:hover, .list-controls .discourse-no-touch .nav > li > a.btn-primary:hover, .discourse-no-touch .btn-primary.show-topic-admin:hover, .discourse-no-touch .user-navigation > .btn-primary.btn:hover,
+.discourse-no-touch .user-navigation .user-archive .btn-primary.btn:hover,
+.user-navigation .user-archive .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary.btn-hover, .discourse-no-touch .list-controls .nav > li > a.btn-primary.btn-hover, .list-controls .discourse-no-touch .nav > li > a.btn-primary.btn-hover, .discourse-no-touch .btn-primary.btn-hover.show-topic-admin, .discourse-no-touch .user-navigation > .btn-primary.btn-hover.btn,
+.discourse-no-touch .user-navigation .user-archive .btn-primary.btn-hover.btn,
+.user-navigation .user-archive .discourse-no-touch .btn-primary.btn-hover.btn {
+  background-color: $tertiary;
+  color: color-dynamic($tertiary);
+}
+.mobile-view .mobile-nav > li > a.btn-primary:focus, .list-controls .nav > li > a.btn-primary:focus, .btn-primary.show-topic-admin:focus, .user-navigation > .btn-primary.btn:focus,
+.user-navigation .user-archive .btn-primary.btn:focus {
+  background-color: $tertiary;
+}
+.mobile-view .mobile-nav > li > a.btn-primary:active, .list-controls .nav > li > a.btn-primary:active, .btn-primary.show-topic-admin:active, .user-navigation > .btn-primary.btn:active,
+.user-navigation .user-archive .btn-primary.btn:active, .mobile-view .mobile-nav > li > a.btn-primary.btn-active, .list-controls .nav > li > a.btn-primary.btn-active, .btn-primary.btn-active.show-topic-admin, .user-navigation > .btn-primary.btn-active.btn,
+.user-navigation .user-archive .btn-primary.btn-active.btn {
+  background-color: $tertiary;
 }
 
 #reply-control .contents .submit-panel .btn, .user-main .about .controls a {
