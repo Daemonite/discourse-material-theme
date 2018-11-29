@@ -151,7 +151,7 @@
     }
 
     .dropdown-select-box-header {
-      &:hover {
+      @include focus-hover {
         .d-icon {
           color: inherit;
         }
@@ -336,15 +336,15 @@
 
   &:not(.multi-select) {
     .select-kit-header {
-      @extend %btn-base;
-      @extend %btn-raised;
+      // @extend %btn-base;
+      // @extend %btn-raised;
 
       align-items: center;
       display: flex;
       height: $btn-height;
 
       &.is-focused {
-        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+        // background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
         border: 0;
         box-shadow: $btn-box-shadow-active;
       }
