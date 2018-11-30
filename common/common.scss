@@ -20,7 +20,14 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono|Roboto+Slab");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, .meta .expand::before, .meta .filename::before {
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before,
+.fa-chart-bar::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before,
+.fa-far-circle::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before,
+.fa-far-dot-circle::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before,
+.fa-far-envelope::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before,
+.fa-hand-point-right::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before,
+.fa-far-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumbtack::before,
+.fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, .meta .expand::before, .meta .filename::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
           font-feature-settings: 'liga';
@@ -841,6 +848,7 @@ tr {
   line-height: inherit;
 }
 .btn .d-icon {
+  color: inherit;
   line-height: inherit;
   opacity: 1;
 }
@@ -1956,6 +1964,7 @@ div.ac-wrap input[type='text'] {
 }
 
 .select-kit.combo-box.category-drop .badge-wrapper {
+  background-color: transparent;
   font-size: 13px;
 }
 .select-kit.combo-box.category-drop .caret-icon {
@@ -2189,6 +2198,7 @@ div.ac-wrap input[type='text'] {
 .select-kit .select-kit-header .badge-wrapper .badge-category {
   border-radius: 0;
   min-height: 0;
+  overflow: visible;
   padding: 0;
 }
 .select-kit .select-kit-header .badge-wrapper .badge-category-bg {
@@ -2651,11 +2661,13 @@ ol.category-breadcrumb li {
   content: "not_interested";
 }
 
-.fa-bar-chart-o {
+.fa-bar-chart-o,
+.fa-chart-bar {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-bar-chart-o::before {
+.fa-bar-chart-o::before,
+.fa-chart-bar::before {
   content: "insert_chart";
 }
 
@@ -2795,11 +2807,13 @@ ol.category-breadcrumb li {
   content: "lens";
 }
 
-.fa-circle-o {
+.fa-circle-o,
+.fa-far-circle {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-circle-o::before {
+.fa-circle-o::before,
+.fa-far-circle::before {
   content: "radio_button_unchecked";
 }
 
@@ -2899,11 +2913,13 @@ ol.category-breadcrumb li {
   content: "desktop_mac";
 }
 
-.fa-dot-circle-o {
+.fa-dot-circle-o,
+.fa-far-dot-circle {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-dot-circle-o::before {
+.fa-dot-circle-o::before,
+.fa-far-dot-circle::before {
   content: "radio_button_checked";
 }
 
@@ -2931,11 +2947,13 @@ ol.category-breadcrumb li {
   content: "mail";
 }
 
-.fa-envelope-o {
+.fa-envelope-o,
+.fa-far-envelope {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-envelope-o::before {
+.fa-envelope-o::before,
+.fa-far-envelope::before {
   content: "mail_outline";
 }
 
@@ -3067,11 +3085,13 @@ ol.category-breadcrumb li {
   content: "group";
 }
 
-.fa-hand-o-right {
+.fa-hand-o-right,
+.fa-hand-point-right {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-hand-o-right::before {
+.fa-hand-o-right::before,
+.fa-hand-point-right::before {
   content: "send";
 }
 
@@ -3091,11 +3111,13 @@ ol.category-breadcrumb li {
   content: "favorite";
 }
 
-.fa-heart-o {
+.fa-heart-o,
+.fa-far-heart {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-heart-o::before {
+.fa-heart-o::before,
+.fa-far-heart::before {
   content: "favorite_border";
 }
 
@@ -3387,17 +3409,21 @@ ol.category-breadcrumb li {
   content: "tv";
 }
 
+.fa-thumbtack,
 .fa-thumb-tack {
   font-size: inherit !important;
   line-height: inherit !important;
 }
+.fa-thumbtack::before,
 .fa-thumb-tack::before {
   content: "flip_to_front";
 }
+.fa-thumbtack.unpinned,
 .fa-thumb-tack.unpinned {
   -webkit-transform: none;
           transform: none;
 }
+.fa-thumbtack.unpinned::before,
 .fa-thumb-tack.unpinned::before {
   content: 'flip_to_back';
 }
@@ -4807,7 +4833,8 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 #reply-control .reply-to a,
 #reply-control .reply-to button,
-#reply-control .reply-to button i {
+#reply-control .reply-to i,
+#reply-control .reply-to .d-icon {
   color: inherit;
 }
 #reply-control .reply-to .action-title {
@@ -4866,6 +4893,9 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   position: absolute;
   top: 8px;
   left: 16px;
+}
+#reply-control .reply-to .reply-details .d-icon {
+  opacity: 1;
 }
 #reply-control .reply-to .reply-details .select-kit-body {
   border-radius: 4px;

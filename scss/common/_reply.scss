@@ -329,7 +329,8 @@
 
     a,
     button,
-    button i {
+    i,
+    .d-icon {
       color: inherit;
     }
 
@@ -407,6 +408,10 @@
       position: absolute;
       top: ($spacer / 2);
       left: $card-padding-x;
+
+      .d-icon {
+        opacity: 1;
+      }
 
       .select-kit-body {
         border-radius: $dropdown-border-radius;

@@ -47,6 +47,7 @@
   &.combo-box {
     &.category-drop {
       .badge-wrapper {
+        background-color: transparent;
         font-size: $chip-font-size;
       }
 
@@ -389,6 +390,7 @@
       .badge-category {
         border-radius: 0;
         min-height: 0;
+        overflow: visible;
         padding: 0;
       }
 

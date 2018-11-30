@@ -38,7 +38,8 @@
   @include material-icons('not_interested');
 }
 
-.fa-bar-chart-o {
+.fa-bar-chart-o,
+.fa-chart-bar {
   @include material-icons('insert_chart');
 }
 
@@ -110,7 +111,8 @@
   @include material-icons('lens');
 }
 
-.fa-circle-o {
+.fa-circle-o,
+.fa-far-circle {
   @include material-icons('radio_button_unchecked');
 }
 
@@ -162,7 +164,8 @@
   @include material-icons('desktop_mac');
 }
 
-.fa-dot-circle-o {
+.fa-dot-circle-o,
+.fa-far-dot-circle {
   @include material-icons('radio_button_checked');
 }
 
@@ -178,7 +181,8 @@
   @include material-icons('mail');
 }
 
-.fa-envelope-o {
+.fa-envelope-o,
+.fa-far-envelope {
   @include material-icons('mail_outline');
 }
 
@@ -246,7 +250,8 @@
   @include material-icons('group');
 }
 
-.fa-hand-o-right {
+.fa-hand-o-right,
+.fa-hand-point-right {
   @include material-icons('send');
 }
 
@@ -258,7 +263,8 @@
   @include material-icons('favorite');
 }
 
-.fa-heart-o {
+.fa-heart-o,
+.fa-far-heart {
   @include material-icons('favorite_border');
 }
 
@@ -406,6 +412,7 @@
   @include material-icons('tv');
 }
 
+.fa-thumbtack,
 .fa-thumb-tack {
   @include material-icons('flip_to_front');
 
