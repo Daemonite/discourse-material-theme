@@ -1,0 +1,73 @@
+<!-- Thanks @tshenry for this code -->
+<!-- https://meta.discourse.org/t/daemonite-material-theme/64521/46 -->
+<!-- The following code is to use the old icon render to generate Font Awesome icons -->
+<!-- This enables the theme to continue overriding Font Awesome icons with Material icons using CSS -->
+<script type="text/discourse-plugin" version="0.8">
+  const h = require("virtual-dom").h;
+  
+  // Support for Font Awesome icons
+  function faClasses(icon, params) {
+    let classNames = `fa fa-${icon.replacementId || icon.id} d-icon d-icon-${
+      icon.id
+    }`;
+  
+    if (params) {
+      if (params.modifier) {
+        classNames += ' fa-' + params.modifier;
+      }
+
+      if (params['class']) {
+        classNames += ' ' + params['class'];
+      }
+    }
+
+    return classNames;
+  }
+  
+  // Default resolver is Font Awesome
+  api.registerIconRenderer({
+    name: 'font-awesome',
+  
+    string(icon, params) {
+      let tagName = params.tagName || 'i';
+      let html    = `<${tagName} class="${faClasses(icon, params)}"`;
+
+      if (params.title) {
+        html += ` title="${I18n.t(params.title).replace(/'/g, '&#39;')}"`;
+      }
+
+      if (params.label) {
+        html += ' aria-hidden="true"';
+      }
+
+      html += `></${tagName}>`;
+
+      if (params.label) {
+        html += `<span class="sr-only">${params.label}</span>`;
+      }
+
+      return html;
+    },
+  
+    node(icon, params) {
+      let tagName = params.tagName || 'i';
+  
+      const properties = {
+        attributes      : {
+          'aria-hidden' : true
+        },
+        className       : faClasses(icon, params),
+      };
+  
+      if (params.title) {
+        properties.attributes.title = params.title;
+      }
+
+      if (params.label) {
+        return h(tagName, properties, h('span.sr-only', I18n.t(params.label)));
+      } else {
+        return h(tagName, properties);
+      }
+    }
+  });
+</script>
