@@ -6,6 +6,10 @@
   @include material-icons('arrow_drop_down');
 }
 
+.fa-angle-double-up {
+  @include material-icons('arrow_drop_up');
+}
+
 .fa-arrow-down {
   @include material-icons('arrow_downward');
 }
