@@ -364,6 +364,10 @@
   @include material-icons('format_quote');
 }
 
+.fa-random {
+  @include material-icons('shuffle');
+}
+
 .fa-refresh {
   @include material-icons('refresh');
 }
