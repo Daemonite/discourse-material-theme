@@ -20,13 +20,13 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono|Roboto+Slab");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before,
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .select-kit.multi-select .choices .selected-name .name::after, .d-header .btn.sign-up-button::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-angle-double-up::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before,
 .fa-chart-bar::before, .fa-bars::before, .fa-bed::before, .fa-bold::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before, .fa-calendar-plus-o::before, .fa-caret-down::before, .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-check::before, .fa-check-square::before, .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before,
 .fa-far-circle::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before, .fa-comment-o::before, .fa-compress::before, .fa-desktop::before, .fa-dot-circle-o::before,
 .fa-far-dot-circle::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before,
 .fa-far-envelope::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before, .fa-eye-slash::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before,
 .fa-hand-point-right::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before,
-.fa-far-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumbtack::before,
+.fa-far-heart::before, .fa-italic::before, .fa-link::before, .fa-list::before, .fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-pencil::before, .fa-pencil-square-o::before, .fa-picture-o::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question-circle::before, .fa-quote-right::before, .fa-random::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-shield::before, .fa-sign-out::before, .fa-smile-o::before, .fa-square-o::before, .fa-sun-o::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumbtack::before,
 .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before, .fa-trash-o::before, .fa-undo::before, .fa-unlock::before, .fa-unlock-alt::before, .fa-upload::before, .fa-user::before, .fa-user-plus::before, .fa-users::before, .fa-wrench::before, .mfp-arrow.mfp-arrow-left::before, .mfp-arrow.mfp-arrow-right::before, .mfp-close::before, .mfp-image-holder .mfp-title::before, .mfp-title a.image-source-link::before, .pika-next::before, .pika-prev::before, #reply-control .grippie::before, #reply-control .toggle-preview::before, .meta .expand::before, .meta .filename::before {
   font-family: 'Material Icons';
   -webkit-font-feature-settings: 'liga';
@@ -2597,6 +2597,14 @@ ol.category-breadcrumb li {
   content: "arrow_drop_down";
 }
 
+.fa-angle-double-up {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-angle-double-up::before {
+  content: "arrow_drop_up";
+}
+
 .fa-arrow-down {
   font-size: inherit !important;
   line-height: inherit !important;
@@ -3311,6 +3319,14 @@ ol.category-breadcrumb li {
 }
 .fa-quote-right::before {
   content: "format_quote";
+}
+
+.fa-random {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-random::before {
+  content: "shuffle";
 }
 
 .fa-refresh {
