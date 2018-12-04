@@ -308,6 +308,10 @@
   @include material-icons('forward');
 }
 
+.fa-map-marker {
+  @include material-icons('place');
+}
+
 .fa-meh-o {
   @include material-icons('sentiment_neutral');
 }
