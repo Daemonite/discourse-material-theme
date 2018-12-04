@@ -477,6 +477,10 @@
   @include material-icons('person_add');
 }
 
+.fa-user-times {
+  @include material-icons('person_outline');
+}
+
 .fa-users {
   @include material-icons('people');
 }
