@@ -364,6 +364,10 @@
   @include material-icons('power_settings_new');
 }
 
+.fa-question {
+  @include material-icons('help_outline');
+}
+
 .fa-question-circle {
   @include material-icons('help');
 }
