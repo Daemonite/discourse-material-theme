@@ -492,3 +492,64 @@
 .fa-wrench {
   @include material-icons('settings');
 }
+
+
+
+// Brand icons
+
+%fab {
+  display: inline-block;
+  font-family: 'Font Awesome 5 Brands';
+  font-size: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  min-width: ($material-icon-size / $font-size-base * 1em);
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.fa-android,
+.fa-apple,
+.fa-facebook,
+.fa-github,
+.fa-twitter,
+.fa-windows,
+.fa-yahoo {
+  @extend %fab;
+}
+
+.fa-android::before {
+  content: '\f17b';
+}
+
+.fa-apple::before {
+  content: '\f179';
+}
+
+.fa-facebook::before {
+  content: '\f09a';
+}
+
+.fa-github::before {
+  content: '\f09b';
+}
+
+.fa-twitter::before {
+  content: '\f099';
+}
+
+.fa-windows::before {
+  content: '\f17a';
+}
+
+.fa-yahoo::before {
+  content: '\f19e';
+}
