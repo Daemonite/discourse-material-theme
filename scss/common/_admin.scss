@@ -1466,7 +1466,7 @@ div {
           text-align: inherit;
 
           &.active {
-            @extend %nav-pills-active;
+            @extend %nav-link-active;
           }
         }
       }

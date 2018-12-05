@@ -45,21 +45,18 @@ tr {
 
 .nav-pills {
   @extend %nav-pills;
+
+  > li > a .d-icon {
+    margin-right: $spacer-xs;
+    opacity: 1;
+  }
 }
 
 .nav-stacked {
-  background-color: transparent;
+  @extend %nav-stacked;
 
-  li {
-    border-bottom: 0;
-  }
-
-  a {
-    @extend %nav-link;
-
-    &.active::after {
-      display: none;
-    }
+  > li > a .d-icon {
+    margin-right: $spacer-xs;
   }
 
   .count {

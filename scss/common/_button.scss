@@ -40,38 +40,43 @@
   }
 
   &.cas {
-    background-color: $social-cas-color;
-    color: color-dynamic($social-cas-color);
+    background-color: $social-cas-color !important;
+    color: color-dynamic($social-cas-color) !important;
   }
 
   &.facebook {
-    background-color: $social-facebook-color;
-    color: color-dynamic($social-facebook-color);
+    background-color: $social-facebook-color !important;
+    color: color-dynamic($social-facebook-color) !important;
   }
 
   &.github {
-    background-color: $social-github-color;
-    color: color-dynamic($social-github-color);
+    background-color: $social-github-color !important;
+    color: color-dynamic($social-github-color) !important;
   }
 
   &.google,
   &.google_oauth2 {
-    background-color: $social-google-color;
-    color: color-dynamic($social-google-color);
+    background-color: $social-google-color !important;
+    border: 0;
+    color: color-dynamic($social-google-color) !important;
+
+    .svg-icon {
+      min-width: $material-icon-size;
+    }
   }
 
   &.instagram {
-    background-color: $social-instagram-color;
-    color: color-dynamic($social-instagram-color);
+    background-color: $social-instagram-color !important;
+    color: color-dynamic($social-instagram-color) !important;
   }
 
   &.twitter {
-    background-color: $social-twitter-color;
-    color: color-dynamic($social-twitter-color);
+    background-color: $social-twitter-color !important;
+    color: color-dynamic($social-twitter-color) !important;
   }
 
   &.yahoo {
-    background-color: $social-yahoo-color;
-    color: color-dynamic($social-cas-color);
+    background-color: $social-yahoo-color !important;
+    color: color-dynamic($social-cas-color) !important;
   }
 }

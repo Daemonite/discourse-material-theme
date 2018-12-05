@@ -38,7 +38,7 @@
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       margin-right: 0;
-      min-width: ($card-padding-x * 2 + $font-size-h1 / $font-size-base * $material-icon-size);
+      min-width: ($card-padding-x * 2 + $font-size-h2 / $font-size-base * $material-icon-size);
     }
 
     .badge-info {
@@ -47,7 +47,7 @@
       min-width: 0;
 
       h3 {
-        @extend %typography-h5;
+        @extend %typography-h4;
 
         margin-bottom: ($card-inner-spacer-y / 2);
       }
@@ -67,12 +67,14 @@
     height: $material-icon-size;
     justify-content: center;
     top: ($card-padding-y / 2);
-    right: ($card-padding-x / 2);
+    left: ($card-padding-x / 2);
     width: $material-icon-size;
   }
 
   .grant-count {
+    color: color-chooser($white-secondary, $black-secondary);
     font-size: $font-size-base;
+    font-weight: normal;
     line-height: 1;
     top: ($card-padding-y / 2);
     right: ($card-padding-x / 2);
@@ -128,6 +130,10 @@
   > h3,
   > p {
     width: 100%;
+
+    @media (min-width: 569px) {
+      width: calc(100% - #{$card-margin-x});
+    }
   }
 }
 
@@ -221,6 +227,10 @@
 
     &.badge-info {
       min-height: 0;
+
+      .granted-on {
+        color: color-chooser($white-hint, $black-hint);
+      }
     }
 
     .user-detail {
@@ -233,16 +243,28 @@
   }
 
   .avatar {
-    height: ($font-size-base * $line-height-base * 2);
-    width: ($font-size-base * $line-height-base * 2);
+    height: floor($font-size-base * $line-height-base * 2);
+    width: floor($font-size-base * $line-height-base * 2);
   }
 
   .user-detail {
+    flex: 1 1 auto;
     font-size: inherit;
     padding-left: 0;
 
+    .name {
+      color: color-chooser($white-secondary, $black-secondary);
+      margin-left: 0;
+    }
+
     .title {
       margin-top: 0;
+    }
+
+    .username {
+      a {
+        color: color-chooser($white-secondary, $black-secondary);
+      }
     }
   }
 

@@ -113,10 +113,6 @@ textarea {
       }
     }
 
-    .control-group {
-      margin-bottom: $spacer-lg;
-    }
-
     .control-label {
       @extend %typography-caption;
     }
@@ -229,8 +225,58 @@ textarea {
   }
 }
 
+.pref-associated-accounts {
+  td {
+    padding: 0 $spacer-sm $spacer-sm 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  tr:last-child td {
+    padding-bottom: 0;
+  }
+}
+
+.pref-auth-tokens {
+  margin-bottom: $spacer-sm;
+
+  .auth-token-dropdown {
+    margin-left: $spacer-sm;
+  }
+
+  .auth-token-first {
+    font-size: inherit;
+  }
+
+  .auth-token-icon {
+    font-size: 2em;
+    margin-right: $spacer-sm;
+  }
+
+  .auth-token-second {
+    color: color-chooser($white-secondary, $black-secondary);
+  }
+
+  .row {
+    border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
+    margin: 0;
+    padding: $spacer-sm 0;
+  }
+}
+
+.pref-avatar .avatar {
+  max-height: $btn-height;
+  max-width: $btn-height;
+}
+
 .pref-second-factor {
-  margin-top: $spacer-sm;
+  margin-top: 0;
+
+  .btn {
+    margin-left: $spacer-sm;
+  }
 }
 
 .upload-selector {  label {

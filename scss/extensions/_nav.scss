@@ -1,4 +1,5 @@
 %nav-link {
+  border-radius: $btn-border-radius;
   color: color-chooser($btn-color-dark, $btn-color-light);
   display: block;
   font-size: $btn-font-size;
@@ -7,15 +8,12 @@
   padding: $btn-padding-y $btn-padding-x;
   position: relative;
 
-  @include focus-hover {
+  @include active-focus-hover {
     background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
     color: color-chooser($btn-color-dark, $btn-color-light);
     opacity: 1;
-    text-decoration: none;
-  }
-
-  &:focus {
     outline: 0;
+    text-decoration: none;
   }
 
   &.active {
@@ -25,43 +23,27 @@
   }
 }
 
-%nav-pills {
-  > li {
-    margin-right: 1px;
-
-    &.active > a {
-      @extend %nav-pills-active;
-    }
-
-    > a {
-      @extend %btn-base;
-
-      &.active {
-        @extend %nav-pills-active;
-      }
-
-      body & {
-        display: block;
-        opacity: $nav-link-opacity;
-        text-transform: none;
-
-        @include focus-hover {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
-
-%nav-pills-active {
+%nav-link-active {
   background-color: unquote('$quaternary');
   color: color-dynamic(unquote('$quaternary'));
   opacity: 1;
 
-  body & {
-    @include focus-hover {
-      background-color: unquote('$quaternary');
-      color: color-dynamic(unquote('$quaternary'));
+  @include active-focus-hover {
+    background-color: unquote('$quaternary');
+    color: color-dynamic(unquote('$quaternary'));
+  }
+}
+
+%nav-pills {
+  > li {
+    margin-right: 1px;
+
+    > a {
+      @extend %nav-link;
+
+      &.active {
+        @extend %nav-link-active;
+      }
     }
   }
 }
@@ -71,41 +53,18 @@
 
   li {
     border-bottom: 0;
+    margin-bottom: 1px;
 
-    &.active > a {
-      @extend %nav-stacked-active;
+    &.indent {
+      padding-left: $btn-padding-x;
     }
 
     > a {
-      @extend %btn-base;
+      @extend %nav-link;
 
       &.active {
-        @extend %nav-stacked-active;
+        @extend %nav-link-active;
       }
-
-      body & {
-        display: block;
-        opacity: $nav-link-opacity;
-        text-align: left;
-        text-transform: none;
-
-        @include focus-hover {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
-
-%nav-stacked-active {
-  background-color: unquote('$quaternary');
-  color: color-dynamic(unquote('$quaternary'));
-  opacity: 1;
-
-  body & {
-    @include focus-hover {
-      background-color: unquote('$quaternary;');
-      color: color-dynamic(unquote('$quaternary'));
     }
   }
 }
