@@ -136,6 +136,7 @@
 
 %btn-raised {
   background-color: color-chooser($btn-bg-dark, $btn-bg-light);
+  background-size: calc(100% + 1px) 100%;
   box-shadow: $btn-box-shadow;
 
   .discourse-no-touch & {
