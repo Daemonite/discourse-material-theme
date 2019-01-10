@@ -149,6 +149,14 @@
     flex-wrap: nowrap;
     width: auto;
   }
+
+  .topic-header-extra {
+    margin-left: $header-inner-spacer-x;
+
+    .discourse-tags {
+      @extend %typography-caption;
+    }
+  }
 }
 
 .d-header-icons {
