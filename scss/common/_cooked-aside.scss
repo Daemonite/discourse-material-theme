@@ -7,6 +7,23 @@ aside {
     margin-left: ($card-padding-x * -1);
     padding: $card-padding-y $card-padding-x;
 
+    &.amazon,
+    &.githubblob,
+    &.githubcommit,
+    &.githubgist,
+    &.githubissue,
+    &.githubpullrequest,
+    &.googledocs,
+    &.instagram,
+    &.stackexchange,
+    &.twitterstatus,
+    &.wikipedia {
+      .source {
+        background-size: floor($font-size-base * $line-height-base) floor($font-size-base * $line-height-base);
+        padding-left: ($card-inner-spacer-x + floor($font-size-base * $line-height-base));
+      }
+    }
+
     header {
       margin-bottom: ($card-inner-spacer-y / 2);
     }
@@ -17,6 +34,15 @@ aside {
     }
 
     .onebox-body {
+      blockquote,
+      iframe,
+      pre,
+      .lazyYT-container,
+      .lightbox-wrapper {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
       h3,
       h4 {
         @extend %typography-h5;
@@ -33,6 +59,10 @@ aside {
         }
       }
 
+      pre {
+        border-radius: $code-border-radius;
+      }
+
       > .labels:last-child {
         margin-top: ($card-inner-spacer-y * -1);
       }
@@ -42,6 +72,16 @@ aside {
         margin-right: ($card-inner-spacer-x * 2);
         margin-bottom: ($card-inner-spacer-y / 2);
         width: ($card-padding-x * 6);
+      }
+
+      .date {
+        margin-bottom: $card-inner-spacer-y;
+        overflow: hidden;
+
+        &,
+        .user {
+          margin-top: 0 !important;
+        }
       }
 
       .onebox-avatar {
@@ -70,6 +110,19 @@ aside {
     }
 
     .expanded-quote {
+      blockquote,
+      iframe,
+      pre,
+      .lazyYT-container,
+      .lightbox-wrapper {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      pre {
+        border-radius: $code-border-radius;
+      }
+
       > :first-child {
         margin-top: 0;
       }
