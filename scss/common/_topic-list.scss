@@ -33,6 +33,11 @@
   }
 }
 
+.main-link .topic-category {
+  display: inline-flex;
+  float: none;
+}
+
 .period-chooser {
   &.dropdown-select-box.select-kit {
     .period-chooser-header {
@@ -245,10 +250,12 @@
 }
 
 .topic-details {
+  overflow: visible;
   padding-top: 0;
 
-  &:first-child {
-    overflow: visible;
+  .discourse-tags {
+    display: inline-block;
+    float: none;
   }
 }
 
@@ -410,12 +417,6 @@
     width: $material-icon-size;
   }
 
-  .badge-wrapper {
-    transform: scale($chip-sm-scale);
-    transform-origin: 0 50%;
-    vertical-align: middle;
-  }
-
   .main-link {
     font-size: inherit;
 
@@ -456,6 +457,10 @@
 
   .sorting {
     color: $thead-color-sorting;
+  }
+
+  .topic-category .badge-wrapper {
+    margin-top: $spacer-sm;
   }
 
   .topic-excerpt {
@@ -508,9 +513,16 @@
 }
 
 .topic-statuses {
+  margin-right: 0;
+
   .topic-status {
     margin: 0;
     padding: 0;
+
+    .d-icon {
+      height: auto;
+      width: auto;
+    }
   }
 }
 
