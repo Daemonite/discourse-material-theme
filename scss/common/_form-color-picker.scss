@@ -16,11 +16,17 @@
     padding: 0;
 
     .colorpicker {
-      border: 1px solid color-chooser($white-divider, $black-divider);
+      border: 0;
+      border-radius: $btn-border-radius;
+      box-shadow: inset 0 0 1px color-chooser($white-primary, $black-primary);
       font-size: inherit;
-      height: (($text-field-height - $spacer-xs) / 2);
+      height: $material-icon-size;
       margin: $spacer-xs $spacer-xs 0 0;
-      width: (($text-field-height - $spacer-xs) / 2);
+      width: $material-icon-size;
+
+      &[style*='background-color: #FFFFFF'] {
+        color: $black-primary;
+      }
     }
   }
 }
