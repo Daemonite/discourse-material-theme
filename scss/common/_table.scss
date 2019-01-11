@@ -6,16 +6,23 @@
     th {
       @extend %tbody-cell;
     }
-
-    tr {
-      @extend %table-row;
-    }
   }
 
   thead {
     td,
     th {
       @extend %thead-cell;
+    }
+  }
+}
+
+tr {
+  @extend %table-row;
+
+  tbody:last-child &,
+  thead:last-child & {
+    &:last-child {
+      border-bottom: 0;
     }
   }
 }
