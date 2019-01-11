@@ -116,7 +116,9 @@
   }
 
   .badge-category .d-icon {
+    height: auto;
     margin-right: $chip-inner-spacer-x;
+    width: auto;
   }
 }
 
