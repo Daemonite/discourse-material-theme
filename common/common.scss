@@ -8010,6 +8010,7 @@ section.post-menu-area {
   width: auto;
 }
 .user-info .user-image, .user-info.large .user-image, .user-info.medium .user-image, .user-info.small .user-image {
+  margin-right: 8px;
   width: auto;
 }
 .user-info .avatar {
@@ -8033,7 +8034,6 @@ section.post-menu-area {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
 }
 .user-info .user-image {
-  margin-right: 8px;
   padding-right: 0;
 }
 
