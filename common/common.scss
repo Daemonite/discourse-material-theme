@@ -210,74 +210,74 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
   background-color: $tertiary;
 }
 
-div.poll .poll-buttons .btn, .popup-menu .btn, .d-editor .d-editor-modal .controls .btn, .d-editor-button-bar .btn, .embedded-posts .collapse-down,
+div.poll .poll-buttons .btn, .popup-menu .btn, .d-editor .d-editor-modal .controls .btn, .d-editor-button-bar .btn, .latest-topic-list .more-topics .btn, .embedded-posts .collapse-down,
 .embedded-posts .collapse-up, .signup-cta .buttons .btn, .topic-map .buttons .btn, .user-stream .remove-bookmark {
   background-color: transparent;
   box-shadow: none;
 }
-.discourse-no-touch div.poll .poll-buttons .btn:hover, div.poll .poll-buttons .discourse-no-touch .btn:hover, .discourse-no-touch .popup-menu .btn:hover, .popup-menu .discourse-no-touch .btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn:hover, .discourse-no-touch .d-editor-button-bar .btn:hover, .d-editor-button-bar .discourse-no-touch .btn:hover, .discourse-no-touch .embedded-posts .collapse-down:hover, .embedded-posts .discourse-no-touch .collapse-down:hover,
+.discourse-no-touch div.poll .poll-buttons .btn:hover, div.poll .poll-buttons .discourse-no-touch .btn:hover, .discourse-no-touch .popup-menu .btn:hover, .popup-menu .discourse-no-touch .btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn:hover, .discourse-no-touch .d-editor-button-bar .btn:hover, .d-editor-button-bar .discourse-no-touch .btn:hover, .discourse-no-touch .latest-topic-list .more-topics .btn:hover, .latest-topic-list .more-topics .discourse-no-touch .btn:hover, .discourse-no-touch .embedded-posts .collapse-down:hover, .embedded-posts .discourse-no-touch .collapse-down:hover,
 .discourse-no-touch .embedded-posts .collapse-up:hover,
-.embedded-posts .discourse-no-touch .collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn:hover, .signup-cta .buttons .discourse-no-touch .btn:hover, .discourse-no-touch .topic-map .buttons .btn:hover, .topic-map .buttons .discourse-no-touch .btn:hover, .discourse-no-touch .user-stream .remove-bookmark:hover, .user-stream .discourse-no-touch .remove-bookmark:hover, .discourse-no-touch div.poll .poll-buttons .btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-hover.btn, .discourse-no-touch .popup-menu .btn-hover.btn, .popup-menu .discourse-no-touch .btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-hover.btn, .discourse-no-touch .embedded-posts .btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-hover.collapse-down,
+.embedded-posts .discourse-no-touch .collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn:hover, .signup-cta .buttons .discourse-no-touch .btn:hover, .discourse-no-touch .topic-map .buttons .btn:hover, .topic-map .buttons .discourse-no-touch .btn:hover, .discourse-no-touch .user-stream .remove-bookmark:hover, .user-stream .discourse-no-touch .remove-bookmark:hover, .discourse-no-touch div.poll .poll-buttons .btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-hover.btn, .discourse-no-touch .popup-menu .btn-hover.btn, .popup-menu .discourse-no-touch .btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-hover.btn, .discourse-no-touch .latest-topic-list .more-topics .btn-hover.btn, .latest-topic-list .more-topics .discourse-no-touch .btn-hover.btn, .discourse-no-touch .embedded-posts .btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-hover.collapse-down,
 .discourse-no-touch .embedded-posts .btn-hover.collapse-up,
 .embedded-posts .discourse-no-touch .btn-hover.collapse-up, .discourse-no-touch .signup-cta .buttons .btn-hover.btn, .signup-cta .buttons .discourse-no-touch .btn-hover.btn, .discourse-no-touch .topic-map .buttons .btn-hover.btn, .topic-map .buttons .discourse-no-touch .btn-hover.btn, .discourse-no-touch .user-stream .btn-hover.remove-bookmark, .user-stream .discourse-no-touch .btn-hover.remove-bookmark {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   background-image: none;
 }
-div.poll .poll-buttons .btn:focus, .popup-menu .btn:focus, .d-editor .d-editor-modal .controls .btn:focus, .d-editor-button-bar .btn:focus, .embedded-posts .collapse-down:focus,
+div.poll .poll-buttons .btn:focus, .popup-menu .btn:focus, .d-editor .d-editor-modal .controls .btn:focus, .d-editor-button-bar .btn:focus, .latest-topic-list .more-topics .btn:focus, .embedded-posts .collapse-down:focus,
 .embedded-posts .collapse-up:focus, .signup-cta .buttons .btn:focus, .topic-map .buttons .btn:focus, .user-stream .remove-bookmark:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
   background-image: none;
 }
-div.poll .poll-buttons .btn:active, .popup-menu .btn:active, .d-editor .d-editor-modal .controls .btn:active, .d-editor-button-bar .btn:active, .embedded-posts .collapse-down:active,
-.embedded-posts .collapse-up:active, .signup-cta .buttons .btn:active, .topic-map .buttons .btn:active, .user-stream .remove-bookmark:active, div.poll .poll-buttons .btn-active.btn, .popup-menu .btn-active.btn, .d-editor .d-editor-modal .controls .btn-active.btn, .d-editor-button-bar .btn-active.btn, .embedded-posts .btn-active.collapse-down,
+div.poll .poll-buttons .btn:active, .popup-menu .btn:active, .d-editor .d-editor-modal .controls .btn:active, .d-editor-button-bar .btn:active, .latest-topic-list .more-topics .btn:active, .embedded-posts .collapse-down:active,
+.embedded-posts .collapse-up:active, .signup-cta .buttons .btn:active, .topic-map .buttons .btn:active, .user-stream .remove-bookmark:active, div.poll .poll-buttons .btn-active.btn, .popup-menu .btn-active.btn, .d-editor .d-editor-modal .controls .btn-active.btn, .d-editor-button-bar .btn-active.btn, .latest-topic-list .more-topics .btn-active.btn, .embedded-posts .btn-active.collapse-down,
 .embedded-posts .btn-active.collapse-up, .signup-cta .buttons .btn-active.btn, .topic-map .buttons .btn-active.btn, .user-stream .btn-active.remove-bookmark {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
   box-shadow: none;
 }
-div.poll .poll-buttons [disabled].btn, .popup-menu [disabled].btn, .d-editor .d-editor-modal .controls [disabled].btn, .d-editor-button-bar [disabled].btn, .embedded-posts [disabled].collapse-down,
-.embedded-posts [disabled].collapse-up, .signup-cta .buttons [disabled].btn, .topic-map .buttons [disabled].btn, .user-stream [disabled].remove-bookmark, div.poll .poll-buttons .disabled.btn, .popup-menu .disabled.btn, .d-editor .d-editor-modal .controls .disabled.btn, .d-editor-button-bar .disabled.btn, .embedded-posts .disabled.collapse-down,
+div.poll .poll-buttons [disabled].btn, .popup-menu [disabled].btn, .d-editor .d-editor-modal .controls [disabled].btn, .d-editor-button-bar [disabled].btn, .latest-topic-list .more-topics [disabled].btn, .embedded-posts [disabled].collapse-down,
+.embedded-posts [disabled].collapse-up, .signup-cta .buttons [disabled].btn, .topic-map .buttons [disabled].btn, .user-stream [disabled].remove-bookmark, div.poll .poll-buttons .disabled.btn, .popup-menu .disabled.btn, .d-editor .d-editor-modal .controls .disabled.btn, .d-editor-button-bar .disabled.btn, .latest-topic-list .more-topics .disabled.btn, .embedded-posts .disabled.collapse-down,
 .embedded-posts .disabled.collapse-up, .signup-cta .buttons .disabled.btn, .topic-map .buttons .disabled.btn, .user-stream .disabled.remove-bookmark {
   background-color: transparent !important;
 }
-div.poll .poll-buttons .btn-danger.btn, .popup-menu .btn-danger.btn, .d-editor .d-editor-modal .controls .btn-danger.btn, .d-editor-button-bar .btn-danger.btn, .embedded-posts .btn-danger.collapse-down,
+div.poll .poll-buttons .btn-danger.btn, .popup-menu .btn-danger.btn, .d-editor .d-editor-modal .controls .btn-danger.btn, .d-editor-button-bar .btn-danger.btn, .latest-topic-list .more-topics .btn-danger.btn, .embedded-posts .btn-danger.collapse-down,
 .embedded-posts .btn-danger.collapse-up, .signup-cta .buttons .btn-danger.btn, .topic-map .buttons .btn-danger.btn, .user-stream .btn-danger.remove-bookmark {
   background-color: transparent;
   color: $danger;
 }
-.discourse-no-touch div.poll .poll-buttons .btn-danger.btn:hover, div.poll .poll-buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .popup-menu .btn-danger.btn:hover, .popup-menu .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-danger.btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .d-editor-button-bar .btn-danger.btn:hover, .d-editor-button-bar .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .embedded-posts .btn-danger.collapse-down:hover, .embedded-posts .discourse-no-touch .btn-danger.collapse-down:hover,
+.discourse-no-touch div.poll .poll-buttons .btn-danger.btn:hover, div.poll .poll-buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .popup-menu .btn-danger.btn:hover, .popup-menu .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-danger.btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .d-editor-button-bar .btn-danger.btn:hover, .d-editor-button-bar .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .latest-topic-list .more-topics .btn-danger.btn:hover, .latest-topic-list .more-topics .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .embedded-posts .btn-danger.collapse-down:hover, .embedded-posts .discourse-no-touch .btn-danger.collapse-down:hover,
 .discourse-no-touch .embedded-posts .btn-danger.collapse-up:hover,
-.embedded-posts .discourse-no-touch .btn-danger.collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn-danger.btn:hover, .signup-cta .buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .topic-map .buttons .btn-danger.btn:hover, .topic-map .buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .user-stream .btn-danger.remove-bookmark:hover, .user-stream .discourse-no-touch .btn-danger.remove-bookmark:hover, .discourse-no-touch div.poll .poll-buttons .btn-danger.btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .popup-menu .btn-danger.btn-hover.btn, .popup-menu .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-danger.btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-danger.btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .embedded-posts .btn-danger.btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-danger.btn-hover.collapse-down,
+.embedded-posts .discourse-no-touch .btn-danger.collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn-danger.btn:hover, .signup-cta .buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .topic-map .buttons .btn-danger.btn:hover, .topic-map .buttons .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .user-stream .btn-danger.remove-bookmark:hover, .user-stream .discourse-no-touch .btn-danger.remove-bookmark:hover, .discourse-no-touch div.poll .poll-buttons .btn-danger.btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .popup-menu .btn-danger.btn-hover.btn, .popup-menu .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-danger.btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-danger.btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .latest-topic-list .more-topics .btn-danger.btn-hover.btn, .latest-topic-list .more-topics .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .embedded-posts .btn-danger.btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-danger.btn-hover.collapse-down,
 .discourse-no-touch .embedded-posts .btn-danger.btn-hover.collapse-up,
 .embedded-posts .discourse-no-touch .btn-danger.btn-hover.collapse-up, .discourse-no-touch .signup-cta .buttons .btn-danger.btn-hover.btn, .signup-cta .buttons .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .topic-map .buttons .btn-danger.btn-hover.btn, .topic-map .buttons .discourse-no-touch .btn-danger.btn-hover.btn, .discourse-no-touch .user-stream .btn-danger.btn-hover.remove-bookmark, .user-stream .discourse-no-touch .btn-danger.btn-hover.remove-bookmark {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-danger.btn:focus, .popup-menu .btn-danger.btn:focus, .d-editor .d-editor-modal .controls .btn-danger.btn:focus, .d-editor-button-bar .btn-danger.btn:focus, .embedded-posts .btn-danger.collapse-down:focus,
+div.poll .poll-buttons .btn-danger.btn:focus, .popup-menu .btn-danger.btn:focus, .d-editor .d-editor-modal .controls .btn-danger.btn:focus, .d-editor-button-bar .btn-danger.btn:focus, .latest-topic-list .more-topics .btn-danger.btn:focus, .embedded-posts .btn-danger.collapse-down:focus,
 .embedded-posts .btn-danger.collapse-up:focus, .signup-cta .buttons .btn-danger.btn:focus, .topic-map .buttons .btn-danger.btn:focus, .user-stream .btn-danger.remove-bookmark:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-danger.btn:active, .popup-menu .btn-danger.btn:active, .d-editor .d-editor-modal .controls .btn-danger.btn:active, .d-editor-button-bar .btn-danger.btn:active, .embedded-posts .btn-danger.collapse-down:active,
-.embedded-posts .btn-danger.collapse-up:active, .signup-cta .buttons .btn-danger.btn:active, .topic-map .buttons .btn-danger.btn:active, .user-stream .btn-danger.remove-bookmark:active, div.poll .poll-buttons .btn-danger.btn-active.btn, .popup-menu .btn-danger.btn-active.btn, .d-editor .d-editor-modal .controls .btn-danger.btn-active.btn, .d-editor-button-bar .btn-danger.btn-active.btn, .embedded-posts .btn-danger.btn-active.collapse-down,
+div.poll .poll-buttons .btn-danger.btn:active, .popup-menu .btn-danger.btn:active, .d-editor .d-editor-modal .controls .btn-danger.btn:active, .d-editor-button-bar .btn-danger.btn:active, .latest-topic-list .more-topics .btn-danger.btn:active, .embedded-posts .btn-danger.collapse-down:active,
+.embedded-posts .btn-danger.collapse-up:active, .signup-cta .buttons .btn-danger.btn:active, .topic-map .buttons .btn-danger.btn:active, .user-stream .btn-danger.remove-bookmark:active, div.poll .poll-buttons .btn-danger.btn-active.btn, .popup-menu .btn-danger.btn-active.btn, .d-editor .d-editor-modal .controls .btn-danger.btn-active.btn, .d-editor-button-bar .btn-danger.btn-active.btn, .latest-topic-list .more-topics .btn-danger.btn-active.btn, .embedded-posts .btn-danger.btn-active.collapse-down,
 .embedded-posts .btn-danger.btn-active.collapse-up, .signup-cta .buttons .btn-danger.btn-active.btn, .topic-map .buttons .btn-danger.btn-active.btn, .user-stream .btn-danger.btn-active.remove-bookmark {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
-div.poll .poll-buttons .btn-primary.btn, .popup-menu .btn-primary.btn, .d-editor .d-editor-modal .controls .btn-primary.btn, .d-editor-button-bar .btn-primary.btn, .embedded-posts .btn-primary.collapse-down,
+div.poll .poll-buttons .btn-primary.btn, .popup-menu .btn-primary.btn, .d-editor .d-editor-modal .controls .btn-primary.btn, .d-editor-button-bar .btn-primary.btn, .latest-topic-list .more-topics .btn-primary.btn, .embedded-posts .btn-primary.collapse-down,
 .embedded-posts .btn-primary.collapse-up, .signup-cta .buttons .btn-primary.btn, .topic-map .buttons .btn-primary.btn, .user-stream .btn-primary.remove-bookmark {
   background-color: transparent;
   color: $tertiary;
 }
-.discourse-no-touch div.poll .poll-buttons .btn-primary.btn:hover, div.poll .poll-buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .popup-menu .btn-primary.btn:hover, .popup-menu .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-primary.btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .d-editor-button-bar .btn-primary.btn:hover, .d-editor-button-bar .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .embedded-posts .btn-primary.collapse-down:hover, .embedded-posts .discourse-no-touch .btn-primary.collapse-down:hover,
+.discourse-no-touch div.poll .poll-buttons .btn-primary.btn:hover, div.poll .poll-buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .popup-menu .btn-primary.btn:hover, .popup-menu .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-primary.btn:hover, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .d-editor-button-bar .btn-primary.btn:hover, .d-editor-button-bar .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .latest-topic-list .more-topics .btn-primary.btn:hover, .latest-topic-list .more-topics .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .embedded-posts .btn-primary.collapse-down:hover, .embedded-posts .discourse-no-touch .btn-primary.collapse-down:hover,
 .discourse-no-touch .embedded-posts .btn-primary.collapse-up:hover,
-.embedded-posts .discourse-no-touch .btn-primary.collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn-primary.btn:hover, .signup-cta .buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .topic-map .buttons .btn-primary.btn:hover, .topic-map .buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .user-stream .btn-primary.remove-bookmark:hover, .user-stream .discourse-no-touch .btn-primary.remove-bookmark:hover, .discourse-no-touch div.poll .poll-buttons .btn-primary.btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .popup-menu .btn-primary.btn-hover.btn, .popup-menu .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-primary.btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-primary.btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .embedded-posts .btn-primary.btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-primary.btn-hover.collapse-down,
+.embedded-posts .discourse-no-touch .btn-primary.collapse-up:hover, .discourse-no-touch .signup-cta .buttons .btn-primary.btn:hover, .signup-cta .buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .topic-map .buttons .btn-primary.btn:hover, .topic-map .buttons .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .user-stream .btn-primary.remove-bookmark:hover, .user-stream .discourse-no-touch .btn-primary.remove-bookmark:hover, .discourse-no-touch div.poll .poll-buttons .btn-primary.btn-hover.btn, div.poll .poll-buttons .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .popup-menu .btn-primary.btn-hover.btn, .popup-menu .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .d-editor .d-editor-modal .controls .btn-primary.btn-hover.btn, .d-editor .d-editor-modal .controls .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .d-editor-button-bar .btn-primary.btn-hover.btn, .d-editor-button-bar .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .latest-topic-list .more-topics .btn-primary.btn-hover.btn, .latest-topic-list .more-topics .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .embedded-posts .btn-primary.btn-hover.collapse-down, .embedded-posts .discourse-no-touch .btn-primary.btn-hover.collapse-down,
 .discourse-no-touch .embedded-posts .btn-primary.btn-hover.collapse-up,
 .embedded-posts .discourse-no-touch .btn-primary.btn-hover.collapse-up, .discourse-no-touch .signup-cta .buttons .btn-primary.btn-hover.btn, .signup-cta .buttons .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .topic-map .buttons .btn-primary.btn-hover.btn, .topic-map .buttons .discourse-no-touch .btn-primary.btn-hover.btn, .discourse-no-touch .user-stream .btn-primary.btn-hover.remove-bookmark, .user-stream .discourse-no-touch .btn-primary.btn-hover.remove-bookmark {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-primary.btn:focus, .popup-menu .btn-primary.btn:focus, .d-editor .d-editor-modal .controls .btn-primary.btn:focus, .d-editor-button-bar .btn-primary.btn:focus, .embedded-posts .btn-primary.collapse-down:focus,
+div.poll .poll-buttons .btn-primary.btn:focus, .popup-menu .btn-primary.btn:focus, .d-editor .d-editor-modal .controls .btn-primary.btn:focus, .d-editor-button-bar .btn-primary.btn:focus, .latest-topic-list .more-topics .btn-primary.btn:focus, .embedded-posts .btn-primary.collapse-down:focus,
 .embedded-posts .btn-primary.collapse-up:focus, .signup-cta .buttons .btn-primary.btn:focus, .topic-map .buttons .btn-primary.btn:focus, .user-stream .btn-primary.remove-bookmark:focus {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
 }
-div.poll .poll-buttons .btn-primary.btn:active, .popup-menu .btn-primary.btn:active, .d-editor .d-editor-modal .controls .btn-primary.btn:active, .d-editor-button-bar .btn-primary.btn:active, .embedded-posts .btn-primary.collapse-down:active,
-.embedded-posts .btn-primary.collapse-up:active, .signup-cta .buttons .btn-primary.btn:active, .topic-map .buttons .btn-primary.btn:active, .user-stream .btn-primary.remove-bookmark:active, div.poll .poll-buttons .btn-primary.btn-active.btn, .popup-menu .btn-primary.btn-active.btn, .d-editor .d-editor-modal .controls .btn-primary.btn-active.btn, .d-editor-button-bar .btn-primary.btn-active.btn, .embedded-posts .btn-primary.btn-active.collapse-down,
+div.poll .poll-buttons .btn-primary.btn:active, .popup-menu .btn-primary.btn:active, .d-editor .d-editor-modal .controls .btn-primary.btn:active, .d-editor-button-bar .btn-primary.btn:active, .latest-topic-list .more-topics .btn-primary.btn:active, .embedded-posts .btn-primary.collapse-down:active,
+.embedded-posts .btn-primary.collapse-up:active, .signup-cta .buttons .btn-primary.btn:active, .topic-map .buttons .btn-primary.btn:active, .user-stream .btn-primary.remove-bookmark:active, div.poll .poll-buttons .btn-primary.btn-active.btn, .popup-menu .btn-primary.btn-active.btn, .d-editor .d-editor-modal .controls .btn-primary.btn-active.btn, .d-editor-button-bar .btn-primary.btn-active.btn, .latest-topic-list .more-topics .btn-primary.btn-active.btn, .embedded-posts .btn-primary.btn-active.collapse-down,
 .embedded-posts .btn-primary.btn-active.collapse-up, .signup-cta .buttons .btn-primary.btn-active.btn, .topic-map .buttons .btn-primary.btn-active.btn, .user-stream .btn-primary.btn-active.remove-bookmark {
   background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
 }
@@ -471,7 +471,7 @@ div.poll .results .bar-back::before {
   width: 100%;
 }
 
-.table tbody tr, .topic-list > tbody > tr, .topic-list > thead > tr, .category-list > tbody > tr, .category-list > thead > tr, .latest-topic-list .table-heading, .latest-topic-list-item, .directory table tbody tr, .groups-table tbody tr, .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
+tr, .topic-list > tbody > tr, .topic-list > thead > tr, .latest-topic-list .table-heading, .latest-topic-list-item, .directory table tbody tr, .groups-table tbody tr, .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
   border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 
@@ -494,12 +494,41 @@ div.poll .results .bar-back::before {
   padding: 12px 12px;
   vertical-align: middle;
 }
+.table tbody td:first-of-type,
+.table tbody th:first-of-type, .topic-list tbody td:first-of-type,
+.topic-list tbody th:first-of-type, .category-list tbody td:first-of-type,
+.category-list tbody th:first-of-type, .latest-topic-list-item:first-of-type, .directory table tbody td:first-of-type,
+.directory table tbody th:first-of-type, .groups-table tbody td:first-of-type,
+.groups-table tbody th:first-of-type, .user-content .user-invite-list td:first-of-type, .admin-contents table:not(.pika-table) td:first-of-type,
+.admin-contents table:not(.pika-table) th:first-of-type, .permalinks .col:first-of-type:not(.heading),
+.screened-emails .col:first-of-type:not(.heading),
+.screened-ip-addresses .col:first-of-type:not(.heading),
+.screened-urls .col:first-of-type:not(.heading),
+.search-logs-list .col:first-of-type:not(.heading),
+.staff-actions .col:first-of-type:not(.heading),
+.web-hook-events .col:first-of-type:not(.heading) {
+  padding-left: 24px;
+}
+.table tbody td:last-of-type,
+.table tbody th:last-of-type, .topic-list tbody td:last-of-type,
+.topic-list tbody th:last-of-type, .category-list tbody td:last-of-type,
+.category-list tbody th:last-of-type, .latest-topic-list-item:last-of-type, .directory table tbody td:last-of-type,
+.directory table tbody th:last-of-type, .groups-table tbody td:last-of-type,
+.groups-table tbody th:last-of-type, .user-content .user-invite-list td:last-of-type, .admin-contents table:not(.pika-table) td:last-of-type,
+.admin-contents table:not(.pika-table) th:last-of-type, .permalinks .col:last-of-type:not(.heading),
+.screened-emails .col:last-of-type:not(.heading),
+.screened-ip-addresses .col:last-of-type:not(.heading),
+.screened-urls .col:last-of-type:not(.heading),
+.search-logs-list .col:last-of-type:not(.heading),
+.staff-actions .col:last-of-type:not(.heading),
+.web-hook-events .col:last-of-type:not(.heading) {
+  padding-right: 24px;
+}
 
 .table thead td,
 .table thead th, .topic-list thead td,
 .topic-list thead th, .category-list thead td,
-.category-list thead th, .latest-topic-list .more-topics,
-.latest-topic-list .table-heading, .directory table thead td,
+.category-list thead th, .directory table thead td,
 .directory table thead th, .groups-table thead td,
 .groups-table thead th, .user-content .user-invite-list th, .admin-contents table:not(.pika-table) thead td,
 .admin-contents table:not(.pika-table) thead th, .permalinks .col.heading,
@@ -514,6 +543,36 @@ div.poll .results .bar-back::before {
   height: 56px;
   padding: 12px 12px;
   vertical-align: middle;
+}
+.table thead td:first-of-type,
+.table thead th:first-of-type, .topic-list thead td:first-of-type,
+.topic-list thead th:first-of-type, .category-list thead td:first-of-type,
+.category-list thead th:first-of-type, .directory table thead td:first-of-type,
+.directory table thead th:first-of-type, .groups-table thead td:first-of-type,
+.groups-table thead th:first-of-type, .user-content .user-invite-list th:first-of-type, .admin-contents table:not(.pika-table) thead td:first-of-type,
+.admin-contents table:not(.pika-table) thead th:first-of-type, .permalinks .col.heading:first-of-type,
+.screened-emails .col.heading:first-of-type,
+.screened-ip-addresses .col.heading:first-of-type,
+.screened-urls .col.heading:first-of-type,
+.search-logs-list .col.heading:first-of-type,
+.staff-actions .col.heading:first-of-type,
+.web-hook-events .col.heading:first-of-type {
+  padding-left: 24px;
+}
+.table thead td:last-of-type,
+.table thead th:last-of-type, .topic-list thead td:last-of-type,
+.topic-list thead th:last-of-type, .category-list thead td:last-of-type,
+.category-list thead th:last-of-type, .directory table thead td:last-of-type,
+.directory table thead th:last-of-type, .groups-table thead td:last-of-type,
+.groups-table thead th:last-of-type, .user-content .user-invite-list th:last-of-type, .admin-contents table:not(.pika-table) thead td:last-of-type,
+.admin-contents table:not(.pika-table) thead th:last-of-type, .permalinks .col.heading:last-of-type,
+.screened-emails .col.heading:last-of-type,
+.screened-ip-addresses .col.heading:last-of-type,
+.screened-urls .col.heading:last-of-type,
+.search-logs-list .col.heading:last-of-type,
+.staff-actions .col.heading:last-of-type,
+.web-hook-events .col.heading:last-of-type {
+  padding-right: 24px;
 }
 
 body input[type='color'],
@@ -848,10 +907,6 @@ tbody {
   border-top: 0;
 }
 
-tr {
-  border-bottom: 0;
-}
-
 .btn.no-text .fa {
   line-height: inherit;
 }
@@ -996,7 +1051,9 @@ tr {
   margin-right: 8px;
 }
 .badge-wrapper .badge-category .d-icon {
+  height: auto;
   margin-right: 4px;
+  width: auto;
 }
 
 .discourse-tag.box {
@@ -1892,11 +1949,16 @@ div.ac-wrap input[type='text'] {
   padding: 0;
 }
 .category-color-editor .colors-container .colorpicker {
-  border: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
+  border: 0;
+  border-radius: 4px;
+  box-shadow: inset 0 0 1px color-chooser(white, rgba(0, 0, 0, 0.87));
   font-size: inherit;
-  height: 16px;
+  height: 24px;
   margin: 4px 4px 0 0;
-  width: 16px;
+  width: 24px;
+}
+.category-color-editor .colors-container .colorpicker[style*='background-color: #FFFFFF'] {
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .d-editor {
@@ -5351,6 +5413,10 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   margin-left: 0;
 }
 
+tbody:last-child tr:last-child, thead:last-child tr:last-child {
+  border-bottom: 0;
+}
+
 .fa-circle.tracking::before {
   content: 'track_changes';
 }
@@ -5834,6 +5900,16 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   border-radius: 4px;
 }
 
+.aspect-image.category-logo {
+  margin: 8px 8px 0 0;
+}
+
+.categories-and-latest .discourse-tags .discourse-tag,
+.categories-and-top .discourse-tags .discourse-tag {
+  font-size: 0.857143em;
+  margin-right: 8px;
+}
+
 .categories-and-latest div.categories.column {
   margin-right: 16px;
 }
@@ -5888,55 +5964,39 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
 }
 
-.category-list tbody td:first-of-type,
-.category-list tbody th:first-of-type {
-  padding-left: 24px;
-}
-.category-list tbody td:last-of-type,
-.category-list tbody th:last-of-type {
-  padding-right: 24px;
-}
 .category-list tbody .category {
   border-left-width: 2px;
 }
-.category-list tbody .category h3 {
-  margin-bottom: 0;
-}
-.category-list thead td:first-of-type,
-.category-list thead th:first-of-type {
-  padding-left: 24px;
-}
-.category-list thead td:last-of-type,
-.category-list thead th:last-of-type {
-  padding-right: 24px;
-}
-.category-list thead th {
-  font-weight: bolder;
-  white-space: nowrap;
-}
-.category-list > tbody > tr:first-child {
-  border-top: 0;
-}
-.category-list > tbody > tr:last-child {
-  border-bottom: 0;
-}
-.category-list .badge-wrapper {
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-}
-.category-list .category-description {
-  margin-top: 0;
+.category-list .category h3 .d-icon {
+  height: auto;
+  margin-right: 4px;
+  width: auto;
 }
 .category-list .category-name {
   line-height: inherit;
 }
 .category-list .subcategories {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0;
+}
+.category-list .subcategories .badge-notification.new-posts {
+  margin-right: 8px;
+}
+.category-list .subcategories .badge-wrapper {
   margin-top: 4px;
 }
-.category-list .subcategories:empty {
-  display: none;
+.category-list .topics {
+  width: 100px;
+}
+.category-list .topics .badge-notification {
+  border-radius: 0;
+  margin-top: 4px;
+  padding: 0;
 }
 .category-list .topics .value {
   font-size: inherit;
@@ -5948,21 +6008,25 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
       align-items: center;
   display: -ms-flexbox;
   display: flex;
-  font-weight: bolder;
+  min-height: 56px;
 }
 .latest-topic-list .more-topics {
   -ms-flex-pack: end;
       justify-content: flex-end;
   margin-top: 0;
+  padding: 12px 16px;
+}
+.latest-topic-list .table-heading {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  font-size: 12px;
+  padding: 12px 24px;
 }
 
 .latest-topic-list-item {
-  -ms-flex-align: start;
-      align-items: flex-start;
-  display: -ms-flexbox;
-  display: flex;
   height: auto;
   min-height: 48px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .latest-topic-list-item .main-link {
   font-size: inherit;
@@ -5976,9 +6040,6 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   color: color-chooser($primary, $primary);
   font-weight: normal;
 }
-.latest-topic-list-item .main-link .bottom-row {
-  line-height: 1;
-}
 .latest-topic-list-item .main-link .top-row {
   font-size: inherit;
   margin-bottom: 4px;
@@ -5991,7 +6052,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
   width: 24px;
 }
 .latest-topic-list-item .topic-stats {
-  margin-left: 6px;
+  margin-left: 12px;
 }
 
 #suggested-topics {

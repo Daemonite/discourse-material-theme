@@ -196,6 +196,12 @@
   padding: 12px 12px;
   vertical-align: middle;
 }
+.category-list-item .topic-list td:first-of-type {
+  padding-left: 24px;
+}
+.category-list-item .topic-list td:last-of-type {
+  padding-right: 24px;
+}
 
 .category-list-item .topic-list th {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
@@ -203,6 +209,12 @@
   height: 56px;
   padding: 12px 12px;
   vertical-align: middle;
+}
+.category-list-item .topic-list th:first-of-type {
+  padding-left: 24px;
+}
+.category-list-item .topic-list th:last-of-type {
+  padding-right: 24px;
 }
 
 .category-list-item > footer figure, .category-list-item .category-topic-link .main-link .age {
