@@ -238,6 +238,7 @@
     }
 
     .user-image {
+      margin-right: $card-inner-spacer-x;
       width: auto;
     }
   }
@@ -269,7 +270,6 @@
   }
 
   .user-image {
-    margin-right: $card-inner-spacer-x;
     padding-right: 0;
   }
 }
