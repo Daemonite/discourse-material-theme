@@ -32,20 +32,21 @@
     padding-right: $chip-padding-x;
     padding-left: $chip-padding-x;
 
-    span {
-      &.badge-category {
-        padding: (($chip-height - $chip-font-size * $line-height-base) / 2) 0;
-      }
-
-      &.badge-category-bg {
-        margin-right: $chip-inner-spacer-x;
-      }
-    }
-
     .badge-category {
       align-items: center;
       border-radius: ($chip-height / 2);
       min-height: $chip-height;
+      padding: (($chip-height - $chip-font-size * $line-height-base) / 2) 0;
+    }
+
+    .badge-category-bg,
+    .badge-category-parent-bg {
+      padding: 0;
+      width: $spacer-xs;
+    }
+
+    .badge-category-bg {
+      margin-right: $chip-inner-spacer-x;
     }
   }
 
