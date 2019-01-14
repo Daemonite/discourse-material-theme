@@ -94,20 +94,29 @@
     padding-right: $chip-padding-x;
     padding-left: $chip-inner-spacer-x;
 
-    span {
-      &.badge-category-bg {
-        border-radius: 50%;
-        height: $material-icon-size;
-        margin-right: 0;
-        width: $material-icon-size;
-      }
-    }
-
     .badge-category {
       align-items: center;
       border-radius: ($chip-height / 2);
       min-height: $chip-height;
       padding: (($chip-height - $chip-font-size * $line-height-base) / 2) 0 (($chip-height - $chip-font-size * $line-height-base) / 2) ($chip-padding-x - $chip-inner-spacer-x);
+    }
+
+    .badge-category-bg {
+      border-radius: 50%;
+      height: $material-icon-size;
+      margin-right: 0;
+      width: $material-icon-size;
+    }
+
+    .badge-category-parent-bg {
+      border-radius: ($material-icon-size / 2) 0 0 ($material-icon-size / 2);
+      height: $material-icon-size;
+      width: ($material-icon-size / 2);
+
+      + .badge-category-bg {
+        border-radius: 0 ($material-icon-size / 2) ($material-icon-size / 2) 0;
+        width: ($material-icon-size / 2);
+      }
     }
   }
 
