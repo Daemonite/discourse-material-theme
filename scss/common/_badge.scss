@@ -57,31 +57,29 @@
     margin-right: $spacer-sm;
     padding: 0;
 
-    span {
-      &.badge-category-bg {
-        border-radius: ($chip-height / 2);
-      }
-
-      &.badge-category-parent-bg {
-        border-radius: ($chip-height / 2);
-        width: calc(100% - #{$chip-inner-spacer-x});
-
-        + .badge-category-bg {
-          left: $chip-inner-spacer-x;
-          width: calc(100% - #{$chip-inner-spacer-x});
-
-          + .badge-category {
-            margin-left: $chip-inner-spacer-x;
-          }
-        }
-      }
-    }
-
     .badge-category {
       align-items: center;
       border-radius: ($chip-height / 2);
       min-height: $chip-height;
       padding: (($chip-height - $chip-font-size * $line-height-base) / 2) $chip-padding-x;
+    }
+
+    .badge-category-bg {
+      border-radius: ($chip-height / 2);
+    }
+
+    .badge-category-parent-bg {
+      border-radius: ($chip-height / 2);
+      width: calc(100% - #{$chip-inner-spacer-x});
+
+      + .badge-category-bg {
+        left: $chip-inner-spacer-x;
+        width: calc(100% - #{$chip-inner-spacer-x});
+
+        + .badge-category {
+          margin-left: $chip-inner-spacer-x;
+        }
+      }
     }
   }
 
