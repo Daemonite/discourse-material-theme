@@ -121,6 +121,10 @@
 
   &.none {
     margin-right: $spacer-sm;
+
+    &[href]:hover {
+      box-shadow: none;
+    }
   }
 
   .badge-category .d-icon {
