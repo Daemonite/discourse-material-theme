@@ -103,6 +103,7 @@
 
       @include focus-hover {
         background-color: color-chooser($header-item-overlay-dark, $header-item-overlay-light);
+        color: unquote('$header-primary');
       }
 
       &:focus {
