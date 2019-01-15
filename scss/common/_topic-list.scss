@@ -466,6 +466,8 @@
   .topic-excerpt {
     @extend %typography-caption;
 
+    clear: none;
+    float: none;
     margin-top: $spacer-xs;
     max-height: ($font-size-caption * $line-height-caption * 3);
     padding-right: 0;
