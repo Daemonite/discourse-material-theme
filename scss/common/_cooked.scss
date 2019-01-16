@@ -22,6 +22,30 @@
     margin: 0 0 ($card-inner-spacer-y / 2);
   }
 
+  h1 {
+    @extend %typography-h1;
+  }
+
+  h2 {
+    @extend %typography-h2;
+  }
+
+  h3 {
+    @extend %typography-h3;
+  }
+
+  h4 {
+    @extend %typography-h4;
+  }
+
+  h5 {
+    @extend %typography-h5;
+  }
+
+  h6 {
+    @extend %typography-h6;
+  }
+
   iframe {
     border: 0;
     display: block;
@@ -37,15 +61,78 @@
     max-width: 100%;
   }
 
+  ol,
+  ul {
+    margin-bottom: $spacer;
+    padding-left: $spacer;
+
+    ol,
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
   pre {
     border-radius: 0;
     margin-right: ($card-padding-x * -1);
     margin-left: ($card-padding-x * -1);
   }
 
+  > :empty:first-child {
+    display: none;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+
+    &:empty {
+      margin-top: ($card-inner-spacer-y * -1);
+    }
+  }
+}
+
+.d-editor-preview {
+  line-height: $line-height-base;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 ($card-inner-spacer-y / 2);
+  }
+
+  h1 {
+    @extend %typography-h1;
+  }
+
+  h2 {
+    @extend %typography-h2;
+  }
+
+  h3 {
+    @extend %typography-h3;
+  }
+
+  h4 {
+    @extend %typography-h4;
+  }
+
+  h5 {
+    @extend %typography-h5;
+  }
+
+  h6 {
+    @extend %typography-h6;
+  }
+
+  ol,
   ul {
     margin-bottom: $spacer;
+    padding-left: $spacer;
 
+    ol,
     ul {
       margin-bottom: 0;
     }
