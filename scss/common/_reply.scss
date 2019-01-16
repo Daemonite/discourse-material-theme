@@ -241,7 +241,7 @@
 
     img:not(.avatar):not(.emoji):not(.site-icon):not(.thumbnail) {
       height: auto;
-      width: 100%;
+      max-width: 100%;
     }
   }
 
