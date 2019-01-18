@@ -71,7 +71,6 @@
 .mobile-view .mobile-nav > li > a, .list-controls .nav > li > a, .show-topic-admin, .user-navigation > .btn,
 .user-navigation .user-archive .btn {
   background-color: color-chooser($tertiary, #ffffff);
-  background-size: calc(100% + 1px) 100%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
 }
 .discourse-no-touch .mobile-view .mobile-nav > li > a:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a:hover, .discourse-no-touch .list-controls .nav > li > a:hover, .list-controls .discourse-no-touch .nav > li > a:hover, .discourse-no-touch .show-topic-admin:hover, .discourse-no-touch .user-navigation > .btn:hover,
@@ -81,17 +80,20 @@
 .user-navigation .user-archive .discourse-no-touch .btn-hover.btn {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
 }
 .mobile-view .mobile-nav > li > a:focus, .list-controls .nav > li > a:focus, .show-topic-admin:focus, .user-navigation > .btn:focus,
 .user-navigation .user-archive .btn:focus {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
 }
 .mobile-view .mobile-nav > li > a:active, .list-controls .nav > li > a:active, .show-topic-admin:active, .user-navigation > .btn:active,
 .user-navigation .user-archive .btn:active, .mobile-view .mobile-nav > li > a.btn-active, .list-controls .nav > li > a.btn-active, .btn-active.show-topic-admin, .user-navigation > .btn-active.btn,
 .user-navigation .user-archive .btn-active.btn {
   background-color: color-chooser($tertiary, #ffffff);
   background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
 .mobile-view .mobile-nav > li > a[disabled], .list-controls .nav > li > a[disabled], [disabled].show-topic-admin, .user-navigation > [disabled].btn,
