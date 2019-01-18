@@ -12,8 +12,7 @@
 #list-area {
   margin-bottom: $spacer-lg;
 
-  h2,
-  .top-lists h2 {
+  h2 {
     margin: 0 0 $spacer;
   }
 
@@ -24,11 +23,7 @@
     padding: (($thead-cell-height - $font-size-base * $line-height-base) / 2) ($thead-cell-padding-x * 2);
   }
 
-  .top-lists .period-chooser h2 {
-    display: inline;
-    font-size: $btn-font-size;
-    font-weight: $btn-font-weight;
-    line-height: 1;
+  .top-lists h2 {
     margin: 0;
   }
 }
@@ -46,6 +41,7 @@
 
       h2 {
         &.selected-name {
+          display: inline;
           font-size: $btn-font-size;
           font-weight: $btn-font-weight;
           line-height: 1;
@@ -72,11 +68,17 @@
       }
     }
 
-    .period-chooser-row .top-date-string {
-      @extend %typography-caption;
+    .period-chooser-row {
+      font-size: inherit;
+      font-weight: normal;
+      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
 
-      color: color-chooser($white-secondary, $black-secondary);
-      line-height: 1;
+      .top-date-string {
+        @extend %typography-caption;
+
+        color: color-chooser($white-secondary, $black-secondary);
+        line-height: 1;
+      }
     }
 
     .select-kit-collection {
@@ -171,8 +173,7 @@
 }
 
 .top-lists {
-  @extend %card;
-  @extend %card-block;
+  margin-bottom: $spacer-lg;
 }
 
 .top-title-buttons {
@@ -288,21 +289,6 @@
   @extend %table;
 
   border-radius: $card-border-radius;
-
-  .top-lists + & {
-    position: relative;
-
-    &::before {
-      background-color: color-chooser($table-bg-dark, $table-bg-light);
-      content: '';
-      display: block;
-      height: $thead-cell-padding-y;
-      position: absolute;
-      top: ($thead-cell-padding-y * -1);
-      right: 0;
-      left: 0;
-    }
-  }
 
   tbody,
   > tbody {

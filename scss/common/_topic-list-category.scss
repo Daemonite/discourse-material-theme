@@ -217,6 +217,10 @@
       }
     }
 
+    .bottom-row .discourse-tags {
+      display: inline-block;
+    }
+
     .top-row {
       font-size: inherit;
       margin-bottom: $spacer-xs;
