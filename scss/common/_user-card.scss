@@ -4,6 +4,7 @@
   background-color: color-chooser($chip-bg-dark, $chip-bg-light);
   border: 0;
   border-radius: ($chip-height / 2);
+  box-shadow: none;
   color: unquote('$primary');
   display: inline-flex;
   font-size: $chip-font-size;
@@ -47,7 +48,6 @@
       .user-badge {
         background-color: color-chooser($chip-bg-dark, $chip-bg-light);
         border: 0;
-        color: unquote('$primary');
         margin-right: ($card-inner-spacer-x / 2);
       }
     }
