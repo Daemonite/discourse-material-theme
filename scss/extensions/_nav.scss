@@ -1,6 +1,5 @@
 %nav-link {
   border-radius: $btn-border-radius;
-  color: color-chooser($btn-color-dark, $btn-color-light);
   display: block;
   font-size: $btn-font-size;
   line-height: 1;
@@ -9,28 +8,14 @@
   position: relative;
 
   @include active-focus-hover {
-    background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-    color: color-chooser($btn-color-dark, $btn-color-light);
     opacity: 1;
     outline: 0;
     text-decoration: none;
   }
 
-  &.active {
-    background-color: unquote('$quaternary');
-    color: color-dynamic(unquote('$quaternary'));
+  &.active,
+  .active > & {
     opacity: 1;
-  }
-}
-
-%nav-link-active {
-  background-color: unquote('$quaternary');
-  color: color-dynamic(unquote('$quaternary'));
-  opacity: 1;
-
-  @include active-focus-hover {
-    background-color: unquote('$quaternary');
-    color: color-dynamic(unquote('$quaternary'));
   }
 }
 
@@ -40,10 +25,6 @@
 
     > a {
       @extend %nav-link;
-
-      &.active {
-        @extend %nav-link-active;
-      }
     }
   }
 }
@@ -61,10 +42,6 @@
 
     > a {
       @extend %nav-link;
-
-      &.active {
-        @extend %nav-link-active;
-      }
     }
   }
 }

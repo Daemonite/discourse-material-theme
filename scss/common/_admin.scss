@@ -1464,10 +1464,6 @@ div {
 
           display: block;
           text-align: inherit;
-
-          &.active {
-            @extend %nav-link-active;
-          }
         }
       }
     }

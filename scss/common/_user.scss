@@ -603,8 +603,8 @@
       color: inherit;
 
       &.active {
-        @extend %nav-link-active;
-
+        background-color: unquote('$quaternary');
+        color: color-dynamic(unquote('$quaternary'));
         font-weight: normal;
       }
     }
