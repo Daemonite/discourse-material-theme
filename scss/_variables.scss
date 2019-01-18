@@ -450,3 +450,12 @@ $text-field-box-border-radius: 4px !default;
 $text-field-box-height:        56px !default;
 $text-field-box-padding-x:     16px !default;
 $text-field-box-padding-y:     20px !default;
+
+
+
+// Text field outline
+
+$text-field-outline-border-radius: 4px !default;
+$text-field-outline-height:        56px !default;
+$text-field-outline-padding-x:     (14px - $text-field-border-width) !default;
+$text-field-outline-padding-y:     (($text-field-outline-height - $text-field-border-width * 2 - $material-icon-size) / 2) !default;

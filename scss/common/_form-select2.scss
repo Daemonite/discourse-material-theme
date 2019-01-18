@@ -23,11 +23,6 @@
         color: color-chooser($white-secondary, $black-secondary);
       }
 
-      .select-kit-body {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-
       .select-kit-header {
         .future-date-input-selector-icons {
           margin-right: $spacer-xs;
@@ -37,11 +32,6 @@
           margin-right: auto;
         }
       }
-
-      .select-kit-collection {
-        padding-top: $dropdown-padding-y-sm;
-        padding-bottom: $dropdown-padding-y-sm;
-      }
     }
 
     &.is-above .select-kit-body {
@@ -50,12 +40,8 @@
     }
 
     .select-kit-body {
-      border-radius: $dropdown-border-radius;
       box-shadow: $dropdown-box-shadow;
-      font-size: $dropdown-font-size-sm;
-      line-height: $dropdown-line-height-sm;
       margin-top: .25em;
-      padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
     }
 
     .select-kit-filter {
@@ -142,11 +128,7 @@
 
     .select-kit-body {
       border: 0;
-      border-radius: $dropdown-border-radius;
       box-shadow: $dropdown-box-shadow;
-      font-size: $dropdown-font-size-sm;
-      line-height: $dropdown-line-height-sm;
-      padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
     }
 
     .select-kit-row {
@@ -170,6 +152,119 @@
 
   &.is-expanded .select-kit-collection {
     border-radius: 0;
+  }
+
+  &.multi-select {
+    &.is-expanded {
+      &.is-above {
+        .multi-select-header {
+          border-radius: 0 0  $dropdown-border-radius $dropdown-border-radius;
+        }
+
+        .select-kit-body {
+          border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+        }
+      }
+
+      &.is-below {
+        .multi-select-header {
+          border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+        }
+
+        .select-kit-body {
+          border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+        }
+      }
+
+      .multi-select-header {
+        border-color: unquote('$tertiary');
+        border-radius: $text-field-outline-border-radius;
+        box-shadow: inset 0 0 0 $text-field-border-width unquote('$tertiary');
+      }
+
+      .select-kit-wrapper {
+        display: none;
+      }
+    }
+
+    .choices {
+      margin: $text-field-outline-padding-y $text-field-outline-padding-x ($text-field-outline-padding-y - $spacer-xs) ($text-field-outline-padding-x - $spacer-xs);
+
+      .choice {
+        margin: 0 0 $spacer-xs $spacer-xs;
+      }
+
+      .filter .filter-input {
+        height: $material-icon-size;
+      }
+
+      .selected-color .color-preview {
+        border-radius: 0 0 $text-field-outline-border-radius $text-field-outline-border-radius;
+        height: $spacer-xs;
+        margin: 0;
+      }
+
+      .selected-name {
+        &.selected-color {
+          .body {
+            border-radius: $text-field-outline-border-radius $text-field-outline-border-radius 0 0;
+            height: ($material-icon-size - $spacer-xs);
+          }
+        }
+
+        .body {
+          align-items: center;
+          border-radius: $text-field-outline-border-radius;
+          display: flex;
+          height: $material-icon-size;
+          padding: 0 $spacer-xs;
+        }
+
+        .d-icon {
+          color: color-chooser($white-hint, $black-hint);
+          font-size: $font-size-caption !important;
+          margin-right: ($spacer-xs * -1);
+          margin-left: $spacer-xs;
+          opacity: 1;
+        }
+      }
+    }
+
+    .multi-select-header {
+      border-color: color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+      border-radius: $text-field-outline-border-radius;
+      min-height: $text-field-outline-height;
+
+      &:hover {
+        border-color: color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
+      }
+
+      &.is-focused {
+        border-color: unquote('$tertiary');
+        border-radius: $text-field-outline-border-radius;
+        box-shadow: inset 0 0 0 $text-field-border-width unquote('$tertiary');
+      }
+    }
+
+    .select-kit-filter {
+      margin: 0;
+    }
+
+    .select-kit-row {
+      margin: 0;
+      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+    }
+  }
+
+  .select-kit-body {
+    border-radius: $dropdown-border-radius;
+    box-shadow: $dropdown-box-shadow;
+    font-size: $dropdown-font-size-sm;
+    line-height: $dropdown-line-height-sm;
+  }
+
+  .select-kit-collection {
+    padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
   }
 
   .select-kit-filter .filter-input {
