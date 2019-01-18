@@ -35,22 +35,6 @@ ol {
     margin: 0 0 $spacer-sm $spacer-sm;
   }
 
-  .categories-admin-dropdown.select-kit,
-  .dropdown-select-box.dropdown-select-box {
-    .btn {
-      margin-bottom: 0;
-    }
-  }
-
-  .dropdown-select-box.dropdown-select-box {
-    margin-bottom: $spacer-sm;
-    margin-left: $spacer-sm;
-
-    .btn {
-      margin-left: 0;
-    }
-  }
-
   .nav {
     margin: 0 auto $spacer-sm 0;
 
@@ -61,20 +45,6 @@ ol {
 
       > a {
         text-transform: uppercase;
-      }
-    }
-  }
-
-  .select-kit {
-    &.is-below.is-left-aligned {
-      .select-kit-body {
-        border-top-left-radius: 0;
-      }
-    }
-
-    &.is-below.is-right-aligned {
-      .select-kit-body {
-        border-top-right-radius: 0;
       }
     }
   }
