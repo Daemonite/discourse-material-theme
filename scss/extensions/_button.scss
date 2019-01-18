@@ -136,7 +136,6 @@
 
 %btn-raised {
   background-color: color-chooser($btn-bg-dark, $btn-bg-light);
-  background-size: calc(100% + 1px) 100%;
   box-shadow: $btn-box-shadow;
 
   .discourse-no-touch & {
@@ -144,18 +143,21 @@
     &.btn-hover {
       background-color: color-chooser($btn-bg-dark, $btn-bg-light);
       background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
+      background-size: calc(100% + 1px) 100%;
     }
   }
 
   &:focus {
     background-color: color-chooser($btn-bg-dark, $btn-bg-light);
     background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
+    background-size: calc(100% + 1px) 100%;
   }
 
   &:active,
   &.btn-active {
     background-color: color-chooser($btn-bg-dark, $btn-bg-light);
     background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
+    background-size: calc(100% + 1px) 100%;
     box-shadow: $btn-box-shadow-active;
   }
 
