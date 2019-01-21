@@ -2346,6 +2346,8 @@ div.ac-wrap input[type='text'] {
   padding: 0;
 }
 .select-kit .select-kit-header .caret-icon {
+  background-color: transparent !important;
+  border: 0;
   margin-left: 4px;
 }
 .select-kit .select-kit-header .d-button-label {
@@ -8102,6 +8104,7 @@ section.post-menu-area {
 }
 #user-card h1 {
   margin-bottom: 8px;
+  max-width: none;
   min-width: 0;
 }
 #user-card h1 a {
@@ -8116,6 +8119,12 @@ section.post-menu-area {
 #user-card h2 {
   margin-bottom: 8px;
   max-width: none;
+}
+#user-card .bio {
+  margin-top: 0;
+  margin-bottom: 16px;
+  max-height: 119.999964px;
+  width: 100%;
 }
 #user-card .btn {
   margin: 0 0 1px;
