@@ -74,6 +74,7 @@
     @extend %typography-h4;
 
     margin-bottom: ($card-inner-spacer-y / 2);
+    max-width: none;
     min-width: 0;
 
     a {
