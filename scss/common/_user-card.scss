@@ -98,6 +98,13 @@
     @extend %typography-body;
   }
 
+  .bio {
+    margin-top: 0;
+    margin-bottom: $card-inner-spacer-y;
+    max-height: ($font-size-body * $line-height-body * 6);
+    width: 100%;
+  }
+
   .btn {
     margin: 0 0 1px;
   }
