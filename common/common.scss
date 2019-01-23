@@ -301,7 +301,8 @@ div.poll .poll-buttons .btn:first-child, .d-editor .d-editor-modal .controls .bt
 }
 
 .btn-small,
-.btn-xsmall, .image-upload-controls .btn, .search-menu .no-results .widget-link, .timeline-container .topic-timeline .back-button, .admin-logs-table .btn, .screened-ip-addresses .actions.col a, .styleguide .styleguide-menu ul li a {
+.btn-xsmall, .image-upload-controls .btn, .search-menu .no-results .widget-link, .timeline-container .topic-timeline .back-button, .topic-list .btn,
+.topic-list .btn-flat, .admin-logs-table .btn, .screened-ip-addresses .actions.col a, .styleguide .styleguide-menu ul li a {
   font-size: 13px;
   padding: 9.5px 16px;
 }
@@ -454,7 +455,7 @@ div.poll .results .bar-back::before {
   width: 100%;
 }
 
-tr, .topic-list > tbody > tr, .topic-list > thead > tr, .latest-topic-list .table-heading, .latest-topic-list-item, .directory table tbody tr, .groups-table tbody tr, .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
+tr, .latest-topic-list .table-heading, .latest-topic-list-item, .directory table tbody tr, .groups-table tbody tr, .user-content .user-invite-list tr, .admin-contents table:not(.pika-table) tr {
   border-bottom: 1px solid color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12));
 }
 
@@ -5730,16 +5731,6 @@ tbody:last-child tr:last-child, thead:last-child tr:last-child {
 .topic-list {
   border-radius: 4px;
 }
-.topic-list tbody tr.has-excerpt .star,
-.topic-list tbody > tr.has-excerpt .star,
-.topic-list > tbody tr.has-excerpt .star,
-.topic-list > tbody > tr.has-excerpt .star {
-  vertical-align: middle;
-}
-.topic-list tbody td,
-.topic-list tbody th {
-  line-height: inherit;
-}
 .topic-list tbody td:first-of-type,
 .topic-list tbody th:first-of-type {
   padding-left: 24px;
@@ -5748,40 +5739,25 @@ tbody:last-child tr:last-child, thead:last-child tr:last-child {
 .topic-list tbody th:last-of-type {
   padding-right: 24px;
 }
-.topic-list > tbody {
-  border-top: 0;
+.topic-list td,
+.topic-list th {
+  line-height: inherit;
 }
-.topic-list > tbody > tr:first-child {
-  border-top: 0;
-}
-.topic-list > tbody > tr:last-child {
-  border-bottom: 0;
-}
-.topic-list td.activity, .topic-list td.age, .topic-list td.posters, .topic-list td.posts, .topic-list td.views,
-.topic-list th.activity,
-.topic-list th.age,
-.topic-list th.posters,
-.topic-list th.posts,
-.topic-list th.views {
-  min-width: 0;
+.topic-list td.activity, .topic-list td.age, .topic-list td.posters, .topic-list td.posts, .topic-list td.views {
   white-space: nowrap;
   width: 0;
 }
-.topic-list td.num,
-.topic-list th.num {
-  text-align: right;
-}
-.topic-list td.num.activity a, .topic-list td.num.posts a,
-.topic-list th.num.activity a,
-.topic-list th.num.posts a {
+.topic-list td.num.activity a, .topic-list td.num.posts a {
   padding: 12px 0;
 }
-.topic-list td.main-link {
-  width: 100%;
+.topic-list th {
+  font-weight: bolder;
 }
 .topic-list thead td,
 .topic-list thead th {
-  line-height: inherit;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  white-space: nowrap;
 }
 .topic-list thead td:first-of-type,
 .topic-list thead th:first-of-type {
@@ -5791,20 +5767,19 @@ tbody:last-child tr:last-child, thead:last-child tr:last-child {
 .topic-list thead th:last-of-type {
   padding-right: 24px;
 }
-.topic-list thead th {
-  font-weight: bolder;
-  white-space: nowrap;
-}
-.topic-list thead .bulk-select-topics {
-  margin-right: 6px;
-}
-.topic-list thead .bulk-select-topics .btn {
-  margin-right: 6px;
-}
 .topic-list .avatar {
   height: 24px;
   vertical-align: middle;
   width: 24px;
+}
+.topic-list .btn-flat.bulk-select {
+  margin-right: 4px;
+  margin-left: -8px;
+  min-width: 32px;
+  padding: 9.5px 0;
+}
+.topic-list .bulk-select-topics .btn {
+  margin-right: 4px;
 }
 .topic-list .main-link {
   font-size: inherit;
