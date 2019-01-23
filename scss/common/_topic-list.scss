@@ -448,16 +448,6 @@
       }
     }
   }
-
-  .topic-status {
-    font-size: inherit;
-    margin: 0 ($tbody-cell-padding-x / 2) 0 0;
-    padding: 0;
-
-    &:last-of-type {
-      margin-right: ($tbody-cell-padding-x / 2);
-    }
-  }
 }
 
 .topic-list-bottom {
@@ -473,16 +463,13 @@
 }
 
 .topic-statuses {
-  margin-right: 0;
+  display: inline-block;
+  float: none;
+  margin-right: .25em;
 
-  .topic-status {
-    margin: 0;
-    padding: 0;
-
-    .d-icon {
-      height: auto;
-      width: auto;
-    }
+  .topic-status .d-icon {
+    height: auto;
+    width: auto;
   }
 }
 
