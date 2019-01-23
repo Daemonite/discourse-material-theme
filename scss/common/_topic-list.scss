@@ -290,22 +290,10 @@
 
   border-radius: $card-border-radius;
 
-  tbody,
-  > tbody {
-    tr,
-    > tr {
-      &.has-excerpt .star {
-        vertical-align: middle;
-      }
-    }
-  }
-
   tbody {
     td,
     th {
       @extend %tbody-cell;
-
-      line-height: inherit;
 
       &:first-of-type {
         padding-left: ($tbody-cell-padding-x * 2);
@@ -317,37 +305,22 @@
     }
   }
 
-  > tbody {
-    border-top: 0;
-
-    > tr {
-      @extend %table-row;
-
-      &:first-child {
-        border-top: 0;
-      }
-
-      &:last-child {
-        border-bottom: 0;
-      }
-    }
-  }
-
   td,
   th {
+    line-height: inherit;
+  }
+
+  td {
     &.activity,
     &.age,
     &.posters,
     &.posts,
     &.views {
-      min-width: 0;
       white-space: nowrap;
       width: 0;
     }
 
     &.num {
-      text-align: right;
-
       &.activity,
       &.posts {
         a {
@@ -357,10 +330,8 @@
     }
   }
 
-  td {
-    &.main-link {
-      width: 100%;
-    }
+  th {
+    font-weight: bolder;
   }
 
   thead {
@@ -368,7 +339,9 @@
     th {
       @extend %thead-cell;
 
-      line-height: inherit;
+      padding-top: ($thead-cell-padding-y / 2);
+      padding-bottom: ($thead-cell-padding-y / 2);
+      white-space: nowrap;
 
       &:first-of-type {
         padding-left: ($thead-cell-padding-x * 2);
@@ -378,29 +351,28 @@
         padding-right: ($thead-cell-padding-x * 2);
       }
     }
-
-    th {
-      font-weight: bolder;
-      white-space: nowrap;
-    }
-
-    .bulk-select-topics {
-      margin-right: ($thead-cell-padding-x / 2);
-
-      .btn {
-        margin-right: ($thead-cell-padding-x / 2);
-      }
-    }
-  }
-
-  > thead > tr {
-    @extend %table-row;
   }
 
   .avatar {
     height: $material-icon-size;
     vertical-align: middle;
     width: $material-icon-size;
+  }
+
+  .btn,
+  .btn-flat {
+    @extend %btn-sm;
+  }
+
+  .btn-flat.bulk-select {
+    margin-right: $spacer-xs;
+    margin-left: ($material-icon-size - $btn-height-sm);
+    min-width: $btn-height-sm;
+    padding: $btn-padding-y-sm 0;
+  }
+
+  .bulk-select-topics .btn {
+    margin-right: $spacer-xs;
   }
 
   .main-link {
