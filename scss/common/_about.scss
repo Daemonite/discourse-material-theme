@@ -1,7 +1,6 @@
 section {
   &.about {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     margin-bottom: $spacer-lg;
 
@@ -76,8 +75,7 @@ section {
   .static-privacy &,
   .static-tos & {
     [itemprop='mainContentOfPage'] {
-      @extend %card;
-      @extend %card-block;
+      @include card;
 
       margin-bottom: $spacer-lg;
 

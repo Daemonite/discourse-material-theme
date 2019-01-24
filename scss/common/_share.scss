@@ -1,6 +1,5 @@
 #share-link {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   h3 {
     @extend %typography-h4;

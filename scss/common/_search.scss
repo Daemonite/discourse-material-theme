@@ -1,6 +1,5 @@
 .fps-result {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   align-items: flex-start;
   display: flex;
@@ -69,8 +68,6 @@
   }
 
   .search-advanced-options {
-    @extend %card-block;
-
     border: 0;
     padding: 0;
 
@@ -90,8 +87,7 @@
   }
 
   .search-bar {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     .search-container & {
       margin-bottom: $spacer;
@@ -150,8 +146,7 @@
 }
 
 .search-advanced-sidebar {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   margin-bottom: $spacer-lg;
 

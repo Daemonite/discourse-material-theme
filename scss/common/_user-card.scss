@@ -25,9 +25,10 @@
 }
 
 #user-card {
-  @extend %card;
+  @include card;
 
   min-height: 0;
+  padding: $card-padding-y $card-padding-x;
 
   &.no-bg {
     .card-content {
@@ -111,12 +112,11 @@
   }
 
   .card-content {
-    @extend %card-block;
-
     background-color: color-chooser($black-secondary, $white-secondary);
     display: flex;
     flex-wrap: wrap;
     margin-top: $header-height;
+    padding: $card-padding-y $card-padding-x;
   }
 
   .metadata {

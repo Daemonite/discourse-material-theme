@@ -47,9 +47,7 @@
 }
 
 .mobile-view .admin-controls {
-  @extend %card-block;
-
-  padding-bottom: 0;
+  padding: $card-padding-y $card-padding-x 0;
 
   > .pull-right {
     clear: both;

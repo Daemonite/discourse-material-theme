@@ -142,8 +142,7 @@
 }
 
 .admin-controls {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   margin-bottom: $spacer-lg;
   padding-bottom: ($card-padding-y - $card-inner-spacer-y);
@@ -297,8 +296,7 @@
     padding-left: 0;
 
     > .about {
-      @extend %card;
-      @extend %card-block;
+      @include card;
 
       flex-grow: 1;
       margin: 0;
@@ -422,8 +420,7 @@
   }
 
   .show-current-style {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     flex-grow: 1;
     margin-left: 0;
@@ -669,8 +666,7 @@ div {
   &.groups {
     .admin-contents & {
       > .span13 {
-        @extend %card;
-        @extend %card-block;
+        @include card;
 
         flex-grow: 1;
         float: none;
@@ -699,8 +695,7 @@ div {
       flex-grow: 1;
 
       .user-field {
-        @extend %card;
-        @extend %card-block;
+        @include card;
 
         margin-bottom: $card-margin-y;
 
@@ -725,8 +720,7 @@ div {
 }
 
 .content-body {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   flex-grow: 1;
 
@@ -737,8 +731,7 @@ div {
 }
 
 .content-editor {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   flex-grow: 1;
   margin-left: 0;
@@ -847,8 +840,7 @@ div {
 }
 
 .dashboard-inline-table {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   margin-bottom: $spacer-lg;
   margin-left: $grid-gutter-width-lg;
@@ -896,13 +888,11 @@ div {
   }
 
   .dashboard-stats {
-    @extend %card;
-    @extend %card-block;
+    @include card;
   }
 
   .misc {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     margin-bottom: $spacer-lg;
 
@@ -929,8 +919,7 @@ div {
 
   .section {
     .section-body {
-      @extend %card;
-      @extend %card-block;
+      @include card;
     }
 
     .section-title {
@@ -989,8 +978,7 @@ div {
   }
 
   .controls {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     margin-bottom: $spacer-lg;
     margin-left: 0;
@@ -1015,8 +1003,7 @@ div {
 }
 
 .embedding-secondary {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   margin-bottom: $spacer-lg;
   width: 100%;
@@ -1056,8 +1043,7 @@ div {
 
 .groups-bulk {
   .admin-contents & {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     .control {
       margin-bottom: $card-inner-spacer-y;
@@ -1254,17 +1240,17 @@ div {
 }
 
 .settings {
-  @extend %card;
+  @include card;
 
   margin: 0;
+  padding: 0;
 
   .setting {
-    @extend %card-block;
-
     align-items: flex-start;
     border-bottom: 1px solid color-chooser($white-divider, $black-divider);
     display: flex;
     flex-wrap: wrap;
+    padding: $card-padding-y $card-padding-x;
 
     &:last-child {
       border-bottom: 0;
@@ -1357,8 +1343,7 @@ div {
 }
 
 .site-texts {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   .search-area {
     margin-bottom: $card-inner-spacer-y;

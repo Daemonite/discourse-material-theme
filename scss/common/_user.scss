@@ -1,7 +1,8 @@
 .admin-user .details {
-  @extend %card;
+  @include card;
 
   margin-bottom: $spacer-lg;
+  padding: 0;
 
   h1 {
     @extend %typography-h4;
@@ -198,8 +199,7 @@
 }
 
 .stats-section {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   li {
     margin: ($card-inner-spacer-y / 2) ($card-inner-spacer-x * 2) 0 0;
@@ -326,8 +326,7 @@
   &.summary-category-list,
   &.summary-user-list,
   &.topics-section {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     padding-bottom: 0;
   }
@@ -371,7 +370,7 @@
   }
 
   .user-invite-controls {
-    @extend %card;
+    @include card;
 
     align-items: center;
     display: flex;
@@ -422,10 +421,11 @@
   margin-bottom: 0;
 
   .about {
-    @extend %card;
+    @include card;
 
     border-radius: $card-border-radius $card-border-radius 0 0;
     margin-bottom: 0;
+    padding: 0;
 
     &.collapsed-info {
       &.has-background .details {
@@ -486,9 +486,8 @@
     }
 
     .details {
-      @extend %card-block;
-
       background-color: transparent;
+      padding: $card-padding-y $card-padding-x;
 
       h2 {
         @extend %typography-h5;
@@ -554,9 +553,8 @@
     }
 
     .secondary {
-      @extend %card-block;
-
       border: 0;
+      padding: $card-padding-y $card-padding-x;
 
       dl {
         padding: 0;
@@ -680,7 +678,7 @@
 
   .user-stream {
     .no-content {
-      @extend %card-block;
+      padding: $card-padding-y $card-padding-x;
     }
 
     .title {
@@ -690,8 +688,7 @@
 }
 
 .user-nav {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   border-radius: 0 0 $card-border-radius $card-border-radius;
   margin: 0 0 $spacer-lg;
@@ -755,8 +752,7 @@
 }
 
 .user-preferences {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   margin-bottom: $spacer-lg;
 
@@ -888,9 +884,10 @@
 }
 
 .user-stream {
-  @extend %card;
+  @include card;
 
   margin-bottom: $spacer-lg;
+  padding: 0;
 
   &::after,
   &::before {
@@ -1070,8 +1067,7 @@
   }
 
   .theme-details {
-    @extend %card;
-    @extend %card-block;
+    @include card;
 
     flex: 1 0 auto;
     margin-bottom: $spacer-lg;

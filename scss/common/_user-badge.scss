@@ -1,8 +1,9 @@
 .badge-card {
-  @extend %card;
+  @include card;
 
   margin-right: 0;
   margin-bottom: $card-margin-y;
+  padding: 0;
 
   &,
   &.large,
@@ -33,18 +34,17 @@
     min-height: 0;
 
     .badge-icon {
-      @extend %card-block;
       @extend %typography-h2;
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       margin-right: 0;
       min-width: ($card-padding-x * 2 + $font-size-h2 / $font-size-base * $material-icon-size);
+      padding: $card-padding-y $card-padding-x;
     }
 
     .badge-info {
-      @extend %card-block;
-
       min-width: 0;
+      padding: $card-padding-y $card-padding-x;
 
       h3 {
         @extend %typography-h4;
@@ -202,8 +202,7 @@
 }
 
 .user-info {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   display: flex;
 

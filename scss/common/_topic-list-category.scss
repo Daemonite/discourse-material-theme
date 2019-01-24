@@ -54,20 +54,19 @@
   }
 
   .category-box-inner {
-    @extend %card;
+    @include card;
+
+    padding: 0;
   }
 }
 
 .category-boxes-with-topics {
   .category-box-heading {
-    @extend %card-block;
+    padding: $card-padding-y $card-padding-x;
   }
 
   .featured-topics {
-    @extend %card-block;
-
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 $card-padding-x;
 
     li {
       border-top: 1px solid color-chooser($white-divider, $black-divider);

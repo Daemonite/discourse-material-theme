@@ -238,12 +238,11 @@ section {
   }
 
   .topic-body {
-    @extend %card-block;
-
     background-color: color-chooser($dark-2, $light-2);
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 0;
+    padding: $card-padding-y $card-padding-x;
     width: auto;
 
     .topic-meta-data {
@@ -453,8 +452,7 @@ section {
 }
 
 .small-action {
-  @extend %card;
-  @extend %card-block;
+  @include card;
 
   border-top: 0;
   margin-bottom: $card-margin-y;
@@ -549,10 +547,11 @@ section {
 }
 
 .topic-body {
-  @extend %card;
+  @include card;
 
   float: none;
   margin-bottom: $card-margin-y;
+  padding: 0;
 
   @media (max-width: 870px) {
     width: auto;
@@ -569,10 +568,8 @@ section {
   }
 
   .regular {
-    @extend %card-block;
-
     margin: 0;
-    padding-bottom: 0;
+    padding: $card-padding-y $card-padding-x 0;
 
     > :first-child {
       margin-top: 0;
@@ -734,9 +731,8 @@ section {
   }
 
   .information {
-    @extend %card-block;
-
     background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+    padding: $card-padding-y $card-padding-x;
 
     &.toggle-summary {
       .btn {
