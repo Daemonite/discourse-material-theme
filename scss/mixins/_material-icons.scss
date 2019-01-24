@@ -12,8 +12,6 @@ $roboto-computed-font-size: ($roboto-capital-height / $roboto-fm-capital-height)
 $roboto-distance-bottom:    $roboto-fm-descender !default;
 $roboto-distance-top:       ($roboto-fm-ascender - $roboto-fm-capital-height) !default;
 
-
-
 %material-icons {
   font-family: 'Material Icons';
   font-feature-settings: 'liga';
