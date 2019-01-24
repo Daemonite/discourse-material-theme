@@ -30,8 +30,8 @@ body .boxed .contents {
   }
 
   > li > a {
-    @extend %btn-flat;
-    @extend %btn-raised;
+    @include btn-base;
+    @include btn-raised;
   }
 
   .drop.expanded {

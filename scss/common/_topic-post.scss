@@ -4,7 +4,7 @@ nav {
     position: relative;
 
     button {
-      @extend %btn-footer;
+      @include btn-footer;
 
       color: color-chooser($white-secondary, $black-secondary);
       font-size: $btn-font-size;
@@ -149,7 +149,7 @@ nav {
     }
 
     .show-replies {
-      @extend %btn-footer;
+      @include btn-footer;
 
       margin-top: ($card-padding-y / 2);
       margin-right: ($card-inner-spacer-x * 2);
@@ -220,7 +220,7 @@ section {
 
   .collapse-down,
   .collapse-up {
-    @extend %btn-raised-reverse;
+    @include btn-raised-reverse;
 
     border: 0;
     color: color-chooser($white-secondary, $black-secondary);
@@ -443,7 +443,7 @@ section {
     }
 
     .btn {
-      @extend %btn-raised-reverse;
+      @include btn-raised-reverse;
 
       margin-right: $card-inner-spacer-x;
       padding-right: $card-inner-spacer-x;
@@ -468,8 +468,7 @@ section {
   }
 
   button {
-    @extend %btn-base;
-    @extend %btn-flat;
+    @include btn-base;
 
     color: color-chooser($white-secondary, $black-secondary);
     font-size: $btn-font-size-sm;
@@ -726,7 +725,7 @@ section {
     margin-right: ($card-inner-spacer-x * -1);
 
     .btn {
-      @extend %btn-raised-reverse;
+      @include btn-raised-reverse;
 
       border-radius: 0 0 $card-border-radius;
       padding-right: $btn-padding-x;
@@ -750,7 +749,7 @@ section {
     }
 
     .btn {
-      @extend %btn-footer;
+      @include btn-footer;
     }
 
     .controls {
@@ -923,8 +922,7 @@ section {
     margin-right: 0;
 
     a {
-      @extend %btn-base;
-      @extend %btn-flat;
+      @include btn-base;
 
       color: color-chooser($white-secondary, $black-secondary);
       font-size: $btn-font-size-sm;

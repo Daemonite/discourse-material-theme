@@ -36,8 +36,8 @@
       }
 
       .btn {
-        @extend %btn-footer;
-        @extend %btn-raised-reverse;
+        @include btn-footer;
+        @include btn-raised-reverse;
       }
     }
   }
@@ -53,7 +53,7 @@
   padding: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
 
   .btn {
-    @extend %btn-raised-reverse;
+    @include btn-raised-reverse;
 
     color: inherit;
   }

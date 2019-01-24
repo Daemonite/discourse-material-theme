@@ -36,7 +36,7 @@
     }
 
     .submit-panel .btn {
-      @extend %btn-sm;
+      @include btn-sm;
 
       max-width: none;
       padding-right: ($btn-padding-x-sm / 2);

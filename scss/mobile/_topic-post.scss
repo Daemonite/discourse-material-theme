@@ -11,7 +11,7 @@
 }
 
 .show-topic-admin {
-  @extend %btn-raised;
+  @include btn-raised;
 
   position: fixed;
   top: ($grid-gutter-width / 2 + $header-height);

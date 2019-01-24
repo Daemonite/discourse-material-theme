@@ -35,8 +35,7 @@
 }
 
 .d-modal-cancel {
-  @extend %btn-base;
-  @extend %btn-flat;
+  @include btn-base;
 
   margin: 0 0 0 $card-inner-spacer-x;
   padding-right: $card-inner-spacer-x;
@@ -49,8 +48,8 @@
 
 .discourse-local-dates-create-modal-footer {
   .cancel-action {
-    @extend %btn-base;
-    @extend %btn-footer;
+    @include btn-base;
+    @include btn-footer;
   }
 }
 
@@ -380,7 +379,7 @@
       margin-left: ($card-inner-spacer-x * -1);
 
       .btn {
-        @extend %btn-footer;
+        @include btn-footer;
       }
     }
 
@@ -554,8 +553,7 @@
   }
 
   :not(.disclaimer) a {
-    @extend %btn-base;
-    @extend %btn-flat;
+    @include btn-base;
 
     margin-left: $card-inner-spacer-x;
     padding-right: $card-inner-spacer-x;
@@ -698,8 +696,8 @@
   ~ .modal-footer {
     a {
       &.pull-right {
-        @extend %btn-base;
-        @extend %btn-footer;
+        @include btn-base;
+        @include btn-footer;
       }
     }
   }

@@ -534,7 +534,7 @@
 }
 
 .admin-logs-table .btn {
-  @extend %btn-sm;
+  @include btn-sm;
 
   &.no-text .fa {
     margin-right: 0;
@@ -1230,8 +1230,8 @@ div {
 .screened-ip-addresses {
   .actions.col {
     a {
-      @extend %btn-base;
-      @extend %btn-sm;
+      @include btn-base;
+      @include btn-sm;
 
       text-decoration: none;
     }
@@ -1459,8 +1459,8 @@ div {
         }
 
         a {
-          @extend %btn-base;
-          @extend %btn-sm;
+          @include btn-base;
+          @include btn-sm;
 
           display: block;
           text-align: inherit;

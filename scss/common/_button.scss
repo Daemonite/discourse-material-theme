@@ -1,8 +1,11 @@
 // Flat button
 
 .btn-flat {
-  @extend %btn-base;
-  @extend %btn-flat;
+  @include btn-base;
+
+  .d-icon {
+    font-size: ($btn-font-size - 1) !important;
+  }
 }
 
 
@@ -10,8 +13,62 @@
 // Raised button
 
 .btn {
-  @extend %btn-base;
-  @extend %btn-raised;
+  @include btn-base;
+  @include btn-raised;
+}
+
+.btn-danger {
+  background-color: unquote('$danger');
+  color: color-dynamic(unquote('$danger'));
+
+  &:hover,
+  &.btn-hover {
+    .discourse-no-touch & {
+      background-color: unquote('$danger');
+      color: color-dynamic(unquote('$danger'));
+    }
+  }
+
+  &:focus {
+    background-color: unquote('$danger');
+    color: color-dynamic(unquote('$danger'));
+  }
+
+  &:active,
+  &.btn-active {
+    &,
+    .discourse-no-touch & {
+      background-color: unquote('$danger');
+      color: color-dynamic(unquote('$danger'));
+    }
+  }
+}
+
+.btn-primary {
+  background-color: unquote('$tertiary');
+  color: color-dynamic(unquote('$tertiary'));
+
+  &:hover,
+  &.btn-hover {
+    .discourse-no-touch & {
+      background-color: unquote('$tertiary');
+      color: color-dynamic(unquote('$tertiary'));
+    }
+  }
+
+  &:focus {
+    background-color: unquote('$tertiary');
+    color: color-dynamic(unquote('$tertiary'));
+  }
+
+  &:active,
+  &.btn-active {
+    &,
+    .discourse-no-touch & {
+      background-color: unquote('$tertiary');
+      color: color-dynamic(unquote('$tertiary'));
+    }
+  }
 }
 
 
@@ -19,12 +76,12 @@
 // Size
 
 .btn-large {
-  @extend %btn-lg;
+  @include btn-lg;
 }
 
 .btn-small,
 .btn-xsmall {
-  @extend %btn-sm;
+  @include btn-sm;
 }
 
 

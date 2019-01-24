@@ -34,7 +34,7 @@
       width: 100%;
 
       a {
-        @extend %btn-sm;
+        @include btn-sm;
       }
 
       ul {
@@ -110,7 +110,7 @@
 
   > .btn,
   .user-archive .btn {
-    @extend %btn-raised;
+    @include btn-raised;
   }
 }
 

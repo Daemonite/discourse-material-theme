@@ -65,8 +65,9 @@
   }
 
   .btn {
-    @extend %btn-raised-reverse;
     @extend %dropdown-link;
+
+    @include btn-raised-reverse;
 
     border-radius: 0;
     text-transform: none;

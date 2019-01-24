@@ -54,8 +54,8 @@
   display: flex;
 
   a {
-    @extend %btn-base;
-    @extend %btn-raised;
+    @include btn-base;
+    @include btn-raised;
 
     margin-left: $card-inner-spacer-x;
   }

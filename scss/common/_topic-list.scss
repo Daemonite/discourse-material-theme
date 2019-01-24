@@ -36,8 +36,8 @@
 .period-chooser {
   &.dropdown-select-box.select-kit {
     .period-chooser-header {
-      @extend %btn-base;
-      @extend %btn-raised;
+      @include btn-base;
+      @include btn-raised;
 
       h2 {
         &.selected-name {
@@ -361,7 +361,7 @@
 
   .btn,
   .btn-flat {
-    @extend %btn-sm;
+    @include btn-sm;
   }
 
   .btn-flat.bulk-select {

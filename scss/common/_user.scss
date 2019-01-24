@@ -95,8 +95,8 @@
 
   .controls {
     a[data-ember-action]:not(.close) {
-      @extend %btn-base;
-      @extend %btn-raised;
+      @include btn-base;
+      @include btn-raised;
     }
 
     .btn {
@@ -379,7 +379,7 @@
     padding: ($card-padding-y / 2) ($card-padding-x - $btn-padding-x / 2);
 
     .btn {
-      @extend %btn-footer;
+      @include btn-footer;
     }
 
     .nav {
@@ -740,8 +740,8 @@
   }
 
   .new-private-message {
-    @extend %btn-base;
-    @extend %btn-raised;
+    @include btn-base;
+    @include btn-raised;
 
     display: block;
     margin-bottom: $spacer-lg;
@@ -995,7 +995,7 @@
   }
 
   .remove-bookmark {
-    @extend %btn-raised-reverse;
+    @include btn-raised-reverse;
 
     margin: ($card-inner-spacer-y / -4) ($btn-padding-x / -2) ($card-inner-spacer-y / -4) auto;
     padding-right: ($btn-padding-x / 2);

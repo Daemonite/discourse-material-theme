@@ -214,17 +214,16 @@ div {
       padding: ($card-padding-y / 2) ($card-padding-x - $card-inner-spacer-x);
 
       a {
-        @extend %btn-base;
-        @extend %btn-flat;
+        @include btn-base;
       }
 
       a,
       .btn {
-        @extend %btn-footer;
+        @include btn-footer;
       }
 
       .btn {
-        @extend %btn-raised-reverse;
+        @include btn-raised-reverse;
       }
 
       .fa-check-square-o,

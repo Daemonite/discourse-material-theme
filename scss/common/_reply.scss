@@ -438,8 +438,7 @@
     padding: ($card-padding-y / 2) $card-padding-x;
 
     .cancel {
-      @extend %btn-base;
-      @extend %btn-flat;
+      @include btn-base;
 
       margin-left: $card-inner-spacer-x;
     }
@@ -457,8 +456,7 @@
   }
 
   .toggle-preview {
-    @extend %btn-base;
-    @extend %btn-flat;
+    @include btn-base;
 
     margin-right: ($card-inner-spacer-x * -1);
     overflow: hidden;

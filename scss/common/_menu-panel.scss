@@ -236,9 +236,9 @@ div {
     }
 
     .widget-link {
-      @extend %btn-base;
-      @extend %btn-raised;
-      @extend %btn-sm;
+      @include btn-base;
+      @include btn-raised;
+      @include btn-sm;
 
       margin-top: $menu-panel-inner-spacer-y;
     }
@@ -252,8 +252,7 @@ div {
       text-align: center;
 
       .widget-link {
-        @extend %btn-base;
-        @extend %btn-flat;
+        @include btn-base;
       }
     }
   }

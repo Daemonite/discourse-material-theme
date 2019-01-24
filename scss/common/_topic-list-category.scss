@@ -24,7 +24,7 @@
       }
 
       .btn {
-        @extend %btn-footer;
+        @include btn-footer;
       }
     }
 
@@ -178,8 +178,8 @@
     padding: $thead-cell-padding-y ($thead-cell-padding-x * 2 - $card-inner-spacer-x);
 
     .btn {
-      @extend %btn-footer;
-      @extend %btn-raised-reverse;
+      @include btn-footer;
+      @include btn-raised-reverse;
     }
   }
 

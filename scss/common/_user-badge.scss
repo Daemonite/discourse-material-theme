@@ -121,8 +121,8 @@
       }
 
       .more {
-        @extend %btn-base;
-        @extend %btn-raised;
+        @include btn-base;
+        @include btn-raised;
       }
     }
   }

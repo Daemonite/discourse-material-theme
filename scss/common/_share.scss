@@ -43,9 +43,8 @@
     margin-right: ($card-inner-spacer-x * -1);
 
     a {
-      @extend %btn-base;
-      @extend %btn-flat;
-      @extend %btn-footer;
+      @include btn-base;
+      @include btn-footer;
     }
   }
 

@@ -30,7 +30,7 @@
     }
 
     .back-button {
-      @extend %btn-sm;
+      @include btn-sm;
     }
 
     .dropdown-menu,
