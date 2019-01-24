@@ -260,8 +260,8 @@
 }
 
 #topic-entrance {
-  @extend %dropdown-menu;
-  @extend %dropdown-menu-sm;
+  @include dropdown-menu;
+  @include dropdown-menu-sm;
 
   button {
     &.btn.jump-bottom {

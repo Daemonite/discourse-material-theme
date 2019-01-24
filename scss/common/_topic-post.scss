@@ -126,17 +126,17 @@ nav {
     }
 
     .post-admin-menu {
-      @extend %dropdown-menu;
-      @extend %dropdown-menu-sm;
+      @include dropdown-menu;
+      @include dropdown-menu-sm;
 
       h3 {
-        @extend %dropdown-header;
-        @extend %dropdown-header-sm;
+        @include dropdown-header;
+        @include dropdown-header-sm;
       }
 
       li {
-        @extend %dropdown-link;
-        @extend %dropdown-link-sm;
+        @include dropdown-link;
+        @include dropdown-link-sm;
 
         margin: 0;
         width: 100%;
@@ -635,10 +635,10 @@ section {
   }
 
   .dropdown-menu {
-    @extend %dropdown-menu-sm;
+    @include dropdown-menu-sm;
 
     a {
-      @extend %dropdown-link-sm;
+      @include dropdown-link-sm;
     }
   }
 
@@ -647,14 +647,14 @@ section {
   }
 
   .popup-menu {
-    @extend %dropdown-menu-sm;
+    @include dropdown-menu-sm;
 
     h3 {
-      @extend %dropdown-header-sm;
+      @include dropdown-header-sm;
     }
 
     .btn {
-      @extend %dropdown-link-sm;
+      @include dropdown-link-sm;
     }
   }
 
@@ -984,14 +984,14 @@ section {
   }
 
   .popup-menu {
-    @extend %dropdown-menu-sm;
+    @include dropdown-menu-sm;
 
     h3 {
-      @extend %dropdown-header-sm;
+      @include dropdown-header-sm;
     }
 
     .btn {
-      @extend %dropdown-link-sm;
+      @include dropdown-link-sm;
     }
   }
 

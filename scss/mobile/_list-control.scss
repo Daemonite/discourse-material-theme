@@ -24,16 +24,16 @@
   }
 
   .nav-pills .drop {
-    @extend %dropdown-menu;
-    @extend %dropdown-menu-sm;
+    @include dropdown-menu;
+    @include dropdown-menu-sm;
 
     li {
       margin: 0;
       padding: 0;
 
       a {
-        @extend %dropdown-link;
-        @extend %dropdown-link-sm;
+        @include dropdown-link;
+        @include dropdown-link-sm;
 
         color: inherit;
       }

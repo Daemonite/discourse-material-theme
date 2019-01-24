@@ -1,8 +1,8 @@
 .dropdown-menu {
-  @extend %dropdown-menu;
+  @include dropdown-menu;
 
   a {
-    @extend %dropdown-link;
+    @include dropdown-link;
 
     display: flex;
 
@@ -38,7 +38,7 @@
 }
 
 .popup-menu {
-  @extend %dropdown-menu;
+  @include dropdown-menu;
 
   width: auto;
 
@@ -57,7 +57,7 @@
   h4,
   h5,
   h6 {
-    @extend %dropdown-header;
+    @include dropdown-header;
   }
 
   ul {
@@ -65,9 +65,8 @@
   }
 
   .btn {
-    @extend %dropdown-link;
-
     @include btn-raised-reverse;
+    @include dropdown-link;
 
     border-radius: 0;
     text-transform: none;

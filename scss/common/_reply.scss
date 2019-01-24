@@ -298,14 +298,14 @@
   }
 
   .popup-menu {
-    @extend %dropdown-menu-sm;
+    @include dropdown-menu-sm;
 
     h3 {
-      @extend %dropdown-header-sm;
+      @include dropdown-header-sm;
     }
 
     .btn {
-      @extend %dropdown-link-sm;
+      @include dropdown-link-sm;
     }
   }
 

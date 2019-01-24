@@ -35,15 +35,15 @@ body .boxed .contents {
   }
 
   .drop.expanded {
-    @extend %dropdown-menu;
-    @extend %dropdown-menu-sm;
+    @include dropdown-menu;
+    @include dropdown-menu-sm;
 
     li {
       margin: 0;
 
       a {
-        @extend %dropdown-link;
-        @extend %dropdown-link-sm;
+        @include dropdown-link;
+        @include dropdown-link-sm;
       }
     }
   }
