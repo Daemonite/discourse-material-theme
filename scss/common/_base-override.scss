@@ -40,19 +40,64 @@ tbody {
 }
 
 .nav-pills {
-  @extend %nav-pills;
+  > li {
+    margin-right: 1px;
 
-  > li > a .d-icon {
-    margin-right: $spacer-xs;
-    opacity: 1;
+    > a {
+      border-radius: $btn-border-radius;
+      font-size: $btn-font-size;
+      opacity: $nav-link-opacity;
+      padding: $btn-padding-y $btn-padding-x;
+
+      @include active-focus-hover {
+        opacity: 1;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &.active,
+      .active > & {
+        opacity: 1;
+      }
+    }
   }
 }
 
 .nav-stacked {
-  @extend %nav-stacked;
+  background-color: transparent;
 
-  > li > a .d-icon {
-    margin-right: $spacer-xs;
+  a {
+    border-radius: $btn-border-radius;
+    font-size: $btn-font-size;
+    opacity: $nav-link-opacity;
+    padding: $btn-padding-y $btn-padding-x;
+
+    @include active-focus-hover {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.active {
+      opacity: 1;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  li {
+    border-bottom: 0;
+    margin-bottom: 1px;
+
+    &.indent {
+      padding-left: $btn-padding-x;
+    }
   }
 
   .count {

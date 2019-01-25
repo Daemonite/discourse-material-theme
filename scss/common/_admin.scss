@@ -807,29 +807,31 @@ div {
 
     li {
       border-bottom: 0;
+      margin-bottom: 1px;
 
       &:first-of-type {
         border-top: 0;
       }
 
       a {
-        @extend %nav-link;
+        border-radius: $btn-border-radius;
+        font-size: $btn-font-size;
+        line-height: 1;
+        opacity: $nav-link-opacity;
+        padding: $btn-padding-y $btn-padding-x;
 
-        align-items: center;
-        display: flex;
+        @include active-focus-hover {
+          opacity: 1;
+        }
 
-        // span {
-        //   &.count {
-        //     @extend %typography-caption;
+        &:focus {
+          outline: 0;
+        }
 
-        //     background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-        //     border-radius: $btn-border-radius;
-        //     color: inherit;
-        //     line-height: 1;
-        //     margin-right: 0;
-        //     padding: ($btn-font-size - $font-size-caption) / 2 $spacer-xs;
-        //   }
-        // }
+        &.active,
+        .active > & {
+          opacity: 1;
+        }
 
         .d-icon {
           margin-left: $spacer-xs;
