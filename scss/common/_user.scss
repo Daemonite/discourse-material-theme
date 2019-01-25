@@ -24,11 +24,11 @@
     tbody {
       td,
       th {
-        @extend %tbody-cell;
+        @include tbody-cell;
       }
 
       tr {
-        @extend %table-row;
+        @include table-row;
       }
     }
 
@@ -41,7 +41,7 @@
     thead {
       td,
       th {
-        @extend %thead-cell;
+        @include thead-cell;
       }
     }
 
@@ -150,18 +150,18 @@
   tbody {
     td,
     th {
-      @extend %tbody-cell;
+      @include tbody-cell;
     }
 
     tr {
-      @extend %table-row;
+      @include table-row;
     }
   }
 
   thead {
     td,
     th {
-      @extend %thead-cell;
+      @include thead-cell;
     }
   }
 
@@ -394,17 +394,17 @@
     margin-top: $spacer;
 
     td {
-      @extend %tbody-cell;
+      @include tbody-cell;
     }
 
     th {
-      @extend %thead-cell;
+      @include thead-cell;
 
       border-bottom: 0;
     }
 
     tr {
-      @extend %table-row;
+      @include table-row;
     }
   }
 

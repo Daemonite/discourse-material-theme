@@ -102,7 +102,7 @@
   tbody {
     td,
     th {
-      @extend %tbody-cell;
+      @include tbody-cell;
     }
 
     .category {
@@ -117,7 +117,7 @@
   thead {
     td,
     th {
-      @extend %thead-cell;
+      @include thead-cell;
     }
   }
 
@@ -183,7 +183,7 @@
   }
 
   .table-heading {
-    @extend %table-row;
+    @include table-row;
 
     color: color-chooser($thead-color-dark, $thead-color-light);
     font-size: $thead-font-size;
@@ -192,8 +192,8 @@
 }
 
 .latest-topic-list-item {
-  @extend %table-row;
-  @extend %tbody-cell;
+  @include table-row;
+  @include tbody-cell;
 
   height: auto;
   min-height: $tbody-cell-height;

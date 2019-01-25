@@ -7,11 +7,11 @@
   width: 100%;
 }
 
-%table-row {
+@mixin table-row {
   border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
 }
 
-%tbody-cell {
+@mixin tbody-cell {
   color: color-chooser($tbody-color-dark, $tbody-color-light);
   font-size: $tbody-font-size;
   height: $tbody-cell-height;
@@ -27,7 +27,7 @@
   }
 }
 
-%thead-cell {
+@mixin thead-cell {
   color: color-chooser($thead-color-dark, $thead-color-light);
   font-size: $thead-font-size;
   height: $thead-cell-height;

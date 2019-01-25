@@ -52,7 +52,7 @@ tr {
     margin-bottom: 0;
 
     td {
-      @extend %tbody-cell;
+      @include tbody-cell;
 
       &:first-of-type {
         padding-left: ($tbody-cell-padding-x * 2);
@@ -64,7 +64,7 @@ tr {
     }
 
     th {
-      @extend %thead-cell;
+      @include thead-cell;
     }
   }
 }

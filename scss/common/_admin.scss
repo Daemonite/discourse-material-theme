@@ -106,7 +106,7 @@
 
       td,
       th {
-        @extend %tbody-cell;
+        @include tbody-cell;
       }
 
       td {
@@ -116,14 +116,14 @@
       thead {
         td,
         th {
-          @extend %thead-cell;
+          @include thead-cell;
 
           background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
         }
       }
 
       tr {
-        @extend %table-row;
+        @include table-row;
 
         @include hover {
           background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
@@ -1170,13 +1170,13 @@ div {
 
   .col {
     &:not(.heading) {
-      @extend %tbody-cell;
+      @include tbody-cell;
 
       height: auto;
     }
 
     &.heading {
-      @extend %thead-cell;
+      @include thead-cell;
 
       height: auto;
     }

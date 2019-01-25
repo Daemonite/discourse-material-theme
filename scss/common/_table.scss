@@ -4,20 +4,20 @@
   tbody {
     td,
     th {
-      @extend %tbody-cell;
+      @include tbody-cell;
     }
   }
 
   thead {
     td,
     th {
-      @extend %thead-cell;
+      @include thead-cell;
     }
   }
 }
 
 tr {
-  @extend %table-row;
+  @include table-row;
 
   tbody:last-child &,
   thead:last-child & {
