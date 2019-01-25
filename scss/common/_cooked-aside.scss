@@ -278,15 +278,30 @@ div {
 
     .results {
       .bar {
-        @extend %progress-bar;
-
         background-color: color-chooser($card-color-dark, $card-color-light);
+        border-radius: 0 2px 2px 0;
+        height: $progress-height;
+        position: relative;
       }
 
       .bar-back {
-        @extend %progress-base;
-
         background-color: color-chooser($card-color-dark, $card-color-light);
+        border-radius: 2px;
+        height: $progress-height;
+        position: relative;
+
+        &::before {
+          background-color: inherit;
+          background-image: linear-gradient(to right, $progress-mask, $progress-mask);
+          border-radius: 2px;
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
       }
 
       .chosen {
