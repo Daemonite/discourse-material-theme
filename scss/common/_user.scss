@@ -729,6 +729,16 @@
   }
 
   .nav-stacked {
+    a {
+      color: inherit;
+
+      &.active {
+        background-color: unquote('$danger');
+        color: color-dynamic(unquote('$danger'));
+        font-weight: normal;
+      }
+    }
+
     li {
       &.archive {
         padding-left: 0;
