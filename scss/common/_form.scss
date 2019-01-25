@@ -34,7 +34,7 @@ input[type='url'],
 input[type='week'],
 textarea {
   body & {
-    @extend %text-field;
+    @include text-field;
 
     margin-bottom: $spacer-sm;
   }
@@ -86,7 +86,7 @@ textarea {
 }
 
 .controls .static {
-  @extend %text-field;
+  @include text-field;
 
   border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
   border-bottom-style: dotted;

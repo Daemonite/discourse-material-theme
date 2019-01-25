@@ -10,8 +10,8 @@
   }
 
   [id='file-input'] {
-    @extend %text-field;
-    @extend %text-field-box;
+    @include text-field;
+    @include text-field-box;
 
     margin-bottom: $text-field-margin-y;
   }
@@ -21,7 +21,7 @@
   }
 
   [id='name'] {
-    @extend %text-field-box;
+    @include text-field-box;
 
     margin-top: $text-field-margin-y;
     margin-bottom: 0;
@@ -59,7 +59,7 @@
     }
 
     input[type='text'] {
-      @extend %text-field-box;
+      @include text-field-box;
 
       margin-right: $spacer-lg;
       margin-bottom: 0;
@@ -189,7 +189,7 @@
   }
 
   input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
   }
 
   label {
@@ -275,7 +275,7 @@
 
   &.admin-embedding {
     input[type='text'] {
-      @extend %text-field-box;
+      @include text-field-box;
 
       margin-bottom: 0;
     }
@@ -440,7 +440,7 @@
 
     h1 {
       input[type='text'] {
-        @extend %text-field-box;
+        @include text-field-box;
       }
     }
 
@@ -592,7 +592,7 @@ div {
       }
 
       input[type='text'] {
-        @extend %text-field-box;
+        @include text-field-box;
 
         &:last-child {
           margin-bottom: 0;
@@ -658,7 +658,7 @@ div {
   &.emoji {
     .admin-container & {
       input[type='text'] {
-        @extend %text-field-box;
+        @include text-field-box;
       }
     }
   }
@@ -763,7 +763,7 @@ div {
   }
 
   .email-template input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
   }
 }
 
@@ -986,7 +986,7 @@ div {
     margin-left: 0;
 
     input[type='text'] {
-      @extend %text-field-box;
+      @include text-field-box;
     }
 
     label {
@@ -1154,7 +1154,7 @@ div {
     width: 100%;
 
     input[type='text'] {
-      @extend %text-field-box;
+      @include text-field-box;
     }
   }
 }
@@ -1227,7 +1227,7 @@ div {
 
   .admin-container {
     input[type='text'] {
-      @extend %text-field-box;
+      @include text-field-box;
 
       display: inline-block;
       margin-bottom: 0;
@@ -1288,7 +1288,7 @@ div {
     }
 
     .input-setting-string {
-      @extend %text-field-box;
+      @include text-field-box;
     }
 
     .setting-label {
@@ -1351,7 +1351,7 @@ div {
     margin-bottom: $card-inner-spacer-y;
 
     .site-text-search {
-      @extend %text-field-box;
+      @include text-field-box;
     }
   }
 
@@ -1598,7 +1598,7 @@ div {
 
 .value-list {
   input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
 
     flex-grow: 1;
     margin-bottom: 0;
@@ -1622,8 +1622,8 @@ div {
   }
 
   .value {
-    @extend %text-field;
-    @extend %text-field-box;
+    @include text-field;
+    @include text-field-box;
 
     margin-bottom: 1px;
 
@@ -1683,7 +1683,7 @@ div {
   margin-bottom: $spacer-lg;
 
   input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
 
     display: inline-block;
     margin-bottom: 0;

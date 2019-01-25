@@ -99,7 +99,7 @@
     }
 
     .search-query {
-      @extend %text-field-box;
+      @include text-field-box;
 
       margin-right: $card-inner-spacer-x;
     }
@@ -200,7 +200,7 @@
 
   input[type='number'],
   input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
   }
 
   .ac-wrap {

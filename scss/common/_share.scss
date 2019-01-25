@@ -9,7 +9,7 @@
   }
 
   input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
 
     font-size: $text-field-font-size;
     margin-bottom: $text-field-margin-y;

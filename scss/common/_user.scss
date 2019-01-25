@@ -67,7 +67,7 @@
   }
 
   .filter-name {
-    @extend %text-field-box;
+    @include text-field-box;
 
     margin-bottom: 0;
     margin-left: $spacer-xs;
@@ -84,7 +84,7 @@
   padding: $tbody-cell-padding-y $card-padding-x;
 
   input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
 
     margin-bottom: 0;
   }
@@ -135,7 +135,7 @@
   order: -1;
 
   .groups-header-filters-name {
-    @extend %text-field-box;
+    @include text-field-box;
 
     margin-right: $spacer-xs;
     width: auto;
@@ -767,7 +767,7 @@
   margin-bottom: $spacer-lg;
 
   input[type='text'] {
-    @extend %text-field-box;
+    @include text-field-box;
   }
 
   .avatar {
@@ -823,7 +823,7 @@
   }
 
   .controls .static {
-    @extend %text-field-box;
+    @include text-field-box;
   }
 
   .form-vertical {
@@ -1097,7 +1097,7 @@
 
     h1 {
       input[type='text'] {
-        @extend %text-field-box;
+        @include text-field-box;
 
         margin-bottom: 0;
       }
