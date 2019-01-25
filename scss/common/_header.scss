@@ -52,7 +52,7 @@
     &,
     &.two-rows {
       h1 {
-        @extend %typography-h4;
+        @include typography-h4;
 
         margin: 0;
         min-width: 0;
@@ -155,7 +155,7 @@
     margin-left: $header-inner-spacer-x;
 
     .discourse-tags {
-      @extend %typography-caption;
+      @include typography-caption;
     }
   }
 }

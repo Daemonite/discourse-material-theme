@@ -53,7 +53,7 @@
           }
 
           .top-date-string {
-            @extend %typography-caption;
+            @include typography-caption;
 
             color: color-chooser($white-secondary, $black-secondary);
             line-height: 1;
@@ -74,7 +74,7 @@
       padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
 
       .top-date-string {
-        @extend %typography-caption;
+        @include typography-caption;
 
         color: color-chooser($white-secondary, $black-secondary);
         line-height: 1;
@@ -421,7 +421,7 @@
   }
 
   .topic-excerpt {
-    @extend %typography-caption;
+    @include typography-caption;
 
     clear: none;
     float: none;
@@ -455,7 +455,7 @@
 
 .topic-list-item {
   .discourse-tags {
-    @extend %typography-caption;
+    @include typography-caption;
 
     margin-top: 0;
   }

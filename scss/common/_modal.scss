@@ -262,7 +262,7 @@
 }
 
 .mfp-counter {
-  @extend %typography-body;
+  @include typography-body;
 
   color: $white-secondary;
   flex-shrink: 0;
@@ -289,7 +289,7 @@
 }
 
 .mfp-title {
-  @extend %typography-body;
+  @include typography-body;
 
   color: $white-primary;
   overflow: hidden;
@@ -618,7 +618,7 @@
     margin-right: $modal-inner-spacer-x;
 
     h3 {
-      @extend %typography-h4;
+      @include typography-h4;
     }
   }
 }

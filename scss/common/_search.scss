@@ -28,11 +28,11 @@
   }
 
   .search-link .topic-statuses {
-    @extend %typography-body;
+    @include typography-body;
   }
 
   .search-link .topic-title {
-    @extend %typography-h4;
+    @include typography-h4;
 
     vertical-align: middle;
   }
@@ -190,7 +190,7 @@
     }
 
     .search-advanced-title {
-      @extend %typography-h4;
+      @include typography-h4;
 
       background-color: transparent;
       margin-bottom: $card-inner-spacer-y;

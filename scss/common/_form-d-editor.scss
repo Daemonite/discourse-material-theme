@@ -14,7 +14,7 @@
     transform: translate3d(-50%, -50%, 0);
 
     h3 {
-      @extend %typography-h4;
+      @include typography-h4;
 
       margin-bottom: $modal-inner-spacer-y;
     }

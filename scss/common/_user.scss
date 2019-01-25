@@ -5,7 +5,7 @@
   padding: 0;
 
   h1 {
-    @extend %typography-h4;
+    @include typography-h4;
 
     border-bottom-width: 1px;
     margin: 0;
@@ -195,7 +195,7 @@
 }
 
 .links-section .domain {
-  @extend %typography-caption;
+  @include typography-caption;
 }
 
 .stats-section {
@@ -442,11 +442,11 @@
 
         .primary {
           h1 {
-            @extend %typography-h1;
+            @include typography-h1;
           }
 
           h2 {
-            @extend %typography-h5;
+            @include typography-h5;
           }
 
           .avatar {
@@ -490,14 +490,14 @@
       padding: $card-padding-y $card-padding-x;
 
       h2 {
-        @extend %typography-h5;
+        @include typography-h5;
 
         margin-top: ($card-inner-spacer-y / 2);
         margin-bottom: 0;
       }
 
       h3 {
-        @extend %typography-body;
+        @include typography-body;
 
         margin-top: ($card-inner-spacer-y / 2);
         margin-bottom: 0;
@@ -527,7 +527,7 @@
         display: flex;
 
         h1 {
-          @extend %typography-h1;
+          @include typography-h1;
 
           i::before {
             font-size: $font-size-base;
@@ -839,7 +839,7 @@
   }
 
   .instructions {
-    @extend %typography-caption;
+    @include typography-caption;
 
     display: block;
     margin-bottom: $spacer-sm;
@@ -1023,7 +1023,7 @@
   }
 
   .time {
-    @extend %typography-caption;
+    @include typography-caption;
 
     color: color-chooser($white-secondary, $black-secondary);
     margin-right: 0;

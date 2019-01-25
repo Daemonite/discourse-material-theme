@@ -65,7 +65,7 @@ strong {
 }
 
 blockquote {
-  @extend %typography-h5;
+  @include typography-h5;
 
   background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
   border-left: 0;
@@ -128,27 +128,27 @@ h6 {
 }
 
 h1 {
-  @extend %typography-h1;
+  @include typography-h1;
 }
 
 h2 {
-  @extend %typography-h2;
+  @include typography-h2;
 }
 
 h3 {
-  @extend %typography-h3;
+  @include typography-h3;
 }
 
 h4 {
-  @extend %typography-h4;
+  @include typography-h4;
 }
 
 h5 {
-  @extend %typography-h5;
+  @include typography-h5;
 }
 
 h6 {
-  @extend %typography-h6;
+  @include typography-h6;
 }
 
 hr {

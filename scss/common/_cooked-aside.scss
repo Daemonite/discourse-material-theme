@@ -45,7 +45,7 @@ aside {
 
       h3,
       h4 {
-        @extend %typography-h5;
+        @include typography-h5;
 
         margin-bottom: ($card-inner-spacer-y / 2);
         overflow: hidden;
@@ -253,11 +253,11 @@ div {
       }
 
       .info-label {
-        @extend %typography-h6;
+        @include typography-h6;
       }
 
       .info-number {
-        @extend %typography-h3;
+        @include typography-h3;
       }
     }
 

@@ -114,7 +114,7 @@ textarea {
     }
 
     .control-label {
-      @extend %typography-caption;
+      @include typography-caption;
     }
 
     .controls {

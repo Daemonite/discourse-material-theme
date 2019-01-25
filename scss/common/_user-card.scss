@@ -72,7 +72,7 @@
   }
 
   h1 {
-    @extend %typography-h4;
+    @include typography-h4;
 
     margin-bottom: ($card-inner-spacer-y / 2);
     max-width: none;
@@ -90,14 +90,14 @@
   }
 
   h2 {
-    @extend %typography-body;
+    @include typography-body;
 
     margin-bottom: ($card-inner-spacer-y / 2);
     max-width: none;
   }
 
   h3 {
-    @extend %typography-body;
+    @include typography-body;
   }
 
   .bio {

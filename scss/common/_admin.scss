@@ -478,7 +478,7 @@
   }
 
   .status-message {
-    @extend %typography-caption;
+    @include typography-caption;
 
     margin-top: ($card-inner-spacer-y / 2);
   }
@@ -628,7 +628,7 @@ div {
 
         p {
           &.help {
-            @extend %typography-caption;
+            @include typography-caption;
           }
         }
       }
@@ -791,7 +791,7 @@ div {
   }
 
   h3 {
-    @extend %typography-caption;
+    @include typography-caption;
 
     font-weight: bolder;
     margin-bottom: $spacer-sm;
@@ -1120,7 +1120,7 @@ div {
   }
 
   .powered-by {
-    @extend %typography-caption;
+    @include typography-caption;
 
     position: static;
   }
@@ -1265,7 +1265,7 @@ div {
     }
 
     h3 {
-      @extend %typography-h6;
+      @include typography-h6;
     }
 
     .ac-wrap {
@@ -1275,7 +1275,7 @@ div {
 
     .desc,
     .validation-error {
-      @extend %typography-caption;
+      @include typography-caption;
 
       padding-top: 0;
     }
@@ -1439,7 +1439,7 @@ div {
         margin-bottom: 0;
 
         &.styleguide-heading {
-          @extend %typography-caption;
+          @include typography-caption;
 
           font-weight: bolder;
           margin-bottom: $spacer-sm;
@@ -1517,7 +1517,7 @@ div {
       margin-bottom: $spacer-lg;
 
       .example-title {
-        @extend %typography-caption;
+        @include typography-caption;
 
         border-bottom-color: color-chooser($white-divider, $black-divider);
         margin-bottom: 0;
@@ -1540,7 +1540,7 @@ div {
     }
 
     .section-title {
-      @extend %typography-h1;
+      @include typography-h1;
 
       margin-bottom: $spacer-lg;
     }

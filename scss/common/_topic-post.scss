@@ -255,7 +255,7 @@ section {
 }
 
 .gap {
-  @extend %typography-caption;
+  @include typography-caption;
 
   color: color-chooser($white-secondary, $black-secondary);
   font-weight: bolder;
@@ -480,7 +480,7 @@ section {
   }
 
   .small-action-desc {
-    @extend %typography-h6;
+    @include typography-h6;
 
     color: color-chooser($white-secondary, $black-secondary);
     margin-top: 0;
@@ -680,13 +680,13 @@ section {
   position: relative;
 
   h3 {
-    @extend %typography-h6;
+    @include typography-h6;
 
     margin-bottom: ($card-inner-spacer-y / 2);
   }
 
   h4 {
-    @extend %typography-caption;
+    @include typography-caption;
 
     color: color-chooser($card-color-dark, $card-color-light);
     margin: 0 0 ($card-inner-spacer-y / 2 / 2);
@@ -706,7 +706,7 @@ section {
     padding: $card-padding-y $card-padding-x;
 
     .post-count {
-      @extend %typography-caption;
+      @include typography-caption;
 
       align-items: center;
       border-radius: ($btn-height / 4);
@@ -1049,7 +1049,7 @@ section {
   }
 
   h1 {
-    @extend %typography-h1;
+    @include typography-h1;
 
     font-family: $font-family-serif;
     font-weight: normal;

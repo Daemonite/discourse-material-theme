@@ -34,7 +34,7 @@
     min-height: 0;
 
     .badge-icon {
-      @extend %typography-h2;
+      @include typography-h2;
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       margin-right: 0;
@@ -47,7 +47,7 @@
       padding: $card-padding-y $card-padding-x;
 
       h3 {
-        @extend %typography-h4;
+        @include typography-h4;
 
         margin-bottom: ($card-inner-spacer-y / 2);
       }

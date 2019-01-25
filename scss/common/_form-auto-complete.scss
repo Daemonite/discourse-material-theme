@@ -122,7 +122,7 @@ div {
         white-space: nowrap;
 
         &.name {
-          @extend %typography-caption;
+          @include typography-caption;
 
           color: color-chooser($white-secondary, $black-secondary);
           margin-left: ($dropdown-inner-spacer-x / 2);

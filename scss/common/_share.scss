@@ -2,7 +2,7 @@
   @include card;
 
   h3 {
-    @extend %typography-h4;
+    @include typography-h4;
 
     float: none;
     margin: 0 ($card-inner-spacer-x + $material-icon-size) $card-inner-spacer-y 0;

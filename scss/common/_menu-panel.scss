@@ -80,7 +80,7 @@ div {
 
   b {
     &.topics-count {
-      @extend %typography-caption;
+      @include typography-caption;
     }
   }
 
@@ -264,7 +264,7 @@ div {
 
   .search-link {
     .blurb {
-      @extend %typography-caption;
+      @include typography-caption;
     }
 
     .topic-statuses .fa {

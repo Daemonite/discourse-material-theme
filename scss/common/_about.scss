@@ -94,7 +94,7 @@ section {
   }
 
   blockquote {
-    @extend %typography-h5;
+    @include typography-h5;
 
     margin-bottom: $spacer;
   }
@@ -106,15 +106,15 @@ section {
   }
 
   h1 {
-    @extend %typography-h1;
+    @include typography-h1;
   }
 
   h2 {
-    @extend %typography-h2;
+    @include typography-h2;
   }
 
   h3 {
-    @extend %typography-h3;
+    @include typography-h3;
   }
 
   hr {
@@ -123,7 +123,7 @@ section {
 
   ol,
   ul {
-    @extend %typography-body;
+    @include typography-body;
 
     margin-bottom: $spacer;
 
@@ -134,19 +134,19 @@ section {
   }
 
   p {
-    @extend %typography-body;
+    @include typography-body;
 
     margin-bottom: $spacer;
   }
 
   pre {
-    @extend %typography-body;
+    @include typography-body;
 
     margin-bottom: $spacer;
   }
 
   table {
-    @extend %typography-body;
+    @include typography-body;
 
     margin-bottom: $spacer;
   }

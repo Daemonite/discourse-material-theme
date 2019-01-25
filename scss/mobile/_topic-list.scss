@@ -29,7 +29,7 @@ tr {
     padding: $tbody-cell-padding-y ($tbody-cell-padding-x * 2 - $btn-padding-x) $tbody-cell-padding-y ($tbody-cell-padding-x * 2);
 
     figure {
-      @extend %typography-caption;
+      @include typography-caption;
 
       margin: 0 auto 0 0;
     }
@@ -44,7 +44,7 @@ tr {
   }
 
   .category-topic-link .main-link .age {
-    @extend %typography-caption;
+    @include typography-caption;
   }
 
   .topic-list {
