@@ -18,214 +18,6 @@
   }
 }
 
-.mobile-view .mobile-nav > li > a.btn-danger {
-  background-color: transparent;
-  color: $danger;
-}
-.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger.btn-hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-}
-.mobile-view .mobile-nav > li > a.btn-danger:focus {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-}
-.mobile-view .mobile-nav > li > a.btn-danger:active, .mobile-view .mobile-nav > li > a.btn-danger.btn-active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-}
-.mobile-view .mobile-nav > li > a.btn-primary {
-  background-color: transparent;
-  color: $tertiary;
-}
-.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary.btn-hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-}
-.mobile-view .mobile-nav > li > a.btn-primary:focus {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-}
-.mobile-view .mobile-nav > li > a.btn-primary:active, .mobile-view .mobile-nav > li > a.btn-primary.btn-active {
-  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
-}
-
-.btn-flat.cancel {
-  background-color: transparent;
-  color: $danger;
-}
-.discourse-no-touch .btn-flat.cancel:hover, .discourse-no-touch .btn-flat.cancel.btn-hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $danger;
-}
-.btn-flat.cancel:focus {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-}
-.btn-flat.ok {
-  background-color: transparent;
-  color: $success;
-}
-.discourse-no-touch .btn-flat.ok:hover, .discourse-no-touch .btn-flat.ok.btn-hover {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-  color: $success;
-}
-.btn-flat.ok:focus {
-  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
-}
-
-.mobile-view .mobile-nav > li > a, .list-controls .nav > li > a, .show-topic-admin, .user-navigation > .btn,
-.user-navigation .user-archive .btn {
-  background-color: color-chooser($tertiary, #ffffff);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
-}
-.discourse-no-touch .mobile-view .mobile-nav > li > a:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a:hover, .discourse-no-touch .list-controls .nav > li > a:hover, .list-controls .discourse-no-touch .nav > li > a:hover, .discourse-no-touch .show-topic-admin:hover, .discourse-no-touch .user-navigation > .btn:hover,
-.discourse-no-touch .user-navigation .user-archive .btn:hover,
-.user-navigation .user-archive .discourse-no-touch .btn:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-hover, .discourse-no-touch .list-controls .nav > li > a.btn-hover, .list-controls .discourse-no-touch .nav > li > a.btn-hover, .discourse-no-touch .btn-hover.show-topic-admin, .discourse-no-touch .user-navigation > .btn-hover.btn,
-.discourse-no-touch .user-navigation .user-archive .btn-hover.btn,
-.user-navigation .user-archive .discourse-no-touch .btn-hover.btn {
-  background-color: color-chooser($tertiary, #ffffff);
-  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
-  background-size: calc(100% + 1px) 100%;
-}
-.mobile-view .mobile-nav > li > a:focus, .list-controls .nav > li > a:focus, .show-topic-admin:focus, .user-navigation > .btn:focus,
-.user-navigation .user-archive .btn:focus {
-  background-color: color-chooser($tertiary, #ffffff);
-  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
-  background-size: calc(100% + 1px) 100%;
-}
-.mobile-view .mobile-nav > li > a:active, .list-controls .nav > li > a:active, .show-topic-admin:active, .user-navigation > .btn:active,
-.user-navigation .user-archive .btn:active, .mobile-view .mobile-nav > li > a.btn-active, .list-controls .nav > li > a.btn-active, .btn-active.show-topic-admin, .user-navigation > .btn-active.btn,
-.user-navigation .user-archive .btn-active.btn {
-  background-color: color-chooser($tertiary, #ffffff);
-  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
-  background-size: calc(100% + 1px) 100%;
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-}
-.mobile-view .mobile-nav > li > a[disabled], .list-controls .nav > li > a[disabled], [disabled].show-topic-admin, .user-navigation > [disabled].btn,
-.user-navigation .user-archive [disabled].btn, .mobile-view .mobile-nav > li > a.disabled, .list-controls .nav > li > a.disabled, .disabled.show-topic-admin, .user-navigation > .disabled.btn,
-.user-navigation .user-archive .disabled.btn {
-  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
-  background-image: none;
-  box-shadow: none;
-}
-.mobile-view .mobile-nav > li > a.btn-danger, .list-controls .nav > li > a.btn-danger, .btn-danger.show-topic-admin, .user-navigation > .btn-danger.btn,
-.user-navigation .user-archive .btn-danger.btn {
-  background-color: $danger;
-  color: color-dynamic($danger);
-}
-.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger:hover, .discourse-no-touch .list-controls .nav > li > a.btn-danger:hover, .list-controls .discourse-no-touch .nav > li > a.btn-danger:hover, .discourse-no-touch .btn-danger.show-topic-admin:hover, .discourse-no-touch .user-navigation > .btn-danger.btn:hover,
-.discourse-no-touch .user-navigation .user-archive .btn-danger.btn:hover,
-.user-navigation .user-archive .discourse-no-touch .btn-danger.btn:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-danger.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-danger.btn-hover, .discourse-no-touch .list-controls .nav > li > a.btn-danger.btn-hover, .list-controls .discourse-no-touch .nav > li > a.btn-danger.btn-hover, .discourse-no-touch .btn-danger.btn-hover.show-topic-admin, .discourse-no-touch .user-navigation > .btn-danger.btn-hover.btn,
-.discourse-no-touch .user-navigation .user-archive .btn-danger.btn-hover.btn,
-.user-navigation .user-archive .discourse-no-touch .btn-danger.btn-hover.btn {
-  background-color: $danger;
-  color: color-dynamic($danger);
-}
-.mobile-view .mobile-nav > li > a.btn-danger:focus, .list-controls .nav > li > a.btn-danger:focus, .btn-danger.show-topic-admin:focus, .user-navigation > .btn-danger.btn:focus,
-.user-navigation .user-archive .btn-danger.btn:focus {
-  background-color: $danger;
-}
-.mobile-view .mobile-nav > li > a.btn-danger:active, .list-controls .nav > li > a.btn-danger:active, .btn-danger.show-topic-admin:active, .user-navigation > .btn-danger.btn:active,
-.user-navigation .user-archive .btn-danger.btn:active, .mobile-view .mobile-nav > li > a.btn-danger.btn-active, .list-controls .nav > li > a.btn-danger.btn-active, .btn-danger.btn-active.show-topic-admin, .user-navigation > .btn-danger.btn-active.btn,
-.user-navigation .user-archive .btn-danger.btn-active.btn {
-  background-color: $danger;
-}
-.mobile-view .mobile-nav > li > a.btn-primary, .list-controls .nav > li > a.btn-primary, .btn-primary.show-topic-admin, .user-navigation > .btn-primary.btn,
-.user-navigation .user-archive .btn-primary.btn {
-  background-color: $tertiary;
-  color: color-dynamic($tertiary);
-}
-.discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary:hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary:hover, .discourse-no-touch .list-controls .nav > li > a.btn-primary:hover, .list-controls .discourse-no-touch .nav > li > a.btn-primary:hover, .discourse-no-touch .btn-primary.show-topic-admin:hover, .discourse-no-touch .user-navigation > .btn-primary.btn:hover,
-.discourse-no-touch .user-navigation .user-archive .btn-primary.btn:hover,
-.user-navigation .user-archive .discourse-no-touch .btn-primary.btn:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-primary.btn-hover, .mobile-view .discourse-no-touch .mobile-nav > li > a.btn-primary.btn-hover, .discourse-no-touch .list-controls .nav > li > a.btn-primary.btn-hover, .list-controls .discourse-no-touch .nav > li > a.btn-primary.btn-hover, .discourse-no-touch .btn-primary.btn-hover.show-topic-admin, .discourse-no-touch .user-navigation > .btn-primary.btn-hover.btn,
-.discourse-no-touch .user-navigation .user-archive .btn-primary.btn-hover.btn,
-.user-navigation .user-archive .discourse-no-touch .btn-primary.btn-hover.btn {
-  background-color: $tertiary;
-  color: color-dynamic($tertiary);
-}
-.mobile-view .mobile-nav > li > a.btn-primary:focus, .list-controls .nav > li > a.btn-primary:focus, .btn-primary.show-topic-admin:focus, .user-navigation > .btn-primary.btn:focus,
-.user-navigation .user-archive .btn-primary.btn:focus {
-  background-color: $tertiary;
-}
-.mobile-view .mobile-nav > li > a.btn-primary:active, .list-controls .nav > li > a.btn-primary:active, .btn-primary.show-topic-admin:active, .user-navigation > .btn-primary.btn:active,
-.user-navigation .user-archive .btn-primary.btn:active, .mobile-view .mobile-nav > li > a.btn-primary.btn-active, .list-controls .nav > li > a.btn-primary.btn-active, .btn-primary.btn-active.show-topic-admin, .user-navigation > .btn-primary.btn-active.btn,
-.user-navigation .user-archive .btn-primary.btn-active.btn {
-  background-color: $tertiary;
-}
-
-#reply-control .contents .submit-panel .btn, .user-main .about .controls a {
-  font-size: 13px;
-  padding: 9.5px 16px;
-}
-
-.mobile-view .admin-controls {
-  padding: 16px 16px;
-}
-
-.topic-admin-popup-menu h3 {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 6.25px 24px;
-}
-
-.mobile-view .mobile-nav .drop.expanded li a, .list-controls .nav-pills .drop li a {
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 12px 16px;
-}
-
-.mobile-view .mobile-nav .drop.expanded li a, .list-controls .nav-pills .drop li a, .topic-admin-popup-menu .btn {
-  padding: 6.25px 24px;
-}
-
-.mobile-view .mobile-nav .drop.expanded, .list-controls .nav-pills .drop {
-  background-clip: padding-box;
-  background-color: color-chooser(#424242, #ffffff);
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
-}
-
-.mobile-view .mobile-nav .drop.expanded, .list-controls .nav-pills .drop, .topic-admin-popup-menu {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 16px 0;
-}
-
-.category-list-item .topic-list td {
-  color: color-chooser($primary, $primary);
-  font-size: 13px;
-  height: 48px;
-  padding: 12px 12px;
-  vertical-align: middle;
-}
-.category-list-item .topic-list td:first-of-type {
-  padding-left: 24px;
-}
-.category-list-item .topic-list td:last-of-type {
-  padding-right: 24px;
-}
-
-.category-list-item .topic-list th {
-  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
-  font-size: 12px;
-  height: 56px;
-  padding: 12px 12px;
-  vertical-align: middle;
-}
-.category-list-item .topic-list th:first-of-type {
-  padding-left: 24px;
-}
-.category-list-item .topic-list th:last-of-type {
-  padding-right: 24px;
-}
-
-.category-list-item > footer figure, .category-list-item .category-topic-link .main-link .age {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
-}
-
 body .boxed .contents {
   padding: 16px 16px 0;
 }
@@ -252,8 +44,92 @@ body .boxed .contents {
   margin-top: 0;
   position: static;
 }
+.mobile-view .mobile-nav > li > a {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  color: color-chooser($primary, $primary);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: color-chooser($tertiary, #ffffff);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+}
+.discourse-no-touch .mobile-view .mobile-nav > li > a:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-hover {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: color-chooser($primary, $primary);
+}
+.mobile-view .mobile-nav > li > a:focus {
+  background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
+  color: color-chooser($primary, $primary);
+  outline: 0;
+}
+.mobile-view .mobile-nav > li > a:active, .discourse-no-touch .mobile-view .mobile-nav > li > a:active, .mobile-view .mobile-nav > li > a.btn-active, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-active {
+  background-color: color-chooser(rgba(204, 204, 204, 0.25), rgba(153, 153, 153, 0.4));
+  color: color-chooser($primary, $primary);
+}
+.mobile-view .mobile-nav > li > a[disabled], .mobile-view .mobile-nav > li > a.disabled {
+  background-color: transparent !important;
+  color: color-chooser(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.26)) !important;
+}
+.discourse-no-touch .mobile-view .mobile-nav > li > a:hover, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-hover {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.mobile-view .mobile-nav > li > a:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.mobile-view .mobile-nav > li > a:active, .discourse-no-touch .mobile-view .mobile-nav > li > a:active, .mobile-view .mobile-nav > li > a.btn-active, .discourse-no-touch .mobile-view .mobile-nav > li > a.btn-active {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.mobile-view .mobile-nav > li > a[disabled], .mobile-view .mobile-nav > li > a.disabled {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+.mobile-view .mobile-nav .drop.expanded {
+  background-clip: padding-box;
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+}
 .mobile-view .mobile-nav .drop.expanded li {
   margin: 0;
+}
+.mobile-view .mobile-nav .drop.expanded li a {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 12px 16px;
+  padding: 6.25px 24px;
 }
 
 .select2-container {
@@ -286,16 +162,57 @@ body .boxed .contents {
   margin-right: 0;
 }
 .list-controls .nav > li > a {
+  background-color: color-chooser($tertiary, #ffffff);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   opacity: 1;
+}
+.discourse-no-touch .list-controls .nav > li > a:hover, .discourse-no-touch .list-controls .nav > li > a.btn-hover {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.list-controls .nav > li > a:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.list-controls .nav > li > a:active, .discourse-no-touch .list-controls .nav > li > a:active, .list-controls .nav > li > a.btn-active, .discourse-no-touch .list-controls .nav > li > a.btn-active {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.list-controls .nav > li > a[disabled], .list-controls .nav > li > a.disabled {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 .list-controls .nav li {
   margin-top: 0;
+}
+.list-controls .nav-pills .drop {
+  background-clip: padding-box;
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
 }
 .list-controls .nav-pills .drop li {
   margin: 0;
   padding: 0;
 }
 .list-controls .nav-pills .drop li a {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 12px 16px;
+  padding: 6.25px 24px;
   color: inherit;
 }
 
@@ -356,6 +273,8 @@ body .boxed .contents {
   display: block;
 }
 #reply-control .contents .submit-panel .btn {
+  font-size: 13px;
+  padding: 9.5px 16px;
   max-width: none;
   padding-right: 8px;
   padding-left: 8px;
@@ -422,6 +341,10 @@ tr.category-topic-link:last-child {
   padding: 12px 8px 12px 24px;
 }
 .category-list-item > footer figure {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
   margin: 0 auto 0 0;
 }
 .category-list-item > footer .btn {
@@ -430,14 +353,46 @@ tr.category-topic-link:last-child {
 .category-list-item .age {
   margin-left: 4px;
 }
+.category-list-item .category-topic-link .main-link .age {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
 .category-list-item .topic-list {
   box-shadow: none;
   margin-bottom: 0;
+}
+.category-list-item .topic-list td {
+  color: color-chooser($primary, $primary);
+  font-size: 13px;
+  height: 48px;
+  padding: 12px 12px;
+  vertical-align: middle;
 }
 .category-list-item .topic-list td:first-of-type {
   padding-left: 24px;
 }
 .category-list-item .topic-list td:last-of-type {
+  padding-right: 24px;
+}
+.category-list-item .topic-list td:first-of-type {
+  padding-left: 24px;
+}
+.category-list-item .topic-list td:last-of-type {
+  padding-right: 24px;
+}
+.category-list-item .topic-list th {
+  color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
+  font-size: 12px;
+  height: 56px;
+  padding: 12px 12px;
+  vertical-align: middle;
+}
+.category-list-item .topic-list th:first-of-type {
+  padding-left: 24px;
+}
+.category-list-item .topic-list th:last-of-type {
   padding-right: 24px;
 }
 
@@ -497,16 +452,50 @@ tr.category-topic-link:last-child {
 }
 
 .show-topic-admin {
+  background-color: color-chooser($tertiary, #ffffff);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 64px;
   right: 8px;
+}
+.discourse-no-touch .show-topic-admin:hover, .discourse-no-touch .show-topic-admin.btn-hover {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.show-topic-admin:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.show-topic-admin:active, .discourse-no-touch .show-topic-admin:active, .show-topic-admin.btn-active, .discourse-no-touch .show-topic-admin.btn-active {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.show-topic-admin[disabled], .show-topic-admin.disabled {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
 .small-action {
   width: auto;
 }
 
+.topic-admin-popup-menu {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 16px 0;
+}
+.topic-admin-popup-menu h3 {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 6.25px 24px;
+}
 .topic-admin-popup-menu .btn {
+  padding: 6.25px 24px;
   margin-bottom: 0;
 }
 
@@ -596,6 +585,10 @@ tr.category-topic-link:last-child {
   margin: 0;
   width: 100%;
 }
+.user-main .about .controls a {
+  font-size: 13px;
+  padding: 9.5px 16px;
+}
 .user-main .about .controls ul {
   display: -ms-flexbox;
   display: flex;
@@ -654,6 +647,41 @@ tr.category-topic-link:last-child {
 .user-navigation {
   margin: 0 0 24px;
 }
+.user-navigation > .btn,
+.user-navigation .user-archive .btn {
+  background-color: color-chooser($tertiary, #ffffff);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.4);
+}
+.discourse-no-touch .user-navigation > .btn:hover, .discourse-no-touch .user-navigation > .btn.btn-hover,
+.discourse-no-touch .user-navigation .user-archive .btn:hover,
+.discourse-no-touch .user-navigation .user-archive .btn.btn-hover {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.user-navigation > .btn:focus,
+.user-navigation .user-archive .btn:focus {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+}
+.user-navigation > .btn:active, .discourse-no-touch .user-navigation > .btn:active, .user-navigation > .btn.btn-active, .discourse-no-touch .user-navigation > .btn.btn-active,
+.user-navigation .user-archive .btn:active,
+.discourse-no-touch .user-navigation .user-archive .btn:active,
+.user-navigation .user-archive .btn.btn-active,
+.discourse-no-touch .user-navigation .user-archive .btn.btn-active {
+  background-color: color-chooser($tertiary, #ffffff);
+  background-image: linear-gradient(to bottom, color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), color-chooser(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)));
+  background-size: calc(100% + 1px) 100%;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.user-navigation > .btn[disabled], .user-navigation > .btn.disabled,
+.user-navigation .user-archive .btn[disabled],
+.user-navigation .user-archive .btn.disabled {
+  background-color: color-chooser(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
 
 .user-table .wrapper {
   display: block;
@@ -705,7 +733,7 @@ tr.category-topic-link:last-child {
 }
 
 .mobile-view .admin-controls {
-  padding-bottom: 0;
+  padding: 16px 16px 0;
 }
 .mobile-view .admin-controls > .pull-right {
   clear: both;
