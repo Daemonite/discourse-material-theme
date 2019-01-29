@@ -58,6 +58,12 @@ tbody {
       &.active {
         opacity: $nav-link-opacity-active;
       }
+
+      .d-icon {
+        font-size: ($nav-link-font-size - 1) !important;
+        margin-right: $spacer-inline;
+        opacity: 1;
+      }
     }
   }
 }
@@ -88,6 +94,11 @@ tbody {
       &::after {
         display: none;
       }
+    }
+
+    .d-icon {
+      font-size: ($nav-link-font-size - 1) !important;
+      margin-right: $spacer-inline;
     }
   }
 
