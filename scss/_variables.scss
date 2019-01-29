@@ -68,6 +68,14 @@ $white-divider:   rgba(255, 255, 255, .12) !default;
 
 
 
+// Basics - Misc
+
+$border-radius:  4px !default;
+$border-width:   1px !default;
+$control-height: 36px !default;
+
+
+
 // Basics - Shadows
 
 $shadow-color-1: rgba(0, 0, 0, .14) !default;
@@ -98,6 +106,19 @@ $spacer:               16px !default;
 $spacer-lg:            24px !default;
 $spacer-xl:            48px !default;
 
+$spacer-inline:        $spacer-xs !default;
+$spacer-x:             $grid-gutter-width !default;
+$spacer-x-lg:          $grid-gutter-width-lg !default;
+$spacer-y:             $spacer !default;
+$spacer-y-lg:          $spacer-lg !default;
+
+
+
+// Basics - Transition
+
+$transition-duration:        .3s !default;
+$transition-timing-function: cubic-bezier(.4, 0, .2, 1) !default;
+
 
 
 // Basics - Typography - Font family
@@ -123,7 +144,7 @@ $font-size-h6:        14px !default;
 $font-size-body:      14px !default;
 $font-size-caption:   12px !default;
 
-$font-size-small:     ($font-size-caption / $font-size-body * 1em) !default;
+$font-size-small:     percentage($font-size-caption / $font-size-body) !default;
 
 $material-icon-size:  24px !default;
 
@@ -165,7 +186,7 @@ $letter-spacing-caption:   0 !default;
 
 // Basics - Typography - Line height
 
-$line-height-base:      1.428571 !default; // 20px
+$line-height-base:      1.428572 !default; // 20px
 
 $line-height-display-1: 1 !default;        // 112px
 $line-height-display-2: 1.035714 !default; // 58px
@@ -174,8 +195,8 @@ $line-height-h2:        1.176471 !default; // 40px
 $line-height-h3:        1.333333 !default; // 32px
 $line-height-h4:        1.4 !default;      // 28px
 $line-height-h5:        1.5 !default;      // 24px
-$line-height-h6:        1.428571 !default; // 20px
-$line-height-body:      1.428571 !default; // 20px
+$line-height-h6:        1.428572 !default; // 20px
+$line-height-body:      1.428572 !default; // 20px
 $line-height-caption:   1.5 !default;      // 18px
 
 
@@ -359,7 +380,16 @@ $modal-padding-y:          16px !default;
 
 // Nav
 
-$nav-link-opacity: .7 !default;
+$nav-link-border-radius:  $border-radius !default;
+$nav-link-font-size:      $font-size-base !default;
+$nav-link-height:         $control-height !default;
+$nav-link-line-height:    1 !default;
+$nav-link-opacity:        .7 !default;
+$nav-link-opacity-active: 1 !default;
+$nav-link-padding-x:      $spacer-x !default;
+$nav-link-padding-y:      (($control-height - $nav-link-font-size * $nav-link-line-height) / 2) !default;
+$nav-item-spacer-x:       1px !default;
+$nav-item-spacer-y:       1px !default;
 
 
 

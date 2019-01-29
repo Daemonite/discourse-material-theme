@@ -9,19 +9,13 @@ tbody {
 }
 
 .btn {
-  &.no-text .fa {
-    line-height: inherit;
-  }
-
   .d-icon {
-    color: inherit;
     line-height: inherit;
     opacity: 1;
   }
 
   .fa {
-    margin-right: $spacer-xs;
-    vertical-align: top;
+    margin-right: $spacer-inline;
   }
 }
 
@@ -31,30 +25,30 @@ tbody {
   }
 }
 
-.fa-thumb-tack.unpinned {
-  padding-left: 0;
-}
-
 .footer-message > :last-child {
   margin-bottom: 0;
 }
 
 .nav-pills {
   > li {
-    margin-right: 1px;
+    margin-right: $nav-item-spacer-x;
 
     &.active > a {
-      opacity: 1;
+      opacity: $nav-link-opacity-active;
     }
 
     > a {
-      border-radius: $btn-border-radius;
-      font-size: $btn-font-size;
+      border-radius: $nav-link-border-radius;
+      font-size: $nav-link-font-size;
+      min-height: $nav-link-height;
       opacity: $nav-link-opacity;
-      padding: $btn-padding-y $btn-padding-x;
+      padding: $nav-link-padding-y $nav-link-padding-x;
+      transition-duration: $transition-duration;
+      transition-property: background-color, color, opacity;
+      transition-timing-function: $transition-timing-function;
 
       @include active-focus-hover {
-        opacity: 1;
+        opacity: $nav-link-opacity-active;
       }
 
       &:focus {
@@ -62,7 +56,7 @@ tbody {
       }
 
       &.active {
-        opacity: 1;
+        opacity: $nav-link-opacity-active;
       }
     }
   }
@@ -72,13 +66,16 @@ tbody {
   background-color: transparent;
 
   a {
-    border-radius: $btn-border-radius;
-    font-size: $btn-font-size;
+    border-radius: $nav-link-border-radius;
+    font-size: $nav-link-font-size;
     opacity: $nav-link-opacity;
-    padding: $btn-padding-y $btn-padding-x;
+    padding: $nav-link-padding-y $nav-link-padding-x;
+    transition-duration: $transition-duration;
+    transition-property: background-color, color, opacity;
+    transition-timing-function: $transition-timing-function;
 
     @include active-focus-hover {
-      opacity: 1;
+      opacity: $nav-link-opacity-active;
     }
 
     &:focus {
@@ -86,7 +83,7 @@ tbody {
     }
 
     &.active {
-      opacity: 1;
+      opacity: $nav-link-opacity-active;
 
       &::after {
         display: none;
@@ -96,10 +93,10 @@ tbody {
 
   li {
     border-bottom: 0;
-    margin-bottom: 1px;
+    margin-bottom: $nav-item-spacer-y;
 
     &.indent {
-      padding-left: $btn-padding-x;
+      padding-left: $nav-link-padding-x;
     }
   }
 
@@ -109,7 +106,11 @@ tbody {
   }
 
   .glyph {
-    margin-right: $spacer-xs;
+    margin-right: $spacer-inline;
     width: auto;
   }
+}
+
+.wrap {
+  padding: 0;
 }

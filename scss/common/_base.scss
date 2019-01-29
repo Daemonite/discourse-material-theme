@@ -20,11 +20,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: initial;
-  text-size-adjust: 100%;
-}
-
-.wrap {
-  padding: 0;
 }
 
 
@@ -33,30 +28,19 @@ html {
 
 button,
 input,
+label,
 select,
 textarea {
-  body & {
-    font-family: $font-family-sans-serif;
-  }
+  line-height: inherit;
 }
 
 
 
 // Typography
 
-abbr {
-  &[data-original-title],
-  &[title] {
-    border-bottom: 0;
-    cursor: help;
-    text-decoration: underline dotted;
-  }
-}
-
-address {
-  font-style: normal;
-  line-height: inherit;
-  margin-bottom: $spacer;
+acronym[title],
+abbr[title] {
+  cursor: help;
 }
 
 b,
@@ -64,14 +48,11 @@ strong {
   font-weight: bolder;
 }
 
+// 1. Make sure the text does not overlay the `format-quote` icon added to the top-left and bottom-right corners
 blockquote {
-  @include typography-h5;
-
-  background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
   border-left: 0;
-  border-radius: $card-border-radius;
-  margin: 0 0 $spacer;
-  padding: $material-icon-size ($material-icon-size * 2);
+  margin: 0 0 $spacer-y;
+  padding: $material-icon-size ($material-icon-size * 2); // 1
   position: relative;
 
   &::after,
@@ -96,35 +77,17 @@ blockquote {
 }
 
 dd {
-  margin-bottom: $spacer-sm;
+  margin-bottom: 0;
   margin-left: 0;
-}
-
-dfn {
-  font-style: italic;
 }
 
 dl {
   margin-top: 0;
-  margin-bottom: $spacer;
+  margin-bottom: $spacer-y;
 }
 
 dt {
   font-weight: bolder;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  body & {
-    color: unquote('$primary');
-    font-family: inherit;
-    margin-top: 0;
-    margin-bottom: $spacer-sm;
-  }
 }
 
 h1 {
@@ -153,14 +116,13 @@ h6 {
 
 hr {
   border-top-color: color-chooser($white-divider, $black-divider);
-  box-sizing: content-box;
-  margin: $spacer 0;
+  margin: $spacer-y 0;
 }
 
 ol,
 ul {
   margin-top: 0;
-  margin-bottom: $spacer;
+  margin-bottom: $spacer-y;
 
   ol,
   ul {
@@ -170,25 +132,9 @@ ul {
 
 p {
   margin-top: 0;
-  margin-bottom: $spacer;
+  margin-bottom: $spacer-y;
 }
 
 small {
-  font-size: 80%;
-}
-
-sub,
-sup {
   font-size: $font-size-small;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -.25em;
-}
-
-sup {
-  top: -.5em;
 }
