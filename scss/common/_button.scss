@@ -15,6 +15,10 @@
 .btn {
   @include btn-base;
   @include btn-raised;
+
+  .d-icon {
+    font-size: ($btn-font-size - 1) !important;
+  }
 }
 
 .btn-danger {
@@ -77,11 +81,19 @@
 
 .btn-large {
   @include btn-lg;
+
+  .d-icon {
+    font-size: ($btn-font-size-lg - 1) !important;
+  }
 }
 
 .btn-small,
 .btn-xsmall {
   @include btn-sm;
+
+  .d-icon {
+    font-size: ($btn-font-size-sm - 1) !important;
+  }
 }
 
 
