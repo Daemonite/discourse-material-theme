@@ -15,6 +15,9 @@
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  transition-duration: $transition-duration;
+  transition-property: background-color, box-shadow, color;
+  transition-timing-function: $transition-timing-function;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
