@@ -108,10 +108,11 @@ $spacer:               16px !default;
 $spacer-lg:            24px !default;
 $spacer-xl:            48px !default;
 
-$spacer-inline:        $spacer-xs !default;
 $spacer-x:             $grid-gutter-width !default;
+$spacer-x-inline:      $spacer-xs !default;
 $spacer-x-lg:          $grid-gutter-width-lg !default;
 $spacer-y:             $spacer !default;
+$spacer-y-inline:      $spacer-sm !default;
 $spacer-y-lg:          $spacer-lg !default;
 
 
