@@ -1,21 +1,17 @@
-button,
-label {
-  body & {
-    font-size: inherit;
-    font-weight: bolder;
-    line-height: inherit;
+form {
+  margin: 0 0 $spacer-y;
+
+  > br,
+  > .ember-view:empty {
+    display: none;
   }
 }
 
-form {
-  body & {
-    margin: 0 0 $spacer-lg;
-
-    > br,
-    > .ember-view:empty {
-      display: none;
-    }
-  }
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: (($font-size-base * $line-height-base - 12) / 2);
+  margin-right: $spacer-x-inline;
+  margin-left: 0;
 }
 
 input[type='color'],
@@ -33,34 +29,14 @@ input[type='time'],
 input[type='url'],
 input[type='week'],
 textarea {
-  body & {
-    @include text-field;
+  @include text-field;
 
-    margin-bottom: $spacer-sm;
-  }
+  margin-bottom: $text-field-margin-y;
 }
 
 label {
-  body & {
-    margin-bottom: $spacer-sm;
-  }
-}
-
-textarea {
-  body & {
-    border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
-    border-radius: $text-field-box-border-radius;
-    height: auto;
-    padding: ($text-field-box-padding-y - $text-field-border-width) ($text-field-box-padding-x - $text-field-border-width);
-
-    &:hover {
-      box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
-    }
-
-    &:focus {
-      box-shadow: inset ($text-field-border-width * 2) ($text-field-border-width * 2) 0 ($text-field-border-width * -1) unquote('$tertiary'), inset ($text-field-border-width * -2) ($text-field-border-width * -2) 0 ($text-field-border-width * -1) unquote('$tertiary');
-    }
-  }
+  font-weight: bolder;
+  margin-bottom: $text-field-margin-y;
 }
 
 .checkbox-label {
@@ -76,27 +52,29 @@ textarea {
 }
 
 .control-group {
-  body & {
-    margin-bottom: $spacer-lg;
+  margin-bottom: $spacer-y;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-horizontal & {
+    margin-bottom: 0;
+  }
+
+  .form-vertical & {
+    margin-bottom: $spacer-y;
   }
 }
 
 .controls .static {
   @include text-field;
 
-  border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
-  border-bottom-style: dotted;
+  border-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+  border-style: dotted;
   color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
-  margin-bottom: $spacer-sm;
-
-  @include focus-hover {
-    border-bottom-color: color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
-    box-shadow: none;
-  }
+  margin-bottom: $text-field-margin-y;
+  pointer-events: none;
 }
 
 .form-horizontal .group-flair-inputs .group-flair-right {
@@ -183,12 +161,8 @@ textarea {
 
   label {
     &.btn {
-      padding: $btn-padding-y-sm $btn-padding-x-sm;
+      padding: $btn-padding-y $btn-padding-x;
     }
-  }
-
-  .btn {
-    @include btn-sm;
   }
 }
 
@@ -316,4 +290,9 @@ textarea {
       }
     }
   }
+}
+
+.uploaded-image-preview {
+  border-radius: $text-field-border-radius;
+  margin-bottom: $text-field-margin-y;
 }

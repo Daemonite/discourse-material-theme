@@ -89,7 +89,7 @@
 
 .d-editor-preview {
   border: 1px dotted color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
-  border-radius: $text-field-box-border-radius;
+  border-radius: $text-field-border-radius;
   margin: 0;
   padding: $card-padding-y $card-padding-x;
 
@@ -118,7 +118,7 @@
 }
 
 .d-editor-textarea-wrapper {
-  background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+  background-color: color-chooser($text-field-bg-dark, $text-field-bg-light);
   border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
-  border-radius: $text-field-box-border-radius;
+  border-radius: $text-field-border-radius;
 }

@@ -184,8 +184,6 @@ div {
 
 .search-menu {
   input[type='text'] {
-    @include text-field-box;
-
     margin: 0;
     width: 100%;
   }
@@ -284,8 +282,8 @@ div {
     &,
     .drop-down-mode &,
     .drop-down-visible & {
-      top: ($text-field-box-height / 2 - $text-field-font-size / 2);
-      right: $text-field-box-padding-x;
+      top: ($text-field-height / 2 - $text-field-font-size / 2);
+      right: $text-field-padding-x;
     }
 
     .spinner {

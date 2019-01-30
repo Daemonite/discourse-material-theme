@@ -67,8 +67,6 @@
   }
 
   .filter-name {
-    @include text-field-box;
-
     margin-bottom: 0;
     margin-left: $spacer-xs;
     width: auto;
@@ -84,8 +82,6 @@
   padding: $tbody-cell-padding-y $card-padding-x;
 
   input[type='text'] {
-    @include text-field-box;
-
     margin-bottom: 0;
   }
 
@@ -135,8 +131,6 @@
   order: -1;
 
   .groups-header-filters-name {
-    @include text-field-box;
-
     margin-right: $spacer-xs;
     width: auto;
   }
@@ -738,10 +732,6 @@
 
   margin-bottom: $spacer-lg;
 
-  input[type='text'] {
-    @include text-field-box;
-  }
-
   .avatar {
     margin-left: 0;
   }
@@ -792,10 +782,6 @@
         margin-top: $spacer-sm;
       }
     }
-  }
-
-  .controls .static {
-    @include text-field-box;
   }
 
   .form-vertical {
@@ -1069,8 +1055,6 @@
 
     h1 {
       input[type='text'] {
-        @include text-field-box;
-
         margin-bottom: 0;
       }
     }

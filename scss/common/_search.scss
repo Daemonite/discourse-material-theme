@@ -99,8 +99,6 @@
     }
 
     .search-query {
-      @include text-field-box;
-
       margin-right: $card-inner-spacer-x;
     }
   }
@@ -154,7 +152,7 @@
     section {
       &.field {
         .search-container & {
-          margin-top: $text-field-margin-y;
+          margin-top: $spacer-y-inline;
         }
       }
     }
@@ -167,10 +165,10 @@
       margin-top: $card-inner-spacer-y;
 
       .date-picker {
-        padding: $text-field-box-padding-y $text-field-box-padding-x ($text-field-box-padding-y - $text-field-border-width);
+        padding: $text-field-padding-y $text-field-padding-x ($text-field-padding-y - $text-field-border-width);
 
         @include focus-hover {
-          padding-bottom: ($text-field-box-padding-y - $text-field-border-width * 2);
+          padding-bottom: ($text-field-padding-y - $text-field-border-width * 2);
         }
       }
     }
@@ -184,7 +182,7 @@
 
         [id='search-min-post-count'] {
           margin-bottom: 0;
-          padding-left: $text-field-box-padding-x;
+          padding-left: $text-field-padding-x;
         }
       }
     }
@@ -196,11 +194,6 @@
       margin-bottom: $card-inner-spacer-y;
       padding: 0;
     }
-  }
-
-  input[type='number'],
-  input[type='text'] {
-    @include text-field-box;
   }
 
   .ac-wrap {

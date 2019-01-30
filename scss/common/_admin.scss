@@ -5,13 +5,12 @@
 
   .description {
     display: block;
-    margin-top: $text-field-margin-y;
-    margin-bottom: $text-field-margin-y;
+    margin-top: $spacer-y-inline;
+    margin-bottom: $spacer-y-inline;
   }
 
   [id='file-input'] {
     @include text-field;
-    @include text-field-box;
 
     margin-bottom: $text-field-margin-y;
   }
@@ -21,8 +20,6 @@
   }
 
   [id='name'] {
-    @include text-field-box;
-
     margin-top: $text-field-margin-y;
     margin-bottom: 0;
   }
@@ -59,8 +56,6 @@
     }
 
     input[type='text'] {
-      @include text-field-box;
-
       margin-right: $spacer-lg;
       margin-bottom: 0;
 
@@ -188,10 +183,6 @@
     margin-right: $card-inner-spacer-x;
   }
 
-  input[type='text'] {
-    @include text-field-box;
-  }
-
   label {
     margin-right: $card-inner-spacer-x;
   }
@@ -275,8 +266,6 @@
 
   &.admin-embedding {
     input[type='text'] {
-      @include text-field-box;
-
       margin-bottom: 0;
     }
   }
@@ -438,12 +427,6 @@
       }
     }
 
-    h1 {
-      input[type='text'] {
-        @include text-field-box;
-      }
-    }
-
     h3 {
       margin-top: $card-inner-spacer-y;
       margin-bottom: $card-inner-spacer-y;
@@ -592,8 +575,6 @@ div {
       }
 
       input[type='text'] {
-        @include text-field-box;
-
         &:last-child {
           margin-bottom: 0;
         }
@@ -651,14 +632,6 @@ div {
 
       table td:last-child {
         white-space: nowrap;
-      }
-    }
-  }
-
-  &.emoji {
-    .admin-container & {
-      input[type='text'] {
-        @include text-field-box;
       }
     }
   }
@@ -760,10 +733,6 @@ div {
 
   .d-editor-input {
     width: 100%;
-  }
-
-  .email-template input[type='text'] {
-    @include text-field-box;
   }
 }
 
@@ -985,10 +954,6 @@ div {
     margin-bottom: $spacer-lg;
     margin-left: 0;
 
-    input[type='text'] {
-      @include text-field-box;
-    }
-
     label {
       display: inline-block;
     }
@@ -1152,10 +1117,6 @@ div {
 
   ~ div {
     width: 100%;
-
-    input[type='text'] {
-      @include text-field-box;
-    }
   }
 }
 
@@ -1227,8 +1188,6 @@ div {
 
   .admin-container {
     input[type='text'] {
-      @include text-field-box;
-
       display: inline-block;
       margin-bottom: 0;
       width: auto;
@@ -1241,10 +1200,20 @@ div {
   margin-left: 0;
 }
 
+.secret-value-list .value {
+  .add-value-btn {
+    margin-left: $card-inner-spacer-x;
+  }
+
+  .new-value-input:last-of-type,
+  .value-input:last-of-type {
+    margin-left: $card-inner-spacer-x;
+  }
+}
+
 .settings {
   @include card;
 
-  margin: 0;
   padding: 0;
 
   .setting {
@@ -1256,7 +1225,6 @@ div {
 
     &:last-child {
       border-bottom: 0;
-      margin-bottom: 0;
     }
 
     &.category-list {
@@ -1287,8 +1255,12 @@ div {
       padding: 0;
     }
 
-    .input-setting-string {
-      @include text-field-box;
+    .select-kit {
+      margin-bottom: $spacer-y-inline;
+    }
+
+    .setting-controls {
+      margin-left: $card-inner-spacer-x;
     }
 
     .setting-label {
@@ -1298,14 +1270,8 @@ div {
 
     .setting-value {
       flex-grow: 1;
-      margin-right: $card-inner-spacer-x;
       padding-right: 0;
-      width: 0;
-
-      &:last-child {
-        margin-right: 0;
-        width: 100%;
-      }
+      width: 1px;
 
       label {
         font-weight: normal;
@@ -1316,28 +1282,10 @@ div {
       }
 
       + .btn {
-        margin-left: auto;
-      }
+        margin-left: $card-inner-spacer-x;
 
-      .select2-container {
-        margin-bottom: $card-inner-spacer-x;
-
-        &.combobox {
-          width: auto !important;
-        }
-      }
-
-      .select2-container-multi {
-        &.select2-container-active .select2-choices {
-          border-bottom: ($text-field-border-width * 2) solid unquote('$tertiary');
-        }
-
-        .select2-choices {
-          border-bottom: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
-
-          @include focus-hover {
-            border-width: ($text-field-border-width * 2);
-          }
+        ~ .btn {
+          margin-left: $spacer-x-inline;
         }
       }
     }
@@ -1349,10 +1297,6 @@ div {
 
   .search-area {
     margin-bottom: $card-inner-spacer-y;
-
-    .site-text-search {
-      @include text-field-box;
-    }
   }
 
   .site-text {
@@ -1597,18 +1541,6 @@ div {
 }
 
 .value-list {
-  input[type='text'] {
-    @include text-field-box;
-
-    flex-grow: 1;
-    margin-bottom: 0;
-    width: auto;
-
-    + .btn {
-      margin-left: $card-inner-spacer-x;
-    }
-  }
-
   .input {
     align-items: center;
     display: flex;
@@ -1622,19 +1554,41 @@ div {
   }
 
   .value {
-    @include text-field;
-    @include text-field-box;
-
-    margin-bottom: 1px;
+    align-items: center;
+    margin-bottom: $text-field-margin-y;
+    overflow: visible;
+    padding: 0;
 
     .btn {
-      background-color: transparent;
-      padding: 0;
+      border: 0;
+      margin-right: $card-inner-spacer-x;
+      padding: $btn-padding-y 0;
+      width: $btn-height;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .new-value-input {
+      margin: 0;
+    }
+
+    .value-input {
+      border-color: color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+
+      &:hover {
+        border-color: color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
+      }
+
+      &:focus {
+        border-color: unquote('$tertiary');
+      }
     }
   }
 
   .values {
-    margin-bottom: $card-inner-spacer-x;
+    margin-bottom: $text-field-margin-y;
   }
 }
 
@@ -1683,8 +1637,6 @@ div {
   margin-bottom: $spacer-lg;
 
   input[type='text'] {
-    @include text-field-box;
-
     display: inline-block;
     margin-bottom: 0;
     width: auto;

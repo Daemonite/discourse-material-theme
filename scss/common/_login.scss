@@ -26,8 +26,6 @@
     &[type='email'],
     &[type='password'],
     &[type='text'] {
-      @include text-field-box;
-
       margin-bottom: $modal-inner-spacer-y;
     }
   }
@@ -122,8 +120,6 @@
 
 .forgot-password-modal {
   input[type='text'] {
-    @include text-field-box;
-
     margin-bottom: 0;
   }
 }
