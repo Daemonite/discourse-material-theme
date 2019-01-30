@@ -423,8 +423,7 @@
   .about {
     @include card;
 
-    border-radius: $card-border-radius $card-border-radius 0 0;
-    margin-bottom: 0;
+    margin-bottom: $spacer-y;
     padding: 0;
 
     &.collapsed-info {
@@ -595,25 +594,6 @@
     }
   }
 
-  .nav-pills,
-  .nav-stacked {
-    a {
-      color: inherit;
-
-      &.active {
-        background-color: unquote('$quaternary');
-        color: color-dynamic(unquote('$quaternary'));
-        font-weight: normal;
-      }
-    }
-  }
-
-  .nav-stacked {
-    .d-icon {
-      margin-right: $spacer-xs;
-    }
-  }
-
   .staff-counters {
     background-color: transparent;
     color: inherit;
@@ -690,15 +670,7 @@
 .user-nav {
   @include card;
 
-  border-radius: 0 0 $card-border-radius $card-border-radius;
-  margin: 0 0 $spacer-lg;
-
-  .fa {
-    &,
-    &.fa-comment {
-      margin-right: $spacer-xs;
-    }
-  }
+  margin: 0 0 $spacer-y;
 }
 
 .user-navigation,
@@ -733,8 +705,8 @@
       color: inherit;
 
       &.active {
-        background-color: unquote('$danger');
-        color: color-dynamic(unquote('$danger'));
+        background-color: unquote('$quaternary');
+        color: color-dynamic(unquote('$quaternary'));
         font-weight: normal;
       }
     }
