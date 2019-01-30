@@ -250,22 +250,22 @@ $btn-float-size:              56px !default;
 
 // Card
 
-$card-avatar-size:      36px !default;
+$card-avatar-size:      $control-height !default;
 $card-bg-dark:          $dark-4 !default;
 $card-bg-light:         $light-4 !default;
-$card-border-radius:    4px !default;
+$card-border-radius:    $border-radius !default;
 $card-box-shadow:       $shadow-2dp !default;
 $card-box-shadow-hover: $shadow-8dp !default;
 $card-child-bg-dark:    $dark-2 !default;
 $card-child-bg-light:   $light-2 !default;
 $card-color-dark:       unquote('$primary') !default;
 $card-color-light:      unquote('$primary') !default;
-$card-inner-spacer-x:   8px !default;
-$card-inner-spacer-y:   16px !default;
-$card-margin-x:         $spacer-sm !default;
-$card-margin-y:         $spacer-sm !default;
-$card-padding-x:        16px !default;
-$card-padding-y:        16px !default;
+$card-inner-spacer-x:   $spacer-x !default;
+$card-inner-spacer-y:   $spacer-y !default;
+$card-margin-x:         $spacer-x !default;
+$card-margin-y:         $spacer-y !default;
+$card-padding-x:        $spacer-x !default;
+$card-padding-y:        $spacer-y !default;
 
 
 
