@@ -139,74 +139,23 @@
 .admin-controls {
   @include card;
 
-  margin-bottom: $spacer-lg;
-  padding-bottom: ($card-padding-y - $card-inner-spacer-y);
-  width: 100%;
-
-  &.email-preview .controls {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: ($card-inner-spacer-y - $spacer-sm);
-
-    > button {
-      margin-right: ($card-inner-spacer-x * 2);
-      margin-bottom: $spacer-sm;
-      margin-left: auto;
-    }
-
-    > div {
-      &:not(.toggle) {
-        margin-right: $card-inner-spacer-x;
-      }
-
-      &.ac-wrap {
-        width: auto !important;
-
-        .item {
-          margin: ($spacer-xs / 2) $spacer-xs ($spacer-xs / 2) 0;
-        }
-      }
-    }
-
-    .toggle {
-      margin-top: 0;
-      margin-bottom: $spacer-sm;
-
-      label {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  button {
-    margin-right: $card-inner-spacer-x;
-  }
+  margin-bottom: $spacer-y;
 
   label {
-    margin-right: $card-inner-spacer-x;
-  }
+    margin-right: $spacer-x-inline;
 
-  > nav,
-  > .nav,
-  > .pull-right {
-    margin: 0 0 $card-inner-spacer-y;
-  }
-
-  > nav {
-    .nav {
-      margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
     }
   }
 
-  > .pull-right {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+  nav {
+    background-color: transparent;
+    overflow: visible;
 
-    button {
-      margin-right: 0;
-      margin-left: $card-inner-spacer-x;
+    &::after,
+    &::before {
+      display: none;
     }
   }
 
@@ -215,33 +164,35 @@
   }
 
   .controls {
-    margin-bottom: $card-inner-spacer-y;
-    margin-left: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
 
-    &.search {
-      margin-bottom: 0;
+    button,
+    input {
+      margin-right: $card-inner-spacer-x;
 
-      @media (max-width: $admin-breakpoint) {
-        margin-top: (($btn-height - $font-size-base * $line-height-base) / 2);
-      }
-
-      label {
+      &:last-child {
         margin-right: 0;
       }
-    }
-
-    input[type='text'] {
-      display: block;
-      float: none;
     }
 
     .menu-toggle {
       border: 0;
       border-radius: $btn-border-radius;
-      font-size: $btn-font-size;
       margin-right: $card-inner-spacer-x;
-      margin-bottom: ($card-inner-spacer-y / 2);
       padding: $btn-padding-y $btn-padding-x;
+    }
+  }
+
+  .nav-pills {
+    flex-wrap: wrap;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+
+    > li {
+      margin-right: $nav-item-spacer-x;
     }
   }
 
@@ -518,6 +469,12 @@
 
   &.no-text .fa {
     margin-right: 0;
+  }
+}
+
+.admin-main-nav .nav-pills {
+  > li {
+    margin-right: $nav-item-spacer-x;
   }
 }
 
