@@ -124,54 +124,6 @@
   &.disabled {
     background-color: transparent !important;
   }
-
-  &.btn-danger {
-    background-color: transparent;
-    color: unquote('$danger');
-
-    &:hover,
-    &.btn-hover {
-      .discourse-no-touch & {
-        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-      }
-    }
-
-    &:focus {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-    }
-
-    &:active,
-    &.btn-active {
-      &,
-      .discourse-no-touch & {
-        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-      }
-    }
-  }
-
-  &.btn-primary {
-    background-color: transparent;
-    color: unquote('$tertiary');
-
-    &:hover,
-    &.btn-hover {
-      .discourse-no-touch & {
-        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-      }
-    }
-
-    &:focus {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-    }
-
-    &:active,
-    &.btn-active {
-      &,
-      .discourse-no-touch & {
-        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-      }
-    }
-  }
 }
 
 
