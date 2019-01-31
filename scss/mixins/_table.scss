@@ -1,6 +1,7 @@
-%table {
+@mixin table {
   background-color: color-chooser($table-bg-dark, $table-bg-light);
   border: 0;
+  border-radius: $table-border-radius;
   box-shadow: $table-box-shadow;
   margin-bottom: $table-margin-y;
   max-width: 100%;

@@ -17,7 +17,7 @@
   margin-bottom: $spacer-lg;
 
   table {
-    @extend %table;
+    @include table;
 
     margin-bottom: $spacer-lg;
 
@@ -137,7 +137,7 @@
 }
 
 .groups-table {
-  @extend %table;
+  @include table;
 
   margin-bottom: $spacer-lg;
 

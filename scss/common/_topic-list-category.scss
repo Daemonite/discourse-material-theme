@@ -97,7 +97,7 @@
 }
 
 .category-list {
-  @extend %table;
+  @include table;
 
   tbody {
     td,
@@ -162,7 +162,7 @@
 }
 
 .latest-topic-list {
-  @extend %table;
+  @include table;
 
   .more-topics,
   .table-heading {

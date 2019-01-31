@@ -285,7 +285,7 @@
 }
 
 .topic-list {
-  @extend %table;
+  @include table;
 
   border-radius: $card-border-radius;
 
