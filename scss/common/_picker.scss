@@ -1,10 +1,15 @@
-.change-timestamp {
-  max-height: none;
-  min-height: 0;
+.change-timestamp,
+.poll-ui-builder {
+  #date-container {
+    line-height: 1;
 
-  .pika-single {
-    float: left;
-    position: static !important;
+    .pika-single {
+      margin-top: 0;
+    }
+  }
+
+  .date-picker {
+    margin-bottom: 0;
   }
 }
 
@@ -39,20 +44,15 @@
     box-shadow: none;
     font-weight: normal;
   }
-
-  .is-today & {
-    font-weight: normal;
-  }
 }
 
 .pika-label {
   background-color: transparent;
   font-weight: normal;
-  padding: 0 ($picker-inner-spacer-x / 2);
+  padding: 0 $spacer-x-inline;
 }
 
 .pika-lendar {
-  border-radius: $picker-border-radius;
   margin: 0;
   padding: $picker-padding-y $picker-padding-x;
   width: ($picker-cell-size * 7 + $picker-padding-x * 2);
@@ -60,15 +60,17 @@
 
 .pika-next,
 .pika-prev {
-  @include btn-base;
-
   background-image: none;
+  border-radius: $btn-border-radius;
   height: $btn-height;
-  margin: 0 !important;
+  line-height: 1;
+  margin: 0;
   opacity: 1;
-  padding-right: 0;
-  padding-left: 0;
+  padding: $btn-padding-y 0;
   text-indent: 100%;
+  transition-duration: $transition-duration;
+  transition-property: background-color, color;
+  transition-timing-function: $transition-timing-function;
   width: $btn-height;
 
   &::before {
@@ -78,20 +80,21 @@
     text-indent: 0;
   }
 
+  &:hover {
+    background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+  }
+
   &.is-disabled {
     color: color-chooser($btn-color-disabled-dark, $btn-color-disabled-light);
     opacity: 1;
-
-    @include focus-hover {
-      background-color: transparent;
-    }
+    pointer-events: none;
   }
 }
 
 .pika-next {
   @include material-icons('keyboard_arrow_right');
 
-  margin-left: auto !important;
+  margin-left: auto;
 }
 
 .pika-prev {
@@ -102,8 +105,8 @@
 }
 
 .pika-single {
-  background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
   border: 0;
+  border-radius: $picker-border-radius;
   font-family: inherit;
 
   &.is-bound {
@@ -115,33 +118,31 @@
 .pika-table {
   td,
   th {
-    height: $picker-cell-size;
+    height: $picker-cell-size !important;
     text-align: center !important;
-    vertical-align: middle;
-    width: $picker-cell-size;
-  }
-
-  td {
-    text-align: center;
+    width: $picker-cell-size !important;
   }
 
   th {
     color: color-chooser($thead-color-dark, $thead-color-light);
-    font-size: $font-size-base;
+    font-size: $thead-font-size;
     font-weight: normal;
     line-height: 1;
-
-    abbr[title] {
-      text-decoration: none;
-    }
   }
 
   tr {
     background-color: transparent !important;
+    border-bottom: 0;
   }
 }
 
 .pika-title {
   align-items: center;
   display: flex;
+
+  select {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
 }

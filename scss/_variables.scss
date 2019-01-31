@@ -399,14 +399,13 @@ $nav-item-spacer-y:       1px !default;
 
 // Picker
 
-$picker-bg-dark:        $modal-bg-dark !default;
-$picker-bg-light:       $modal-bg-light !default;
-$picker-border-radius:  4px !default;
-$picker-box-shadow:     $modal-box-shadow !default;
-$picker-cell-size:      40px !default;
-$picker-inner-spacer-x: 8px !default;
-$picker-padding-x:      8px !default;
-$picker-padding-y:      8px !default;
+$picker-bg-dark:       $modal-bg-dark !default;
+$picker-bg-light:      $modal-bg-light !default;
+$picker-border-radius: $border-radius !default;
+$picker-box-shadow:    $modal-box-shadow !default;
+$picker-cell-size:     40px !default;
+$picker-padding-x:     $spacer-sm !default;
+$picker-padding-y:     $spacer-sm !default;
 
 
 
