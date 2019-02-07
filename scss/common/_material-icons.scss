@@ -10,6 +10,10 @@
   @include material-icons('arrow_drop_up');
 }
 
+.fa-angle-down {
+  @include material-icons('keyboard_arrow_down');
+}
+
 .fa-arrow-down {
   @include material-icons('arrow_downward');
 }
