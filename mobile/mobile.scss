@@ -24,7 +24,7 @@ body .boxed .contents {
 
 .cooked {
   font-size: 14px;
-  line-height: 1.428571;
+  line-height: 1.428572;
 }
 
 .dropdown-menu {
@@ -61,6 +61,9 @@ body .boxed .contents {
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  transition-duration: 0.3s;
+  transition-property: background-color, box-shadow, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -297,7 +300,7 @@ body .boxed .contents {
   display: flex;
 }
 #reply-control .reply-to .composer-controls button {
-  margin-left: 8px;
+  margin-left: 16px;
   padding: 0;
 }
 #reply-control .title-and-category {
@@ -514,8 +517,8 @@ tr.category-topic-link:last-child {
   white-space: normal;
 }
 #topic-footer-buttons .combobox {
-  margin-right: 8px;
-  margin-bottom: 8px;
+  margin-right: 16px;
+  margin-bottom: 16px;
   width: auto !important;
 }
 
@@ -555,7 +558,7 @@ tr.category-topic-link:last-child {
 }
 .badge-grouping .badge-card:last-of-type,
 .badges-section .badge-card:last-of-type {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .paginated-topics-list {
