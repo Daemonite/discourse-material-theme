@@ -424,6 +424,10 @@
   @include material-icons('exit_to_app');
 }
 
+.fa-signal {
+  @include material-icons('signal_cellular_alt');
+}
+
 .fa-smile-o {
   @include material-icons('insert_emoticon');
 }
