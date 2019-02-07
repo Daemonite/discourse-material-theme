@@ -440,6 +440,10 @@
   @include material-icons('brightness_5');
 }
 
+.fa-table {
+  @include material-icons('table_chart');
+}
+
 .fa-tag {
   @include material-icons('label');
 }
