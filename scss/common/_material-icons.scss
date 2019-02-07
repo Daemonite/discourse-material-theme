@@ -67,6 +67,10 @@
   @include material-icons('format_bold');
 }
 
+.fa-book {
+  @include material-icons('book');
+}
+
 .fa-bookmark {
   @include material-icons('bookmark_border');
 }
