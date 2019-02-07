@@ -5,6 +5,12 @@
 }
 
 .admin-report {
+  &.trending-search {
+    .admin-report-table-header {
+      white-space: nowrap;
+    }
+  }
+
   .admin-report-counters {
     .cell {
       padding: $tbody-cell-padding-y $tbody-cell-padding-x;
@@ -12,6 +18,10 @@
   }
 
   .header {
+    border-bottom: 0;
+    margin-bottom: $spacer-y;
+    padding-bottom: 0;
+
     .breadcrumb {
       .item {
         @include typography-h5;
@@ -19,7 +29,33 @@
 
       .report {
         .info {
+          font-size: $font-size-small;
           margin-left: $spacer-x-inline;
+        }
+      }
+    }
+  }
+
+  .filters {
+    margin-left: $spacer-x;
+    width: $admin-nav-width;
+
+    .control {
+      margin-bottom: $spacer-y;
+    }
+
+    .modes {
+      margin-bottom: $spacer-y;
+
+      .btn {
+        margin-right: $spacer-x-inline;
+
+        &.table {
+          background-color: color-chooser($btn-bg-dark, $btn-bg-light);
+          border-radius: $btn-border-radius;
+          box-shadow: $btn-box-shadow;
+          margin-bottom: 0;
+          width: auto;
         }
       }
     }
@@ -51,6 +87,18 @@
   }
 }
 
+.admin-report-chart {
+  .admin-contents.admin-reports & {
+    @include card;
+
+    margin-bottom: $spacer-y;
+  }
+
+  .chart-canvas-container {
+    position: relative;
+  }
+}
+
 .admin-report-table {
   &.two-columns {
     .table {
@@ -63,11 +111,36 @@
     }
   }
 
+  .admin-report-table-cell.user {
+    .username {
+      margin-left: $spacer-x-inline;
+    }
+  }
+
   .pagination {
     margin-top: 0;
+    margin-bottom: $spacer-y;
+
+    .btn {
+      margin-top: $card-inner-spacer-y;
+      margin-left: $card-inner-spacer-x;
+
+      &.is-current {
+        background-color: color-chooser($btn-bg-dark, $btn-bg-light);
+        background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
+        background-size: calc(100% + 1px) 100%;
+        color: color-chooser($btn-color-dark, $btn-color-light);
+      }
+    }
   }
 
   .table {
+    margin-bottom: $spacer-y;
+
+    .admin-contents.admin-reports & {
+      border: 0;
+    }
+
     .admin-report-table-header {
       .sort-btn {
         font-size: $btn-font-size-sm;
@@ -80,6 +153,10 @@
 
 .counters-list {
   margin-bottom: $card-inner-spacer-y;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   .admin-report {
     &:last-child {
@@ -126,8 +203,11 @@
     }
   }
 
-  .community-health,
-  .section-top {
+  .community-health {
+    margin-bottom: $spacer-y;
+  }
+
+  .dashboard-problems {
     margin-bottom: $spacer-y;
   }
 
@@ -140,13 +220,10 @@
 
     margin-bottom: $spacer-y;
 
-    .durability {
+    .durability,
+    .storage-stats {
       margin: 0;
       padding: 0 $card-inner-spacer-x 0 0;
-
-      .durability-title {
-        @include typography-h6;
-      }
     }
 
     .last-dashboard-update {
@@ -210,6 +287,15 @@
 
       h2 {
         margin-right: $spacer-x-inline;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      input[type='text'] {
+        margin-bottom: 0;
+        width: auto;
       }
     }
   }
@@ -226,35 +312,95 @@
     }
   }
 
-  .top-referred-topics {
-    @include card;
-
+  .section-top {
     margin-bottom: $spacer-y;
-
-    .table {
-      box-shadow: none;
-    }
   }
 
+  .top-referred-topics,
   .trending-search {
     @include card;
 
     margin-bottom: $spacer-y;
+
+    .pagination {
+      margin-bottom: 0;
+    }
+
+    .table {
+      box-shadow: none;
+      margin-bottom: 0;
+    }
   }
 }
 
 .dashboard-next-moderation {
-  .admin-report {
-    &.flags-status,
-    &.post-edits,
-    &.user-flagging-ratio {
-      @include card;
-    }
-  }
-
   .main-section {
     grid-column-gap: $spacer-x;
     grid-row-gap: $spacer-y;
+
+    .admin-report {
+      @include card;
+
+      .pagination {
+        margin-bottom: 0;
+      }
+
+      .table {
+        box-shadow: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.dashboard-next-reports {
+  .report {
+    @include card;
+
+    flex-basis: calc(100% / 3 - #{$spacer-x});
+    margin: 0 ($spacer-x / 2) $spacer-y;
+    padding: 0;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover {
+      box-shadow: $card-box-shadow-hover;
+    }
+
+    a {
+      padding: $card-padding-y $card-padding-x;
+    }
+  }
+
+  .report-description {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .reports-list {
+    margin-right: ($spacer-x / -2);
+    margin-left: ($spacer-x / -2);
+  }
+}
+
+.dashboard-next-security {
+  .main-section {
+    grid-column-gap: $spacer-x;
+    grid-row-gap: $spacer-y;
+
+    .admin-report {
+      @include card;
+
+      .pagination {
+        margin-bottom: 0;
+      }
+
+      .table {
+        box-shadow: none;
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
