@@ -368,6 +368,10 @@
   @include material-icons('crop_original');
 }
 
+.fa-pie-chart {
+  @include material-icons('pie_chart');
+}
+
 .fa-play {
   @include material-icons('play_arrow');
 }
