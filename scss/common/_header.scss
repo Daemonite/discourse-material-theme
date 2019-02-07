@@ -217,6 +217,6 @@
 
 #main-outlet {
   padding-top: ($header-height + $header-margin-y);
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($spacer-x / 2);
+  padding-left: ($spacer-x / 2);
 }

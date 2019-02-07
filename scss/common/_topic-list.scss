@@ -2,7 +2,7 @@
   background-color: transparent;
   padding: 0;
   top: ($btn-height + $header-height + $header-margin-y + $spacer-lg);
-  right: $grid-gutter-width;
+  right: $spacer-x;
 }
 
 .create-topics-notice {

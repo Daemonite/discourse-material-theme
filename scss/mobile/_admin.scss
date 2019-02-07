@@ -5,7 +5,7 @@
 
   &,
   &.mobile-open {
-    transform: translate3d(calc(50% + #{$grid-gutter-width / 2}), 0, 0);
+    transform: translate3d(calc(50% + #{$spacer-x / 2}), 0, 0);
   }
 
   &.mobile-closed {
@@ -20,7 +20,7 @@
 }
 
 .admin-nav {
-  width: calc(50% - #{$grid-gutter-width / 2});
+  width: calc(50% - #{$spacer-x / 2});
 }
 
 .customize {

@@ -97,23 +97,20 @@ $shadow-2dp:     0 2px 2px 0 $shadow-color-1, 0 1px 5px 0 $shadow-color-2, 0 3px
 
 // Basics - Spacers
 
-$container-max-width:  1110px !default;
+$container-max-width: 1110px !default;
 
-$grid-gutter-width:    16px !default;
-$grid-gutter-width-lg: 24px !default;
+$spacer-xs:           4px !default;
+$spacer-sm:           8px !default;
+$spacer:              16px !default;
+$spacer-lg:           24px !default;
+$spacer-xl:           48px !default;
 
-$spacer-xs:            4px !default;
-$spacer-sm:            8px !default;
-$spacer:               16px !default;
-$spacer-lg:            24px !default;
-$spacer-xl:            48px !default;
-
-$spacer-x:             $grid-gutter-width !default;
-$spacer-x-inline:      $spacer-xs !default;
-$spacer-x-lg:          $grid-gutter-width-lg !default;
-$spacer-y:             $spacer !default;
-$spacer-y-inline:      $spacer-sm !default;
-$spacer-y-lg:          $spacer-lg !default;
+$spacer-x:            $spacer !default;
+$spacer-x-inline:     $spacer-xs !default;
+$spacer-x-lg:         $spacer-lg !default;
+$spacer-y:            $spacer !default;
+$spacer-y-inline:     $spacer-sm !default;
+$spacer-y-lg:         $spacer-lg !default;
 
 
 

@@ -14,8 +14,8 @@
   @include btn-raised;
 
   position: fixed;
-  top: ($grid-gutter-width / 2 + $header-height);
-  right: ($grid-gutter-width / 2);
+  top: ($spacer-x / 2 + $header-height);
+  right: ($spacer-x / 2);
 }
 
 .small-action {
