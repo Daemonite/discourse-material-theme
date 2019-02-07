@@ -838,7 +838,7 @@ section {
       border-radius: ($chip-height / 2);
       color: inherit;
       display: flex;
-      font-size: $font-size-small;
+      font-size: $font-size-sm;
       height: $chip-height;
       margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
       padding: 0 $chip-padding-x 0 ($chip-height + $chip-inner-spacer-x);
@@ -884,7 +884,7 @@ section {
 
     span {
       &.domain {
-        font-size: $font-size-small;
+        font-size: $font-size-sm;
       }
     }
 

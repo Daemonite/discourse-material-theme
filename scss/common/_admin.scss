@@ -1344,7 +1344,7 @@ table {
   background-color: color-chooser($chip-bg-dark, $chip-bg-light);
   border-radius: ($chip-height / 2);
   color: inherit;
-  font-size: $font-size-small;
+  font-size: $font-size-sm;
   margin-right: $spacer-x-inline;
   margin-bottom: 0;
   padding: $chip-padding-y $chip-padding-x;
@@ -1393,7 +1393,7 @@ table {
 
 .watched-words-uploader {
   .instructions {
-    font-size: $font-size-small;
+    font-size: $font-size-sm;
   }
 }
 
