@@ -284,6 +284,10 @@
   @include material-icons('favorite_border');
 }
 
+.fa-info-circle {
+  @include material-icons('info');
+}
+
 .fa-italic {
   @include material-icons('format_italic');
 }
