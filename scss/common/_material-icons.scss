@@ -26,6 +26,10 @@
   @include material-icons('swap_horiz');
 }
 
+.fa-arrow-left {
+  @include material-icons('arrow_back');
+}
+
 .fa-arrow-up {
   @include material-icons('arrow_upward');
 }
