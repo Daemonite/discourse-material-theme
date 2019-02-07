@@ -41,14 +41,13 @@ tbody {
       border-radius: $nav-link-border-radius;
       font-size: $nav-link-font-size;
       min-height: $nav-link-height;
-      opacity: $nav-link-opacity;
       padding: $nav-link-padding-y $nav-link-padding-x;
       transition-duration: $transition-duration;
       transition-property: background-color, color, opacity;
       transition-timing-function: $transition-timing-function;
 
       @include active-focus-hover {
-        opacity: $nav-link-opacity-active;
+        background-color: color-chooser($white-divider, $black-divider);
       }
 
       &:focus {

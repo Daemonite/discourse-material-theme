@@ -15,16 +15,6 @@ div {
       padding-right: ($text-field-padding-x - $spacer-xs - $text-field-border-width);
     }
 
-    .admin-controls & {
-      padding: (($text-field-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2) $text-field-padding-x;
-      padding-right: ($text-field-padding-x - $spacer-xs);
-
-      &:hover {
-        padding: (($text-field-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2 - $text-field-border-width) ($text-field-padding-x - $text-field-border-width);
-        padding-right: ($text-field-padding-x - $spacer-xs - $text-field-border-width);
-      }
-    }
-
     div {
       &.item {
         align-items: center;

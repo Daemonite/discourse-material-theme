@@ -134,6 +134,63 @@
   }
 }
 
+.badges {
+  align-items: flex-start;
+  display: flex;
+
+  .buttons {
+    float: none;
+    width: auto;
+
+    .delete-link {
+      @include btn-base;
+
+      color: unquote('$danger');
+
+      &:hover,
+      &.btn-hover {
+        .discourse-no-touch & {
+          color: unquote('$danger');
+        }
+      }
+    }
+
+    .saving {
+      margin: $btn-padding-y $spacer-x-inline 0;
+      padding: 0;
+      width: auto;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  .content-list {
+    ul {
+      margin-bottom: $spacer-y;
+    }
+  }
+
+  .current-badge {
+    margin: 0 0 $spacer-y;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      &.help {
+        font-size: $font-size-small;
+      }
+    }
+
+    .badge-grouping-control .badge-selector {
+      margin-right: $spacer-x-inline;
+    }
+  }
+}
+
 .discourse-tag {
   &.box {
     border-radius: $code-border-radius;
@@ -143,5 +200,14 @@
 
   &.bullet {
     margin-right: 0;
+
+    &::before {
+      font-size: inherit;
+      margin-right: $spacer-x-inline;
+    }
+  }
+
+  .discourse-tags & {
+    margin-right: $spacer-x-inline;
   }
 }

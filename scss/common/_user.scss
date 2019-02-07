@@ -120,18 +120,22 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: $spacer-lg;
+  margin-bottom: $spacer-y;
 }
 
 .groups-header-filters {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin-right: $spacer-xs;
+  margin-right: $spacer-x;
   order: -1;
 
+  .groups-header-filters-name,
+  .groups-header-filters-type {
+    margin-right: $spacer-x;
+  }
+
   .groups-header-filters-name {
-    margin-right: $spacer-xs;
     width: auto;
   }
 }
@@ -139,16 +143,12 @@
 .groups-table {
   @include table;
 
-  margin-bottom: $spacer-lg;
+  margin-bottom: $spacer-y;
 
   tbody {
     td,
     th {
       @include tbody-cell;
-    }
-
-    tr {
-      @include table-row;
     }
   }
 
@@ -161,16 +161,15 @@
 
   tr td {
     &.groups-user-count,
+    &.groups-table-membership,
     &.groups-table-type {
       font-size: $tbody-font-size;
     }
+  }
 
-    &.groups-table-membership {
-      > span {
-        font-size: inherit;
-        margin-right: $spacer-xs;
-      }
-    }
+  .groups-info .groups-info-name {
+    color: inherit;
+    font-weight: normal;
   }
 }
 

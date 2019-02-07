@@ -108,6 +108,8 @@ linters:
       - font-style
       - font-variant
       - font-weight
+      - grid-column-gap
+      - grid-row-gap
       - height
       - hyphens
       - justify-content

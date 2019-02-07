@@ -49,6 +49,13 @@
       margin-bottom: .25em;
     }
 
+    &.is-disabled .select-kit-header {
+      background-color: color-chooser($btn-bg-disabled-dark, $btn-bg-disabled-light);
+      background-image: none;
+      box-shadow: none;
+      color: color-chooser($btn-color-disabled-dark, $btn-color-disabled-light);
+    }
+
     &.mini-tag-chooser {
       &.is-above .select-kit-body {
         margin-bottom: 0;
@@ -333,6 +340,7 @@
     .caret-icon {
       background-color: transparent !important;
       border: 0;
+      font-size: ($btn-font-size - 1) !important;
       margin-left: $spacer-xs;
     }
 
