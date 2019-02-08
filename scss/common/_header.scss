@@ -216,7 +216,7 @@
 }
 
 #main-outlet {
-  padding-top: ($header-height + $header-margin-y);
+  padding-top: ($header-height + $spacer-y);
   padding-right: ($spacer-x / 2);
   padding-left: ($spacer-x / 2);
 }

@@ -315,10 +315,9 @@ $header-box-shadow:         $shadow-4dp !default;
 $header-height:             56px !default;
 $header-item-overlay-dark:  $white-divider !default;
 $header-item-overlay-light: $black-divider !default;
-$header-inner-spacer-x:     8px !default;
-$header-margin-y:           $spacer-lg !default;
-$header-padding-x:          8px !default;
-$header-padding-y:          8px !default;
+$header-inner-spacer-x:     $spacer-x-inline !default;
+$header-padding-x:          $spacer-sm !default;
+$header-padding-y:          $spacer-sm !default;
 
 
 
