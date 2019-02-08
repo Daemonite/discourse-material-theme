@@ -353,15 +353,15 @@ $modal-bg-dark:            $dark-4 !default;
 $modal-bg-light:           $light-4 !default;
 $modal-border-color-dark:  $dark-1 !default;
 $modal-border-color-light: $light-1 !default;
-$modal-border-width:       1px !default;
-$modal-border-radius:      4px !default;
+$modal-border-width:       $border-width !default;
+$modal-border-radius:      $border-radius !default;
 $modal-box-shadow:         $shadow-24dp !default;
-$modal-footer-padding-x:   8px !default;
-$modal-footer-padding-y:   8px !default;
-$modal-inner-spacer-x:     16px !default;
-$modal-inner-spacer-y:     16px !default;
-$modal-padding-x:          16px !default;
-$modal-padding-y:          16px !default;
+$modal-footer-padding-x:   $spacer-sm !default;
+$modal-footer-padding-y:   $spacer-sm !default;
+$modal-inner-spacer-x:     $spacer-x !default;
+$modal-inner-spacer-y:     $spacer-y !default;
+$modal-padding-x:          $spacer !default;
+$modal-padding-y:          $spacer !default;
 
 
 // Nav
