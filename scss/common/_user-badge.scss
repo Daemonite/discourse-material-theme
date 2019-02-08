@@ -2,7 +2,7 @@
   @include card;
 
   margin-right: 0;
-  margin-bottom: $card-margin-y;
+  margin-bottom: $spacer-y;
   padding: 0;
 
   &,
@@ -12,12 +12,12 @@
     width: 100%;
 
     @media (min-width: 569px) {
-      margin-right: $card-margin-x;
-      width: calc(50% - #{$card-margin-x});
+      margin-right: $spacer-x;
+      width: calc(50% - #{$spacer-x});
     }
 
     @media (min-width: ($container-max-width + 1px)) {
-      width: calc(100% / 3 - #{$card-margin-x});
+      width: calc(100% / 3 - #{$spacer-x});
     }
 
     &:hover {
@@ -82,16 +82,16 @@
 }
 
 .badge-grouping {
-  margin-bottom: ($spacer-lg - $card-margin-y);
+  margin-bottom: ($spacer-lg - $spacer-y);
 
   @media (min-width: 569px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: ($card-margin-x * -1);
+    margin-right: ($spacer-x * -1);
   }
 
   h3 {
-    margin-bottom: $card-margin-y;
+    margin-bottom: $spacer-y;
   }
 
   .title {
@@ -111,7 +111,7 @@
   margin-bottom: $spacer-lg;
 
   @media (min-width: 569px) {
-    margin-right: ($card-margin-x * -1);
+    margin-right: ($spacer-x * -1);
   }
 
   &.top-section {
@@ -132,7 +132,7 @@
     width: 100%;
 
     @media (min-width: 569px) {
-      width: calc(100% - #{$card-margin-x});
+      width: calc(100% - #{$spacer-x});
     }
   }
 }
@@ -146,20 +146,20 @@
 .show-badge-details {
   display: block;
   margin-top: 0;
-  margin-bottom: ($spacer-lg - $card-margin-y);
+  margin-bottom: ($spacer-lg - $spacer-y);
 
   @media (min-width: 569px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: ($card-margin-x * -1);
+    margin-right: ($spacer-x * -1);
   }
 
   .grant-info-item {
-    margin-bottom: $card-margin-y;
+    margin-bottom: $spacer-y;
 
     &,
     &:first-of-type {
-      margin-right: $card-margin-x;
+      margin-right: $spacer-x;
     }
   }
 }
@@ -168,12 +168,12 @@
   margin-bottom: $spacer-lg;
 
   > .ember-view {
-    margin-bottom: ($spacer-lg - $card-margin-y);
+    margin-bottom: ($spacer-lg - $spacer-y);
 
     @media (min-width: 569px) {
       display: flex;
       flex-wrap: wrap;
-      margin-right: ($card-margin-x * -1);
+      margin-right: ($spacer-x * -1);
     }
   }
 }
@@ -182,22 +182,22 @@
   @media (min-width: 569px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: ($card-margin-x * -1);
+    margin-right: ($spacer-x * -1);
 
     .badge-card {
-      margin-right: $card-margin-x;
-      width: calc(50% - #{$card-margin-x});
+      margin-right: $spacer-x;
+      width: calc(50% - #{$spacer-x});
     }
   }
 
   @media (min-width: ($container-max-width + 1)) {
     .badge-card {
-      width: calc(100% / 3 - #{$card-margin-x});
+      width: calc(100% / 3 - #{$spacer-x});
     }
   }
 
   .user-main &.user-content {
-    margin-bottom: ($spacer-lg - $card-margin-y);
+    margin-bottom: ($spacer-lg - $spacer-y);
   }
 }
 
@@ -211,17 +211,17 @@
   &.medium,
   &.small {
     flex: 0 0 auto;
-    margin: 0 0 $card-margin-y;
+    margin: 0 0 $spacer-y;
     min-height: 0;
     width: 100%;
 
     @media (min-width: 569px) {
-      margin-right: $card-margin-x;
-      width: calc(50% - #{$card-margin-x});
+      margin-right: $spacer-x;
+      width: calc(50% - #{$spacer-x});
     }
 
     @media (min-width: ($container-max-width + 1px)) {
-      width: calc(100% / 3 - #{$card-margin-x});
+      width: calc(100% / 3 - #{$spacer-x});
     }
 
     &.badge-info {

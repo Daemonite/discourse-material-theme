@@ -36,7 +36,7 @@
 
 .category-boxes,
 .category-boxes-with-topics {
-  margin: 0 ($card-margin-x / -2) ($spacer-lg - $card-margin-y);
+  margin: 0 ($spacer-x / -2) ($spacer-lg - $spacer-y);
   width: auto;
 
   h3 {
@@ -49,8 +49,8 @@
   .category-box {
     border-radius: $card-border-radius 0 0 $card-border-radius;
     border-left-width: 2px;
-    margin: 0 ($card-margin-x / 2) $card-margin-y;
-    width: calc(33.333333% - #{$card-margin-x});
+    margin: 0 ($spacer-x / 2) $spacer-y;
+    width: calc(33.333333% - #{$spacer-x});
   }
 
   .category-box-inner {

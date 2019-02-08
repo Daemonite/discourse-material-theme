@@ -3,7 +3,7 @@
 .alert {
   @include card;
 
-  margin-bottom: $card-margin-y;
+  margin-bottom: $spacer-y;
 
   .close {
     font-size: inherit;

@@ -259,9 +259,9 @@ section {
 
   color: color-chooser($white-secondary, $black-secondary);
   font-weight: bolder;
-  margin-bottom: $card-margin-y;
+  margin-bottom: $spacer-y;
   max-width: 100%;
-  padding: $card-margin-y ($card-inner-spacer-x * 2);
+  padding: $spacer-y ($card-inner-spacer-x * 2);
   text-transform: none;
   width: $topic-body-width;
 }
@@ -412,7 +412,7 @@ section {
 }
 
 .posts-wrapper {
-  margin-bottom: ($spacer-lg - $card-margin-y);
+  margin-bottom: ($spacer-lg - $spacer-y);
 }
 
 .read-state {
@@ -455,14 +455,14 @@ section {
   @include card;
 
   border-top: 0;
-  margin-bottom: $card-margin-y;
+  margin-bottom: $spacer-y;
   max-width: $topic-body-width;
   position: relative;
 
   &.time-gap {
     background-color: transparent;
     box-shadow: none;
-    padding: $card-margin-y 0 0;
+    padding: $spacer-y 0 0;
   }
 
   button {
@@ -550,7 +550,7 @@ section {
   @include card;
 
   float: none;
-  margin-bottom: $card-margin-y;
+  margin-bottom: $spacer-y;
   padding: 0;
 
   @media (max-width: 870px) {
@@ -595,8 +595,8 @@ section {
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: ($spacer-lg - $card-margin-y);
-  max-width: ($card-margin-x + $topic-body-width);
+  margin-bottom: ($spacer-lg - $spacer-y);
+  max-width: ($spacer-x + $topic-body-width);
   padding: 0;
   width: 100%;
 
@@ -604,13 +604,13 @@ section {
   span > button,
   > button {
     &.btn {
-      margin: 0 $card-margin-x $card-margin-y 0;
+      margin: 0 $spacer-x $spacer-y 0;
       max-width: ($topic-body-width / 3);
     }
   }
 
   p {
-    margin-bottom: $card-margin-y;
+    margin-bottom: $spacer-y;
     vertical-align: middle;
   }
 
@@ -627,7 +627,7 @@ section {
     display: flex;
     flex-basis: 0;
     flex-grow: 1;
-    margin-right: $card-margin-x;
+    margin-right: $spacer-x;
   }
 
   .btn {
@@ -664,7 +664,7 @@ section {
     .reason {
       line-height: $line-height-base;
       margin-bottom: 0;
-      margin-left: $card-margin-x;
+      margin-left: $spacer-x;
     }
   }
 }
@@ -1026,8 +1026,8 @@ section {
 .topic-status-info {
   border-top: 0;
   height: auto;
-  margin-top: $card-margin-y;
-  margin-bottom: $card-margin-y;
+  margin-top: $spacer-y;
+  margin-bottom: $spacer-y;
   padding: 0;
 
   &:empty {
@@ -1036,7 +1036,7 @@ section {
 }
 
 #topic-title {
-  margin-bottom: ($card-margin-y * 2);
+  margin-bottom: ($spacer-y * 2);
   padding-top: 0;
 
   a {
@@ -1053,7 +1053,7 @@ section {
 
     font-family: $font-family-serif;
     font-weight: normal;
-    margin: 0 0 ($card-margin-y * 2);
+    margin: 0 0 ($spacer-y * 2);
     overflow: visible;
   }
 
