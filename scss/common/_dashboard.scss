@@ -2,6 +2,10 @@
   @include card;
 
   margin-bottom: $spacer-y;
+
+  .report-body:not(:last-child) {
+    margin-bottom: $card-inner-spacer-y;
+  }
 }
 
 .admin-report {
