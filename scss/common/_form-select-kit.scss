@@ -22,7 +22,7 @@
     &.future-date-input-selector {
       .future-date-input-selector-datetime {
         color: color-chooser($white-secondary, $black-secondary);
-        margin-left: $spacer-xs;
+        margin-left: $spacer-x-inline;
       }
 
       .future-date-input-selector-icons {
@@ -35,7 +35,7 @@
 
       .select-kit-header {
         .future-date-input-selector-icons {
-          margin-right: $spacer-xs;
+          margin-right: $spacer-x-inline;
         }
 
         .selected-name {
@@ -92,8 +92,8 @@
       padding: $dropdown-link-padding-y 0;
 
       .filter-icon {
-        margin-left: $spacer-xs;
         margin-right: $dropdown-link-padding-x;
+        margin-left: $spacer-x-inline;
         padding-left: 0;
       }
 
@@ -155,7 +155,7 @@
       }
 
       .discourse-tag-count {
-        margin-left: $spacer-xs;
+        margin-left: $spacer-x-inline;
       }
     }
   }
@@ -239,7 +239,7 @@
       margin: $text-field-padding-y $text-field-padding-x ($text-field-padding-y - $spacer-y-inline) ($text-field-padding-x - $spacer-x-inline);
 
       .choice {
-        margin: 0 0 $spacer-xs $spacer-xs;
+        margin: 0 0 $spacer-y-inline $spacer-x-inline;
       }
 
       .filter .filter-input {
@@ -248,16 +248,16 @@
 
       .selected-color .color-preview {
         background-color: color-chooser($white-divider, $black-divider);
-        height: $spacer-xs;
         border-radius: 0 0 $text-field-border-radius $text-field-border-radius;
+        height: $spacer-y-inline;
         margin: 0;
       }
 
       .selected-name {
         &.selected-color {
           .body {
-            height: ($material-icon-size - $spacer-xs);
             border-radius: $text-field-border-radius $text-field-border-radius 0 0;
+            height: ($material-icon-size - $spacer-y-inline);
           }
         }
 
@@ -272,8 +272,8 @@
 
         .d-icon {
           color: color-chooser($white-hint, $black-hint);
-          margin-right: ($spacer-xs * -1);
-          margin-left: $spacer-xs;
+          margin-right: ($spacer-x-inline * -1);
+          margin-left: $spacer-x-inline;
           opacity: 1;
         }
       }
@@ -332,7 +332,7 @@
     min-height: $btn-height;
 
     .btn-clear {
-      margin-left: $spacer-xs;
+      margin-left: $spacer-x-inline;
       outline: 0;
       padding: 0;
     }
@@ -341,14 +341,14 @@
       background-color: transparent !important;
       border: 0;
       font-size: ($btn-font-size - 1) !important;
-      margin-left: $spacer-xs;
+      margin-left: $spacer-x-inline;
     }
 
     .d-button-label {
       line-height: inherit;
 
       .d-icon {
-        margin-left: $spacer-xs;
+        margin-left: $spacer-x-inline;
       }
     }
 
