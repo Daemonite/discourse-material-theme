@@ -276,10 +276,10 @@ $chip-sm-scale:         .75 !default;
 
 $code-bg-dark:       $dark-2 !default;
 $code-bg-light:      $light-2 !default;
-$code-border-radius: 4px !default;
+$code-border-radius: $border-radius !default;
 $code-color-dark:    #bd4147 !default;
 $code-color-light:   #bd4147 !default;
-$code-font-size:     87.5% !default;
+$code-font-size:     $font-size-sm !default;
 $code-padding:       .2em .4em !default;
 
 $kbd-bg:             #333333 !default;
