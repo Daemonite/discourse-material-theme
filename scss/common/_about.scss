@@ -1,75 +1,33 @@
 section {
   &.about {
-    @include card;
-
-    margin-bottom: $spacer-lg;
+    margin-bottom: $spacer-y;
 
     &.admins {
-      padding-bottom: 0;
-
-      .user-info {
-        align-items: center;
-        border-top: 1px solid color-chooser($white-divider, $black-divider);
-        border-radius: 0;
-        box-shadow: none;
-        display: flex;
-        margin-right: ($card-padding-x * -1);
-        margin-bottom: 0;
-        margin-left: ($card-padding-x * -1);
-        width: auto;
-      }
-    }
-
-    &.stats {
-      table {
-        border-top: 1px solid color-chooser($white-divider, $black-divider);
-        border-radius: 0;
-        box-shadow: none;
-        margin-right: ($card-padding-x * -1);
-        margin-left: ($card-padding-x * -1);
-        max-width: none;
-        width: calc(100% + #{$card-padding-x * 2});
-
-        &:last-of-type {
-          margin-bottom: ($card-padding-y * -1);
-        }
-      }
-    }
-
-    > :last-child {
-      margin-bottom: 0;
-    }
-
-    h3,
-    p,
-    table {
-      margin-top: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: ($spacer-x * -1);
     }
 
     h3 {
-      margin-bottom: $card-inner-spacer-y;
-    }
-
-    p,
-    table {
-      margin-bottom: $spacer;
+      margin-bottom: $spacer-y-inline;
+      width: 100%;
     }
 
     table {
-      td,
+      td {
+        @include tbody-cell;
+      }
+
       th {
-        border-bottom-color: color-chooser($white-divider, $black-divider);
-        height: $tbody-cell-height;
-        padding: $tbody-cell-padding-y $tbody-cell-padding-x;
+        @include thead-cell;
       }
     }
   }
 }
 
 .body-page {
+  font-size: inherit;
   max-width: $topic-body-width;
-  padding-left: 0;
-  width: auto;
 
   .static-faq &,
   .static-privacy &,
@@ -77,77 +35,23 @@ section {
     [itemprop='mainContentOfPage'] {
       @include card;
 
-      margin-bottom: $spacer-lg;
-
-      > :first-child {
-        margin-top: 0;
-      }
+      margin-bottom: $spacer-y;
 
       > :last-child {
         margin-bottom: 0;
       }
 
       > p:first-child + h2 {
-        margin-top: ($spacer * -1);
+        margin-top: ($spacer-y * -1);
       }
     }
   }
 
-  blockquote {
-    @include typography-h5;
-
-    margin-bottom: $spacer;
+  li {
+    margin-bottom: 0;
   }
 
-  h1,
-  h2,
-  h3 {
-    margin-bottom: $spacer-sm;
-  }
-
-  h1 {
-    @include typography-h1;
-  }
-
-  h2 {
-    @include typography-h2;
-  }
-
-  h3 {
-    @include typography-h3;
-  }
-
-  hr {
-    margin: $spacer 0;
-  }
-
-  ol,
-  ul {
-    @include typography-body;
-
-    margin-bottom: $spacer;
-
-    ol,
-    ul {
-      margin-bottom: 0;
-    }
-  }
-
-  p {
-    @include typography-body;
-
-    margin-bottom: $spacer;
-  }
-
-  pre {
-    @include typography-body;
-
-    margin-bottom: $spacer;
-  }
-
-  table {
-    @include typography-body;
-
-    margin-bottom: $spacer;
+  .nav-pills {
+    margin-bottom: $spacer-y;
   }
 }
