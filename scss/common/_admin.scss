@@ -201,6 +201,11 @@ table {
 
   h1 {
     margin-bottom: $card-inner-spacer-y;
+
+    input {
+      font-size: $text-field-font-size;
+      letter-spacing: 0;
+    }
   }
 
   .admin-container {
