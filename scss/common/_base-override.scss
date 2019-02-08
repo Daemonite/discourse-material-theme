@@ -33,6 +33,12 @@ tbody {
   > li {
     margin-right: $nav-item-spacer-x;
 
+    &:not(.active) > a:not(.active) {
+      @include active-focus-hover {
+        background-color: color-chooser($white-divider, $black-divider);
+      }
+    }
+
     &.active > a {
       opacity: $nav-link-opacity-active;
     }
@@ -45,10 +51,6 @@ tbody {
       transition-duration: $transition-duration;
       transition-property: background-color, color, opacity;
       transition-timing-function: $transition-timing-function;
-
-      @include active-focus-hover {
-        background-color: color-chooser($white-divider, $black-divider);
-      }
 
       &:focus {
         outline: 0;
