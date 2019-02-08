@@ -226,7 +226,7 @@
 
       .multi-select-header {
         border-color: unquote('$tertiary');
-        border-radius: $text-field-outline-border-radius;
+        border-radius: $text-field-border-radius;
         box-shadow: inset 0 0 0 $text-field-border-width unquote('$tertiary');
       }
 
@@ -236,7 +236,7 @@
     }
 
     .choices {
-      margin: $text-field-outline-padding-y $text-field-outline-padding-x ($text-field-outline-padding-y - $spacer-xs) ($text-field-outline-padding-x - $spacer-xs);
+      margin: $text-field-padding-y $text-field-padding-x ($text-field-padding-y - $spacer-y-inline) ($text-field-padding-x - $spacer-x-inline);
 
       .choice {
         margin: 0 0 $spacer-xs $spacer-xs;
@@ -248,16 +248,16 @@
 
       .selected-color .color-preview {
         background-color: color-chooser($white-divider, $black-divider);
-        border-radius: 0 0 $text-field-outline-border-radius $text-field-outline-border-radius;
         height: $spacer-xs;
+        border-radius: 0 0 $text-field-border-radius $text-field-border-radius;
         margin: 0;
       }
 
       .selected-name {
         &.selected-color {
           .body {
-            border-radius: $text-field-outline-border-radius $text-field-outline-border-radius 0 0;
             height: ($material-icon-size - $spacer-xs);
+            border-radius: $text-field-border-radius $text-field-border-radius 0 0;
           }
         }
 
@@ -281,8 +281,8 @@
 
     .multi-select-header {
       border-color: color-chooser($text-field-border-color-dark, $text-field-border-color-light);
-      border-radius: $text-field-outline-border-radius;
-      min-height: $text-field-outline-height;
+      border-radius: $text-field-border-radius;
+      min-height: $text-field-height;
 
       &:hover {
         border-color: color-chooser($text-field-border-color-hover-dark, $text-field-border-color-hover-light);
@@ -291,7 +291,7 @@
 
       &.is-focused {
         border-color: unquote('$tertiary');
-        border-radius: $text-field-outline-border-radius;
+        border-radius: $text-field-border-radius;
         box-shadow: inset 0 0 0 $text-field-border-width unquote('$tertiary');
       }
     }

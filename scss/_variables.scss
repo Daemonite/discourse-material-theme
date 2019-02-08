@@ -458,12 +458,3 @@ $text-field-margin-y:                    $spacer-y-inline !default;
 $text-field-min-width:                   200px !default;
 $text-field-padding-x:                   12px !default;
 $text-field-padding-y:                   (($text-field-height - $text-field-border-width * 2 - $text-field-font-size * $text-field-line-height) / 2) !default;
-
-
-
-// Text field outline
-
-$text-field-outline-border-radius: 4px !default;
-$text-field-outline-height:        56px !default;
-$text-field-outline-padding-x:     (14px - $text-field-border-width) !default;
-$text-field-outline-padding-y:     (($text-field-outline-height - $text-field-border-width * 2 - $material-icon-size) / 2) !default;
