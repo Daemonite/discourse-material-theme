@@ -325,14 +325,14 @@ $header-padding-y:          $spacer-sm !default;
 
 $menu-panel-bg-dark:            $dark-4 !default;
 $menu-panel-bg-light:           $light-4 !default;
-$menu-panel-border-radius:      4px !default;
+$menu-panel-border-radius:      $border-radius !default;
 $menu-panel-box-shadow:         $shadow-24dp !default;
-$menu-panel-inner-spacer-x:     8px !default;
-$menu-panel-inner-spacer-y:     8px !default;
+$menu-panel-inner-spacer-x:     $spacer-x-inline !default;
+$menu-panel-inner-spacer-y:     $spacer-y-inline !default;
 $menu-panel-item-overlay-dark:  $dark-hover !default;
 $menu-panel-item-overlay-light: $light-hover !default;
-$menu-panel-padding-x:          24px !default;
-$menu-panel-padding-y:          20px !default;
+$menu-panel-padding-x:          $spacer-lg !default;
+$menu-panel-padding-y:          $spacer-lg !default;
 
 
 
