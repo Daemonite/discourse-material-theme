@@ -1,48 +1,48 @@
 .badge-group,
 .badge-notification {
-  background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-  border-radius: 1em;
-  color: unquote('$primary');
+  align-items: center;
+  border-radius: ($font-size-base * $line-height-base / 2);
+  display: inline-flex;
   font-size: $font-size-sm;
-  padding: ($chip-padding-y / 2) ($chip-padding-x / 2);
+  justify-content: center;
+  line-height: 1;
+  min-height: ($font-size-base * $line-height-base);
+  min-width: ($font-size-base * $line-height-base);
+  padding: 0;
 }
 
 .badge-group {
   border: 0;
-  box-shadow: none;
-  text-shadow: none;
 }
 
 .badge-wrapper {
-  color: inherit;
-  font-size: .8125em;
+  font-size: $font-size-sm;
   font-weight: normal;
-
-  &[href]:hover {
-    box-shadow: $chip-box-shadow;
-  }
 
   &.bar {
     align-items: center;
     background-color: color-chooser($chip-bg-dark, $chip-bg-light);
     border-radius: ($chip-height / 2);
     font-size: $chip-font-size;
-    line-height: $line-height-base;
-    margin-right: $spacer-sm;
+    line-height: $chip-line-height;
+    margin-right: $spacer-x-inline;
     padding-right: $chip-padding-x;
     padding-left: $chip-padding-x;
 
+    span {
+      &.badge-category {
+        padding: $chip-padding-y 0;
+      }
+    }
+
     .badge-category {
       align-items: center;
-      border-radius: ($chip-height / 2);
       min-height: $chip-height;
-      padding: (($chip-height - $chip-font-size * $line-height-base) / 2) 0;
     }
 
     .badge-category-bg,
     .badge-category-parent-bg {
       padding: 0;
-      width: $spacer-xs;
     }
 
     .badge-category-bg {
@@ -53,15 +53,15 @@
   &.box {
     border-radius: ($chip-height / 2);
     font-size: $chip-font-size;
-    line-height: $line-height-base;
-    margin-right: $spacer-sm;
+    line-height: $chip-line-height;
+    margin-right: $spacer-x-inline;
     padding: 0;
 
     .badge-category {
       align-items: center;
       border-radius: ($chip-height / 2);
       min-height: $chip-height;
-      padding: (($chip-height - $chip-font-size * $line-height-base) / 2) $chip-padding-x;
+      padding: $chip-padding-y $chip-padding-x;
     }
 
     .badge-category-bg {
@@ -89,7 +89,7 @@
     border-radius: ($chip-height / 2);
     font-size: $chip-font-size;
     line-height: $line-height-base;
-    margin-right: $spacer-sm;
+    margin-right: $spacer-x-inline;
     padding-right: $chip-padding-x;
     padding-left: $chip-inner-spacer-x;
 
@@ -97,7 +97,7 @@
       align-items: center;
       border-radius: ($chip-height / 2);
       min-height: $chip-height;
-      padding: (($chip-height - $chip-font-size * $line-height-base) / 2) 0 (($chip-height - $chip-font-size * $line-height-base) / 2) ($chip-padding-x - $chip-inner-spacer-x);
+      padding: $chip-padding-y 0 $chip-padding-y $chip-inner-spacer-x;
     }
 
     .badge-category-bg {
@@ -120,7 +120,7 @@
   }
 
   &.none {
-    margin-right: $spacer-sm;
+    margin-right: $spacer-x-inline;
 
     &[href]:hover {
       box-shadow: none;
@@ -198,13 +198,9 @@
     padding: $code-padding;
   }
 
-  &.bullet {
-    margin-right: 0;
-
-    &::before {
-      font-size: inherit;
-      margin-right: $spacer-x-inline;
-    }
+  &.bullet::before {
+    font-size: inherit;
+    margin-right: $spacer-x-inline;
   }
 
   .discourse-tags & {
