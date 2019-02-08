@@ -71,7 +71,7 @@
     .period-chooser-row {
       font-size: inherit;
       font-weight: normal;
-      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+      padding: $dropdown-link-padding-y $dropdown-link-padding-x;
 
       .top-date-string {
         @include typography-caption;
@@ -82,7 +82,7 @@
     }
 
     .select-kit-collection {
-      padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
+      padding: $dropdown-padding-y $dropdown-padding-x;
     }
   }
 }
@@ -261,7 +261,6 @@
 
 #topic-entrance {
   @include dropdown-menu;
-  @include dropdown-menu-sm;
 
   button {
     &.btn.jump-bottom {

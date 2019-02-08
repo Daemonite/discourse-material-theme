@@ -35,15 +35,15 @@
 
     .dropdown-menu,
     .popup-menu {
-      @include dropdown-menu-sm;
+      @include dropdown-menu;
 
       a,
       .btn {
-        @include dropdown-link-sm;
+        @include dropdown-link;
       }
 
       h3 {
-        @include dropdown-header-sm;
+        @include dropdown-header;
       }
 
       .btn {

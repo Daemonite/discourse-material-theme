@@ -82,18 +82,18 @@
 
     .select-kit-collection {
       max-width: none;
-      padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
+      padding: $dropdown-padding-y $dropdown-padding-x;
     }
 
     .select-kit-filter {
       border-top: 0;
       border-bottom-color: color-chooser($white-divider, $black-divider);
       flex-shrink: 0;
-      padding: $dropdown-link-padding-y-sm 0;
+      padding: $dropdown-link-padding-y 0;
 
       .filter-icon {
-        margin-right: $dropdown-link-padding-x-sm;
         margin-left: $spacer-xs;
+        margin-right: $dropdown-link-padding-x;
         padding-left: 0;
       }
 
@@ -146,7 +146,7 @@
     }
 
     .select-kit-row {
-      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+      padding: $dropdown-link-padding-y $dropdown-link-padding-x;
 
       &.no-content {
         display: block;
@@ -180,11 +180,11 @@
     }
 
     .select-kit-collection {
-      padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
+      padding: $dropdown-padding-y $dropdown-padding-x;
     }
 
     .select-kit-row {
-      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+      padding: $dropdown-link-padding-y $dropdown-link-padding-x;
 
       .icons {
         margin-top: 0;
@@ -302,7 +302,7 @@
 
     .select-kit-row {
       margin: 0;
-      padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
+      padding: $dropdown-link-padding-y $dropdown-link-padding-x;
     }
   }
 
@@ -310,21 +310,21 @@
     background-color: color-chooser($dropdown-bg-dark, $dropdown-bg-light);
     border-radius: $dropdown-border-radius;
     box-shadow: $dropdown-box-shadow;
-    font-size: $dropdown-font-size-sm;
-    line-height: $dropdown-line-height-sm;
+    font-size: $dropdown-font-size;
+    line-height: $dropdown-line-height;
   }
 
   .select-kit-collection {
     background-color: inherit;
-    padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
+    padding: $dropdown-padding-y $dropdown-padding-x;
   }
 
   .select-kit-filter .filter-input {
     &,
     &:active,
     &:focus {
-      padding-right: $dropdown-link-padding-x-sm;
-      padding-left: $dropdown-link-padding-x-sm;
+      padding-right: $dropdown-link-padding-x;
+      padding-left: $dropdown-link-padding-x;
     }
   }
 

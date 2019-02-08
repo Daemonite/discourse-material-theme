@@ -25,7 +25,6 @@
 
   .nav-pills .drop {
     @include dropdown-menu;
-    @include dropdown-menu-sm;
 
     li {
       margin: 0;
@@ -33,7 +32,6 @@
 
       a {
         @include dropdown-link;
-        @include dropdown-link-sm;
 
         color: inherit;
       }

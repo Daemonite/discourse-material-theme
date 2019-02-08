@@ -7,21 +7,11 @@
   white-space: nowrap;
 }
 
-@mixin dropdown-header-sm {
-  font-size: $dropdown-font-size-sm;
-  line-height: $dropdown-line-height-sm;
-  padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
-}
-
 @mixin dropdown-link {
   display: block;
   font-size: inherit;
   line-height: inherit;
   padding: $dropdown-link-padding-y $dropdown-link-padding-x;
-}
-
-@mixin dropdown-link-sm {
-  padding: $dropdown-link-padding-y-sm $dropdown-link-padding-x-sm;
 }
 
 @mixin dropdown-menu {
@@ -33,10 +23,4 @@
   font-size: $dropdown-font-size;
   line-height: $dropdown-line-height;
   padding: $dropdown-padding-y $dropdown-padding-x;
-}
-
-@mixin dropdown-menu-sm {
-  font-size: $dropdown-font-size-sm;
-  line-height: $dropdown-line-height-sm;
-  padding: $dropdown-padding-y-sm $dropdown-padding-x-sm;
 }

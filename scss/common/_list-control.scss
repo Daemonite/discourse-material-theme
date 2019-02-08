@@ -16,12 +16,10 @@ ol {
 
 .category-notification-menu {
   .dropdown-menu {
-    @include dropdown-menu-sm;
-
     top: $btn-height;
 
     a {
-      @include dropdown-link-sm;
+      @include dropdown-link;
     }
   }
 }

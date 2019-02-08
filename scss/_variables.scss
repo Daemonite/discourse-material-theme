@@ -294,23 +294,18 @@ $pre-padding:        $card-padding-y $card-padding-x !default;
 
 $dropdown-bg-dark:             $dark-4 !default;
 $dropdown-bg-light:            $light-4 !default;
-$dropdown-border-radius:       4px !default;
+$dropdown-border-radius:       $border-radius !default;
 $dropdown-box-shadow:          $shadow-8dp !default;
-$dropdown-font-size:           16px !default;
-$dropdown-font-size-sm:        13px !default;
-$dropdown-inner-spacer-x:      16px !default;
+$dropdown-font-size:           ($font-size-base - 1) !default;
+$dropdown-inner-spacer-x:      $spacer-x !default;
 $dropdown-line-height:         1.5 !default;
-$dropdown-line-height-sm:      1.5 !default;
 $dropdown-link-bg-hover-dark:  $white-divider !default;
 $dropdown-link-bg-hover-light: $black-divider !default;
-$dropdown-link-padding-x:      16px !default;
-$dropdown-link-padding-x-sm:   24px !default;
-$dropdown-link-padding-y:      12px !default;
-$dropdown-link-padding-y-sm:   6.25px !default;
+$dropdown-link-height:         $control-height-sm !default;
+$dropdown-link-padding-x:      $spacer-lg !default;
+$dropdown-link-padding-y:      (($dropdown-link-height - $dropdown-font-size * $dropdown-line-height) / 2) !default;
 $dropdown-padding-x:           0 !default;
-$dropdown-padding-x-sm:        0 !default;
-$dropdown-padding-y:           8px !default;
-$dropdown-padding-y-sm:        16px !default;
+$dropdown-padding-y:           $spacer !default;
 
 
 

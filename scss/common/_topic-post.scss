@@ -127,16 +127,13 @@ nav {
 
     .post-admin-menu {
       @include dropdown-menu;
-      @include dropdown-menu-sm;
 
       h3 {
         @include dropdown-header;
-        @include dropdown-header-sm;
       }
 
       li {
         @include dropdown-link;
-        @include dropdown-link-sm;
 
         margin: 0;
         width: 100%;
@@ -635,10 +632,8 @@ section {
   }
 
   .dropdown-menu {
-    @include dropdown-menu-sm;
-
     a {
-      @include dropdown-link-sm;
+      @include dropdown-link;
     }
   }
 
@@ -647,14 +642,12 @@ section {
   }
 
   .popup-menu {
-    @include dropdown-menu-sm;
-
     h3 {
-      @include dropdown-header-sm;
+      @include dropdown-header;
     }
 
     .btn {
-      @include dropdown-link-sm;
+      @include dropdown-link;
     }
   }
 
@@ -984,14 +977,12 @@ section {
   }
 
   .popup-menu {
-    @include dropdown-menu-sm;
-
     h3 {
-      @include dropdown-header-sm;
+      @include dropdown-header;
     }
 
     .btn {
-      @include dropdown-link-sm;
+      @include dropdown-link;
     }
   }
 
