@@ -624,6 +624,9 @@
 }
 
 .modal-inner-container {
+  margin-top: $header-height;
+  margin-bottom: $header-height;
+
   .inline-modal & {
     border: 0;
   }
@@ -636,6 +639,9 @@
 .modal-middle-container {
   display: block;
   flex-grow: 1;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .modal-outer-container {
