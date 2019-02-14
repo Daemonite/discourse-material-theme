@@ -1,38 +1,73 @@
 .btn {
   &#login-link,
   &#new-account-link {
-    @include focus-hover {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-    }
-
+    &:hover,
+    &:focus,
     &.btn-hover {
-      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      .discourse-no-touch & {
+        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      }
     }
 
-    &:active,
-    &.btn-active {
-      background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+    &:active {
+      .discourse-no-touch & {
+        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+      }
     }
   }
-}
-
-.caps-lock-warning.invisible {
-  display: none;
 }
 
 .create-account,
-#login-form {
-  input {
-    &[type='email'],
-    &[type='password'],
-    &[type='text'] {
-      margin-bottom: $modal-inner-spacer-y;
+.login-modal {
+  td {
+    input,
+    label {
+      margin-bottom: $text-field-margin-y;
     }
   }
 
-  td {
-    padding: 0;
-    vertical-align: top;
+  tr {
+    &:not(.instructions) {
+      td {
+        padding-top: 0;
+      }
+    }
+  }
+
+  #login-buttons:not(.hidden) {
+    min-height: 0;
+    padding: $modal-inner-spacer-y $modal-padding-x $modal-inner-spacer-y $modal-inner-spacer-x;
+
+    .create-account & {
+      padding-top: $modal-inner-spacer-y;
+    }
+
+    .btn {
+      margin: 0 0 ($modal-inner-spacer-y / 2);
+      width: 100%;
+
+      &:first-child {
+        margin-top: auto;
+      }
+
+      &:last-child {
+        margin-bottom: auto;
+      }
+    }
+  }
+
+  .login-modal {
+    #login-buttons:not(.hidden) {
+      .btn {
+        &:first-child {
+          margin-top: auto;
+        }
+
+        &:last-child {
+          margin-bottom: auto;
+        }
+      }
+    }
   }
 }
 
@@ -40,22 +75,31 @@
   &.d-modal {
     tr {
       &.input {
-        input {
-          margin-bottom: ($modal-inner-spacer-y / 2);
-        }
-
+        input,
         label {
-          margin-top: ($modal-inner-spacer-y / 2);
-          margin-bottom: ($modal-inner-spacer-y / 2);
+          margin-bottom: $text-field-margin-y;
         }
       }
     }
 
     .login-form {
-      padding: ($modal-padding-y - $modal-inner-spacer-y / 2) $modal-padding-x $modal-padding-y;
+      &::after,
+      &::before {
+        display: none;
+      }
+
+      form {
+        margin-bottom: 0;
+        padding: $modal-inner-spacer-y $modal-inner-spacer-x $modal-inner-spacer-y $modal-padding-x;
+      }
 
       tr {
-        margin-top: 0;
+        margin-top: $modal-inner-spacer-y;
+
+        &:first-child,
+        &.instructions {
+          margin-top: 0;
+        }
       }
     }
 
@@ -64,47 +108,17 @@
     }
   }
 
-  tr {
-    &.input {
-      td {
-        padding-top: 0;
-      }
-
-      .tip {
-        margin-bottom: $spacer-xs;
-        max-width: none;
+  table {
+    td {
+      &.label {
+        width: auto;
       }
     }
   }
 
   .disclaimer {
-    margin-top: $modal-footer-padding-y;
-    margin-bottom: $modal-footer-padding-y;
-    padding-right: $card-inner-spacer-x;
-    padding-left: $card-inner-spacer-x;
+    margin: $modal-footer-padding-y $modal-inner-spacer-x;
     text-align: right;
-    width: 100%;
-  }
-
-  .instructions {
-    label {
-      font-weight: normal;
-    }
-  }
-
-  #login-buttons:not(.hidden) {
-    border-left-color: color-chooser($white-divider, $black-divider);
-    min-height: 0;
-    padding: $modal-inner-spacer-y $modal-padding-x;
-
-    button {
-      margin: 0 0 ($modal-inner-spacer-y / 2);
-      width: 100%;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
   }
 
   .modal-body {
@@ -124,6 +138,29 @@
   }
 }
 
+#login-form {
+  td {
+    padding-right: 0;
+  }
+
+  #credentials {
+    tr:first-of-type {
+      margin-bottom: ($modal-inner-spacer-y - $text-field-margin-y);
+    }
+  }
+}
+
+.login-form {
+  .tip {
+    &:empty {
+      + td {
+        max-width: none;
+        min-height: 0;
+      }
+    }
+  }
+}
+
 .login-modal {
   &.d-modal {
     #credentials {
@@ -136,37 +173,7 @@
     }
   }
 
-  td label {
-    margin-bottom: ($modal-inner-spacer-y / 2);
-  }
-
-  #login-buttons:not(.hidden) {
-    border-left-color: color-chooser($modal-border-color-dark, $modal-border-color-light);
-    min-height: 0;
-    padding: $modal-padding-y $modal-padding-x;
-
-    button {
-      margin: 0 0 ($modal-inner-spacer-y / 2);
-      width: 100%;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
   #login-form {
-    margin: 0;
-    padding: $modal-padding-y $modal-padding-x;
-  }
-
-  .modal-footer {
-    align-items: center;
-
-    .btn-large {
-      font-size: $btn-font-size;
-      padding-top: $btn-padding-y;
-      padding-bottom: $btn-padding-y;
-    }
+    padding: $modal-inner-spacer-y $modal-inner-spacer-x $modal-inner-spacer-y $modal-padding-x;
   }
 }
