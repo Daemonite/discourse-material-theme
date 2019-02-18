@@ -62,7 +62,7 @@ body .boxed .contents {
   text-align: center;
   text-transform: uppercase;
   transition-duration: 0.3s;
-  transition-property: background-color, box-shadow, color;
+  transition-property: background-color, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -117,9 +117,6 @@ body .boxed .contents {
   border: 0;
   border-radius: 4px;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
@@ -131,7 +128,6 @@ body .boxed .contents {
   display: block;
   font-size: inherit;
   line-height: inherit;
-  padding: 12px 16px;
   padding: 6.25px 24px;
 }
 
@@ -199,9 +195,6 @@ body .boxed .contents {
   border: 0;
   border-radius: 4px;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 8px 0;
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
@@ -214,7 +207,6 @@ body .boxed .contents {
   display: block;
   font-size: inherit;
   line-height: inherit;
-  padding: 12px 16px;
   padding: 6.25px 24px;
   color: inherit;
 }
@@ -234,9 +226,9 @@ body .boxed .contents {
 
 .menu-panel.slide-in .panel-body {
   height: auto !important;
-  top: 20px;
+  top: 24px;
   right: 24px;
-  bottom: 20px;
+  bottom: 24px;
   left: 24px;
   width: auto;
 }
@@ -412,11 +404,11 @@ tr.category-topic-link:last-child {
 
 .topic-list .badge-notification {
   font-size: inherit;
-  padding: 4px 6px;
+  padding: 3.357141px 8px;
 }
 .topic-list .category-topic-link td.num .badge-notification {
   font-size: inherit;
-  padding: 4px 6px;
+  padding: 3.357141px 8px;
 }
 .topic-list .num.activity a, .topic-list .num.posts a {
   padding: 0;
@@ -488,16 +480,27 @@ tr.category-topic-link:last-child {
 }
 
 .topic-admin-popup-menu {
+  background-clip: padding-box;
+  background-color: color-chooser(#424242, #ffffff);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
   font-size: 13px;
   line-height: 1.5;
   padding: 16px 0;
 }
 .topic-admin-popup-menu h3 {
   font-size: 13px;
+  font-weight: bolder;
   line-height: 1.5;
+  margin: 0;
   padding: 6.25px 24px;
+  white-space: nowrap;
 }
 .topic-admin-popup-menu .btn {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
   padding: 6.25px 24px;
   margin-bottom: 0;
 }
