@@ -102,6 +102,7 @@
         &:active,
         &:focus {
           flex-grow: 1;
+          min-height: $control-height;
           padding-right: 0;
           width: 1%;
         }
