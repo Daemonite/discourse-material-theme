@@ -16,7 +16,17 @@
   @include btn-base;
   @include btn-raised;
 
+  &:hover,
+  &.btn-hover {
+    .discourse-no-touch & {
+      .d-icon {
+        color: inherit;
+      }
+    }
+  }
+
   .d-icon {
+    color: inherit;
     font-size: ($btn-font-size - 1) !important;
   }
 }
