@@ -1,20 +1,73 @@
 #bulk-select {
   background-color: transparent;
   padding: 0;
-  top: ($btn-height + $header-height + $spacer-y + $spacer-lg);
+  top: ($header-height + $spacer-y);
   right: $spacer-x;
 }
 
-.create-topics-notice {
-  margin-bottom: ($spacer-lg - $spacer-y);
+.dropdown-select-box.period-chooser.select-kit {
+  .period-chooser-header {
+    padding: $btn-padding-y $btn-padding-x;
+
+    &,
+    &:hover,
+    &.is-focused {
+      background-color: color-chooser($btn-bg-dark, $btn-bg-light);
+    }
+
+    &:hover,
+    &.btn-hover {
+      .discourse-no-touch & {
+        background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
+      }
+    }
+
+    &:focus,
+    &.is-focused {
+      background-image: linear-gradient(to bottom, color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light), color-chooser($btn-bg-overlay-dark, $btn-bg-overlay-light));
+    }
+
+    h2 {
+      &.selected-name {
+        font-size: $btn-font-size;
+        font-weight: $btn-font-weight;
+        line-height: 1;
+        margin: 0;
+
+        .date-section {
+          margin-right: 0;
+        }
+
+        .top-date-string:not(:empty) {
+          margin-left: $spacer-x-inline;
+        }
+      }
+    }
+
+    .d-icon {
+      color: inherit;
+      margin: 0 ($spacer-xs / -2) 0 $spacer-xs;
+      vertical-align: top;
+    }
+  }
+
+  .period-chooser-row {
+    font-size: inherit;
+    padding: $dropdown-link-padding-y $dropdown-link-padding-x;
+
+    .top-date-string {
+      font-size: $font-size-sm;
+      margin-left: $spacer-x-inline;
+    }
+  }
+
+  .select-kit-collection {
+    padding: $dropdown-padding-y $dropdown-padding-x;
+  }
 }
 
 #list-area {
-  margin-bottom: $spacer-lg;
-
-  h2 {
-    margin: 0 0 $spacer;
-  }
+  margin-bottom: $spacer-y;
 
   .show-more.has-topics .alert {
     border-bottom: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
@@ -23,8 +76,10 @@
     padding: (($thead-cell-height - $font-size-base * $line-height-base) / 2) ($thead-cell-padding-x * 2);
   }
 
-  .top-lists h2 {
-    margin: 0;
+  .top-lists {
+    h2 {
+      margin: 0;
+    }
   }
 }
 
@@ -33,67 +88,14 @@
   float: none;
 }
 
-.period-chooser {
-  &.dropdown-select-box.select-kit {
-    .period-chooser-header {
-      @include btn-base;
-      @include btn-raised;
-
-      h2 {
-        &.selected-name {
-          display: inline;
-          font-size: $btn-font-size;
-          font-weight: $btn-font-weight;
-          line-height: 1;
-          margin: 0;
-          overflow: hidden;
-
-          .date-section {
-            margin-right: $spacer-xs;
-          }
-
-          .top-date-string {
-            @include typography-caption;
-
-            color: color-chooser($white-secondary, $black-secondary);
-            line-height: 1;
-          }
-        }
-      }
-
-      .d-icon {
-        color: inherit;
-        margin: 0 ($spacer-xs / -2) 0 $spacer-xs;
-        vertical-align: top;
-      }
-    }
-
-    .period-chooser-row {
-      font-size: inherit;
-      font-weight: normal;
-      padding: $dropdown-link-padding-y $dropdown-link-padding-x;
-
-      .top-date-string {
-        @include typography-caption;
-
-        color: color-chooser($white-secondary, $black-secondary);
-        line-height: 1;
-      }
-    }
-
-    .select-kit-collection {
-      padding: $dropdown-padding-y $dropdown-padding-x;
-    }
-  }
-}
-
 .tlp-featured-topics {
   display: none;
 
   &.has-topics {
     @include card;
 
-    margin-bottom: $spacer-lg;
+    display: block;
+    margin-bottom: $spacer-y;
 
     .featured-tags {
       float: none;
@@ -134,15 +136,9 @@
           margin-left: 0;
         }
 
-        &.show-details {
-          .featured-details {
-            background-color: color-chooser($modal-backdrop-bg-dark, $modal-backdrop-bg-light);
-          }
-        }
-
         .excerpt {
           flex: 1 1 auto;
-          margin-bottom: $card-inner-spacer-y;
+          margin-bottom: $spacer-y-inline;
           overflow: hidden;
           padding-bottom: 0;
 
@@ -152,7 +148,7 @@
         }
 
         .title {
-          margin-bottom: ($card-inner-spacer-y / 2);
+          margin-bottom: $spacer-y-inline;
         }
 
         .user {
@@ -162,7 +158,7 @@
 
           .avatar {
             height: floor($font-size-base * $line-height-base);
-            margin-left: ($card-inner-spacer-x / 2);
+            margin-left: $spacer-x-inline;
             width: floor($font-size-base * $line-height-base);
           }
         }
@@ -172,12 +168,13 @@
 }
 
 .top-lists {
-  margin-bottom: $spacer-lg;
+  margin-bottom: $spacer-y;
 }
 
 .top-title-buttons {
-  margin-right: 0;
-  margin-left: $spacer-xs;
+  .btn {
+    margin-right: $spacer-x-inline;
+  }
 }
 
 .topic-bulk-actions-modal {
@@ -292,14 +289,6 @@
     td,
     th {
       @include tbody-cell;
-
-      &:first-of-type {
-        padding-left: ($tbody-cell-padding-x * 2);
-      }
-
-      &:last-of-type {
-        padding-right: ($tbody-cell-padding-x * 2);
-      }
     }
   }
 
@@ -311,25 +300,25 @@
   td {
     &.activity,
     &.age,
-    &.posters,
     &.posts,
     &.views {
       white-space: nowrap;
-      width: 0;
+      width: 1%;
     }
 
-    &.num {
-      &.activity,
-      &.posts {
-        a {
-          padding: $tbody-cell-padding-y 0;
-        }
-      }
+    &.posters {
+      height: $tbody-cell-height;
+      width: ($material-icon-size * 5 + $spacer-x-inline * 4 + $tbody-cell-padding-x * 2);
     }
   }
 
   th {
     font-weight: bolder;
+
+    &.bulk-select {
+      white-space: nowrap;
+      width: 1%;
+    }
   }
 
   thead {
@@ -337,21 +326,13 @@
     th {
       @include thead-cell;
 
-      padding-top: ($thead-cell-padding-y / 2);
-      padding-bottom: ($thead-cell-padding-y / 2);
       white-space: nowrap;
-
-      &:first-of-type {
-        padding-left: ($thead-cell-padding-x * 2);
-      }
-
-      &:last-of-type {
-        padding-right: ($thead-cell-padding-x * 2);
-      }
     }
   }
 
   .avatar {
+    background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
+    display: block;
     height: $material-icon-size;
     vertical-align: middle;
     width: $material-icon-size;
@@ -363,14 +344,13 @@
   }
 
   .btn-flat.bulk-select {
-    margin-right: $spacer-xs;
     margin-left: ($material-icon-size - $btn-height-sm);
     min-width: $btn-height-sm;
     padding: $btn-padding-y-sm 0;
   }
 
   .bulk-select-topics .btn {
-    margin-right: $spacer-xs;
+    margin-right: $spacer-x-inline;
   }
 
   .main-link {
@@ -379,13 +359,17 @@
     a {
       &.title {
         font-weight: bolder;
-        padding-top: $tbody-cell-padding-y;
-        padding-bottom: $tbody-cell-padding-y;
+        padding-top: $spacer-y-inline;
+        padding-bottom: $spacer-y-inline;
+      }
+    }
+  }
 
-        &.visited:not(.badge-notification) {
-          color: color-chooser($tbody-color-dark, $tbody-color-light);
-          font-weight: normal;
-        }
+  .num {
+    &.activity,
+    &.posts {
+      a {
+        padding: $spacer-y-inline 0;
       }
     }
   }
@@ -400,23 +384,21 @@
     }
 
     > a {
-      float: none;
-      margin-right: $spacer-xs;
+      display: block;
+      margin-top: ($spacer-y-inline / 2);
+      margin-right: $spacer-x-inline;
+      margin-bottom: ($spacer-y-inline / 2);
     }
   }
 
   .sortable {
-    @include focus-hover {
+    &:hover {
       background-color: color-chooser($table-bg-hover-dark, $table-bg-hover-light);
     }
   }
 
-  .sorting {
-    color: $thead-color-sorting;
-  }
-
   .topic-category .badge-wrapper {
-    margin-top: $spacer-sm;
+    margin-top: $spacer-y-inline;
   }
 
   .topic-excerpt {
@@ -424,7 +406,7 @@
 
     clear: none;
     float: none;
-    margin-top: $spacer-xs;
+    margin-top: $spacer-y-inline;
     max-height: ($font-size-caption * $line-height-caption * 3);
     padding-right: 0;
 
@@ -449,7 +431,7 @@
 }
 
 .topic-list-bottom {
-  margin: $spacer 0;
+  margin: 0 0 $spacer-y;
 }
 
 .topic-list-item {
@@ -467,9 +449,7 @@
 }
 
 .topic-statuses {
-  display: inline-block;
-  float: none;
-  margin-right: .25em;
+  margin-right: $spacer-x-inline;
 
   .topic-status .d-icon {
     height: auto;
@@ -483,6 +463,6 @@
   padding-bottom: (($font-size-base * $line-height-base - $font-size-base) / 2);
 
   .thumbnail {
-    border-radius: $card-border-radius;
+    border-radius: $table-border-radius;
   }
 }
