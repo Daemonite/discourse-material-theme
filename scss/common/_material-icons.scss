@@ -218,7 +218,8 @@
   @include material-icons('visibility');
 }
 
-.fa-eye-slash {
+.fa-eye-slash,
+.fa-far-eye-slash {
   @include material-icons('visibility_off');
 }
 
