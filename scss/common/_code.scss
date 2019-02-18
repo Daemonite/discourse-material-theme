@@ -2,9 +2,7 @@ code,
 kbd,
 pre,
 samp {
-  body & {
-    font-family: $font-family-monospace;
-  }
+  font-family: $font-family-monospace;
 }
 
 code {
@@ -35,7 +33,7 @@ pre {
   display: block;
   font-size: $font-size-base;
   margin-top: 0;
-  margin-bottom: $spacer;
+  margin-bottom: $spacer-y;
   padding: $pre-padding;
 
   blockquote &,
@@ -60,7 +58,7 @@ pre {
 
 .bd-clipboard {
   .code-highlight & {
-    margin-right: .25em;
+    margin-right: $spacer-x-inline;
     right: ($card-padding-x * -1);
   }
 }
