@@ -6,6 +6,7 @@ section {
       display: flex;
       flex-wrap: wrap;
       margin-right: ($spacer-x * -1);
+      margin-bottom: 0;
     }
 
     h3 {
