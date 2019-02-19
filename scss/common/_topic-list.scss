@@ -179,35 +179,37 @@
 
 .topic-bulk-actions-modal {
   .bulk-buttons {
-    border-top: $modal-border-width solid $black-divider;
-    display: block;
+    border-top: $modal-border-width solid color-chooser($white-divider, $black-divider);
+    flex-direction: column;
     margin-right: ($modal-padding-x * -1);
     margin-left: ($modal-padding-x * -1);
 
-    &:last-child .btn:last-child {
-      border-bottom: 0;
-    }
-
     .btn {
+      @include btn-raised-reverse;
+
       border-bottom: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
       border-radius: 0;
-      display: block;
+      flex-basis: 100%;
       font-weight: normal;
       margin: 0 0 ($modal-border-width * -1);
       max-width: none;
       padding: $modal-inner-spacer-y $modal-padding-x;
       text-align: inherit;
       text-transform: none;
-      width: 100%;
 
       &:last-child {
+        border-bottom: 0;
         margin-bottom: 0;
       }
 
-      .fa {
-        margin-right: ($modal-inner-spacer-x / 2);
+      .d-icon {
+        margin-right: $spacer-x-inline;
         opacity: $nav-link-opacity;
       }
+    }
+
+    .btn-danger {
+      color: unquote('$danger');
     }
   }
 
@@ -259,24 +261,16 @@
 #topic-entrance {
   @include dropdown-menu;
 
-  button {
-    &.btn.jump-bottom {
-      margin: 0;
-    }
+  .btn {
+    @include btn-raised-reverse;
 
-    &.full {
-      margin-bottom: 0;
-      text-align: left;
-
-      i {
-        display: inline-block;
-        float: left;
-        margin-top: 0;
-        margin-right: $spacer-xs;
-        margin-bottom: 0;
-        vertical-align: top;
-      }
-    }
+    border-radius: 0;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0 !important;
+    padding: $dropdown-link-padding-y $dropdown-link-padding-x;
+    text-align: inherit;
+    text-transform: none;
   }
 }
 

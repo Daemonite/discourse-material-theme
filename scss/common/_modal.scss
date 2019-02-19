@@ -607,6 +607,7 @@
 .modal-inner-container {
   margin-top: $header-height;
   margin-bottom: $header-height;
+  padding: 0;
 
   .inline-modal & {
     border: 0;
