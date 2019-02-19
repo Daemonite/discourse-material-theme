@@ -357,7 +357,8 @@
   @include material-icons('brush');
 }
 
-.fa-pencil {
+.fa-pencil,
+.fa-pencil-alt {
   @include material-icons('edit');
 }
 
