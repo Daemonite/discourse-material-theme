@@ -363,6 +363,11 @@
   .select-kit-row {
     line-height: inherit;
 
+    .badge-wrapper .badge-category .d-icon {
+      color: inherit;
+      margin-right: $chip-inner-spacer-x;
+    }
+
     .d-icon {
       margin-right: $dropdown-inner-spacer-x;
     }
