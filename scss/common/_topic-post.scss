@@ -536,6 +536,7 @@ section {
   top: $card-padding-y;
   left: $card-padding-x;
   width: $card-avatar-size;
+  z-index: 4 !important;
 
   .avatar {
     height: $card-avatar-size;
