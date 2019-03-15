@@ -236,17 +236,18 @@ section {
 
   .topic-body {
     background-color: color-chooser($dark-2, $light-2);
-    border-radius: 0;
+    border-radius: 0 !important;
     box-shadow: none;
     margin-bottom: 0;
-    padding: $card-padding-y $card-padding-x;
+    padding: $card-padding-y $card-padding-x !important;
     width: auto;
+    
 
     .topic-meta-data {
       min-height: $card-avatar-size;
-      padding-top: 0;
       padding-right: 0;
-      padding-left: ($card-avatar-size + $card-inner-spacer-y);
+      padding-left: 36px !important;
+      padding-top: 16px !important;
     }
   }
 }
@@ -533,8 +534,8 @@ section {
   border: 0;
   padding: 0;
   position: absolute;
-  top: $card-padding-y;
-  left: $card-padding-x;
+  top: $card-padding-y * 2 !important;
+  left: $card-padding-x * 2 !important;
   width: $card-avatar-size;
 
   .avatar {
@@ -927,6 +928,7 @@ section {
 
 .topic-post {
   border-left: 0;
+  
 
   .boxed > .row {
     position: relative;
@@ -1111,4 +1113,10 @@ section {
    height: 24px !important;
    width: 24px !important;
    font-size: 12px !important;
+}
+
+.nationalflag-post {
+   width: 24px !important;
+   vertical-align: top !important;
+   border-radius: 2px !important;
 }
