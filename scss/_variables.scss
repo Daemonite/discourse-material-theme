@@ -70,7 +70,7 @@ $white-divider:   rgba(255, 255, 255, .12) !default;
 
 // Basics - Misc
 
-$border-radius:     4px !default;
+$border-radius:     2px !default;
 $border-width:      1px !default;
 $control-height:    36px !default;
 $control-height-lg: 40px !default;
@@ -80,18 +80,12 @@ $control-height-sm: 32px !default;
 
 // Basics - Shadows
 
-$shadow-color-1: rgba(0, 0, 0, .14) !default;
-$shadow-color-2: rgba(0, 0, 0, .12) !default;
-$shadow-color-3: rgba(0, 0, 0, .4) !default;
-
-$shadow-24dp:    0 24px 38px 3px $shadow-color-1, 0 9px 46px 8px $shadow-color-2, 0 11px 15px -7px $shadow-color-3 !default;
-$shadow-16dp:    0 16px 24px 2px $shadow-color-1, 0 6px 30px 5px $shadow-color-2, 0 8px 10px -5px $shadow-color-3 !default;
-$shadow-12dp:    0 12px 16px 1px $shadow-color-1, 0 4px 22px 3px $shadow-color-2, 0 6px 7px -4px $shadow-color-3 !default;
-$shadow-8dp:     0 8px 10px 1px $shadow-color-1, 0 3px 14px 2px $shadow-color-2, 0 5px 5px -3px $shadow-color-3 !default;
-$shadow-6dp:     0 6px 10px 0 $shadow-color-1, 0 1px 18px 0 $shadow-color-2, 0 3px 5px -1px $shadow-color-3 !default;
-$shadow-4dp:     0 4px 5px 0 $shadow-color-1, 0 1px 10px 0 $shadow-color-2, 0 2px 4px -1px $shadow-color-3 !default;
-$shadow-3dp:     0 3px 4px 0 $shadow-color-1, 0 1px 8px 0 $shadow-color-2, 0 3px 3px -2px $shadow-color-3 !default;
-$shadow-2dp:     0 2px 2px 0 $shadow-color-1, 0 1px 5px 0 $shadow-color-2, 0 3px 1px -2px $shadow-color-3 !default;
+$shadow-24dp:    0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0 ,0, 0.2) !default;
+$shadow-16dp:    0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2) !default;
+$shadow-8dp:     0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2) !default;
+$shadow-4dp:     0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3) !default;
+$shadow-2dp:     0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !default;
+$shadow-0dp:     none !default;
 
 
 
@@ -139,6 +133,7 @@ $font-size-h1:        45px !default;
 $font-size-h2:        34px !default;
 $font-size-h3:        24px !default;
 $font-size-h4:        20px !default;
+$font-size-title:     18px !default;
 $font-size-h5:        16px !default;
 $font-size-h6:        14px !default;
 $font-size-body:      14px !default;
@@ -162,6 +157,7 @@ $font-weight-h1:        $font-weight-regular !default;
 $font-weight-h2:        $font-weight-regular !default;
 $font-weight-h3:        $font-weight-regular !default;
 $font-weight-h4:        $font-weight-medium !default;
+$font-weight-title:        $font-weight-regular !default;
 $font-weight-h5:        $font-weight-regular !default;
 $font-weight-h6:        $font-weight-medium !default;
 $font-weight-body:      $font-weight-regular !default;
@@ -177,6 +173,7 @@ $letter-spacing-h1:        0 !default;
 $letter-spacing-h2:        0 !default;
 $letter-spacing-h3:        0 !default;
 $letter-spacing-h4:        .02em !default;
+// No support for $letter-spacing-title
 $letter-spacing-h5:        .04em !default;
 $letter-spacing-h6:        0 !default;
 $letter-spacing-body:      0 !default;
@@ -194,6 +191,7 @@ $line-height-h1:        1.066667 !default; // 48px
 $line-height-h2:        1.176471 !default; // 40px
 $line-height-h3:        1.333333 !default; // 32px
 $line-height-h4:        1.4 !default;      // 28px
+// No support for $line-height-title
 $line-height-h5:        1.5 !default;      // 24px
 $line-height-h6:        1.428572 !default; // 20px
 $line-height-body:      1.428572 !default; // 20px
