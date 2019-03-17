@@ -223,6 +223,10 @@
   @include material-icons('visibility_off');
 }
 
+.fa-far-trash-alt {
+  @include material-icons('delete');
+}
+
 .fa-fast-backward {
   @include material-icons('skip_previous');
 }
@@ -358,11 +362,7 @@
 }
 
 .fa-pencil,
-.fa-pencil-alt {
-  @include material-icons('edit');
-}
-
-.fa-pencil-square-o {
+.fa-pencil-alt, .fa-pencil-square-o {
   @include material-icons('edit');
 }
 
@@ -456,6 +456,10 @@
 
 .fa-television {
   @include material-icons('tv');
+}
+
+.fa-thumbs-o-up {
+  @include material-icons('thumb_up');
 }
 
 .fa-thumbtack,
