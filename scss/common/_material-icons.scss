@@ -467,11 +467,9 @@
   @include material-icons('cancel');
 }
 
-.fa-trash {
-  @include material-icons('delete');
-}
-
-.fa-trash-o {
+.fa-trash,
+.fa-trash-o,
+.fa-far-trash-alt {
   @include material-icons('delete');
 }
 
