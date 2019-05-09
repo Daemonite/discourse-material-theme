@@ -79,10 +79,8 @@
   @include material-icons('work');
 }
 
-.fa-calendar {
-  @include material-icons('event');
-}
-
+.fa-calendar,
+.fa-calendar-alt,
 .fa-calendar-plus-o {
   @include material-icons('event');
 }
