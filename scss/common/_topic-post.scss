@@ -1027,7 +1027,7 @@ section {
 }
 
 #topic-title {
-  margin-bottom: ($spacer-y * 2);
+  margin-bottom: $spacer-y;
   padding-top: 0;
 
   a {
@@ -1044,7 +1044,7 @@ section {
 
     font-family: $font-family-serif;
     font-weight: normal;
-    margin: 0 0 ($spacer-y * 2);
+    margin: 0 0 $spacer-y;
     overflow: visible;
   }
 
@@ -1057,7 +1057,6 @@ section {
   }
 
   .title-wrapper {
-    float: none;
     width: auto;
   }
 
