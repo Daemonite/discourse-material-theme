@@ -23,12 +23,6 @@
       }
     }
 
-    i {
-      &.fa {
-        opacity: 1;
-      }
-    }
-
     .back-button {
       @include btn-sm;
     }
@@ -49,10 +43,6 @@
       .btn {
         text-transform: none;
       }
-    }
-
-    .fa {
-      opacity: 1;
     }
 
     .now-date {
