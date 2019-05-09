@@ -157,11 +157,9 @@
   @include material-icons('settings');
 }
 
-.fa-comment {
-  @include material-icons('comment');
-}
-
-.fa-comment-o {
+.fa-comment,
+.fa-comment-o,
+.fa-far-comment {
   @include material-icons('comment');
 }
 
