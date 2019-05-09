@@ -132,7 +132,8 @@
   @include material-icons('close');
 }
 
-.fa-clock-o {
+.fa-clock-o,
+.fa-far-clock {
   @include material-icons('access_time');
 }
 
