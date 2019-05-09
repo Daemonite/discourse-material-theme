@@ -417,7 +417,8 @@
   @include material-icons('signal_cellular_alt');
 }
 
-.fa-smile-o {
+.fa-smile-o,
+.fa-far-smile {
   @include material-icons('insert_emoticon');
 }
 
