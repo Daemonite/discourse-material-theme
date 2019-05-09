@@ -84,8 +84,7 @@
 }
 
 .main-link .topic-category {
-  display: inline-flex;
-  float: none;
+  display: flex;
 }
 
 .tlp-featured-topics {
@@ -249,12 +248,8 @@
 }
 
 .topic-details {
-  overflow: visible;
-  padding-top: 0;
-
-  .discourse-tags {
-    display: inline-block;
-    float: none;
+  .topic-thumbnail + & {
+    overflow: hidden;
   }
 }
 
@@ -432,7 +427,7 @@
   .discourse-tags {
     @include typography-caption;
 
-    margin-top: 0;
+    margin-top: $spacer-y-inline;
 
     .discourse-tag {
       &.box {
