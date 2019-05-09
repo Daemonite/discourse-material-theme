@@ -102,10 +102,7 @@
   @include material-icons('check');
 }
 
-.fa-check-square {
-  @include material-icons('check_box');
-}
-
+.fa-check-square,
 .fa-check-square-o {
   @include material-icons('check_box');
 }
