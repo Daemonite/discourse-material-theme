@@ -404,7 +404,8 @@
   @include material-icons('search');
 }
 
-.fa-shield {
+.fa-shield,
+.fa-shield-alt {
   @include material-icons('security');
 }
 
