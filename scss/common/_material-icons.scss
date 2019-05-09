@@ -477,10 +477,7 @@
   @include material-icons('undo');
 }
 
-.fa-unlock {
-  @include material-icons('lock_open');
-}
-
+.fa-unlock,
 .fa-unlock-alt {
   @include material-icons('lock_open');
 }
