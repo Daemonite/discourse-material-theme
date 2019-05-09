@@ -5306,6 +5306,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
       flex-grow: 1;
   height: auto;
   margin: 0;
+  min-height: 0;
   padding: 0;
 }
 #reply-control .reply-area .ac-wrap {
