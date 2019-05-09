@@ -346,10 +346,7 @@
 }
 
 .fa-pencil,
-.fa-pencil-alt {
-  @include material-icons('edit');
-}
-
+.fa-pencil-alt,
 .fa-pencil-square-o {
   @include material-icons('edit');
 }
