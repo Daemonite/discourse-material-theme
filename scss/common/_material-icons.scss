@@ -351,8 +351,9 @@
   @include material-icons('edit');
 }
 
-.fa-picture-o {
-  @include material-icons('crop_original');
+.fa-picture-o,
+.fa-far-image {
+  @include material-icons('image');
 }
 
 .fa-pie-chart {
