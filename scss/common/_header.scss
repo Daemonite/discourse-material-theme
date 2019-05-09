@@ -20,33 +20,8 @@
   }
 
   .extra-info {
-    &,
-    &.two-rows {
-      h1 {
-        @include typography-h4;
-
-        margin: 0;
-        min-width: 0;
-        width: auto;
-      }
-    }
-  }
-
-  .extra-info-wrapper {
-    margin-left: $header-inner-spacer-x;
-    max-width: 100% !important;
-
-    .badge-wrapper {
-      margin-right: 0;
-      margin-left: $header-inner-spacer-x;
-
-      @include focus-hover {
-        box-shadow: inset 0 0 1px currentColor;
-      }
-
-      &.bullet {
-        margin-top: 0;
-      }
+    h1 {
+      margin: 0;
     }
   }
 
@@ -86,12 +61,6 @@
     }
   }
 
-  .title-wrapper {
-    align-items: center;
-    flex-wrap: nowrap;
-    width: auto;
-  }
-
   .topic-header-extra {
     margin-left: $header-inner-spacer-x;
 
@@ -107,7 +76,7 @@
   }
 
   .d-icon {
-    color: inherit;
+    color: inherit !important;
   }
 
   .icon {
@@ -160,8 +129,49 @@
   }
 }
 
+.extra-info {
+  &,
+  &.two-rows {
+    h1 {
+      @include typography-h4;
+
+      margin: 0;
+      min-width: 0;
+      width: auto;
+    }
+  }
+}
+
+.extra-info-wrapper {
+  margin-left: $header-inner-spacer-x;
+  padding: 0;
+
+  .badge-wrapper {
+    margin-right: 0;
+    margin-left: $header-inner-spacer-x;
+
+    @include focus-hover {
+      box-shadow: inset 0 0 1px currentColor;
+    }
+
+    &.bullet {
+      margin-top: 0;
+    }
+  }
+}
+
 #main-outlet {
   padding-top: ($header-height + $spacer-y);
   padding-right: ($spacer-x / 2);
   padding-left: ($spacer-x / 2);
+}
+
+.title-wrapper {
+  align-items: center;
+  flex-wrap: nowrap;
+
+  .topic-statuses {
+    line-height: inherit;
+    margin-right: $header-inner-spacer-x;
+  }
 }
