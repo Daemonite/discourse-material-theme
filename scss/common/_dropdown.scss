@@ -78,9 +78,9 @@
       color: inherit;
     }
 
-    .fa {
-      color: color-chooser($white-secondary, $black-secondary);
+    .d-icon {
       margin-right: $dropdown-inner-spacer-x;
+      opacity: $nav-link-opacity;
     }
   }
 
