@@ -85,10 +85,7 @@
   @include material-icons('event');
 }
 
-.fa-caret-down {
-  @include material-icons('expand_more');
-}
-
+.fa-caret-down,
 .fa-caret-right {
   @include material-icons('expand_more');
 }
