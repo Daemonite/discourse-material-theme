@@ -6998,6 +6998,9 @@ section.post-menu-area {
   -webkit-transform: none;
           transform: none;
 }
+.embedded-posts.bottom .reply {
+  position: relative;
+}
 .embedded-posts.bottom .row {
   padding-bottom: 0;
 }
