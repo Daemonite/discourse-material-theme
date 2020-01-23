@@ -51,7 +51,7 @@
   }
 
   .d-icon {
-    color: inherit !important;
+    color: inherit;
   }
 
   .icon {
@@ -99,6 +99,10 @@
 
     &::after {
       display: none;
+    }
+
+    .d-icon {
+      color: inherit;
     }
   }
 }
