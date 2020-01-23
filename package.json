@@ -1,20 +1,32 @@
 {
   "name": "discourse-material-theme",
   "author": "Daemon Pty Ltd",
+  "browserslist": [
+    "last 1 major version",
+    ">= 1%",
+    "Android >= 4.4",
+    "Chrome >= 45",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "Firefox >= 38",
+    "iOS >= 9",
+    "Opera >= 30",
+    "Safari >= 9"
+  ],
   "bugs": {
     "url": "https://github.com/sesemaya/discourse-material-theme/issues"
   },
   "description": "Material Design for Discourse",
   "devDependencies": {
-    "autoprefixer": "^9.0.2",
-    "grunt": "^1.0.3",
+    "autoprefixer": "^9.7.4",
+    "grunt": "^1.0.4",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-dev-update": "^2.3.0",
     "grunt-postcss": "^0.9.0",
     "grunt-scss-lint": "^0.5.0",
-    "load-grunt-tasks": "^4.0.0",
-    "time-grunt": "^1.4.0"
+    "load-grunt-tasks": "^5.1.0",
+    "time-grunt": "^2.0.0"
   },
   "engines": {
     "node": ">=4"

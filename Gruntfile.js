@@ -49,21 +49,7 @@ module.exports = function(grunt) {
       options: {
         map: false,
         processors: [
-          require('autoprefixer')({
-            browsers: [
-              '>= 1%',
-              'last 1 major version',
-              'not dead',
-              'Android >= 4.4',
-              'Chrome >= 45',
-              'Edge >= 12',
-              'Explorer >= 10',
-              'Firefox >= 38',
-              'iOS >= 9',
-              'Opera >= 30',
-              'Safari >= 9'
-            ]
-          })
+          require('autoprefixer')
         ]
       },
       common: {
