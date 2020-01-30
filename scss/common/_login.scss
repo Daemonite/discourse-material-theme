@@ -17,6 +17,10 @@
   }
 }
 
+.btn-social.google_oauth2 .d-icon {
+  min-width: 1.75em;
+}
+
 .create-account,
 .login-modal {
   td {
@@ -30,6 +34,17 @@
     &:not(.instructions) {
       td {
         padding-top: 0;
+      }
+    }
+
+    &.instructions {
+      label {
+        margin-bottom: 0;
+        max-width: none;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -47,25 +62,7 @@
       width: 100%;
 
       &:first-child {
-        margin-top: auto;
-      }
-
-      &:last-child {
-        margin-bottom: auto;
-      }
-    }
-  }
-
-  .login-modal {
-    #login-buttons:not(.hidden) {
-      .btn {
-        &:first-child {
-          margin-top: auto;
-        }
-
-        &:last-child {
-          margin-bottom: auto;
-        }
+        margin-top: 0 !important;
       }
     }
   }
@@ -89,8 +86,7 @@
       }
 
       form {
-        margin-bottom: 0;
-        padding: $modal-inner-spacer-y $modal-inner-spacer-x $modal-inner-spacer-y $modal-padding-x;
+        padding: $modal-inner-spacer-y $modal-padding-x;
       }
 
       tr {
@@ -108,23 +104,9 @@
     }
   }
 
-  table {
-    td {
-      &.label {
-        width: auto;
-      }
-    }
-  }
-
   .disclaimer {
     margin: $modal-footer-padding-y $modal-inner-spacer-x;
     text-align: right;
-  }
-
-  .modal-body {
-    form {
-      margin-bottom: 0;
-    }
   }
 
   .modal-footer {
@@ -152,11 +134,11 @@
 
 .login-form {
   .tip {
-    &:empty {
-      + td {
-        max-width: none;
-        min-height: 0;
-      }
+    max-width: none;
+
+    &:not(:empty),
+    &:empty + td {
+      min-height: 0;
     }
   }
 }
@@ -174,6 +156,6 @@
   }
 
   #login-form {
-    padding: $modal-inner-spacer-y $modal-inner-spacer-x $modal-inner-spacer-y $modal-padding-x;
+    padding: $modal-inner-spacer-y $modal-padding-x;
   }
 }

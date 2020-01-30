@@ -21,6 +21,15 @@
   }
 }
 
+.btn-flat.close {
+  box-shadow: none;
+  font-size: $font-size-base;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
 .close {
   color: color-chooser($white-secondary, $black-secondary);
   font-size: $font-size-base;
@@ -37,9 +46,9 @@
 .d-modal-cancel {
   @include btn-base;
 
-  margin: 0 0 0 $card-inner-spacer-x;
-  padding-right: $card-inner-spacer-x;
-  padding-left: $card-inner-spacer-x;
+  margin: 0 0 0 $modal-inner-spacer-x;
+  padding-right: $modal-inner-spacer-x;
+  padding-left: $modal-inner-spacer-x;
 
   &:last-child {
     margin-left: 0;
@@ -266,7 +275,7 @@
 
   color: $white-secondary;
   flex-shrink: 0;
-  margin-left: $spacer-xs;
+  margin-left: $spacer-x-inline;
   position: static;
 }
 
@@ -302,7 +311,7 @@
 
       color: unquote('$tertiary');
       content: 'photo';
-      margin-right: $spacer-xs;
+      margin-right: $spacer-x-inline;
     }
   }
 
@@ -374,9 +383,9 @@
     }
 
     #revision {
-      margin-right: ($card-inner-spacer-x * -1);
+      margin-right: ($modal-inner-spacer-x * -1);
       margin-bottom: $modal-inner-spacer-y;
-      margin-left: ($card-inner-spacer-x * -1);
+      margin-left: ($modal-inner-spacer-x * -1);
 
       .btn {
         @include btn-footer;
@@ -543,10 +552,6 @@
   }
 }
 
-.modal-close {
-  margin-top: ($font-size-h4 * $line-height-h4 - $material-icon-size);
-}
-
 .modal-footer {
   align-items: flex-start;
   border-radius: 0 0 $modal-border-radius $modal-border-radius;
@@ -557,9 +562,9 @@
   :not(.disclaimer) a {
     @include btn-base;
 
-    margin-left: $card-inner-spacer-x;
-    padding-right: $card-inner-spacer-x;
-    padding-left: $card-inner-spacer-x;
+    margin-left: $modal-inner-spacer-x;
+    padding-right: $modal-inner-spacer-x;
+    padding-left: $modal-inner-spacer-x;
 
     &:last-child {
       margin-left: 0;
@@ -575,7 +580,7 @@
   .btn {
     @include btn-raised-reverse();
 
-    margin: 0 0 0 $card-inner-spacer-x;
+    margin: 0 0 0 ($modal-inner-spacer-x / 2);
 
     &:last-child {
       margin-left: 0;
@@ -595,12 +600,17 @@
   border-radius: $modal-border-radius $modal-border-radius 0 0;
   padding: $modal-padding-y $modal-padding-x;
 
+  h3 {
+    @include typography-h4;
+  }
+
+  .modal-close {
+    align-self: auto;
+    padding-left: 0;
+  }
+
   .title {
     margin-right: $modal-inner-spacer-x;
-
-    h3 {
-      @include typography-h4;
-    }
   }
 }
 
