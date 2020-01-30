@@ -15,10 +15,21 @@ code {
 
 kbd {
   background-color: $kbd-bg;
+  border: 0;
   border-radius: $code-border-radius;
+  box-shadow: none;
   color: $kbd-color;
   font-size: $code-font-size;
+  line-height: $line-height-base;
+  margin: 0;
   padding: $code-padding;
+
+  #keyboard-shortcuts-help ul & {
+    color: $kbd-color;
+    font-family: $font-family-monospace;
+    font-size: $code-font-size;
+    padding: $code-padding;
+  }
 
   kbd {
     font-size: 100%;
