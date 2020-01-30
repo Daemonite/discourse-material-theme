@@ -63,6 +63,10 @@
   @include material-icons('airline_seat_flat');
 }
 
+.fa-bell {
+  @include material-icons('notifications');
+}
+
 .fa-bold {
   @include material-icons('format_bold');
 }
@@ -409,7 +413,8 @@
   @include material-icons('security');
 }
 
-.fa-sign-out {
+.fa-sign-out,
+.fa-sign-out-alt {
   @include material-icons('exit_to_app');
 }
 
@@ -424,6 +429,10 @@
 
 .fa-square-o {
   @include material-icons('check_box_outline_blank');
+}
+
+.fa-stream {
+  @include material-icons('view_stream');
 }
 
 .fa-sun-o {

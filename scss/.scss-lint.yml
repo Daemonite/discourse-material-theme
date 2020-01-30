@@ -10,7 +10,7 @@ linters:
     enabled: false
 
   NestingDepth:
-    max_depth: 6
+    max_depth: 7
 
   PropertySortOrder:
     order:
@@ -216,7 +216,7 @@ linters:
     allow_element_with_attribute: true
 
   SelectorDepth:
-    max_depth: 6
+    max_depth: 7
 
   SelectorFormat:
     enabled: false

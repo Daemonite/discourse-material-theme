@@ -1,6 +1,6 @@
 div {
   &.menu-links-header {
-    border-spacing: 0;
+    display: block;
 
     a {
       &.user-activity-link {
@@ -9,12 +9,42 @@ div {
     }
 
     .d-icon-user {
-      margin-right: 0;
+      margin-right: $spacer-x-inline;
+    }
+
+    .fa {
+      color: inherit;
     }
 
     .menu-links-row {
-      margin-right: ($menu-panel-padding-x / -2);
-      margin-left: ($menu-panel-padding-x / -2);
+      margin-bottom: $menu-panel-inner-spacer-y;
+      padding: 0 ($menu-panel-padding-x / 2);
+
+      li {
+        &,
+        &.glyphs {
+          a {
+            padding-right: ($menu-panel-padding-x / 2);
+            padding-left: ($menu-panel-padding-x / 2);
+          }
+        }
+
+        a {
+          border: 0;
+          border-radius: $nav-link-border-radius $nav-link-border-radius 0 0;
+
+          &.active {
+            border: 0;
+            color: unquote('$tertiary');
+
+            &::after {
+              border-top: ($border-width * 2) solid unquote('$tertiary');
+              top: auto;
+              bottom: ($border-width * -1);
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -24,8 +54,6 @@ div {
   border: 0;
   border-radius: $menu-panel-border-radius;
   box-shadow: $menu-panel-box-shadow;
-  color: unquote('$primary');
-  height: auto !important;
   outline: 0;
   padding: 0;
 
@@ -33,78 +61,55 @@ div {
     right: 0;
   }
 
-  &.slide-in {
-    box-shadow: $menu-panel-box-shadow;
-    right: $header-padding-x;
-
-    .panel-body {
-      position: static;
-      width: 100%;
-    }
-  }
-
-  b {
-    &.topics-count {
-      font-size: $font-size-sm;
-    }
-  }
-
   hr {
     margin: $menu-panel-inner-spacer-y 0;
   }
 
   li {
-    &.category-link {
-      padding: ($menu-panel-inner-spacer-y / 2) ($menu-panel-padding-x / 2);
-    }
-
+    &,
     &.heading {
       a {
-        padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x / 2);
-
-        @include active-focus-hover {
-          background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
+        &.widget-link {
+          padding: $menu-panel-inner-spacer-y $menu-panel-padding-x;
         }
       }
     }
 
-    a {
-      border-radius: $menu-panel-border-radius;
+    &.category-link {
       padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x / 2);
-      transition: background-color $transition-duration $transition-timing-function;
 
-      @include active-focus-hover {
-        background-color: color-chooser($menu-panel-item-overlay-dark, $menu-panel-item-overlay-light);
-      }
-
-      &.widget-link {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+      .badge-wrapper.box:last-child {
+        margin-right: 0;
       }
     }
   }
 
-  .badge-notification {
-    vertical-align: top;
+  .categories-link {
+    padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x / 2);
   }
 
   .category-links,
   .menu-links {
-    margin-right: ($menu-panel-padding-x / -2);
-    margin-left: ($menu-panel-padding-x / -2);
+    margin-right: ($menu-panel-padding-x / 2);
+    margin-left: ($menu-panel-padding-x / 2);
+
+    a {
+      &.widget-link {
+        border-radius: $menu-panel-border-radius;
+        padding-right: ($menu-panel-padding-x / 2);
+        padding-left: ($menu-panel-padding-x / 2);
+      }
+    }
   }
 
   .panel-body {
-    border-radius: $menu-panel-border-radius;
     height: auto !important;
     max-height: calc(100vh - #{$header-height + $spacer-y});
     padding: $menu-panel-padding-y $menu-panel-padding-x;
 
     .hamburger-panel &,
     .user-menu & {
-      padding-top: ($menu-panel-padding-y - $menu-panel-inner-spacer-y);
-      padding-bottom: ($menu-panel-padding-y - $menu-panel-inner-spacer-y);
+      padding: ($menu-panel-padding-y - $menu-panel-inner-spacer-y) 0;
     }
   }
 }
@@ -117,19 +122,29 @@ div {
   }
 
   .no-results {
-    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: $menu-panel-padding-y 0 0;
   }
 
   .results {
-    .main-results,
-    .search-result-topic {
+    border-top: $border-width solid color-chooser($white-divider, $black-divider);
+    margin-right: ($menu-panel-padding-x * -1);
+    margin-left: ($menu-panel-padding-x * -1);
+
+    .list {
       min-width: 0;
+
+      .item .blurb {
+        margin-top: 0;
+      }
     }
 
     .main-results {
       + .secondary-results {
-        margin-left: $menu-panel-padding-x;
-        padding-left: $menu-panel-padding-x;
+        margin-bottom: ($menu-panel-padding-y * -1);
+        margin-left: 0;
+        padding-left: 0;
       }
     }
 
@@ -139,11 +154,58 @@ div {
         margin-bottom: 0;
         padding-bottom: $menu-panel-inner-spacer-y;
       }
+
+      .search-result-category,
+      .search-result-group,
+      .search-result-tag,
+      .search-result-user {
+        .list .item .widget-link.search-link {
+          padding: $menu-panel-inner-spacer-y $menu-panel-padding-x;
+        }
+      }
+
+      .search-result-group .group-result {
+        .d-icon {
+          margin-right: ($menu-panel-inner-spacer-x);
+        }
+
+        .group-names {
+          line-height: inherit;
+
+          .slug {
+            @include typography-caption;
+          }
+        }
+      }
+
+      .search-result-tag .discourse-tag {
+        font-size: $code-font-size;
+      }
+
+      .search-result-user .user-result {
+        .avatar {
+          margin-right: ($menu-panel-inner-spacer-x);
+        }
+
+        .user-titles {
+          line-height: inherit;
+
+          .username {
+            @include typography-caption;
+          }
+        }
+      }
+
+      .separator {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
     }
 
     .show-more {
-      margin-top: $menu-panel-inner-spacer-y;
-      padding: 0;
+      border-top: $border-width solid color-chooser($white-divider, $black-divider);
+      margin-bottom: ($btn-padding-y * -1);
+      padding: ($menu-panel-padding-y - $btn-padding-y) 0 0;
       text-align: center;
 
       .widget-link {
@@ -157,14 +219,17 @@ div {
     padding: 0;
 
     + .results {
-      margin-top: $menu-panel-inner-spacer-y;
+      margin-top: $menu-panel-padding-y;
     }
   }
 
+  .search-input {
+    padding: 0;
+  }
+
   .search-link {
-    border-radius: $menu-panel-border-radius;
-    margin: 0 ($menu-panel-padding-x / -2);
-    padding: ($menu-panel-padding-y / 2) ($menu-panel-padding-x / 2);
+    margin-bottom: 0;
+    padding: $menu-panel-inner-spacer-y $menu-panel-padding-x;
     transition: background-color $transition-duration $transition-timing-function;
 
     .blurb {
@@ -174,6 +239,18 @@ div {
     .topic {
       display: block;
       line-height: inherit;
+
+      .badge-wrapper {
+        margin-right: 0;
+        order: 1;
+        transform: scale($chip-sm-scale);
+        transform-origin: 0 50%;
+      }
+
+      .discourse-tag {
+        margin-top: ($menu-panel-inner-spacer-y / 2);
+        margin-bottom: ($menu-panel-inner-spacer-y / 2);
+      }
     }
 
     .topic-statuses:empty {
@@ -203,51 +280,38 @@ div {
 }
 
 .user-menu {
-  .notifications {
+  .quick-access-panel {
     display: block;
 
     li {
-      border-radius: $menu-panel-border-radius;
-      clear: both;
-      margin-right: ($menu-panel-padding-x / -2);
-      margin-bottom: $nav-item-spacer-y;
-      margin-left: ($menu-panel-padding-x / -2);
       transition: background-color $transition-duration $transition-timing-function;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-
       &:not(.show-all) {
-        padding: 0;
+        padding: $menu-panel-inner-spacer-y $menu-panel-padding-x;
 
         .d-icon {
-          margin-right: $menu-panel-inner-spacer-x;
+          margin-right: $dropdown-inner-spacer-x;
           padding-top: 0;
         }
       }
 
-      &.show-all {
+      &.read {
         background-color: transparent;
+
+        &:hover {
+          background-color: unquote('$secondary');
+        }
       }
 
       a {
-        padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x / 2);
-
-        @include active-focus-hover {
-          background-color: transparent;
-        }
+        display: flex;
       }
     }
 
-    .read {
-      background-color: transparent;
-    }
-
-    .show-all .btn {
-      @include btn-raised-reverse;
-
-      padding: $btn-padding-y $btn-padding-x;
+    .show-all {
+      a {
+        background-color: transparent;
+      }
     }
   }
 }
