@@ -1,0 +1,12 @@
+.spinner {
+  height: $material-icon-size;
+  margin-top: $spacer-y;
+  margin-bottom: $spacer-y;
+  width: $material-icon-size;
+
+  &.small {
+    border-width: ($border-width * 2);
+    height: $font-size-base;
+    width: $font-size-base;
+  }
+}
