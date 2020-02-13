@@ -1,79 +1,59 @@
 nav {
   &.post-controls {
-    float: left;
-    position: relative;
+    a,
+    button {
+      color: color-chooser($white-secondary, $black-secondary);
+    }
 
     button {
-      @include btn-footer;
-
-      color: color-chooser($white-secondary, $black-secondary);
       font-size: $btn-font-size;
-      margin-right: 0;
-      padding: $btn-padding-y $card-inner-spacer-x;
-
-      @include focus-hover {
-        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-      }
+      margin-right: ($card-inner-spacer-x / 2);
+      margin-left: 0;
+      padding: $btn-padding-y ($card-inner-spacer-x / 2);
 
       &:active {
-        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
         box-shadow: none;
       }
 
       &.bookmark {
-        padding: $btn-padding-y $card-inner-spacer-x;
+        padding: $btn-padding-y ($card-inner-spacer-x / 2);
       }
 
-      &.d-hover {
-        background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      &.create {
+        align-items: center;
+        display: inline-flex;
+        margin-left: 0;
 
-        &:active {
-          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-        }
-      }
-
-      &.delete {
-        @include focus-hover {
-          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-          color: unquote('$danger');
-        }
-
-        &:active {
-          background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-        }
-
-        &.d-hover {
-          background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
-          color: unquote('$danger');
-
-          &:active {
-            background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-          }
-        }
-      }
-
-      &.like {
-        @include focus-hover {
-          color: unquote('$love');
-        }
-
-        &:active,
-        &.d-hover {
-          color: unquote('$love');
+        .d-icon {
+          margin-right: $spacer-x-inline;
         }
       }
     }
 
     .actions {
       align-items: center;
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
       float: none;
-      margin-right: ($card-inner-spacer-x * -1);
-      margin-left: ($card-inner-spacer-x * -1);
-      padding-top: ($card-padding-y / 2);
-      padding-bottom: ($card-padding-y / 2);
+      padding: ($card-inner-spacer-y / 2) ($card-padding-x / 2);
       text-align: left;
+    }
+
+    .double-button {
+      margin-right: ($card-inner-spacer-x / 2);
+
+      button {
+        &.button-count {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+
+          + .toggle-like {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding-left: ($card-inner-spacer-x / 2);
+          }
+        }
+      }
     }
 
     .highlight-action {
@@ -128,6 +108,10 @@ nav {
     .post-admin-menu {
       @include dropdown-menu;
 
+      right: 50%;
+      bottom: 0;
+      transform: translateX(50%);
+
       h3 {
         @include dropdown-header;
       }
@@ -146,18 +130,11 @@ nav {
     }
 
     .show-replies {
-      @include btn-footer;
+      margin-top: ($card-inner-spacer-y / 2);
+      margin-left: ($card-inner-spacer-x / 2);
 
-      margin-top: ($card-padding-y / 2);
-      margin-right: ($card-inner-spacer-x * 2);
-      margin-bottom: ($card-padding-y / 2);
-
-      &:first-child {
-        margin-left: ($card-inner-spacer-x * -1);
-      }
-
-      i {
-        margin-left: $spacer-xs;
+      .d-icon {
+        margin-left: $spacer-x-inline;
       }
     }
   }
@@ -175,8 +152,7 @@ section {
   position: relative;
 
   &.bottom {
-    margin-right: ($card-padding-x * -1);
-    margin-left: ($card-padding-x * -1);
+    margin: 0;
 
     .collapse-up {
       transform: none;
@@ -225,13 +201,27 @@ section {
 
     border: 0;
     color: color-chooser($white-secondary, $black-secondary);
-    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
-    padding: $btn-padding-y-sm $card-inner-spacer-x;
+    margin: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2);
+    padding-right: ($card-inner-spacer-x / 2);
+    padding-left: ($card-inner-spacer-x / 2);
     position: static;
+
+    &:active,
+    &:focus {
+      color: color-chooser($btn-color-dark, $btn-color-light);
+    }
+
+    &:hover {
+      .discourse-no-touch & {
+        color: color-chooser($btn-color-dark, $btn-color-light);
+      }
+    }
   }
 
   .cooked {
     margin-top: $card-inner-spacer-y;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .topic-avatar {
@@ -270,53 +260,9 @@ section {
 .has-pending-posts {
   border-radius: $card-border-radius;
   margin-top: 0;
-  margin-bottom: $spacer-lg;
+  margin-bottom: $spacer-y-lg;
   max-width: 690px;
   padding: $card-padding-y $card-padding-x;
-}
-
-.meta {
-  align-items: flex-end;
-  background-color: transparent;
-  background-image: linear-gradient(to bottom, transparent 0%, $black-divider percentage(2 / 3), $black-hint 100%);
-  color: $white-primary;
-  display: flex;
-  font-weight: normal;
-  height: ($header-height * 3);
-  max-height: 100%;
-  white-space: nowrap;
-
-  .expand {
-    flex-shrink: 0;
-    margin: 0 $card-padding-x ($card-inner-spacer-y / 2) auto;
-    position: static;
-
-    &::before {
-      @extend %material-icons;
-
-      content: 'zoom_out_map';
-    }
-  }
-
-  .filename {
-    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) $card-padding-x;
-
-    &::before {
-      @extend %material-icons;
-
-      content: 'photo';
-      margin-right: $spacer-xs;
-    }
-  }
-
-  .informations {
-    color: $white-secondary;
-    font-size: inherit;
-    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
-    overflow: hidden;
-    padding-right: 0;
-    text-overflow: ellipsis;
-  }
 }
 
 .moderator .regular > .cooked {
@@ -377,25 +323,18 @@ section {
   margin-left: 0;
 
   ul li {
-    margin: (($btn-height + $card-padding-y - $card-padding-y * 2 - $font-size-base * $line-height-base) / 2) 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-    a[href] {
-      display: inline;
+    .clicks {
+      margin-left: $spacer-x-inline;
     }
 
-    i {
-      margin: 0 $card-inner-spacer-x 0 0;
+    .d-icon {
+      margin-right: $spacer-x-inline;
     }
   }
 
   .post-links {
-    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
-    border-top: 0;
     margin: 0;
-    padding: $card-padding-y ($btn-padding-x + $card-padding-x + $material-icon-size) $card-padding-y $card-padding-x;
+    padding: $card-padding-y $card-padding-x;
 
     li {
       margin: 0;
@@ -405,6 +344,10 @@ section {
       }
     }
   }
+
+  .track-link {
+    display: inline-flex;
+  }
 }
 
 .post-menu-area {
@@ -412,21 +355,44 @@ section {
   margin-bottom: 0;
 }
 
-.posts-wrapper {
-  margin-bottom: ($spacer-lg - $spacer-y);
-}
-
 .read-state {
   font-size: $font-size-base;
   height: $material-icon-size;
   line-height: $material-icon-size;
   top: 0;
+  transform: translate(50%, -50%);
 }
 
 .reply-to-tab {
   img {
     margin-right: ($card-inner-spacer-x / 2);
     margin-left: ($card-inner-spacer-x / 2);
+  }
+}
+
+.selected-posts {
+  border: 0;
+  border-radius: $modal-border-radius;
+  box-shadow: $modal-box-shadow;
+  margin-bottom: 0;
+  padding: $modal-padding-y $modal-padding-x;
+
+  a {
+    &.select-all {
+      text-transform: capitalize;
+    }
+  }
+
+  p {
+    margin-bottom: $modal-inner-spacer-y;
+
+    &.cancel {
+      margin-top: 0;
+
+      a {
+        text-transform: capitalize;
+      }
+    }
   }
 }
 
@@ -455,9 +421,7 @@ section {
 .small-action {
   @include card;
 
-  border-top: 0;
   margin-bottom: $spacer-y;
-  max-width: $topic-body-width;
   position: relative;
 
   &.time-gap {
@@ -483,15 +447,8 @@ section {
   .small-action-desc {
     @include typography-h6;
 
-    color: color-chooser($white-secondary, $black-secondary);
     margin-top: 0;
-    padding: 0 0 0 ($card-inner-spacer-x * 2);
-    text-transform: none;
-
-    &.timegap {
-      color: color-chooser($white-secondary, $black-secondary);
-      display: block;
-    }
+    padding: 0 0 0 $card-padding-x;
 
     > p {
       line-height: 1;
@@ -564,26 +521,13 @@ section {
     }
   }
 
-  .cooked img:not(.thumbnail) {
-    max-width: 100%;
-  }
-
   .regular {
-    margin: 0;
-    padding: $card-padding-y $card-padding-x 0;
-
-    > :first-child {
-      margin-top: 0;
-    }
-
-    > :last-child {
-      margin-bottom: 0;
-    }
+    margin-top: $card-inner-spacer-y;
   }
 
   .reply-to-tab {
     color: color-chooser($white-secondary, $black-secondary);
-    margin: 0 $card-inner-spacer-x 0 0;
+    margin-right: 0;
 
     .avatar {
       height: ($font-size-base * $line-height-base);
@@ -593,52 +537,11 @@ section {
 }
 
 #topic-footer-buttons {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: ($spacer-lg - $spacer-y);
-  max-width: ($spacer-x + $topic-body-width);
+  margin-bottom: $spacer-y-lg;
   padding: 0;
-  width: 100%;
-
-  div > button,
-  span > button,
-  > button {
-    &.btn {
-      margin: 0 $spacer-x $spacer-y 0;
-      max-width: ($topic-body-width / 3);
-    }
-  }
-
-  p {
-    margin-bottom: $spacer-y;
-    vertical-align: middle;
-  }
-
-  span > button,
-  > button {
-    &.btn {
-      flex-basis: 0;
-      flex-grow: 1;
-    }
-  }
-
-  > div:not(.topic-notifications-button) {
-    align-items: flex-start;
-    display: flex;
-    flex-basis: 0;
-    flex-grow: 1;
-    margin-right: $spacer-x;
-  }
 
   .btn {
-    margin: 0;
-  }
-
-  .dropdown-menu {
-    a {
-      @include dropdown-link;
-    }
+    margin: 0 $spacer-x $spacer-y 0;
   }
 
   .fa {
@@ -652,22 +555,31 @@ section {
 
     .btn {
       @include dropdown-link;
+
+      margin: 0;
+    }
+
+    .header .btn {
+      display: none;
     }
   }
 
+  .topic-footer-main-buttons {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .topic-notifications-button {
-    min-width: 100%;
+    margin: 0;
 
     .reason {
       line-height: $line-height-base;
       margin-bottom: 0;
       margin-left: $spacer-x;
+      vertical-align: middle;
     }
   }
-}
-
-.topic-footer-main-buttons {
-  flex-wrap: wrap;
 }
 
 .topic-map {
@@ -694,13 +606,16 @@ section {
   }
 
   .avatar {
-    height: $btn-height;
-    margin-right: $card-inner-spacer-x;
-    width: $btn-height;
+    float: none;
+    margin-right: $spacer-x-inline;
   }
 
   .avatars {
     padding: $card-padding-y $card-padding-x;
+
+    a {
+      display: block;
+    }
 
     .post-count {
       @include typography-caption;
@@ -710,20 +625,22 @@ section {
       display: flex;
       height: ($btn-height / 2);
       padding: 0 ($card-inner-spacer-x / 2);
-      top: ($btn-height / 2 / -4);
-      right: ($card-inner-spacer-x / 2);
+      top: ($btn-height / 2 / -2);
+    }
+
+    > div {
+      margin: ($spacer-y-inline / 2) 0;
     }
   }
 
   .buttons {
-    margin-right: ($card-inner-spacer-x * -1);
-
     .btn {
       @include btn-raised-reverse;
 
-      border-radius: 0 0 $card-border-radius;
-      padding-right: $btn-padding-x;
-      padding-left: $btn-padding-x;
+      border-top: 0;
+      border-radius: 0;
+      padding-right: $card-padding-x;
+      padding-left: $card-padding-x;
     }
   }
 
@@ -785,15 +702,21 @@ section {
   }
 
   .map {
-    padding: 0 ($card-padding-x - $card-inner-spacer-x);
-
     a {
       line-height: 1;
       vertical-align: middle;
     }
 
     li {
-      padding: $card-inner-spacer-y $card-inner-spacer-x;
+      padding: $card-inner-spacer-y ($card-inner-spacer-x / 2);
+
+      &:first-child {
+        padding-left: $card-padding-x;
+      }
+
+      &:last-child {
+        padding-right: $card-padding-x;
+      }
 
       &:nth-child(3),
       &.secondary {
@@ -811,11 +734,6 @@ section {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
-    }
-
-    .avatar {
-      height: ($font-size-base * $line-height-base);
-      width: ($font-size-base * $line-height-base);
     }
 
     .number {
@@ -875,8 +793,10 @@ section {
   }
 
   .topic-links {
+    width: 100%;
+
     .badge-notification {
-      margin: 0 $card-inner-spacer-x 0 0;
+      margin: 0 $spacer-x-inline 0 0;
     }
 
     span {
@@ -894,7 +814,7 @@ section {
     }
 
     .topic-link {
-      margin-right: $card-inner-spacer-x;
+      margin-right: $spacer-x-inline;
     }
   }
 
@@ -905,27 +825,28 @@ section {
 
 .topic-meta-data {
   .topic-post & {
-    align-items: center;
-    display: flex;
     min-height: ($card-avatar-size + $card-padding-y);
     padding: $card-padding-y ($card-padding-x / 2) 0 ($card-avatar-size + $card-inner-spacer-y + $card-padding-y);
   }
 
+  .names {
+    span:last-child {
+      margin-right: 0;
+    }
+  }
+
   .post-info {
     margin-right: 0;
+    margin-left: ($card-inner-spacer-x / 2);
 
     a {
       @include btn-base;
 
       color: color-chooser($white-secondary, $black-secondary);
       font-size: $btn-font-size-sm;
-      padding: $btn-padding-y-sm $card-inner-spacer-x;
+      padding: $btn-padding-y-sm ($card-padding-x / 2);
     }
   }
-}
-
-.topic-notifications-button .reason {
-  margin-bottom: 0;
 }
 
 .topic-post {
@@ -1047,7 +968,6 @@ section {
     @include typography-h1;
 
     font-family: $font-family-serif;
-    font-weight: normal;
     margin: 0 0 $spacer-y;
     overflow: visible;
   }
@@ -1064,16 +984,10 @@ section {
     width: auto;
   }
 
-  .topic-category {
-    margin-top: 0;
-  }
-
   .topic-statuses {
     display: inline-block;
-    float: none;
     font-size: $font-size-base;
     line-height: 1;
-    margin: 0;
     vertical-align: middle;
 
     &:empty {
@@ -1089,18 +1003,13 @@ section {
 }
 
 .who-liked {
-  align-items: center;
   clear: both;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: ($card-inner-spacer-y / 2);
+  margin: 0;
+  padding: 0 $card-padding-x ($card-inner-spacer-y / 2);
   text-align: inherit;
 
   a {
-    margin-top: (($btn-height - $material-icon-size) / 2);
-    margin-right: $card-inner-spacer-x;
-    margin-bottom: (($btn-height - $material-icon-size) / 2);
+    margin: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2) ($card-inner-spacer-y / 2) 0;
   }
 
   .avatar {

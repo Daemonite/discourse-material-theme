@@ -218,6 +218,13 @@
   @include material-icons('visibility_off');
 }
 
+.fa-far-edit,
+.fa-pencil,
+.fa-pencil-alt,
+.fa-pencil-square-o {
+  @include material-icons('edit');
+}
+
 .fa-fast-backward {
   @include material-icons('skip_previous');
 }
@@ -347,12 +354,6 @@
 
 .fa-paint-brush {
   @include material-icons('brush');
-}
-
-.fa-pencil,
-.fa-pencil-alt,
-.fa-pencil-square-o {
-  @include material-icons('edit');
 }
 
 .fa-picture-o,
@@ -501,6 +502,10 @@
 
 .fa-user-plus {
   @include material-icons('person_add');
+}
+
+.fa-user-shield {
+  @include material-icons('verified_user');
 }
 
 .fa-user-times {

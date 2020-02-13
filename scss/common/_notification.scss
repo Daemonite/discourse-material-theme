@@ -7,8 +7,8 @@
 
   .close {
     font-size: inherit;
-    top: .125em;
-    right: 0;
+    top: ($card-padding-y / 2);
+    right: ($card-padding-x / 2);
   }
 }
 

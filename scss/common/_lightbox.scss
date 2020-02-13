@@ -1,0 +1,51 @@
+a {
+  &.lightbox {
+    &:hover {
+      .discourse-no-touch & {
+        border-radius: 0;
+        box-shadow: $card-box-shadow;
+      }
+    }
+  }
+}
+
+.lightbox {
+  img {
+    width: 100%;
+  }
+}
+
+.meta {
+  align-items: flex-end;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 0%, $black-divider percentage(2 / 3), $black-hint 100%);
+  color: $white-primary;
+  display: flex;
+  font-weight: normal;
+  max-height: 100%;
+  min-height: ($header-height * 3);
+  white-space: nowrap;
+
+  .d-icon {
+    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+    min-height: ($font-size-base * $line-height-base);
+    min-width: ($font-size-base * $line-height-base);
+  }
+
+  .d-icon-discourse-expand {
+    margin-left: 0;
+  }
+
+  .filename {
+    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+
+    + .informations {
+      margin-left: 0;
+    }
+  }
+
+  .informations {
+    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+    padding-right: 0;
+  }
+}

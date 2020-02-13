@@ -4,6 +4,7 @@
   @include btn-base;
 
   .d-icon {
+    color: inherit;
     font-size: ($btn-font-size - 1) !important;
   }
 }

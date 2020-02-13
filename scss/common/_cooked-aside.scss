@@ -24,6 +24,12 @@ aside {
       }
     }
 
+    &[class*='github'] .onebox-body {
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+
     header {
       margin-bottom: ($card-inner-spacer-y / 2);
     }
@@ -75,19 +81,30 @@ aside {
       }
 
       .date {
-        margin-bottom: $card-inner-spacer-y;
+        margin-bottom: ($card-inner-spacer-y / 2);
         overflow: hidden;
 
         &,
         .user {
           margin-top: 0 !important;
         }
+
+        .user {
+          display: inline;
+          text-transform: capitalize;
+
+          &::after {
+            content: '.';
+          }
+        }
       }
 
       .onebox-avatar {
         border-radius: 50%;
         height: $card-avatar-size;
-        margin-right: ($card-inner-spacer-x * 2);
+        margin-top: ($card-inner-spacer-y / 4);
+        margin-right: $card-inner-spacer-x;
+        margin-bottom: ($card-inner-spacer-y / 4);
         width: $card-avatar-size;
       }
     }
@@ -107,6 +124,10 @@ aside {
 
     .badge-wrapper {
       margin-left: $card-inner-spacer-x;
+
+      &:last-child {
+        margin-right: $card-inner-spacer-x;
+      }
     }
 
     .expanded-quote {
@@ -139,9 +160,7 @@ aside {
 
     .title {
       align-items: center;
-      background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       border-left: 0;
-      color: color-chooser($white-secondary, $black-secondary);
       display: flex;
       padding: $card-padding-y $card-padding-x 0;
 
@@ -336,7 +355,6 @@ div {
 }
 
 .quote-controls {
-  color: color-chooser($white-secondary, $black-secondary);
   flex-shrink: 0;
   margin-left: auto;
   order: 1;

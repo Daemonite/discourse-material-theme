@@ -1,4 +1,4 @@
-#suggested-topics {
+.suggested-topics {
   margin-bottom: $spacer-lg;
   padding: 0;
 
@@ -17,19 +17,19 @@
     }
   }
 
-  table {
-    margin-top: 0;
-    table-layout: auto;
-  }
-
-  > h3:first-of-type {
-    align-items: center;
+  .suggested-topics-title {
     background-color: color-chooser($table-bg-dark, $table-bg-light);
+    border-radius: $table-border-radius $table-border-radius 0 0;
     box-shadow: $table-box-shadow;
-    display: flex;
     margin: 0;
     min-height: $thead-cell-height;
     padding: $card-padding-y ($thead-cell-padding-x * 2);
+  }
+
+  .topic-list {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
   }
 
   .topics {

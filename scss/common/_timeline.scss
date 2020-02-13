@@ -16,6 +16,8 @@
 
 .timeline-container {
   .topic-timeline {
+    margin-left: 0;
+
     div > button,
     span > button {
       &.btn {
@@ -43,28 +45,30 @@
       .btn {
         text-transform: none;
       }
+
+      .close-button {
+        display: none;
+      }
     }
 
     .now-date {
-      color: color-chooser($white-secondary, $black-secondary);
       margin-top: 0;
-    }
-
-    .start-date {
-      color: color-chooser($white-secondary, $black-secondary);
-    }
-
-    .timeline-ago {
-      color: color-chooser($white-secondary, $black-secondary);
     }
 
     .timeline-controls {
       margin-bottom: $spacer;
+
+      &:empty {
+        display: none;
+      }
     }
 
     .timeline-footer-controls {
-      line-height: inherit;
       margin-top: $spacer;
+
+      &:empty {
+        display: none;
+      }
 
       .widget-component-connector {
         vertical-align: middle;
@@ -78,6 +82,8 @@
     }
 
     .timeline-last-read {
+      align-items: center;
+      display: flex;
       margin-left: ($progress-height * -1);
 
       i {
@@ -118,7 +124,7 @@
       border-left: 0;
       margin-top: $spacer;
       margin-bottom: $spacer;
-      margin-left: $spacer-sm;
+      margin-left: 0;
     }
 
     .timeline-scroller {

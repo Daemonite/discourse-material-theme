@@ -128,12 +128,15 @@
 
     margin: 0 $header-inner-spacer-x 0 0;
     min-width: 1px;
+    width: auto;
   }
 
   .topic-header-extra .discourse-tags {
-    @include typography-caption;
+    font-size: inherit;
 
-    margin-right: $header-inner-spacer-x - $spacer-x-inline;
+    .discourse-tag {
+      display: inline-block;
+    }
   }
 }
 
