@@ -274,6 +274,10 @@
   @include material-icons('send');
 }
 
+.fa-hands-helping {
+  @include material-icons('people');
+}
+
 .fa-header {
   @include material-icons('format_size');
 }

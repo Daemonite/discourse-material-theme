@@ -355,6 +355,15 @@ section {
   margin-bottom: 0;
 }
 
+.post-notice {
+  border: 0;
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  margin-bottom: $spacer-y;
+  max-width: $topic-body-width;
+  padding: $card-padding-y $card-padding-x;
+}
+
 .read-state {
   font-size: $font-size-base;
   height: $material-icon-size;
