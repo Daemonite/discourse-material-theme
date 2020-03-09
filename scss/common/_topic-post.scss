@@ -246,14 +246,11 @@ section {
 }
 
 .gap {
-  @include typography-caption;
+  @include typography-h6;
 
-  color: color-chooser($white-secondary, $black-secondary);
-  font-weight: bolder;
   margin-bottom: $spacer-y;
   max-width: 100%;
-  padding: $spacer-y ($card-inner-spacer-x * 2);
-  text-transform: none;
+  padding: 0 $card-padding-x;
   width: $topic-body-width;
 }
 
@@ -431,6 +428,7 @@ section {
   @include card;
 
   margin-bottom: $spacer-y;
+  max-width: $topic-body-width;
   position: relative;
 
   &.time-gap {
@@ -440,16 +438,16 @@ section {
   }
 
   button {
-    @include btn-base;
+    @include btn-footer;
+    @include btn-raised-reverse;
 
     color: color-chooser($white-secondary, $black-secondary);
-    font-size: $btn-font-size-sm;
     margin-top: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
+    margin-right: ($card-inner-spacer-x / 2);
     margin-bottom: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
-    padding: $btn-padding-y-sm $card-inner-spacer-x;
 
     &:first-child {
-      margin-right: ($card-inner-spacer-x * -1);
+      margin-right: ($card-padding-x / -2);
     }
   }
 

@@ -20,6 +20,10 @@
   border: 0;
 }
 
+.badge-notification.clicks {
+  padding: $code-padding;
+}
+
 .badge-wrapper {
   font-size: $font-size-sm;
   font-weight: normal;

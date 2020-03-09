@@ -63,7 +63,8 @@
   @include material-icons('airline_seat_flat');
 }
 
-.fa-bell {
+.fa-bell,
+.fa-far-bell {
   @include material-icons('notifications');
 }
 
@@ -483,7 +484,7 @@
 
 .fa-trash,
 .fa-trash-o,
-.fa-far-trash-alt {
+.fa-trash-alt {
   @include material-icons('delete');
 }
 
