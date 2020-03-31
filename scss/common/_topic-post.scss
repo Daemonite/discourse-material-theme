@@ -359,6 +359,10 @@ section {
   margin-bottom: $spacer-y;
   max-width: $topic-body-width;
   padding: $card-padding-y $card-padding-x;
+
+  &.old {
+    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+  }
 }
 
 .read-state {
