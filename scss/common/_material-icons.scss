@@ -210,7 +210,8 @@
   @include material-icons('fullscreen');
 }
 
-.fa-eye {
+.fa-eye,
+.fa-far-eye {
   @include material-icons('visibility');
 }
 
