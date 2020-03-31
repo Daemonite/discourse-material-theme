@@ -29,6 +29,10 @@
     name: 'font-awesome',
   
     string(icon, params) {
+      if (icon.id.slice(0, 3) === 'fab') {
+        return `<svg class="fa d-icon d-icon-${icon.id} svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#${icon.id}"></use></svg>`;
+      }
+
       let tagName = params.tagName || 'i';
       let html    = `<${tagName} class="${faClasses(icon, params)}"`;
 
