@@ -423,6 +423,10 @@
   @include material-icons('search');
 }
 
+.fa-share {
+  @include material-icons('share');
+}
+
 .fa-shield,
 .fa-shield-alt {
   @include material-icons('security');
