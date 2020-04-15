@@ -176,6 +176,14 @@
   @include material-icons('desktop_mac');
 }
 
+.fa-discourse-compress {
+  @include material-icons('fullscreen_exit');
+}
+
+.fa-discourse-expand {
+  @include material-icons('fullscreen');
+}
+
 .fa-dot-circle-o,
 .fa-far-dot-circle {
   @include material-icons('radio_button_checked');
