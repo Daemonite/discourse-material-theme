@@ -1,9 +1,12 @@
 .composer-popup {
   border-radius: $modal-border-radius;
   box-shadow: $modal-box-shadow;
+  margin-left: $card-padding-x;
   padding: $modal-padding-y $modal-padding-x;
   top: ($material-icon-size + $spacer * 2);
   bottom: ($btn-height + $card-padding-y + $spacer);
+  left: 50%;
+  width: calc(50% - #{$card-padding-x * 2});
 
   a {
     &.close {
@@ -12,7 +15,7 @@
       font-size: $font-size-base;
       opacity: 1;
       position: relative;
-      top: (($font-size-h3 * $line-height-h3 - $font-size-h3) / 2);
+      top: 0;
       right: 0;
 
       @include active-focus-hover {
@@ -111,8 +114,10 @@
 
     .grippie {
       border-radius: 0;
-      display: flex;
-      flex-shrink: 0;
+
+      &::before {
+        display: none;
+      }
     }
 
     .reply-to {
@@ -125,11 +130,6 @@
 
   &.hide-preview .toggle-preview::before {
     content: 'keyboard_arrow_left';
-  }
-
-  &.open .grippie {
-    display: flex;
-    flex-shrink: 0;
   }
 
   &.saving {
@@ -169,26 +169,6 @@
     flex-shrink: 0;
   }
 
-  .composer-controls .btn-flat,
-  .toggle-toolbar,
-  .toggler {
-    background-color: transparent !important;
-    color: color-chooser($black-secondary, $white-secondary);
-    font-size: inherit;
-    height: $material-icon-size;
-    margin-left: $card-inner-spacer-x;
-    padding: 0 !important;
-    width: $material-icon-size;
-
-    @include focus-hover {
-      color: color-chooser($black-primary, $white-primary);
-    }
-
-    &:active {
-      color: color-chooser($black-primary, $white-primary);
-    }
-  }
-
   .composer-fields {
     align-items: center;
     display: flex;
@@ -211,32 +191,8 @@
     display: flex;
   }
 
-  .d-editor-button-bar {
-    .btn {
-      font-size: $btn-font-size-sm;
-      padding: $btn-padding-y-sm $card-inner-spacer-x;
-    }
-
-    .select-kit-body {
-      border-radius: $modal-border-radius;
-    }
-
-    .select-kit-header {
-      background-color: transparent;
-      box-shadow: none;
-      font-size: $btn-font-size-sm;
-      height: auto;
-      padding: $btn-padding-y-sm $card-inner-spacer-x;
-
-      &.is-focused {
-        background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
-      }
-    }
-  }
-
   .d-editor-preview {
     border: 0;
-    border-left: 1px solid color-chooser($white-divider, $black-divider);
     border-radius: 0;
 
     img:not(.avatar):not(.emoji):not(.site-icon):not(.thumbnail) {
@@ -251,13 +207,8 @@
   }
 
   .d-editor-textarea-wrapper {
-    background-color: transparent;
     border: 0;
     border-radius: 0;
-  }
-
-  .dropdown-select-box {
-    height: auto;
   }
 
   #edit-reason {
@@ -275,6 +226,7 @@
     align-items: center;
     background-color: color-chooser($modal-bg-light, $modal-bg-dark);
     color: color-chooser($black-secondary, $white-secondary);
+    display: flex;
     flex-shrink: 0;
     height: ($material-icon-size + $spacer);
     justify-content: center;
@@ -312,8 +264,6 @@
   .reply-area {
     flex-grow: 1;
     height: auto;
-    margin: 0;
-    min-height: 0;
     padding: 0;
 
     .ac-wrap {
@@ -329,38 +279,36 @@
     color: color-chooser($black-secondary, $white-secondary);
     margin: 0;
 
-    a,
-    button,
-    i,
-    .d-icon {
-      color: inherit;
-    }
-
     .action-title {
       line-height: $material-icon-size;
       min-width: 0;
     }
 
     .avatar {
-      margin-right: $spacer-xs;
-      margin-left: $spacer-xs;
+      margin-right: $spacer-x-inline;
+      margin-left: $spacer-x-inline;
     }
 
     .btn {
-      background-color: transparent !important;
+      background-image: none;
       border: 0;
       box-shadow: none;
-      height: $material-icon-size;
-      margin-right: $spacer-xs;
-      min-height: 0;
+      color: inherit;
+      margin-right: ($card-inner-spacer-x / 2);
+      min-height: $material-icon-size;
 
       @include focus-hover {
+        background-color: transparent;
         color: color-chooser($black-primary, $white-primary);
       }
 
       &:active,
       &.is-focused {
         color: color-chooser($black-primary, $white-primary);
+      }
+
+      .d-icon {
+        color: inherit;
       }
     }
 
@@ -381,6 +329,7 @@
       }
 
       .topic-link {
+        color: inherit;
         margin-right: 0;
 
         @include focus-hover {
@@ -394,15 +343,30 @@
     }
 
     .composer-controls {
-      margin-right: 0;
       position: absolute;
       top: ($spacer / 2);
       right: $card-padding-x;
-    }
 
-    .d-icon {
-      border: 0;
-      padding: 0;
+      .btn-flat {
+        color: color-chooser($black-secondary, $white-secondary);
+        height: $material-icon-size;
+        margin-left: $card-inner-spacer-x;
+        padding: 0;
+        width: $material-icon-size;
+
+        @include focus-hover {
+          background-color: transparent;
+          color: color-chooser($black-primary, $white-primary);
+        }
+
+        &:active {
+          color: color-chooser($black-primary, $white-primary);
+        }
+      }
+
+      .d-icon {
+        color: inherit;
+      }
     }
 
     .reply-details {
@@ -413,10 +377,6 @@
 
       .d-icon {
         opacity: 1;
-      }
-
-      .select-kit-body {
-        border-radius: $dropdown-border-radius;
       }
     }
   }
@@ -434,15 +394,28 @@
     }
   }
 
+  .select-kit {
+    &.dropdown-select-box.toolbar-popup-menu-options .select-kit-body {
+      padding-top: $dropdown-padding-y;
+      padding-bottom: $dropdown-padding-y;
+
+      .select-kit-collection {
+        border-radius: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
   .submit-panel {
-    border-top: 1px solid color-chooser($white-divider, $black-divider);
+    border-top: $border-width solid color-chooser($white-divider, $black-divider);
     margin: 0;
     padding: ($card-padding-y / 2) $card-padding-x;
 
     .cancel {
       @include btn-base;
 
-      margin-left: $card-inner-spacer-x;
+      margin-left: ($card-inner-spacer-x / 2);
     }
   }
 
@@ -460,12 +433,12 @@
   .toggle-preview {
     @include btn-base;
 
-    margin-right: ($card-inner-spacer-x * -1);
+    margin-right: ($card-padding-x / -2);
     overflow: hidden;
-    padding-right: $card-inner-spacer-x;
-    padding-left: $card-inner-spacer-x;
-    text-indent: 100%;
-    width: ($card-inner-spacer-x * 2 + $material-icon-size);
+    padding-right: ($card-padding-x / 2);
+    padding-left: ($card-padding-x / 2);
+    text-indent: ($card-padding-x + $material-icon-size);
+    width: ($card-padding-x + $material-icon-size);
 
     &::before {
       @extend %material-icons;

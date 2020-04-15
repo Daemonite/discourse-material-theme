@@ -47,15 +47,35 @@
   border-bottom: 0;
   flex-shrink: 0;
   flex-wrap: wrap;
-  height: auto;
   margin: 0;
   min-height: 0;
-  padding: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+  padding: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2);
 
   .btn {
+    @include btn-footer;
     @include btn-raised-reverse;
 
-    color: inherit;
+    color: color-chooser($white-secondary, $black-secondary);
+    padding-top: $btn-padding-y;
+    padding-bottom: $btn-padding-y;
+
+    .d-icon {
+      color: inherit;
+    }
+  }
+
+  .d-editor-spacer {
+    height: $btn-height;
+    margin-right: 0;
+    margin-left: ($card-inner-spacer-x / 2);
+  }
+
+  .dropdown-select-box {
+    margin-left: ($card-inner-spacer-x / 2);
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
@@ -99,6 +119,7 @@
 }
 
 .d-editor-preview-wrapper {
+  background-color: color-chooser($text-field-bg-dark, $text-field-bg-light);
   margin-left: $card-padding-x;
   max-width: calc(50% - #{$card-padding-x / 2});
 
@@ -113,12 +134,12 @@
 
 .d-editor-spacer {
   background-color: color-chooser($white-divider, $black-divider);
-  height: $btn-height-sm;
+  height: $btn-height;
   margin: 0 ($card-inner-spacer-x / 2);
 }
 
 .d-editor-textarea-wrapper {
-  background-color: color-chooser($text-field-bg-dark, $text-field-bg-light);
+  background-color: transparent;
   border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
   border-radius: $text-field-border-radius;
 }
