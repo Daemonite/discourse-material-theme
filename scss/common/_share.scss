@@ -1,17 +1,42 @@
 #share-link {
   @include card;
 
-  h3 {
-    @include typography-h4;
-
-    float: none;
-    margin: 0 ($card-inner-spacer-x + $material-icon-size) $card-inner-spacer-y 0;
-  }
-
   input[type='text'] {
     font-size: $text-field-font-size;
     margin-bottom: $text-field-margin-y;
     width: 100%;
+  }
+
+  .actions {
+    margin-top: 0;
+
+    .alt-actions {
+      height: auto;
+      margin-right: ($card-inner-spacer-x / -2);
+      min-height: $btn-height;
+
+      .btn.close {
+        padding: $btn-padding-y ($card-inner-spacer-x / 2);
+
+        &:hover {
+          .discourse-no-touch & {
+            background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+          }
+        }
+      }
+
+      .new-topic {
+        margin-right: ($card-inner-spacer-x / 2);
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: ($card-inner-spacer-y / 2);
+
+    h3 {
+      @include typography-h4;
+    }
   }
 
   .link {
@@ -35,10 +60,6 @@
   }
 
   .reply-as-new-topic {
-    float: right;
-    margin-top: 0;
-    margin-right: ($card-inner-spacer-x * -1);
-
     a {
       @include btn-base;
       @include btn-footer;
