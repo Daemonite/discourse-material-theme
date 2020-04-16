@@ -11,6 +11,12 @@ code {
   color: color-chooser($code-color-dark, $code-color-light);
   font-size: $code-font-size;
   padding: $code-padding;
+
+  li > &,
+  p > & {
+    background-color: color-chooser($code-bg-dark, $code-bg-light);
+    color: color-chooser($code-color-dark, $code-color-light);
+  }
 }
 
 kbd {
