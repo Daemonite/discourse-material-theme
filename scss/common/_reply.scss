@@ -189,6 +189,11 @@
 
   .d-editor {
     display: flex;
+    min-height: 1px;
+  }
+
+  .d-editor-container {
+    min-width: 1px;
   }
 
   .d-editor-preview {
@@ -204,11 +209,13 @@
   .d-editor-preview-wrapper {
     margin-left: 0;
     max-width: 50%;
+    min-width: 1px;
   }
 
   .d-editor-textarea-wrapper {
     border: 0;
     border-radius: 0;
+    min-width: 1px;
   }
 
   #edit-reason {
@@ -260,8 +267,9 @@
   }
 
   .reply-area {
-    flex-grow: 1;
+    flex: 1 1 auto;
     height: auto;
+    min-height: 1px;
     padding: 0;
 
     .ac-wrap {
@@ -487,5 +495,9 @@
     .add-warning {
       margin-bottom: 0;
     }
+  }
+
+  .wmd-controls {
+    min-height: 1px;
   }
 }
