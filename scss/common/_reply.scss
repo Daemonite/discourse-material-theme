@@ -212,14 +212,12 @@
   }
 
   #edit-reason {
-    background-color: color-chooser($black-divider, $white-divider);
-    border-bottom: 0;
-    display: inline-block;
+    background-color: color-chooser($white-divider, $black-divider);
+    color: inherit;
     font-size: $font-size-sm;
-    height: ($font-size-base * $line-height-base);
     margin: 0 0 0 ($card-inner-spacer-x / 2);
+    min-height: $material-icon-size;
     padding: 0 ($card-inner-spacer-x / 2);
-    width: auto;
   }
 
   .grippie {
