@@ -3,8 +3,8 @@
   background-color: color-chooser($modal-bg-dark, $modal-bg-light);
   border-radius: $modal-border-radius;
   box-shadow: $modal-box-shadow;
+  max-width: calc(100% - #{$spacer * 2});
   outline: 0;
-  width: calc(100% - #{$spacer * 2});
 }
 
 .bootbox.modal {
