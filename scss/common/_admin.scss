@@ -814,6 +814,12 @@ table {
   }
 }
 
+.explorer-pad-bottom {
+  body & {
+    margin-bottom: 0;
+  }
+}
+
 .groups-bulk {
   .admin-contents & {
     @include card;
@@ -837,6 +843,18 @@ table {
 
   p {
     margin: 0 0 0 calc(20px + #{$spacer-x-inline} + .25em);
+  }
+}
+
+.https-warning,
+.query-create,
+.query-edit,
+.query-list,
+.query-params,
+.query-results,
+.query-run {
+  body & {
+    margin: 0 0 $spacer-y;
   }
 }
 
@@ -928,18 +946,88 @@ table {
   margin-top: 0;
 }
 
+.query-edit {
+  &:not(.editing) .desc {
+    body & {
+      margin: 0 0 $spacer-y;
+    }
+  }
+
+  > .name {
+    body & {
+      margin-bottom: $spacer-y;
+    }
+  }
+
+  button {
+    &.previous {
+      body & {
+        margin-right: $spacer-x;
+      }
+    }
+  }
+
+  .groups {
+    body & {
+      margin-bottom: $spacer-y;
+    }
+  }
+}
+
 .query-list {
   align-items: center;
-  margin: 0 0 $spacer-y;
-  max-height: none;
+
+  body & {
+    max-height: none;
+  }
 
   input[type="text"] {
-    margin-right: $spacer-x-inline;
+    margin-right: $spacer-x;
     margin-bottom: 0;
   }
 
   .btn-right {
-    margin-right: $spacer-x-inline;
+    body & {
+      margin-right: $spacer-x;
+    }
+  }
+}
+
+.query-params {
+  width: 100%;
+
+  .param {
+    align-items: center;
+
+    body & {
+      display: inline-flex;
+    }
+
+    > input {
+      body & {
+        margin: $spacer-y $spacer-x;
+      }
+    }
+
+    input[type='checkbox'] {
+      margin: 0 $spacer-x-inline 0 $spacer-x;
+      width: auto;
+    }
+  }
+}
+
+.query-run {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  .query-plan {
+    margin-bottom: 0;
+
+    body & {
+      display: inline-flex;
+      margin-left: $spacer-x;
+    }
   }
 }
 
