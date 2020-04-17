@@ -121,6 +121,11 @@ table {
     margin: 0;
     padding: 0;
 
+    &.search label input {
+      margin-top: 0;
+      margin-right: $spacer-x-inline;
+    }
+
     ~ .controls {
       margin-left: $card-inner-spacer-x;
       width: auto;

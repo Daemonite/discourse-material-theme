@@ -9,7 +9,7 @@ form {
 
 input[type="checkbox"],
 input[type="radio"] {
-  margin-top: (($font-size-base * $line-height-base - 12) / 2);
+  margin-top: (($font-size-base * $line-height-base - $font-size-base) / 2);
   margin-right: $spacer-x-inline;
   margin-left: 0;
 }
