@@ -98,6 +98,10 @@ table {
 
   margin-bottom: $spacer-y;
 
+  button {
+    margin-right: ($card-inner-spacer-x / 2);
+  }
+
   label {
     margin-right: $spacer-x-inline;
 
@@ -113,6 +117,16 @@ table {
     &::after,
     &::before {
       display: none;
+    }
+  }
+
+  .admin-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    button:last-child {
+      margin-right: 0;
     }
   }
 
@@ -157,7 +171,17 @@ table {
     width: 100%;
 
     > li {
-      margin-right: $nav-item-spacer-x;
+      &:not(:last-child) {
+        margin-right: $nav-item-spacer-x;
+      }
+
+      &.admin-actions {
+        margin-left: auto;
+
+        &:not(:first-child) {
+          padding-left: ($card-inner-spacer-x / 2 - $nav-item-spacer-x);
+        }
+      }
     }
   }
 
@@ -256,6 +280,16 @@ table {
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+
+  .current-style .nav-pills li {
+    margin-right: $nav-item-spacer-x;
+
+    label {
+      align-self: center;
+      display: flex;
+      padding: 0;
     }
   }
 
