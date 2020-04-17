@@ -496,9 +496,25 @@ table {
   }
 }
 
-.admin-customize-email-templates .admin-container > .row {
-  align-items: flex-start;
-  display: flex;
+.admin-customize-email-templates {
+  .admin-container {
+    > .row {
+      align-items: flex-start;
+      display: flex;
+    }
+
+    > .select-kit:first-child {
+      margin-bottom: $spacer-y;
+    }
+  }
+
+  .controls {
+    margin-top: $spacer-y;
+  }
+
+  .email-template {
+    margin-top: 0;
+  }
 }
 
 .admin-detail {
@@ -720,6 +736,10 @@ table {
   @include table;
 }
 
+.email-preview .digest-refresh-button {
+  margin-left: 0;
+}
+
 .email-preview-digest {
   > br {
     display: none;
@@ -728,8 +748,11 @@ table {
   .controls {
     @include card;
 
-    margin-bottom: $spacer-y;
-    margin-left: 0;
+    margin: 0 0 $spacer-y;
+
+    input[type='text'] {
+      margin-bottom: $text-field-margin-y;
+    }
 
     label {
       display: inline-block;
