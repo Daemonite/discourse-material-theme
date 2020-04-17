@@ -120,6 +120,14 @@
   @include material-icons('keyboard_arrow_down');
 }
 
+.fa-chevron-left {
+  @include material-icons('keyboard_arrow_left');
+}
+
+.fa-chevron-right {
+  @include material-icons('keyboard_arrow_right');
+}
+
 .fa-chevron-up {
   @include material-icons('keyboard_arrow_up');
 }
