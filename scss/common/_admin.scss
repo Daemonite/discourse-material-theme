@@ -75,6 +75,10 @@ table {
   table {
     margin-top: 0;
 
+    &.api-keys:not(:first-child) {
+      margin-top: $spacer-y;
+    }
+
     &.grid {
       @include table;
 
