@@ -103,6 +103,10 @@
   @include material-icons('brightness_high');
 }
 
+.fa-chart-pie {
+  @include material-icons('pie_chart');
+}
+
 .fa-check {
   @include material-icons('check');
 }
