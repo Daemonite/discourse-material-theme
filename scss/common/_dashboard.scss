@@ -72,6 +72,7 @@
       padding: $card-padding-y $card-padding-x;
 
       .d-icon {
+        margin-top: 0;
         margin-bottom: $card-inner-spacer-y;
       }
     }
@@ -183,6 +184,26 @@
   .counters-header {
     border-radius: $table-border-radius $table-border-radius 0 0;
     padding: $thead-cell-padding-y $thead-cell-padding-x;
+  }
+}
+
+.dashboard-moderation {
+  .main-section {
+    grid-column-gap: $spacer-x;
+    grid-row-gap: $spacer-y;
+
+    .admin-report {
+      @include card;
+
+      .pagination {
+        margin-bottom: 0;
+      }
+
+      .table {
+        box-shadow: none;
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -337,27 +358,7 @@
   }
 }
 
-.dashboard-next-moderation {
-  .main-section {
-    grid-column-gap: $spacer-x;
-    grid-row-gap: $spacer-y;
-
-    .admin-report {
-      @include card;
-
-      .pagination {
-        margin-bottom: 0;
-      }
-
-      .table {
-        box-shadow: none;
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
-.dashboard-next-reports {
+.dashboard-reports {
   .report {
     @include card;
 
@@ -388,7 +389,7 @@
   }
 }
 
-.dashboard-next-security {
+.dashboard-security {
   .main-section {
     grid-column-gap: $spacer-x;
     grid-row-gap: $spacer-y;
