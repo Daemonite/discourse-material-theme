@@ -9,8 +9,8 @@
 
 .bootbox.modal {
   border: 0;
-  margin-left: 0;
-  transform: translateX(-50%);
+  margin: 0;
+  transform: translate3d(-50%, -50%, 0);
 
   .modal-footer {
     a {
@@ -545,10 +545,15 @@
 }
 
 .modal-body {
-  padding: $modal-inner-spacer-y $modal-padding-x $modal-padding-y;
+  .modal & {
+    padding: $modal-inner-spacer-y $modal-padding-x $modal-padding-y;
+  }
 
-  > form:last-child {
-    margin-bottom: 0;
+  > form,
+  > pre {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
