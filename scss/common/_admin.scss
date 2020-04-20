@@ -534,6 +534,36 @@ table {
   }
 }
 
+.admin-intro {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 $spacer-y;
+  width: auto;
+
+  img {
+    flex-shrink: 0;
+    height: ($font-size-h1 * $line-height-h1);
+    margin: 0 $spacer-x 0 0;
+    width: ($font-size-h1 * $line-height-h1);
+  }
+
+  .content-wrapper {
+    h1 {
+      display: block;
+      line-height: $line-height-h1;
+    }
+  }
+
+  .external-link {
+    margin-bottom: ($spacer-y / 2);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .admin-list-item:not(tr) {
   border-top: 1px solid color-chooser($white-divider, $black-divider);
   display: flex;

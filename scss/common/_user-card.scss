@@ -24,6 +24,19 @@
   }
 }
 
+.user-badge {
+  .content-list & {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    font-size: inherit;
+    height: auto;
+    line-height: inherit;
+    padding: 0;
+  }
+}
+
 #user-card {
   @include card;
 
