@@ -188,6 +188,18 @@
   @include material-icons('desktop_mac');
 }
 
+.fa-discourse-bell-exclamation {
+  @include material-icons('notification_important');
+}
+
+.fa-discourse-bell-one {
+  @include material-icons('new_releases');
+}
+
+.fa-discourse-bell-slash {
+  @include material-icons('notifications_off');
+}
+
 .fa-discourse-compress {
   @include material-icons('fullscreen_exit');
 }
