@@ -31,7 +31,7 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .fa-far-circle::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before,
 .fa-far-clock::before, .fa-code::before, .fa-columns::before, .fa-copy::before, .fa-copyright::before, .fa-cog::before, .fa-comment::before,
 .fa-comment-o::before,
-.fa-far-comment::before, .fa-compress::before, .fa-desktop::before, .fa-discourse-compress::before, .fa-discourse-expand::before, .fa-dot-circle-o::before,
+.fa-far-comment::before, .fa-compress::before, .fa-desktop::before, .fa-discourse-bell-exclamation::before, .fa-discourse-bell-one::before, .fa-discourse-bell-slash::before, .fa-discourse-compress::before, .fa-discourse-expand::before, .fa-dot-circle-o::before,
 .fa-far-dot-circle::before, .fa-download::before, .fa-ellipsis-h::before, .fa-envelope::before, .fa-envelope-o::before,
 .fa-far-envelope::before, .fa-exclamation-circle::before, .fa-exclamation-triangle::before, .fa-expand::before, .fa-eye::before,
 .fa-far-eye::before, .fa-eye-slash::before,
@@ -315,6 +315,44 @@ tbody {
 .nav-stacked .glyph {
   margin-right: 4px;
   width: auto;
+}
+
+.admin-badges .badges .admin-badge-list {
+  border: 0;
+  height: auto;
+  overflow-y: visible;
+}
+.admin-badges .badges .content-list {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+.admin-badges .badges .current-badges {
+  -ms-flex-preferred-size: calc(80% - 16px);
+      flex-basis: calc(80% - 16px);
+}
+.admin-badges .badges-header {
+  border-top: 0;
+  border-bottom: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+.admin-badges .badges-header .badges-heading {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.176471;
+  padding: 0;
+}
+.admin-badges .badges-header .create-new-badge {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+.admin-badges .badges-header .create-new-badge .btn {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 8px;
 }
 
 .badge-group,
@@ -2222,6 +2260,19 @@ div.ac-wrap input[type='text'] {
 .select-kit.combo-box.category-drop .select-kit-body {
   margin-top: 0;
 }
+.select-kit.combo-box.category-drop .select-kit-header .badge-wrapper.box {
+  line-height: 1;
+}
+.select-kit.combo-box.category-drop .select-kit-header .badge-wrapper.box .badge-category {
+  border-radius: 0;
+  min-height: 0;
+  overflow: visible;
+  padding: 0;
+}
+.select-kit.combo-box.category-drop .select-kit-row .category-status {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
 .select-kit.combo-box.future-date-input-selector .future-date-input-selector-datetime {
   color: color-chooser(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.6));
   margin-left: 4px;
@@ -2311,6 +2362,9 @@ div.ac-wrap input[type='text'] {
 }
 .select-kit.combo-box .select-kit-header:active {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+.select-kit.combo-box .select-kit-header:focus {
+  outline: 0;
 }
 .select-kit.combo-box .select-kit-header.is-focused {
   border: 0;
@@ -2733,6 +2787,9 @@ ol.category-breadcrumb li {
 .list-controls .nav {
   margin: 0 auto 16px 0;
   text-transform: uppercase;
+}
+.list-controls .nav-pills > li {
+  margin-right: 4px;
 }
 
 .discourse-no-touch .btn#login-link:hover, .discourse-no-touch .btn#login-link:focus, .discourse-no-touch .btn#login-link.btn-hover, .discourse-no-touch .btn#new-account-link:hover, .discourse-no-touch .btn#new-account-link:focus, .discourse-no-touch .btn#new-account-link.btn-hover {
@@ -3222,6 +3279,30 @@ ol.category-breadcrumb li {
 }
 .fa-desktop::before {
   content: "desktop_mac";
+}
+
+.fa-discourse-bell-exclamation {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-discourse-bell-exclamation::before {
+  content: "notification_important";
+}
+
+.fa-discourse-bell-one {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-discourse-bell-one::before {
+  content: "new_releases";
+}
+
+.fa-discourse-bell-slash {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-discourse-bell-slash::before {
+  content: "notifications_off";
 }
 
 .fa-discourse-compress {
@@ -4287,9 +4368,9 @@ div.menu-links-header .menu-links-row li a.active::after {
 
 .bootbox.modal {
   border: 0;
-  margin-left: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin: 0;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
 }
 .bootbox.modal .modal-footer a.btn-primary {
   color: $tertiary;
@@ -4823,10 +4904,11 @@ div.menu-links-header .menu-links-row li a.active::after {
   opacity: 1;
 }
 
-.modal-body {
+.modal .modal-body {
   padding: 16px 16px 16px;
 }
-.modal-body > form:last-child {
+.modal-body > form:last-child,
+.modal-body > pre:last-child {
   margin-bottom: 0;
 }
 
@@ -9711,6 +9793,17 @@ section.post-menu-area {
   padding-right: 0;
 }
 
+.content-list .user-badge {
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  color: inherit;
+  font-size: inherit;
+  height: auto;
+  line-height: inherit;
+  padding: 0;
+}
+
 #user-card {
   background-color: color-chooser(#424242, #ffffff);
   border: 0;
@@ -10389,6 +10482,34 @@ table.screened-ip-addresses td.action {
     padding-left: 0;
     width: 100%;
   }
+}
+
+.admin-intro {
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 0 16px;
+  width: auto;
+}
+.admin-intro img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 48.000015px;
+  margin: 0 16px 0 0;
+  width: 48.000015px;
+}
+.admin-intro .content-wrapper h1 {
+  display: block;
+  line-height: 1.066667;
+}
+.admin-intro .external-link {
+  margin-bottom: 8px;
+}
+.admin-intro .external-link:last-child {
+  margin-bottom: 0;
 }
 
 .admin-list-item:not(tr) {
