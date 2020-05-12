@@ -21,7 +21,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono|Roboto+Slab");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/brands.css");
-blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-angle-double-up::before, .fa-angle-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-left::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before,
+blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .fa-anchor::before, .fa-angle-double-down::before,
+.fa-far-angle-double-down::before,
+.fa-angle-double-left::before,
+.fa-far-angle-double-left::before,
+.fa-angle-double-right::before,
+.fa-far-angle-double-right::before,
+.fa-angle-double-up::before,
+.fa-far-angle-double-up::before, .fa-angle-down::before, .fa-angle-left::before, .fa-angle-right::before, .fa-angle-up::before, .fa-archive::before, .fa-arrow-down::before, .fa-arrow-left::before, .fa-arrow-right::before, .fa-arrow-up::before, .fa-arrows-h::before, .fa-arrows-v::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before,
 .fa-chart-bar::before, .fa-bars::before, .fa-bed::before, .fa-bell::before,
 .fa-far-bell::before, .fa-bold::before, .fa-book::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before,
 .fa-calendar-alt::before, .fa-calendar-plus-o::before,
@@ -2910,20 +2917,47 @@ ol.category-breadcrumb li {
   content: "av_timer";
 }
 
-.fa-angle-double-down {
+.fa-angle-double-down,
+.fa-far-angle-double-down,
+.fa-angle-double-left,
+.fa-far-angle-double-left,
+.fa-angle-double-right,
+.fa-far-angle-double-right,
+.fa-angle-double-up,
+.fa-far-angle-double-up {
   font-size: inherit !important;
   line-height: inherit !important;
+  display: inline-block;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
-.fa-angle-double-down::before {
-  content: "arrow_drop_down";
+.fa-angle-double-down::before,
+.fa-far-angle-double-down::before,
+.fa-angle-double-left::before,
+.fa-far-angle-double-left::before,
+.fa-angle-double-right::before,
+.fa-far-angle-double-right::before,
+.fa-angle-double-up::before,
+.fa-far-angle-double-up::before {
+  content: "double_arrow";
 }
 
-.fa-angle-double-up {
-  font-size: inherit !important;
-  line-height: inherit !important;
+.fa-angle-double-down,
+.fa-far-angle-double-down {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
-.fa-angle-double-up::before {
-  content: "arrow_drop_up";
+
+.fa-angle-double-left,
+.fa-far-angle-double-left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-angle-double-up,
+.fa-far-angle-double-up {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .fa-angle-down {
@@ -2934,12 +2968,28 @@ ol.category-breadcrumb li {
   content: "keyboard_arrow_down";
 }
 
-.fa-arrow-down {
+.fa-angle-left {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-arrow-down::before {
-  content: "arrow_downward";
+.fa-angle-left::before {
+  content: "keyboard_arrow_left";
+}
+
+.fa-angle-right {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-angle-right::before {
+  content: "keyboard_arrow_right";
+}
+
+.fa-angle-up {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-angle-up::before {
+  content: "keyboard_arrow_up";
 }
 
 .fa-archive {
@@ -2950,12 +3000,12 @@ ol.category-breadcrumb li {
   content: "archive";
 }
 
-.fa-arrows-h {
+.fa-arrow-down {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-arrows-h::before {
-  content: "swap_horiz";
+.fa-arrow-down::before {
+  content: "arrow_downward";
 }
 
 .fa-arrow-left {
@@ -2966,12 +3016,36 @@ ol.category-breadcrumb li {
   content: "arrow_back";
 }
 
+.fa-arrow-right {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-arrow-right::before {
+  content: "arrow_forward";
+}
+
 .fa-arrow-up {
   font-size: inherit !important;
   line-height: inherit !important;
 }
 .fa-arrow-up::before {
   content: "arrow_upward";
+}
+
+.fa-arrows-h {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-arrows-h::before {
+  content: "swap_horiz";
+}
+
+.fa-arrows-v {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-arrows-v::before {
+  content: "swap_vert";
 }
 
 .fa-asterisk {
