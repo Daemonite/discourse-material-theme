@@ -21,4 +21,8 @@ ol {
     margin: 0 auto $spacer-y 0;
     text-transform: uppercase;
   }
+
+  .nav-pills > li {
+    margin-right: $spacer-x-inline;
+  }
 }
