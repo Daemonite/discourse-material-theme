@@ -421,8 +421,7 @@
       background-color: transparent !important;
       border: 0;
       font-size: ($btn-font-size - 1) !important;
-      margin-left: $spacer-x-inline;
-      padding-left: 0;
+      padding-left: $spacer-x-inline;
     }
 
     .d-button-label {
