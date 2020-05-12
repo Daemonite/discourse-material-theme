@@ -24,8 +24,8 @@
 blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .expanded-quote div.poll[data-poll-type='multiple'] li[data-poll-option-id]::before, .d-editor-preview div.poll li[data-poll-option-id]::before, .expanded-quote div.poll li[data-poll-option-id]::before, .fa-anchor::before, .fa-angle-double-down::before, .fa-angle-double-up::before, .fa-angle-down::before, .fa-arrow-down::before, .fa-archive::before, .fa-arrows-h::before, .fa-arrow-left::before, .fa-arrow-up::before, .fa-asterisk::before, .fa-at::before, .fa-backward::before, .fa-ban::before, .fa-bar-chart-o::before,
 .fa-chart-bar::before, .fa-bars::before, .fa-bed::before, .fa-bell::before,
 .fa-far-bell::before, .fa-bold::before, .fa-book::before, .fa-bookmark::before, .fa-briefcase::before, .fa-calendar::before,
-.fa-calendar-alt::before,
-.fa-calendar-plus-o::before, .fa-caret-down::before,
+.fa-calendar-alt::before, .fa-calendar-plus-o::before,
+.fa-far-calendar-plus::before, .fa-caret-down::before,
 .fa-caret-right::before, .fa-caret-up::before, .fa-certificate::before, .fa-chart-pie::before, .fa-check::before, .fa-check-square::before,
 .fa-check-square-o::before, .fa-chevron-down::before, .fa-chevron-left::before, .fa-chevron-right::before, .fa-chevron-up::before, .fa-circle::before, .fa-circle-o::before,
 .fa-far-circle::before, .fa-clipboard::before, .fa-close::before, .fa-clock-o::before,
@@ -41,11 +41,13 @@ blockquote::after, blockquote::before, .d-editor-preview div.poll[data-poll-type
 .fa-pencil-square-o::before, .fa-fast-backward::before, .fa-fast-forward::before, .fa-file::before, .fa-file-text-o::before, .fa-flag::before, .fa-folder::before, .fa-forward::before, .fa-gavel::before, .fa-gear::before, .fa-globe::before, .fa-group::before, .fa-hand-o-right::before,
 .fa-hand-point-right::before, .fa-hands-helping::before, .fa-header::before, .fa-heart::before, .fa-heart-o::before,
 .fa-far-heart::before, .fa-info-circle::before, .fa-italic::before, .fa-link::before, .fa-list::before,
-.fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-map-marker::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before, .fa-paint-brush::before, .fa-picture-o::before,
+.fa-list-alt::before, .fa-list-ol::before, .fa-list-ul::before, .fa-lock::before, .fa-magic::before, .fa-mail-forward::before, .fa-map-marker::before, .fa-meh-o::before, .fa-microphone::before, .fa-microphone-slash::before, .fa-minus::before, .fa-mobile::before, .fa-moon-o::before,
+.fa-far-moon::before, .fa-paint-brush::before, .fa-picture-o::before,
 .fa-far-image::before, .fa-pie-chart::before, .fa-play::before, .fa-plus::before, .fa-power-off::before, .fa-question::before, .fa-question-circle::before, .fa-quote-right::before, .fa-random::before, .fa-refresh::before, .fa-reply::before, .fa-rocket::before, .fa-search::before, .fa-share::before, .fa-shield::before,
 .fa-shield-alt::before, .fa-sign-out::before,
 .fa-sign-out-alt::before, .fa-signal::before, .fa-smile-o::before,
-.fa-far-smile::before, .fa-square-o::before, .fa-stream::before, .fa-sun-o::before, .fa-table::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumbtack::before,
+.fa-far-smile::before, .fa-square-o::before, .fa-stream::before, .fa-sun-o::before,
+.fa-far-sun::before, .fa-table::before, .fa-tag::before, .fa-tasks::before, .fa-television::before, .fa-thumbtack::before,
 .fa-thumb-tack::before, .fa-times::before, .fa-times-circle::before, .fa-trash::before,
 .fa-trash-alt::before,
 .fa-trash-o::before,
@@ -2286,9 +2288,6 @@ div.ac-wrap input[type='text'] {
 .select-kit.combo-box.future-date-input-selector .select-kit-header .future-date-input-selector-icons {
   margin-right: 4px;
 }
-.select-kit.combo-box.future-date-input-selector .select-kit-header .selected-name {
-  margin-right: auto;
-}
 .select-kit.combo-box.is-above .select-kit-body {
   margin-top: 0;
   margin-bottom: .25em;
@@ -2326,6 +2325,9 @@ div.ac-wrap input[type='text'] {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 6.25px 0;
+}
+.select-kit.combo-box .select-kit-filter:empty {
+  display: none;
 }
 .select-kit.combo-box .select-kit-filter .filter-icon {
   margin-right: 24px;
@@ -2553,8 +2555,7 @@ div.ac-wrap input[type='text'] {
   background-color: transparent !important;
   border: 0;
   font-size: 13px !important;
-  margin-left: 4px;
-  padding-left: 0;
+  padding-left: 4px;
 }
 .select-kit .select-kit-header .d-button-label {
   line-height: inherit;
@@ -3074,15 +3075,23 @@ ol.category-breadcrumb li {
 }
 
 .fa-calendar,
-.fa-calendar-alt,
-.fa-calendar-plus-o {
+.fa-calendar-alt {
   font-size: inherit !important;
   line-height: inherit !important;
 }
 .fa-calendar::before,
-.fa-calendar-alt::before,
-.fa-calendar-plus-o::before {
+.fa-calendar-alt::before {
   content: "event";
+}
+
+.fa-calendar-plus-o,
+.fa-far-calendar-plus {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.fa-calendar-plus-o::before,
+.fa-far-calendar-plus::before {
+  content: "event_available";
 }
 
 .fa-caret-down,
@@ -3677,12 +3686,14 @@ ol.category-breadcrumb li {
   content: "phone_iphone";
 }
 
-.fa-moon-o {
+.fa-moon-o,
+.fa-far-moon {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-moon-o::before {
-  content: "brightness_3";
+.fa-moon-o::before,
+.fa-far-moon::before {
+  content: "nights_stay";
 }
 
 .fa-paint-brush {
@@ -3861,12 +3872,14 @@ ol.category-breadcrumb li {
   content: "view_stream";
 }
 
-.fa-sun-o {
+.fa-sun-o,
+.fa-far-sun {
   font-size: inherit !important;
   line-height: inherit !important;
 }
-.fa-sun-o::before {
-  content: "brightness_5";
+.fa-sun-o::before,
+.fa-far-sun::before {
+  content: "wb_sunny";
 }
 
 .fa-table {
@@ -4362,7 +4375,6 @@ div.menu-links-header .menu-links-row li a.active::after {
   background-color: color-chooser(#424242, #ffffff);
   border-radius: 4px;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.4);
-  max-width: calc(100% - 32px);
   outline: 0;
 }
 
@@ -4382,6 +4394,11 @@ div.menu-links-header .menu-links-row li a.active::after {
 }
 .btn-flat.close:active {
   box-shadow: none;
+}
+
+.change-timestamp .date-picker-wrapper,
+.poll-ui-builder .date-picker-wrapper {
+  margin-right: 4px;
 }
 
 .close {
@@ -4446,6 +4463,82 @@ div.menu-links-header .menu-links-row li a.active::after {
   margin-left: 0;
 }
 
+.discourse-local-dates-create-modal .control-group {
+  margin-bottom: 16px;
+}
+.discourse-local-dates-create-modal .control-group.recurrence {
+  margin-top: 0;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .date .date-input,
+.discourse-local-dates-create-modal .form .date-time-configuration .time .time-input {
+  margin-right: 0;
+  padding: 15px 12px 14px;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .date-time-control.from {
+  border-radius: 4px 4px 0 0;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .date-time-control.from .date-time {
+  border-radius: inherit;
+  box-shadow: none;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .date-time-control.to {
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 16px;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .date-time-control.to .date-time {
+  border-radius: inherit;
+  box-shadow: none;
+  padding-right: 16px;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .date-time-control .d-icon {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .date-time-control .d-icon {
+  top: 50%;
+  bottom: auto;
+  left: 16px;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .date-time-control .date-time {
+  padding: 11px 16px 11px 48px;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .picker-panel {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .picker-panel {
+  margin-left: 16px;
+  padding: 0;
+  width: 296px;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .range .from .control-group,
+.discourse-local-dates-create-modal .form .date-time-configuration .range .to .control-group {
+  margin-right: 16px;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .range .to-indicator {
+  margin: 0 0 16px;
+  text-align: inherit;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .time-pickers {
+  border-top-color: color-chooser(#000000, #e0e0e0);
+  margin-top: 0;
+  padding: 8px 8px;
+}
+.discourse-local-dates-create-modal .form .date-time-configuration .time-pickers .d-icon {
+  margin-right: 8px;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .timezone-input .select-kit-header {
+  border: 0;
+  padding: 11px 16px;
+}
+.modal .discourse-local-dates-create-modal .form .date-time-configuration .timezone-input .select-kit-header .d-icon {
+  margin-right: 8px;
+}
+.discourse-local-dates-create-modal .picker-panel {
+  border-radius: 4px;
+}
+
 .discourse-local-dates-create-modal-footer .cancel-action {
   background-color: transparent;
   background-image: none;
@@ -4496,25 +4589,12 @@ div.menu-links-header .menu-links-row li a.active::after {
 .discourse-local-dates-create-modal-footer .cancel-action:first-child {
   margin-left: 0;
 }
-
-.discourse-local-dates-create-modal .control-group {
-  margin-bottom: 16px;
+.modal .btn + .discourse-local-dates-create-modal-footer .cancel-action {
+  margin-left: 8px;
 }
-.discourse-local-dates-create-modal .control-group.recurrence {
-  margin-top: 0;
-}
-.discourse-local-dates-create-modal .form .date-time-configuration .date .date-input,
-.discourse-local-dates-create-modal .form .date-time-configuration .time .time-input {
+.modal .discourse-local-dates-create-modal-footer .cancel-action {
   margin-right: 0;
-  padding: 15px 12px 14px;
-}
-.discourse-local-dates-create-modal .form .date-time-configuration .range .from .control-group,
-.discourse-local-dates-create-modal .form .date-time-configuration .range .to .control-group {
-  margin-right: 16px;
-}
-.discourse-local-dates-create-modal .form .date-time-configuration .range .to-indicator {
-  margin: 0 0 16px;
-  text-align: inherit;
+  margin-bottom: 0;
 }
 
 .edit-category-modal .edit-category-tab-security section.field > .btn {
@@ -4839,6 +4919,18 @@ div.menu-links-header .menu-links-row li a.active::after {
 .modal tr.instructions label {
   font-weight: normal;
 }
+.modal .modal-body.change-timestamp {
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal .modal-body.change-timestamp form .date-picker-wrapper {
+  margin-right: 0;
+}
+.modal .modal-body.discourse-local-dates-create-modal {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 100%;
+}
 .modal .modal-body p {
   font-size: inherit;
 }
@@ -4849,6 +4941,12 @@ div.menu-links-header .menu-links-row li a.active::after {
   padding: 16px 16px;
 }
 .modal .modal-body .alert:last-child {
+  margin-bottom: 0;
+}
+.modal .modal-body .alert .topic-status-info:first-child {
+  margin-top: 0;
+}
+.modal .modal-body .alert .topic-status-info:last-child {
   margin-bottom: 0;
 }
 .modal .modal-body .uploaded-image-preview {
@@ -4978,7 +5076,11 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 .modal-footer .btn {
   background-color: transparent;
   box-shadow: none;
-  margin: 0 0 0 8px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 8px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 .discourse-no-touch .modal-footer .btn:hover, .discourse-no-touch .modal-footer .btn.btn-hover {
   background-color: color-chooser(rgba(204, 204, 204, 0.125), rgba(153, 153, 153, 0.2));
@@ -5025,9 +5127,8 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 
 .modal-inner-container {
-  margin-top: 56px;
-  margin-bottom: 56px;
-  padding: 0;
+  margin: 56px 16px;
+  width: 100%;
 }
 .inline-modal .modal-inner-container {
   border: 0;
@@ -5037,9 +5138,10 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 }
 
 .modal-middle-container {
-  display: block;
   -ms-flex-positive: 1;
       flex-grow: 1;
+  -ms-flex-pack: center;
+      justify-content: center;
   max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -5167,6 +5269,7 @@ body .bootbox.modal .modal-footer :not(.disclaimer) a.btn-primary {
 .edit-topic-timer-modal label {
   margin-right: 16px;
   margin-bottom: 0;
+  padding-right: 0;
 }
 .edit-topic-timer-modal .auto-update-input .control-group {
   -ms-flex-align: center;
