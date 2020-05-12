@@ -3,7 +3,6 @@
   background-color: color-chooser($modal-bg-dark, $modal-bg-light);
   border-radius: $modal-border-radius;
   box-shadow: $modal-box-shadow;
-  max-width: calc(100% - #{$spacer * 2});
   outline: 0;
 }
 
@@ -28,6 +27,11 @@
   &:active {
     box-shadow: none;
   }
+}
+
+.change-timestamp .date-picker-wrapper,
+.poll-ui-builder .date-picker-wrapper {
+  margin-right: $spacer-x-inline;
 }
 
 .close {
@@ -466,6 +470,15 @@
   }
 
   .modal-body {
+    &.change-timestamp {
+      margin-right: auto;
+      margin-left: auto;
+
+      form .date-picker-wrapper {
+        margin-right: 0;
+      }
+    }
+
     p {
       font-size: inherit;
     }
@@ -583,13 +596,11 @@
   }
 
   .btn {
-    @include btn-raised-reverse();
+    @include btn-footer;
+    @include btn-raised-reverse;
 
-    margin: 0 0 0 ($modal-inner-spacer-x / 2);
-
-    &:last-child {
-      margin-left: 0;
-    }
+    margin-right: 0;
+    margin-bottom: 0;
 
     &.btn-danger {
       color: unquote('$danger');
@@ -620,9 +631,8 @@
 }
 
 .modal-inner-container {
-  margin-top: $header-height;
-  margin-bottom: $header-height;
-  padding: 0;
+  margin: $header-height $spacer-x;
+  width: 100%;
 
   .inline-modal & {
     border: 0;
@@ -634,8 +644,8 @@
 }
 
 .modal-middle-container {
-  display: block;
   flex-grow: 1;
+  justify-content: center;
   max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
