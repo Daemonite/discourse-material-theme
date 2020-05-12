@@ -85,9 +85,13 @@
 }
 
 .fa-calendar,
-.fa-calendar-alt,
-.fa-calendar-plus-o {
+.fa-calendar-alt {
   @include material-icons('event');
+}
+
+.fa-calendar-plus-o,
+.fa-far-calendar-plus {
+  @include material-icons('event_available');
 }
 
 .fa-caret-down,
@@ -386,8 +390,9 @@
   @include material-icons('phone_iphone');
 }
 
-.fa-moon-o {
-  @include material-icons('brightness_3');
+.fa-moon-o,
+.fa-far-moon {
+  @include material-icons('nights_stay');
 }
 
 .fa-paint-brush {
@@ -478,8 +483,9 @@
   @include material-icons('view_stream');
 }
 
-.fa-sun-o {
-  @include material-icons('brightness_5');
+.fa-sun-o,
+.fa-far-sun {
+  @include material-icons('wb_sunny');
 }
 
 .fa-table {
