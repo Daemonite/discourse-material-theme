@@ -2,36 +2,77 @@
   @include material-icons('av_timer');
 }
 
-.fa-angle-double-down {
-  @include material-icons('arrow_drop_down');
+.fa-angle-double-down,
+.fa-far-angle-double-down,
+.fa-angle-double-left,
+.fa-far-angle-double-left,
+.fa-angle-double-right,
+.fa-far-angle-double-right,
+.fa-angle-double-up,
+.fa-far-angle-double-up {
+  @include material-icons('double_arrow');
+
+  display: inline-block;
+  transform-origin: 50% 50%;
 }
 
-.fa-angle-double-up {
-  @include material-icons('arrow_drop_up');
+.fa-angle-double-down,
+.fa-far-angle-double-down {
+  transform: rotate(90deg);
+}
+
+.fa-angle-double-left,
+.fa-far-angle-double-left {
+  transform: rotate(180deg);
+}
+
+.fa-angle-double-up,
+.fa-far-angle-double-up {
+  transform: rotate(-90deg);
 }
 
 .fa-angle-down {
   @include material-icons('keyboard_arrow_down');
 }
 
-.fa-arrow-down {
-  @include material-icons('arrow_downward');
+.fa-angle-left {
+  @include material-icons('keyboard_arrow_left');
+}
+
+.fa-angle-right {
+  @include material-icons('keyboard_arrow_right');
+}
+
+.fa-angle-up {
+  @include material-icons('keyboard_arrow_up');
 }
 
 .fa-archive {
   @include material-icons('archive');
 }
 
-.fa-arrows-h {
-  @include material-icons('swap_horiz');
+.fa-arrow-down {
+  @include material-icons('arrow_downward');
 }
 
 .fa-arrow-left {
   @include material-icons('arrow_back');
 }
 
+.fa-arrow-right {
+  @include material-icons('arrow_forward');
+}
+
 .fa-arrow-up {
   @include material-icons('arrow_upward');
+}
+
+.fa-arrows-h {
+  @include material-icons('swap_horiz');
+}
+
+.fa-arrows-v {
+  @include material-icons('swap_vert');
 }
 
 .fa-asterisk {
