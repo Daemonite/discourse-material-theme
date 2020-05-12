@@ -108,6 +108,10 @@
       flex-shrink: 0;
       padding: $dropdown-link-padding-y 0;
 
+      &:empty {
+        display: none;
+      }
+
       .filter-icon {
         margin-right: $dropdown-link-padding-x;
         margin-left: $spacer-x-inline;
