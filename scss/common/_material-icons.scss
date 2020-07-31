@@ -348,7 +348,11 @@
   @include material-icons('settings');
 }
 
-.fa-globe {
+.fa-globe,
+.fa-globe-africa,
+.fa-globe-americas,
+.fa-globe-asia,
+.fa-globe-europe {
   @include material-icons('public');
 }
 
