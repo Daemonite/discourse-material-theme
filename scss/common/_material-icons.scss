@@ -545,6 +545,10 @@
   @include material-icons('tv');
 }
 
+.fa-th-large {
+  @include material-icons('view_module');
+}
+
 .fa-thumbtack,
 .fa-thumb-tack {
   @include material-icons('flip_to_front');
