@@ -295,4 +295,8 @@ label {
 .uploaded-image-preview {
   border-radius: $text-field-border-radius;
   margin-bottom: $text-field-margin-y;
+
+  .image-upload-controls {
+    z-index: 1;
+  }
 }

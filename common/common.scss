@@ -1918,6 +1918,9 @@ body .input-prepend .add-on + input {
   border-radius: 4px;
   margin-bottom: 8px;
 }
+.uploaded-image-preview .image-upload-controls {
+  z-index: 1;
+}
 
 div.ac-wrap {
   -ms-flex-align: center;
