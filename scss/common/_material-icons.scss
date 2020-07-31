@@ -225,6 +225,10 @@
   @include material-icons('comment');
 }
 
+.fa-comment-dots {
+  @include material-icons('textsms');
+}
+
 .fa-comments {
   @include material-icons('forum');
 }
