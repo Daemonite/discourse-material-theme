@@ -18,14 +18,14 @@ div {
 
     .menu-links-row {
       margin-bottom: $menu-panel-inner-spacer-y;
-      padding: 0 ($menu-panel-padding-x / 2);
+      padding: 0 ($menu-panel-padding-x * 0.5);
 
       li {
         &,
         &.glyphs {
           a {
-            padding-right: ($menu-panel-padding-x / 2);
-            padding-left: ($menu-panel-padding-x / 2);
+            padding-right: ($menu-panel-padding-x * 0.5);
+            padding-left: ($menu-panel-padding-x * 0.5);
           }
         }
 
@@ -76,7 +76,7 @@ div {
     }
 
     &.category-link {
-      padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x / 2);
+      padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x * 0.5);
 
       .badge-wrapper.box:last-child {
         margin-right: 0;
@@ -85,19 +85,19 @@ div {
   }
 
   .categories-link {
-    padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x / 2);
+    padding: $menu-panel-inner-spacer-y ($menu-panel-padding-x * 0.5);
   }
 
   .category-links,
   .menu-links {
-    margin-right: ($menu-panel-padding-x / 2);
-    margin-left: ($menu-panel-padding-x / 2);
+    margin-right: ($menu-panel-padding-x * 0.5);
+    margin-left: ($menu-panel-padding-x * 0.5);
 
     a {
       &.widget-link {
         border-radius: $menu-panel-border-radius;
-        padding-right: ($menu-panel-padding-x / 2);
-        padding-left: ($menu-panel-padding-x / 2);
+        padding-right: ($menu-panel-padding-x * 0.5);
+        padding-left: ($menu-panel-padding-x * 0.5);
       }
     }
   }
@@ -248,8 +248,8 @@ div {
       }
 
       .discourse-tag {
-        margin-top: ($menu-panel-inner-spacer-y / 2);
-        margin-bottom: ($menu-panel-inner-spacer-y / 2);
+        margin-top: ($menu-panel-inner-spacer-y * 0.5);
+        margin-bottom: ($menu-panel-inner-spacer-y * 0.5);
       }
     }
 
@@ -266,7 +266,7 @@ div {
     &,
     .drop-down-mode &,
     .drop-down-visible & {
-      top: ($text-field-height / 2 - $text-field-font-size / 2);
+      top: ($text-field-height * 0.5 - $text-field-font-size * 0.5);
       right: $text-field-padding-x;
     }
 

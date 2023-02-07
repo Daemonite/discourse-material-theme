@@ -58,7 +58,7 @@
     }
 
     .btn {
-      margin: 0 0 ($modal-inner-spacer-y / 2);
+      margin: 0 0 ($modal-inner-spacer-y * 0.5);
       width: 100%;
 
       &:first-child {

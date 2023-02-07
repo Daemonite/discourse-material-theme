@@ -1,3 +1,5 @@
+@use "sass:math";
+
 #share-link {
   @include card;
 
@@ -12,11 +14,11 @@
 
     .alt-actions {
       height: auto;
-      margin-right: ($card-inner-spacer-x / -2);
+      margin-right: math.div($card-inner-spacer-x, -2);
       min-height: $btn-height;
 
       .btn.close {
-        padding: $btn-padding-y ($card-inner-spacer-x / 2);
+        padding: $btn-padding-y ($card-inner-spacer-x * 0.5);
 
         &:hover {
           .discourse-no-touch & {
@@ -26,13 +28,13 @@
       }
 
       .new-topic {
-        margin-right: ($card-inner-spacer-x / 2);
+        margin-right: ($card-inner-spacer-x * 0.5);
       }
     }
   }
 
   .title {
-    margin-bottom: ($card-inner-spacer-y / 2);
+    margin-bottom: ($card-inner-spacer-y * 0.5);
 
     h3 {
       @include typography-h4;

@@ -17,7 +17,7 @@
   h4,
   h5,
   h6 {
-    margin: 0 0 ($card-inner-spacer-y / 2);
+    margin: 0 0 ($card-inner-spacer-y * 0.5);
   }
 
   h1 {
@@ -127,7 +127,7 @@
   h4,
   h5,
   h6 {
-    margin: 0 0 ($card-inner-spacer-y / 2);
+    margin: 0 0 ($card-inner-spacer-y * 0.5);
   }
 
   h1 {

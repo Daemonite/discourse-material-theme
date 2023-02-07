@@ -14,8 +14,8 @@
   @include btn-raised;
 
   position: fixed;
-  top: ($spacer-x / 2 + $header-height);
-  right: ($spacer-x / 2);
+  top: ($spacer-x * 0.5 + $header-height);
+  right: ($spacer-x * 0.5);
 }
 
 .small-action {

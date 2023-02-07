@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .d-header {
   box-shadow: $header-box-shadow;
   height: auto;
@@ -86,7 +88,7 @@
 
   .ring {
     margin-right: 1px;
-    top: ($chip-padding-y / -2) !important;
+    top: math.div($chip-padding-y, -2) !important;
   }
 }
 
@@ -142,8 +144,8 @@
 
 #main-outlet {
   padding-top: ($header-height + $spacer-y);
-  padding-right: ($spacer-x / 2);
-  padding-left: ($spacer-x / 2);
+  padding-right: ($spacer-x * 0.5);
+  padding-left: ($spacer-x * 0.5);
 }
 
 .title-wrapper {

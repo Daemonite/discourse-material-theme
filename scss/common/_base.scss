@@ -65,13 +65,13 @@ blockquote {
   }
 
   &::after {
-    right: ($material-icon-size / 2);
-    bottom: ($material-icon-size / 2);
+    right: ($material-icon-size * 0.5);
+    bottom: ($material-icon-size * 0.5);
   }
 
   &::before {
-    top: ($material-icon-size / 2);
-    left: ($material-icon-size / 2);
+    top: ($material-icon-size * 0.5);
+    left: ($material-icon-size * 0.5);
     transform: rotate(180deg);
   }
 }

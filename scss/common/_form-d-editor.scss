@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .d-editor {
   border: 0;
 
@@ -32,7 +34,7 @@
       margin-left: ($card-inner-spacer-x * -1);
 
       &:last-child {
-        margin-bottom: ($card-inner-spacer-y / -2);
+        margin-bottom: math.div($card-inner-spacer-y, -2);
       }
 
       .btn {
@@ -49,7 +51,7 @@
   flex-wrap: wrap;
   margin: 0;
   min-height: 0;
-  padding: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2);
+  padding: ($card-inner-spacer-y * 0.5) ($card-inner-spacer-x * 0.5);
 
   .btn {
     @include btn-footer;
@@ -67,11 +69,11 @@
   .d-editor-spacer {
     height: $btn-height;
     margin-right: 0;
-    margin-left: ($card-inner-spacer-x / 2);
+    margin-left: ($card-inner-spacer-x * 0.5);
   }
 
   .dropdown-select-box {
-    margin-left: ($card-inner-spacer-x / 2);
+    margin-left: ($card-inner-spacer-x * 0.5);
 
     &:first-child {
       margin-left: 0;
@@ -87,10 +89,10 @@
   }
 
   .d-editor-button-bar ~ & {
-    padding-top: ($card-inner-spacer-y / 2);
+    padding-top: ($card-inner-spacer-y * 0.5);
 
     @include focus-hover {
-      padding-top: ($card-inner-spacer-y / 2);
+      padding-top: ($card-inner-spacer-y * 0.5);
     }
   }
 }
@@ -121,7 +123,7 @@
 .d-editor-preview-wrapper {
   background-color: color-chooser($text-field-bg-dark, $text-field-bg-light);
   margin-left: $card-padding-x;
-  max-width: calc(50% - #{$card-padding-x / 2});
+  max-width: calc(50% - #{$card-padding-x * 0.5});
 
   .edit-title & {
     margin-top: (($card-inner-spacer-y + $text-field-height) * -1);
@@ -135,7 +137,7 @@
 .d-editor-spacer {
   background-color: color-chooser($white-divider, $black-divider);
   height: $btn-height;
-  margin: 0 ($card-inner-spacer-x / 2);
+  margin: 0 ($card-inner-spacer-x * 0.5);
 }
 
 .d-editor-textarea-wrapper {

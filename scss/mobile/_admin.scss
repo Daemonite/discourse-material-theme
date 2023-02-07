@@ -5,7 +5,7 @@
 
   &,
   &.mobile-open {
-    transform: translate3d(calc(50% + #{$spacer-x / 2}), 0, 0);
+    transform: translate3d(calc(50% + #{$spacer-x * 0.5}), 0, 0);
   }
 
   &.mobile-closed {
@@ -20,7 +20,7 @@
 }
 
 .admin-nav {
-  width: calc(50% - #{$spacer-x / 2});
+  width: calc(50% - #{$spacer-x * 0.5});
 }
 
 .customize {
@@ -52,7 +52,7 @@
   > .pull-right {
     clear: both;
     float: none;
-    margin-top: ($card-inner-spacer-y / 2);
+    margin-top: ($card-inner-spacer-y * 0.5);
 
     > :last-child {
       margin-right: 0;

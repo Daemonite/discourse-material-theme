@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .badge-card {
   @include card;
 
@@ -38,7 +40,7 @@
 
       background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
       margin-right: 0;
-      min-width: ($card-padding-x * 2 + $font-size-h2 / $font-size-base * $material-icon-size);
+      min-width: ($card-padding-x * 2 + math.div($font-size-h2, $font-size-base) * $material-icon-size);
       padding: $card-padding-y $card-padding-x;
     }
 
@@ -49,7 +51,7 @@
       h3 {
         @include typography-h4;
 
-        margin-bottom: ($card-inner-spacer-y / 2);
+        margin-bottom: ($card-inner-spacer-y * 0.5);
       }
     }
 
@@ -61,13 +63,13 @@
 
   .check-display {
     align-items: center;
-    border-radius: ($material-icon-size / 2);
+    border-radius: ($material-icon-size * 0.5);
     display: flex;
     font-size: $font-size-base;
     height: $material-icon-size;
     justify-content: center;
-    top: ($card-padding-y / 2);
-    left: ($card-padding-x / 2);
+    top: ($card-padding-y * 0.5);
+    left: ($card-padding-x * 0.5);
     width: $material-icon-size;
   }
 
@@ -76,8 +78,8 @@
     font-size: $font-size-base;
     font-weight: normal;
     line-height: 1;
-    top: ($card-padding-y / 2);
-    right: ($card-padding-x / 2);
+    top: ($card-padding-y * 0.5);
+    right: ($card-padding-x * 0.5);
   }
 }
 

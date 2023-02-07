@@ -86,13 +86,13 @@ tr {
 .topic-list {
   .badge-notification {
     font-size: inherit;
-    padding: ($chip-padding-y / 2) ($chip-padding-x / 2);
+    padding: ($chip-padding-y * 0.5) ($chip-padding-x * 0.5);
   }
 
   .category-topic-link td {
     &.num .badge-notification {
       font-size: inherit;
-      padding: ($chip-padding-y / 2) ($chip-padding-x / 2);
+      padding: ($chip-padding-y * 0.5) ($chip-padding-x * 0.5);
     }
   }
 

@@ -1,9 +1,11 @@
+@use "sass:math";
+
 .user-badge,
 #user-card.show-badges .more-user-badges {
   align-items: center;
   background-color: color-chooser($chip-bg-dark, $chip-bg-light);
   border: 0;
-  border-radius: ($chip-height / 2);
+  border-radius: ($chip-height * 0.5);
   box-shadow: none;
   color: unquote('$primary');
   display: inline-flex;
@@ -62,14 +64,14 @@
       .user-badge {
         background-color: color-chooser($chip-bg-dark, $chip-bg-light);
         border: 0;
-        margin-right: ($card-inner-spacer-x / 2);
+        margin-right: ($card-inner-spacer-x * 0.5);
       }
     }
 
     .names {
       flex-grow: 1;
       height: auto;
-      margin-bottom: ($card-inner-spacer-y / 2);
+      margin-bottom: ($card-inner-spacer-y * 0.5);
       width: auto;
 
       span {
@@ -87,7 +89,7 @@
   h1 {
     @include typography-h4;
 
-    margin-bottom: ($card-inner-spacer-y / 2);
+    margin-bottom: ($card-inner-spacer-y * 0.5);
     max-width: none;
     min-width: 0;
 
@@ -105,7 +107,7 @@
   h2 {
     @include typography-body;
 
-    margin-bottom: ($card-inner-spacer-y / 2);
+    margin-bottom: ($card-inner-spacer-y * 0.5);
     max-width: none;
   }
 
@@ -149,13 +151,13 @@
     margin-bottom: $card-inner-spacer-y;
 
     img {
-      height: ($card-inner-spacer-y / 2 + $font-size-body * $line-height-body + $font-size-h4 * $line-height-h4);
-      width: ($card-inner-spacer-y / 2 + $font-size-body * $line-height-body + $font-size-h4 * $line-height-h4);
+      height: ($card-inner-spacer-y * 0.5 + $font-size-body * $line-height-body + $font-size-h4 * $line-height-h4);
+      width: ($card-inner-spacer-y * 0.5 + $font-size-body * $line-height-body + $font-size-h4 * $line-height-h4);
     }
   }
 
   .usercard-controls {
-    margin: (($btn-height - $font-size-h4 * $line-height-h4) / -2) ($btn-padding-x / -2) ($card-inner-spacer-y / 2) 0;
+    margin: math.div($btn-height - $font-size-h4 * $line-height-h4, -2) math.div($btn-padding-x, -2) ($card-inner-spacer-y * 0.5) 0;
 
     a {
       display: flex;

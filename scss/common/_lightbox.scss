@@ -1,3 +1,5 @@
+@use "sass:math";
+
 a {
   &.lightbox {
     &:hover {
@@ -18,7 +20,7 @@ a {
 .meta {
   align-items: flex-end;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, transparent 0%, $black-divider percentage(2 / 3), $black-hint 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, $black-divider percentage(math.div(2, 3)), $black-hint 100%);
   color: $white-primary;
   display: flex;
   font-weight: normal;
@@ -27,7 +29,7 @@ a {
   white-space: nowrap;
 
   .d-icon {
-    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+    margin: ($card-inner-spacer-y * 0.5) $card-inner-spacer-x;
     min-height: ($font-size-base * $line-height-base);
     min-width: ($font-size-base * $line-height-base);
   }
@@ -37,7 +39,7 @@ a {
   }
 
   .filename {
-    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+    margin: ($card-inner-spacer-y * 0.5) $card-inner-spacer-x;
 
     + .informations {
       margin-left: 0;
@@ -45,7 +47,7 @@ a {
   }
 
   .informations {
-    margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+    margin: ($card-inner-spacer-y * 0.5) $card-inner-spacer-x;
     padding-right: 0;
   }
 }

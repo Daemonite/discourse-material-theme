@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .composer-popup {
   border-radius: $modal-border-radius;
   box-shadow: $modal-box-shadow;
@@ -139,7 +141,7 @@
 
     .spinner {
       height: ($font-size-base * $line-height-base);
-      margin: 0 0 0 ($card-inner-spacer-x / 2);
+      margin: 0 0 0 ($card-inner-spacer-x * 0.5);
       vertical-align: middle;
       width: ($font-size-base * $line-height-base);
     }
@@ -161,7 +163,7 @@
   }
 
   .category-input {
-    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y * 0.5) 0;
   }
 
   .composer-bottom-right {
@@ -222,9 +224,9 @@
     background-color: color-chooser($white-divider, $black-divider);
     color: inherit;
     font-size: $font-size-sm;
-    margin: 0 0 0 ($card-inner-spacer-x / 2);
+    margin: 0 0 0 ($card-inner-spacer-x * 0.5);
     min-height: $material-icon-size;
-    padding: 0 ($card-inner-spacer-x / 2);
+    padding: 0 ($card-inner-spacer-x * 0.5);
   }
 
   .grippie {
@@ -251,7 +253,7 @@
 
   .mini-tag-chooser {
     background-color: transparent;
-    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y * 0.5) 0;
   }
 
   .popup-menu {
@@ -300,7 +302,7 @@
       border: 0;
       box-shadow: none;
       color: inherit;
-      margin-right: ($card-inner-spacer-x / 2);
+      margin-right: ($card-inner-spacer-x * 0.5);
       min-height: $material-icon-size;
 
       @include focus-hover {
@@ -350,7 +352,7 @@
 
     .composer-controls {
       position: absolute;
-      top: ($spacer / 2);
+      top: ($spacer * 0.5);
       right: $card-padding-x;
 
       .btn-flat {
@@ -376,9 +378,9 @@
     }
 
     .reply-details {
-      max-width: calc(50% - #{$material-icon-size / 2 + $card-inner-spacer-x + $card-padding-x});
+      max-width: calc(50% - #{$material-icon-size * 0.5 + $card-inner-spacer-x + $card-padding-x});
       position: absolute;
-      top: ($spacer / 2);
+      top: ($spacer * 0.5);
       left: $card-padding-x;
 
       .d-icon {
@@ -416,33 +418,33 @@
   .submit-panel {
     border-top: $border-width solid color-chooser($white-divider, $black-divider);
     margin: 0;
-    padding: ($card-padding-y / 2) $card-padding-x;
+    padding: ($card-padding-y * 0.5) $card-padding-x;
 
     .cancel {
       @include btn-base;
 
-      margin-left: ($card-inner-spacer-x / 2);
+      margin-left: ($card-inner-spacer-x * 0.5);
     }
   }
 
   .title-and-category {
-    margin-top: ($card-inner-spacer-y / 2);
+    margin-top: ($card-inner-spacer-y * 0.5);
     margin-bottom: 0;
     padding-right: $card-inner-spacer-x;
     padding-left: $card-padding-x;
   }
 
   .title-input {
-    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
+    margin: 0 $card-inner-spacer-x ($card-inner-spacer-y * 0.5) 0;
   }
 
   .toggle-preview {
     @include btn-base;
 
-    margin-right: ($card-padding-x / -2);
+    margin-right: math.div($card-padding-x, -2);
     overflow: hidden;
-    padding-right: ($card-padding-x / 2);
-    padding-left: ($card-padding-x / 2);
+    padding-right: ($card-padding-x * 0.5);
+    padding-left: ($card-padding-x * 0.5);
     text-indent: ($card-padding-x + $material-icon-size);
     width: ($card-padding-x + $material-icon-size);
 
@@ -463,8 +465,8 @@
   }
 
   .user-selector {
-    margin-top: ($card-inner-spacer-y / 2);
-    margin-bottom: ($card-inner-spacer-y / 2);
+    margin-top: ($card-inner-spacer-y * 0.5);
+    margin-bottom: ($card-inner-spacer-y * 0.5);
     padding-left: $card-padding-x;
 
     .ac-wrap {

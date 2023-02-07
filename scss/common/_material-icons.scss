@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .fa-anchor {
   @include material-icons('av_timer');
 }
@@ -641,7 +643,7 @@
   font-weight: normal;
   letter-spacing: normal;
   line-height: 1;
-  min-width: ($material-icon-size / $font-size-base * 1em);
+  min-width: (math.div($material-icon-size, $font-size-base) * 1em);
   text-align: center;
   text-rendering: optimizeLegibility;
   text-transform: none;

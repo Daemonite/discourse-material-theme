@@ -39,7 +39,7 @@
 
       ul {
         display: flex;
-        margin-top: ($card-inner-spacer-y / 2);
+        margin-top: ($card-inner-spacer-y * 0.5);
       }
     }
 
@@ -63,7 +63,7 @@
       }
 
       dd {
-        margin-bottom: ($card-inner-spacer-y / 2);
+        margin-bottom: ($card-inner-spacer-y * 0.5);
 
         &:last-child {
           margin-bottom: 0;
@@ -80,7 +80,7 @@
       flex-direction: column;
 
       .span15 {
-        margin-bottom: ($card-inner-spacer-y / 2);
+        margin-bottom: ($card-inner-spacer-y * 0.5);
       }
     }
 
