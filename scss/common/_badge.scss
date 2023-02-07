@@ -33,7 +33,7 @@
 
       .btn {
         flex-shrink: 0;
-        margin-left: ($spacer-x / 2);
+        margin-left: ($spacer-x * 0.5);
       }
     }
   }
@@ -42,7 +42,7 @@
 .badge-group,
 .badge-notification {
   align-items: center;
-  border-radius: ($font-size-base * $line-height-base / 2);
+  border-radius: ($font-size-base * $line-height-base * 0.5);
   display: inline-flex;
   font-size: $font-size-sm;
   justify-content: center;
@@ -72,7 +72,7 @@
   &.bar {
     align-items: center;
     background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-    border-radius: ($chip-height / 2);
+    border-radius: ($chip-height * 0.5);
     font-size: $chip-font-size;
     line-height: $chip-line-height;
     margin-right: $spacer-x-inline;
@@ -101,7 +101,7 @@
   }
 
   &.box {
-    border-radius: ($chip-height / 2);
+    border-radius: ($chip-height * 0.5);
     font-size: $chip-font-size;
     line-height: $chip-line-height;
     margin-right: $spacer-x-inline;
@@ -109,17 +109,17 @@
 
     .badge-category {
       align-items: center;
-      border-radius: ($chip-height / 2);
+      border-radius: ($chip-height * 0.5);
       min-height: $chip-height;
       padding: $chip-padding-y $chip-padding-x;
     }
 
     .badge-category-bg {
-      border-radius: ($chip-height / 2);
+      border-radius: ($chip-height * 0.5);
     }
 
     .badge-category-parent-bg {
-      border-radius: ($chip-height / 2);
+      border-radius: ($chip-height * 0.5);
       width: calc(100% - #{$chip-inner-spacer-x});
 
       + .badge-category-bg {
@@ -140,7 +140,7 @@
   &.bullet {
     align-items: center;
     background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-    border-radius: ($chip-height / 2);
+    border-radius: ($chip-height * 0.5);
     font-size: $chip-font-size;
     line-height: $line-height-base;
     margin-right: $spacer-x-inline;
@@ -149,7 +149,7 @@
 
     .badge-category {
       align-items: center;
-      border-radius: ($chip-height / 2);
+      border-radius: ($chip-height * 0.5);
       min-height: $chip-height;
       padding: $chip-padding-y 0 $chip-padding-y $chip-inner-spacer-x;
     }
@@ -162,13 +162,13 @@
     }
 
     .badge-category-parent-bg {
-      border-radius: ($material-icon-size / 2) 0 0 ($material-icon-size / 2);
+      border-radius: ($material-icon-size * 0.5) 0 0 ($material-icon-size * 0.5);
       height: $material-icon-size;
-      width: ($material-icon-size / 2);
+      width: ($material-icon-size * 0.5);
 
       + .badge-category-bg {
-        border-radius: 0 ($material-icon-size / 2) ($material-icon-size / 2) 0;
-        width: ($material-icon-size / 2);
+        border-radius: 0 ($material-icon-size * 0.5) ($material-icon-size * 0.5) 0;
+        width: ($material-icon-size * 0.5);
       }
     }
   }

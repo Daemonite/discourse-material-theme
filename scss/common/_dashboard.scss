@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .activity-metrics {
   @include card;
 
@@ -150,7 +152,7 @@
       .sort-btn {
         font-size: $btn-font-size-sm;
         margin-right: $spacer-x-inline;
-        padding: $btn-padding-y-sm ($card-inner-spacer-x / 2);
+        padding: $btn-padding-y-sm ($card-inner-spacer-x * 0.5);
       }
     }
   }
@@ -326,14 +328,14 @@
   }
 
   .section-columns .section-column {
-    width: calc(50% - #{$spacer-x / 2});
+    width: calc(50% - #{$spacer-x * 0.5});
 
     &:first-child {
-      margin-right: ($spacer-x / 2);
+      margin-right: ($spacer-x * 0.5);
     }
 
     &:last-child {
-      margin-left: ($spacer-x / 2);
+      margin-left: ($spacer-x * 0.5);
     }
   }
 
@@ -363,7 +365,7 @@
     @include card;
 
     flex-basis: calc(100% / 3 - #{$spacer-x});
-    margin: 0 ($spacer-x / 2) $spacer-y;
+    margin: 0 ($spacer-x * 0.5) $spacer-y;
     padding: 0;
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
@@ -384,8 +386,8 @@
   }
 
   .reports-list {
-    margin-right: ($spacer-x / -2);
-    margin-left: ($spacer-x / -2);
+    margin-right: math.div($spacer-x, -2);
+    margin-left: math.div($spacer-x, -2);
   }
 }
 
@@ -442,11 +444,11 @@
   margin-bottom: $spacer-y;
 
   .table-cell {
-    border-radius: ($chip-height / 2);
+    border-radius: ($chip-height * 0.5);
     margin: 0 $spacer-x-inline $spacer-y-inline 0;
 
     .label {
-      border-radius: ($chip-height / 2 - 1) 0 0 ($chip-height / 2 - 1);
+      border-radius: ($chip-height * 0.5 - 1) 0 0 ($chip-height * 0.5 - 1);
       font-size: $chip-font-size;
       line-height: $line-height-base;
       padding: ($chip-padding-y - 1) $chip-padding-x;

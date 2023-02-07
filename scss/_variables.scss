@@ -1,5 +1,7 @@
 // Colour chooser functions
 
+@use "sass:math";
+
 @function color-chooser($dark, $light) {
   @return unquote('color-chooser(') + $dark + unquote(', ') + $light + unquote(')');
 }
@@ -144,7 +146,7 @@ $font-size-h6:        14px !default;
 $font-size-body:      14px !default;
 $font-size-caption:   12px !default;
 
-$font-size-sm:        percentage($font-size-caption / $font-size-body) !default;
+$font-size-sm:        percentage(math.div($font-size-caption, $font-size-body)) !default;
 
 $material-icon-size:  24px !default;
 
@@ -231,9 +233,9 @@ $btn-line-height:          1 !default;
 $btn-padding-x:            $spacer !default;
 $btn-padding-x-lg:         $spacer !default;
 $btn-padding-x-sm:         $spacer !default;
-$btn-padding-y:            (($btn-height - $btn-font-size * $btn-line-height) / 2) !default;
-$btn-padding-y-lg:         (($btn-height-lg - $btn-font-size-lg * $btn-line-height) / 2) !default;
-$btn-padding-y-sm:         (($btn-height-sm - $btn-font-size-sm * $btn-line-height) / 2) !default;
+$btn-padding-y:            (($btn-height - $btn-font-size * $btn-line-height) * 0.5) !default;
+$btn-padding-y-lg:         (($btn-height-lg - $btn-font-size-lg * $btn-line-height) * 0.5) !default;
+$btn-padding-y-sm:         (($btn-height-sm - $btn-font-size-sm * $btn-line-height) * 0.5) !default;
 
 
 
@@ -268,7 +270,7 @@ $chip-icon-color-light: $black-secondary !default;
 $chip-inner-spacer-x:   $spacer-x-inline !default;
 $chip-line-height:      $line-height-base !default;
 $chip-padding-x:        $spacer !default;
-$chip-padding-y:        (($chip-height - $chip-font-size * $chip-line-height) / 2) !default;
+$chip-padding-y:        (($chip-height - $chip-font-size * $chip-line-height) * 0.5) !default;
 $chip-sm-scale:         .75 !default;
 
 
@@ -303,7 +305,7 @@ $dropdown-link-bg-hover-dark:  $white-divider !default;
 $dropdown-link-bg-hover-light: $black-divider !default;
 $dropdown-link-height:         $control-height-sm !default;
 $dropdown-link-padding-x:      $spacer-lg !default;
-$dropdown-link-padding-y:      (($dropdown-link-height - $dropdown-font-size * $dropdown-line-height) / 2) !default;
+$dropdown-link-padding-y:      (($dropdown-link-height - $dropdown-font-size * $dropdown-line-height) * 0.5) !default;
 $dropdown-padding-x:           0 !default;
 $dropdown-padding-y:           $spacer !default;
 
@@ -373,7 +375,7 @@ $nav-link-line-height:    1 !default;
 $nav-link-opacity:        .7 !default;
 $nav-link-opacity-active: 1 !default;
 $nav-link-padding-x:      $spacer !default;
-$nav-link-padding-y:      (($control-height - $nav-link-font-size * $nav-link-line-height) / 2) !default;
+$nav-link-padding-y:      (($control-height - $nav-link-font-size * $nav-link-line-height) * 0.5) !default;
 $nav-item-spacer-x:       1px !default;
 $nav-item-spacer-y:       1px !default;
 
@@ -456,4 +458,4 @@ $text-field-line-height:                 1.5 !default;
 $text-field-margin-y:                    $spacer-y-inline !default;
 $text-field-min-width:                   200px !default;
 $text-field-padding-x:                   12px !default;
-$text-field-padding-y:                   (($text-field-height - $text-field-border-width * 2 - $text-field-font-size * $text-field-line-height) / 2) !default;
+$text-field-padding-y:                   (($text-field-height - $text-field-border-width * 2 - $text-field-font-size * $text-field-line-height) * 0.5) !default;

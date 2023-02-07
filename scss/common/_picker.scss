@@ -76,7 +76,7 @@
   &::before {
     position: absolute;
     top: $btn-padding-y;
-    left: (($btn-height - $material-icon-size) / 2);
+    left: (($btn-height - $material-icon-size) * 0.5);
     text-indent: 0;
   }
 

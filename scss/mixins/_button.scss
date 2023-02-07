@@ -131,9 +131,9 @@
 // Size
 
 @mixin btn-footer {
-  margin-left: ($card-inner-spacer-x / 2);
-  padding-right: ($card-inner-spacer-x / 2);
-  padding-left: ($card-inner-spacer-x / 2);
+  margin-left: ($card-inner-spacer-x * 0.5);
+  padding-right: ($card-inner-spacer-x * 0.5);
+  padding-left: ($card-inner-spacer-x * 0.5);
 
   &:first-child {
     margin-left: 0;

@@ -38,7 +38,7 @@
   }
 
   .topic {
-    margin-bottom: ($card-inner-spacer-y / 2);
+    margin-bottom: ($card-inner-spacer-y * 0.5);
     max-width: 100%;
     padding-bottom: 0;
 
@@ -73,16 +73,16 @@
 
     .control-group.pull-left {
       margin-bottom: $card-inner-spacer-y;
-      padding-right: ($card-padding-x / 2);
+      padding-right: ($card-padding-x * 0.5);
 
       &:last-child {
         padding-right: 0;
-        padding-left: ($card-padding-x / 2);
+        padding-left: ($card-padding-x * 0.5);
       }
     }
 
     #postTime {
-      margin: 0 0 ($card-inner-spacer-y / 2);
+      margin: 0 0 ($card-inner-spacer-y * 0.5);
     }
   }
 

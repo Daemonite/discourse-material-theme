@@ -3,25 +3,27 @@
 // Font metrics used in the calculation are from Roboro Regular:
 // https://github.com/google/fonts/blob/master/apache/roboto/Roboto-Regular.ttf
 
+@use "sass:math";
+
 $roboto-fm-ascender:        1946 !default;
 $roboto-fm-capital-height:  1456 !default;
 $roboto-fm-descender:       512 !default;
 
-$roboto-capital-height:     ($font-size-base / 1px * $line-height-base) !default;
-$roboto-computed-font-size: ($roboto-capital-height / $roboto-fm-capital-height) !default;
+$roboto-capital-height:     (math.div($font-size-base, 1px) * $line-height-base) !default;
+$roboto-computed-font-size: math.div($roboto-capital-height, $roboto-fm-capital-height) !default;
 $roboto-distance-bottom:    $roboto-fm-descender !default;
 $roboto-distance-top:       ($roboto-fm-ascender - $roboto-fm-capital-height) !default;
 
 %material-icons {
   font-family: 'Material Icons';
   font-feature-settings: 'liga';
-  font-size: ($material-icon-size / $font-size-base * 1em);
+  font-size: (math.div($material-icon-size, $font-size-base) * 1em);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: ($font-size-base / $material-icon-size * 1em);
+  line-height: (math.div($font-size-base, $material-icon-size) * 1em);
   text-rendering: optimizeLegibility;
   text-transform: none;
   vertical-align: (($roboto-distance-bottom - $roboto-distance-top) * $roboto-computed-font-size * -1em);

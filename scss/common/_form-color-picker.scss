@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     margin: ($spacer-xs * -1) ($spacer-xs * -1) 0 $spacer;
-    min-width: ($spacer-xs * 2 + (($text-field-height - $spacer-xs) / 2) * 2);
+    min-width: ($spacer-xs * 2 + (($text-field-height - $spacer-xs) * 0.5) * 2);
     padding: 0;
 
     .colorpicker {

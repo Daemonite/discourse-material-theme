@@ -6,12 +6,12 @@ div {
     border-radius: $text-field-border-radius;
     min-height: $text-field-height;
     min-width: $text-field-min-width;
-    padding: (($text-field-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2) $text-field-padding-x;
+    padding: (($text-field-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) * 0.5) $text-field-padding-x;
     padding-right: ($text-field-padding-x - $spacer-xs);
 
     &:hover {
       border-width: ($text-field-border-width * 2);
-      padding: (($text-field-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) / 2 - $text-field-border-width) ($text-field-padding-x - $text-field-border-width);
+      padding: (($text-field-height - $text-field-border-width * 2 - ($chip-height + $spacer-xs)) * 0.5 - $text-field-border-width) ($text-field-padding-x - $text-field-border-width);
       padding-right: ($text-field-padding-x - $spacer-xs - $text-field-border-width);
     }
 
@@ -19,7 +19,7 @@ div {
       &.item {
         align-items: center;
         background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-        border-radius: ($chip-height / 2);
+        border-radius: ($chip-height * 0.5);
         color: inherit;
         display: flex;
         flex-shrink: 0;
@@ -27,9 +27,9 @@ div {
         font-weight: normal;
         height: $chip-height;
         line-height: 1;
-        margin-top: ($spacer-xs / 2);
+        margin-top: ($spacer-xs * 0.5);
         margin-right: $spacer-xs;
-        margin-bottom: ($spacer-xs / 2);
+        margin-bottom: ($spacer-xs * 0.5);
         padding: 0 $chip-padding-x;
 
         a {
@@ -113,7 +113,7 @@ div {
           @include typography-caption;
 
           color: color-chooser($white-secondary, $black-secondary);
-          margin-left: ($dropdown-inner-spacer-x / 2);
+          margin-left: ($dropdown-inner-spacer-x * 0.5);
         }
 
         &.username {
@@ -124,7 +124,7 @@ div {
 
       .avatar {
         flex-shrink: 0;
-        margin-right: ($dropdown-inner-spacer-x / 2);
+        margin-right: ($dropdown-inner-spacer-x * 0.5);
       }
     }
   }

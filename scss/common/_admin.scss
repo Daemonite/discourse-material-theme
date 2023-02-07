@@ -103,7 +103,7 @@ table {
   margin-bottom: $spacer-y;
 
   button {
-    margin-right: ($card-inner-spacer-x / 2);
+    margin-right: ($card-inner-spacer-x * 0.5);
   }
 
   label {
@@ -183,7 +183,7 @@ table {
         margin-left: auto;
 
         &:not(:first-child) {
-          padding-left: ($card-inner-spacer-x / 2 - $nav-item-spacer-x);
+          padding-left: ($card-inner-spacer-x * 0.5 - $nav-item-spacer-x);
         }
       }
     }
@@ -442,7 +442,7 @@ table {
       .components-list {
         @include typography-caption;
 
-        margin-top: ($spacer-y-inline / 2);
+        margin-top: ($spacer-y-inline * 0.5);
       }
 
       .info {
@@ -556,7 +556,7 @@ table {
   }
 
   .external-link {
-    margin-bottom: ($spacer-y / 2);
+    margin-bottom: ($spacer-y * 0.5);
 
     &:last-child {
       margin-bottom: 0;
@@ -913,7 +913,7 @@ table {
   }
 
   .close {
-    margin-top: (($font-size-h4 * $line-height-h4 - $font-size-base * $line-height-base) / 2);
+    margin-top: (($font-size-h4 * $line-height-h4 - $font-size-base * $line-height-base) * 0.5);
   }
 
   .inline-spinner {
@@ -1246,11 +1246,11 @@ table {
 .staff-action-logs-controls {
   a {
     &.filter {
-      border-radius: ($chip-height / 2);
+      border-radius: ($chip-height * 0.5);
       font-size: $chip-font-size;
       line-height: 1;
-      margin-top: ($spacer-y-inline / 2);
-      margin-bottom: ($spacer-y-inline / 2);
+      margin-top: ($spacer-y-inline * 0.5);
+      margin-bottom: ($spacer-y-inline * 0.5);
       padding: $chip-padding-y $chip-padding-x;
 
       i {
@@ -1374,7 +1374,7 @@ table {
     }
 
     &.topic-map-examples .topic-map {
-      margin-top: ($btn-height + $card-inner-spacer-y / 2);
+      margin-top: ($btn-height + $card-inner-spacer-y * 0.5);
     }
 
     .section-description {
@@ -1394,7 +1394,7 @@ table {
 
         border-bottom-color: color-chooser($white-divider, $black-divider);
         margin-bottom: 0;
-        padding: ($card-padding-y / 2) $card-padding-x;
+        padding: ($card-padding-y * 0.5) $card-padding-x;
       }
 
       .rendered {
@@ -1531,7 +1531,7 @@ table {
 
 .watched-word-box {
   background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-  border-radius: ($chip-height / 2);
+  border-radius: ($chip-height * 0.5);
   color: inherit;
   font-size: $font-size-sm;
   margin-right: $spacer-x-inline;

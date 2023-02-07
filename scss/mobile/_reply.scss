@@ -9,7 +9,7 @@
   }
 
   .category-input {
-    margin-top: ($card-inner-spacer-y / 2);
+    margin-top: ($card-inner-spacer-y * 0.5);
     padding-right: 0;
     padding-left: 0;
 
@@ -39,8 +39,8 @@
       @include btn-sm;
 
       max-width: none;
-      padding-right: ($btn-padding-x-sm / 2);
-      padding-left: ($btn-padding-x-sm / 2);
+      padding-right: ($btn-padding-x-sm * 0.5);
+      padding-left: ($btn-padding-x-sm * 0.5);
     }
   }
 

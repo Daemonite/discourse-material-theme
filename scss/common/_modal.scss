@@ -154,7 +154,7 @@
       }
 
       .d-icon {
-        margin-right: ($modal-inner-spacer-x / 2);
+        margin-right: ($modal-inner-spacer-x * 0.5);
       }
     }
 
@@ -166,7 +166,7 @@
 
       .d-icon {
         .modal & {
-          margin-right: ($btn-padding-x / 2);
+          margin-right: ($btn-padding-x * 0.5);
         }
       }
     }
@@ -184,7 +184,7 @@
 
     .btn + & {
       .modal & {
-        margin-left: ($card-inner-spacer-x / 2);
+        margin-left: ($card-inner-spacer-x * 0.5);
       }
     }
 
@@ -470,11 +470,11 @@
         background-clip: content-box;
 
         &:first-child {
-          padding-right: ($modal-inner-spacer-x / 2);
+          padding-right: ($modal-inner-spacer-x * 0.5);
         }
 
         &:last-child {
-          padding-left: ($modal-inner-spacer-x / 2);
+          padding-left: ($modal-inner-spacer-x * 0.5);
         }
       }
     }
@@ -494,7 +494,7 @@
     }
 
     .revision-content {
-      width: calc(50% - #{$modal-inner-spacer-x / 2});
+      width: calc(50% - #{$modal-inner-spacer-x * 0.5});
 
       &:nth-of-type(2) {
         margin-left: $modal-inner-spacer-x;
@@ -511,13 +511,13 @@
 
     #revisions {
       table {
-        margin-top: ($modal-inner-spacer-y / 2);
+        margin-top: ($modal-inner-spacer-y * 0.5);
       }
 
       .row {
         &,
         &:first-of-type {
-          margin-top: ($modal-inner-spacer-y / 2);
+          margin-top: ($modal-inner-spacer-y * 0.5);
         }
       }
     }
@@ -525,7 +525,7 @@
     #revision-details {
       border-bottom: $modal-border-width solid color-chooser($modal-border-color-dark, $modal-border-color-light);
       margin-top: 0;
-      padding: 0 0 ($modal-inner-spacer-y / 2);
+      padding: 0 0 ($modal-inner-spacer-y * 0.5);
     }
   }
 
@@ -713,9 +713,9 @@
 
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: ($card-inner-spacer-x / 2);
-    padding-right: ($card-inner-spacer-x / 2);
-    padding-left: ($card-inner-spacer-x / 2);
+    margin-left: ($card-inner-spacer-x * 0.5);
+    padding-right: ($card-inner-spacer-x * 0.5);
+    padding-left: ($card-inner-spacer-x * 0.5);
 
     &:last-child {
       margin-left: 0;

@@ -31,7 +31,7 @@ aside {
     }
 
     header {
-      margin-bottom: ($card-inner-spacer-y / 2);
+      margin-bottom: ($card-inner-spacer-y * 0.5);
     }
 
     + .onebox {
@@ -53,7 +53,7 @@ aside {
       h4 {
         @include typography-h5;
 
-        margin-bottom: ($card-inner-spacer-y / 2);
+        margin-bottom: ($card-inner-spacer-y * 0.5);
         overflow: hidden;
       }
 
@@ -74,14 +74,14 @@ aside {
       }
 
       .aspect-image {
-        margin-top: (($font-size-h5 * $line-height-h5 - $font-size-h5) / 2);
+        margin-top: (($font-size-h5 * $line-height-h5 - $font-size-h5) * 0.5);
         margin-right: ($card-inner-spacer-x * 2);
-        margin-bottom: ($card-inner-spacer-y / 2);
+        margin-bottom: ($card-inner-spacer-y * 0.5);
         width: ($card-padding-x * 6);
       }
 
       .date {
-        margin-bottom: ($card-inner-spacer-y / 2);
+        margin-bottom: ($card-inner-spacer-y * 0.5);
         overflow: hidden;
 
         &,
@@ -102,9 +102,9 @@ aside {
       .onebox-avatar {
         border-radius: 50%;
         height: $card-avatar-size;
-        margin-top: ($card-inner-spacer-y / 4);
+        margin-top: ($card-inner-spacer-y * 0.25);
         margin-right: $card-inner-spacer-x;
-        margin-bottom: ($card-inner-spacer-y / 4);
+        margin-bottom: ($card-inner-spacer-y * 0.25);
         width: $card-avatar-size;
       }
     }
@@ -230,7 +230,7 @@ div {
 
     .poll-buttons {
       border-top-color: color-chooser($table-border-color-dark, $table-border-color-light);
-      padding: ($card-padding-y / 2) ($card-padding-x - $card-inner-spacer-x);
+      padding: ($card-padding-y * 0.5) ($card-padding-x - $card-inner-spacer-x);
 
       a {
         @include btn-base;
@@ -286,13 +286,13 @@ div {
 
       li {
         display: block;
-        margin-right: ($card-inner-spacer-x / 2);
+        margin-right: ($card-inner-spacer-x * 0.5);
         margin-bottom: 0;
       }
     }
 
     .poll-voters-list {
-      margin-top: ($card-inner-spacer-y / 4);
+      margin-top: ($card-inner-spacer-y * 0.25);
     }
 
     .results {
@@ -337,7 +337,7 @@ div {
       }
 
       .option {
-        margin-bottom: ($card-inner-spacer-y / 4);
+        margin-bottom: ($card-inner-spacer-y * 0.25);
         padding-bottom: 0;
       }
     }
@@ -348,7 +348,7 @@ div {
   &.gfycat,
   &.whitelistedgeneric {
     .site-icon {
-      margin-right: ($card-inner-spacer-x / 2);
+      margin-right: ($card-inner-spacer-x * 0.5);
       vertical-align: text-top;
     }
   }

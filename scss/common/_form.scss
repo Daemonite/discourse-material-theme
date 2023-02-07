@@ -9,7 +9,7 @@ form {
 
 input[type="checkbox"],
 input[type="radio"] {
-  margin-top: (($font-size-base * $line-height-base - $font-size-base) / 2);
+  margin-top: (($font-size-base * $line-height-base - $font-size-base) * 0.5);
   margin-right: $spacer-x-inline;
   margin-left: 0;
 }
@@ -157,7 +157,7 @@ label {
 }
 
 .image-upload-controls {
-  padding: ($card-padding-y / 2) ($card-padding-x / 2);
+  padding: ($card-padding-y * 0.5) ($card-padding-x * 0.5);
 
   label {
     &.btn {
@@ -254,7 +254,7 @@ label {
 }
 
 .upload-selector {  label {
-    padding-left: ($modal-inner-spacer-x / 2);
+    padding-left: ($modal-inner-spacer-x * 0.5);
   }
 
   .radios {
@@ -271,7 +271,7 @@ label {
     }
 
     label {
-      margin-right: ($modal-inner-spacer-x / 2);
+      margin-right: ($modal-inner-spacer-x * 0.5);
 
       &:last-child {
         margin-bottom: 0;

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .admin-user .details {
   @include card;
 
@@ -195,11 +197,11 @@
   @include card;
 
   li {
-    margin: ($card-inner-spacer-y / 2) ($card-inner-spacer-x * 2) 0 0;
+    margin: ($card-inner-spacer-y * 0.5) ($card-inner-spacer-x * 2) 0 0;
     padding: 0;
 
     &:last-of-type {
-      margin: ($card-inner-spacer-y / 2) 0 0;
+      margin: ($card-inner-spacer-y * 0.5) 0 0;
     }
 
     &.linked-stat {
@@ -232,7 +234,7 @@
 
   + div > p:first-child,
   + p {
-    margin-top: ($card-inner-spacer-y / 2);
+    margin-top: ($card-inner-spacer-y * 0.5);
   }
 }
 
@@ -267,7 +269,7 @@
     td,
     th {
       border-top: $table-border-width solid color-chooser($table-border-color-dark, $table-border-color-light);
-      padding: $card-inner-spacer-y ($card-inner-spacer-x / 2);
+      padding: $card-inner-spacer-y ($card-inner-spacer-x * 0.5);
 
       &:first-child {
         padding-left: $card-padding-x;
@@ -306,7 +308,7 @@
 
   @media (min-width: 569px) {
     margin-right: $spacer-x-lg;
-    width: calc(50% - #{$spacer-x-lg / 2});
+    width: calc(50% - #{$spacer-x-lg * 0.5});
 
     &:last-child {
       margin-right: 0;
@@ -368,7 +370,7 @@
     align-items: center;
     display: flex;
     height: auto;
-    padding: ($card-padding-y / 2) ($card-padding-x - $btn-padding-x / 2);
+    padding: ($card-padding-y * 0.5) ($card-padding-x - $btn-padding-x * 0.5);
 
     .btn {
       @include btn-footer;
@@ -463,7 +465,7 @@
       width: auto;
 
       a {
-        margin-bottom: ($card-inner-spacer-y / 2);
+        margin-bottom: ($card-inner-spacer-y * 0.5);
         padding: $btn-padding-y $btn-padding-x;
         width: 100%;
       }
@@ -484,14 +486,14 @@
       h2 {
         @include typography-h5;
 
-        margin-top: ($card-inner-spacer-y / 2);
+        margin-top: ($card-inner-spacer-y * 0.5);
         margin-bottom: 0;
       }
 
       h3 {
         @include typography-body;
 
-        margin-top: ($card-inner-spacer-y / 2);
+        margin-top: ($card-inner-spacer-y * 0.5);
         margin-bottom: 0;
 
         .d-icon {
@@ -529,7 +531,7 @@
         }
 
         .bio {
-          margin-top: ($card-inner-spacer-y / 2);
+          margin-top: ($card-inner-spacer-y * 0.5);
           max-width: 100%;
 
           > :last-child {
@@ -572,7 +574,7 @@
 
         dt {
           color: color-chooser($white-secondary, $black-secondary);
-          margin-right: ($card-inner-spacer-x / 2);
+          margin-right: ($card-inner-spacer-x * 0.5);
 
           &:last-child {
             margin-right: 0;
@@ -598,7 +600,7 @@
     a {
       align-items: center;
       background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-      border-radius: ($chip-height / 2);
+      border-radius: ($chip-height * 0.5);
       color: inherit;
       display: flex;
       font-size: $chip-font-size;
@@ -889,7 +891,7 @@
   .child-actions {
     align-items: center;
     display: flex;
-    margin-top: ($card-inner-spacer-y / 2);
+    margin-top: ($card-inner-spacer-y * 0.5);
 
     .avatar {
       height: $material-icon-size;
@@ -912,7 +914,7 @@
 
   .excerpt {
     font-size: inherit;
-    margin: ($card-inner-spacer-y / 2) 0 0;
+    margin: ($card-inner-spacer-y * 0.5) 0 0;
 
     &:empty {
       display: none;
@@ -961,9 +963,9 @@
   .remove-bookmark {
     @include btn-raised-reverse;
 
-    margin: ($card-inner-spacer-y / -4) ($btn-padding-x / -2) ($card-inner-spacer-y / -4) auto;
-    padding-right: ($btn-padding-x / 2);
-    padding-left: ($btn-padding-x / 2);
+    margin: math.div($card-inner-spacer-y, -4) math.div($btn-padding-x, -2) math.div($card-inner-spacer-y, -4) auto;
+    padding-right: ($btn-padding-x * 0.5);
+    padding-left: ($btn-padding-x * 0.5);
 
     .fa {
       margin-right: 0;

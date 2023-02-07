@@ -1,3 +1,5 @@
+@use "sass:math";
+
 nav {
   &.post-controls {
     a,
@@ -7,16 +9,16 @@ nav {
 
     button {
       font-size: $btn-font-size;
-      margin-right: ($card-inner-spacer-x / 2);
+      margin-right: ($card-inner-spacer-x * 0.5);
       margin-left: 0;
-      padding: $btn-padding-y ($card-inner-spacer-x / 2);
+      padding: $btn-padding-y ($card-inner-spacer-x * 0.5);
 
       &:active {
         box-shadow: none;
       }
 
       &.bookmark {
-        padding: $btn-padding-y ($card-inner-spacer-x / 2);
+        padding: $btn-padding-y ($card-inner-spacer-x * 0.5);
       }
 
       &.create {
@@ -35,12 +37,12 @@ nav {
       display: flex;
       flex-wrap: wrap;
       float: none;
-      padding: ($card-inner-spacer-y / 2) ($card-padding-x / 2);
+      padding: ($card-inner-spacer-y * 0.5) ($card-padding-x * 0.5);
       text-align: left;
     }
 
     .double-button {
-      margin-right: ($card-inner-spacer-x / 2);
+      margin-right: ($card-inner-spacer-x * 0.5);
 
       button {
         &.button-count {
@@ -52,7 +54,7 @@ nav {
           + .toggle-like {
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
-            padding-left: ($card-inner-spacer-x / 2);
+            padding-left: ($card-inner-spacer-x * 0.5);
           }
         }
       }
@@ -132,8 +134,8 @@ nav {
     }
 
     .show-replies {
-      margin-top: ($card-inner-spacer-y / 2);
-      margin-left: ($card-inner-spacer-x / 2);
+      margin-top: ($card-inner-spacer-y * 0.5);
+      margin-left: ($card-inner-spacer-x * 0.5);
 
       .d-icon {
         margin-left: $spacer-x-inline;
@@ -203,9 +205,9 @@ section {
 
     border: 0;
     color: color-chooser($white-secondary, $black-secondary);
-    margin: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2);
-    padding-right: ($card-inner-spacer-x / 2);
-    padding-left: ($card-inner-spacer-x / 2);
+    margin: ($card-inner-spacer-y * 0.5) ($card-inner-spacer-x * 0.5);
+    padding-right: ($card-inner-spacer-x * 0.5);
+    padding-left: ($card-inner-spacer-x * 0.5);
     position: static;
 
     &:active,
@@ -377,8 +379,8 @@ section {
 
 .reply-to-tab {
   img {
-    margin-right: ($card-inner-spacer-x / 2);
-    margin-left: ($card-inner-spacer-x / 2);
+    margin-right: ($card-inner-spacer-x * 0.5);
+    margin-left: ($card-inner-spacer-x * 0.5);
   }
 }
 
@@ -413,7 +415,7 @@ section {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: ($card-inner-spacer-y / -2);
+    margin-bottom: math.div($card-inner-spacer-y, -2);
     margin-left: ($card-inner-spacer-x * -1);
 
     a {
@@ -448,12 +450,12 @@ section {
     @include btn-raised-reverse;
 
     color: color-chooser($white-secondary, $black-secondary);
-    margin-top: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
-    margin-right: ($card-inner-spacer-x / 2);
-    margin-bottom: (($btn-height-sm - $font-size-base * $line-height-base) / -2);
+    margin-top: math.div($btn-height-sm - $font-size-base * $line-height-base, -2);
+    margin-right: ($card-inner-spacer-x * 0.5);
+    margin-bottom: math.div($btn-height-sm - $font-size-base * $line-height-base, -2);
 
     &:first-child {
-      margin-right: ($card-padding-x / -2);
+      margin-right: math.div($card-padding-x, -2);
     }
   }
 
@@ -480,7 +482,7 @@ section {
 
     .custom-message {
       font-size: inherit;
-      margin-top: ($card-inner-spacer-y / 2);
+      margin-top: ($card-inner-spacer-y * 0.5);
       width: 100%;
     }
 
@@ -490,7 +492,7 @@ section {
   }
 
   .topic-avatar {
-    margin-top: (($material-icon-size - $font-size-base * $line-height-base) / 2);
+    margin-top: (($material-icon-size - $font-size-base * $line-height-base) * 0.5);
     margin-right: 0;
     padding: 0;
     position: static;
@@ -604,14 +606,14 @@ section {
   h3 {
     @include typography-h6;
 
-    margin-bottom: ($card-inner-spacer-y / 2);
+    margin-bottom: ($card-inner-spacer-y * 0.5);
   }
 
   h4 {
     @include typography-caption;
 
     color: color-chooser($card-color-dark, $card-color-light);
-    margin: 0 0 ($card-inner-spacer-y / 2 / 2);
+    margin: 0 0 ($card-inner-spacer-y * 0.5 * 0.5);
   }
 
   section {
@@ -634,15 +636,15 @@ section {
       @include typography-caption;
 
       align-items: center;
-      border-radius: ($btn-height / 4);
+      border-radius: ($btn-height * 0.25);
       display: flex;
-      height: ($btn-height / 2);
-      padding: 0 ($card-inner-spacer-x / 2);
-      top: ($btn-height / 2 / -2);
+      height: ($btn-height * 0.5);
+      padding: 0 ($card-inner-spacer-x * 0.5);
+      top: math.div($btn-height * 0.5, -2);
     }
 
     > div {
-      margin: ($spacer-y-inline / 2) 0;
+      margin: ($spacer-y-inline * 0.5) 0;
     }
   }
 
@@ -680,7 +682,7 @@ section {
       margin-left: ($card-inner-spacer-x * -1);
 
       &:last-child {
-        margin-bottom: ($card-inner-spacer-y / -2);
+        margin-bottom: math.div($card-inner-spacer-y, -2);
       }
     }
   }
@@ -690,7 +692,7 @@ section {
   }
 
   .link-summary {
-    margin-top: ($card-inner-spacer-y / 2);
+    margin-top: ($card-inner-spacer-y * 0.5);
 
     .btn {
       background-color: transparent;
@@ -721,7 +723,7 @@ section {
     }
 
     li {
-      padding: $card-inner-spacer-y ($card-inner-spacer-x / 2);
+      padding: $card-inner-spacer-y ($card-inner-spacer-x * 0.5);
 
       &:first-child {
         padding-left: $card-padding-x;
@@ -763,12 +765,12 @@ section {
     .user {
       align-items: center;
       background-color: color-chooser($chip-bg-dark, $chip-bg-light);
-      border-radius: ($chip-height / 2);
+      border-radius: ($chip-height * 0.5);
       color: inherit;
       display: flex;
       font-size: $font-size-sm;
       height: $chip-height;
-      margin: ($card-inner-spacer-y / 2) $card-inner-spacer-x ($card-inner-spacer-y / 2) 0;
+      margin: ($card-inner-spacer-y * 0.5) $card-inner-spacer-x ($card-inner-spacer-y * 0.5) 0;
       padding: 0 $chip-padding-x 0 ($chip-height + $chip-inner-spacer-x);
       position: relative;
 
@@ -819,7 +821,7 @@ section {
     }
 
     td {
-      padding: 0 0 ($card-inner-spacer-y / 2);
+      padding: 0 0 ($card-inner-spacer-y * 0.5);
     }
 
     tr:last-child td {
@@ -839,7 +841,7 @@ section {
 .topic-meta-data {
   .topic-post & {
     min-height: ($card-avatar-size + $card-padding-y);
-    padding: $card-padding-y ($card-padding-x / 2) 0 ($card-avatar-size + $card-inner-spacer-y + $card-padding-y);
+    padding: $card-padding-y ($card-padding-x * 0.5) 0 ($card-avatar-size + $card-inner-spacer-y + $card-padding-y);
   }
 
   .names {
@@ -850,14 +852,14 @@ section {
 
   .post-info {
     margin-right: 0;
-    margin-left: ($card-inner-spacer-x / 2);
+    margin-left: ($card-inner-spacer-x * 0.5);
 
     a {
       @include btn-base;
 
       color: color-chooser($white-secondary, $black-secondary);
       font-size: $btn-font-size-sm;
-      padding: $btn-padding-y-sm ($card-padding-x / 2);
+      padding: $btn-padding-y-sm ($card-padding-x * 0.5);
     }
   }
 }
@@ -1018,11 +1020,11 @@ section {
 .who-liked {
   clear: both;
   margin: 0;
-  padding: 0 $card-padding-x ($card-inner-spacer-y / 2);
+  padding: 0 $card-padding-x ($card-inner-spacer-y * 0.5);
   text-align: inherit;
 
   a {
-    margin: ($card-inner-spacer-y / 2) ($card-inner-spacer-x / 2) ($card-inner-spacer-y / 2) 0;
+    margin: ($card-inner-spacer-y * 0.5) ($card-inner-spacer-x * 0.5) ($card-inner-spacer-y * 0.5) 0;
   }
 
   .avatar {
